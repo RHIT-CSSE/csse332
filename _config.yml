@@ -1,0 +1,6 @@
+theme: jekyll-theme-minimal
+title: CSSE332
+description: Operating Systems
+layouts_dir: .internal/layouts
+include: ['.internal']
+moodle: https://moodle.rose-hulman.edu/course/view.php?id=48751
