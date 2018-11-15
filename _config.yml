@@ -8,7 +8,7 @@ moodle: https://moodle.rose-hulman.edu/course/view.php?id=48751
 # Site settings
 email: 
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://rhit-csse.github.io" # the base hostname & protocol for your site
+url: "https://rhit-csse.github.io/csse332" # the base hostname & protocol for your site
 twitter_username: username
 github_username: username
 
