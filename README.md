@@ -1,4 +1,4 @@
-## CSSE 132 Operating System
+## CSSE 332 Operating System
 ----
 ### Course Description
 

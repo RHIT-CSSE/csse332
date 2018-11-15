@@ -1,6 +1,20 @@
 theme: jekyll-theme-minimal
 title: CSSE332
 description: Operating Systems
-layouts_dir: .internal/layouts
-include: ['.internal']
+# layouts_dir: .internal/layouts
+# include: ['.internal']
 moodle: https://moodle.rose-hulman.edu/course/view.php?id=48751
+
+# Site settings
+email: 
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://rhit-csse.github.io" # the base hostname & protocol for your site
+twitter_username: username
+github_username: username
+
+# Build settings
+markdown: redcarpet
+markdown_ext:  markdown,mkdown,mkdn,mkd,md
+
+redcarpet:
+  extensions: ["tables", "autolink", "strikethrough", "space_after_headers", "fenced_code_blocks"]

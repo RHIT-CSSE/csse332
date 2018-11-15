@@ -1,0 +1,694 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Lab 4: Threads and Semaphore Basics</title>
+<!-- 2018-03-27 Tue 10:42 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="Delvin Defoe" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Lab 4: Threads and Semaphore Basics</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. Thread Factoring (20 points)</a></li>
+<li><a href="#sec-2">2. Thread Sorting (60 points)</a></li>
+<li><a href="#sec-3">3. Basic semaphores 1 (20 points)</a>
+<ul>
+<li><a href="#sec-3-1">3.1. The problem</a></li>
+<li><a href="#sec-3-2">3.2. The solution - Semaphores</a></li>
+<li><a href="#sec-3-3">3.3. Operation</a></li>
+<li><a href="#sec-3-4">3.4. Using Semaphores to protect a critical section</a></li>
+<li><a href="#sec-3-5">3.5. Doing this in code</a></li>
+<li><a href="#sec-3-6">3.6. Solve it!</a></li>
+</ul>
+</li>
+<li><a href="#sec-4">4. Basic Semaphores 2: RedBluePurple (50 points)</a></li>
+<li><a href="#sec-5">5. Rubric</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Thread Factoring (20 points)</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Look in the thread_factoring project in the lab4 directory.
+</p>
+
+<p>
+Start by understanding the code in threadExample.c (you may have seen
+this example already, but if not review it).
+</p>
+
+<p>
+Then use threads to parallelize the problem given in factoring.  If
+you do it correctly you should be able to see the correct number of
+threads working in parallel.
+</p>
+
+<p>
+Here's some sample output from my solution.  Note that when given two 
+threads, my solution will make one thread handle evens and one
+thread handle odds.  Your approach does not have to split up the problem
+this way. It divides the number of values each thread considers evenly.
+</p>
+
+<pre class="example">
+Give a number to factor.
+143
+How man threads should I create?
+2
+running thread
+running thread
+thread 2 testing 3
+thread 2 testing 5
+thread 2 testing 7
+thread 2 testing 9
+thread 2 testing 11
+11 is a factor
+thread 2 testing 13
+13 is a factor
+thread 2 testing 15
+thread 2 testing 17
+thread 2 testing 19
+thread 2 testing 21
+thread 1 testing 2
+thread 1 testing 4
+thread 1 testing 6
+thread 1 testing 8
+thread 1 testing 10
+thread 1 testing 12
+thread 1 testing 14
+thread 1 testing 16
+thread 2 testing 23
+thread 2 testing 25
+thread 2 testing 27
+thread 2 testing 29
+thread 2 testing 31
+thread 2 testing 33
+thread 2 testing 35
+thread 2 testing 37
+thread 2 testing 39
+thread 2 testing 41
+thread 2 testing 43
+thread 2 testing 45
+thread 2 testing 47
+thread 2 testing 49
+thread 1 testing 18
+thread 1 testing 20
+thread 1 testing 22
+thread 1 testing 24
+thread 1 testing 26
+thread 1 testing 28
+thread 1 testing 30
+thread 1 testing 32
+thread 1 testing 34
+thread 1 testing 36
+thread 1 testing 38
+thread 1 testing 40
+thread 1 testing 42
+thread 1 testing 44
+thread 1 testing 46
+thread 1 testing 48
+thread 1 testing 50
+thread 1 testing 52
+thread 1 testing 54
+thread 1 testing 56
+thread 1 testing 58
+thread 1 testing 60
+thread 1 testing 62
+thread 1 testing 64
+thread 1 testing 66
+thread 1 testing 68
+thread 1 testing 70
+thread 2 testing 51
+thread 2 testing 53
+thread 2 testing 55
+thread 2 testing 57
+thread 2 testing 59
+thread 2 testing 61
+thread 2 testing 63
+thread 2 testing 65
+thread 2 testing 67
+thread 2 testing 69
+thread 2 testing 71
+</pre>
+
+<p>
+You will need to pass parameters to your thread functions to solve
+this problem.  Just use void pointers just as you did in your userspace
+threading assignment.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Thread Sorting (60 points)</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Look at the thread_sorting project in the lab4 directory. The
+Costs.txt file in this project should be used as a sample file for
+this part of the lab. Don't forget to compile with the -pthread
+compilation flag.
+</p>
+
+
+<p>
+In this program you will demonstrate your understanding of thread
+creation, some thread synchronization, and POSIX thread
+management. 
+</p>
+
+<ol class="org-ol">
+<li>Write a C program in the files threads.(h,c) that takes three command line arguments: 
+<ol class="org-ol">
+<li>the number of threads to create (n),
+</li>
+<li>an input file, (fileIn), and 
+</li>
+<li>an output file, (fileOut), 
+</li>
+</ol>
+<p>
+in that order. Code in examples/Examples/example7.c shows how to process
+command line arguments.  You might also want to look up the manpages for
+the atoi function, which you can use to convert a string to an integer value.
+</p>
+</li>
+
+<li>First, open the input file, fileIn, and find the number of
+values (or lines) in the file. fileIn contains a list of the
+average cost of living for various locations. Our goal is to sort
+these values in increasing order.
+</li>
+
+<li>Use a loop to create n parallel threads (a thread fan similar to
+the process fan from lab3), distributing the number of values
+evenly across each thread. You can either distribute the values to
+each thread in the loop that reads in the file, or read the entire
+file first and then distribute the values to each thread after the
+read.
+
+<p>
+Note: n is used in the code we provided, however you must create
+storage space for n and set it to the number of threads.
+</p>
+
+<p>
+a. Each thread will sort its group of values using a different
+ sorting algorithm. In each thread, call one of three sorting
+ algorithms (provided in threads.c). One third of the threads
+ created should use a brute force sorting algorithm.  One third
+ should use bubble sort. And finally, one third should use merge
+ sort.
+</p>
+
+<p>
+b. Each thread should track the time it takes to operate (use
+ gettimeofday), starting upon creation and ending once the
+ sorting is complete.
+</p>
+
+<p>
+c. Each thread should print its index (an int that
+ represents the order in which the thread was created) and
+ total time (as described above) upon completion.
+</p>
+</li>
+
+<li>In a loop, the parent process should wait (using pthread_join)
+for each thread to complete. Once all of the of the n threads have
+completed, the parent should call a user defined function that
+calculates the maximum, minimum, and mean values for the execution
+times of each sorting algorithm.  It should then print these
+values to the console.
+</li>
+
+<li>At this point the values should be semi-sorted: the first
+third should be sorted via the brute force method, the second
+third by the bubble sort method, and the third third by the merge
+sort method.
+</li>
+
+<li>Finally, merge the results of each thread to create one
+sorted list. This can be done without the use of the n
+threads. The sorted list should be written to fileOut.
+</li>
+
+<li>When you turn in your assignment, it should include the
+following.
+
+<p>
+a. A Makefile that creates an executable called
+  threads.
+</p>
+
+<p>
+b. threads.c and threads.h.
+  threads.h should contain your constants, declared types,
+  function signatures, and any other relevant information.
+</p>
+</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> Basic semaphores 1 (20 points)</h2>
+<div class="outline-text-2" id="text-3">
+</div><div id="outline-container-sec-3-1" class="outline-3">
+<h3 id="sec-3-1"><span class="section-number-3">3.1</span> The problem</h3>
+<div class="outline-text-3" id="text-3-1">
+<p>
+Compile and run add_a_lot.c.  You will see that it uses multiple
+threads to repeatedly add to a global variable.  However, the final
+sum is not correct because as multiple threads edit the variable they
+interfere.
+</p>
+
+<p>
+To be clear, a variable add looks something like this in assembly:
+</p>
+<ol class="org-ol">
+<li>Load the variable from memory into the register
+</li>
+<li>Add, possibly outputting in some other register
+</li>
+<li>Store the variable in the output register into memory
+</li>
+</ol>
+
+<p>
+However, if we have multiple threads acting at once, the interleaving
+can cause the count to fail.
+</p>
+
+<ol class="org-ol">
+<li>Load the variable from memory into the register (thread 1)
+</li>
+<li>Load the variable from memory into the register (thread 2)
+</li>
+<li>Add, outputting in some other register (thread 2)
+</li>
+<li>Store the variable in the output register into memory (thread 2)
+</li>
+<li>Add, outputting in some other register (thread 1)
+</li>
+<li>Store the variable in the output register into memory (thread 1)
+and discarding Thread 2's change
+</li>
+</ol>
+</div>
+</div>
+
+
+<div id="outline-container-sec-3-2" class="outline-3">
+<h3 id="sec-3-2"><span class="section-number-3">3.2</span> The solution - Semaphores</h3>
+<div class="outline-text-3" id="text-3-2">
+<p>
+You might be tempted to try to use some tricky stuff involving special
+booleans to prevent concurrent modification.  We'll explain more in
+future classes, but for now realize that these kind of things tend to
+have their own problematic edge cases unless built very very
+carefully.  Let's not do that ourselves - instead we'll use
+semaphores.
+</p>
+
+<p>
+Semaphores are one of a variety of concurrency synchronization
+mechanisms your system might provide.  They are very powerful and
+flexible, but in this assignment we'll use them in the simplest
+possible way.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-3-3" class="outline-3">
+<h3 id="sec-3-3"><span class="section-number-3">3.3</span> Operation</h3>
+<div class="outline-text-3" id="text-3-3">
+<p>
+Semaphores contain an internal count.  There are two operations:
+</p>
+
+<ol class="org-ol">
+<li>sem_post - increases the count.  This has the potential to unblock
+waiting processes.
+</li>
+<li>sem_wait - attempt to decrement the count.  If the count is greater
+than 1, this works and the process continues.  If the count is 0,
+the process blocks (i.e. does not return) until some other thread
+increments the count after which the thread can continue.
+</li>
+</ol>
+
+<p>
+These are all carefully designed so that, regardless of the
+interleaving of calls, the semaphore behaves consistently.  For
+example, if say semaphore count_1 is one, and two processes simultaneously
+attempt to sem_wait() on it, exactly one will be allowed to continue and
+exactly one will be blocked waiting for a sem_post.
+</p>
+
+<p>
+How can we use these two operations to protect our code?  We could
+make our data an actual semaphore, but that is not very flexible.
+Instead, we want to use a semaphore to ensure that multiple threads
+never enter our "critical section" (that is, our global increment) at
+the same time.
+</p>
+
+<p>
+See if you can figure out how to do this on your own without peeking
+at the next section.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-3-4" class="outline-3">
+<h3 id="sec-3-4"><span class="section-number-3">3.4</span> Using Semaphores to protect a critical section</h3>
+<div class="outline-text-3" id="text-3-4">
+<p>
+So the idea is that we're going to create a semaphore and initialize
+its count to 1.
+</p>
+
+<p>
+Then in the code we want to protect from interference, we'll to this:
+</p>
+
+<ol class="org-ol">
+<li>sem_wait - if the count is zero that means another thread is in
+the critical section so we'll block
+</li>
+<li>Now we know we're the only thread in the critical section so we
+can safely update the global variables
+</li>
+<li>sem_post - increment the count because we're out of the critical
+section and we want to let any other threads that are blocked to
+proceed
+</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-sec-3-5" class="outline-3">
+<h3 id="sec-3-5"><span class="section-number-3">3.5</span> Doing this in code</h3>
+<div class="outline-text-3" id="text-3-5">
+<ol class="org-ol">
+<li>Include the proper header
+
+<pre class="example">
+#include &lt;semaphore.h&gt;
+</pre>
+</li>
+
+<li>Declare a global semaphore
+
+<pre class="example">
+sem_t semaphore;
+</pre>
+</li>
+
+<li>In your main, initialize the semaphore with an initial count of 1
+
+<pre class="example">
+sem_init(&amp;semaphore, 0, 1);
+</pre>
+</li>
+
+<li>Before the code you'd like to protect starts, first wait to ensure
+you don't proceed till you have "locked" the semaphore:
+
+<pre class="example">
+sem_wait(&amp;semaphore);
+</pre>
+
+<p>
+You'll want to make the critical section as small as possible to
+ allow for maximal concurrency.
+</p>
+</li>
+
+<li>After the code you'd like to protect finishes, "unlock" the
+semaphore:
+
+<pre class="example">
+sem_post(&amp;semaphore);
+</pre>
+</li>
+
+<li>Once you're sure all the threads are finished using the semaphore,
+clear it out (this usually happens in main after some joins):
+
+<pre class="example">
+sem_destroy(&amp;semaphore);
+</pre>
+</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-sec-3-6" class="outline-3">
+<h3 id="sec-3-6"><span class="section-number-3">3.6</span> Solve it!</h3>
+<div class="outline-text-3" id="text-3-6">
+<p>
+Use the steps above to solve the problem in add_a_lot.c.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> Basic Semaphores 2: RedBluePurple (50 points)</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+For a detailed description of the problem look at the comments in the
+red_blue_purple.c file.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5"><span class="section-number-2">5</span> Rubric</h2>
+<div class="outline-text-2" id="text-5">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="right" />
+</colgroup>
+<tbody>
+<tr>
+<td class="left">Thread Factoring</td>
+<td class="left">creates threads and they run</td>
+<td class="right">10</td>
+</tr>
+
+<tr>
+<td class="left">Thread Factoring</td>
+<td class="left">correctly divides work and displays well</td>
+<td class="right">10</td>
+</tr>
+
+<tr>
+<td class="left">Thread Sorting</td>
+<td class="left">parses command line arguments</td>
+<td class="right">10</td>
+</tr>
+
+<tr>
+<td class="left">Thread Sorting</td>
+<td class="left">Loop and create n parallel threads to sort parts of the data</td>
+<td class="right">10</td>
+</tr>
+
+<tr>
+<td class="left">Thread Sorting</td>
+<td class="left">Each thread uses timeofday to measure total execution time and prints index and execution time</td>
+<td class="right">10</td>
+</tr>
+
+<tr>
+<td class="left">Thread Sorting</td>
+<td class="left">Computes and prints min max and mean times for each algorithm</td>
+<td class="right">10</td>
+</tr>
+
+<tr>
+<td class="left">Thread Sorting</td>
+<td class="left">Final merge to create one sorted list</td>
+<td class="right">10</td>
+</tr>
+
+<tr>
+<td class="left">Thread Sorting</td>
+<td class="left">Makefile</td>
+<td class="right">10</td>
+</tr>
+
+<tr>
+<td class="left">Basic Semaphores 1</td>
+<td class="left">Follows instructions and eliminates concurrency bug using semaphores</td>
+<td class="right">20</td>
+</tr>
+
+<tr>
+<td class="left">Basic Semaphores 2</td>
+<td class="left">Semaphores used correctly (e.g. created, freed with proper functions)</td>
+<td class="right">25</td>
+</tr>
+
+<tr>
+<td class="left">Basic Semaphores 2</td>
+<td class="left">All concurrency bugs elliminated</td>
+<td class="right">25</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Delvin Defoe</p>
+<p class="date">Created: 2018-03-27 Tue 10:42</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.3.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

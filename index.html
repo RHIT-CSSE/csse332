@@ -1,0 +1,34 @@
+---
+layout: default
+---
+<div class="home">
+
+
+  <article class="post-content">
+    <!-- {{ content }} -->
+    {% capture about %}{% include_relative README.md %} {% endcapture%}
+    {{ about | markdownify }}
+  </article>
+
+  <div align="center">
+  	<a href="#">
+  	<i class="fa fa-arrow-circle-up fa-2x"></i>
+  	</a>
+  </div>
+
+</div>
+
+
+<!-- <div class="home"> -->
+
+<!--   <h1 class="page-heading">{{ site.title }}</h1> -->
+
+<!--   <ul class="post-list"> -->
+<!--     {% for post in site.posts %} -->
+<!--       <li> -->
+<!--         <1!-- <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span> --1> -->
+<!--         <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> -->
+<!--       </li> -->
+<!--     {% endfor %} -->
+<!--   </ul> -->
+<!-- </div> -->

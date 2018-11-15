@@ -1,13 +1,12 @@
 ---
 title: Schedule
-layout: default
+layout: schedule
 ---
 
-<h1>Schedule</h1>
-<table>
+<table class="responstable">
     <thead>
         <tr>
-            <td>Session</td><td>Reading</td><td>Topics</td><td>Materials</td>
+            <th>Session</th><th>Reading</th><th>Topics</th><th>Materials</th>
         </tr>
     </thead>
     <tbody>
@@ -23,10 +22,14 @@ layout: default
           {{ session.class_num }} <br/> {{ session.date | date: "%a %d %b %Y" }}
         </td>
           <td>
-              {{event.reading | join: "<br/>"}}
+                  {% for item in event.reading %}
+                  <li> {{ item }} </li>
+                  {% endfor %}
           </td>
           <td>
-              {{event.topics | join: "<br/>"}}
+                  {% for item in event.topics %}
+                  <li> {{ item }} </li>
+                  {% endfor %}
           </td>
           <td>
               {% for material in event.materials %}

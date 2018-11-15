@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <div class="page-content">
+      <div class="wrapper-schedule">
+              <div class="post">
+
+                      <header class="post-header">
+                              <h1 class="post-title">{{ page.title }}</h1>
+                      </header>
+
+                      <article class="post-content">
+                              {{ content }}
+                      </article>
+
+                      <div align="center">
+                              <a href="#">
+                                      <i class="fa fa-arrow-circle-up fa-2x"></i>
+                              </a>
+                      </div>
+
+              </div>
+      </div>
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+</html>
