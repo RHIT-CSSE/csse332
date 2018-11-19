@@ -21,9 +21,9 @@
   reading:
   topics:
     - <b>Lab 1</b> Userspace Threading
-  materials: Lab-UserSpaceThread
+  materials:
   other: 
-    - <a href="Homework/UserspaceThreadsLab1/"> Lab Instructions</a>
+    - <a href="Homework/UserspaceThreadsLab1/README"> Lab Instructions</a>
 4:
   reading:
   topics:
@@ -49,7 +49,7 @@
     - <b>Lab 2</b> Userspace Threading
   materials: 
   other: 
-    - <a href="Homework/UserspaceThreadsLab2/"> Lab Instructions</a>
+    - <a href="Homework/UserspaceThreadsLab2/README"> Lab Instructions</a>
 8:
   reading:
     - Chapter 3
