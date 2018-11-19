@@ -1,12 +1,29 @@
-#+TITLE: Userspace Threads
-#+AUTHOR: Buffalo
-#+EMAIL: hewner@rose-hulman.edu
-#+OPTIONS: ^:{}
-#+OPTIONS: html-link-use-abs-url:nil html-postamble:auto
-#+OPTIONS: html-preamble:t html-scripts:t html-style:t
-#+OPTIONS: html5-fancy:f tex:t
+---
+title: Userspace Threads with Preemption
+---
 
-* Introduction
+# Table of Contents
+
+1.  [Introduction](#orgfc71f24)
+    1.  [How](#orgb1cd0a7)
+2.  [Read this](#org6e742af)
+3.  [An Example](#org2b33a7e)
+4.  [Moving from Basic to Preempt](#orgf36f474)
+5.  [What to do](#orgc14b38f)
+    1.  [Standalone 1: The Basics](#org58e380d)
+    2.  [Standalone 1: Problems](#org2420b5c)
+    3.  [Standalone 1: Segmentation Faults Solution](#org577edb5)
+    4.  [Standalone 1: What's the deal with the lockup?](#orgea10935)
+    5.  [Standalone 1: Weird printing](#orgfacc0f2)
+    6.  [Standalone 2: Yields, Creates, & Finishes](#org8626e2b)
+    7.  [Test cases](#org452bfcb)
+6.  [Conclusion](#org4c9602e)
+
+
+
+<a id="orgfc71f24"></a>
+
+# Introduction
 
 In the last lab assignment we built a userspace threading system, but it
 required the programmer to manually yield.  In some cases, this might
@@ -22,7 +39,10 @@ threads running in parallel.
 So in this assignment, we'll make our system preemptive.  That is,
 we'll force our threads to give up control even if they don't yield.
 
-** How
+
+<a id="orgb1cd0a7"></a>
+
+## How
 
 To have preemption we need a special facility: a way to force a
 currently running thread off the CPU and run some other code (that we
@@ -50,34 +70,41 @@ after a specific amount of time.  In our case, we'll cause a SIGALRM
 to yield to the scheduler allowing other code to run.  But as usual
 there will be complications..
 
-* Read this
+
+<a id="org6e742af"></a>
+
+# Read this
 
 This code will require an understanding of signals and signal masks.
-Read this:
-
-[file:sigintro.html]
+Read [this introduction](sigintro.html).
 
 This was originally from http://titania.ctie.monash.edu.au/signals/
 
-* An Example
+
+<a id="org2b33a7e"></a>
+
+# An Example
 
 To compile and run this code, use gcc
 
-: gcc preempt_example.c -o preempt_example
-: ./preempt_example
+    gcc preempt_example.c -o preempt_example
+    ./preempt_example
 
 You should see the parent and the child switch between each other,
 even without a yield in the child code.
 
 You'll want to understand this code completely before continuing on.
 
-* Moving from Basic to Preempt
+
+<a id="orgf36f474"></a>
+
+# Moving from Basic to Preempt
 
 You will start from your code for the basic threads assignment; 
 all the threading functions will be the same.  The only difference
-will be a new version of schedule_threads
+will be a new version of schedule\_threads
 
-: void schedule_threads_with_preempt(int usecs);
+    void schedule_threads_with_preempt(int usecs);
 
 When threads are scheduled with this function they will be preempted
 every usecs microseconds (if they don't yield or finish naturally).
@@ -86,32 +113,43 @@ To begin:
 
 Take your solution to the previous lab assignment and
 
-1. Copy basic_threads.c to the directory containing the initial code
+1.  Copy basic\_threads.c to the directory containing the initial code
+
 for this assignment.
-1. Rename it to preempt_threads.c
-2. Change it to include preempt_threads.h rather than basic_threads.h
-3. Modify schedule_threads to match the new signature
 
-* What to do
+1.  Rename it to preempt\_threads.c
+2.  Change it to include preempt\_threads.h rather than basic\_threads.h
+3.  Modify schedule\_threads to match the new signature
 
-** Standalone 1: The Basics
+
+<a id="orgc14b38f"></a>
+
+# What to do
+
+
+<a id="org58e380d"></a>
+
+## Standalone 1: The Basics
 
 We'll start with a straightforward application rather than a test.
 Take a look at what the code does.
 
 You should be able to compile it like this:
 
-: gcc standalone1.c preempt_threads.c -o standalone1
+    gcc standalone1.c preempt_threads.c -o standalone1
 
-If you run it without modifying schedule_threads, you should see
+If you run it without modifying schedule\_threads, you should see
 function 1 run and finish, then function 2 should start and finish.
 This is the expected behavior because there are no yields.
 
 Using the preempt example as a starting point, modify the code in
-preempt_threads.c to use sigalrm to call yield.  If you do it correctly you
+preempt\_threads.c to use sigalrm to call yield.  If you do it correctly you
 should see the 111/222 working calls interleave.
 
-** Standalone 1: Problems
+
+<a id="org2420b5c"></a>
+
+## Standalone 1: Problems
 
 Adjust the wait time of standalone1 to something low (e.g. 5 usecs
 although different systems may require tweaking) and then run it a
@@ -119,17 +157,17 @@ bunch of times.
 
 You may see one of a couple problems, though it won't be consistent:
 
-1. Segmentation faults
-2. Program freezes
-3. The "done" for each thread printing more than once
+1.  Segmentation faults
+2.  Program freezes
+3.  The "done" for each thread printing more than once
 
 These issues are caused by 3 unique problems.  Let's look at the first
 one first.  This is caused by the alarm signal firing at inopportune
 times.  Either:
 
-1. When executing a swapcontext function
-2. In the parent thread, which shouldn't expect sudden yields and so
-   tends to have odd behavior
+1.  When executing a swapcontext function
+2.  In the parent thread, which shouldn't expect sudden yields and so
+    tends to have odd behavior
 
 While setting the wait time low exacerbates these problems, there's
 nothing preventing this from happening with long waits except the fact
@@ -137,20 +175,21 @@ that switches are less frequent, so the errors are harder to find.
 
 So we need to fix this.
 
-** Standalone 1: Segmentation Faults Solution
+
+<a id="org577edb5"></a>
+
+## Standalone 1: Segmentation Faults Solution
 
 We need to disable (i.e. mask) the alarm signal from occurring when it
-is unsafe.  To do that, we'll use code like this...see the appropriate
+is unsafe.  To do that, we'll use code like this&#x2026;see the appropriate
 man pages for details:
 
-#+BEGIN_SRC C
-sigset_t mask;
-sigemptyset (&mask);
-sigaddset (&mask, SIGALRM);
-if(sigprocmask(SIG_BLOCK, &mask, NULL) < 0) {
-    perror ("sigprocmask");
-}
-#+END_SRC
+    sigset_t mask;
+    sigemptyset (&mask);
+    sigaddset (&mask, SIGALRM);
+    if(sigprocmask(SIG_BLOCK, &mask, NULL) < 0) {
+        perror ("sigprocmask");
+    }
 
 You may want to put this in a function.
 
@@ -161,58 +200,60 @@ Whenever you're dealing with preemption issues, you should try to
 codify the rules carefully and make sure you haven't missed any edge
 cases.  Here are the rules to use:
 
-1. Alarm signals should be masked when in the scheduler.  This way you
-   never have to deal with exciting edges cases involving the
-   scheduler yielding to itself.
-2. Alarm signals should be masked when adjusting shared thread
-   structures (e.g. the threads array, the datastructure that keeps 
-   track of which threads are valid, the currently running thread, etc.). 
-   Preemption at these times usually carries the risk of putting these 
-   structures in an inconsistent state.
-3. Alarm signals should be masked before switching contexts
-   (e.g. swapcontext).  An alarm preempting this code while
-   in-progress usually causes all sorts of exciting seg-faults.
-4. One minor non-obvious wrinkle: when you create a thread context
-   object, you probably want alarms to be masked.  This is true even
-   if you know the creation can't be preempted because you haven't
-   started the alarm signal for example.  The reason for this is a new
-   context has a different masking state from its parent, but it's
-   initialized to the same state as the parent.  But if you switch to
-   a context that does not have alarms masked, the switch can be
-   preempted in-progress (after we've switched to the new masking
-   state, but before the switch fully completes).  So by always
-   creating threads in a masked state, we ensure that newly created
-   threads finish starting before alarms can happen.  Of course, we
-   must then unmask before actually running the thread function.
-5. Alarm signals should NOT be masked when running ordinary code in
-   the threads.
-6. You should NOT mask/unmask alarms in your alarm signal handler.
-   This may seem non-obvious because of #2 & #3.
-
-   The reason is twofold: 
-
-   a. A signal handler automatically masks signal of it's own type.
-   So there is no need to mask alarms in the alarm signal handler.
-   However, if you then unmask alarms in the signal handler, you'll
-   override this default behavior which is not desirable.
-   b. Adjusting alarms mask in a signal handler changes the behavior
-   of the signal handler, but not the code returned to after the
-   signal handler.  So unmasking alarms in the signal handler will not
-   mean alarms are unmasked in the code returned to.  Luckily, that
-   code keeps its mask from before the handler was called, which is
-   that alarms are unmasked.
-7. At the end of schedule_threads_with_preempt, you should reenable
-   alarm signals.  But before you do this, ensure that you don't
-   accidentally call your alarm handler because of a pending alarm.
-   Doing this will deregister your alarm handler:
-
-   : signal(SIGALRM, SIG_IGN);
+1.  Alarm signals should be masked when in the scheduler.  This way you
+    never have to deal with exciting edges cases involving the
+    scheduler yielding to itself.
+2.  Alarm signals should be masked when adjusting shared thread
+    structures (e.g. the threads array, the datastructure that keeps 
+    track of which threads are valid, the currently running thread, etc.). 
+    Preemption at these times usually carries the risk of putting these 
+    structures in an inconsistent state.
+3.  Alarm signals should be masked before switching contexts
+    (e.g. swapcontext).  An alarm preempting this code while
+    in-progress usually causes all sorts of exciting seg-faults.
+4.  One minor non-obvious wrinkle: when you create a thread context
+    object, you probably want alarms to be masked.  This is true even
+    if you know the creation can't be preempted because you haven't
+    started the alarm signal for example.  The reason for this is a new
+    context has a different masking state from its parent, but it's
+    initialized to the same state as the parent.  But if you switch to
+    a context that does not have alarms masked, the switch can be
+    preempted in-progress (after we've switched to the new masking
+    state, but before the switch fully completes).  So by always
+    creating threads in a masked state, we ensure that newly created
+    threads finish starting before alarms can happen.  Of course, we
+    must then unmask before actually running the thread function.
+5.  Alarm signals should NOT be masked when running ordinary code in
+    the threads.
+6.  You should NOT mask/unmask alarms in your alarm signal handler.
+    This may seem non-obvious because of #2 & #3.
+    
+    The reason is twofold: 
+    
+    a. A signal handler automatically masks signal of it's own type.
+    So there is no need to mask alarms in the alarm signal handler.
+    However, if you then unmask alarms in the signal handler, you'll
+    override this default behavior which is not desirable.
+    b. Adjusting alarms mask in a signal handler changes the behavior
+    of the signal handler, but not the code returned to after the
+    signal handler.  So unmasking alarms in the signal handler will not
+    mean alarms are unmasked in the code returned to.  Luckily, that
+    code keeps its mask from before the handler was called, which is
+    that alarms are unmasked.
+7.  At the end of schedule\_threads\_with\_preempt, you should reenable
+    alarm signals.  But before you do this, ensure that you don't
+    accidentally call your alarm handler because of a pending alarm.
+    Doing this will deregister your alarm handler:
+    
+        signal(SIGALRM, SIG_IGN);
 
 Modify your code to abide by these rules and you should see the
 signals in Standalone 1 go away.
 
 
-** Standalone 1: What's the deal with the lockup?
+<a id="orgea10935"></a>
+
+## Standalone 1: What's the deal with the lockup?
 
 If you notice a lockup (i.e. program stops outputting and never
 finishes) that's happening rarely, try removing all prints from your
@@ -234,38 +275,41 @@ cases.
 
 So how does this cause your program to lockup?
 
-1. One of the threads acquires the lock and prints
-2. Then the alarm goes off, dropping into the handler which switches
-   the context to the scheduler
-3. The scheduler tries to print a status message, but before the
-   message can be printed it must first acquire the lock.  So it
-   waits.
-4. Unfortunately because it is waiting, it can't actually switch to
-   another thread, meaning that thread from #1 will never run again.
-   The lock can never be freed.
+1.  One of the threads acquires the lock and prints
+2.  Then the alarm goes off, dropping into the handler which switches
+    the context to the scheduler
+3.  The scheduler tries to print a status message, but before the
+    message can be printed it must first acquire the lock.  So it
+    waits.
+4.  Unfortunately because it is waiting, it can't actually switch to
+    another thread, meaning that thread from #1 will never run again.
+    The lock can never be freed.
 
-**** Ok, how can we solve this?
+1.  Ok, how can we solve this?
 
-There are a couple solutions, none of them super satisfactory:
+    There are a couple solutions, none of them super satisfactory:
+    
+    1.  Have all thread code mask alarms before every print, then reenable
+        it afterword
+    2.  Write your own version of printf that does #1, and then make your
+        call to that version of printf rather than the regular one (this is
+        moderately annoying to do with a function like printf that takes a
+        variable number of arguments)
+    3.  Never do any printing in your scheduler
+    
+    Of these, #3 is probably what I would do.  But this won't turn out to
+    matter because of a completely different issue (Weird Printing,
+    below).
 
-1. Have all thread code mask alarms before every print, then reenable
-   it afterword
-2. Write your own version of printf that does #1, and then make your
-   call to that version of printf rather than the regular one (this is
-   moderately annoying to do with a function like printf that takes a
-   variable number of arguments)
-3. Never do any printing in your scheduler
+2.  I have a problem with lockups but not the one mentioned here
 
-Of these, #3 is probably what I would do.  But this won't turn out to
-matter because of a completely different issue (Weird Printing,
-below).
+    That probably indicates a bug in your threading code.  You should fix
+    that.  I recommend using GDB to figure out where things are stuck.
 
-**** I have a problem with lockups but not the one mentioned here
 
-That probably indicates a bug in your threading code.  You should fix
-that.  I recommend using GDB to figure out where things are stuck.
+<a id="orgfacc0f2"></a>
 
-** Standalone 1: Weird printing
+## Standalone 1: Weird printing
 
 This is caused by a major limitation in our threading system.
 
@@ -287,7 +331,7 @@ arbitrary code and run at unexpected times.  For these handlers, there
 is a list of functions that are considered "async-signal-safe"
 (i.e. they can be called in a signal handler because even if they are
 already running, they can be called again).  The list is here
-https://docs.oracle.com/cd/E19455-01/806-5257/gen-26/index.html but
+<https://docs.oracle.com/cd/E19455-01/806-5257/gen-26/index.html> but
 the important thing to know about it is that this is a short list of
 functions.  Normally, folks recommend you do as little as possible in
 signal handlers, basically set a global that other parts of your
@@ -309,7 +353,7 @@ problems).
 Here's what using write to print looks like (note you must specify the
 size of the string you're writing):
 
-: write(STDOUT_FILENO, "222 working\n",12); 
+    write(STDOUT_FILENO, "222 working\n",12); 
 
 If you switch your printf calls to use write, this problem should go
 away (also the locking problem, because async-signal-safety pretty
@@ -319,10 +363,13 @@ should be checking the return of write and depending on that, maybe
 re-run it. We won't require that, but just realize that making code 
 correctly async-signal-safe is a tricky business.
 
-** Standalone 2: Yields, Creates, & Finishes
 
-The second standalone application has threads that call create_new_thread, 
-yield, and finish_thread.  In theory, if your solution works perfectly for 
+<a id="org8626e2b"></a>
+
+## Standalone 2: Yields, Creates, & Finishes
+
+The second standalone application has threads that call create\_new\_thread, 
+yield, and finish\_thread.  In theory, if your solution works perfectly for 
 Standalone 1, these should all continue to work.  In practice, you may
 discover some bugs.
 
@@ -332,16 +379,22 @@ printfs for debugging, because they will not print chronologically
 (i.e. some printfs will print after some writes, even though the call
 to printf occured before the writes).
 
-** Test cases
+
+<a id="org452bfcb"></a>
+
+## Test cases
 
 To compile the test cases
 
-: gcc preempt_tests.c preempt_threads.c CuTest.c -o preempt_tests
+    gcc preempt_tests.c preempt_threads.c CuTest.c -o preempt_tests
 
 If your standalone #1 and #2 work, there shouldn't be much you need to
 do to get the test cases to pass.
 
-* Conclusion
+
+<a id="org4c9602e"></a>
+
+# Conclusion
 
 Submit your assignment in the usual way.
- 
+

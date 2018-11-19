@@ -52,6 +52,11 @@ Note that this function run at the beginning of each test case, so be
 sure to use it to ensure your test cases don't leave data that can
 effect each other.
 
+BUT as you're starting out there's no need to agonize over what to put
+in here.  As you have global data you intend to be initialized before
+each test, add the code here.  As you begin, you can just leave this
+blank.
+
  */
 void initialize_basic_threads() {
 
