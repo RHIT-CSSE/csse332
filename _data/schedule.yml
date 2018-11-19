@@ -23,8 +23,7 @@
     - <b>Lab 1</b> Userspace Threading
   materials: Lab-UserSpaceThread
   other: 
-    - <a href="ClassMaterials/Lab-UserSpaceThread/git_instructions"> Git Instructions</a>
-    - <a href="ClassMaterials/Lab-UserSpaceThread/userspace_threads"> Lab Instruction</a>
+    - <a href="Homework/UserspaceThreadsLab1/"> Lab Instructions</a>
 4:
   reading:
   topics:
@@ -48,8 +47,9 @@
   reading:
   topics:
     - <b>Lab 2</b> Userspace Threading
-  materials: Lab-PreemptThread
-  other: <a href="ClassMaterials/Lab-PreemptThread/preempt_threads"> Lab Instructions</a>
+  materials: 
+  other: 
+    - <a href="Homework/UserspaceThreadsLab2/"> Lab Instructions</a>
 8:
   reading:
     - Chapter 3

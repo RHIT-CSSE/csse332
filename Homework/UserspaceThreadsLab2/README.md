@@ -1,8 +1,12 @@
 ---
 title: Userspace Threads with Preemption
+layout: togit
 ---
 
-# Table of Contents
+# Userspace Threads with Preemption
+----
+
+## Table of Contents
 
 1.  [Introduction](#orgfc71f24)
     1.  [How](#orgb1cd0a7)

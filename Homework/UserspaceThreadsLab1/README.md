@@ -1,9 +1,12 @@
 ---
 title: Userspace Threads
+layout: togit
 ---
 
+# Userspace Threads
+----
 
-# Table of Contents
+## Table of Contents
 
 1.  [Introduction](#orgaaadb60)
     1.  [The Idea](#org5e7ea37)
