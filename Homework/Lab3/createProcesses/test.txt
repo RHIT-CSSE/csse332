@@ -1,0 +1,4 @@
+Creating processes using the fork system call is really a cool thing.  
+It is interesting how we can create processes and pass them programs to run.
+This is really a nice experience.
+Cheers.

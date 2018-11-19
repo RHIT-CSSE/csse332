@@ -1,0 +1,5 @@
+First we learned Python, then C.
+Think the same; press a different key!
+Semi-colons and braces,
+Pointers up to our faces.
+The next topics are malloc and free!
