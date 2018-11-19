@@ -22,7 +22,9 @@
   topics:
     - <b>Lab 1</b> Userspace Threading
   materials: Lab-UserSpaceThread
-  other: <a href="ClassMaterials/Lab-UserSpaceThread/git_instructions"> Git Instructions</a>
+  other: 
+    - <a href="ClassMaterials/Lab-UserSpaceThread/git_instructions"> Git Instructions</a>
+    - <a href="ClassMaterials/Lab-UserSpaceThread/userspace_threads"> Lab Instruction</a>
 4:
   reading:
   topics:
@@ -96,7 +98,7 @@
           - Chapter 6
   topics:
     - CPU Scheduling Algorithms
-  materials: CPU_Scheduling_Algs
+  materials: CPU_Scheduling_Algos
   other:  
 15:
   reading:

@@ -1,0 +1,48 @@
+Be sure to glance at the code submitted by each student to make sure
+it looks sensible.
+
+Look for hard-coding of values or anything that looks weird or unusual.
+
+This assignment is worth 200 points, which should be assigned as follows:
+
+Test 1: Scheduling a single thread once  (40 points)
+Test 2(a): Scheduling 2 threads that each run the same code (16 points)
+Test 2(b): Scheduling 3 threads where 2 run the same code and 1 runs different code (12 points)
+Test 2(interleave): Scheduling 2 threads that interleave their execution (12 points)
+Test 3: Scheduling a thread that creates many quick threads (40 points)
+Test 4: Scheduling threads that each runs a function that takes a parameter (20 points)
+Test 5: Scheduling threads that run functions that don't explicitly call finish_thread (20 points)
+Test 6: Running Test 5 with valgrind to look for memory leaks and other errors (40 points)
+
+Note: You should run the tests one at a time and look at the output for success or failure.
+If you have not already installed valgrind on your computer, be sure to do so before running
+Test 6.
+
+Students should receive some credit for anything that works in their solution.
+Each test should be run individually like so:
+    $ ./run_tests 1
+    $ ./run_tests 2
+    etc.
+
+Note that the test code will actually run tests 1-3 if you say ./run_tests 3,
+for example. If, for example, ./run_tests 3 yields errors, but ./run_tests 2 and 
+./run_tests 1 yield no error, then students should only lose some credit for 
+test 3. 
+
+In the event that students' code segfaults only occasionally, but runs correctly 
+otherwise, award 80% of the points for that case/test.  If the code always segfaults
+or segfaults more than it runs correctly, then glance at the code to see if 
+the implementation suggests that the student knows what they are doing.  If
+there is some evidence of such, award 50% of the points for that case/test. 
+If there's no such evidence, give the student a 0 for that case/test.
+
+If a student indicates that their code works on their machine, ask the student
+to meet with you to investigate the problem.  If it works on their machine to 
+your satisfaction, they can get full credit.
+
+If a student's code does not compile on your machine because they failed to commit
+a header file or some other file, ask the student to meet with you to investigate
+the problem. If it works on their machine to your satisfaction, they can get full 
+credit.
+
+

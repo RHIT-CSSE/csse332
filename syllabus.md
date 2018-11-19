@@ -24,11 +24,9 @@ Moench F212<br>
 
 ### Teaching Assistants
 
-Aaron J Bartee, barteeaj@rose-hulman.edu
-Benjamin David Brubaker, brubakbd@rose-hulman.edu
-JTucker Fredrick Osman, osmantf@rose-hulman.edu
-Gordon Michael Phoon, phoongm@rose-hulman.edu
-Zachary Andrew Taylor, taylorz1@rose-hulman.edu
+Indresh Srivastava,[srivasis@rose-hulman.edu](srivasis@rose-hulman.edu)
+
+Adit Suvarna, [suvarna@rose-hulman.edu](suvarna@rose-hulman.edu)
 
 ### Textbook
 
@@ -49,7 +47,7 @@ Zachary Andrew Taylor, taylorz1@rose-hulman.edu
 #### Electronic Course Materials
 
 * Electronic course materials, including the schedule, may be accessed directly at:
-http://www.rose-hulman.edu/class/csse/csse332/.
+[https://rhit-csse.github.io/csse332](https://rhit-csse.github.io/csse332).
 
 * All grades and assignment feedback will posted on Moodle.
 
