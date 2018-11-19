@@ -1,4 +1,3 @@
-# Introduction
 
 You need to have a working linux installation for this class.  The
 official reference version is Ubuntu 17.10 but other versions of Linux
