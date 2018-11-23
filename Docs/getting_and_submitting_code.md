@@ -1,5 +1,5 @@
 ---
-layout:togit
+layout: togit
 ---
 In 332 you will checkout code via git but you will submit code via Moodle.
 
