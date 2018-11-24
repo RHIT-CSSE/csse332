@@ -22,11 +22,6 @@ Moench F212<br>
 877-8345 (Office)<br>
 [song3@rose-hulman.edu](mailto:song3@rose-hulman.edu)<br>
 
-### Teaching Assistants
-
-Indresh Srivastava,[srivasis@rose-hulman.edu](srivasis@rose-hulman.edu)
-
-Adit Suvarna, [suvarna@rose-hulman.edu](suvarna@rose-hulman.edu)
 
 ### Textbook
 
@@ -59,7 +54,7 @@ It would be to your benefit to do the reading assignments before they are covere
 
 ### Deadlines and Late Policy
 
-All homeworks, labs, and project milestones are due at 11:59PM on the day listed on on the course website.
+The deadlines of all homeworks, labs, and project milestones are listed on on the [schedule](https://rhit-csse.github.io/csse332/schedule.html) page.
 
 In general, you should plan ahead and submit assignments on time. This course has no ’late day’ policy and late assignments are generally worth 0 points unless you have made special arrangements.
 
@@ -72,7 +67,7 @@ However we understand that situations can arise. We handle all situations on a c
 
 ### Homework
 
-Homework assignments are listed on the class schedule. Some homework assignments require code solutions and will be submitted via svn. Others involve paper and pencil solutions and will be handed in during class. Specific submission instructions are included in each homework assignment. Be sure to include your name and any other required information (e.g. collaboration) in each submission.
+Homework assignments are listed on the class schedule. Some homework assignments require code solutions and submission instructions can be found [here](https://github.com/RHIT-CSSE/csse332/blob/master/Docs/getting_and_submitting_code.md). Others involve paper and pencil solutions and will be handed in during class. Submission instructions are included in each homework assignment. Be sure to include your name and any other required information (e.g. collaboration) in each submission.
 
 ### Quizzes
 
@@ -82,7 +77,7 @@ In classes quizzes cannot be made up. However, we will drop your 2 lowest quiz g
 
 ### Laboratories
 
-The labs labs are listed on the on the schedule. Completed labs are submitted via svn.
+The labs labs are listed on the on the schedule.
 
 ### Exams
 
@@ -98,7 +93,6 @@ You must complete the project to pass the course.
 
 Some of the homework, all of the labs, part of each exam, and the final project require programming solutions. Each student is expected to be able to design, build, execute and debug solutions for problems of similar scope.
 
-You must pass the programming portions of the class to pass the course.
 
 ### Grading
 
@@ -110,6 +104,8 @@ Exams|	30%
 Final Project|	40%
 
 Generally, 90-100% is an A, 80-89% is a B, etc.
+
+*NOTE: You must have at least **65%** as the average of the programming portions in the exams to pass the course.*
 
 ### Collaboration, Cheating and Professional Behavior
 
