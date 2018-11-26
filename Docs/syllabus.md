@@ -46,7 +46,7 @@ Moench F212<br>
 
 * All grades and assignment feedback will posted on Moodle.
 
-* Posting questions, discussions, and answers to questions asked are best done on the [course’s Piazza site](https://piazza.com/rose-hulman/spring2018/csse332/home).
+* Posting questions, discussions, and answers to questions asked are best done on the course’s Piazza site.
 
 ### Reading Assignments
 
