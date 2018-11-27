@@ -103,9 +103,10 @@ thread, and then later restore that old process.  We could write all
 that in assembly, but luckily there are some handy unix functions that
 do that kind of thing.
 
+|             |                                                                                           |
 |-------------|-------------------------------------------------------------------------------------------|
 | getcontext  | gets the current state into a ucontext variable, which you can then modify                |
-| makecontext | modifies a context, making it include a function call of your choice                      |
+| makecontext | modifies a context, making it include a function call of your choice                       |
 | swapcontext | stores the current context in a variable, and switches execution to the given new context |
 
 
