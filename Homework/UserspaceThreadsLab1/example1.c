@@ -61,7 +61,12 @@ int main()
 
     printf( "Child done\n" );
 
-    // Free the stack
+    // Note that although we (correctly) free here, freeing correctly
+    // with swapcontext has its wrinkles.
+    //
+    // Go ahead and leak the stack space (i.e. don't bother calling
+    // free) until we can discuss the issue fully in the final test
+    // case
     free( child.uc_stack.ss_sp );
 
     printf( "Child thread returned and stack freed\n" );
