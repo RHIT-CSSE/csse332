@@ -12,7 +12,7 @@ flavor is a little different.
 
 Once it is installed, check out the public course repo:
 
-    git clone git@github.com:RHIT-CSSE/csse332.git
+    git clone https://github.com/RHIT-CSSE/csse332.git
     
 That should check out a complete copy of the 332 source materials
 (including slides, homework code, sample exams, etc.) to your local
