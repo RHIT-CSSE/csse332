@@ -49,7 +49,19 @@ an int unless you cast first.
 
 double number_sum(struct Number* num_array, int size) {
 
-    return 0;
+    double sum;
+    for(int i = 0; i < size; i++) {
+        struct Number *current = num_array + i;
+        if(current->type == 'd') {
+            sum = sum + *((double*) current->value);
+        }
+        if(current->type == '%') {
+            struct Fraction *frac = current->value;
+            double result = (double) frac->numerator/frac->denominator;
+            sum = sum + result;
+        }
+    }
+    return sum;
 }
 
 void test_number_sum(CuTest *tc) {

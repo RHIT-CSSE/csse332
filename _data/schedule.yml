@@ -133,3 +133,46 @@
     - Exam1
   materials: 
   other:  
+20:
+  reading: Section 11.1 - 11.5
+  topics: 
+    - Filesystem Implementation
+  materials: FS_Implementation
+  other:  
+21:
+  reading: 
+  topics: 
+    - Exam 1 Redux
+  materials: 
+  other:  
+22:
+  reading:  Chapter 5
+  topics: 
+    - Process Synchronization
+  materials: ProcessSync
+  other:  
+23:
+  reading:  
+  topics: 
+    - Project Work Time
+  materials:
+  other:  
+24:
+  reading: Chapter 5
+  topics:
+    - Process Synchronization
+    - Semaphores
+  materials: ProcessSyncSemaphore
+  other:  
+25:
+  reading: Chapter 7
+  topics:
+    - Deadlock and Starvation
+  materials: DeadlockStarvation
+  other:  
+26:
+  reading: Chapter 7
+  topics:
+    - Deadlock Avoidance
+  materials: DeadlockAvoidance
+  other:  
