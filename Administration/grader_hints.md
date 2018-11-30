@@ -23,6 +23,21 @@ has a --no-clobber parameter).
 4. Always enter 0s for unsubmitted work (if it's wrong, the student
    will get in contact)
 
+# General grading guidance
+
+Most of your assignments should have rubrics BUT here's a general
+guideline:
+
+
+| Credit %    | Amount of functionality                                              |
+|-------------|----------------------------------------------------------------------|
+| Full credit | Behaves as specifies                                                 |
+| 80%         | One “very small” error that the included test code does not evidence |
+| 50%   | A small error the test code does detect (here we deduct points not so much for the mistake itself, but for the fact that the student was unable to fix the mistake despite tests)  |
+| 25%         | A more or less correct approach but parts missing                    |
+| 0%          | A “large” error or more than one error                               |
+
+
 # Regrade Requests
 
 1. Initially go through you
