@@ -78,8 +78,10 @@
 11:
   reading:
   topics:
-          - <b>Lab 3 MISSING</b> Debugging, Makefile, Queues, Processes 
-  materials: Lab-Process
+          - <b>Lab 3 </b> Debugging, Makefile, Processes 
+  materials: 
+  other:
+    - <a href="Homework/ProcessLab/README"> Lab Instructions</a>
 12:
   reading:
           - Chapter 3
