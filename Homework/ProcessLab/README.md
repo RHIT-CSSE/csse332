@@ -22,7 +22,7 @@ solutions is posted for your convenience.
 
 #### GNU Debugger
 
-Follow the instructions in the `./gdbtutorial.html` to familiarize yourself with using gdb to debug your code.  
+Follow the instructions in the [./gdbtutorial.html](https://rhit-csse.github.io/csse332/Homework/ProcessLab/gdbtutorial) to familiarize yourself with using gdb to debug your code.  
 gdb is a convenient utility that you should use to diagnose and correct 
 bugs in your code.
 

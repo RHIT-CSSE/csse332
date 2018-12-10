@@ -1,0 +1,112 @@
+#+TITLE: Simple Shell
+#+AUTHOR: Buffalo
+#+EMAIL: hewner@rose-hulman.edu
+#+OPTIONS: ^:{}
+#+OPTIONS: html-link-use-abs-url:nil html-postamble:auto
+#+OPTIONS: html-preamble:t html-scripts:t html-style:t
+#+OPTIONS: html5-fancy:f tex:t
+
+* Introduction
+
+This code represents a simple shell.  The shell is the program that
+allows you to run commands on the command line (i.e. the thing you
+type 'cd' and 'gcc blah blah blah' into).  The most famous shell is
+called bash - that's probably the one you're using right now.  Just
+like preferred text editors, unix people tend to have a preferred
+shell (alternatives include zsh, csh).
+
+Right now all this shell does is run commands that you type in.  We're
+going to ask you to add some features.
+
+* What to do
+
+
+** Step 1 (10 points)
+
+We want to be able to run programs in the background (i.e. start up
+one program while another keeps running).  Using fork, modify the code
+so if you prefix a command with ``BG'' it runs that command in the
+background.  That is, if you type:
+
+: BGemacs 
+
+it will open an emacs window and return to the prompt before
+emacs finishes running.  You should be able to run as many background
+commands as you like.
+
+** Step 2 (10 points)
+
+Modify the BG feature so that when a background command finishes
+running, the shell prints out ``Background command finished''.  To do
+this you'll have to add an additional fork - a fork for a parent
+process that uses wait and a fork for its child that runs the actual
+command.
+
+** Step 3 (10 points)
+
+Run your simpleshell, start a program in the background, and run ``ps
+-a''.  How many instances of the program are running?  Next, exit the
+background program, but do not exit \textrm{simpleshell}, and run ``ps
+-a'' again.  You should see something like ``simpleshell <defunct>''.
+Defunct processes are zombie processes as described in class and on
+page 121 of your textbook. 
+[[https://www.howtogeek.com/119815/htg-explains-what-is-a-zombie-process-on-linux/][How-to Geek]]
+has a nice article explaining what zombie processes are. and how to deal
+with them.
+
+To fix this, we need to wait on all our processes that are finishing.
+BUT if we wait too much, we'll end up stalled, waiting on a process
+that hasn't finished yet.  Solution?  The SIGCHILD signal.  This
+signal is sent when a child process finishes.
+
+Add a signal handler for the SIGCHILD signal that increments a count
+of the running zombies.  Then, when the user enters the command "kill
+zombies" wait an appropriate number of times to kill all the currently
+existing zombies.
+
+BTW, as you kill zombies, be sure to mask the SIGCHLD signal to ensure
+you don't end up with a concurrency bug where the count changes as you
+kill.  ALTHOUGH, this doesn't resolve the problem quite 100%...see if
+you can figure out the obscure case where a zombie or two might slip
+through the net.  That's strictly for fun though...to solve that
+problem we'd have to use waitpid instead of wait and let's not open that can
+of worms.
+
+** Follow Specs (15 points)
+
+In order to receive full credit for this assignment, your code must correctly
+implement the specs given in steps 1 to 3, above. When this is graded, we will
+not only look for functionality, but will also look through the code. Some of
+things we will look for are highlighted in the grading rubric that accompanies
+the initial code.
+
+* Common problems
+** My simpleshell processes are not appearing defunct. Why?
+
+It's usually the same issue - your child that prints "Background
+process finished" is not actually exiting.  Instead, it's going back
+into the command processing while(1) loop that it inherited when it
+was forked from its parent.  It won't actually process any commands of
+course because it's not the parent, but it also won't end which means
+it can't be a zombie (you must die first to become a zombie right?).
+
+ 
+To fix this be sure your child exits after printing background process
+finished.
+
+** My zombie count is getting messed up when I use system to start a non background process
+
+So it shouldn't amaze you to know that system actually forks a child
+when you call it, then waits.  But this still triggers a SIGCHLD,
+which increments your zombie count (inappropriately, because you have
+already done the wait).
+
+You might be inclined to mask the signal, but that causes more harm
+than good because when you unmask SIGCHLD will come though.
+
+Instead, just decrement your zombie count to compensate (now I would
+mask SIGCHLD while you update that count variable).
+* Ideas for the future                                             :noexport:
+
+I think we should use exec rather than system.  It's less expressive
+but it'll make the need for the second fork clear.
