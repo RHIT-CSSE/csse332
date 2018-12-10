@@ -40,20 +40,6 @@
 
 int main() {
   // look at forkExample for help!
-  int i = 0;
-  for(i = 0;i < 10; i++){
-          int fresult = fork();
-          if(fresult == 0){
-                  printf("I'm child %d\n",i);
-                  sleep(1);
-                  exit(i);
-          }
-  }
-  int status;
-  for(i = 0;i < 10; i++){
-          wait(&status);
-          printf("One child returns with exit code %d\n",WEXITSTATUS(status));
-  }
   printf("exiting\n");
 
   return 0;
