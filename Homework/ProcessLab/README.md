@@ -1,3 +1,8 @@
+---
+title: Makefile, GDB and Process
+layout: togit
+---
+
 ## Objectives
 
 Following completion of this lab you should be able to:
