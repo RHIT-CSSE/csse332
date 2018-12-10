@@ -67,14 +67,12 @@
   materials: Fork
   other:
 10:
-  reading: 
-   - Chapter 4
-  topics: 
-   - More Threads
-   - Thread Libraries
-   - Threading Issues
-  materials: MoreThreads
-  other:
+  reading:
+          - Chapter 3
+  topics:
+          - Inter Process Communication
+  materials: IPC
+  other:  
 11:
   reading:
   topics:
@@ -83,12 +81,14 @@
   other:
     - <a href="Homework/ProcessLab/README"> Lab Instructions</a>
 12:
-  reading:
-          - Chapter 3
-  topics:
-          - Inter Process Communication
-  materials: IPC
-  other:  
+  reading: 
+   - Chapter 4
+  topics: 
+   - More Threads
+   - Thread Libraries
+   - Threading Issues
+  materials: MoreThreads
+  other:
 13:
   reading:
           - Chapter 6
