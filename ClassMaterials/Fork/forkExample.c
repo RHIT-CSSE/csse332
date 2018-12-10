@@ -13,7 +13,7 @@ int main() {
   } else if (pid == 0) {
     printf("I am the child process\n");
     sleep(1);  // wait 1 second
-    //exit(3);
+    exit(3);
   } else {
     printf("I am the parent process\n");
     int status;
