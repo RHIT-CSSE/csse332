@@ -41,15 +41,15 @@ PROG = author
 # command line \t<command>
 
 ## Build the program from the object files
-$(PROG): main.o author.o
-	$(CC) $(LDFLAGS) main.o author.o -o $(PROG)
+author: main.o author.o
+	gcc main.o author.o -o author
 
 ## Rules for the source files.  They compile each X.c to make X.o
 #
 # NOTE: the reason we include author.h in the compilation of main.o is
 # that if author.h changes, we need to rebuild main.c
 main.o: main.c author.h
-	$(CC) $(CFLAGS) main.c -c -o main.o
+	gcc -g -Wall -ansi main.c -c -o main.o
 
 author.o: author.c author.h
 	$(CC) $(CFLAGS) author.c -c -o author.o
@@ -60,6 +60,8 @@ author.o: author.c author.h
 # STEP 1: The unit tests are going to rely on CuTest.  Make a rule to
 # build CuTest.o and make sure it works by running "make CuTest.o".
 
+CuTest.o : CuTest.c CuTest.h
+	gcc CuTest.c -g -c -o CuTest.o
 
 # STEP 2: Ok.  Now we can build the unit tests.  This requries two
 # things - building the .o file for unittest.c (note that unittest
@@ -69,15 +71,18 @@ author.o: author.c author.h
 # special meaning in STEP 3).  This will require two different rules.
 # Be sure to test as you go!
 
+unittest.o: unittest.c author.h CuTest.h
+	gcc unittest.c -c -g -o unittest.o
 
-
-
+unittest: author.o CuTest.o unittest.o
+	gcc author.o CuTest.o unittest.o -o unittest
 
 # STEP 3: we want a rule test that will not produce a file but just
 # run the unit tests.  That way by just saying "make test" you build
 # anything that needs to build and run all the tests.
 
-
+test: unittest
+	./unittest
 
 
 # STEP 4: let's add a final rule "make all".  This will make and run
@@ -85,7 +90,7 @@ author.o: author.c author.h
 # and try a make all.  You should see it rebuild everything it needs
 # to step by step.
 
-
+all: test author
 
 
 ## Remove all the compilation and debugging files
