@@ -73,33 +73,37 @@ int main(int argc, char** argv)
    
     dest = mmap(NULL, sizeof(float) * WORK_SIZE, PROT_READ | PROT_WRITE, 
 		  MAP_SHARED | MAP_ANONYMOUS, -1, 0);
-    
-    int fresult = fork();
-    if(fresult == 0) {
-        //child handles the odd values
-        for(i=1; i<WORK_SIZE; i+=2) {
-            dest[i] = power(i, i);
+
+    for(int i = 0; i < THREAD_COUNT; i++) {
+        int fresult = fork();
+        if(fresult == 0) {
+            //child handles the odd values
+            for(i=i; i<WORK_SIZE; i+=THREAD_COUNT) {
+                dest[i] = power(i, i);
+            }
+            exit(0);
         }
-        exit(0);
-    } else {
-        //parent handles the even values
-        for(i=0; i<WORK_SIZE; i+=2) {
-            dest[i] = power(i, i);
-        }
+    } 
+    //parent handles the some values too
+    for(i=0; i<WORK_SIZE; i+=THREAD_COUNT) {
+        dest[i] = power(i, i);
+    }
+    for(int i = 1; i < THREAD_COUNT; i++) {
         wait(NULL); // wait for child to finish
     }
+    
 
+    
+    
     gettimeofday(&end, NULL);
     output_time_difference("fork", &start, &end); 
     
     // PART 3: ------------------------use pthreads
 
-    long secs_used,usecs_used;
-
     gettimeofday(&start, NULL);
       
     pthread_t tid[THREAD_COUNT - 1];
-    pthread_t starting_ints[THREAD_COUNT - 1];
+    int starting_ints[THREAD_COUNT - 1];
     
 
     for(int i = 1; i < THREAD_COUNT; i++) {
