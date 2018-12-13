@@ -60,8 +60,6 @@ author.o: author.c author.h
 # STEP 1: The unit tests are going to rely on CuTest.  Make a rule to
 # build CuTest.o and make sure it works by running "make CuTest.o".
 
-CuTest.o : CuTest.c CuTest.h
-	gcc CuTest.c -g -c -o CuTest.o
 
 # STEP 2: Ok.  Now we can build the unit tests.  This requries two
 # things - building the .o file for unittest.c (note that unittest
@@ -71,18 +69,11 @@ CuTest.o : CuTest.c CuTest.h
 # special meaning in STEP 3).  This will require two different rules.
 # Be sure to test as you go!
 
-unittest.o: unittest.c author.h CuTest.h
-	gcc unittest.c -c -g -o unittest.o
-
-unittest: author.o CuTest.o unittest.o
-	gcc author.o CuTest.o unittest.o -o unittest
 
 # STEP 3: we want a rule test that will not produce a file but just
 # run the unit tests.  That way by just saying "make test" you build
 # anything that needs to build and run all the tests.
 
-test: unittest
-	./unittest
 
 
 # STEP 4: let's add a final rule "make all".  This will make and run
@@ -90,7 +81,6 @@ test: unittest
 # and try a make all.  You should see it rebuild everything it needs
 # to step by step.
 
-all: test author
 
 
 ## Remove all the compilation and debugging files
