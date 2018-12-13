@@ -94,7 +94,6 @@ int main(int argc, char** argv)
     
     // PART 3: ------------------------use pthreads
 
-    long secs_used,usecs_used;
 
     gettimeofday(&start, NULL);
       
