@@ -107,8 +107,8 @@ int main(int argc, char** argv)
     
 
     for(int i = 1; i < THREAD_COUNT; i++) {
-        starting_ints[i-1] = i;
-        pthread_create(&tid[i], NULL, threadFun, &starting_ints[i-1]);
+        starting_ints[i - 1] = i;
+        pthread_create(&tid[i - 1], NULL, threadFun, &starting_ints[i - 1]);
     }
 
     int val = 0;
@@ -116,7 +116,7 @@ int main(int argc, char** argv)
     threadFun(&val);
 
     for(int i = 1; i < THREAD_COUNT; i++) {
-        pthread_join(tid[i], NULL);
+        pthread_join(tid[i - 1], NULL);
     }
 
     gettimeofday(&end, NULL);
