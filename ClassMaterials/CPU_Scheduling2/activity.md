@@ -10,7 +10,7 @@ quantum for priority 2 is 4, the quantum for priority 3 is 8.
 We want to schedule 3 processes as described below.  All processes
 start at t = 0.
 
-* Process A will take 5 timeslots and no IO
+* Process A will take 6 timeslots and no IO
 * Process B has one timeslot and then will wait for an IO operation
   that will take 5 timeslots before it renters the ready queue.  After
   that, it will take 4 timeslots of CPU
@@ -46,14 +46,6 @@ CPU is running Process A
 
 
 ## t = 5
-
-
-
-
-
-
-
-## t = 7
 
 
 
