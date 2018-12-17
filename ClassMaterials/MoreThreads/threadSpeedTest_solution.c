@@ -74,7 +74,7 @@ int main(int argc, char** argv)
     dest = mmap(NULL, sizeof(float) * WORK_SIZE, PROT_READ | PROT_WRITE, 
 		  MAP_SHARED | MAP_ANONYMOUS, -1, 0);
 
-    for(int i = 0; i < THREAD_COUNT; i++) {
+    for(int i = 1; i < THREAD_COUNT; i++) {
         int fresult = fork();
         if(fresult == 0) {
             //child handles the odd values
@@ -103,12 +103,13 @@ int main(int argc, char** argv)
     gettimeofday(&start, NULL);
       
     pthread_t tid[THREAD_COUNT - 1];
-    int starting_ints[THREAD_COUNT - 1];
+    int starting_ints[THREAD_COUNT];
     
 
     for(int i = 1; i < THREAD_COUNT; i++) {
         starting_ints[i] = i;
         pthread_create(&tid[i], NULL, threadFun, &starting_ints[i]);
+        /* pthread_create(&tid[i], NULL, threadFun, &i); */
     }
 
     int val = 0;
