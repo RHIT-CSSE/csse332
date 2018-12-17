@@ -93,22 +93,21 @@
   reading:
           - Chapter 6
   topics:
-    - CPU Scheduling
-  materials: CPU_Scheduling
+    - CPU Scheduling 1
+  materials: CPU_Scheduling1
   other:  
 14:
   reading:
           - Chapter 6
   topics:
-    - CPU Scheduling Algorithms
-  materials: CPU_Scheduling_Algos
+    - CPU Scheduling 2
+  materials: CPU_Scheduling2
   other:  
 15:
   reading:
   topics:
           - <b>Lab 4</b> Threads and Semaphore Basics
-  materials: Lab-Semaphore
-  other: <a href="ClassMaterials/Lab-Semaphore/lab4"> Lab Instructions</a>
+  other: <a href="Homework/SemaphoreLab/README"> Lab Instructions</a>
 16:
   reading:
   topics:
