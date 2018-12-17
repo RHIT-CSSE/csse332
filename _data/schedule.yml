@@ -93,15 +93,15 @@
   reading:
           - Chapter 6
   topics:
-    - CPU Scheduling
-  materials: CPU_Scheduling
+    - CPU Scheduling 1
+  materials: CPU_Scheduling1
   other:  
 14:
   reading:
           - Chapter 6
   topics:
-    - CPU Scheduling Algorithms
-  materials: CPU_Scheduling_Algos
+    - CPU Scheduling 2
+  materials: CPU_Scheduling2
   other:  
 15:
   reading:
