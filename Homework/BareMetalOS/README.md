@@ -5,8 +5,6 @@ layout: togit
 
 # Bare Metal Operating System Project
 
-# General Description
-
 In this project you will build a 16-bit bare metal operating system
 from scratch.  Your finished operating system will consist of the
 following components:
