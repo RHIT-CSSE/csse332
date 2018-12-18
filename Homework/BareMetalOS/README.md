@@ -111,7 +111,7 @@ should also have no other warnings.
 # Presentation
 
 Your team will give a 10--15 minute presentation on your project
-during week 10.  Your goals for this presentation
+during week 9.  Your goals for this presentation
 are:
 * Confidently and professionally describe your operating system.
 * Demonstrate how a user of your system could use it to accomplish a
