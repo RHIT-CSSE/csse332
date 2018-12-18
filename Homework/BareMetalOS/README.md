@@ -108,10 +108,10 @@ your code must run, have good style and complete documentation.  It
 should also have no other warnings.
 
 
-# Presentation}
+# Presentation
 
 Your team will give a 10--15 minute presentation on your project
-during lab $9^{\textrm{th}}$ week.  Your goals for this presentation
+during week 10.  Your goals for this presentation
 are:
 * Confidently and professionally describe your operating system.
 * Demonstrate how a user of your system could use it to accomplish a
