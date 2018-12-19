@@ -22,7 +22,7 @@ This is a warm-up milestone intended to get you familiar with the tools
 and simulator that you will use in subsequent milestones.
 
 
-\section{Tools}
+# Tools
 
 You will need the following utilities to complete this and subsequent
 milestones:
