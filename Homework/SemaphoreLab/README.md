@@ -122,7 +122,7 @@ management.
     2.  an input file, (fileIn), and
     3.  an output file, (fileOut),
     
-    in that order. Code in examples/Examples/example7.c shows how to process
+    in that order. [This example](commandLineArgExample.c) shows how to process
     command line arguments.  You might also want to look up the manpages for
     the atoi function, which you can use to convert a string to an integer value.
 
@@ -131,12 +131,11 @@ management.
     average cost of living for various locations. Our goal is to sort
     these values in increasing order.
 
-3.  Use a loop to create n parallel threads (a thread fan similar to
-    the process fan from lab3), distributing the number of values
-    evenly across each thread. You can either distribute the values to
-    each thread in the loop that reads in the file, or read the entire
-    file first and then distribute the values to each thread after the
-    read.
+3.  Use a loop to create n parallel threads, distributing the number
+    of values evenly across each thread. You can either distribute the
+    values to each thread in the loop that reads in the file, or read
+    the entire file first and then distribute the values to each
+    thread after the read.
     
     Note: n is used in the code we provided, however you must create
     storage space for n and set it to the number of threads.
