@@ -113,7 +113,9 @@
   topics:
     - Project Kickoff
   materials: ProjectKickoff
-  other:  
+  other:
+    - <a href="https://docs.google.com/spreadsheets/d/1LOndSGkmqj_sQTuEUWwDuUL4jryyhnDVn2nrHbQcAfc/edit?usp=sharing">Team Signup Spreadsheet</a>
+    - <a href="https://github.com/RHIT-CSSE/csse332/blob/master/Homework/BareMetalOS/m1/GitlabInstructions.md">Repo Setup Instructions</a>
 17:
   reading:
   topics:
