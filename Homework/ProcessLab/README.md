@@ -26,7 +26,7 @@ Follow the instructions in the [./gdbtutorial.html](https://rhit-csse.github.io/
 gdb is a convenient utility that you should use to diagnose and correct 
 bugs in your code.
 
-#### CharsStringsFiles (15 points)
+#### CharsStringsFiles
 
 Checkout the *CharsStringsFiles* project from your repository
 repository onto your local machine.  Type your answers to the 
@@ -342,6 +342,18 @@ When you're done the output should look like this:
     Test Failed: test 3 always fails
     Test Crashed
     Test Timed Out
+
+# Rubric
+
+| Part                                             | Points |
+|--------------------------------------------------|--------|
+| Chars Strings Files (see text for point details) | 15     |
+| Process Step 1                                   | 20     |
+| Process Step 2                                   | 20     |
+| Process Step 3                                   | 15     |
+| Process Step 4                                   | 20     |
+| Process Step 5                                   | 20     |
+| Process Step 6                                   | 35     |
 
 
 
