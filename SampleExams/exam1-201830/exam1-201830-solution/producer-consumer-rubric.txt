@@ -1,0 +1,96 @@
+I have already graded
+
+alawamhm
+amatma
+badenh
+bathtj
+beemanla
+benedib1
+boxetham
+brusniss
+
+Overall guidance
+
+Part 1
+5 points if they used syntax correctly and have some thread running
+5 points if they have 2 threads running, with an approach at communication 
+  that could work, but maybe some bugs.
+5 points if they have it working perfectly
+
+Examples:
+
+10/15 Step2 chunk 0 doesn't start till Step1 chunk 1 ends
+15/15 Uses a semaphore initialized with 0 that posts after production and 
+  waits on construction (might not generalize to step 2 though)
+10/15 segfaults due to semi-obvious bug, but works correctly if fixed
+5/15 some threads created, but program exits because they were not joined
+
+Part 2
+
+MECHANICS
+7 points if they used the mechanics of semaphores correctly
+That is:
+Semaphore is declared in a way all the appropriate parts of the system have 
+  access to it (e.g. a global)
+Semaphore is initialized with sem_init before use, with count set right 
+  (almost certainly to 1)
+Some critical section is protected with a sem_wait followed by a sem_post
+
+
+CORRECTNESS
+We consider 3 measures of correctness:
+
+1.  assuming all the bugs were worked out, it could have produced the correct behavior 
+  (i.e. the approach is a good one)
+2.
+  a) Allows some parallelism in consumers (but maybe has waits inappropriately sometimes)
+  b) Always protects the same chunk from happening twice
+3. It correctly runs for the given test cases (even if you adjust the parameters some)
+
+if none of these 3 categories then 0 points for correctness (even if they seem to have 
+  put forth effort)
+if one of these 3 categories then 4 points
+if it's two of these 3 categories they can get 6 points
+
+8 points only if their solution would work 100% of the time
+
+EXAMPLES:
+
+Array of semaphores, but critical section is just around the actual step2 not selecting 
+  a variable for step2 correctness 0/8
+One thread handles odds, one thread handles evens, but output always looks right correctness 6/8
+Semaphore init happens after threads start -2 mechanics 5/7
+
+
+SOME EXAMPLE FEEDBACK
+
+...just so you can see what I try to give to students
+
+
+Example 1
+
+STEP1 15/15.
+STEP2 7/15
+Correct use of semaphore synatax. +7
+Not really a workable approach
+Has possibility of same chunk being processed twice
+Does not produce correct output
+
+
+Example 2
+
+STEP1 10/15
+Approach pretty cool and innovative
+Bug that caused segfault, works correctly if removed -5
+
+Corrected lines (removed function calls):
+  pthread_create(&thread,NULL,startProd, NULL);
+  pthread_create(&consmthread,NULL,startConsm, NULL);
+
+
+Example 3
+
+beemanla
+STEP1 15/15
+STEP2 15/15 - nice!
+
