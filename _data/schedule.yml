@@ -127,8 +127,8 @@
           - Sects. 10.1-10.3
           - Sect. 10.6
   topics:
-    - Filesystem Interface
-  materials: FS_Interface
+    - Filesystem I
+  materials: Filesystem_1
   other:  
 19:
   reading:
@@ -139,8 +139,8 @@
 20:
   reading: Section 11.1 - 11.5
   topics: 
-    - Filesystem Implementation
-  materials: FS_Implementation
+    - Filesystem II
+  materials: Filesystem_2
   other:  
 21:
   reading: 
