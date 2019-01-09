@@ -1,5 +1,9 @@
 /* Copyright 2016 Rose-Hulman Institute of Technology
 
+
+Compile me like this:
+gcc threadCommander.c -o threadCommander -pthread
+
  */
 #include <stdio.h>
 #include <stdlib.h>
@@ -25,7 +29,7 @@ void *runner(void* ptr) {
 }
 
 int main(void) {
-  struct thread_data * latestThread, newThread;
+  struct thread_data * latestThread, * newThread;
 
   char command[103];
   pthread_t current_tid;
@@ -61,9 +65,9 @@ int main(void) {
       latestThread->shouldRun = 0;
       pthread_join(latestThread->tid, NULL);
       newThread = latestThread->previousThread;
+      printf("Thread %s stopped.\n", latestThread->name);
       free(latestThread);
       latestThread = newThread;
-      printf("Thread %s stopped.\n", threads[nextThread].name);
     }
 
   }
