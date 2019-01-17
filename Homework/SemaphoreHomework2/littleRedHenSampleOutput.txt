@@ -1,0 +1,60 @@
+Sleepy Cat          : Hey, Little Red Hen, make some more bread!
+Little Red Hen      : A fresh batch of bread is ready.
+Sleepy Cat          : Mmm, this loaf is delicious.
+Noisy Yellow Duck   : Mmm, this loaf is delicious.
+Noisy Yellow Duck   : Mmm, this loaf is delicious.
+Lazy Dog            : Mmm, this loaf is delicious.
+Lazy Dog            : Mmm, this loaf is delicious.
+Lazy Dog            : Mmm, this loaf is delicious.
+Lazy Dog            : Mmm, this loaf is delicious.
+Lazy Dog            : Hey, Little Red Hen, make some more bread!
+Little Red Hen      : A fresh batch of bread is ready.
+Lazy Dog            : Mmm, this loaf is delicious.
+Sleepy Cat          : Mmm, this loaf is delicious.
+Sleepy Cat          : Mmm, this loaf is delicious.
+Sleepy Cat          : Mmm, this loaf is delicious.
+Sleepy Cat          : Mmm, this loaf is delicious.
+Sleepy Cat          : Mmm, this loaf is delicious.
+Sleepy Cat          : Mmm, this loaf is delicious.
+Noisy Yellow Duck   : Hey, Little Red Hen, make some more bread!
+Little Red Hen      : A fresh batch of bread is ready.
+Noisy Yellow Duck   : Mmm, this loaf is delicious.
+Lazy Dog            : Mmm, this loaf is delicious.
+Lazy Dog            : Mmm, this loaf is delicious.
+Sleepy Cat          : Mmm, this loaf is delicious.
+Noisy Yellow Duck   : Mmm, this loaf is delicious.
+Noisy Yellow Duck   : Mmm, this loaf is delicious.
+Noisy Yellow Duck   : Mmm, this loaf is delicious.
+Noisy Yellow Duck   : Hey, Little Red Hen, make some more bread!
+Little Red Hen      : A fresh batch of bread is ready.
+Noisy Yellow Duck   : Mmm, this loaf is delicious.
+Noisy Yellow Duck   : Mmm, this loaf is delicious.
+Noisy Yellow Duck   : Mmm, this loaf is delicious.
+Noisy Yellow Duck   : Mmm, this loaf is delicious.
+Noisy Yellow Duck   : Mmm, this loaf is delicious.
+Lazy Dog            : Mmm, this loaf is delicious.
+Lazy Dog            : Mmm, this loaf is delicious.
+Sleepy Cat          : Hey, Little Red Hen, make some more bread!
+Little Red Hen      : A fresh batch of bread is ready.
+Sleepy Cat          : Mmm, this loaf is delicious.
+Noisy Yellow Duck   : Mmm, this loaf is delicious.
+Lazy Dog            : Mmm, this loaf is delicious.
+Lazy Dog            : Mmm, this loaf is delicious.
+Sleepy Cat          : Mmm, this loaf is delicious.
+Sleepy Cat          : Mmm, this loaf is delicious.
+Sleepy Cat          : Mmm, this loaf is delicious.
+Sleepy Cat          : Hey, Little Red Hen, make some more bread!
+Little Red Hen      : A fresh batch of bread is ready.
+Little Red Hen      : I'm fed up with feeding you lazy animals! No more bread!
+Sleepy Cat          : Mmm, this loaf is delicious.
+Noisy Yellow Duck   : Mmm, this loaf is delicious.
+Noisy Yellow Duck   : Mmm, this loaf is delicious.
+Lazy Dog            : Mmm, this loaf is delicious.
+Lazy Dog            : Mmm, this loaf is delicious.
+Sleepy Cat          : Mmm, this loaf is delicious.
+Noisy Yellow Duck   : I've had my fill of bread. Thanks, Little Red Hen!
+Lazy Dog            : Mmm, this loaf is delicious.
+Lazy Dog            : I've had my fill of bread. Thanks, Little Red Hen!
+Sleepy Cat          : I've had my fill of bread. Thanks, Little Red Hen!
+Everything finished.
+

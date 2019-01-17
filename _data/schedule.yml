@@ -179,3 +179,33 @@
     - Deadlock Avoidance
   materials: DeadlockAvoidance
   other:  
+27:
+  reading:
+  topics:
+    - Exam Makeup
+  materials: 
+  other:  
+28:
+  reading:
+  topics:
+    - Deadlock and Recovery
+  materials: 
+  other:  
+29:
+  reading:
+  topics:
+    - Memory
+  materials: 
+  other:  
+30:
+  reading:
+  topics:
+    - Paging and Segmentation
+  materials: 
+  other:  
+31:
+  reading:
+  topics:
+    - Lab/Project Work Time
+  materials: 
+  other:  
