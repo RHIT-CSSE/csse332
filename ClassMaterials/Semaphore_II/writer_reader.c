@@ -5,8 +5,7 @@
 #include<unistd.h>
 
 
-sem_t mutex,writeblock;
-int data = 0,rcount = 0;
+int data = 0;
 
 void *reader(void *arg)
 {
