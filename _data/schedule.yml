@@ -168,16 +168,16 @@
   materials: ProcessSyncSemaphore
   other:  
 25:
-  reading: Chapter 7
+  reading: Chapter 5
   topics:
-    - Deadlock and Starvation
-  materials: DeadlockStarvation
+    - Semaphore Practice
+  materials: Semaphore_II
   other:  
 26:
   reading: Chapter 7
   topics:
-    - Deadlock Avoidance
-  materials: DeadlockAvoidance
+    - Deadlock and Starvation
+  materials: DeadlockStarvation
   other:  
 27:
   reading:
@@ -186,10 +186,10 @@
   materials: 
   other:  
 28:
-  reading:
+  reading: Chapter 7
   topics:
-    - Deadlock and Recovery
-  materials: 
+    - Deadlock Avoidance
+  materials: DeadlockAvoidance
   other:  
 29:
   reading:
