@@ -222,12 +222,12 @@ $table-header-border: 1px solid #FFF;
         background-color: $highlight-color;
       }
     }
-    tr.border_bottom {
+    tr.border_top {
       border: $cell-border;
       &:nth-child(odd) { // highlight the odd rows with a color
         background-color: $highlight-color;
       }
-      border-bottom:3px solid #167F80;
+      border-top:3px solid #167F80;
     }
 
     th {

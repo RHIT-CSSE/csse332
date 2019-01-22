@@ -22,8 +22,8 @@ layout: schedule
       {% endcapture %}
       {% assign style = ""%}
 
-      {% if week contains "3" %}
-      {% assign style = "border_bottom" %}
+      {% if week contains "0" %}
+      {% assign style = "border_top" %}
       {% endif %}
       <tr class="{{ style }}" {% if event.bgcolor %} bgcolor="#{{event.bgcolor}}" {% endif %} >
 
@@ -54,8 +54,8 @@ layout: schedule
       {% endcapture %}
       {% assign style = ""%}
 
-      {% if week contains "3" %}
-      {% assign style = "border_bottom" %}
+      {% if week contains "0" %}
+      {% assign style = "border_top" %}
       {% endif %}
       <tr class="{{ style }}" >
         <td class="center">
