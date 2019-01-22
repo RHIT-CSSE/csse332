@@ -222,6 +222,13 @@ $table-header-border: 1px solid #FFF;
         background-color: $highlight-color;
       }
     }
+    tr.border_bottom {
+      border: $cell-border;
+      &:nth-child(odd) { // highlight the odd rows with a color
+        background-color: $highlight-color;
+      }
+      border-bottom:3px solid #167F80;
+    }
 
     th {
       display: none; // hide all the table header for mobile
@@ -252,16 +259,25 @@ $table-header-border: 1px solid #FFF;
       max-width: 20em;
       &:first-child {
         display: table-cell; // display the first one as a table cell (radio button) for mobile
-        text-align: center;
         border-right: $cell-border;
+        text-align: center;
       }
       @media (min-width: $breakpoint) {
         border: $cell-border;
       }
     }
 
+    
     th, td {
       text-align: left;
+      margin: .5em 1em;
+      @media (min-width: $breakpoint) {
+        display: table-cell; // show the table as a normal table for tablet and desktop
+        padding: 1em;
+      }
+    }
+    td.center {
+      text-align: center;
       margin: .5em 1em;
       @media (min-width: $breakpoint) {
         display: table-cell; // show the table as a normal table for tablet and desktop

@@ -17,7 +17,16 @@ layout: schedule
       {% if site.data.schedule[session.class_num] %}
       {% assign event = site.data.schedule[session.class_num] %}
 
-      <tr {% if event.bgcolor %} bgcolor="#{{event.bgcolor}}" {% endif %} >
+      {% capture week %}
+      {{ session.class_num | minus:1 | modulo:4 }}
+      {% endcapture %}
+      {% assign style = ""%}
+
+      {% if week contains "3" %}
+      {% assign style = "border_bottom" %}
+      {% endif %}
+      <tr class="{{ style }}" {% if event.bgcolor %} bgcolor="#{{event.bgcolor}}" {% endif %} >
+
         <td>
           {{ session.class_num }} <br/> {{ session.date | date: "%a %d %b %Y" }}
         </td>
@@ -40,12 +49,20 @@ layout: schedule
 
       </tr>
       {% else %} <!-- we have a class but it's not is schedule.yml -->
-      <tr>
-        <td>
+      {% capture week %}
+      {{ session.class_num | minus:1 | modulo:4 }}
+      {% endcapture %}
+      {% assign style = ""%}
+
+      {% if week contains "3" %}
+      {% assign style = "border_bottom" %}
+      {% endif %}
+      <tr class="{{ style }}" >
+        <td class="center">
           {{ session.class_num }} <br/> {{ session.date | date: "%a %d %b %Y" }}
         </td>
-        <td>
-          ?? <!-- maybe add class {{ session.class_num }} to schedule.yml -->
+        <td class="center" colspan="3" >
+          N/A <!-- maybe add class {{ session.class_num }} to schedule.yml -->
         </td>
       </tr>
       {% endif %}
