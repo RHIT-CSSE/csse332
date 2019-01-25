@@ -308,7 +308,23 @@ programs that do not have these functions.
 
 Be sure to submit your updated kernel.c and Makefile along with all of
 the files necessary to build from scratch and run your OS to your team
-repository in the the m2 folder.  Please include a comment at the top
-of each file with the name of each team member and your team number.
-In addition, be sure to submit all other deliverables that are
-highlighted on the project’s main page.
+repository in the the m2 folder.  
+
+Your makefile should include:
+1. Compiling the bootloader using nasm
+2. Zeroing the floppy image
+3. Coping bootloader to floppy image
+4. Compile kernel with bcc and  links with kernel.asm
+5. Coping kernel to floppy image in sector 3 and message.txt to sector 30
+
+Your main function should include:
+1. Using printString to display a string to the console
+2. Reading and displaying characters entered with a keyboard
+3. Displaying the string read back to the console at the start of a new line
+4. Using readSector to read the sector that contains message.txt and
+   displays the string to the console
+
+
+Please include a comment at the top of each file with the name of each
+team member and your team number.  In addition, be sure to submit all
+other deliverables that are highlighted on the project’s main page.
