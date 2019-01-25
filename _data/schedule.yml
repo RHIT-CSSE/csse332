@@ -194,19 +194,25 @@
 29:
   reading:
   topics:
-    - Memory
+    - Segmentation
   materials: 
   other:  
 30:
   reading:
   topics:
-    - Paging and Segmentation
+    - Paging
   materials: 
   other:  
 31:
   reading:
   topics:
     - Lab/Project Work Time
+  materials: 
+  other:  
+32:
+  reading:
+  topics:
+    - Page Replacement Algorithms
   materials: 
   other:  
 35:
