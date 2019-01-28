@@ -18,7 +18,7 @@ int main(){
     /* TODO: change data segment to kernel */
     /* addr = 0x06f3; */
     /* interrupt(0x21,0,"Shell printing: ",0,0); */
-    /* change_stack_seg(0x3000); */
+    
     /* interrupt(0x21,0,addr,0,0); */
     while(1)
         ;
