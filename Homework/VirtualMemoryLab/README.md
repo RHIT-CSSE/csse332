@@ -34,7 +34,7 @@ that you can issue commands to and see output:
 
 But when actually use the code for this project we will want for it to
 both take input as C strings and output C strings.  For that, take a
-look at paged_forth.c.  To run the code:
+look at [paged\_forth.c](paged_forth.c).  To run the code:
 
     $ make pagedforth 
     gcc -m32 -ggdb -c paged_forth.c -o paged_forth.o
@@ -45,7 +45,7 @@ look at paged_forth.c.  To run the code:
     OUTPUT: 4999 5000 finished successfully 
     done
 
-The comments in paged_forth.c should be mostly self explanatory, but a
+The comments in [paged\_forth.c](paged_forth.c) should be mostly self explanatory, but a
 few details might help:
 
 1. mmap is mostly a more powerful version of malloc.  We'll be using a
