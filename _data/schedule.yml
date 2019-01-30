@@ -207,8 +207,8 @@
   reading:
   topics:
     - Lab/Project Work Time
-  materials: VirtualMemoryLab
-  other:  
+  materials: 
+  other:  <a href="Homework/VirtualMemoryLab/README"> Lab Instructions</a>
 32:
   reading:
   topics:

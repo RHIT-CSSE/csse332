@@ -1,3 +1,8 @@
+---
+title: Virtual Memory Lab
+layout: togit
+---
+
 # Virtual Memory Lab
 
 In this assignment, we will be augmenting a language virtual machine.
