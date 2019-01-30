@@ -41,7 +41,7 @@ static void handler(int sig, siginfo_t *si, void *unused)
     void* result = mmap((void*) STACKHEAP_MEM_START,
                         getpagesize(),
                         PROT_READ | PROT_WRITE | PROT_EXEC,
-                        MAP_FIXED_NOREPLACE | MAP_SHARED | MAP_ANONYMOUS,
+                        MAP_FIXED | MAP_SHARED | MAP_ANONYMOUS,
                         -1,
                         0);
     if(result == MAP_FAILED) {
