@@ -213,7 +213,19 @@
   reading:
   topics:
     - Page Replacement Algorithms
-  materials: 
+  materials: PageReplacement
+  other:  
+33:
+  reading:
+  topics:
+    - Lab work day
+  materials:
+  other:  
+34:
+  reading:
+  topics:
+    - Advanced Paging
+  materials:
   other:  
 35:
   reading:
