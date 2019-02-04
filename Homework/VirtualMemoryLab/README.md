@@ -180,6 +180,10 @@ most of the work of file operations.
 
 *Take a look at [mmap\_file\_example.c](mmap_file_example.c) for details.*
 
+Note that this example removes MAP_ANONYMOUS from the mmap parameters.
+This is important because anonymous means "not mapping to a disk a file"
+which was true in the first part but is no longer true in part 2.
+
 ## Tracking the oldest
 
 It is important that we select the right page to unmap when a new page
