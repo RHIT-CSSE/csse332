@@ -1,0 +1,11 @@
+-3 code does not compile but it's possible to easily fix
+
+PART 1
+3/8 Starts threads but does not pass parameters
+8/8 Passes parameters in strange but workable way
+
+PART 2
+
+PART 3
+0/4 Has obvious deadlock
+2/4 Correctly avoids deadlock but does not prevent multiple restores on a single intermediate server

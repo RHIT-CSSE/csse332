@@ -208,12 +208,24 @@
   topics:
     - Lab/Project Work Time
   materials: 
-  other:  
+  other:  <a href="Homework/VirtualMemoryLab/README"> Lab Instructions</a>
 32:
   reading:
   topics:
     - Page Replacement Algorithms
-  materials: 
+  materials: PageReplacement
+  other:  
+33:
+  reading:
+  topics:
+    - Lab work day
+  materials:
+  other:  
+34:
+  reading:
+  topics:
+    - Advanced Paging
+  materials:
   other:  
 35:
   reading:
@@ -224,6 +236,12 @@
 39:
   reading:
   topics:
-    - Exam 2
+    - Exam 2 Computer Part
+  materials: 
+  other:  
+40:
+  reading:
+  topics:
+    - Exam 2 Paper Part
   materials: 
   other:  
