@@ -1,0 +1,41 @@
+STEP 1 (4 points, 1 for each item below)
+- Modify the sharedMemoryStruct in shm.h to store 4 coordinates, slope and y-intercept.
+- In main.c create a shared memory region and attach it to address space by calling 
+  appropriate functions from shm.c. (-1/2 if shm.c functions are not called).
+- The shared memory key stored in shm.h should be used. (-1) if this key is not used.
+- Save the coordinates entered by user in the shared memory region.
+
+STEP 2 (3 points, 1 for each item)
+- In main, create a new child process using fork()
+- Check that fork() was successful, quit with error if unsuccessful.
+- Run the solver program in child process with an exec function. No other parameters are needed in exec.
+
+STEP 3 (7 points)
+- (1) solver uses the key in shm.h to locate and attach the shared memory region to its address space. (note it's ok if the student set the key to some other value then the one that was in the original file)
+  (-1 if a different key is used, e.g., key re-declared or or passed as parameter)
+- (1) Read coordinates from shared memory region and display to the console the points representing the
+  coordinates.
+- (2)In solver.c write and use a function to compute the slope of the line segment that joins the points 
+  defined by the coordinate. 
+- (2) In solver write and use a function to compute the y-intercept of the line segment that joins the points 
+  defined by the coordinate. 
+- (-1 If either the slope function or intercept function or both is not defined)
+- (1) In solver, detach the shared memory region from address space by calling detachSharedMemory(ShmPTR)
+   where ShmPTR is a pointer to the shared memory region.
+  Note it's ok if students do not handle the divide by 0 case
+
+STEP 4 (3 points, 1 for each item)
+ - In main, call wait or waitpid in parent process to wait for solver to exit.
+ - Read the slope and y-intercept from shared memory region.
+ - Use slope and intercept to display to the console the equation of the line. 
+
+STEP 5 (3 points)
+ - In main, detach the shared memory region from address space by calling detachSharedMemory(ShmPTR)
+   where ShmPTR is a pointer to the shared memory region.
+ - In main, remove shared memory region by calling removeSharedMemory(ShmID) where ShmID is the ID
+   of the shared memory region.
+- (-1 if correct pointer or ID is not used)
+- (-1 if the appropriate function is not called)
+
+
+Does not use existing code where applicable (-1)

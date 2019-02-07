@@ -1,0 +1,11 @@
+-3 code does not compile but it's possible to easily fix
+
+PART 1
+
+PART 2
+3/7 Correct use of semaphores but does not actually do the right thing
+
+
+PART 3
+0/7 C starts before all Bs are finished
+4/7 Works but uses a busywait eg. while(done < 3) { } 
