@@ -246,4 +246,16 @@ output to a file and then use diff:
 
 You only need to submit paged_forth.c.
 
+# Rubric
+
+To test step 1 we'll update max pages to 10 and test
+
+| Part                                                                      | Points |
+|---------------------------------------------------------------------------|--------|
+| Step 1: manages to catch segfaults                                        | 20     |
+| Step 1: works correctly and matches output                                | 40     |
+| Step 2: produces some files                                               | 15     |
+| Step 2: seems to be swapping pages in and out but not with FIFO algorithm | 15     |
+| Step 2: works correctly and matches output                                | 50     |
+
 
