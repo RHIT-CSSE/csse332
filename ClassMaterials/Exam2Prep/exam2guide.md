@@ -12,7 +12,7 @@ Note that exam contents can change term to term.
 
 You should plan to practice using the [sample exams available here](../../SampleExams/).
 
-Be sure to time yourself (170 minutes to do paper part + computer part)
+Be sure to time yourself (160 minutes to do computer part + 50 minutes to do paper part)
 
 # Paper Part
 
