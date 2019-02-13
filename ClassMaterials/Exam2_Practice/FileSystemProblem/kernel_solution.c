@@ -447,7 +447,7 @@ void writeFile(char *name, char *buffer, int numberOfSectors)
             directory[indir_entry+1] = k;
 
         }else if(j > 25){
-            directory[indir_entry+j-25] = k;
+            directory[indir_entry+j-24] = k;
         }else
             directory[entryPos+i] = k;
 	}
