@@ -1,10 +1,10 @@
 require 'date'
 require 'yaml'
 
-start_date = Date.new(2018, 11, 26)
-end_date = Date.new(2019, 02, 17)
-vacation_start = Date.new(2018, 12, 22) #inclusive
-vacation_end = Date.new(2019, 1, 6) # inclusive
+start_date = Date.new(2019, 03, 4)
+end_date = Date.new(2019, 5, 19)
+vacation_start = Date.new(2019, 4, 6) #inclusive
+vacation_end = Date.new(2019, 4, 14) # inclusive
 allowed_days_of_week = [1,2,3,4] # monday is 1
 
 day_list = []
