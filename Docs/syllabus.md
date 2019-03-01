@@ -12,17 +12,6 @@ Students learn fundamental concepts of modern operating systems by studying how 
 
 It is assumed that students are familiar with the C programming language and are well on their way to being independent programmers (i.e. they have a solid command of the material in CSSE-220 or CSSE-221). It is also assumed that students have an understanding of the material covered in CSSE-132 or CSSE-232 including interrupts and exceptions, the relationship between high-level languages and assembly code, and processor resources such as registers.
 
-### Instructors
-
-Moench F204<br> 
-877-8517 (Office)<br> 
-[hewner@rose-hulman.edu](mailto:hewner@rose-hulman.edu)<br>
-
-Moench F212<br>
-877-8345 (Office)<br>
-[song3@rose-hulman.edu](mailto:song3@rose-hulman.edu)<br>
-
-
 ### Textbook
 
 #### Required
@@ -67,25 +56,29 @@ However we understand that situations can arise. We handle all situations on a c
 
 ### Homework
 
-Homework assignments are listed on the class schedule. Some homework assignments require code solutions and submission instructions can be found [here](https://github.com/RHIT-CSSE/csse332/blob/master/Docs/getting_and_submitting_code.md). Others involve paper and pencil solutions and will be handed in during class. Submission instructions are included in each homework assignment. Be sure to include your name and any other required information (e.g. collaboration) in each submission.
-
-### Quizzes
-
-In class quizzes may be given throughout the term. Quizzes will be distributed at the beginning of class and will be picked up at the end of the lecture.
-
-In classes quizzes cannot be made up. However, we will drop your 2 lowest quiz grades.
-
-### Laboratories
-
-The labs labs are listed on the on the schedule.
+Homework assignments, including Labs, are listed on the class
+schedule. Some homework assignments require code solutions and
+submission instructions can be found
+[here](https://github.com/RHIT-CSSE/csse332/blob/master/Docs/getting_and_submitting_code.md). Others
+involve Moodle or paper and pencil solutions.
 
 ### Exams
 
-There will be two midterm exams. Exams will be reviewed in class.
+There will be 3 skill exams.  Passing *each* exam is required to pass
+the course (unless otherwise specified, passing means getting 65% or
+better).  Each exam will have a makeup and the higher of the two exam
+grades will be used.  However, if you fail both the exam and the
+makeup, you fail the course.
 
 ### Project
 
-During the second half of the course you will build a bare metal operating system. The project description and requirements can be found on the course web page. You will work in teams of four. During weeks 5–10 there will be scheduled project milestones to be delivered by each team. The project will be due in its complete and tested form during the tenth week of the quarter. The project presentations (with accompanying demonstrations) will be held during the tenth week.
+During the second half of the course you will build a bare metal
+operating system. The project description and requirements can be
+found on the course web page. You will work in teams of 2-3. During
+weeks 5–10 there will be scheduled project milestones to be delivered
+by each team. The project will be due in its complete and tested form
+during the tenth week of the quarter. The project presentations (with
+accompanying demonstrations) will be held during the tenth week.
 
 You must complete the project to pass the course.
 
@@ -96,16 +89,16 @@ Some of the homework, all of the labs, part of each exam, and the final project 
 
 ### Grading
 
-Item                          | Weight
-:----------------------------- |:-------
-Quizzes and in class exercises|	5%
-Homework and Labs|	25%
-Exams|	30%
-Final Project|	40%
+| Item          | Weight |
+|:--------------|:-------|
+|               |        |
+| Homework      | 40%    |
+| Exams         | 30%    |
+| Final Project | 30%    |
 
 Generally, 90-100% is an A, 80-89% is a B, etc.
 
-*NOTE: You must have at least **65%** as the average of the programming portions in the exams to pass the course.*
+* NOTE: You must pass each skill exam (usually 65% or better) to pass the course *
 
 ### Collaboration, Cheating and Professional Behavior
 

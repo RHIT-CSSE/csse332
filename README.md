@@ -1,26 +1,15 @@
-## CSSE 332 Operating System
-----
-### Course Description
+---
+layout: togit
+---
 
-Students learn fundamental concepts of modern operating systems by studying how and why operating systems have evolved. Topics include CPU scheduling, process synchronization, memory management, file systems, I/O systems, privacy and security, and performance evaluation. Students implement parts of an operating system as a means of exploring the details of some of these topics.
+## CSSE 332 Operating Systems
 
-*Prerequisite*: (CSSE 220 or CSSE 221) and (CSSE 132 or CSSE 232).
+This is a repository of all course materials (slides, assignments, in
+class code etc).  Feel free to check out this repo and poke around!
 
-### Schedule
+[Instructions for checking out this repo and submitting assignments](Docs/getting_and_submitting_code.md)
 
-| Section    |    Days   | Time                   | Room         |
-|------------|:---------:|------------------------|--------------|
-| Section 01 | MTR <br>W | 1st Hour<br>1-3th Hour | O259<br>O259 |
-| Section 02 |  MTR<br>W | 7rd Hour<br>7-9th Hour | O231<br>O259 |
-| Section 03 |  MTR<br>W | 8rd Hour<br>7-9th Hour | O259<br>O257 |
+[Course Schedule with Due Dates](https://rhit-csse.github.io/csse332/schedule.html)
 
+Check moodle for a directory of all course resources + grades.
 
-### Instructors
-
-Moench F204<br> 
-877-8517 (Office)<br> 
-[hewner@rose-hulman.edu](mailto:hewner@rose-hulman.edu)<br>
-
-Moench F212<br>
-877-8345 (Office)<br>
-[song3@rose-hulman.edu](mailto:song3@rose-hulman.edu)<br>
