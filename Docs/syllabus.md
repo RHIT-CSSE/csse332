@@ -100,6 +100,16 @@ Generally, 90-100% is an A, 80-89% is a B, etc.
 
 * NOTE: You must pass each skill exam (usually 65% or better) to pass the course *
 
+### Handling Grading Issues
+
+Most of the homeworks in this course are graded by TAs.  You should be able to see the TA who graded your assignment on the course schedule AND the grade notification email that Moodle sends should also identify them.  When you have a grading issue, please contact the grading TA first...particularly for issues like:
+
++ The code your submitted works on your computer but not the TAs
++ The TA didn't notice but you actually did do the thing requested, it was just in a different place etc.
++ You submitted the wrong files
+
+If you talk to the grading TA and you disagree with their analysis of your code or you feel the grading standards were unfair (or unfairly applied) please contact your instructor.  We want to help you but everything goes smoother if logistical issues come to the TAs first.
+
 ### Collaboration, Cheating and Professional Behavior
 
 Collaboration is encouraged on homework and laboratories. It is prohibited on all quizzes and exams. When you collaborate, you must properly credit your collaborators and clearly indicate the extent of the collaboration. Working out a solution as a group is acceptable collaboration. Each individual is responsible for understanding the entire solution. For homework, this means that once a group solution has been achieved, each collaborator must rework the problem and write up the solution independently. Copying is not collaboration. Failure to properly acknowledge collaboration can be considered cheating.
