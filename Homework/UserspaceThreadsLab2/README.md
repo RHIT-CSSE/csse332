@@ -22,6 +22,7 @@ layout: togit
     6.  [Standalone 2: Yields, Creates, & Finishes](#org8626e2b)
     7.  [Test cases](#org452bfcb)
 6.  [Conclusion](#org4c9602e)
+6.  [Rubric](#fpp)
 
 
 
@@ -244,6 +245,7 @@ cases.  Here are the rules to use:
     mean alarms are unmasked in the code returned to.  Luckily, that
     code keeps its mask from before the handler was called, which is
     that alarms are unmasked.
+
 7.  At the end of schedule\_threads\_with\_preempt, you should reenable
     alarm signals.  But before you do this, ensure that you don't
     accidentally call your alarm handler because of a pending alarm.
@@ -377,6 +379,21 @@ yield, and finish\_thread.  In theory, if your solution works perfectly for
 Standalone 1, these should all continue to work.  In practice, you may
 discover some bugs.
 
+One common bug has to do with yielding.  So most folks, when initially
+building a solution, call the function yield from their signal
+handler.  This makes sense, but once we need to think about masking an
+issue arises.
+
+  1. If yield is called from a signal handler, then it should NOT mask
+     alarms because you cannot safely unmask alarms from within a
+     signal handler (see rule 6 above)
+  2. If yield is called from user code, it should mask alarms because
+     otherwise we will transition between threads with alarming
+     unmasked.
+     
+Because it is not consistent, we need 2 different yield functions -
+one for calling from the handler and one for calling from user code.
+
 Note that this code uses write to do all it's printing (for the
 reasons discussed above).  Be aware that you should not mix write and
 printfs for debugging, because they will not print chronologically
@@ -402,3 +419,17 @@ do to get the test cases to pass.
 
 Submit your assignment in the usual way.
 
+<a id="foo"></a>
+
+# Rubric
+
+| Part         | Points |
+|:-------------|--------|
+| Standalone 1 | 66     |
+| Standalone 2 | 66     |
+| Test cases   | 68     |
+
+Note that we give partial credit if your code occasionally has issues
+but you addressed the particular problem areas that the lab warns you
+about (particularly the issues noted in Standalone 1: Segmentation
+Faults Solution).
