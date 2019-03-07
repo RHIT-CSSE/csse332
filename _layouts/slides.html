@@ -13,13 +13,17 @@
     </style>
   </head>
   <body>
-    <textarea id="source">
-      {% include_relative {{page.name}} %}
-    </textarea>
+    <div id="source2" style="display: none;">
+      {% include_relative {{page.name}} | escape %}
+    </div>
     <script src="https://remarkjs.com/downloads/remark-latest.min.js">
     </script>
     <script>
-      var slideshow = remark.create();
+      var markdown = document.getElementById('source2').innerHTML;
+      var firstDashes = markdown.indexOf("---");
+      var secondDashes = markdown.indexOf("---", firstDashes + 3);
+      var markdownWithoutHeader = markdown.substring(secondDashes + 3);
+      var slideshow = remark.create({source: markdownWithoutHeader});
     </script>
   </body>
 </html>
