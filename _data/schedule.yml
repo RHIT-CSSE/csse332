@@ -53,6 +53,7 @@
           - <b>Lab 2 </b> Debugging, Makefile, Processes 
   materials: 
   other:
+    - <a href="Homework/ProcessLab/make_tutorial/makefiles">Makefile tutorial</a>
     - <a href="Homework/ProcessLab/README"> Lab Instructions</a>
 8:
   reading:

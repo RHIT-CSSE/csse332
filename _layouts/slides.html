@@ -14,7 +14,10 @@
   </head>
   <body>
     <div id="source2" style="display: none;">
-      {% include_relative {{page.name}} | escape %}
+      {% capture text %}
+      {% include_relative {{page.name}} %}
+      {% endcapture %}
+      {{ text | escape }}
     </div>
     <script src="https://remarkjs.com/downloads/remark-latest.min.js">
     </script>
