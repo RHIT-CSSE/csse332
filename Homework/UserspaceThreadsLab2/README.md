@@ -81,7 +81,7 @@ there will be complications..
 # Read this
 
 This code will require an understanding of signals and signal masks.
-Read [this introduction](sigintro.html).
+Read [this introduction](https://rhit-csse.github.io/csse332/Homework/UserspaceThreadsLab2/sigintro.html).
 
 This was originally from http://titania.ctie.monash.edu.au/signals/
 

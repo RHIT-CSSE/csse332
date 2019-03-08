@@ -1,88 +1,22 @@
-# It can get annoying typing gcc commands every time we compile a 
-# project, especially if the project is large and consists of several
-# files.  Fortunately, there is a utility called "make" that can do 
-# the compiling and linking for us.
-# We only need to tell make what the files in the project are and 
-# how they are related.  Make takes care of the rest.
-# Make is so smart that if we modify a few files in a project, it 
-# only recompiles those modified files and links them in the executable
-# file.
-
-# Running make:
-# Make looks in the current directory for a file called Makefile or
-# makefile for its build instructions. Run make by typing this command
-# at the prompt. 
-# >>> make <target>
-# Makes takes 0 or typically 1 argument, which is a target.  
-
-# Makefile:
-# A makefile is made up of a series of variables and dependency rules 
-
-## Variables:
-## The name of the C compiler.  The default is gcc
-CC = gcc
-
-## List of options to pass to the C compiler for all your source files
-## -g Tells compiler to include extra debugging informaton in its output
-## -Wall Give warnings of constructs that look suspect
-## -ansi gives warnings or errors if the code does not follow ANSI standards
-CFLAGS = -g -Wall -ansi
-
-## A list of options to pass to the linker.  We have an empty list in this
-## case
-LDFLAGS =
-
-## Name the executable program
-PROG = author
-
-# Dependency Rules:
-# A rule generally contains a dependency line and a command line
-# dependency line <target>: <list_of_dependencies>
-# command line \t<command>
-
-## Build the program from the object files
-author: main.o author.o
-	gcc main.o author.o -o author
-
-## Rules for the source files.  They compile each X.c to make X.o
+# So this project has two different executables
 #
-# NOTE: the reason we include author.h in the compilation of main.o is
-# that if author.h changes, we need to rebuild main.c
-main.o: main.c author.h
-	gcc -g -Wall -ansi main.c -c -o main.o
-
-author.o: author.c author.h
-	$(CC) $(CFLAGS) author.c -c -o author.o
-
-
-## We also want to build and run unit tests for author.
+# author - which is built from main.c
+# unittest - which is built from unittest.c
 #
-# STEP 1: The unit tests are going to rely on CuTest.  Make a rule to
-# build CuTest.o and make sure it works by running "make CuTest.o".
+# both executables depend on the author library (author.c/author.h)
+# unitest also depends on the CuTest library (CuTest.c/CuTest.h)
+#
+# Create makefile rules that build both executables
+#
+# make author
+# make unittest
+# make all   <- builds both
+#
+# Your rules should use .o files wherever possible to speed building,
+# and your should never rebuild them unnecessarily.  Be sure you set
+# dependencies on .h files correctly.
 
-
-# STEP 2: Ok.  Now we can build the unit tests.  This requries two
-# things - building the .o file for unittest.c (note that unittest
-# depends on both CuTest.h and author.h) and then linking author.o,
-# CuTest.o, and unittest.o into one executable.  You can name the test
-# executable anything you like, except "test" (that will have a
-# special meaning in STEP 3).  This will require two different rules.
-# Be sure to test as you go!
-
-
-# STEP 3: we want a rule test that will not produce a file but just
-# run the unit tests.  That way by just saying "make test" you build
-# anything that needs to build and run all the tests.
-
-
-
-# STEP 4: let's add a final rule "make all".  This will make and run
-# the unit tests plus build the main executable.  Then modify author.h
-# and try a make all.  You should see it rebuild everything it needs
-# to step by step.
-
-
-
+## Here's a free rule for your convenience
 ## Remove all the compilation and debugging files
 clean: 
-	rm -f core $(PROG) unittest *.o *~
+	rm -f author unittest *.o *~

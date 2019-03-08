@@ -263,37 +263,7 @@ When you've finished the output should look similar to this:
     Test Failed
     Test Passed
 
-
-
-#### Step 5: Stop tests that run forever after 3 seconds
-
-Now that we've moved to processes, we also have the ability to stop
-tests that run in an infinite loop.  We want to add the feature that
-any test that runs longer that 3 seconds will be aborted.
-
-Uncomment test 5 which enters an infinite loop.
-
-The easiest way to do this is to schedule a alarm signal in the child.
-Then I handle that alarm signal to cause a special exit code.
-
-When you finished this the output should look similar to this:
-
-    starting setup
-    starting test 1
-    starting test 2
-    starting test 3
-    starting test 4
-    starting test 5
-    ending test 1
-    ending test 2
-    Test Crashed
-    Test Passed
-    Test Failed
-    Test Passed
-    Test Timed Out
-
-
-#### Step 6: Use pipes to display test errors
+#### Step 5: Use pipes to display test errors
 
 For the final stage, we'll use interprocess communication to pass the
 error result from the child to the parent. 
@@ -336,24 +306,56 @@ When you're done the output should look like this:
     starting test 3
     ending test 2
     starting test 4
+    Test Passed
+    Test Passed
+    Test Failed: test 3 always fails
+    Test Crashed
+
+#### Step 6: Stop tests that run forever after 3 seconds
+
+Now that we've moved to processes, we also have the ability to stop
+tests that run in an infinite loop.  We want to add the feature that
+any test that runs longer that 3 seconds will be aborted.
+
+Uncomment test 5 which enters an infinite loop.
+
+The easiest way to do this is to schedule a alarm signal in the child.
+Then I handle that alarm signal to cause a special exit code.
+
+[You can see an introduction to signals
+here](https://rhit-csse.github.io/csse332/Homework/UserspaceThreadsLab2/sigintro.html),
+though we will discuss them in class soon.
+
+
+When you finished this the output should look similar to this:
+
+    starting setup
+    starting test 1
+    starting test 2
+    ending test 1
+    starting test 3
+    ending test 2
+    starting test 4
     starting test 5
     Test Passed
     Test Passed
     Test Failed: test 3 always fails
     Test Crashed
-    Test Timed Out
+    Test Timed Outa
+
 
 # Rubric
 
 | Part                                             | Points |
 |--------------------------------------------------|--------|
 | Chars Strings Files (see text for point details) | 15     |
+| make problem                                     | 10     |
 | Process Step 1                                   | 20     |
 | Process Step 2                                   | 20     |
 | Process Step 3                                   | 15     |
-| Process Step 4                                   | 20     |
-| Process Step 5                                   | 20     |
-| Process Step 6                                   | 35     |
+| Process Step 4                                   | 15     |
+| Process Step 5                                   | 35     |
+| Process Step 6                                   | 15     |
 
 
 
