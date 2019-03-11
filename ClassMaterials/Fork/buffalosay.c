@@ -6,7 +6,7 @@
 // and also to mic & dwb who I guess created this ascii art to begin
 // with (https://asciiart.website/index.php?art=animals/bison)
 
-void main(int argc, char** argv) {
+int main(int argc, char** argv) {
     if(argc < 2) {
         printf("Not enough arguments!\n");
     } else {
