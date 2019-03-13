@@ -20,6 +20,8 @@ Checkout the `maketutorial` project in the Examples directory
 from your repository onto your local machine. Follow the tutorial.  A
 solutions is posted for your convenience.
 
+Then write a makefile for make_problem (you will submit this one).  Instructions are provided in the Makefile in the make_problem directory.
+
 #### GNU Debugger
 
 Follow the instructions in the [./gdbtutorial.html](https://rhit-csse.github.io/csse332/Homework/ProcessLab/gdbtutorial) to familiarize yourself with using gdb to debug your code.  
@@ -68,10 +70,7 @@ source files and two header files as follows.
       *Data* folder and expected output is captured in
       *EXPECTED\_OUTPUT.txt*.
 
-1. You will complete a makefile to compile 
-  your code for this assignment.
-
-2. (5 points) 
+1. (5 points) 
   `csf-main` does not work as intended.  In fact, in it's
   current state, `csf-main` generates an error when it is run.
   Use gdb to identify which error is received and where.
@@ -79,11 +78,11 @@ source files and two header files as follows.
     2. Where (what line number and which instruction) is the error
     received?
 
-3. (5 points)
+2. (5 points)
   What is the root cause of the error in Problem 1?
   Hint: Use *gdb*.
 
-4. (5 points) %
+3. (5 points) %
   Make the necessary modifications to correct the root cause of the
   error you identified in Problems 1 and 2.  
 
