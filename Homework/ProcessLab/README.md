@@ -252,6 +252,8 @@ Uncomment test 4 in the main which always crashes.
 Then modify your code in run\_all\_tests so that it detects a crash
 and displays an appropriate message.
 
+To detect a crash, you won't be able to look at the status of a crashed process because status is something that only gets set if your process exits normall.  Instead, take a look at WIFEXITED in wait manpage.
+
 When you've finished the output should look similar to this:
 
     starting setup
