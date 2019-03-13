@@ -70,7 +70,9 @@ source files and two header files as follows.
       *Data* folder and expected output is captured in
       *EXPECTED\_OUTPUT.txt*.
 
-When you compile these files, be sure to pass the "-ggdb" flag to gcc or it won't include debugging information.
+When you compile these files, be sure to pass the "-ggdb" flag to gcc or it won't include debugging information.  We're not going to require you to build a makefile or be efficient about this, so the simplest way is something like:
+
+      gcc -ggdb *.c -o csf-main
 
 1. (5 points) 
   `csf-main` does not work as intended.  In fact, in it's
