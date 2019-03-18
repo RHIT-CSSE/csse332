@@ -3,7 +3,33 @@ title: BmOS: Input/Output
 layout: togit
 ---
 
-# Milestone 1
+# BmOS: Input/Output
+
+<!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-refresh-toc -->
+**Table of Contents**
+
+- [BmOS: Input/Output](#bmos-inputoutput)
+- [Objective](#objective)
+    - [-](#--1)
+- [Using the Tools](#using-the-tools)
+    - [Tools](#tools)
+    - [QEMU](#qemu)
+    - [The Bootloader](#the-bootloader)
+- [A Hello World Kernel](#a-hello-world-kernel)
+    - [Compiling kernel.c](#compiling-kernelc)
+- [Makefile](#makefile)
+- [Interrupt 0x10](#interrupt-0x10)
+- [printString](#printstring)
+- [Interrupt 0x16 and readString](#interrupt-0x16-and-readstring)
+- [Interrupt 0x13 and readSector](#interrupt-0x13-and-readsector)
+- [A User Defined Interrupt Handler](#a-user-defined-interrupt-handler)
+- [An Improved User Defined Interrupt Handler](#an-improved-user-defined-interrupt-handler)
+- [Running on a Real Computer (possible, but not worth it)](#running-on-a-real-computer-possible-but-not-worth-it)
+- [Turning It In](#turning-it-in)
+- [Rubric](#rubric)
+
+<!-- markdown-toc end -->
+
 
 # Objective
 

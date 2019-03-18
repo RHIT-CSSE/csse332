@@ -3,7 +3,7 @@ title: BmOS: Filesystem
 layout: togit
 ---
 
-# Milestone 2
+# BmOs: Filesystem
 
 <!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-refresh-toc -->
 **Table of Contents**
@@ -47,7 +47,7 @@ You will use the same utilities you used in the last milestone, and
 you will also need to have completed the previous milestones
 successfully.
 
-This milestone directory includes a new bunch of new files.  Copy your
+This milestone directory includes a new bunch of files.  Copy your
 existing BareMetalOs version from the InputOutput directory into a new
 directory called "Filesystem" and then copy these new files over the
 top.  You'll keep your milestone 1 submission in its own directory to
