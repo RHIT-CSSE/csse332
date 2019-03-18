@@ -124,10 +124,10 @@ Example output:
 # Step 4: Background commands with finish notification
 
 Modify the BG feature so that when a background command finishes
-running, the shell prints out \`\`Background command finished''.  To do
-this you'll have to add an additional fork - a fork for a parent
-process that uses wait and a fork for its child that runs the actual
-command.
+running, the shell prints out "Background command finished".  
+
+This could be implemented with signals, but I'd like you to do it with
+fork/wait.  The shell will start a parent process which will start a child process for executing and then wait for the child to finish and print "Background command finished".
 
     ./simpleshell
     SHELL% BG./donothing
@@ -149,7 +149,7 @@ command.
 # Step 5: Zombies
 
 Run your simpleshell, start a program (e.g emacs or gedit) in the
-background, and NOT IN YOUR SIMPLE SHELL but in some other terminal
+background from your simple shell, and then NOT IN YOUR SIMPLE SHELL but in some other terminal
 run "ps -a".  How many instances of the program are running?  Next,
 exit the background program, but do not exit simpleshell, and NOT IN
 YOUR SIMPLE SHELL run "ps -a" again.  You should see something like
