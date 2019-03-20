@@ -82,6 +82,49 @@
   other: 
     - <a href="Homework/UserspaceThreadsLab2/README"> Lab Instructions</a>
 12:
+  reading:
+          - Chapter 6
+  topics:
+    - CPU Scheduling 1
+  materials: CPU_Scheduling1
+  other:  
+13:
+  reading:
+  topics:
+    - Skills Test Review
+  materials: Exam1Prep
+  other:  
+14:
+  reading:
+  topics:
+    - Fork/Signals/Makefiles skills tests
+  materials: 
+  other:  
+15:
+  reading:
+          - Chapter 6
+  topics:
+    - CPU Scheduling 2
+  materials: CPU_Scheduling2
+  other:  
+
+16:
+  reading:
+          - Sects. 10.1-10.3
+          - Sect. 10.6
+  topics:
+    - Filesystem I
+  materials: Filesystem_1
+  other:  
+
+17:
+  reading: Section 11.1 - 11.5
+  topics: 
+    - Filesystem II
+  materials: Filesystem_2
+  other:  
+    
+18:
   reading: 
    - Chapter 4
   topics: 
@@ -90,47 +133,7 @@
    - Threading Issues
   materials: MoreThreads
   other:
-13:
-  reading:
-          - Chapter 6
-  topics:
-    - CPU Scheduling 1
-  materials: CPU_Scheduling1
-  other:  
-14:
-  reading:
-  topics:
-    - Skills Test Review
-  materials: Exam1Prep
-  other:  
-15:
-  reading:
-  topics:
-    - Fork/Signals/Makefiles skills tests
-  materials: 
-  other:  
-16:
-  reading:
-          - Chapter 6
-  topics:
-    - CPU Scheduling 2
-  materials: CPU_Scheduling2
-  other:  
 
-17:
-  reading:
-          - Sects. 10.1-10.3
-          - Sect. 10.6
-  topics:
-    - Filesystem I
-  materials: Filesystem_1
-  other:  
-18:
-  reading: Section 11.1 - 11.5
-  topics: 
-    - Filesystem II
-  materials: Filesystem_2
-  other:  
 19:
   reading:
   topics:
