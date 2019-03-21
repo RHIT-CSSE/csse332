@@ -401,32 +401,21 @@ want to consider:
 
 
 * Quit command,
-* Clear screen command,
-* Help screen that lists and describes available commands,
 * Print size as a number of sectors for dir command, and
 * Option to change foreground and background colors.
+* Alternative directory structures using inodes
+* Alternative scheduling algorithms
+* Fancy printing libraries
 
 Of course, you can add other features that are not included in this
 partial list.  In order to receive credit for your additoinal
 features, you should describe them in your README file and
 include instructions on how to use each.
 
+# Team Member Feedback
 
-# Reflection
-
-Write a formal, well formatted, edited, 2-4 page document (saved as a
-pdf file in the top level project folder) that describes:
-
-
-1. Known bugs in your project,
-2. Special features (beyond or different from those described in
-  the specifications) that you implemented and how to use them,
-3. Interesting or clever implementation techniques that you used,
-4. Lessons learned from the project experience (complete
-  individually), and
-5. Technical things learned (complete individually).
-
-
+There is a Moodle survey to submit feedback about your teammates.
+Please fill it out.
 
 # Turning It In
 
@@ -436,3 +425,20 @@ explains 1) what you did, and 2) how to verify it.  Please include a
 comment at the top of each file with the name of each team member and
 your team number.  In addition, be sure to submit all other
 deliverables that are highlighted on the project’s main page.
+
+# Rubric
+
+145 Points
+
+| Part                                                                          | Point Value |
+|:------------------------------------------------------------------------------|-------------|
+| some evidence that timer interrupt works (if nothing else, does is print tic) | 10          |
+| Can run phello from shell and do shell stuff at the same time                 | 40          |
+| Can run at least 2 programs in the background + shell                         | 10          |
+| kill works                                                                    | 25          |
+| Execute foreground works                                                      | 25          |
+| Foreground process can execute another foreground process and it works right  | 10          |
+| Team Member Survey (complete on Moodle, individually)                         | 25          |
+
+Extra credit too, just describe it in the readme and we'll evaluate it separately.
+
