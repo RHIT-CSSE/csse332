@@ -1,5 +1,5 @@
 ---
-title: BmOS: Filesystem
+title: BmOS - Filesystem
 layout: togit
 ---
 
@@ -8,7 +8,6 @@ layout: togit
 <!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-refresh-toc -->
 **Table of Contents**
 
-- [Milestone 2](#milestone-2)
 - [Objective](#objective)
 - [Tools](#tools)
 - [The File System](#the-file-system)

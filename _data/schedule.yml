@@ -154,17 +154,17 @@
   materials: ProcessSync
   other:  
 22:
-  reading:  
-  topics: 
-    - Project Work Time
-  materials:
-  other:  
-23:
   reading: Chapter 5
   topics:
     - Process Synchronization
     - Semaphores
   materials: ProcessSyncSemaphore
+  other:  
+23:
+  reading:  
+  topics: 
+    - Project Work Time
+  materials:
   other:  
 24:
   reading: Chapter 5

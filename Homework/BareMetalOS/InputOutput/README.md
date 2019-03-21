@@ -1,5 +1,5 @@
 ---
-title: BmOS: Input/Output
+title: BmOS - Input/Output
 layout: togit
 ---
 

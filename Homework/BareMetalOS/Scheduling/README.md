@@ -1,5 +1,5 @@
 ---
-title: BmOS: Scheduling
+title: BmOS - Scheduling
 layout: togit
 ---
 
@@ -8,7 +8,6 @@ layout: togit
 <!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-refresh-toc -->
 **Table of Contents**
 
-- [BmOs: Scheduling](#bmos-scheduling)
 - [Objective](#objective)
 - [Multitasking](#multitasking)
 - [Memory management](#memory-management)
