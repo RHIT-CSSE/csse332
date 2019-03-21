@@ -1,4 +1,38 @@
-# Milestone 3
+---
+title: BmOS: Filesystem
+layout: togit
+---
+
+# BmOs: Filesystem
+
+<!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-refresh-toc -->
+**Table of Contents**
+
+- [Milestone 2](#milestone-2)
+- [Objective](#objective)
+- [Tools](#tools)
+- [The File System](#the-file-system)
+- [Initial Map and Directory](#initial-map-and-directory)
+- [loadFile](#loadfile)
+- [Load A File And Print It](#load-a-file-and-print-it)
+- [Testing](#testing)
+- [Load A Program And Execute It](#load-a-program-and-execute-it)
+- [A Warning](#a-warning)
+- [Testing](#testing-1)
+- [Terminate Program System Call](#terminate-program-system-call)
+- [The Shell - Making Your Own User Program](#the-shell---making-your-own-user-program)
+    - [Kernel adjustments](#kernel-adjustments)
+    - [Shell Command "type"](#shell-command-type)
+    - [Shell Command "execute"](#shell-command-execute)
+    - [Shell Command "dir"](#shell-command-dir)
+- [Write Sector](#write-sector)
+- [Writing A File](#writing-a-file)
+- [Copying A File](#copying-a-file)
+- [Turning It In](#turning-it-in)
+- [Rubric](#rubric)
+
+<!-- markdown-toc end -->
+
 
 # Objective
 
@@ -11,12 +45,13 @@ execute other programs and print out ASCII text files.
 
 You will use the same utilities you used in the last milestone, and
 you will also need to have completed the previous milestones
-successfully.  Additionally, you will need to update your project
-repository to get the m3 folder, which contains the new kernel.asm,
-map.img, dir.img, lib.asm, loadFile.c, message.txt, tstprg, and
-tstpr2.  Copy the other parts of your solution for the previous
-milestone from the m2 folder into the m3 folder and build upon them.
+successfully.
 
+This milestone directory includes a new bunch of files.  Copy your
+existing BareMetalOs version from the InputOutput directory into a new
+directory called "Filesystem" and then copy these new files over the
+top.  You'll keep your milestone 1 submission in its own directory to
+make everybody's grading life easier.
 
 # The File System
 
@@ -146,6 +181,9 @@ Then:
     ./loadFile message.txt
 
 
+It is also a good idea to test with a file of more than 512 bytes,
+because there are often bugs that only surface when you try and load
+more than one block.  I've included bigmess.txt for this purpose.
 
 # Load A Program And Execute It
 
@@ -327,13 +365,114 @@ Test this by typing "execute tstpr2" at the shell prompt.
 If you are successful, tstpr2 should run, print out its message, and
 then you should get a shell prompt again.
 
+## Shell Command "dir"
+
+Write a shell command "dir".  This command should print out
+the files in the directory. 
+
+# Write Sector
+
+Create a writeSector function in kernel.c to go with
+the readSector function.  Writing sectors is provided by the
+same BIOS call as reading sectors, and is almost identical.  The only
+difference is that AH should equal 3 instead of 2.  Your
+write sector function should be added to interrupt 0x21, and
+should be handled as follows:
+
+
+Write Sector
+* AX = 6
+* BX = address of a character array holding the sector to write
+* CX = the sector number
+
+If you implemented readSector correctly, this step should be
+very simple.
+
+# Writing A File
+
+Add a writeFile function to the kernel that takes three
+arguments, a character array holding the file name, a character array
+holding the file contents, and the number of sectors to be written and
+writes a file to the disk (e.g. void writeFile(char* name,
+  char* buffer, int numberOfSectors)).  Then add writeFile
+to interrupt 0x21 as follows:
+
+Write file:
+* AX = 8
+* BX = address of character array holding the file name
+* CX = address of character array holding the file to be written
+* DX = number of sectors
+
+
+Your function should:
+
+* Load the Map and Directory sectors into separate buffers
+* Find a free directory entry (i.e. one that begins with 0x00)
+* Copy the first six characters of the name to that directory
+  entry.  If the name is less than six bytes, fill in the remaining
+  bytes with 0x00
+* For each sector making up the file:
+  
+    1. Find a free sector by searching through the Map for a 0x00
+    2. Set that sector to 0xFF in the Map
+    3. Add that sector number to the file's directory entry
+    4. Write 512 bytes from the buffer holding the file to that sector
+
+* Fill in the remaining bytes in the directory entry to 0x00
+* Write the Map and Directory sectors back to the disk
+
+
+If there are no free directory entries or insufficient free sectors,
+your writeFile function should just return.
+
+# Copying A File
+
+Write a copy command for the shell.  The copy command should
+have the syntax "copy filename1 filename2".  Without
+deleting filename1, the copy command should create a file with name
+filename2 and copy all the bytes of filename1 to filename2.  Your copy
+command should use only interrupt 0x21s for reading and
+writing files.
+
+You can test this by loading message.txt onto
+floppya.img.  At the shell prompt, type "copy messag
+  m2".  Then type "type m2".  If the contents of
+message.txt print, your copy function most likely works.
+
+You should check the directory and map in floppya.img using
+hexedit after copying to verify that your writing function
+works correctly.
+
+If your copy function works correctly, you should be able to copy
+shell to another file.  Then try executing the duplicate
+shell.  If you get the shell prompt, it works correctly.
+
+It's a good idea to test your copy with a file of more that 512 bytes
+(try bigmess.txt).
 
 # Turning It In
 
 Be sure to submit your updated kernel.c and Makefile along with all of
  the files necessary to build and run your OS to your team repository
- in the the m3 folder.  Be sure to include a README that explains 1)
- what you did, and 2) how to verify it.  Please include a comment at
- the top of each file with the name of each team member and your team
- number.  In addition, be sure to submit all other deliverables that
- are highlighted on the project’s main page.
+ in the the Filesystem folder.
+ 
+Also ensure that your Makefile includes both message.txt and
+bigmess.txt in the floppy image when built in a standard way.
+ 
+# Rubric
+
+Total 160 points
+
+| Part                                                                                                  | Point Value |
+|:------------------------------------------------------------------------------------------------------|-------------|
+| readFile (see note below)                                                                             | 25          |
+| Invokes shell and boot which responds to user input (be sure shell is a seperate program from kernel) | 25          |
+| Type command works (be sure to test it with bigmess.txt)                                              | 30          |
+| Execute command works (-10 if it does not return to shell after)                                      | 25          |
+| Dir command works                                                                                     | 25          |
+| Copy command works (be sure to test it with bigmess.txt)                                              | 30          |
+
+Note: normally the TA's wont test readfile directly, because the shell
+itself and type command can prove it works correctly.  However, if you
+can't get the later steps working but readfile works you can put the
+file dumping code in the kernel and at least get those 25 points.

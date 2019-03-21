@@ -13,7 +13,7 @@ following components:
 * A set of system calls that are made using interrupts
 * A file system
 * The ability to execute a program from a file
-* A command line shell with a minimum of necessary commands (directory listing, type, copy, delete, execute)
+* A command line shell with a minimum of necessary commands (directory listing, type, copy, execute)
 * Multiprocessing and basic memory management
 
 
@@ -25,26 +25,6 @@ project. Although this is a relatively simple "Bare Metal" project,
 you only have five weeks to complete it and there are many components
 that you must complete. You are encouraged to work incrementally and
 consistently in order to be able to complete the project on time.
-
-# Learning Objectives
-
-In the process of completing the final project you will learn to:
-
-* Develop a simple bare metal operating from scratch, in which
-you explore the intricacies of
-    - booting an operating
-    - system calls
-    - file System
-    - process execution
-    - command line shells
-    - multiprocessing
-    - basic memory management
-* Exploit a variety of resources that will facilitate the
-development of the operating system.
-* Work in teams of two to three students to develop the
-operating system.
-* Evaluate your teammates at the end of the project.
-
 
 # Coding Standards
 
@@ -68,7 +48,10 @@ and as86 assembler.
 
 # Project Teams
 
-We will setup a repository on the first day of the project.
+This project will be on teams on 2-3 students.  Your will evaluate
+your teammates at the end of the project.
+
+You will setup a repository on the first day of the project.
 
 Each member of your team is advised to checkout your team repository
 at the start of the project.  Before you edit code, documents, and
@@ -95,32 +78,5 @@ each of the following to your team's repository:
 * The source code
 * A Makefile that builds everything
 * A README file containing:
-  - instructions for building your operating system,
-  - instructions for testing and using the operating system,
+  - make commands that should be used to build and run
   - any bugs or deficiencies
-
-Additional features that you implemented should be described in a
-separate section of your README file. They will be evaluated together
-with the final milestone.
-
-You should be using good process as you go.  Thus, for each milestone,
-your code must run, have good style and complete documentation.  It
-should also have no other warnings.
-
-
-# Presentation
-
-Your team will give a 10--15 minute presentation on your project
-during week 9.  Your goals for this presentation
-are:
-* Confidently and professionally describe your operating system.
-* Demonstrate how a user of your system could use it to accomplish a
-  satisfactory set of tasks.
-* Demonstrate a sampling of the required and optional features that
-  you implemented.
-* Show off cool features that you are proud of.
-* Describe the basic design of your system and discuss the modularity
-  in your design.
-
-Every team member should play a significant role in the delivery of
-your presentation.

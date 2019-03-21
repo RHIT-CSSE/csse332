@@ -1,4 +1,40 @@
-# Milestone 5
+---
+title: BmOS: Scheduling
+layout: togit
+---
+
+# BmOs: Scheduling
+
+<!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-refresh-toc -->
+**Table of Contents**
+
+- [BmOs: Scheduling](#bmos-scheduling)
+- [Objective](#objective)
+- [Multitasking](#multitasking)
+- [Memory management](#memory-management)
+- [Scheduling](#scheduling)
+- [Loading and terminating](#loading-and-terminating)
+- [Tools](#tools)
+- [Timer Interrupt](#timer-interrupt)
+- [Process Table](#process-table)
+- [Load Program](#load-program)
+    - [initializeProgram](#initializeprogram)
+    - [terminate](#terminate)
+    - [setKernelDataSegment](#setkerneldatasegment)
+    - [enableInterrupts](#enableinterrupts)
+- [Scheduling](#scheduling-1)
+    - [Starting Slowly](#starting-slowly)
+    - [Two warnings](#two-warnings)
+    - [Testing](#testing)
+- [Kill Process](#kill-process)
+    - [Testing](#testing-1)
+- [Process Blocking](#process-blocking)
+- [Optional Features](#optional-features)
+- [Reflection](#reflection)
+- [Turning It In](#turning-it-in)
+
+<!-- markdown-toc end -->
+
 
 # Objective
 
@@ -109,13 +145,13 @@ to do other things and the new program runs in the background.
 
 You will use the same utilities you used in the last milestone, and
 you will also need to have completed the previous milestones
-successfully.  Additionally, you will need to update your project
-repository to get the m5 folder, which contains the new
-kernel.asm and lib.asm (which support the timer),
-and phello (a test program).  Copy the other parts of your
-solution for the previous milestone from the m4 folder into
-the m5 folder and build upon them.
+successfully.
 
+This milestone directory includes a new bunch of files.  Copy your
+existing BareMetalOs version from the Filesystem directory into a new
+directory called "Scheduling" and then copy these new files over the
+top.  You'll keep your milestone 1 & 2 submissions in their own
+directory to make everybody's grading life easier.
 
 # Timer Interrupt
 
@@ -185,7 +221,7 @@ parameter, it should launch programs in a free segment.  In
 executeProgram,
 
 1. Search through the process table for a free entry,
-2. Set that entry to \textit{active, and
+2. Set that entry to active, and
 3. Call launchProgram on that entry's segment.
 
 You should change executeProgram so that it takes only one
@@ -254,9 +290,37 @@ run (loop back to the beginning when you get to the end).  Finally, it
 should set currentProcess to that entry, and call
 returnFromTimer with that entry's segment and stack pointer.
 
-If there are no active processes, the scheduler should just call
-returnFromTimer with the segment and stack pointer it was
-called with.
+## Starting Slowly
+
+This particular step can be trixy.  Here's an alternative way to get
+started:
+
+1. have your kernel load 2 different programs into memory initially
+   (likely shell and phello) before turning on the scheduler.
+2. Initially write your scheduler with the assumption that it only
+   needs to swap between process 0 and process 1 (and that both are
+   always active).  This isn't a good assumption of course, but it
+   lets you verify your other code without the more complex round
+   robin stuff.
+   
+Then once you get that working, get the more complete version working.
+
+## Two warnings
+
+1. Always be sure that there is a valid target before you run the
+   scheduler.  Don't start the interrupt handler until you've got a
+   valid shell program fully loaded to switch to.  For similar
+   reasons, always be sure setting a process as valid in the process
+   table is the last thing you do...it's bad news to switch to a
+   program that hasn't been fully copied into memory.
+2. When the interrupt handler is run for the first time, the stack
+   pointer will be pointing to a place on the kernel stack.  This
+   stack pointer is not useful and should not be stored in your
+   process table.  But if you're not careful, it's common to overwrite
+   the stack pointer for processid 0 (usually the shell) the first
+   time the handler is run because currentProcess has been incorrectly
+   initialized to 0.  A better idea is to initialize the
+   currentProcess to -1 and check for that in your handler.
 
 ## Testing
 
@@ -337,32 +401,21 @@ want to consider:
 
 
 * Quit command,
-* Clear screen command,
-* Help screen that lists and describes available commands,
 * Print size as a number of sectors for dir command, and
 * Option to change foreground and background colors.
+* Alternative directory structures using inodes
+* Alternative scheduling algorithms
+* Fancy printing libraries
 
 Of course, you can add other features that are not included in this
 partial list.  In order to receive credit for your additoinal
 features, you should describe them in your README file and
 include instructions on how to use each.
 
+# Team Member Feedback
 
-# Reflection
-
-Write a formal, well formatted, edited, 2-4 page document (saved as a
-pdf file in the top level project folder) that describes:
-
-
-1. Known bugs in your project,
-2. Special features (beyond or different from those described in
-  the specifications) that you implemented and how to use them,
-3. Interesting or clever implementation techniques that you used,
-4. Lessons learned from the project experience (complete
-  individually), and
-5. Technical things learned (complete individually).
-
-
+There is a Moodle survey to submit feedback about your teammates.
+Please fill it out.
 
 # Turning It In
 
@@ -372,3 +425,20 @@ explains 1) what you did, and 2) how to verify it.  Please include a
 comment at the top of each file with the name of each team member and
 your team number.  In addition, be sure to submit all other
 deliverables that are highlighted on the project’s main page.
+
+# Rubric
+
+145 Points
+
+| Part                                                                          | Point Value |
+|:------------------------------------------------------------------------------|-------------|
+| some evidence that timer interrupt works (if nothing else, does is print tic) | 10          |
+| Can run phello from shell and do shell stuff at the same time                 | 40          |
+| Can run at least 2 programs in the background + shell                         | 10          |
+| kill works                                                                    | 25          |
+| Execute foreground works                                                      | 25          |
+| Foreground process can execute another foreground process and it works right  | 10          |
+| Team Member Survey (complete on Moodle, individually)                         | 25          |
+
+Extra credit too, just describe it in the readme and we'll evaluate it separately.
+
