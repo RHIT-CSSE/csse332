@@ -90,24 +90,23 @@
   other:  
 13:
   reading:
-  topics:
-    - Skills Test Review
-  materials: Exam1Prep
-  other:  
-14:
-  reading:
-  topics:
-    - Fork/Signals/Makefiles skills tests
-  materials: 
-  other:  
-15:
-  reading:
           - Chapter 6
   topics:
     - CPU Scheduling 2
   materials: CPU_Scheduling2
   other:  
-
+14:
+  reading:
+  topics:
+    - Skills Test Review
+  materials: Exam1Prep
+  other:  
+15:
+  reading:
+  topics:
+    - Fork/Signals/Makefiles skills tests
+  materials: 
+  other:  
 16:
   reading:
           - Sects. 10.1-10.3
