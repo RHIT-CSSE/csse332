@@ -12,28 +12,25 @@ also using it to submit your homework.
 
 1. Go to this URL:
 
-   https://ada.csse.rose-hulman.edu/hewner/baremetalos
+   https://dev.azure.com and select "Sign in to Azure Devops"
 
-   You'll have to login with your rose credentials.
-2. Click "fork"
-3. Select your name as the namespace
-4. Go to Settings > General > Permissions
-5. Change the Project Visibility to "Private" and press "Save Changes"
-6. Go to Settings > Members
-7. Invite the other members of your team to your project (they may
-   need to login at https://ada.csse.rose-hulman.edu/ so they
-   show up in the list) as Maintainers
-8. Invite the other members of the grading team to your project as
-   Maintainers.  The team should be
+   It should require you to login with your Rose credentials etc.
+2. Click "Create Project" with some appropiate CSSE332 type name
+3. Make the Project private
+4. Click Create
+5. Press the Blue Invite Button
+6. Add all your team members plus the following course personnel
+
    * Michael Hewner
-   * Lixing Song
-   * Indresh Srivastava
+   * JP Mellor
+   * Aaron Bartee
    * Adit Suvarna
-   * Carrie Utter
-9. Find your repo URL.  It should appear beneath your project's name
-   on the main project page.  It should look something like this:
+   * Ruojie Liu
+
+4. Click on "Repos" AND click the "SSH" button. That should give you
+   your repo's URL - it should look something like this:
    
-   https://ada.csse.rose-hulman.edu/XXXXXX/BareMetalOS.git
+        git@ssh.dev.azure.com:v3/hewner/CSSE332%20Test%20Project/CSSE332%20Test%20Project
    
    Go to this spreadsheet and set the URL for your team
    
@@ -43,32 +40,38 @@ also using it to submit your homework.
 
 This step should be done by everyone in your team.
 
-1. In your browser, go to https://ada.csse.rose-hulman.edu and verify
-   that you have access to your project.  Copy the Repo URL.
-2. Type
+1. In your browser, go to https://dev.azure.com and verify that you
+   have access to your project select repos and then click SSH
+2. Below the repo URL, you should see a link saying "Learn more about
+   SSH" click that and then "Set up SSH key authentication".
+3. Following the instructions there should walk you through creating
+   some keys, adding them to your account, and then checking out your
+   (probably empty repos).
+   
+# Step 4: Commiting the starter code
 
-        git clone REPO-URL
+*This step should only be done by one member of your team.*
 
-3. In the future to get changes others have made go to the created directory and type
-
-        git pull
+1. Get the InputOutput directory from the course repository and copy
+   it into your repo
+2. Add the new directory by saying
+   
+        git add InputOutput
         
-# Step 3: Commiting
+3. Make a commit with your new changes
 
-1. When you have made changes and want to commit, first use "git
-   status" to see the files you've changed.
-2. To add a new/changed file to the commit
-
-        git add FILENAME
-        
-3. When you've added all the files, use
-
-        git commit -m "discriptive message about the changes made in this commit"
+        git commit -m "some message (maybe initial code)"
         
 4. To push to the shared repo
 
         git push
+
+5. If everyone on your team does a
+
+        git pull
         
+they should get all the new changes.
+
 To minimize merge conflicts, always pull before you start development
 and push as soon as your done.  Avoid editing files at the same time
 other members are.
