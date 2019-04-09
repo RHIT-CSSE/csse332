@@ -1,0 +1,6 @@
+*.o
+standalone1
+test
+us1tests
+basic_para_tests
+create_para_tests
