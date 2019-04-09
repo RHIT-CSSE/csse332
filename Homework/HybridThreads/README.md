@@ -130,7 +130,7 @@ Make a variable thread local like this:
 
     __thread int current_thread_index;
 
-Now when one of your scheduler threads sets current\_thread\index (or
+Now when one of your scheduler threads sets current\_thread\_index (or
 whatever you called it) it only sets it within their thread.  When a
 yield function reads current\_thread\_index it reads the value for the
 thread it is running in.
@@ -190,7 +190,7 @@ These last three are similar but have to do with creation:
    if you're curious this also has a pretty simple fix)
 
 You can make the non-creation tests pass first before you try and
-implemented the last 3 rules.
+implement the last 3 rules.
 
 There is a simple solution that implements all these rules...and does
 not require a large number of semaphores.  I won't reveal the solution
