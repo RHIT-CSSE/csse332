@@ -88,8 +88,8 @@ Optionally, to start Qemu in a way that makes shutdown relatively easy
 
     qemu-system-i386 -fda floppya.img -device isa-debug-exit,iobase=0xf4,iosize=0x04 -boot order=a &
 
-To test QEMU use test.img.  If you see some non-error message 
-appear in the QEMU window, you are ready to proceed.
+Test QEMU use the included test.img.  If you see some non-error
+message appear in the QEMU window, you are ready to proceed.
 
 
 ## The Bootloader
