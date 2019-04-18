@@ -291,7 +291,7 @@ from a full set of zeros each time, rather than re-editing the same
 image file (which will otherwise accumulate garbage, because your
 compiled kernel will be various lengths).
 
-I've [created a list of 3 makefile tests](makefileTests) to help you
+I've [created a list of 3 makefile tests](makefileTests.md) to help you
 verify that your Makefile has been constructed correctly.
 
 # Interrupt 0x10
@@ -434,7 +434,8 @@ All characters typed are also printed to the screen and BACKSPACE is handled.
 
 Test both input and output by putting this in main:
 
-    char line[80];
+    char line[80]; // Hint: this line needs to be at the top of main
+                   // in ansi C declarations must be at the start of a function
     printString("Enter a line: \0");
     readString(line);
     printString(line);
@@ -622,7 +623,7 @@ this is no longer easy.
 
 Be sure to submit your updated kernel.c and Makefile along with all of
 the files necessary to build from scratch and run your OS to your team
-repository in the the m2 folder.
+repository in the the InputOutput folder.
 
 Your makefile should include:
 1. Compiling the bootloader using nasm
