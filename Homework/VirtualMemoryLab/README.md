@@ -17,6 +17,10 @@ is actually compiled at runtime into assembly language and run
 directly on the CPU.  This is known as Just-In-Time compilation and
 our VM will do something pretty similar.
 
+BTW, you need to be able to compile 32-bit C programs for this lab.  In ubuntu this means installing 2 packages:
+
+    sudo apt-get install gcc-multilib g++-multilib
+
 # Forth
 
 The language our virtual machine will be hosting is known as
