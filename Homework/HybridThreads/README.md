@@ -223,7 +223,7 @@ To test creation:
 
 # Submitting
 
-Submit only hybrid_threads.c.
+Submit hybrid\_threads.c and hybrid\_threads.h.
 
 # Rubric
 
