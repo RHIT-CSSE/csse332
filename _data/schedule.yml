@@ -246,15 +246,17 @@
 37:
   reading:
   topics:
-    - Lab work day
-  materials:
+    - Reference Counting
+  materials: ReferenceCounting
   other:  
+    <a href="ClassMaterials/ReferenceCounting/reference_counting">Reference Counting Slides</a>
 38:
   reading:
   topics:
     - ???
-  materials: 
-  other:  
+  materials:
+  other:
+
 39:
   reading:
   topics:
