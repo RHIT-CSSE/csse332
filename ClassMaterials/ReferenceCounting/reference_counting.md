@@ -103,8 +103,8 @@ but C++ has what we need:
 ---
 # Activity 1
 
-One important part of ref counting schemes is the deletion of one
-object triggers another.
+One important part of ref counting schemes is that the deletion of one
+object triggers the deletion of another.
 
 In the given code:
 
@@ -113,8 +113,8 @@ In the given code:
     holder = nullptr;
 
 Both holder and holder->next are raw pointers and therefore both
-objects the are leaked.  Switch them both to shared\_ptrs and you
-should see both are properly disposed of.  Correct output looks like:
+objects are leaked.  Switch them both to shared\_ptrs and you should
+see both are properly disposed of.  Correct output looks like:
 
     Activity 1
     ExampleObj memory freed
@@ -128,7 +128,7 @@ It has a major problem we'll talk about in a minute.  But that aside:
 
 1. It's pretty cheap to do, resource-wise
 2. It reliably prevents use-after-free issues
-3. I can be mixed with regular pointers
+3. It can be mixed with regular pointers
 4. Memory is freed at the moment a variable goes out of scope, meaning
    you can reliably do stuff on object free
 
