@@ -58,7 +58,7 @@ Initially it might seem inefficient, but it can actually be better to:
 
 ---
 
-Pros:
+## Pros:
 
 + We naturally de-fragment the memory as we move it, meaning that we
   can allocate memory simply by moving a pointer in the large
@@ -69,7 +69,7 @@ Pros:
 + If we really get fancy, we can move related objects close to each
   other and improve our caching performance
 
-Cons:
+## Cons:
 
 + Time spent copying
 + Costs double the memory
@@ -125,10 +125,11 @@ Most moderns GCs do this kind of thing
 
 ---
 
-Pros:
+## Pros:
+
 + No pausing (or at least shorter pauses)
 
-Cons:
+## Cons:
 + Complex algorithms (but workable! just more than this class)
 + Doesn't reduce the work required to be done, just spaces it out over
   time (i.e. you're still in-aggregate paying for that full memory
@@ -138,7 +139,7 @@ Cons:
 
 # What to remember about garbage collection
 
-Cons:
+## Cons:
 
 1. Reliable garbage collection generally requires some pretty
    expensive operations.  We can amortize or use heuristics to improve
@@ -146,7 +147,7 @@ Cons:
 2. Modern GC algorithms are complex so GC can produce pauses at
    unexpected times in your code
 
-Pros:
+## Pros:
 
 1. Reliably eliminates a whole class of bugs and super doesn't matter
    for small/medium programs
