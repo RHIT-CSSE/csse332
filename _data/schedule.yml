@@ -267,5 +267,6 @@
   reading:
   topics:
     - More Garbage Collection
-  materials: 
+  materials: GarbageCollection2 
   other:  
+    <a href="ClassMaterials/GarbageCollection2/garbage_collection">Garbage Collection 2 Slides</a>
