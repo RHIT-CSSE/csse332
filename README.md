@@ -10,3 +10,11 @@ class code etc).  Feel free to check out this repo and poke around!
 
 Check moodle for a directory of all course resources + grades.
 
+## Please Do Not Publish Your Solutions!
+
+It is considered an academic misconduct to publish your solutions to
+the problems in this repo in a public way (e.g. by forking this repo
+and pushing solutions to github).
+
+If you wish to have a personal backup, [it is easy to setup a private
+repo](Docs/making_a_private_repo.md).
