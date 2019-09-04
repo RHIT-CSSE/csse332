@@ -1,3 +1,7 @@
+---
+layout: togit
+---
+
 # How to Make a Personal Git Repo for CSSE332
 
 Given that that materials for CSSE332 are in a github repo, you might
