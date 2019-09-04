@@ -17,4 +17,4 @@ the problems in this repo in a public way (e.g. by forking this repo
 and pushing solutions to github).
 
 If you wish to have a personal backup, [it is easy to setup a private
-repo](Docs/making_a_private_repo.md).
+repo](https://github.com/RHIT-CSSE/csse332/blob/master/Docs/making_a_private_repo.md).
