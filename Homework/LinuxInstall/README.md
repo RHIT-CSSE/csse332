@@ -25,7 +25,7 @@ website](https://www.virtualbox.org/wiki/Downloads)
 You will also want the extension pack, downloaded at the same place.
 
 Install VirtualBox on your system, and [then download this
-file](http://mirror.csse.rose-hulman.edu/.csse332/Ubuntu.ova).
+file](http://mirror.csse.rose-hulman.edu/.csse332/CSSE332.ova).
 
 You should be able to run that file and it should install an
 appropriate virtual machine on your system.  The first time it starts
@@ -68,7 +68,7 @@ installed as well to do the assignments.
 # Turning In
 
 We will verify that you have this installed on the first lab day
-(that's the first Wednesday of class).  PLEASE do this beforehand and
+(look at the schedule to see exactly when).  PLEASE do this beforehand and
 do not plan to do it in lab - there will be too many people, it will
 overload the wireless, and then you won't get help on your first
 assignment.
