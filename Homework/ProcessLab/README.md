@@ -6,21 +6,12 @@ layout: togit
 ## Objectives
 
 Following completion of this lab you should be able to:
-* Create and use a Makefile to compile code.  
 * Use the GNU Debugger, gdb, to debug your code.
 * Implement a queue data structure in C.
 * Use the *fork* system call to spawn child processes.
 * Explain process creation, process termination and process management.
 
 ### Tasks
-
-#### Makefile
-
-Checkout the `maketutorial` project in the Examples directory
-from your repository onto your local machine. Follow the tutorial.  A
-solutions is posted for your convenience.
-
-Then write a makefile for make_problem (you will submit this one).  Instructions are provided in the Makefile in the make_problem directory.
 
 #### GNU Debugger
 
@@ -354,7 +345,6 @@ When you finished this the output should look similar to this:
 | Part                                             | Points |
 |--------------------------------------------------|--------|
 | Chars Strings Files (see text for point details) | 15     |
-| make problem                                     | 10     |
 | Process Step 1                                   | 20     |
 | Process Step 2                                   | 20     |
 | Process Step 3                                   | 15     |
