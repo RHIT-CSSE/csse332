@@ -52,11 +52,6 @@ void cleanup() {
     exit(0);
 }
 
-
-/*  The main function has to intercept the SIGINT signal generated when we type Ctrl-C .
-    For the rest of the time, it just executes the rest of the code,
-    printing a message once a second.  */
-
 int main() 
 {
     part1();
