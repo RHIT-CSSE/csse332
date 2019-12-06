@@ -28,38 +28,19 @@ this:
 
 Note it will not actually run emacs - that will be part of your job.
 
-# Step 1: Makefile
+# Building
 
-We've actually given you 2 c files here: simpleshell.c and
-donothing.c.  To compile them by hand:
+We've provided a Makefile for this project, so they only thing you
+should need to do to build is type
 
-    $ gcc simpleshell.c -o simpleshell
-    $ gcc donothing.c -o donothing
+    $ make
     
-Write a Makefile that compiles these two executables.  For practice,
-please design your Makefile to compile them in two steps
-(compile/link)- produce simpleshell.o and donothing.o then compile
-that into the final binary. Each binary depends on only one .o so
-there's not a benefit to the 2-step process in this case.  However
-compile/link is the traditional way c programs are compiled and it's
-worth getting familiar with it.
+to build both simpleshell and donothing.  If you make changes, typing
+make should rebuild just what is needed.
 
-Here's my example output:
+We'll discuss how this works in the last step.
 
-    $ make clean <=== NOTE: you don't have to have this rule but it's handy
-    rm -f simpleshell donothing *.o
-    $ make simpleshell
-    gcc -c simpleshell.c
-    gcc simpleshell.o -o simpleshell
-    $ make donothing.o <=== NOTE: you should make the .o seperate rules so they can be build individually
-    gcc -c donothing.c
-    $ make donothing
-    gcc donothing.o -o donothing
-    $ make donothing
-    make: 'donothing' is up to date.
-
-
-# Step 2: Execute foreground commands
+# Step 1: Execute foreground commands
 
 Modify the given simpleshell code so it actually runs the commands.
 You should use one of the variants of exec we discussed in class (I
@@ -90,7 +71,7 @@ about what arguments it was called with.
     Do nothing program finished!
     SHELL% ^C
 
-# Step 3: Basic background commands
+# Step 2: Basic background commands
 
 We want to be able to run programs in the background (i.e. start up
 one program while another keeps running).  Using fork, modify the code
@@ -121,13 +102,13 @@ Example output:
     ^C
 
 
-# Step 4: Background commands with finish notification
+# Step 3: Background commands with finish notification
 
 Modify the BG feature so that when a background command finishes
-running, the shell prints out \`\`Background command finished''.  To do
-this you'll have to add an additional fork - a fork for a parent
-process that uses wait and a fork for its child that runs the actual
-command.
+running, the shell prints out "Background command finished".  
+
+This could be implemented with signals, but I'd like you to do it with
+fork/wait.  The shell will start a parent process which will start a child process for executing and then wait for the child to finish and print "Background command finished".
 
     ./simpleshell
     SHELL% BG./donothing
@@ -146,10 +127,10 @@ command.
     Background command finished
 
 
-# Step 5: Zombies
+# Step 4: Zombies
 
 Run your simpleshell, start a program (e.g emacs or gedit) in the
-background, and NOT IN YOUR SIMPLE SHELL but in some other terminal
+background from your simple shell, and then NOT IN YOUR SIMPLE SHELL but in some other terminal
 run "ps -a".  How many instances of the program are running?  Next,
 exit the background program, but do not exit simpleshell, and NOT IN
 YOUR SIMPLE SHELL run "ps -a" again.  You should see something like
@@ -168,7 +149,7 @@ that hasn't finished yet.  Solution?  The SIGCHILD signal.  This
 signal is sent when a child process finishes.
 
 Add a signal handler for the SIGCHILD signal that calls wait.  This
-will prevent zombies from occurring.  
+will prevent zombies from occurring.
 
 This solution also introduces a bug - now if you execute a background
 process, then a foreground process, you'll cause a double wait that
@@ -177,9 +158,22 @@ are more sophisticated solutions that will solve this problem, but
 they're beyond the scope of this assignment - we'll leave it at that
 for now.
 
+# Step 5: Makefiles
+
+We'll talk about makefiles in class one day, so if that hasn't
+happened yet you might consider waiting.  But if not, all the
+materials plus an activity are in the make\_tutorial directory.
+
+Once you've gone through that stuff you should be able to look at the
+Makefile we provided and understand it.
+
+Now we'd like you to build a makefile for a more complicated project.
+Go into the make\_problem directory and follow the instructions in
+that Makefile.
+
 # Conclusion
 
-Submit your Makefile and simpleshell.c in the usual way.
+Submit your simpleshell.c and the Make problem makefile in the usual way.
 
 # Common problems
 
@@ -199,9 +193,8 @@ finished.
 
 |                         | Points | Notes                                                                                |
 |:------------------------|--------|--------------------------------------------------------------------------------------|
-| S1: Makefile            | 15     | make sure it builds .o files with their own rules                                    |
-| S2: Foreground Commands | 15     | check arguments with donothing<br>should use exec<br>should not quit after first run |
-| S3: Background Commands | 15     |                                                                                      |
-| S4: Finish notification | 10     | check for use of exec and proper exit of printing process (e.g. common probs)        |
-| S5: Zombies             | 15     | be sure your run ps outside of simple shell                                          |
-
+| S1: Foreground Commands | 15     | check arguments with donothing<br>should use exec<br>should not quit after first run |
+| S2: Background Commands | 15     |                                                                                      |
+| S3: Finish notification | 10     | check for use of exec and proper exit of printing process (e.g. common probs)        |
+| S4: Zombies             | 15     | be sure your run ps outside of simple shell                                          |
+| S5: Makefile            | 15     | make sure it builds .o files with their own rules                                    |

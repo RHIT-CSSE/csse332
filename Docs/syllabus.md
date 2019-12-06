@@ -54,7 +54,7 @@ However we understand that situations can arise. We handle all situations on a c
 * We keep track of extensions per student and if you seem to be overusing the privilege we will stop allowing extensions.
 * If the reason you are late is because you are having trouble completing the assignment (e.g. a bug you can’t fix or just difficulty understanding) get help from an instructor. Don’t assume that more time will fix the problem; plan to get help.
 
-### Homework
+### Homework Assignments/Labs
 
 Homework assignments, including Labs, are listed on the class
 schedule. Some homework assignments require code solutions and
@@ -62,39 +62,38 @@ submission instructions can be found
 [here](https://github.com/RHIT-CSSE/csse332/blob/master/Docs/getting_and_submitting_code.md). Others
 involve Moodle or paper and pencil solutions.
 
+There are ~9 "regular" programming assignments, plus assorted Moodle
+quizzes and minor assignments (you can see the exact weight of
+everything in Moodle).  These assignments are integral to your
+understanding of OS - skipping them can make passing the exams quite
+hard.
+
+There are also 6 ADVANCED assignments.  Advanced assignments generally
+involve trickier programming but explore more interesting topics.
+Despite the fact that they are harder, the advanced assignments are
+actually weighted slightly less than regular assignments.  If you're
+willing to accept a C in the course, you don't have to do any advanced
+assignments.  BUT it's our hope everyone will attempt at least some of
+the advanced assignments, and those looking for an A will need to
+complete all (or nearly all of them).
+
 ### Exams
 
-There will be 3 skill exams.  Passing *each* exam is required to pass
+There will be 2 skill exams.  Passing *each* exam is required to pass
 the course (unless otherwise specified, passing means getting 65% or
 better).  Each exam will have a makeup and the higher of the two exam
 grades will be used.  However, if you fail both the exam and the
 makeup, you fail the course.
 
-### Project
-
-During the second half of the course you will build a bare metal
-operating system. The project description and requirements can be
-found on the course web page. You will work in teams of 2-3. During
-weeks 5–10 there will be scheduled project milestones to be delivered
-by each team. The project will be due in its complete and tested form
-during the tenth week of the quarter. The project presentations (with
-accompanying demonstrations) will be held during the tenth week.
-
-You must complete the project to pass the course.
-
-### Programming Problems
-
-Some of the homework, all of the labs, part of each exam, and the final project require programming solutions. Each student is expected to be able to design, build, execute and debug solutions for problems of similar scope.
-
-
 ### Grading
 
-| Item          | Weight |
-|:--------------|:-------|
-|               |        |
-| Homework      | 40%    |
-| Exams         | 30%    |
-| Final Project | 30%    |
+| Item                  | Weight |
+|:----------------------|:-------|
+|                       |        |
+| Assignments/Labs      | 50%    |
+| ADVANCED  Assignments | 25%    |
+| Exams                 | 25%    |
+
 
 Generally, 90-100% is an A, 80-89% is a B, etc.
 

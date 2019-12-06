@@ -6,19 +6,12 @@ layout: togit
 ## Objectives
 
 Following completion of this lab you should be able to:
-* Create and use a Makefile to compile code.  
 * Use the GNU Debugger, gdb, to debug your code.
 * Implement a queue data structure in C.
 * Use the *fork* system call to spawn child processes.
 * Explain process creation, process termination and process management.
 
 ### Tasks
-
-#### Makefile
-
-Checkout the `maketutorial` project in the Examples directory
-from your repository onto your local machine. Follow the tutorial.  A
-solutions is posted for your convenience.
 
 #### GNU Debugger
 
@@ -68,10 +61,11 @@ source files and two header files as follows.
       *Data* folder and expected output is captured in
       *EXPECTED\_OUTPUT.txt*.
 
-1. You will complete a makefile to compile 
-  your code for this assignment.
+When you compile these files, be sure to pass the "-ggdb" flag to gcc or it won't include debugging information.  We're not going to require you to build a makefile or be efficient about this, so the simplest way is something like:
 
-2. (5 points) 
+      gcc -ggdb *.c -o csf-main
+
+1. (5 points) 
   `csf-main` does not work as intended.  In fact, in it's
   current state, `csf-main` generates an error when it is run.
   Use gdb to identify which error is received and where.
@@ -79,11 +73,11 @@ source files and two header files as follows.
     2. Where (what line number and which instruction) is the error
     received?
 
-3. (5 points)
+2. (5 points)
   What is the root cause of the error in Problem 1?
   Hint: Use *gdb*.
 
-4. (5 points) %
+3. (5 points) %
   Make the necessary modifications to correct the root cause of the
   error you identified in Problems 1 and 2.  
 
@@ -249,6 +243,8 @@ Uncomment test 4 in the main which always crashes.
 Then modify your code in run\_all\_tests so that it detects a crash
 and displays an appropriate message.
 
+To detect a crash, you won't be able to look at the status of a crashed process because status is something that only gets set if your process exits normall.  Instead, take a look at WIFEXITED in wait manpage.
+
 When you've finished the output should look similar to this:
 
     starting setup
@@ -349,7 +345,6 @@ When you finished this the output should look similar to this:
 | Part                                             | Points |
 |--------------------------------------------------|--------|
 | Chars Strings Files (see text for point details) | 15     |
-| make problem                                     | 10     |
 | Process Step 1                                   | 20     |
 | Process Step 2                                   | 20     |
 | Process Step 3                                   | 15     |

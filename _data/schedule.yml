@@ -1,15 +1,5 @@
 1:
   reading:
-    - Bookmark this page
-    - <a href="syllabus">Syllabus</a>
-    - Chapter 1
-  topics:
-    - Course overview
-    - Introduction to Operating System
-  materials: IntroToOS
-  other:
-2:
-  reading:
   topics:
           - Void Pointers
           - Malloc and Free
@@ -17,20 +7,29 @@
 
   materials: C_Pointers
   other: <a href="https://repl.it/@hewner/VoidMallocFPActivity"> In-Class Coding </a>
-3:
+2:
   reading:
   topics:
-    - <b>Lab 1</b> Userspace Threading
+    - <b>Lab</b> Userspace Threading
   materials:
   other: 
     - <a href="Homework/UserspaceThreadsLab1/README"> Lab Instructions</a>
     - <a href="Docs/getting_and_submitting_code"> Getting and submitting code</a>
+3:
+  reading:
+    - Bookmark this page
+    - <a href="syllabus">Syllabus</a>
+    - Chapter 1
+  topics:
+    - Introduction to class
+    - Process basics
+  materials: IntroToOS
+  other:
 4:
   reading:
-    - Chapter 3
   topics:
-    - Process Intro
-  materials: IntroToProcess
+    - Signals
+  materials: Signals
   other:
 5:
   reading:
@@ -42,54 +41,52 @@
   other:
 6:
   reading:
+  topics:
+          - <b>Lab</b> Simple Shell
+  materials: 
+  other:
+7:
+  reading:
+  topics:
+    - Makefiles
+  materials:
+  other:
+8:
+  reading:
+  topics:
+    - Project Kickoff
+  materials: ProjectKickoff
+  other:
+    - <a href="https://docs.google.com/spreadsheets/d/1LOndSGkmqj_sQTuEUWwDuUL4jryyhnDVn2nrHbQcAfc/edit?usp=sharing">Team Signup Spreadsheet</a>
+    - <a href="https://github.com/RHIT-CSSE/csse332/blob/master/Homework/BareMetalOS/InputOutput/GitlabInstructions.md">Repo Setup Instructions</a>
+9:
+  reading:
+          - Sects. 10.1-10.3
+          - Sect. 10.6
+  topics:
+    - Filesystem I
+  materials: Filesystem_1
+  other:  
+
+10:
+  reading: Section 11.1 - 11.5
+  topics: 
+    - Filesystem II
+  materials: Filesystem_2
+  other:  
+11:
+  reading:
           - Chapter 3
   topics:
           - Inter Process Communication
   materials: IPC
   other:  
-7:
-  reading:
-  topics:
-          - <b>Lab 2 </b> Debugging, Makefile, Processes 
-  materials: 
-  other:
-    - <a href="Homework/ProcessLab/make_tutorial/makefiles">Makefile tutorial</a>
-    - <a href="Homework/ProcessLab/README"> Lab Instructions</a>
-8:
-  reading:
-  topics:
-    - Signals
-  materials: Signals
-  other:
-9:
-  reading:
-  topics:
-    - Userspace Threading
-  materials: UserSpaceThreading
-  other:
-10:
-  reading:
-    - Chapter 4
-  topics:
-    - User-space Threads and Kernel Threads
-  materials: KernelThreads
-  other:
-11:
-  reading:
-  topics:
-    - <b>Lab 3</b> Userspace Threading 2
-  materials: 
-  other: 
-    - <a href="Homework/UserspaceThreadsLab2/README"> Lab Instructions</a>
 12:
-  reading: 
-   - Chapter 4
-  topics: 
-   - More Threads
-   - Thread Libraries
-   - Threading Issues
-  materials: MoreThreads
-  other:
+  reading:
+  topics:
+          - NO CLASS, Break Begins
+  materials:
+  other:    
 13:
   reading:
           - Chapter 6
@@ -99,92 +96,93 @@
   other:  
 14:
   reading:
-  topics:
-    - Skills Test Review
-  materials: Exam1Prep
-  other:  
-15:
-  reading:
-  topics:
-    - Fork/Signals/Makefiles skills tests
-  materials: 
-  other:  
-16:
-  reading:
           - Chapter 6
   topics:
     - CPU Scheduling 2
   materials: CPU_Scheduling2
   other:  
-
+15:
+  reading:
+  topics:
+    - Skills Test Review
+  materials: Exam1Prep
+  other:  
+16:
+  reading:
+  topics:
+    - Fork/Signals/Makefiles skills tests
+    - EVENING EXAM 5:30-8:30
+  materials: 
+  other:  
 17:
-  reading:
-          - Sects. 10.1-10.3
-          - Sect. 10.6
-  topics:
-    - Filesystem I
-  materials: Filesystem_1
-  other:  
-18:
-  reading: Section 11.1 - 11.5
+  reading: 
+   - Chapter 4
   topics: 
-    - Filesystem II
-  materials: Filesystem_2
-  other:  
-19:
-  reading:
-  topics:
-          - <b>Lab 4</b> Threads and Semaphore Basics
-  other: <a href="Homework/SemaphoreLab/README"> Lab Instructions</a>
-20:
-  reading:
-  topics:
-    - Project Kickoff
-  materials: ProjectKickoff
+   - More Threads
+   - Thread Libraries
+   - Threading Issues
+  materials: MoreThreads
   other:
-    - <a href="https://docs.google.com/spreadsheets/d/1LOndSGkmqj_sQTuEUWwDuUL4jryyhnDVn2nrHbQcAfc/edit?usp=sharing">Team Signup Spreadsheet</a>
-    - <a href="https://github.com/RHIT-CSSE/csse332/blob/master/Homework/BareMetalOS/m1/GitlabInstructions.md">Repo Setup Instructions</a>
-21:
+18:
+  reading:
+  topics:
+          - <b>Lab</b> Threads and Semaphore Basics
+  other: <a href="Homework/SemaphoreLab/README"> Lab Instructions</a>
+19:
   reading:  Chapter 5
   topics: 
     - Process Synchronization
   materials: ProcessSync
   other:  
-22:
-  reading:  
-  topics: 
-    - Project Work Time
-  materials:
-  other:  
-23:
+20:
+  reading:
+    - Chapter 4
+  topics:
+    - User-space Threads and Kernel Threads
+  materials: KernelThreads
+  other:
+21:
   reading: Chapter 5
   topics:
     - Process Synchronization
     - Semaphores
   materials: ProcessSyncSemaphore
   other:  
-24:
+22:
   reading: Chapter 5
   topics:
     - Semaphore Practice
   materials: Semaphore_II
   other:  
-25:
+23:
   reading: Chapter 7
   topics:
     - Deadlock and Starvation
   materials: DeadlockStarvation
   other:  
+24:
+  reading:
+  topics:
+    - Userspace Threading
+  materials: UserSpaceThreading
+  other:
+25:
+  reading:  
+  topics: 
+    - Project Work Time
+  materials:
+  other:  
 26:
   reading: 
   topics: 
     - Skills Test Review
-  materials: 
+  materials: Exam2Prep
   other:  
 27:
   reading:
   topics:
-    - Basic Threading Skills Test
+    - Threading Skills Test
+    - EVENING EXAM 5:30-8:30
   materials: 
   other:  
 28:
@@ -208,15 +206,15 @@
 31:
   reading:
   topics:
-    - Lab/Project Work Time
-  materials: 
-  other:  <a href="Homework/VirtualMemoryLab/README"> Lab Instructions</a>
-32:
-  reading:
-  topics:
     - Page Replacement Algorithms
   materials: PageReplacement
   other:  
+32:
+  reading:
+  topics:
+    - Lab/Project Work Time
+  materials: 
+  other:  <a href="Homework/VirtualMemoryLab/README"> Lab Instructions</a>
 33:
   reading:
   topics:
@@ -226,26 +224,28 @@
 34:
   reading:
   topics:
-          - Skills Test Review
-  materials: Exam2Prep
+        - Advanced Paging
+  materials: AdvancedPageTable
   other:  
 35:
   reading:
   topics:
-    - Semaphore Skills Test
-  materials: 
+    - Reference Counting
+  materials: ReferenceCounting
   other:  
+    <a href="ClassMaterials/ReferenceCounting/reference_counting">Reference Counting Slides</a>
 36:
   reading:
   topics:
-    - Advanced Paging
-  materials: AdvancedPageTable
+    - More Garbage Collection
+  materials: GarbageCollection2 
   other:  
+    <a href="ClassMaterials/GarbageCollection2/garbage_collection">Garbage Collection 2 Slides</a>
 37:
   reading:
   topics:
-    - Lab work day
-  materials:
+    - ???
+  materials: 
   other:  
 38:
   reading:
@@ -256,12 +256,13 @@
 39:
   reading:
   topics:
-    - Project Work Time/ Presentations?
-  materials: 
-  other:  
+    - GC Work Time
+  materials:
+  other:
+
 40:
   reading:
   topics:
-    - Project Work Time
+    - ???
   materials: 
   other:  

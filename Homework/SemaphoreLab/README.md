@@ -7,7 +7,8 @@ layout: togit
 
 # Thread Factoring (20 points)
 
-Look in the thread\_factoring project in the lab4 directory.
+Look in the thread\_factoring project in the Homework/SemaphoreLab
+directory.
 
 Start by understanding the code in threadExample.c (you may have seen
 this example already, but if not review it).
