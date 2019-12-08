@@ -198,6 +198,11 @@ man pages for details:
 
 You may want to put this in a function.
 
+NOTE: be sure you block SIGALRM as in the example above.  Lots of
+other examples block SIGINT (because that tends to be easier to play
+around with) but blocking SIGINT won't have any effect on the
+segmentation fault problem.
+
 Similarly, we need to re-enable the alarm when it is safe.  You should
 write the appropriate code for that.
 
