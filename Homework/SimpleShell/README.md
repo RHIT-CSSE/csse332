@@ -101,6 +101,7 @@ Example output:
     Do nothing program finished!
     ^C
 
+Don't worry about zombies at this point - we'll think about them more in state 4.
 
 # Step 3: Background commands with finish notification
 
