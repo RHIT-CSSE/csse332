@@ -229,13 +229,12 @@ type "sudo umount /tmp/myext2disk" to unmount the file.
 ### Loading the superblock
 
 Let's get going with the code.  Begin by opening up the file
-<tt>extaccess.c</tt> in your favorite editor.  This file is
-where you will be spending the bulk of your time in this project.  The
-first function defined in this file is load\_ext2\_metadata this
-function will read the superblock stored in the first blockgroup of the
-disk image into memory, and even better, into a "struct
-os_superblock_t" structure.  This structure is defined in
-<tt>inc/superblock.h</tt>.
+<tt>extaccess.c</tt> in your favorite editor.  This file is where you
+will be spending the bulk of your time in this project.  The first
+function defined in this file is load\_ext2\_metadata this function
+will read the superblock stored in the first blockgroup of the disk
+image into memory, and even better, into a "struct os_superblock_t"
+structure.  This structure is defined in <tt>inc/superblock.h</tt>.
 
 The first issue is that they data we need is located at byte 1024 of
 our source file.  To a certain size of data at a particular location
@@ -307,7 +306,7 @@ We've given you the start of this code, but we've left the cases for
 double indirect blocks and triple indirect blocks for you to do.
 
 As calibration, our implementation of the missing piece has about
- lines of code.
+10 lines of code.
 
 ## Read through file\_blockread()
 
@@ -325,10 +324,11 @@ complication is that ext2 supports the notion of "holes" in files:
 ranges of a file that logically exists containing zeroes, but which
 don't have any physical data blocks allocated to store the zeroes.
 
-Read through the implementation to get a sense of how it works, and
-make sure you understand the interface to this function -- i.e.,
-how to invoke it, what the arguments mean, and what gets returned
-by the function on success or failure.
+We've coded this function for you. Read through the implementation to
+get a sense of how it works, and make sure you understand the
+interface to this function -- i.e., how to invoke it, what the
+arguments mean, and what gets returned by the function on success or
+failure.
 
 ## Implement file\_read()
 
@@ -415,8 +415,8 @@ Submit your ex2access.c
 |                   | Points | Notes |
 |:------------------|--------|-------|
 | passes test cases | 91     |       |
-| filereader works  | 3      |       |
-| valgrind passes   | 3      |       |
+| filereader works  | 4      |       |
+| valgrind passes   | 5      |       |
 
 # Acknowledgement
 

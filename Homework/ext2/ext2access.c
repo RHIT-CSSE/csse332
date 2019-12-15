@@ -33,12 +33,12 @@ void load_ext2_metadata(int fd, struct os_fs_metadata_t* metadata) {
   // only care about the first sizeof(struct os_superblock_t) bytes.
 
   // 1. Use lseek and read to dump that data directly into the
-  // superblock_data variable (note that we've carefully constructured this
-  // os_superblock_t struct to correspond exactly to the superblock's
-  // data layout on the disk)
+  // superblock_data variable (note that we've carefully constructured
+  // this os_superblock_t struct to correspond exactly to the
+  // superblock's data layout on the disk)
   struct os_superblock_t superblock_data;
 
-  // your loading code here
+  // YOUR LOADING CODE HERE
   
   // 2. All the data we need is in the superblock and groupblock
   // descriptor table (right after the superblock, but we need to read
@@ -584,7 +584,7 @@ os_uint32_t path_to_inode_num(char* path, int fd, struct os_fs_metadata_t *metad
   // it will be the first directory you do a file_read on
   os_uint32_t root = EXT2_ROOT_INO;
 
-  // In my solution I want to edit the given path to replace '/'
+  // In my solution I wanted to edit the given path to replace '/'
   // characters with /0 as I go (hint use strchr).  But I can't do
   // this with the actual parameter - instead I have to copy the
   // parameter string to a new string that I can edit locally
@@ -601,7 +601,8 @@ os_uint32_t path_to_inode_num(char* path, int fd, struct os_fs_metadata_t *metad
   struct os_inode_t inode;
   
 
-  // for me it's handy to omit the initial "/"
+  // for me it's handy to omit the initial "/" from the path, because
+  // we are already starting at the root
   path_remaining++;
 
   //for each / seperated entry in the path
