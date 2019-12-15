@@ -55,6 +55,6 @@ floppya.img should be rebuilt, nothing should be recompiled/assembled/linked, an
 
 ### Common Mistakes
 
-The rule that generates floppya.img is not named floopya.img, so makefile does not recognize the changes.
+The rule that generates floppya.img is not named floppya.img, so makefile does not recognize the changes.
 
 
