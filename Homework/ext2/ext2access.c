@@ -181,8 +181,9 @@ void calc_metadata(int fd, struct os_superblock_t *sb, struct os_fs_metadata_t* 
   
   int starting_block = sb->s_first_data_block + 1;
   assert(lseek(fd, starting_block*fsm->block_size, SEEK_SET) == starting_block*fsm->block_size);
-  assert(read(fd, (void*) bgd_table, bgd_size));
-        
+
+  assert(read(fd, (void*) bgd_table, bgd_size) >= 0);
+
   fsm->bgdt = bgd_table;
 }
 

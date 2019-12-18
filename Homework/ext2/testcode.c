@@ -388,6 +388,9 @@ int main(int argc, char **argv) {
   // calculate filesystem metadata.  you get to implement this
   // function in file ext2_access.c.
   struct os_fs_metadata_t metadata;
+  memset(&metadata, 0, sizeof (struct os_fs_metadata_t));
+  
+  
   load_ext2_metadata(fd, &metadata);
   check_metadata(&metadata);  // our test code
   
