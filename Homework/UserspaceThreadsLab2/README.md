@@ -198,6 +198,11 @@ man pages for details:
 
 You may want to put this in a function.
 
+NOTE: be sure you block SIGALRM as in the example above.  Lots of
+other examples block SIGINT (because that tends to be easier to play
+around with) but blocking SIGINT won't have any effect on the
+segmentation fault problem.
+
 Similarly, we need to re-enable the alarm when it is safe.  You should
 write the appropriate code for that.
 
@@ -228,6 +233,14 @@ cases.  Here are the rules to use:
     creating threads in a masked state, we ensure that newly created
     threads finish starting before alarms can happen.  Of course, we
     must then unmask before actually running the thread function.
+    
+    Note that this also means the call to getcontext must be in
+    create\_new\_thread and not initialize\_basic\_threads.
+    getcontext is where the alarm mask state is set, so that's the
+    line that most especially must be done in a alarm disabled
+    context.  In theory you could get away with just masking in
+    initialize\_basic\_threads too but that still allows context state
+    to "leak" between threads that share the same slot.
 5.  Alarm signals should NOT be masked when running ordinary code in
     the threads.
 6.  You should NOT mask/unmask alarms in your alarm signal handler.
@@ -251,7 +264,12 @@ cases.  Here are the rules to use:
     accidentally call your alarm handler because of a pending alarm.
     Doing this will deregister your alarm handler:
     
-        signal(SIGALRM, SIG_IGN);
+        signal(SIGALRM, SIG_IGN);  //ignore the alarm signal
+        
+    You probably want to also ensure you don't have a scheduled alarm
+    that hasn't fired.  calling alarm with a parameter of 0 seconds
+    should disable any pending alarm (check the alarm man page for
+    details).
 
 Modify your code to abide by these rules and you should see the
 signals in Standalone 1 go away.
@@ -262,16 +280,15 @@ signals in Standalone 1 go away.
 ## Standalone 1: What's the deal with the lockup?
 
 If you notice a lockup (i.e. program stops outputting and never
-finishes) that's happening rarely, try removing all prints from your
-scheduler (and alarm handler) and see if it goes away.  Turns out
-there's an internal "lock" that functions like printf acquire before
-they can write to the console.  This is surely designed for
-multithreaded code - that is, to prevent weirdness when multiple
+finishes) that's happening VERY rarely, it may be caused by printing.
+Turns out there's an internal "lock" that functions like printf
+acquire before they can write to the console.  This is surely designed
+for multithreaded code - that is, to prevent weirdness when multiple
 threads print at once.  Before the printf happens, the function
 "acquires" the I/O lock.  While it's acquired, if any other thread
-tries to print, it has to wait for the first thread to release the lock.
-Under normal circumstances the first thread would finish printing and
-"free" the lock.
+tries to print, it has to wait for the first thread to release the
+lock.  Under normal circumstances the first thread would finish
+printing and "free" the lock.
 
 If it surprises you that something designed to prevent threading
 issues actually causes a seemingly major problem, don't be.  That is
@@ -291,9 +308,9 @@ So how does this cause your program to lockup?
     another thread, meaning that thread from #1 will never run again.
     The lock can never be freed.
 
-1.  Ok, how can we solve this?
+Ok, how can we solve this?
 
-    There are a couple solutions, none of them super satisfactory:
+There are a couple solutions, none of them super satisfactory:
     
     1.  Have all thread code mask alarms before every print, then reenable
         it afterword
@@ -307,11 +324,13 @@ So how does this cause your program to lockup?
     matter because of a completely different issue (Weird Printing,
     below).
 
-2.  I have a problem with lockups but not the one mentioned here
+In this lab (as opposed to real life), I reccommend you don't worry
+about this bug and print normally so that you can debug other problems
+easily.
 
-    That probably indicates a bug in your threading code.  You should fix
-    that.  I recommend using GDB to figure out where things are stuck.
-
+If you have a problem with lockups that occurs frequently (like more
+than once out of 20 runs or so) it probably is a regular infinite loop
+bug that you need to fix not caused by printing.
 
 <a id="orgfacc0f2"></a>
 
@@ -412,6 +431,11 @@ To compile the test cases
 If your standalone #1 and #2 work, there shouldn't be much you need to
 do to get the test cases to pass.
 
+However, note that some test cases can infinite loop if your functions
+are not implemented correctly, in particular tests 5-7.  If you are
+having infinite loop problems on the tests, add some prints to
+preempt_test.c so you know what tests you are entering and take a look
+at the tests themselves to figure out what's up.
 
 <a id="org4c9602e"></a>
 
@@ -425,9 +449,9 @@ Submit your assignment in the usual way.
 
 | Part         | Points |
 |:-------------|--------|
-| Standalone 1 | 66     |
-| Standalone 2 | 66     |
-| Test cases   | 68     |
+| Standalone 1 | 33     |
+| Standalone 2 | 33     |
+| Test cases   | 34     |
 
 Note that we give partial credit if your code occasionally has issues
 but you addressed the particular problem areas that the lab warns you

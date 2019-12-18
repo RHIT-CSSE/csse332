@@ -1,9 +1,9 @@
 name,dirname,date,grader
 Pointer Practice,PointerPractice,2019-12-03 23:55:00,
 Linux Install,LinuxInstall,2019-12-02 23:55:00,
-Userspace Threads,UserspaceThreadsLab1,2019-12-05 23:55:00,
-ADVANCED Userspace Threads With Preemption,UserspaceThreadsLab2,2019-12-09 23:55:00,
-Simple Shell/Makefiles,SimpleShell,2019-12-12 23:55:00,
+Userspace Threads,UserspaceThreadsLab1,2019-12-05 23:55:00,crowelso@
+ADVANCED Userspace Threads With Preemption,UserspaceThreadsLab2,2019-12-09 23:55:00,wangj14@
+Simple Shell/Makefiles,SimpleShell,2019-12-12 23:55:00,crowelso@
 BareMetalOs InputOutput,BareMetalOS/InputOutput,2019-12-16 23:55:00,
 ADVANCED Ext2 Filesystem,,2019-12-19 23:55:00,
 Process Lab/Debugging,ProcessLab,2020-01-06 23:55:00,

@@ -153,7 +153,7 @@ file floppya.img filled with zeros.
 Finally you should copy bootload to the beginning of
 floppya.img. Type 
 
-    dd if=bootload of=floppya.img bs=512 count=1 conv=notrunc}
+    dd if=bootload of=floppya.img bs=512 count=1 conv=notrunc
     
 If you look at floppya.img now with hexedit, you will notice that the contents of
 bootload are at the beginning of floppya.img.
