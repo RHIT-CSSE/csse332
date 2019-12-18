@@ -530,7 +530,6 @@ os_bool_t file_read(int fd, int file_inode_num,
 os_uint32_t scan_dir(unsigned char *directory,
                      os_uint32_t directory_length,
                      char *filename) {
-  struct os_direntry_t current_entry;
   os_uint32_t current_offset = 0;
 
   if (strlen((char *) filename) == 0)
@@ -540,31 +539,27 @@ os_uint32_t scan_dir(unsigned char *directory,
   // entry.  You know when to stop when the offset you're at in the
   // directory file is at or beyond the directory file's length.
   while (current_offset < directory_length) {
-    // Step 2.  Figure out how long the current record actually is,
-    // and also the inode number of the current record. The first 4
-    // bytes of the current record are the inode number, and the next
-    // 2 bytes are a 16-bit integer stating the record length.
+      // ok if we're doing this right our current_offset should
+      // be pointing at the beginning of a directory entry
+      //
+      // if so, it should be safe to do this
 
-    // Step 3.  If inode number of the current record is 0, then the
+      struct os_direntry_t *current_entry_p = (struct os_direntry_t *) (directory + current_offset);
+
+      
+    // Step 2.  If inode of the current record is 0, then the
     // entry is invalid (e.g., that file was deleted from the
     // directory).  If so, skip to the next iteration of the while
     // loop (using "continue;") after properly incrementing
-    // current_offset.
+    // current_offset (use rec_len).
 
-    // Step 4.  Use the record length to copy data from the directory
-    // into "next_entry".  Hint: you can use memcpy to do this.  Be
-    // careful not to blindly trust the record length number, though;
-    // for the last entry in a directory, ext2 uses a record length
-    // long enough to skip past the final byte of the block.  So,
-    // use the minimum of record length and sizeof(current_entry).
-
-    // Step 5.  Compare the name in the directory entry to
+    // Step 3.  Compare the name in the directory entry to
     // "filename".  Note that you cannot rely on the name in
     // the directory entry to be NULL terminated, so you can't
     // use strcmp().  If the name matches, you're done -- return its
     // inode number.
 
-    // Step 6.  If you didn't find it, add the appropriate amount to
+    // Step 4.  If you didn't find it, add the appropriate amount to
     // current_offset, and fall into the next iteration of the while
     // loop.
   }
