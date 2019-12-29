@@ -1,0 +1,6 @@
+*.o
+slow_gcc
+unreliable_gcc
+para_gcc
+.#*
+a.out
