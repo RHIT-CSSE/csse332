@@ -71,7 +71,10 @@ When you compile these files, be sure to pass the "-ggdb" flag to gcc or it won'
   Use gdb to identify which error is received and where.
     1. What error is received?
     2. Where (what line number and which instruction) is the error
-    received?
+    received?  Use the innermost function of the code we provided you
+    (that is, furthest from main) but don't consider library functions
+    (to tell the difference, look at the filename and see if its in 
+    the given code).
 
 2. (5 points)
   What is the root cause of the error in Problem 1?
