@@ -95,7 +95,7 @@ Makefiles can do a lot of things but the only thing we care about are:
             gcc -c -ggdb -o library.o library.c
         
         libraryUser.o: library.h libraryUser.c
-            gcc -c -ggdb -o libraryUser.o library.c
+            gcc -c -ggdb -o libraryUser.o libraryUser.c
             
         libraryUser: library.o libraryUser.o
             gcc -o libraryUser -ggdb library.o libraryUser.o
