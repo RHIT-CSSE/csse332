@@ -84,7 +84,7 @@ Makefiles can do a lot of things but the only thing we care about are:
    then (tabbed in) its build commands
    
         ordinaryExecutable: ordinary.c ordinary.h
-            gcc -ggdb -o ordinaryExecutable ordinary.c ordinary.h
+            gcc -ggdb -o ordinaryExecutable ordinary.c
 
 2. Oftentimes we want to save on compile times but building .o files
    and then linking them in a separate step.  The -c flag produces an
