@@ -92,10 +92,10 @@ Makefiles can do a lot of things but the only thing we care about are:
    single final output.
    
         library.o: library.c library.h
-            gcc -c -ggdb -o library.o library.c library.h
+            gcc -c -ggdb -o library.o library.c
         
         libraryUser.o: library.h libraryUser.c
-            gcc -c -ggdb -o libraryUser.o library.c library.h
+            gcc -c -ggdb -o libraryUser.o library.c
             
         libraryUser: library.o libraryUser.o
             gcc -o libraryUser -ggdb library.o libraryUser.o
