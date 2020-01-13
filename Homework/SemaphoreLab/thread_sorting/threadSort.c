@@ -1,12 +1,17 @@
 #include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+#include <unistd.h>
 #include "threads.h"
-/* This is where you implement the core solution.
-   by <Name>, <Date>
-*/
 
-int buffer[MAX_N_SIZE][MAX_BUFFER_SIZE];
+// max number of its in input file
+#define MAX_BUFFER_SIZE 100000
+// max threads allowed
+#define MAX_N_SIZE 100
+
+
 /* other global variable instantiations can go here */
 
 /* Uses a brute force method of sorting the input list. */
@@ -72,46 +77,62 @@ void MergeSort(int *array, int left, int right) {
   }
 }
 
-/* Merges the sorted files into an output file using the two
- * dimensional output buffer */
-void MergeAndOutputBuffer(char* outputFile) {
-  FILE *outFile = fopen(outputFile, "w");
-  if (outFile == NULL) {
-    fprintf(stderr, "Unable to open the file %s\n", outputFile);
-    exit(2);
-  }
-  int i;
-  int64_t j;
-  int indexes[MAX_N_SIZE], maxIndexes[MAX_N_SIZE];
-  for (i = 0; i < n; i++) {
-    for (j = 0; buffer[i][j] > 0; j++) {
+int main(int argc, char** argv) {
+
+    if(argc < 4) {
+        printf("not enough arguments!\n");
+        exit(1);
     }
-    maxIndexes[i] = j;
-    indexes[i] = 0;
-  }
-  int smallIndex;
-  j = 0;
-  while (1) {
-    smallIndex = -1;
-    for (i = 0; i < n; i++) {
-      if (indexes[i] < maxIndexes[i]) {
-        smallIndex = i;
-        break;
-      }
+
+    // I'm reading the value n (number of threads) for you off the
+    // command line
+    int n = atoi(argv[1]);
+    if(n <= 0 || n > MAX_N_SIZE) {
+        printf("bad n value (number of threads) %d\n", n);
+        exit(1);
     }
-    if (smallIndex == -1) {
-      break;
+    
+    int read_fd = open(argv[2], O_RDONLY);
+    if(read_fd == -1) {
+        perror("couldn't open file for reading");
+        exit(1);
     }
-    for (i = 1; i < n; i++) {
-      if ((indexes[i] < maxIndexes[i]) &&
-          (buffer[i][indexes[i]] < buffer[smallIndex][indexes[smallIndex]])) {
-        smallIndex = i;
-      }
+
+    char buffer[100]; //we're reading ints, so this is plenty for a line
+    int read_result;
+    while((read_result = read(read_fd, buffer, 100))) {
+        int data = atoi(buffer);
+        // remove this line, its just to prove read works
+        printf("I just read int %d from file\n", data);
+        // this is where you'll divvy up the integers into buffers for
+        // the various threads
     }
-    fprintf(outFile, "%d\n", buffer[smallIndex][indexes[smallIndex]]);
-    fflush(outFile);
-    indexes[smallIndex]++;
-    j++;
-  }
-  fclose(outFile);
+    if(read_result < 0) {
+        perror("file read error");
+        exit(1);
+    } else {
+        close(read_fd);
+    }
+    // this is where you'll dispatch threads for sorting
+    // then wait for things to finish
+    // then print the statistics
+
+    // make one giant buffer capable of storing all your
+    // output.
+
+    // make a loop to copy data into it, then use the Merge function
+    // to merge that data, then copy more data into it etc.
+
+    // once everything is sorted, write it out to the file
+
+    int output_fd;
+    if ((output_fd = open(argv[3], O_WRONLY | O_CREAT | O_TRUNC,
+                    S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH)) == -1) {
+        perror("Cannot open output file\n");
+        exit(1);
+    }
+
+    dprintf(output_fd, "Just an example for writing an int %d\n", 7);
+    close(output_fd);
+
 }
