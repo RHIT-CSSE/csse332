@@ -106,7 +106,7 @@ this problem.  Just use void pointers just as you did in your userspace
 threading assignment.
 
 
-# Thread Sorting (60 points)
+# Thread Sorting (40 points)
 
 Look at the thread\_sorting project in the lab directory. The
 Costs.txt file in this project should be used as a sample file for
