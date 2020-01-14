@@ -4,7 +4,7 @@ layout: togit
 
 # Exam 1 Preparation
 
-Last updated: Spring 18-19
+Last updated: Fall 19-20
 
 Note that exam contents can change term to term.
 
@@ -57,22 +57,24 @@ But be aware the format of the exam has changed quite a bit from previous years.
 * How to pass parameters to exec functions - don't forget the final null
 * How to combine with fork/wait to run things in background
   foreground, or just convert one process to another
+* Be sure to check for exec failures - can lead to some weird hard to debug stuff!
 
 ## Signals
 
 * Registering handlers
 * Masks
 * Passing extra data to signal handlers (hint globals)
+* Could be fair game but not actually on this exam
 
 ## IPC
 
-* Pipes
-* Shared memory using mmap
-* Could be fair game but not actually on this exam
+* Pipes (exam1)
+* Shared memory using mmap (exam1 makeup)
+
 
 ## Makefile
 
-~10 points
+~15 points
 
 An easy way to get a few points - it's silly to lose these.
 
@@ -82,7 +84,7 @@ Makefiles can do a lot of things but the only thing we care about are:
    then (tabbed in) its build commands
    
         ordinaryExecutable: ordinary.c ordinary.h
-            gcc -ggdb -o ordinaryExecutable ordinary.c ordinary.h
+            gcc -ggdb -o ordinaryExecutable ordinary.c
 
 2. Oftentimes we want to save on compile times but building .o files
    and then linking them in a separate step.  The -c flag produces an
@@ -90,10 +92,10 @@ Makefiles can do a lot of things but the only thing we care about are:
    single final output.
    
         library.o: library.c library.h
-            gcc -c -ggdb -o library.o library.c library.h
+            gcc -c -ggdb -o library.o library.c
         
         libraryUser.o: library.h libraryUser.c
-            gcc -c -ggdb -o libraryUser.o library.c library.h
+            gcc -c -ggdb -o libraryUser.o libraryUser.c
             
         libraryUser: library.o libraryUser.o
             gcc -o libraryUser -ggdb library.o libraryUser.o

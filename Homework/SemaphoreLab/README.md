@@ -106,9 +106,9 @@ this problem.  Just use void pointers just as you did in your userspace
 threading assignment.
 
 
-# Thread Sorting (60 points)
+# Thread Sorting (40 points)
 
-Look at the thread\_sorting project in the lab4 directory. The
+Look at the thread\_sorting project in the lab directory. The
 Costs.txt file in this project should be used as a sample file for
 this part of the lab. Don't forget to compile with the -pthread
 compilation flag.
@@ -117,29 +117,33 @@ In this program you will demonstrate your understanding of thread
 creation, some thread synchronization, and POSIX thread
 management. 
 
-1.  Write a C program in the files threads.(h,c) that takes three command line arguments: 
-    
-    1.  the number of threads to create (n),
-    2.  an input file, (fileIn), and
-    3.  an output file, (fileOut),
-    
-    in that order. [This example](commandLineArgExample.c) shows how to process
-    command line arguments.  You might also want to look up the manpages for
-    the atoi function, which you can use to convert a string to an integer value.
+We want to read in an input file of integers and sort it.  We'll do
+this with 3 different sorting methods (all the sorting code is given
+to you).  We will do this sorting in parallel using threads.  We will
+print some info about how fast the various sort methods were, then
+we'll merge all the various sorted sub-files together into one sorted
+list and output it to a file.
 
-2.  First, open the input file, fileIn, and find the number of
-    values (or lines) in the file. fileIn contains a list of the
-    average cost of living for various locations. Our goal is to sort
-    these values in increasing order.
-
-3.  Use a loop to create n parallel threads, distributing the number
-    of values evenly across each thread. You can either distribute the
-    values to each thread in the loop that reads in the file, or read
-    the entire file first and then distribute the values to each
-    thread after the read.
+The program is in the file threads.c and takes three command line arguments: 
     
-    Note: n is used in the code we provided, however you must create
-    storage space for n and set it to the number of threads.
+1.  the number of threads to create (n),
+2.  an input file
+3.  an output file
+    
+in that order. 
+
+Build the file like this:
+
+    gcc -pthread -ggdb threadsSort.c -o threadsSort
+
+
+1.  We've given you code that handles the input arguments and file
+    reading.  Your first goal will be the read the numbers from the
+    input file into some structures that are convenient for
+    processing (might I suggest a two dimension array?).
+
+2.  Use a loop to create n parallel threads, distributing the number
+    of values evenly across each thread. 
     
     a. Each thread will sort its group of values using a different
      sorting algorithm. In each thread, call one of three sorting
@@ -168,21 +172,19 @@ management.
     third by the bubble sort method, and the third third by the merge
     sort method.
 
-6.  Finally, merge the results of each thread to create one
-    sorted list. This can be done without the use of the n
-    threads. The sorted list should be written to fileOut.
-
-7.  When you turn in your assignment, it should include the
-    following.
+6.  Finally, merge the results of each thread to create one sorted
+    list.  The nicest way to do this is create a new output array to
+    sort all the output and then repeatedly copy individual sorted
+    segments into the region, then merge them with the Merge function.
     
-    a. A Makefile that creates an executable called
-      threads.
+    You do not need to use parallelism in this part.
     
-    b. threads.c and threads.h.
-      threads.h should contain your constants, declared types,
-      function signatures, and any other relevant information.
+    You could also copy them all into the output and then merge them
+    with a single sort that doesn't take advantage of the fact that
+    the sub-lists are sorted, but this is the cowards way out and we'll
+    take off a small number of points if you do.
 
-
+You only need to submit threadSort.c for this part.
 
 # Basic semaphores 1 (20 points)
 
@@ -345,14 +347,6 @@ red\_blue\_purple.c file.
 <td class="org-right">10</td>
 </tr>
 
-
-<tr>
-<td class="org-left">Thread Sorting</td>
-<td class="org-left">parses command line arguments</td>
-<td class="org-right">10</td>
-</tr>
-
-
 <tr>
 <td class="org-left">Thread Sorting</td>
 <td class="org-left">Loop and create n parallel threads to sort parts of the data</td>
@@ -376,14 +370,7 @@ red\_blue\_purple.c file.
 
 <tr>
 <td class="org-left">Thread Sorting</td>
-<td class="org-left">Final merge to create one sorted list</td>
-<td class="org-right">10</td>
-</tr>
-
-
-<tr>
-<td class="org-left">Thread Sorting</td>
-<td class="org-left">Makefile</td>
+<td class="org-left">Final merges to create one sorted list (-5 if you don't take advantage of the sortedness with Merge)</td>
 <td class="org-right">10</td>
 </tr>
 
