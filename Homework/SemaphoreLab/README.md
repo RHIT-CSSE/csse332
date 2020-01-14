@@ -134,7 +134,7 @@ in that order.
 
 Build the file like this:
 
-    gcc -pthread -ggdb threadsSort.c -o threadsSort
+    gcc -pthread -ggdb threadSort.c -o threadSort
 
 
 1.  We've given you code that handles the input arguments and file
