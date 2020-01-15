@@ -311,6 +311,12 @@ need to assemble lib.asm intead of kernel.asm and
 link lib.o instead of kernel\_asm.o.  Your final file
 should be called ``shell''.
 
+Note you should call the linker like this:
+
+    ld86 -o shell -d shell.o lib.o
+
+The order passed to the linker matters - shell.o must be first.
+
 After you compile the shell, use loadFile to load the shell
 onto floppya.img.  You should add all of these commands to
 your Makefile.
