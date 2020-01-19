@@ -25,6 +25,10 @@
 
    Use semaphores to enforce this constraint. Note: the global numLoaves 
    variable should be left as is (i.e. do not make it a semaphore).
+
+   look at littleRedHenSampleOutput.txt for an example correct output
+   sequence
+
 **/
 
 int numLoaves;
