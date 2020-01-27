@@ -155,22 +155,22 @@
   materials: Semaphore_II
   other:  
 23:
-  reading: Chapter 7
-  topics:
-    - Deadlock and Starvation
-  materials: DeadlockStarvation
-  other:  
-24:
   reading:
   topics:
-    - Userspace Threading
+    - Userspace Threading (canceled)
   materials: UserSpaceThreading
   other:
-25:
+24:
   reading:  
   topics: 
-    - Project Work Time
+    - Project Work Time (canceled) 
   materials:
+  other:  
+25:
+  reading: Chapter 7
+  topics:
+    - Deadlock and Starvation (moved)
+  materials: DeadlockStarvation
   other:  
 26:
   reading: 
