@@ -4,18 +4,35 @@ layout: togit
 
 # Exam 2 Preparation
 
-Last updated: Spring 18-19
+Last updated: Winter 19-20
 
 Note that exam contents can change term to term.
 
 # Sample Exams
 
-You should plan to practice using the [sample exams available here](../../SampleExams/).
+You exam will be:
 
-But be aware the format of the exam has changed quite a bit from
-previous years.  For this term you'll want to look at the Threading
-question from Exam 1s of the past (i.e. thread commander and
-producer-consumer).
++ 3 semaphore questions (60 points)
++ 1 3-part thread creation question (40 points)
+
+No previous exam has been exactly like this, but I still recommend
+practice using the [sample exams available here](../../SampleExams/).
+
+Here's what I recommend.
+
+For thread creation questions:
+
++ exam2-201930 (mergesort) longer than the threading question on your exam, but basic idea is good
++ exam1-201830 (producer-consumer)
++ exam2-201830 computer/backups.c
++ exam1-201630 ThreadCommander shorter than the threading question on your exam (see csse332\_exam1\_computer.pdf for instructions)
+
+For semaphore questions:
+
++ exam3-201930 more semaphore questions than on your exam, but more is better practice right?
++ exam2-201630 maybe on the easier side
++ exam2-201830 para\_seri\_para definitely easier
+
 
 # General Guidance
 
@@ -38,6 +55,8 @@ producer-consumer).
 
 # Fundamental skills
 
+## Thread Creation
+
 * How to use threads to parallelize code, creating them, joining them
 * How to pass parameters to threads (and how to do it so that all your
   threads don't end up sharing the same parameters)
@@ -47,3 +66,46 @@ producer-consumer).
 This particular question will also involve merge sort (in a pretty
 different way than the one you did on your lab) so if you don't recall
 how that algorithm worked from 220 you might get a quick refresher.
+
+## Semaphores
+
+* Semaphores, including waits and posts
+* Concurrent algorithms we've talked about like producer consumer,
+  reader/writer, and dining philosophers
+
+### Semaphore specific advice
+
+* Always feel free to ask if you feel you do not understand what is
+  correct and incorrect behavior
+* Note that it's frequent that the output looks correct but there are
+  still concurrency bugs
+* You can use sleeps to adjust timing and try and evidence weird
+  concurrency conditions BUT never rely on sleeps to make your code work
+* Don't decide up-front how many semaphores you need - step through the
+  various cases adding semaphores as they are required
+* Think hard about edge cases and deadlocks - usually your code will
+  not evidence these kinds of problems in testing
+* Never allow two concurrent threads to modify a variable or a thread
+  to read a variable while in an inconsistent state
+* Busywaits and weird semaphore functions are never needed to solve
+  the problem
+  
+### How we will grade
+
+Each semaphore problem will be worth 20 points
+
+* You can get 5/20 points if your semaphore-based solution reliably
+  produces correct output with the given data (and small
+  modifications).  0 points if doing this requires weird sleeps or
+  other hacky non-general purpose code.
+* You can get 10/20 points you did above and your solution is
+  plausible and does not do something obviously bad.  It's impossible
+  to enumerate every obviously bad thing but here's a big one : having
+  multiple concurrent threads modify a global variable.  Basically
+  this is for solutions that basically are OK but miss some edge
+  cases.
+* You can get 15/20 points if you have a fully working solution but
+  you utilize busywaits or non-standard semaphore functions
+  (i.e. stuff other than init, post, wait, and destroy)
+* A fully correct solution, even if it's not the one we envisioned, is
+  20/20
