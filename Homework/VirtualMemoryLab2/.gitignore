@@ -1,0 +1,4 @@
+*.dat
+*.o
+starter_tests
+fork_tests
