@@ -157,6 +157,10 @@ Will make 2 regions reg1ptr and reg2ptr that both correspond to the
 same frame in physical memory.  This will also correspond to offset
 myoffset on whatever file fd points to, but that is not as important.
 
+To see a more detailed (runnable) example of this principle, check out
+[mmap_twice_example.c](mmap_twice_example.c).  I strongly recommend
+you fully understand that code before moving on.
+
 This page https://nullprogram.com/blog/2016/04/10/ has some more
 details on this trick, including a way to do it without an actual file
 being created, but that's beyond what we need.

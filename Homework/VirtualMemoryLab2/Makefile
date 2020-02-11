@@ -1,4 +1,4 @@
-all: fork_tests
+all: fork_tests mmap_twice_example
 
 forth_embed.o: forth_embed.c forth_embed.h 
 	gcc -m32 -ggdb -c forth_embed.c
@@ -18,5 +18,8 @@ fork_tests.o: forking_forth.h CuTest.h fork_tests.c
 fork_tests: forking_forth.o forth_embed.o jonesforth.o fork_tests.o CuTest.o
 	gcc -m32 -ggdb -o $@ forking_forth.o forth_embed.o jonesforth.o fork_tests.o CuTest.o
 
+mmap_twice_example: mmap_twice_example.c
+	gcc -m32 -ggdb mmap_twice_example.c -o mmap_twice_example
+
 clean:
-	rm -f fork_tests *~ core .test_* *.o bigmem.dat
+	rm -f fork_tests *~ core .test_* *.o bigmem.dat delete_me.dat mmap_twice_example
