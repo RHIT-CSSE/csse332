@@ -62,7 +62,8 @@ you continue.
 
 # Step 0: Getting the given code to work
 
-The code you will be editing is in forking\_forth.c.  The test code is in forth\_tests.c.
+The code you will be editing is in [forking_forth.c](forking_forth.c).
+The test code is in [fork_tests.c](fork_tests.c).
 
 So the given code doesn't work at all because it does not allocate
 memory for the forths.  Where this should happen is in the function
@@ -237,12 +238,15 @@ Let me be more explicit:
 
 Right now we sort of using frames as a region of NUM\_FORTHS chunks, each chunk is getpagesize()\*NUM\_PAGES long.  Forth 0 gets the first chunk, forth 1 gets the second, etc.  But this no longer makes sense because we don't actually want to allocate all that memory upfront.
 
-Henceforth, we will use frames as a region of getpagesize() chunks,
-NUM\_FORTHS\*NUM\_PAGES long.  These individual page-size chunks will
-very naturally correspond to how frames work in a regular virtual
+Henceforth, we will use frames as a region of NUM\_FORTHS\*NUM\_PAGES
+chunks, each getpagesize() long.  These individual page-size chunks
+will very naturally correspond to how frames work in a regular virtual
 memory system.  Forth 0 might use Frames 0 1 5 to correspond to its
 pages 9 0 1.  Forth 1 might use frames 2 3 6 for its pages 9 0 1.
-Note that the frames a particular forth uses aren't even contiguous.  When a forth request a new page (with a seg-fault) we will pick the next unused frame (whatever number it is), and map that into the universal memory region as whatever page is needed.
+Note that the frames a particular forth uses aren't even contiguous.
+When a forth request a new page (with a seg-fault) we will pick the
+next unused frame (whatever number it is), and map that into the
+universal memory region as whatever page is needed.
 
 The first time a forth instance runs, we'll have no pages allocated in the universal region, and we'll map pages as we go.  When a forth
 instance is swapped out and then back in, its memory space (the
