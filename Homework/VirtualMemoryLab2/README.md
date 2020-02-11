@@ -236,9 +236,9 @@ particular order.  We'll use the frames array for this.
 
 Let me be more explicit:
 
-Right now we sort of using frames as a region of NUM\_FORTHS chunks, each chunk is getpagesize()\*NUM\_PAGES long.  Forth 0 gets the first chunk, forth 1 gets the second, etc.  But this no longer makes sense because we don't actually want to allocate all that memory upfront.
+Right now we sort of using frames as a region of MAX\_FORTHS chunks, each chunk is getpagesize()\*NUM\_PAGES long.  Forth 0 gets the first chunk, forth 1 gets the second, etc.  But this no longer makes sense because we don't actually want to allocate all that memory upfront.
 
-Henceforth, we will use frames as a region of NUM\_FORTHS\*NUM\_PAGES
+Henceforth, we will use frames as a region of MAX\_FORTHS\*NUM\_PAGES
 chunks, each getpagesize() long.  These individual page-size chunks
 will very naturally correspond to how frames work in a regular virtual
 memory system.  Forth 0 might use Frames 0 1 5 to correspond to its
