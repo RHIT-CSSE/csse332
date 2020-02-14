@@ -58,7 +58,14 @@ void main() {
     // incidently we must configure signal handling to occur in its own stack
     // otherwise our segv handler will use the regular stack for its data
     // and it might try and unmap the very memory it is using as its stack
+
+    // note it is important that this variable be static, not so much
+    // in this example (it would be safe to remove it from main in
+    // particular)...but if you moved this setup to another function
+    // making this variable non-static is asking for some really funky
+    // bugs
     static char stack[SIGSTKSZ];
+    
     stack_t ss = {
                   .ss_size = SIGSTKSZ,
                   .ss_sp = stack,
