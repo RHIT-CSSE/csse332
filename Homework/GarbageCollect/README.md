@@ -369,3 +369,15 @@ region.
 # Conclusion
 
 That's it.  Submit the assignment as usual!
+
+# Rubric
+
+| Part                                      | Points | Comments                                                                                         |
+| Step 1: Record All Regions                | 15     |                                                                                                  |
+| Step 2: Identify all inaccessible regions | 30     | I know this part has a lot of tests, but if you get the idea right they should all start working |
+| Step 3: test\_gc\_no\_pointer\_rewrite    | 20     |                                                                                                  |
+| Step 3: test\_gc\_stack\_update           | 10     |                                                                                                  |
+| Step 3: test\_gc\_internal\_data\_update  | 10     |                                                                                                  |
+| Step 3: test\_gc\_unaligned\_data\_update | 10     |                                                                                                  |
+| Step 4: test\_gc\_code\_relocation        | 5      |                                                                                                  |
+
