@@ -236,21 +236,21 @@
     <a href="ClassMaterials/ReferenceCounting/reference_counting">Reference Counting Slides</a>
 36:
   reading:
+  topics: 
+    - Intro to Garbage Collection Lab
+  materials: 
+  other:  <a href="Homework/GarbageCollect"> Lab Instructions</a>
+37:
+  reading:
   topics:
     - More Garbage Collection
   materials: GarbageCollection2 
   other:  
     <a href="ClassMaterials/GarbageCollection2/garbage_collection">Garbage Collection 2 Slides</a>
-37:
-  reading:
-  topics:
-    - ???
-  materials: 
-  other:  
 38:
   reading:
   topics:
-    - ???
+    - Banker's algorithm (rescheduled from earlier)
   materials: 
   other:  
 39:
@@ -263,6 +263,6 @@
 40:
   reading:
   topics:
-    - ???
+    - GC Work Time
   materials: 
   other:  
