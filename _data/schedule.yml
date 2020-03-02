@@ -84,7 +84,7 @@
 12:
   reading:
   topics:
-          - NO CLASS, Break Begins
+          - <b>Lab</b> Ext2 Filesystem
   materials:
   other:    
 13:
@@ -157,19 +157,19 @@
 23:
   reading:
   topics:
-    - Userspace Threading (canceled)
-  materials: UserSpaceThreading
+    - Lab time Semaphores 1/2
+  materials: 
   other:
 24:
   reading:  
   topics: 
-    - Project Work Time (canceled) 
+    - Detecting concurrency bugs 
   materials:
   other:  
 25:
   reading: Chapter 7
   topics:
-    - Deadlock and Starvation (moved)
+    - Deadlock and Starvation
   materials: DeadlockStarvation
   other:  
 26:
