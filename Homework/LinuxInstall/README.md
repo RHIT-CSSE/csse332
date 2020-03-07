@@ -9,13 +9,11 @@ What will definitely NOT work:
 -   Windows programs that emulate a linux environment (e.g. cygwin)
 -   MacOS
 
-There are two ways you can install linux.
-
+There are three ways you can install linux.
 
 # A Virtual Machine
 
-This is the easiest solution (it might be slightly slower to use
-though, depending on your hardware).
+This is the historically the most common approach.
 
 We've created a virtualbox virtual machine and we've pre-installed all
 the needed packages.  To use it you must install virtualbox for you
@@ -33,6 +31,45 @@ up it should ask you to configure a username and password (for max
 ease of use, I recommend you use the same username as your rose
 login).
 
+
+# Windows 10 Linux Subsystem
+
+This is a new option this term.  It's easier and faster than other
+approaches, but we may discover compatability problems with some of
+the labs.  At this point, I only reccommend it for folks who feel
+confident debugging any weird issues that might arise.
+
+Follow the instructions here:
+
+https://docs.microsoft.com/en-us/windows/wsl/install-win10
+
+I used the Ubuntu 18.04 LTS for my distribution.
+
+Run this command on your unix command line to install the necessary packages:
+
+    sudo apt install git qemu bin86 nasm bcc build-essential hexedit bochs bochs-sdl
+
+To run graphical programs you will need to have an windows X-server.  I use this one:
+
+https://sourceforge.net/projects/vcxsrv/
+
+Note that before you can actually run a graphical program you'll have
+to start the server and set the display variable on the command line.
+This is how to set it:
+
+     export DISPLAY=localhost:0.0
+
+This will only be needed if you are actually using graphical linux
+applications.  We'll need that at the end of the term for the BMOS
+labs, and you might need it right away if you want to run a graphical
+(i.e. not text based) linux editor.
+
+The editor might not be as needed as you think though, because handy
+thing about this approach is that your windows filesystem is mapped in
+linux.  For example /mnt/c/Users/YourName/Desktop/ probably contains
+your windows desktop.  This means if you clone your csse332 repo
+somewhere on your windows filesystem, you can edit your code with your
+favorite windows editor.
 
 # On a hard disk partition, or mSata drive
 
