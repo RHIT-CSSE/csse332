@@ -3,6 +3,7 @@
 #include <sys/mman.h>
 #include <unistd.h>
 #include <stdbool.h>
+#include <stddef.h>
 #include "forth_embed.h"
 
 void executeForth(struct forth_data_expanded *mem, int argc, char** argv) {
@@ -15,7 +16,6 @@ void executeForth(struct forth_data_expanded *mem, int argc, char** argv) {
 
     // TODO: needs to force a flush as we enter interative mode
     // which is not happening bcause the fgets occurs before the flush
-    
     while(1) {
         switch(fresult) {
         case FCONTINUE_YIELD:
@@ -40,6 +40,9 @@ void executeForth(struct forth_data_expanded *mem, int argc, char** argv) {
                 
                 if(file_result != NULL) {
                     //line read success!  Stop looking for input
+
+                    // useful if we crash on load
+                    // printf("EVAL: %s", input_buffer);
                     if(buffer_flushed) {
                         // if we're interactive don't buffer ouput between lines
                         fresult = f_run(&mem->f, input_buffer, output_buffer, sizeof output_buffer);
@@ -68,7 +71,7 @@ void executeForth(struct forth_data_expanded *mem, int argc, char** argv) {
             }
             break;
         case FCONTINUE_ERROR:
-            printf("Unknown error\n");
+            printf("Error while processing command: %s\n", (char*) &mem->f.wordbuf);
             return;
         case FCONTINUE_OUTPUT_FLUSH:
             printf("%s", output_buffer);
@@ -84,12 +87,23 @@ void executeForth(struct forth_data_expanded *mem, int argc, char** argv) {
 
 }
 
-void main(int argc, char** argv) {
+int main(int argc, char** argv) {
 
+    printf("offset of state is %lu \n", offsetof(struct forth_data, state));
+    printf("offset of here is %lu \n", offsetof(struct forth_data, here));
+    printf("offset of latest is %lu \n", offsetof(struct forth_data, latest));
+    printf("offset of output_max is %lu \n", offsetof(struct forth_data, output_max));
+    printf("offset of output_current is %lu \n", offsetof(struct forth_data, output_current));
+    printf("offset of base is %lu \n", offsetof(struct forth_data, base));
+    printf("offset of input_current is %lu \n", offsetof(struct forth_data, input_current));
+    printf("offset of process_id is %lu \n", offsetof(struct forth_data, process_id));
+        printf("offset of wordbuf is %lu \n", offsetof(struct forth_data, wordbuf));
+    
     struct forth_data_expanded *mem = mmap(NULL, sizeof(struct forth_data_expanded), PROT_WRITE | PROT_EXEC,
                    MAP_ANON | MAP_PRIVATE, -1, 0);
     
     initialize_forth_data_expanded(mem);
     executeForth(mem, argc, argv);
 
+    return 0;
 }

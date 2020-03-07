@@ -14,20 +14,22 @@ struct forth_data {
     void* rstack_top;
     void* rstack_bot;
     void* stack_bot;
-    int32_t state;
+    int64_t state;
     void* here;
     void* latest;
     char* output_max;
     char* output_current;
-    int32_t base;
-
-    int32_t emit_scratch;
-    int32_t intepret_is_lit;
+    int64_t base;
 
     char*  input_current;
-    int32_t process_id;
+    int64_t process_id;
 
-    char wordbuf[32];
+    // wordbuf is where the intepreter stores the forth word it is
+    // currently evaluating.  That means on an error, it can be nice
+    // to print the contents of wordbuf.  To facilitate this, I've
+    // made wordbuf output a '\0' after the currently read word so you
+    // can print it like a C string (and also know the length)
+    char wordbuf[33];
 };
 
 // an expanded struct with defaults for all the various data regions
@@ -54,6 +56,7 @@ void initialize_forth_data_expanded(struct forth_data_expanded *data);
 // completely loads functions from jonesforth.f
 // note: exits on error
 void load_starter_forth(struct forth_data *mem);
+void load_starter_forth_at_path(struct forth_data *mem, char* path);
 
 void cfoo();
 
@@ -66,11 +69,11 @@ extern void fstart();
 // its return value indicates why forth returned
 #define FCONTINUE_YIELD 1
 #define FCONTINUE_INPUT_DONE 2
-#define FCONTINUE_ERROR 3
+#define FCONTINUE_ERROR 3 // at this point, always a parse error
 #define FCONTINUE_OUTPUT_FLUSH 4
 
 // this runs the "input" forth code, using the given buffer for output
 // if you set the input to NULL, it will leave any existing input
 // if you set the output to NULL, it will use the existing output
-int f_run(struct forth_data *data, char *input, char* output, int max_output_len);
+int64_t f_run(struct forth_data *data, char *input, char* output, int max_output_len);
 
