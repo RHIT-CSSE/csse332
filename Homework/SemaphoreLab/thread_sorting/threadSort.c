@@ -98,9 +98,9 @@ int main(int argc, char** argv) {
         exit(1);
     }
 
-    char buffer[100]; //we're reading ints, so this is plenty for a line
+    char buffer[6]; // this only works for numbers of a specific length
     int read_result;
-    while((read_result = read(read_fd, buffer, 100))) {
+    while((read_result = read(read_fd, buffer, 6))) {
         int data = atoi(buffer);
         // remove this line, its just to prove read works
         printf("I just read int %d from file\n", data);

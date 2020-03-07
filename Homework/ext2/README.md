@@ -414,9 +414,9 @@ Submit your ex2access.c
 
 |                   | Points | Notes |
 |:------------------|--------|-------|
-| passes test cases | 91     |       |
-| filereader works  | 4      |       |
-| valgrind passes   | 5      |       |
+| passes test cases | 93     |       |
+| filereader works  | 3      |       |
+| valgrind passes   | 4      |       |
 
 # Acknowledgement
 

@@ -177,6 +177,15 @@ void check_calculate_offsets() {
   test_int32_equal(doubly, 255, "doubly indirect index", 1);
   test_int32_equal(triply, -1, "triply indirect index", 1);
 
+  // this prevents a bug that can cause problems late in your tests
+  printf(" checking offsets for block 1643, blocksize 1024\n");
+  calculate_offsets(1643, 1024, &direct, &single, &doubly, &triply);
+  test_int32_equal(direct, -1, "direct", 0);
+  test_int32_equal(single, 95, "singly indirect index", 1);
+  test_int32_equal(doubly, 5, "doubly indirect index", 1);
+  test_int32_equal(triply, -1, "triply indirect index", 0);
+
+  
   printf(" checking offsets for block 65804, blocksize 1024\n");
   calculate_offsets(65804, 1024, &direct, &single, &doubly, &triply);
   test_int32_equal(direct, -1, "direct", 1);
@@ -197,6 +206,9 @@ void check_calculate_offsets() {
   test_int32_equal(single, 255, "singly indirect index", 1);
   test_int32_equal(doubly, 255, "doubly indirect index", 1);
   test_int32_equal(triply, 255, "triply indirect index", 1);
+
+
+
 }
 
 void check_file_blockread(int fd, struct os_fs_metadata_t *metadata) {
@@ -388,6 +400,8 @@ int main(int argc, char **argv) {
   // calculate filesystem metadata.  you get to implement this
   // function in file ext2_access.c.
   struct os_fs_metadata_t metadata;
+  memset(&metadata, 0, sizeof (struct os_fs_metadata_t));
+  
   load_ext2_metadata(fd, &metadata);
   check_metadata(&metadata);  // our test code
   
