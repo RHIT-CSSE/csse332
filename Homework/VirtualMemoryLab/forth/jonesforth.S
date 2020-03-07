@@ -1341,13 +1341,7 @@ not_zero_char:
         mov $4, %edx // return code indicating we've run out of input
         call fpause
 emit_done:
-	NEXT
-
-        defcode "FLUSH", 5,,FLUSH
-        mov $4, %edx // return code indicating we've run out of input
-        call fpause
-        NEXT
-        
+	NEXT        
 /*
 	Back to input, WORD is a FORTH word which reads the next full word of input.
 
@@ -2199,12 +2193,12 @@ errmsgnl: .ascii "\n"
         movl    \mem(%ebp), \reg
         movl    %eax, \mem(%ebp)
         .endm
-        
-        defcode "YIELD",5,,FPAUSE
-        movl $1, %edx // return code indicated we yielded
-        call fpause //this puts the instruction to return to on the stack
-        NEXT
 
+        defcode "PAUSE_WITH_CODE",15,,PAUSECODE
+        pop %edx
+        call fpause
+        NEXT
+        
 fpause: 
         SWAP    OLD_EBX, %ebx
         SWAP    OLD_EDI, %edi

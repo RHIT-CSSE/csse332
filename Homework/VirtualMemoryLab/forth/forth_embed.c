@@ -6,7 +6,7 @@
 
 // these externs are in the assembly code but aren't intended to be
 // used by anything directly
-extern int fcontinue(struct forth_data *data);
+extern int64_t fcontinue(struct forth_data *data);
 
 // the is last assembly defined forth function.  it is the initial
 // value of LATEST, which is set during C struct initialization
@@ -31,19 +31,19 @@ void initialize_forth_data(struct forth_data *data,
     data->latest = name_SYSCALL0;
     data->here = data_top;
     data->base = 10;
-    data->intepret_is_lit = 0;
     data->process_id = ++process_counter;
 }
 
 
 void initialize_forth_data_expanded(struct forth_data_expanded *data) {
+    
     initialize_forth_data(&data->f,
                           data->return_stack + sizeof data->return_stack / sizeof *(data->return_stack),
                           data->data_area,
                           data->stack + sizeof data->stack / sizeof *(data->stack));
 }
 
-int f_run(struct forth_data *data, char *input, char *output, int max_output_len) {
+int64_t f_run(struct forth_data *data, char *input, char *output, int max_output_len) {
 
     if(output != NULL) {
 
@@ -53,13 +53,13 @@ int f_run(struct forth_data *data, char *input, char *output, int max_output_len
     if(input != NULL) {
         data->input_current = input;
     }
-    int result = fcontinue(data);
+    int64_t result = fcontinue(data);
     *(data->output_current) = '\0';
     return result;
 }
 
+void load_starter_forth_at_path(struct forth_data *mem, char* path) {
 
-void load_starter_forth(struct forth_data *mem) {
     char input_buffer[200];
     char output_buffer[200];
     char* orig_output = mem->output_current;
@@ -67,15 +67,14 @@ void load_starter_forth(struct forth_data *mem) {
     mem->output_current = output_buffer;
     mem->output_max = output_buffer + sizeof output_buffer;
     
-    FILE* file = fopen("jonesforth.f","r");
+    FILE* file = fopen(path,"r");
     if(file == NULL) {
-        printf("error loading jonesforth.f\n");
+        printf("error loading %s\n", path);
         exit(1);
     }
 
     int fresult = FCONTINUE_INPUT_DONE;
     char* file_result = NULL;
-    bool done = false;
     
     while(1) {
         
@@ -94,11 +93,19 @@ void load_starter_forth(struct forth_data *mem) {
             //we ignore output, so just reset the output buffer
             mem->output_current = output_buffer;
             break;
+        case FCONTINUE_ERROR:
+            printf("error %s load response.  (Maybe while handling %s?)\n", path, mem->wordbuf);
+            exit(2);
+            
         default:
-            printf("unexpected jonesforth.f load reasponse\n");
+            printf("unexpected %s load response\n", path);
             exit(2);
         }
         fresult = fcontinue(mem);
     }
     // code never arrives here
+}
+    
+void load_starter_forth(struct forth_data *mem) {
+    load_starter_forth_at_path(mem, "jonesforth.f");
 }
