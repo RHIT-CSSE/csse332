@@ -4,6 +4,13 @@
 #include <unistd.h>
 #include "basic_threads.h"
 
+/*
+
+  This is some code that illustrates how the basic_threads library is
+  intended to be used.
+
+ */
+
 int percent_complete;
 
 void gui_thread() {

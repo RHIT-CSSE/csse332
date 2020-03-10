@@ -47,6 +47,7 @@ I used the Ubuntu 18.04 LTS for my distribution.
 
 Run this command on your unix command line to install the necessary packages:
 
+    sudo apt update
     sudo apt install git qemu bin86 nasm bcc build-essential hexedit bochs bochs-sdl
 
 To run graphical programs you will need to have an windows X-server.  I use this one:

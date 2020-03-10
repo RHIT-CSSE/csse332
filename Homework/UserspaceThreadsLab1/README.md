@@ -43,6 +43,8 @@ can implement your own user-space (as opposed to kernel-space)
 threads.  The process you'll use is very similar to the way the OS
 itself handles threads.
 
+(Take a look here)[basic_threads_in_use_example.c] to see how the
+thread system we're building is intended to be used.
 
 <a id="org5e7ea37"></a>
 
