@@ -115,7 +115,7 @@ Use that code as your starting point to make changes to paged_forth.c.
 
 The given code just always maps the same page, but you'll need to edit
 it.  Your code will need to use some pointer math to determine in
-which page (of the 10 possible) address that causes the segfault
+which page (of the 20 possible) address that causes the segfault
 resides.  Then, you'll compute the beginning of that page, and then
 you'll mmap it.
 
@@ -132,20 +132,30 @@ becomes
     
 When completed, my output looks like:
 
-    in handler with invalid address 0xf9f95ffc
-    mapping page 9
+    in handler with invalid address 0xf9f9fff8
+    mapping page 19
     in handler with invalid address 0xf9f8c000
     mapping page 0
     in handler with invalid address 0xf9f8d000
     mapping page 1
-    in handler with invalid address 0xf9f94ffc
-    mapping page 8
-    in handler with invalid address 0xf9f93ffc
-    mapping page 7
-    in handler with invalid address 0xf9f92ffc
-    mapping page 6
-    in handler with invalid address 0xf9f91ffc
-    mapping page 5
+    in handler with invalid address 0xf9f9eff8
+    mapping page 18
+    in handler with invalid address 0xf9f9dff8
+    mapping page 17
+    in handler with invalid address 0xf9f9cff8
+    mapping page 16
+    in handler with invalid address 0xf9f9bff8
+    mapping page 15
+    in handler with invalid address 0xf9f9aff8
+    mapping page 14
+    in handler with invalid address 0xf9f99ff8
+    mapping page 13
+    in handler with invalid address 0xf9f98ff8
+    mapping page 12
+    in handler with invalid address 0xf9f97ff8
+    mapping page 11
+    in handler with invalid address 0xf9f96ff8
+    mapping page 10
     OUTPUT: 4999 5000 finished successfully 
     done
     
