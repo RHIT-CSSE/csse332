@@ -186,7 +186,7 @@ So we need to fix this.
 ## Standalone 1: Segmentation Faults Solution
 
 We need to disable (i.e. mask) the alarm signal from occurring when it
-is unsafe.  To do that, we'll use code like this&#x2026;see the appropriate
+is unsafe.  To do that, we'll use code like this - see the appropriate
 man pages for details:
 
     sigset_t mask;

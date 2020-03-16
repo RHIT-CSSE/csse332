@@ -19,6 +19,12 @@ Use the signal mask to disable ^C while Part 2.  Don't just install a
 new empty handler - use sigprocmask.  You should reenable ^C after
 Part 2 is done.
 
+Note that if you do this using signal masks, a ^C when in Part 2 will
+kill the process once Part 3 starts.  That's what we want - ^C
+shouldn't be ignored, we just want it paused during the dangerous
+section.  Of course, if we did want it ignored it's as easy as
+installing a ignore signal handler.
+
 STEP 3
 
 We'd like to make part 3 abort (and cleanup) automatically after 4

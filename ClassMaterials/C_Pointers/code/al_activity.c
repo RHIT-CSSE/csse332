@@ -82,7 +82,6 @@ void do_nothing() {
 }
 
 int main() {
-    int nums[NUM_MAX];
     struct array_list *mylist;
 
     // mylist = array_list_new(do_nothing);
@@ -91,30 +90,28 @@ int main() {
     
     // adds a bunch of numbers to the list
     for(int i = 1; i <= NUM_MAX; i++) {
-
-        // this code is fine for step 1 but will be replaced in step 2
-        
-        nums[i - 1] = i;
-        // remember, void pointers can only safely store pointer
-        // values.  So we can't insert our intvalues directly.
-        // Instead, we must insert pointers to the ints
-        array_list_add(mylist, &nums[i - 1]);
-
-        
+        int *memory = malloc(sizeof(int));
+        *memory = i;
+        printf("allocating %p %d\n", memory, *memory);
+        array_list_add(mylist, memory);        
     }
 
     // removes a couple randomly
     for(int i = 1; i <= NUM_TO_DELETE; i++) {
         int rand_index = rand() % array_list_length(mylist);
 
-        // STEP 2 HINT: you'll need to retrieve the value using
-        // get_idx before the remove so you can safely free
-
+        int* memory = array_list_get_idx(mylist, rand_index);
+        printf("freeing %p %d\n", memory, *memory);
         array_list_del_idx(mylist, rand_index, 1);
+        free(memory);
     }
 
     printf("mylist (size %lu) values:\n", array_list_length(mylist));
     // Your STEP 1 printing loop will go here
+    for(int i = 0; i < array_list_length(mylist); i++) {
+        int* current = array_list_get_idx(mylist, i);
+        printf("%d\n", *current);
+    }
     
     // free the array list which may leak some values until step 3
     array_list_free(mylist);
