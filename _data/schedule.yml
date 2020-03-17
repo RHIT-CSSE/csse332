@@ -26,26 +26,24 @@
   materials: IntroToOS
   other:
 4:
+  topics:
+    - CLASS CANCELLED
+5:
   reading:
   topics:
     - Signals
   materials: Signals
   other:
     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%228dcc1b2a-8144-4e6d-a87f-ab800109d5e9%22">Videos</a>
-    - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=1827587">Activity Submmision</a>
-5:
+    - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=1827587">Activity Submission</a>
+6:
   reading:
     - Chapter 3
   topics:
           - Processes Operation
           - Forking Child Processes
+          - This was a lab day for simple shell but we lost last Friday
   materials: Fork
-  other:
-6:
-  reading:
-  topics:
-          - <b>Lab</b> Simple Shell
-  materials: 
   other:
 7:
   reading:
