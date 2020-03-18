@@ -51,8 +51,11 @@
   reading:
   topics:
     - Makefiles
-  materials:
+  materials: Makefiles
   other:
+    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=fa6f1c94-199e-4395-bd9d-ab82013002d2">Video</a>
+    - <a href="https://rhit-csse.github.io/csse332/ClassMaterials/Makefiles/makefiles.html#1">Slides</a>
+    - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=1837987&forceview=1">Activity Submission</a>
 8:
   reading:
   topics:

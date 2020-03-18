@@ -108,38 +108,4 @@ Note the .h files are how someMain.c references functions in bigLibraryA that wo
 ---
 # Activity
 
-In the make_tutorial directory there is an almain which also relies on arraylist library in the same directory.
-
-You can compile it like this:
-
-    $ gcc almain.c arraylist.c -o almain
-    
-But that will rebuild everything.  Instead make a Makefile the constructs .o files for almain and arraylist and then links them.
-
----
-# Activity Goals
-
-If you build your almain Makefile correctly:
-
-+ typing "make almain" should build everything, if nothing exists
-+ typing "make almain" after editing only editing almain.c should only rebuild almain.o and the executable
-+ typing "make almain" after editing only editing arraylist.c should only rebuild arraylist.o and the executable
-+ typing "make almain" after editing only editing arraylist.h rebuild everything
-+ typing "make all" or "make" should act as if you had typed "make almain"
-
-Hint: for your testing, typing "touch <filename>" will make a file appear to be edited
-
----
-# Activity Solution
-
-	all: almain
-	
-	almain.o: almain.c arraylist.h
-		gcc -c almain.c -o almain.o
-	
-	arraylist.o: arraylist.c arraylist.h
-		gcc -c arraylist.c -o arraylist.o
-	
-	almain: almain.o arraylist.o
-		gcc almain.o arraylist.o -o almain
-	
+See Makefile in this directory for the details

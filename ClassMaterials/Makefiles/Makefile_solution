@@ -1,0 +1,17 @@
+# BTW, if you'd like to test this solution file's operation even
+# though its not named Makefile, you can use it like this:
+#     make -f Makefile_solution
+
+all: almain.bin
+
+almain.o: almain.c arraylist.h
+	gcc -c almain.c -o almain.o
+
+arraylist.o: arraylist.c arraylist.h
+	gcc -c arraylist.c -o arraylist.o
+
+almain.bin: almain.o arraylist.o
+	gcc almain.o arraylist.o -o almain.bin
+
+clean:
+	rm -f *.o *.bin
