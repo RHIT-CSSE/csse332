@@ -1,4 +1,10 @@
-all: buffalosay.bin forkActivity.bin forkActivitySolution.bin
+all: execExample.bin forkExample.bin buffalosay.bin forkActivity.bin forkActivitySolution.bin
+
+execExample.bin: execExample.c
+	gcc execExample.c -o execExample.bin
+
+forkExample.bin: forkExample.c
+	gcc forkExample.c -o forkExample.bin
 
 buffalosay.bin: buffalosay.c
 	gcc buffalosay.c -o buffalosay.bin
