@@ -161,11 +161,9 @@ for now.
 
 # Step 5: Makefiles
 
-We'll talk about makefiles in class one day, so if that hasn't
-happened yet you might consider waiting.  But if not, all the
-materials plus an activity are in the make\_tutorial directory.
-
-Once you've gone through that stuff you should be able to look at the
+We'll talk about makefiles in class one day, so be sure to look over
+the materials for that lecture if you haven't yet had the class.  Once
+you've gone through that stuff you should be able to look at the
 Makefile we provided and understand it.
 
 Now we'd like you to build a makefile for a more complicated project.

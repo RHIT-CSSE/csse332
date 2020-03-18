@@ -103,7 +103,7 @@ Why is this better?
     someProg: someMain.o bigLibraryA.o bigLibraryB.o
         gcc someMain.o bigLibraryA.o bigLibraryB.o -o someProg
 
-Note the .h files are how someMain.c references functions in bigLibraryA that won't be actually provided until the linking step.  It's crucial that the dependencies be specified correctly (even though, as you can see, the .h files are needed in the compilation commands themselves). 
+Note the .h files are how someMain.c references functions in bigLibraryA that won't be actually provided until the linking step.  It's crucial that the dependencies be specified correctly (even though, as you can see, the .h files are not needed in the compilation commands themselves). 
 
 ---
 # Activity
