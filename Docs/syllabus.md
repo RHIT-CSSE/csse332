@@ -4,13 +4,17 @@ title: Syllabus
 permalink: /syllabus/
 ---
 
+# Changes!
+
+There needed to be [changes to this course to move to a fully online format](covid19_revisions.md).
+
 ### Course Description
 
 Students learn fundamental concepts of modern operating systems by studying how and why operating systems have evolved. Topics include CPU scheduling, process synchronization, memory management, file systems, I/O systems, privacy and security, and performance evaluation. Students implement parts of an operating system as a means of exploring the details of some of these topics.
 
 ### Prerequisite Topics
 
-It is assumed that students are familiar with the C programming language and are well on their way to being independent programmers (i.e. they have a solid command of the material in CSSE-220 or CSSE-221). It is also assumed that students have an understanding of the material covered in CSSE-132 or CSSE-232 including interrupts and exceptions, the relationship between high-level languages and assembly code, and processor resources such as registers.
+It is assumed that students are familiar with the C programming language and are well on their way to being independent programmers (i.e. they have a solid command of the material in CSSE-220). It is also assumed that students have an understanding of the material covered in CSSE-132 or CSSE-232 including interrupts and exceptions, the relationship between high-level languages and assembly code, and processor resources such as registers.
 
 ### Textbook
 
