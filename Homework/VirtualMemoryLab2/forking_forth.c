@@ -6,7 +6,7 @@
 #include <sys/mman.h>
 #include <unistd.h>
 #include <string.h>
-#include "forth_embed.h"
+#include "forth/forth_embed.h"
 #include "forking_forth.h"
 
 // if the region requested is already mapped, things fail
@@ -14,9 +14,12 @@
 // starts up
 #define UNIVERSAL_PAGE_START 0xf9f8c000
 
+// we need a special return code for forth to use when it wants to
+// signal a fork
+#define FCONTINUE_FORK 5
 
 // the number of memory pages will will allocate to an instance of forth
-#define NUM_PAGES 12 // last two pages are for the return stack
+#define NUM_PAGES 22 // last two pages are for the return stack
 #define MAX_FORTHS 10
 
 #define PAGE_UNCREATED -1
