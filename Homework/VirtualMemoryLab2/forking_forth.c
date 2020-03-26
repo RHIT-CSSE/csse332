@@ -6,7 +6,7 @@
 #include <sys/mman.h>
 #include <unistd.h>
 #include <string.h>
-#include "forth_embed.h"
+#include "forth/forth_embed.h"
 #include "forking_forth.h"
 
 // if the region requested is already mapped, things fail
@@ -14,10 +14,14 @@
 // starts up
 #define UNIVERSAL_PAGE_START 0xf9f8c000
 
-
 // the number of memory pages will will allocate to an instance of forth
-#define NUM_PAGES 12 // last two pages are for the return stack
+#define NUM_PAGES 22 // last two pages are for the return stack
 #define MAX_FORTHS 10
+
+// this is a function I define for you - it's at the bottom of the
+// file if you're curious
+void push_onto_forth_stack(struct forth_data *data, int64_t value_to_push);
+
 
 #define PAGE_UNCREATED -1
 
@@ -81,7 +85,6 @@ int create_forth(char* code) {
     //
     // use mmap
     
-    
 
     // the return stack is a forth-specific data structure.  I
     // allocate a seperate space for it as the last 2 pages of
@@ -98,8 +101,17 @@ int create_forth(char* code) {
                           (void*) UNIVERSAL_PAGE_START + stackheap_size); //beginning of the stack
 
 
-    load_starter_forth(&forth_extra_data[forth_num].data);
+    load_starter_forth_at_path(&forth_extra_data[forth_num].data, "forth/jonesforth.f");
 
+    char output[100], input[100];
+
+    // creating the fork function using FCONTINUE_FORK so we don't have to hard-code its value
+    snprintf(input, 100, ": FORK %d PAUSE_WITH_CODE ;", FCONTINUE_FORK);
+
+    // add a super tiny bit of forth which adds the FORK function
+    f_run(&forth_extra_data[forth_num].data, input, output, 100);
+
+         
     forth_extra_data[forth_num].data.input_current = code;
     return forth_num;
 }
@@ -117,4 +129,13 @@ struct run_output run_forth_until_event(int forth_to_run) {
     } 
     return output;
 
+}
+
+void push_onto_forth_stack(struct forth_data *data, int64_t value_to_push) {
+    int64_t current_top = *((int32_t*) data->stack_top);
+    *((int64_t*) data->stack_top) = value_to_push;
+    data->stack_top -= 8; // stack is 8 bytes a entry, starts high,
+                          // goes low
+    *((int64_t*) data->stack_top) = current_top;
+    
 }

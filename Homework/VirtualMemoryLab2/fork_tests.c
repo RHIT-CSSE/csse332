@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "CuTest.h"
 #include "forking_forth.h"
-#include "forth_embed.h"
+#include "forth/forth_embed.h"
 
 void test0_oneforth(CuTest *tc) {
     initialize_forths();
@@ -214,7 +214,7 @@ int main(int argc, char *argv[]) {
     // them out and add them back one step at a time
     
     SUITE_ADD_TEST(suite, test0_oneforth); 
-    SUITE_ADD_TEST(suite, test1_twoforths);
+    /*    SUITE_ADD_TEST(suite, test1_twoforths);
     SUITE_ADD_TEST(suite, test2_yields);
     SUITE_ADD_TEST(suite, test3_page_count);
     SUITE_ADD_TEST(suite, test4_identical_fork);
@@ -223,7 +223,7 @@ int main(int argc, char *argv[]) {
     SUITE_ADD_TEST(suite, test7_copy_on_write);
     SUITE_ADD_TEST(suite, test8_copy_on_write_parent_edit);
     SUITE_ADD_TEST(suite, test9_double_fork_copy_on_write);
-                                        
+    */                                  
     CuSuiteRun(suite);
     CuSuiteSummary(suite, output);
     CuSuiteDetails(suite, output);
