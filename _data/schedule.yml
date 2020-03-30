@@ -110,7 +110,9 @@
   topics:
     - CPU Scheduling 1
   materials: CPU_Scheduling1
-  other:  
+  other:
+    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%22de8358e3-4688-4768-b984-ab8e00df85b2%22">Videos</a>
+    - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=1781442">Activity</a>
 14:
   reading:
           - Chapter 6
