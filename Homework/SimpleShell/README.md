@@ -135,7 +135,7 @@ background from your simple shell, and then NOT IN YOUR SIMPLE SHELL but in some
 run "ps -a".  How many instances of the program are running?  Next,
 exit the background program, but do not exit simpleshell, and NOT IN
 YOUR SIMPLE SHELL run "ps -a" again.  You should see something like
-"simpleshell <defunct>".  Defunct processes are zombie processes
+"simpleshell defunct".  Defunct processes are zombie processes
 as described in class and on page 121 of your textbook.  [How-to
 Geek](https://www.howtogeek.com/119815/htg-explains-what-is-a-zombie-process-on-linux/)
 has a nice article explaining what zombie processes are. and how to
