@@ -4,8 +4,8 @@ Linux Install,LinuxInstall,2020-03-09 23:55:00,
 Userspace Threads,UserspaceThreadsLab1,2020-03-12 23:55:00,royn
 ADVANCED Userspace Threads With Preemption,UserspaceThreadsLab2,2020-03-23 23:55:00,blonskac
 Simple Shell/Makefiles,SimpleShell,2020-03-26 23:55:00,royn
-BareMetalOs InputOutput,BareMetalOS/InputOutput,2020-03-30 23:55:00,
-Process Lab/Debugging,ProcessLab,2020-04-02 23:55:00,
+BareMetalOs InputOutput,BareMetalOS/InputOutput,2020-03-30 23:55:00,blonskac
+Process Lab/Debugging,ProcessLab,2020-04-02 23:55:00,johnsod4
 ADVANCED Ext2 Filesystem,ext2,2020-04-06 23:55:00,
 CPU Scheduling,,2020-04-08 23:55:00,
 BareMetalOS Filesystem,BareMetalOS/Filesystem,2020-04-13 23:55:00,
