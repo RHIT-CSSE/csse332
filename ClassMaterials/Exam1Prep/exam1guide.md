@@ -4,13 +4,15 @@ layout: togit
 
 # Exam 1 Preparation
 
-Last updated: Fall 19-20
+Last updated: Spring 19-20
 
 Note that exam contents can change term to term.
 
 # Sample Exams
 
 You should plan to practice using the [sample exams available here](../../SampleExams/).
+
+Exam1-202020, Exam1-201930, Exam1-201930/makeup are probably your best resources.
 
 But be aware the format of the exam has changed quite a bit from previous years.
 
@@ -30,6 +32,7 @@ But be aware the format of the exam has changed quite a bit from previous years.
   we've given you plus any code you have written
 * No google/other websites but you can use manpages and the professors
   (maybe) can be your google
+* SPECIAL for COVID-19 limited good (listen to my lecture)
 * We try to note the fundamental skills we are looking for in each of
   the parts...be sure you can confidently do those things
 * We will expect you to solve novel problems on the exam, not simply
@@ -64,17 +67,18 @@ But be aware the format of the exam has changed quite a bit from previous years.
 * Registering handlers
 * Masks
 * Passing extra data to signal handlers (hint globals)
-* Could be fair game but not actually on this exam
 
 ## IPC
 
-* Pipes (exam1)
-* Shared memory using mmap (exam1 makeup)
-
+* Shared memory using mmap (exam1)
+* Pipes (exam1 makeup)
 
 ## Makefile
 
 ~15 points
+
+*NOTE*: I'm gonna use valgrind for part of the Makefile step (not in a
+hard way) so make sure you have it installed.
 
 An easy way to get a few points - it's silly to lose these.
 
