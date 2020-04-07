@@ -5,6 +5,35 @@ layout: togit
 
 # Threads and Semaphore Basics
 
+<!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-refresh-toc -->
+**Table of Contents**
+
+- [Threads and Semaphore Basics](#threads-and-semaphore-basics)
+- [Building things](#building-things)
+- [Thread Factoring (20 points)](#thread-factoring-20-points)
+- [Thread Sorting (40 points)](#thread-sorting-40-points)
+- [Basic semaphores 1 (20 points)](#basic-semaphores-1-20-points)
+    - [The problem](#the-problem)
+    - [The solution - Semaphores](#the-solution---semaphores)
+    - [Operation](#operation)
+    - [Using Semaphores to protect a critical section](#using-semaphores-to-protect-a-critical-section)
+    - [Doing this in code](#doing-this-in-code)
+    - [Solve it!](#solve-it)
+- [Basic Semaphores 2: RedBluePurple (50 points)](#basic-semaphores-2-redbluepurple-50-points)
+- [Rubric](#rubric)
+
+<!-- markdown-toc end -->
+
+
+# Building things
+
+All the files in this lab can be built like this:
+
+    gcc -pthread -ggdb threadSort.c -o threadSort.bin
+
+(replace threadSort.c with whatever file we're talking about).  I
+encourage you to create some Makefiles as needed but its up to you.
+
 # Thread Factoring (20 points)
 
 Look in the thread\_factoring project in the Homework/SemaphoreLab
@@ -17,10 +46,11 @@ Then use threads to parallelize the problem given in factoring.  If
 you do it correctly you should be able to see the correct number of
 threads working in parallel.
 
-Here's some sample output from my solution.  Note that when given two 
-threads, my solution will make one thread handle evens and one
-thread handle odds.  Your approach does not have to split up the problem
-this way. It divides the number of values each thread considers evenly.
+Here's some sample output from my solution.  Note that when given two
+threads, my solution will make one thread handle evens and one thread
+handle odds.  Your approach does not have to split up the problem this
+way, as long as it divides the values to check between each thread
+approximately evenly.
 
     Give a number to factor.
     143
@@ -132,15 +162,10 @@ The program is in the file threads.c and takes three command line arguments:
     
 in that order. 
 
-Build the file like this:
-
-    gcc -pthread -ggdb threadSort.c -o threadSort
-
-
 1.  We've given you code that handles the input arguments and file
-    reading.  Your first goal will be the read the numbers from the
+    reading.  Your first goal will be the insert the numbers from the
     input file into some structures that are convenient for
-    processing (might I suggest a two dimension array?).
+    processing (might I suggest a two dimensional array?).
 
 2.  Use a loop to create n parallel threads, distributing the number
     of values evenly across each thread. 
