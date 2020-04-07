@@ -152,7 +152,9 @@
   reading:
   topics:
           - <b>Lab</b> Threads and Semaphore Basics
-  other: <a href="Homework/SemaphoreLab/README"> Lab Instructions</a>
+  other:
+    - <a href="Homework/SemaphoreLab/README"> Lab Instructions</a>
+    - No video or activity today
 19:
   reading:  Chapter 5
   topics: 
