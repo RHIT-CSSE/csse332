@@ -138,78 +138,95 @@ threading assignment.
 
 # Thread Sorting (40 points)
 
-Look at the thread\_sorting project in the lab directory. The
-Costs.txt file in this project should be used as a sample file for
-this part of the lab. Don't forget to compile with the -pthread
-compilation flag.
+Look at the thread\_sorting project in the lab directory. 
 
 In this program you will demonstrate your understanding of thread
-creation, some thread synchronization, and POSIX thread
-management. 
+creation, joining, and just some general purpose concurrent algorithm
+design in C.
 
-We want to read in an input file of integers and sort it.  We'll do
+We want time how long it takes to sort with various sort algorithms.  We'll do
 this with 3 different sorting methods (all the sorting code is given
 to you).  We will do this sorting in parallel using threads.  We will
-print some info about how fast the various sort methods were, then
-we'll merge all the various sorted sub-files together into one sorted
-list and output it to a file.
+print some info about how fast the various sort methods were.
 
-The program is in the file threads.c and takes three command line arguments: 
+The program is in the file threads.c and takes two command line arguments: 
     
 1.  the number of threads to create (n),
-2.  an input file
-3.  an output file
-    
-in that order. 
+2.  the number of numbers each thread should sort
 
-1.  We've given you code that handles the input arguments and file
-    reading.  Your first goal will be the insert the numbers from the
-    input file into some structures that are convenient for
-    processing (might I suggest a two dimensional array?).
+Here's some example output from my solution:
+
+       ./threadSort_solution.bin 6 5                                      
+    Sorting indexes 0-4 with brute force
+    Sorting indexes 5-9 with bubble
+    Sorting indexes 10-14 with merge
+    Sorting indexes 15-19 with brute force
+    Sorting indexes 20-24 with bubble
+    Sorting indexes 25-29 with merge
+    Sorting indexes 20-24 with bubble done in 2 usecs
+    Sorting indexes 15-19 with brute force done in 2 usecs
+    Sorting indexes 10-14 with merge done in 78 usecs
+    Sorting indexes 5-9 with bubble done in 1 usecs
+    Sorting indexes 25-29 with merge done in 52 usecs
+    Sorting indexes 0-4 with brute force done in 1 usecs
+    brute force avg 1.500000 min 1 max 2
+    bubble avg 1.500000 min 1 max 2
+    merge avg 65.000000 min 52 max 78
+    Result array:
+    26 27 28 29 30 
+    21 22 23 24 25 
+    16 17 18 19 20 
+    11 12 13 14 15 
+    6 7 8 9 10 
+    1 2 3 4 5 
+    
+
+
+1.  We've given you code that handles the input arguments and
+    generating the numbers to sort, so you don't need to worry about
+    that.
 
 2.  Use a loop to create n parallel threads, distributing the number
     of values evenly across each thread. 
     
-    a. Each thread will sort its group of values using a different
-     sorting algorithm. In each thread, call one of three sorting
-     algorithms (provided in threads.c). One third of the threads
-     created should use a brute force sorting algorithm.  One third
-     should use bubble sort. And finally, one third should use merge
-     sort.
+    Each thread will sort its group of values using a different
+    sorting algorithm. In each thread, call one of three sorting
+    algorithms. One third of the threads created should use a brute
+    force sorting algorithm.  One third should use bubble sort. And
+    finally, one third should use merge sort.  You can assume it
+    divides evenly.  I built a function called thread\_dispatch that
+    my pthread\_create calls.  thread\_dispatch then looks at its
+    parameters to figure out which of the 3 sorting functions it ought
+    to run (exactly what those parameters are though, is up to you).
     
-    b. Each thread should track the time it takes to operate (use
-     gettimeofday), starting upon creation and ending once the
-     sorting is complete.
+    Make your thread\_dispatch print "Sorting indexes..." messages as
+    in the example output above.  Note that I put a sleep(1) after the
+    first Sorting indexes printf - this makes its obvious my threads
+    run in parallel even if the sorting they do is really fast.
     
-    c. Each thread should print its index (an int that
-     represents the order in which the thread was created) and
-     total time (as described above) upon completion.
+    Be sure to test this code and make sure your result array output
+    matches mine before you continue one.  Don't worry about tracking
+    time (the next part) till the basic sorting works.
+    
+3. Now make each thread track how long it takes to do the sort.
+   Here's some example code for time tracking:
+   
+        struct timeval startt, stopt;
+        suseconds_t usecs_passed;
+        gettimeofday(&startt, NULL);
+        // some code that takes time
+        gettimeofday(&stopt, NULL);
+        usecs_passed = stopt.tv_usec - startt.tv_usec;
+  
+    The time elapsed needs to be stored somewhere so it can be
+    aggregated up after all threads are done.
+    
 
 4.  In a loop, the parent process should wait (using pthread\_join)
     for each thread to complete. Once all of the of the n threads have
-    completed, the parent should call a user defined function that
-    calculates the maximum, minimum, and mean values for the execution
-    times of each sorting algorithm.  It should then print these
-    values to the console.
-
-5.  At this point the values should be semi-sorted: the first
-    third should be sorted via the brute force method, the second
-    third by the bubble sort method, and the third third by the merge
-    sort method.
-
-6.  Finally, merge the results of each thread to create one sorted
-    list.  The nicest way to do this is create a new output array to
-    sort all the output and then repeatedly copy individual sorted
-    segments into the region, then merge them with the Merge function.
-    
-    You do not need to use parallelism in this part.
-    
-    You could also copy them all into the output and then merge them
-    with a single sort that doesn't take advantage of the fact that
-    the sub-lists are sorted, but this is the cowards way out and we'll
-    take off a small number of points if you do.
-
-You only need to submit threadSort.c for this part.
+    completed, the main thread calculates the maximum, minimum, and
+    mean values for the execution times of each sorting algorithm.  It
+    should then print these values to the console.
 
 # Basic semaphores 1 (20 points)
 
@@ -389,16 +406,8 @@ red\_blue\_purple.c file.
 <tr>
 <td class="org-left">Thread Sorting</td>
 <td class="org-left">Computes and prints min max and mean times for each algorithm</td>
-<td class="org-right">10</td>
+<td class="org-right">20</td>
 </tr>
-
-
-<tr>
-<td class="org-left">Thread Sorting</td>
-<td class="org-left">Final merges to create one sorted list (-5 if you don't take advantage of the sortedness with Merge)</td>
-<td class="org-right">10</td>
-</tr>
-
 
 <tr>
 <td class="org-left">Basic Semaphores 1</td>

@@ -2,12 +2,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/stat.h>
+#include <sys/time.h>
 #include <fcntl.h>
 #include <unistd.h>
-#include "threads.h"
+#include <pthread.h>
 
-// max number of its in input file
-#define MAX_BUFFER_SIZE 100000
+// max number of values for each thread to sort
+#define MAX_VALS_PER_THREAD 1000
 // max threads allowed
 #define MAX_N_SIZE 100
 
@@ -49,8 +50,8 @@ void BubbleSort(int inputList[], int inputLength) {
  * merges positions in the overall array by re-ording data.  This 
  * saves space. */
 void Merge(int *array, int left, int mid, int right) {
-  int tempArray[MAX_BUFFER_SIZE];
-  int pos = 0, lpos = left, rpos = mid + 1;
+  int tempArray[MAX_VALS_PER_THREAD];
+  int pos = 0, lpos = left, rpos = mid;
   while (lpos <= mid && rpos <= right) {
     if (array[lpos] < array[rpos]) {
       tempArray[pos++] = array[lpos++];
@@ -58,7 +59,7 @@ void Merge(int *array, int left, int mid, int right) {
       tempArray[pos++] = array[rpos++];
     }
   }
-  while (lpos <= mid)  tempArray[pos++] = array[lpos++];
+  while (lpos < mid)  tempArray[pos++] = array[lpos++];
   while (rpos <= right)tempArray[pos++] = array[rpos++];
   int iter;
   for (iter = 0; iter < pos; iter++) {
@@ -68,18 +69,33 @@ void Merge(int *array, int left, int mid, int right) {
 }
 
 /* Divides an array into halfs to merge together in order. */
-void MergeSort(int *array, int left, int right) {
-  int mid = (left+right)/2;
-  if (left < right) {
-    MergeSort(array, left, mid);
-    MergeSort(array, mid+1, right);
-    Merge(array, left, mid, right);
+void MergeSort(int array[], int inputLength) {
+  int mid = inputLength/2;
+  if (inputLength > 1) {
+    MergeSort(array, mid);
+    MergeSort(array + mid, inputLength - mid);
+    // merge's last input is an inclusive index
+    printf("calling merge 0->%d, 1->%d\n mid %d\n",array[0], array[1], mid); 
+    Merge(array, 0, mid, inputLength - 1);
   }
+}
+
+// you might want some globals, put them here
+
+// here's a global I used you might find useful
+char* descriptions[] = {"brute force","bubble","merge"};
+
+// I wrote a function called thread dispatch which parses the thread
+// parameters and calls the correct sorting function
+//
+// you can do it a different way but I think this is easiest
+void* thread_dispatch(void* data) {
+
 }
 
 int main(int argc, char** argv) {
 
-    if(argc < 4) {
+    if(argc < 3) {
         printf("not enough arguments!\n");
         exit(1);
     }
@@ -87,52 +103,50 @@ int main(int argc, char** argv) {
     // I'm reading the value n (number of threads) for you off the
     // command line
     int n = atoi(argv[1]);
-    if(n <= 0 || n > MAX_N_SIZE) {
-        printf("bad n value (number of threads) %d\n", n);
-        exit(1);
-    }
-    
-    int read_fd = open(argv[2], O_RDONLY);
-    if(read_fd == -1) {
-        perror("couldn't open file for reading");
+    if(n <= 0 || n > MAX_N_SIZE || n % 3 != 0) {
+        printf("bad n value (number of threads) %d.  Must be a multiple of 3.\n", n);
         exit(1);
     }
 
-    char buffer[6]; // this only works for numbers of a specific length
-    int read_result;
-    while((read_result = read(read_fd, buffer, 6))) {
-        int data = atoi(buffer);
-        // remove this line, its just to prove read works
-        printf("I just read int %d from file\n", data);
-        // this is where you'll divvy up the integers into buffers for
-        // the various threads
-    }
-    if(read_result < 0) {
-        perror("file read error");
-        exit(1);
-    } else {
-        close(read_fd);
-    }
-    // this is where you'll dispatch threads for sorting
-    // then wait for things to finish
-    // then print the statistics
-
-    // make one giant buffer capable of storing all your
-    // output.
-
-    // make a loop to copy data into it, then use the Merge function
-    // to merge that data, then copy more data into it etc.
-
-    // once everything is sorted, write it out to the file
-
-    int output_fd;
-    if ((output_fd = open(argv[3], O_WRONLY | O_CREAT | O_TRUNC,
-                    S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH)) == -1) {
-        perror("Cannot open output file\n");
+    // I'm reading the number of values you want per thread
+    // off the command line
+    int vals_per_thread = atoi(argv[2]);
+    if(vals_per_thread <= 0 || vals_per_thread > MAX_VALS_PER_THREAD) {
+        printf("bad vals_per_thread value %d\n", vals_per_thread);
         exit(1);
     }
 
-    dprintf(output_fd, "Just an example for writing an int %d\n", 7);
-    close(output_fd);
+    int total_nums = n * vals_per_thread;
+    int* data_array = malloc(sizeof(int) * total_nums);
+    if(data_array == NULL) {
+        perror("malloc failure");
+        exit(1);
+    }
 
+    // initialize the test data for sort
+    for(int i = 0; i < total_nums; i++) {
+        // big reverse sorted list
+        data_array[i] = total_nums - i;
+        // the test would be more traditional if we used random
+        // values, but this makes it easier for you to visually
+        // inspect and ensure you're sorting everything
+    }
+
+    // create your threads here
+
+    // wait for them to finish
+
+    // print out the algorithm summary statistics
+
+    // print out the result array so you can see the sorting is working
+    // you might want to comment this out if you're testing with large data sets
+    printf("Result array:\n");
+    for(int i = 0; i < n; i++) {
+        for(int j = 0; j < vals_per_thread; j++) {
+            printf("%d ", data_array[i*vals_per_thread + j]);
+        }
+        printf("\n");
+    }
+
+    free(data_array); // we should free what we malloc
 }
