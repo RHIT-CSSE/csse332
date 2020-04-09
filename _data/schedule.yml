@@ -160,7 +160,9 @@
   topics: 
     - Process Synchronization
   materials: ProcessSync
-  other:  
+  other:
+    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%2292aaa87d-6f3b-4a9e-b6fb-ab9800def45b%22">Videos</a>
+    - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=1911511">Activity Submission</a>
 20:
   reading:
     - Chapter 4
