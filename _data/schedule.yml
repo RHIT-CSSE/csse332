@@ -178,7 +178,9 @@
     - Process Synchronization
     - Semaphores
   materials: ProcessSyncSemaphore
-  other:  
+  other:
+    - <a href="https://rhit-csse.github.io/csse332/schedule.html>Videos</a>
+    - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=1920431">Activity Submission</a>
 22:
   reading: Chapter 5
   topics:
