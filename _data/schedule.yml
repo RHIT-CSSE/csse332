@@ -186,7 +186,10 @@
   topics:
     - Semaphore Practice
   materials: Semaphore_II
-  other:  
+  other:
+     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%223a2cbfd4-7516-4116-9b3c-ab9d00ebf168%22:>Videos</a>
+     - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=1923671">Activity Submission</a>
+     - <a href="https://greenteapress.com/wp/semaphores/">Little Book of Semaphores</a>
 23:
   reading:
   topics:
