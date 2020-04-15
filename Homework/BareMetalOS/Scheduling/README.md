@@ -8,6 +8,8 @@ layout: togit
 <!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-refresh-toc -->
 **Table of Contents**
 
+- [-](#-)
+- [BmOs: Scheduling](#bmos-scheduling)
 - [Objective](#objective)
 - [Multitasking](#multitasking)
 - [Memory management](#memory-management)
@@ -28,9 +30,9 @@ layout: togit
 - [Kill Process](#kill-process)
     - [Testing](#testing-1)
 - [Process Blocking](#process-blocking)
-- [Optional Features](#optional-features)
-- [Reflection](#reflection)
+- [Team Member Feedback](#team-member-feedback)
 - [Turning It In](#turning-it-in)
+- [Rubric](#rubric)
 
 <!-- markdown-toc end -->
 
@@ -389,28 +391,6 @@ causes the caller process to "wait."  Then make a new shell
 command "execforeground filename" that causes the shell to
 block until the program "filename" terminates.
 
-
-# Optional Features
-
-For extra credit credit (up to 50 additional points) you might want to
-implement a few additional features in you operating system.  The more
-advanced or complex the featues are, the more points you will receive.
-Below is a partial list of possible optional features that you might
-want to consider:
-
-
-* Quit command,
-* Print size as a number of sectors for dir command, and
-* Option to change foreground and background colors.
-* Alternative directory structures using inodes
-* Alternative scheduling algorithms
-* Fancy printing libraries
-
-Of course, you can add other features that are not included in this
-partial list.  In order to receive credit for your additoinal
-features, you should describe them in your README file and
-include instructions on how to use each.
-
 # Team Member Feedback
 
 There is a Moodle survey to submit feedback about your teammates.
@@ -419,11 +399,12 @@ Please fill it out.
 # Turning It In
 
 Be sure to submit your complete project to your team repository in the
-the m5 folder.  Be sure to include a README that
-explains 1) what you did, and 2) how to verify it.  Please include a
-comment at the top of each file with the name of each team member and
-your team number.  In addition, be sure to submit all other
-deliverables that are highlighted on the project’s main page.
+the m5 folder.  Be sure to include a README that explains 1) what you
+did, and 2) how to verify it (if maybe some features got done but not
+everything).  Please include a comment at the top of each file with
+the name of each team member and your team number.  In addition, be
+sure to submit all other deliverables that are highlighted on the
+project’s main page.
 
 # Rubric
 
