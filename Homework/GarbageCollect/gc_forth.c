@@ -6,7 +6,7 @@
 #include <sys/mman.h>
 #include <unistd.h>
 #include <string.h>
-#include "forth_embed.h"
+#include "forth/forth_embed.h"
 #include "arraylist.h"
 #include "CuTest.h"
 
@@ -548,7 +548,7 @@ uint32_t pop_forth_as_uinteger() {
 
 
 
-void main() {
+int main() {
 
     // TODO: add some one time initailization here if you want
     
@@ -593,6 +593,6 @@ void main() {
     printf("%s\n", output->buffer);
     CuStringDelete(output);
     CuSuiteDelete(suite);
-
+    return 0;
 }
 
