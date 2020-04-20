@@ -211,7 +211,9 @@
   topics:
     - Deadlock and Starvation
   materials: DeadlockStarvation
-  other:  
+  other:
+    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%22d8f66dd5-9b83-4f88-9ee0-aba300dd05b5%22">Videos</a>
+    - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=1937191">Activity Submission</a>
 26:
   reading: 
   topics: 
