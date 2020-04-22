@@ -4,7 +4,7 @@ layout: togit
 
 # Exam 2 Preparation
 
-Last updated: Winter 19-20
+Last updated: Spring 19-20
 
 Note that exam contents can change term to term.
 
@@ -13,12 +13,14 @@ Note that exam contents can change term to term.
 You exam will be:
 
 + 3 semaphore questions (60 points)
-+ 1 3-part thread creation question (40 points)
++ 1 2-part thread creation question (40 points)
 
-No previous exam has been exactly like this, but I still recommend
-practice using the [sample exams available here](../../SampleExams/).
+The best preparation for this exam 2 is
+[Exam2-202020](../../SampleExams/Exam2-202020/), which is the only
+released exam in the newer exam format (where thread-creation
+questions and semaphore questions were both on the same exam).
 
-Here's what I recommend.
+For older exams, here's what I recommend.
 
 For thread creation questions:
 
@@ -58,20 +60,17 @@ For semaphore questions:
 ## Thread Creation
 
 * How to use threads to parallelize code, creating them, joining them
-* How to pass parameters to threads (and how to do it so that all your
-  threads don't end up sharing the same parameters)
+* How to pass parameters to threads, how to use structs to pass more
+  than one, and how to do it so that all your threads don't end up
+  sharing the same parameters
 * How to create/wait/post on semaphores, how to use semaphores to
   prevent concurrency problems while still allowing parallelism
         
-This particular question will also involve merge sort (in a pretty
-different way than the one you did on your lab) so if you don't recall
-how that algorithm worked from 220 you might get a quick refresher.
-
 ## Semaphores
 
 * Semaphores, including waits and posts
 * Concurrent algorithms we've talked about like producer consumer,
-  reader/writer, and dining philosophers
+  reader/writer, the scoreboard problems, and dining philosophers
 
 ### Semaphore specific advice
 
@@ -89,6 +88,9 @@ how that algorithm worked from 220 you might get a quick refresher.
   to read a variable while in an inconsistent state
 * Busywaits and weird semaphore functions are never needed to solve
   the problem
+* BUT if you are stuck and can't figure out how to solve a problem the
+  normal way, busywaits and weird semaphore functions are worth a lot
+  more than nothing
   
 ### How we will grade
 
