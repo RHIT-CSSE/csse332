@@ -104,6 +104,7 @@ void* black_thread(void *num_p) {
         sem_post(&mutex);
         sem_wait(&black_queue);
     } else {
+        in_critical_section = true;
         sem_post(&mutex);
     }
     printf("black thread %d entering critical section\n", num);
