@@ -36,6 +36,7 @@ void* thread(void *id) {
     printf("Leaving critical section\n");
     sem_wait(&mutex);
     if(num_waiting > 0) {
+        num_waiting--;
         sem_post(&queue);
     } else {
         num_in_cs--;
