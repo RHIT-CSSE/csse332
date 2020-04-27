@@ -168,7 +168,7 @@ int main(int argc, char **argv) {
     pthread_create(&threads[cur_thread], NULL, my_or, NULL);
     cur_thread++;
 
-    //sleep(4);
+    sleep(5);
     for(int i = 0; i < cur_thread; i++) {
 
         pthread_join(threads[i], NULL);
