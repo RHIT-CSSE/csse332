@@ -251,14 +251,16 @@
     - Paging
   materials: Paging
   other:
-    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=83ca0a13-5b70-4d86-9eba-abab012c8148">Videso</a>
-    - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=1952226> Activity </a>
+    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=83ca0a13-5b70-4d86-9eba-abab012c8148">Videos</a>
+    - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=1952226"> Activity </a>
 31:
   reading:
   topics:
     - Page Replacement Algorithms
   materials: PageReplacement
   other:  
+     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=9da717f1-b2b9-47d3-9cb8-abad00fce80c">Videos</a>
+     - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=1955826&forceview=1">Activity Submission</a>
 32:
   reading:
   topics:
