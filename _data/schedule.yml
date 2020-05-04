@@ -266,13 +266,17 @@
   topics:
     - Lab/Project Work Time
   materials: 
-  other:  <a href="Homework/VirtualMemoryLab/README"> Lab Instructions</a>
+  other:  
+    - No video today just start VM Lab 1
+    - <a href="Homework/VirtualMemoryLab/README"> Lab Instructions</a>
 33:
   reading:
   topics:
           - More Virtual Memory
   materials: TLB
   other:  
+    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=fb42399d-2ed9-4731-84a0-abb10120c949"> Videos </a>
+    - No activity today
 34:
   reading:
   topics:
