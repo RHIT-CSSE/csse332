@@ -291,7 +291,9 @@
     - Reference Counting
   materials: ReferenceCounting
   other:  
-    <a href="ClassMaterials/ReferenceCounting/reference_counting">Reference Counting Slides</a>
+    - <a href="ClassMaterials/ReferenceCounting/reference_counting">Reference Counting Slides</a>
+    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=5d815ae5-41bf-4e48-8f21-abb4013009d7">Videos</a>
+    - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=1971946&forceview=1">Activity Submission</a>
 36:
   reading:
   topics: 
