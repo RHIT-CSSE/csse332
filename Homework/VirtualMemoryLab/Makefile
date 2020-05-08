@@ -23,8 +23,8 @@ pagedforth.bin: paged_forth.o forth_embed.o jonesforth.o
 paged_forth_solution.bin: paged_forth_solution.o forth_embed.o jonesforth.o
 	gcc $(FLAGS) -o $@ forth_embed.o jonesforth.o paged_forth_solution.o
 
-interactive: jonesforth
-	./jonesforth forth/jonesforth.f $(PROG)
+interactive: jonesforth.bin
+	./jonesforth.bin forth/jonesforth.f $(PROG)
 
 clean:
 	rm -f *.bin *.dat *~ core .test_* *.o

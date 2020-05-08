@@ -17,10 +17,6 @@ is actually compiled at runtime into assembly language and run
 directly on the CPU.  This is known as Just-In-Time compilation and
 our VM will do something pretty similar.
 
-BTW, you need to be able to compile 32-bit C programs for this lab.  In ubuntu this means installing 2 packages:
-
-    sudo apt-get install gcc-multilib g++-multilib
-
 # Forth
 
 The language our virtual machine will be hosting is known as
@@ -31,26 +27,24 @@ introduction, and if you'd like to try some code you can type "make
 interactive" with the provided Makefile.  This will build an interactive forth
 that you can issue commands to and see output:
 
-> If it failed to compile, try to install a library by running `sudo apt-get install gcc-multilib`
-
     $ make interactive
-    ./jonesforth jonesforth.f 
-    JONESFORTH VERSION 47 
-    400201965 CELLS REMAINING
-    OK 3 4 + .
-    7 
-    BYE
+    ./jonesforth.bin forth/jonesforth.f 
+    Welcome to forth! Press ^D to quit. 
+    3 2 + .
+    5
 
 But when actually use the code for this project we will want for it to
 both take input as C strings and output C strings.  For that, take a
 look at [paged\_forth.c](paged_forth.c).  To run the code:
 
-    $ make pagedforth 
-    gcc -m32 -ggdb -c paged_forth.c -o paged_forth.o
-    gcc -m32 -ggdb -c forth_embed.c
-    gcc -m32 -ggdb -c jonesforth.S
-    gcc -m32 -ggdb -o pagedforth forth_embed.o jonesforth.o paged_forth.o
-    $ ./pagedforth 
+    $ make pagedforth.bin
+    gcc -no-pie -ggdb -Wall -c paged_forth.c -o paged_forth.o
+    gcc -no-pie -ggdb -Wall -c forth/forth_embed.c -o forth_embed.o
+    gcc -no-pie -ggdb -Wall -c forth/myjf.S -o jonesforth.o
+    gcc -no-pie -ggdb -Wall -o pagedforth.bin forth_embed.o jonesforth.o paged_forth.o
+
+    $ ./pagedforth.bin 
+    finished loading starter forth
     OUTPUT: 4999 5000 finished successfully 
     done
 

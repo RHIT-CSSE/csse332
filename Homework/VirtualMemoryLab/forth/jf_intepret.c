@@ -89,15 +89,7 @@ void executeForth(struct forth_data_expanded *mem, int argc, char** argv) {
 
 int main(int argc, char** argv) {
 
-    printf("offset of state is %lu \n", offsetof(struct forth_data, state));
-    printf("offset of here is %lu \n", offsetof(struct forth_data, here));
-    printf("offset of latest is %lu \n", offsetof(struct forth_data, latest));
-    printf("offset of output_max is %lu \n", offsetof(struct forth_data, output_max));
-    printf("offset of output_current is %lu \n", offsetof(struct forth_data, output_current));
-    printf("offset of base is %lu \n", offsetof(struct forth_data, base));
-    printf("offset of input_current is %lu \n", offsetof(struct forth_data, input_current));
-    printf("offset of process_id is %lu \n", offsetof(struct forth_data, process_id));
-        printf("offset of wordbuf is %lu \n", offsetof(struct forth_data, wordbuf));
+    printf("Welcome to forth! Press ^D to quit. \n");
     
     struct forth_data_expanded *mem = mmap(NULL, sizeof(struct forth_data_expanded), PROT_WRITE | PROT_EXEC,
                    MAP_ANON | MAP_PRIVATE, -1, 0);
