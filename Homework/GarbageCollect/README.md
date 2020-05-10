@@ -164,7 +164,8 @@ have some suggestions:
     which I used to keep track of the list of regions and easily
     add/remove regions as I needed to.  You might find it handy to use
     that.  Note that if you do use this, you have to allocate memory
-    using its functions and not malloc and free.
+    using its functions.  Take a look at (this chunk of example code I
+    provided for you)[al_example.c].
     
     On the other hand, if you prefer another structure (either
     one you write yourself or one your found on the internet) feel
@@ -234,16 +235,16 @@ accessible regions" above but here are a few hints.
    not point to any real region.  You'll use it in several places.
 5. When you're walking through memory looking for pointers, you should
    only increment your variable one byte at a time (because a pointer
-   could start at any 4 byte block in the region).
+   could start at any 8 byte block in the region).
    
    To increment a pointer by one by you can:
    
-   a. Rely on the fact that gcc treats lets you increment void
+   a. Rely on the fact that gcc lets you increment void
    pointers by bytes using pointer math.  So my\_void\_pointer++
    works.
    b. You can also cast the void pointer to a char
    
-   But then you'll want to treat that particular position as a 4 byte
+   But then you'll want to treat that particular position as a 8 byte
    void pointer.  Here's the cast you'll need (where current is a
    pointer into the region you're walking across):
    
@@ -319,8 +320,8 @@ A few hints:
    region as you move.  The old positions will let you detect pointers
    that need rewriting - the new positions tell you how to rewrite.  I
    added fields to my mem_rec to do this.
-2. Each element of the stack is 4 bytes long - so you can assume
-   pointers on the stack always start on 4 byte boundaries.
+2. Each element of the stack is 8 bytes long - so you can assume
+   pointers on the stack always start on 8 byte boundaries.
 3. Once everything's finished, be sure your regions fields fully
    reflect their new positions - garbage collection can happen
    multiple times
@@ -340,10 +341,10 @@ regions.
 ## 3d: gc\_unaligned\_data\_update
 
 If you did 3c right, this might immediately work.  If you assumed that
-pointers occur on 4-byte boundaries like the do on the forth stack,
+pointers occur on 8-byte boundaries like the do on the forth stack,
 you need to take into account that in memory regions a pointer might
 be anywhere.  Also be careful about where you end your memory search,
-as it's easy to get off by one errors where you don't check the last 4
+as it's easy to get off by one errors where you don't check the last 8
 bytes of memory as a pointer.
 
 Note that if you're copying data to the new region with memcpy, you're
