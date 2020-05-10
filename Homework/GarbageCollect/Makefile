@@ -9,8 +9,8 @@ forth_embed.o: forth/forth_embed.c forth/forth_embed.h
 jonesforth.o: forth/myjf.S
 	gcc $(FLAGS) -c forth/myjf.S -o jonesforth.o
 
-test: gc_forth
-	./gc_forth
+test: gc_forth.bin
+	./gc_forth.bin
 
 gc_forth.bin: gc_forth.c forth/forth_embed.h CuTest.h forth_embed.o jonesforth.o arraylist.o CuTest.o
 	gcc $(FLAGS) -o gc_forth.bin gc_forth.c forth_embed.o jonesforth.o arraylist.o CuTest.o
