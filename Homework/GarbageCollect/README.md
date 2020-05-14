@@ -164,8 +164,8 @@ have some suggestions:
     which I used to keep track of the list of regions and easily
     add/remove regions as I needed to.  You might find it handy to use
     that.  Note that if you do use this, you have to allocate memory
-    using its functions.  Take a look at (this chunk of example code I
-    provided for you)[al_example.c].
+    using its functions.  Take a look at [this chunk of example code I
+    provided for you](al_example.c).
     
     On the other hand, if you prefer another structure (either
     one you write yourself or one your found on the internet) feel
@@ -262,7 +262,7 @@ compute\_unrefed\_size() which returns the number of unreferenced
 write a function compute\_num\_regions() which is mostly just to
 ensure your implementation is sane.
 
-So you'll need to write that and make sure it calls your codethat
+So you'll need to write that and make sure it calls your code that
 marks unreferenced regions (but doesn't garbage collect).  Then
 compute the total size in bytes of all unreferenced regions and return
 it.
