@@ -104,8 +104,7 @@ makeup, you fail the course.
 ### Grading
 
 | Item                  | Weight |
-|:----------------------|:-------|
-|                       |        |
+| :-------------------- | :----- |
 | Assignments/Labs      | 55%    |
 | ADVANCED  Assignments | 15%    |
 | Exams                 | 30%    |
