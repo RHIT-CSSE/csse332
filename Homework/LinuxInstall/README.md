@@ -43,7 +43,7 @@ Follow the instructions here:
 
 https://docs.microsoft.com/en-us/windows/wsl/install-win10
 
-I used the Ubuntu 18.04 LTS for my distribution.
+I used WSL2 and the Ubuntu 20.04 LTS for my distribution.
 
 Run this command on your unix command line to install the necessary packages:
 

@@ -22,7 +22,9 @@ It is assumed that students are familiar with the C programming language and are
 
 * Operating System Concepts, 9th Edition, Abraham Silberschatz, Greg Gagne, and Peter B. Galvin, Wiley, 2012.
 
-* Unless otherwise specified, all Chapters and Sections listed on the schedule refer to Operating System Concepts.
+> Unless otherwise specified, all Chapters and Sections listed on the schedule refer to Operating System Concepts.
+
+* A free open-source textbook: [Operating Systems: Three Easy Pieces](http://pages.cs.wisc.edu/~remzi/OSTEP/)
 
 #### Other References
 
