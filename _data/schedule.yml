@@ -7,7 +7,9 @@
 
   materials: C_Pointers
   other: 
-    - <a href=https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=c4323a15-7815-4e30-b928-ac4701333fc7"> Video Lecture </a>
+    - <a
+      href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=c4323a15-7815-4e30-b928-ac4701333fc7">
+      Video Lecture </a>
     - <a href="https://repl.it/@RHITcsse/ArrayListExample#main.c"> In-Class Coding </a>
 2:
   reading:
