@@ -21,8 +21,8 @@ Table of Contents
          * [Problem 1: Segmentation Faults Solution](#problem-1-segmentation-faults-solution)
          * [Problem 2: Program freezes](#problem-2-program-freezes)
          * [Problem 3: Weird printing](#problem-3-weird-printing)
-      * [STEP 3: Standalone 2 (Yields, Creates, &amp; Finishes)](#step-3-standalone-2-yields-creates--finishes)
-      * [STEP 4: Test Cases](#step-4-test-cases)
+      * [STEP 4: Standalone 2 (Yields, Creates, &amp; Finishes)](#step-4-standalone-2-yields-creates--finishes)
+      * [STEP 5: Test Cases](#step-5-test-cases)
    * [Conclusion](#conclusion)
    * [Rubric](#rubric)
 
@@ -395,7 +395,7 @@ is a tricky business.
 
 <a id="org8626e2b"></a>
 
-## STEP 3: Standalone 2 (Yields, Creates, & Finishes)
+## STEP 4: Standalone 2 (Yields, Creates, & Finishes)
 
 The second standalone application has threads that call `create_new_thread`,
 `yield`, and `finish_thread`. In theory, if your solution works perfectly for
@@ -426,7 +426,7 @@ the writes).
 
 <a id="org452bfcb"></a>
 
-## STEP 4: Test Cases
+## STEP 5: Test Cases
 
 To compile the test cases
 
