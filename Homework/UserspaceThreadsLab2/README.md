@@ -6,7 +6,25 @@ layout: togit
 # Userspace Threads with Preemption
 ----
 
-[TOC]
+Table of Contents
+=================
+
+   * [Userspace Threads with Preemption](#userspace-threads-with-preemption)
+      * [Introduction](#introduction)
+      * [How to do it](#how-to-do-it)
+         * [Read this if you feel shaky about signal](#read-this-if-you-feel-shaky-about-signal)
+            * [An Example](#an-example)
+   * [What to do](#what-to-do)
+      * [STEP 1: Moving from Basic to Preempt](#step-1-moving-from-basic-to-preempt)
+      * [STEP 2: Standalone 1 (The Basics)](#step-2-standalone-1-the-basics)
+      * [STEP 3: Fix Problems with Standalone 1](#step-3-fix-problems-with-standalone-1)
+         * [Problem 1: Segmentation Faults Solution](#problem-1-segmentation-faults-solution)
+         * [Problem 2: Program freezes](#problem-2-program-freezes)
+         * [Problem 3: Weird printing](#problem-3-weird-printing)
+      * [STEP 3: Standalone 2 (Yields, Creates, &amp; Finishes)](#step-3-standalone-2-yields-creates--finishes)
+      * [STEP 4: Test Cases](#step-4-test-cases)
+   * [Conclusion](#conclusion)
+   * [Rubric](#rubric)
 
 
 
