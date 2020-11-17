@@ -8,9 +8,11 @@
   materials: C_Pointers
   other: 
     - <a
-      href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=c4323a15-7815-4e30-b928-ac4701333fc7">
+      href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=c4323a15-7815-4e30-b928-ac4701333fc7"
+      target="_blank" rel="noopener noreferrer">
       Video Lecture </a>
-    - <a href="https://repl.it/@RHITcsse/ArrayListExample#main.c"> In-Class Coding </a>
+    - <a href="https://repl.it/@RHITcsse/ArrayListExample#main.c" target="_blank" rel="noopener noreferrer">
+      In-Class Coding </a>
 2:
   reading:
   topics:
@@ -29,6 +31,10 @@
     - Introduction to OS
   materials: IntroToOS
   other:
+    - <a
+      href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=9ca1309f-b428-45c0-9e7b-ac4701343ed4"
+      target="_blank" rel="noopener noreferrer">
+      Video Lecture </a>
 4:
   topics:
     - Process Basics
