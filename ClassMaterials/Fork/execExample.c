@@ -12,22 +12,7 @@ int main(void) {
        exec the rest of this program is destroyed. */
 
 
-    /* Option 1: execl
-
-       This exec takes any number of arguments like printf */
-
-    // execl("/bin/ls", "/bin/ls", "-l", "-h", NULL);
-
-    /* Option 2: execlp 
-
-       Same as above, but we don't need to say /bin/ because its on
-       our path.  Note that in this class, we frequently execute stuff
-       in the local directory (e.g. "./someProg") in that case execlp
-       and excecl are equivalent. */
-
-    // execlp("ls", "ls", "-l", "-h", NULL);
-
-    /* Option 3: execv 
+    /* Option 1: execv 
        
        This form always takes 2 arguments, but the 2nd argument is a
        NULL terminated array of arguments.  Because building the array
@@ -36,18 +21,33 @@ int main(void) {
        (i.e. you don't know how many args there will be when you write
        the exec command). */
     
-    char *const command[] = {"/bin/ls","-l","-h", NULL};
+   //  char *const command[] = {"/bin/ls","-l","-h", NULL};
     //execv("/bin/ls", command);
+
+    /* Option 2: execvp 
+       
+       again, exactly the same as option 3, but we use the path. */
+
+   //  char *const command2[] = {"ls","-l","-h", NULL};
+   //  execvp("ls",command2);
+    /* Option 1: execl
+
+       This exec takes any number of arguments like printf */
+
+    execl("/bin/ls", "/bin/ls", "-l", "-h", NULL);
+
+    /* Option 3: execlp 
+
+       Same as above, but we don't need to say /bin/ because its on
+       our path.  Note that in this class, we frequently execute stuff
+       in the local directory (e.g. "./someProg") in that case execlp
+       and excecl are equivalent. */
+
+   //  execlp("ls", "ls", "-l", "-h", NULL);
 
     // for reasons of laziness I'll usually write that as
     // execv(command[0], command) but the above is more explicit
 
-    /* Option 4: execvp 
-       
-       again, exactly the same as option 3, but we use the path. */
-
-    char *const command2[] = {"ls","-l","-h", NULL};
-    execvp("ls",command2);
 
     
     /* 

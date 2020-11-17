@@ -1,6 +1,6 @@
 # 332 Course Revisions Due to COVID-19
 
-[You can see the video of my informal discussion of these changes here.](https://rose-hulman.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=cd2f6150-7f33-45dd-9f10-ab8301134a3e).
+<!-- [You can see the video of my informal discussion of these changes here.](https://rose-hulman.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=cd2f6150-7f33-45dd-9f10-ab8301134a3e). -->
 
 While the overall structure of the course will remain the same, there
 are some significant revisions.

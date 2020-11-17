@@ -6,7 +6,9 @@
           - Function Pointers
 
   materials: C_Pointers
-  other: <a href="https://repl.it/@RHITcsse/ArrayListExample#main.c"> In-Class Coding </a>
+  other: 
+    - <a href=https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=c4323a15-7815-4e30-b928-ac4701333fc7"> Video Lecture </a>
+    - <a href="https://repl.it/@RHITcsse/ArrayListExample#main.c"> In-Class Coding </a>
 2:
   reading:
   topics:
@@ -44,7 +46,6 @@
   topics:
           - Processes Operation
           - Forking Child Processes
-          - This was a lab day for simple shell but we lost last Friday
   materials: Fork
   other:
     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%224267ef78-9ac7-4f8d-8caf-ab8200eff4ab%22">Videos</a>
