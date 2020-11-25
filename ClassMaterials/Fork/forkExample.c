@@ -23,7 +23,7 @@ int main() {
     printf("I am the parent process\n");
     int status;
     wait(&status);
-    printf("Child complete with status %d\n",WEXITSTATUS(status));
+    printf("Child complete with status %d\n", WEXITSTATUS(status));
     printf("exiting.\n");
     
     return 0;

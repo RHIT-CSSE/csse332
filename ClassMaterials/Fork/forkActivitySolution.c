@@ -15,9 +15,9 @@ int main() {
 
               // uncomment this code if you'd like to see the solution
               // to Part 1
-              // printf("I'm child %d\n", i);
-              // sleep(2);
-              // exit(i);
+        //       printf("I'm child %d\n", i);
+        //       sleep(2);
+        //       exit(i);
               
               char output[50];
               snprintf(output, 50, "I'm child %d",i);

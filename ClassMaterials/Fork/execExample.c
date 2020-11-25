@@ -22,7 +22,7 @@ int main(void) {
        the exec command). */
     
    //  char *const command[] = {"/bin/ls","-l","-h", NULL};
-    //execv("/bin/ls", command);
+   //  execv("/bin/ls", command);
 
     /* Option 2: execvp 
        
@@ -30,11 +30,8 @@ int main(void) {
 
    //  char *const command2[] = {"ls","-l","-h", NULL};
    //  execvp("ls",command2);
-    /* Option 1: execl
 
-       This exec takes any number of arguments like printf */
 
-    execl("/bin/ls", "/bin/ls", "-l", "-h", NULL);
 
     /* Option 3: execlp 
 
@@ -43,7 +40,7 @@ int main(void) {
        in the local directory (e.g. "./someProg") in that case execlp
        and excecl are equivalent. */
 
-   //  execlp("ls", "ls", "-l", "-h", NULL);
+    execlp("ls", "ls", "-l", "-h", NULL);
 
     // for reasons of laziness I'll usually write that as
     // execv(command[0], command) but the above is more explicit

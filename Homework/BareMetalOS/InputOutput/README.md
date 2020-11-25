@@ -10,13 +10,13 @@ layout: togit
 
 - [BmOS: Input/Output](#bmos-inputoutput)
 - [Objective](#objective)
-    - [-](#--1)
+    - [A note about groups](#a-note-about-groups)
 - [Using the Tools](#using-the-tools)
-    - [Tools](#tools)
-    - [QEMU](#qemu)
-    - [The Bootloader](#the-bootloader)
+  - [Tools](#tools)
+  - [QEMU](#qemu)
+  - [The Bootloader](#the-bootloader)
 - [A Hello World Kernel](#a-hello-world-kernel)
-    - [Compiling kernel.c](#compiling-kernelc)
+  - [Compiling kernel.c](#compiling-kernelc)
 - [Makefile](#makefile)
 - [Interrupt 0x10](#interrupt-0x10)
 - [printString](#printstring)
@@ -75,8 +75,8 @@ milestones:
 
 QEMU is an x86 hardware platform simulator.
 
-You can install Qemu on Ubuntu by running "sudo apt-get
-  install qemu" in a terminal.
+You can install Qemu on Ubuntu by running `sudo apt-get
+  install qemu qemu-kvm` in a terminal.
 
 To start Qemu with a floppy disk image, pass the image file as an
 argument to the "-fda" flag like this:
