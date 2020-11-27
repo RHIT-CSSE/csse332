@@ -40,7 +40,8 @@
     - Process Basics
   materials:
     - ProcessBasics
-    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=b39b686c-f4c2-483a-8999-ac5201542245">Video Lecture</a>
+  other:
+    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=b39b686c-f4c2-483a-8999-ac5201542245">Video Lecture </a>
     - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2551000"> Quiz </a>
 5:
   reading:
@@ -77,7 +78,7 @@
   other:
      - No activity today
      - But do find a partner (if you wish) and figure out how you will collaborate!
-    #  - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=114c789e-a651-4491-89e2-ab8400e59674">Videos</a>
+     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=6a8576ee-78d5-48a7-b188-ac7e013be54e">Video Lecture</a>
 # # NOTE: uncomment these one were no longer on a COVID-19 schedule
 # #    - <a href="https://docs.google.com/spreadsheets/d/1LOndSGkmqj_sQTuEUWwDuUL4jryyhnDVn2nrHbQcAfc/edit?usp=sharing">Team Signup Spreadsheet</a>
 # #    - <a href="https://github.com/RHIT-CSSE/csse332/blob/master/Homework/BareMetalOS/InputOutput/GitlabInstructions.md">Repo Setup Instructions</a>
