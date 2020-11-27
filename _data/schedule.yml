@@ -39,14 +39,16 @@
   topics:
     - Process Basics
   materials:
-    - Process_Basics
+    - ProcessBasics
+    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=b39b686c-f4c2-483a-8999-ac5201542245">Video Lecture</a>
+    - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2551000"> Quiz </a>
 5:
   reading:
   topics:
     - Signals
   materials: Signals
   other:
-    # - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%228dcc1b2a-8144-4e6d-a87f-ab800109d5e9%22">Videos</a>
+    # - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=1ab63b55-b88b-42ce-ac0d-ac6100fa1988">Videos</a>
     - <a href=https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424029">Activity Submission</a>
 6:
   reading:
@@ -56,7 +58,7 @@
           - Forking Child Processes
   materials: Fork
   other:
-    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%224267ef78-9ac7-4f8d-8caf-ab8200eff4ab%22">Videos</a>
+    # - <a href=https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=64353224-98e2-472b-b301-ac7d01254d25">Video Lecture</a>
     - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424034">Activity Submission</a>
 7:
   reading:
