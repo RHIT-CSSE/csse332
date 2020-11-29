@@ -2,16 +2,14 @@ Future CSSE332 Students -
 
 I'm looking forward to working with all of you in CSSE332!  We're going to covering a lot of cool topics and we're going to be doing a lot of exciting programming projects.  But to do this, we're going to be coding in C and making frequent use of pointers...which you should know already, but I'm guessing it's been a while for some of you.
 
-So to help you, I've built a small exercise I'd like you to solve over break.  It's just a few small problems that should help you get back on the C/pointer bandwagon.  If you remember all that well, I'd expect it to take you about an hour (maybe two).  If you syntax is rusty...well you'll won't be unhappy to practice before the first class.
+So to help you, I've built a small exercise I'd like you to solve over the break.  It's just a few small problems that should help you get back on the C/pointer bandwagon.  If you remember all that well, I'd expect it to take you about an hour (maybe two).  If your syntax is rusty...well you won't be unhappy to practice before the first class.
 
 There are 5 problems of increasing difficulty with included test cases.  The only file you need concern yourself with in main.c (but please don't edit my testcases of course).  You can solve the problems one of two ways:
 
-1.  If you've got a working C linux environment, I've attached the source code.  If you don't and are savy with installing linux (either on your laptop directly or in a virtual machine) that will be one of the first things we will do in class so feel free to get a head start.
-2.  But this can also be done completely online in a web based C progamming environment:
+1.  If you've got a working C Linux environment, I've attached the source code.  If you don't and are savvy with installing Linux (either on your laptop directly or in a virtual machine) that will be one of the first things we will do in class so feel free to get a head start.
+2.  But this can also be done completely online in a web-based C programming environment:
 https://repl.it/@RHITcsse/OSPointerPractice
 
-If you won't have time or computer access during break, the assignment will likely be due the first or second day of the term.  So you can just squeeze it in the term, though it may be stressful if you do.
-
-I haven't gotten repos setup yet, so don't worry about submitting it - I'll have that setup on the first day and you can do the submission then.
+If you won't have time or computer access during the break, the assignment will likely be due the first or second day of the term.  So you can just squeeze it in the term, though it may be stressful if you do.
 
 Let me know if you have problems or questions.  Have a great break and I'm looking forward to meeting (or re-meeting) all of you!
