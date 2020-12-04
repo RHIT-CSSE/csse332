@@ -51,8 +51,8 @@
     - Signals
   materials: Signals
   other:
-    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=1ab63b55-b88b-42ce-ac0d-ac6100fa1988">Videos</a>
-    - <a href=https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424029">Activity Submission</a>
+    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=1ab63b55-b88b-42ce-ac0d-ac6100fa1988">Video Lecture</a>
+    - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424029">Activity Submission</a>
 6:
   reading:
     - Chapter 3
@@ -61,7 +61,7 @@
           - Forking Child Processes
   materials: Fork
   other:
-    - <a href=https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=64353224-98e2-472b-b301-ac7d01254d25">Video Lecture</a>
+    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=64353224-98e2-472b-b301-ac7d01254d25">Video Lecture</a>
     - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424034">Activity Submission</a>
 7:
   reading:
@@ -69,7 +69,7 @@
     - Makefiles
   materials: Makefiles
   other:
-    # - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=fa6f1c94-199e-4395-bd9d-ab82013002d2">Video</a>
+    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=c7b8d6af-279e-41e1-9b7a-ac7d0159b72d">Video Lecture</a>
     - <a href="https://rhit-csse.github.io/csse332/ClassMaterials/Makefiles/makefiles.html#1">Slides</a>
     - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424039">Activity Submission</a>
 8:
