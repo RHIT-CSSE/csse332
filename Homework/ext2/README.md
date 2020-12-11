@@ -1,3 +1,35 @@
+---
+title: Userspace Threads
+layout: togit
+---
+
+# EXT2 FileSystem Lab
+----
+Table of Contents
+=================
+
+   * [Understanding ext2](#understanding-ext2)
+      * [Directories](#directories)
+      * [Inodes](#inodes)
+      * [Summary](#summary)
+   * [Finishing our implementation](#finishing-our-implementation)
+      * [Getting familiar with the code we've given you](#getting-familiar-with-the-code-weve-given-you)
+      * [load ext2_metadata](#load-ext2_metadata)
+         * [Loading the superblock](#loading-the-superblock)
+         * [calc_metadata](#calc_metadata)
+      * [Implement fetch_inode](#implement-fetch_inode)
+      * [Finish the implementation of calculate_offsets](#finish-the-implementation-of-calculate_offsets)
+      * [Read through file_blockread](#read-through-file_blockread)
+      * [Implement file_read](#implement-file_read)
+      * [Implement scan_dir](#implement-scan_dir)
+      * [Implement path_to_inode_num](#implement-path_to_inode_num)
+   * [A Working Tool](#a-working-tool)
+   * [Valgrind](#valgrind)
+   * [Turning in](#turning-in)
+   * [Rubic](#rubic)
+   * [Acknowledgement](#acknowledgement)
+   * [Table of Contents](#table-of-contents)
+   
 
 In this project, you'll finish the implementation of a program that
 understands the on-disk format of a Linux "ext2" filesystem walks
@@ -423,3 +455,5 @@ Submit your ex2access.c
 This assignment was originally written by Steve Gribble for the
 University of Washington.  It has been modified in various particulars
 for the Rose Hulman context by Mike Hewner.
+
+
