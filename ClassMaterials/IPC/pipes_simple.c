@@ -32,7 +32,7 @@ int main(void)
   } else {
     /* Parent process closes up output side of pipe */
     close(fd[1]);
-    nbytes = read(fd[0], readbuffer, sizeof(readbuffer));
+    nbytes = read(fd[0], readbuffer, 80);
     printf("Received string: %s", readbuffer);
     
   }

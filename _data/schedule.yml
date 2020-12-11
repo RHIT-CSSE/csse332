@@ -84,42 +84,41 @@
 # # NOTE: uncomment these one were no longer on a COVID-19 schedule
 # #    - <a href="https://docs.google.com/spreadsheets/d/1LOndSGkmqj_sQTuEUWwDuUL4jryyhnDVn2nrHbQcAfc/edit?usp=sharing">Team Signup Spreadsheet</a>
 # #    - <a href="https://github.com/RHIT-CSSE/csse332/blob/master/Homework/BareMetalOS/InputOutput/GitlabInstructions.md">Repo Setup Instructions</a>
-# 9:
-#   reading:
-#           - Sects. 10.1-10.3
-#           - Sect. 10.6
-#   topics:
-#     - Filesystem I
-#   materials: Filesystem_1
-#   other:
-#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%221e7d2f43-95aa-4375-b5b9-ab8700ec4312%22">Videos</a>
-#     - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=1866101">Activity Submission</a>
+9:
+  reading:
+          - Sects. 10.1-10.3
+          - Sect. 10.6
+  topics:
+    - Filesystem I
+  materials: Filesystem_1
+  other:
+    # - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=06688a07-e4ae-4192-a2a1-ac830120fdb1">Videos</a>
+    - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424044">Activity Submission</a>
 
-# 10:
-#   reading: Section 11.1 - 11.5
-#   topics: 
-#     - Filesystem II
-#   materials: Filesystem_2
-#   other:
-#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%2213cda733-48cc-4527-bffd-ab8800e5604b%22">Videos</a>
-#     - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=1870541">Activity Submission</a>
-# 11:
-#   reading:
-#           - Chapter 3
-#   topics:
-#           - Inter Process Communication
-#   materials: IPC
-#   other:
-#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%22ec09ca31-9587-4a4c-90cc-ab8a00e0c304%22">Videos</a>
-#     - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=1876651&forceview=1">Activity Submission</a>
-# 12:
-#   reading:
-#   topics:
-#           - <b>Lab</b> Ext2 Filesystem
-#   materials:
-#   other:
-#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%2282d82561-cf35-45cb-9fc0-ab8b00e43cc9%22">Videos</a>
-#     - No activity for today!
+10:
+  reading: Section 11.1 - 11.5
+  topics: 
+    - Filesystem II
+  materials: Filesystem_2
+  other:
+    # - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=f9f76f26-a8e8-430c-b175-ac84017a3fb9">Videos</a>
+    - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424049">Activity Submission</a>
+11:
+  reading:
+          - Chapter 3
+  topics:
+          - Inter Process Communication
+  materials: IPC
+  other:
+    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=8df3ec4f-3225-4169-9540-ac8a015d9f87">Videos</a>
+    - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424054">Activity Submission</a>
+12:
+  reading:
+  topics:
+          - <b>Lab</b> Ext2 Filesystem
+  materials:
+  other:
+    # - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%2282d82561-cf35-45cb-9fc0-ab8b00e43cc9%22">Videos</a>
 # 13:
 #   reading:
 #           - Chapter 6

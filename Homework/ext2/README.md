@@ -231,14 +231,14 @@ type "sudo umount /tmp/myext2disk" to unmount the file.
 Let's get going with the code.  Begin by opening up the file
 <tt>extaccess.c</tt> in your favorite editor.  This file is where you
 will be spending the bulk of your time in this project.  The first
-function defined in this file is load\_ext2\_metadata this function
+function defined in this file is `load_ext2_metadata` this function
 will read the superblock stored in the first blockgroup of the disk
 image into memory, and even better, into a "struct os_superblock_t"
 structure.  This structure is defined in <tt>inc/superblock.h</tt>.
 
-The first issue is that they data we need is located at byte 1024 of
+The first issue is that the data we need is located at byte **1024** of
 our source file.  To a certain size of data at a particular location
-we need to use lseek and read.  Lseek (when used with the SEEK_SET
+we need to use lseek and read.  `lseek` (when used with the `SEEK_SET`
 parameter) moves the file read to a particular position.  read reads a
 certain number of bytes into memory.  Something like this:
 
@@ -246,10 +246,10 @@ certain number of bytes into memory.  Something like this:
     read(fd, my_memory_location, my_data_size));
 
 But how do we parse that raw data into all its many many fields?
-We'll use a trick.  The os_superblock_t struct is designed to exactly
+We'll use a trick.  The `os_superblock_t` struct is designed to exactly
 mirror the way the data is being stored in the disk image.  As a
 result, if we load the raw disk image data into the address of a
-os\_superblock_\t variable, we can access the individual fields of the
+`os_superblock_t` variable, we can access the individual fields of the
 structure without having to manually parse the data.
 
 This trick makes some strong assumptions about how the compiler lays
@@ -262,19 +262,19 @@ should pass.
 
 ### calc\_metadata
 
-The out of the function is supposed to be a struct os\_fs\_metadata\_t
+The out of the function is supposed to be a struct `os_fs_metadata_t`
 object.  This is constructed using the superblock data, but
 transformed slightly to make it easier to work with.  Take a look at
-the commends and code in calc\_metadata but you shouldn't need to edit
+the commends and code in `calc_metadata` but you shouldn't need to edit
 anything if you've done the previous part correctly.
 
 ## Implement fetch\_inode()
 
-Given an inode number, fetch\_inode() should read the associated inode
-off of disk into a "struct os\_inode\_t" structure passed to the
+Given an inode number, `fetch_inode()` should read the associated inode
+off of disk into a `struct os_inode_t` structure passed to the
 function by the caller.  (Note that the caller passes a pointer to an
-already-allocated structure as an argument to fetch\_inode(), so you
-don't need to malloc anything inside fetch_inode() itself.)
+already-allocated structure as an argument to `fetch_inode()`, so you
+don't need to malloc anything inside `fetch_inode()` itself.)
 
 The hard part in implementing this function is figuring out where the
 inode with a given inode number actually lives on disk.  We've provided
@@ -283,16 +283,16 @@ laid out.  Here's a potential stumbling block you should avoid falling
 prey too:  the first inode in the filesystem has inode number 1, not
 inode number 0.  (Bleah!)
 
-"struct os\_inode\_t" is defined in <tt>inc/inode.h</tt>.
+"`struct os_inode_t`" is defined in <tt>inc/inode.h</tt>.
 You'll want to familiarize yourself with it.
 
 As before, compile and run testcode until you pass all of our tests
 for this function.  As calibration, our implementation has about 14
 lines of code.
 
-## Finish the implementation of calculate_offsets()
+## Finish the implementation of `calculate_offsets()`
 
-calculate_offsets() accepts the block number to read from a file,
+`calculate_offsets()` accepts the block number to read from a file,
 and figures out whether that block number is accessed through one
 of the 12 direct blocks in the inode, or through the single
 indirection block, or through the double indirection block, or through
@@ -308,9 +308,9 @@ double indirect blocks and triple indirect blocks for you to do.
 As calibration, our implementation of the missing piece has about
 10 lines of code.
 
-## Read through file\_blockread()
+## Read through `file_blockread()`
 
-file\_blockread() will read a block from a given file off of the file
+`file_blockread()` will read a block from a given file off of the file
 system into memory.  The caller passes in an inode for the file it
 wants to read from, and the block offset within that file to read.
 For instance, if the blocksize is 1024 bytes, then to read bytes
@@ -318,8 +318,8 @@ For instance, if the blocksize is 1024 bytes, then to read bytes
 read bytes 1024-2047 from the file, the caller would pass in block
 offset 1.
 
-file\_blockread() uses the offsets and indexes calculated by
-calculated\_offsets() to do the actual reading.  The only real
+`file_blockread()` uses the offsets and indexes calculated by
+`calculated_offsets()` to do the actual reading.  The only real
 complication is that ext2 supports the notion of "holes" in files:
 ranges of a file that logically exists containing zeroes, but which
 don't have any physical data blocks allocated to store the zeroes.
@@ -330,23 +330,23 @@ interface to this function -- i.e., how to invoke it, what the
 arguments mean, and what gets returned by the function on success or
 failure.
 
-## Implement file\_read()
+## Implement `file_read()`
 
-file\_read() will read the full contents of a file from disk into
-memory.  The caller passes file\_read() the inode number of the
-file it wants to read, and file\_read() will:
+`file_read()` will read the full contents of a file from disk into
+memory.  The caller passes `file_read()` the inode number of the
+file it wants to read, and `file_read()` will:
 
-- convert the inode number into a "struct os\_inode\_t" using
-  fetch\_inode(),
+- convert the inode number into a "`struct os_inode_t`" using
+  `fetch_inode()`,
 - allocate space for the full contents of the file,
-- loop through the blocks of the file, using file\_blockread() to
+- loop through the blocks of the file, using `file_blockread()` to
   read them into memory.
 
 As before, compile and run testcode until you pass all of our tests
 for this function.  As calibration, our implementation has about
 22 lines of code.
 
-## Implement scan\_dir()
+## Implement `scan_dir()`
 
 Given the contents of a directory file, the length of the directory
 file, and a file name, this function scans through the directory file
@@ -364,11 +364,11 @@ about 15-20 lines of code.
 
 You're almost done now...
 
-## Implement path\_to\_inode\_num()
+## Implement `path_to_inode_num()`
 
 The final piece we need is a way looking a particular file's inode
 based on a absolute directory path.  Eg. take a string like
-"/foo/foo2/bar.txt" and say that file's inode is 44.
+`/foo/foo2/bar.txt` and say that file's inode is 44.
 
 To do this we need to start at the root the filesystem, load the
 directory there, find the first element of the path in our structure

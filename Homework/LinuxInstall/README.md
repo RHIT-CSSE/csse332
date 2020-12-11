@@ -50,27 +50,29 @@ Run this command on your unix command line to install the necessary packages:
     sudo apt update
     sudo apt install git qemu bin86 nasm bcc build-essential hexedit bochs bochs-sdl
 
-To run graphical programs you will need to have an windows X-server.  I use this one:
+Install X server for GUI apps:
 
-https://sourceforge.net/projects/vcxsrv/
+* Download (VcXsrv)[https://sourceforge.net/projects/vcxsrv/] and install
+* In bash run "export DISPLAY=:0" Now when you run it you should get a display to pop-up, there may be issues related to graphics drivers. Sadly, this is where the instructions diverge if you don't have an NVIDIA graphics card.
+* Locate the XLaunch shortcut in the Start Menu, and click it
+* Install GLUT with `sudo apt-get install freeglut3-dev`
+* Run this command `export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0`
+* Go to **Windows Security -> Firewall & network protection -> Allow an app through firewall**. Make sure VcXsrv has both public and private checked.
+* Launch VcXsrv with "Disable access control" ticked
+* To test if the X server installation is successful,
+  * Install `xeyes` by running `sudo apt install x11-apps`.
+  * Open terminal and run `xeyes`.
+  * If the installation is good, you should see a pair of eyes pop up. If not refer to [this document](./WSL_and_VcSsrv.pdf) for troubleshooting. Kudos to Sam Dickinson who put togother this doc.
 
-Note that before you can actually run a graphical program you'll have
-to start the server and set the display variable on the command line.
-This is how to set it:
-
-     export DISPLAY=localhost:0.0
-
-This will only be needed if you are actually using graphical linux
-applications.  We'll need that at the end of the term for the BMOS
-labs, and you might need it right away if you want to run a graphical
-(i.e. not text based) linux editor.
 
 The editor might not be as needed as you think though, because handy
 thing about this approach is that your windows filesystem is mapped in
-linux.  For example /mnt/c/Users/YourName/Desktop/ probably contains
+linux.  For example `/mnt/c/Users/<YourName>/Desktop/` probably contains
 your windows desktop.  This means if you clone your csse332 repo
 somewhere on your windows filesystem, you can edit your code with your
-favorite windows editor.
+favorite windows editor. You can also access your Linux folder by following
+the instructions
+[HERE](https://askubuntu.com/questions/759880/where-is-the-ubuntu-file-system-root-directory-in-windows-subsystem-for-linux-an)
 
 # On a hard disk partition, or mSata drive
 

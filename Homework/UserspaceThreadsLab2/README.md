@@ -152,7 +152,7 @@ Using the preempt example as a starting point, modify the code in
 Ideally, you want to allocate a fixed time slot for a thread to run.
 Precisely, the time allocation should be all assigned to the thread to run
 its own function. Namely, this time should not include the *overhead* of
-switching context. That said, a global repeating alarm might not be a good
+switching context. **You will lose some points if your implementation does not satisify this requirement.** That said, a global repeating alarm might not be a good
 choice. A quick hint is that you can ask the thread to set an alarm for
 itself. If you do it correctly you should see the 111/222 working calls
 interleave.
@@ -453,9 +453,12 @@ Submit your assignment in the usual way.
 
 | Part         | Points |
 |:-------------|--------|
-| Standalone 1 | 33     |
-| Standalone 2 | 33     |
+| Correct time allocation* | 20     |
+| Standalone 1 | 23     |
+| Standalone 2 | 23     |
 | Test cases   | 34     |
+
+\* The allocated time is fully dedicated to run thread function, not including the overhead from `swapcontext`.
 
 Note that we give partial credit if your code occasionally has issues but you
 addressed the particular problem areas that the lab warns you about
