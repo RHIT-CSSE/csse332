@@ -92,7 +92,7 @@
     - Filesystem I
   materials: Filesystem_1
   other:
-    # - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=06688a07-e4ae-4192-a2a1-ac830120fdb1">Videos</a>
+    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=06688a07-e4ae-4192-a2a1-ac830120fdb1">Video Lecture</a>
     - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424044">Activity Submission</a>
 
 10:
@@ -101,7 +101,7 @@
     - Filesystem II
   materials: Filesystem_2
   other:
-    # - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=f9f76f26-a8e8-430c-b175-ac84017a3fb9">Videos</a>
+    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=f9f76f26-a8e8-430c-b175-ac84017a3fb9">Video Lecture</a>
     - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424049">Activity Submission</a>
 11:
   reading:
@@ -110,7 +110,7 @@
           - Inter Process Communication
   materials: IPC
   other:
-    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=8df3ec4f-3225-4169-9540-ac8a015d9f87">Videos</a>
+    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=8df3ec4f-3225-4169-9540-ac8a015d9f87">Video Lecture</a>
     - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424054">Activity Submission</a>
 12:
   reading:
