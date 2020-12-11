@@ -224,7 +224,7 @@ Just don't edit anything as it will break the tests which assume this
 particular file configuration.  When you're finished poking around,
 type "sudo umount /tmp/myext2disk" to unmount the file.
 
-## load\ext2\_metadata
+## load `ext2_metadata`
  
 ### Loading the superblock
 
@@ -260,7 +260,7 @@ machines.
 One you get this working the metadata and blockgroup descriptor tests
 should pass.
 
-### calc\_metadata
+### `calc_metadata`
 
 The out of the function is supposed to be a struct `os_fs_metadata_t`
 object.  This is constructed using the superblock data, but
@@ -268,7 +268,7 @@ transformed slightly to make it easier to work with.  Take a look at
 the commends and code in `calc_metadata` but you shouldn't need to edit
 anything if you've done the previous part correctly.
 
-## Implement fetch\_inode()
+## Implement `fetch_inode`
 
 Given an inode number, `fetch_inode()` should read the associated inode
 off of disk into a `struct os_inode_t` structure passed to the
@@ -290,7 +290,7 @@ As before, compile and run testcode until you pass all of our tests
 for this function.  As calibration, our implementation has about 14
 lines of code.
 
-## Finish the implementation of `calculate_offsets()`
+## Finish the implementation of `calculate_offsets`
 
 `calculate_offsets()` accepts the block number to read from a file,
 and figures out whether that block number is accessed through one
@@ -308,7 +308,7 @@ double indirect blocks and triple indirect blocks for you to do.
 As calibration, our implementation of the missing piece has about
 10 lines of code.
 
-## Read through `file_blockread()`
+## Read through `file_blockread`
 
 `file_blockread()` will read a block from a given file off of the file
 system into memory.  The caller passes in an inode for the file it
@@ -330,7 +330,7 @@ interface to this function -- i.e., how to invoke it, what the
 arguments mean, and what gets returned by the function on success or
 failure.
 
-## Implement `file_read()`
+## Implement `file_read`
 
 `file_read()` will read the full contents of a file from disk into
 memory.  The caller passes `file_read()` the inode number of the
@@ -346,7 +346,7 @@ As before, compile and run testcode until you pass all of our tests
 for this function.  As calibration, our implementation has about
 22 lines of code.
 
-## Implement `scan_dir()`
+## Implement `scan_dir`
 
 Given the contents of a directory file, the length of the directory
 file, and a file name, this function scans through the directory file
@@ -364,7 +364,7 @@ about 15-20 lines of code.
 
 You're almost done now...
 
-## Implement `path_to_inode_num()`
+## Implement `path_to_inode_num`
 
 The final piece we need is a way looking a particular file's inode
 based on a absolute directory path.  Eg. take a string like
