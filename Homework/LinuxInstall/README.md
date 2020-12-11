@@ -52,7 +52,7 @@ Run this command on your unix command line to install the necessary packages:
 
 Install X server for GUI apps:
 
-* Download (VcXsrv)[https://sourceforge.net/projects/vcxsrv/] and install
+* Download [VcXsrv](https://sourceforge.net/projects/vcxsrv/) and install
 * In bash run "export DISPLAY=:0" Now when you run it you should get a display to pop-up, there may be issues related to graphics drivers. Sadly, this is where the instructions diverge if you don't have an NVIDIA graphics card.
 * Locate the XLaunch shortcut in the Start Menu, and click it
 * Install GLUT with `sudo apt-get install freeglut3-dev`
@@ -62,7 +62,7 @@ Install X server for GUI apps:
 * To test if the X server installation is successful,
   * Install `xeyes` by running `sudo apt install x11-apps`.
   * Open terminal and run `xeyes`.
-  * If the installation is good, you should see a pair of eyes pop up. If not refer to [this document](./WSL_and_VcSsrv.pdf) for troubleshooting. Kudos to Sam Dickinson who put togother this doc.
+  * If the installation is good, you should see a pair of eyes pop up. If not refer to [this document](./WSL_and_VcXsrv.pdf) for troubleshooting. Kudos to Sam Dickinson who put togother this doc.
 
 
 The editor might not be as needed as you think though, because handy
