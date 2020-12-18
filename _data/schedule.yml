@@ -120,24 +120,24 @@
   other:
     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=3b950a31-c6d9-42ba-b8c4-ac8e015e1292">Videos</a>
     - <a href="Homework/ext2/README"> Lab Instructions</a>
-# 13:
-#   reading:
-#           - Chapter 6
-#   topics:
-#     - CPU Scheduling 1
-#   materials: CPU_Scheduling1
-#   other:
-#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%22de8358e3-4688-4768-b984-ab8e00df85b2%22">Videos</a>
-#     - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=1781442">Activity</a>
-# 14:
-#   reading:
-#           - Chapter 6
-#   topics:
-#     - CPU Scheduling 2
-#   materials: CPU_Scheduling2
-#   other:
-#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%225ec1df5d-b666-432a-8b8c-ab8f00d812f1%22">Videos</a>
-#     - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=1781447">Activity</a>
+13:
+  reading:
+          - Chapter 6
+  topics:
+    - CPU Scheduling 1
+  materials: CPU_Scheduling1
+  other:
+    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=f48ee0bf-5c81-458c-b3c6-ac91014a48c1">Video Lecture</a>
+    - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2424059">Activity</a>
+14:
+  reading:
+          - Chapter 6
+  topics:
+    - CPU Scheduling 2
+  materials: CPU_Scheduling2
+  other:
+    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=ac5bb018-1376-4055-a576-ac9201537ea9">Video Lecture</a>
+    - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2424064">Activity</a>
 # 15:
 #   reading:
 #   topics:
