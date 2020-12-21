@@ -138,21 +138,21 @@
   other:
     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=ac5bb018-1376-4055-a576-ac9201537ea9">Video Lecture</a>
     - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2424064">Activity</a>
-# 15:
-#   reading:
-#   topics:
-#     - Skills Test Review
-#   materials: Exam1Prep
-#   other:
-#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%224eee7fd3-23e5-4c00-b93a-ab9101014894%22">Videos</a>
-#     - No activity!  Do a practice exam
-# 16:
-#   reading:
-#   topics:
-#     - Fork/Signals/Makefiles skills tests
-#     - 3 Hour exam sometime today
-#   materials: 
-#   other:  
+15:
+  reading:
+  topics:
+    - Skills Test Review
+  materials: Exam1Prep
+  other:
+    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=0fb3a0f5-de42-4290-8c98-ac98010071cc">Videos</a>
+    - No activity!  Do a practice exam
+16:
+  reading:
+  topics:
+    - Fork/Signals/Makefiles skills tests
+    - 3 Hour exam sometime today
+  materials: 
+  other:  
 # 17:
 #   reading: 
 #    - Chapter 4

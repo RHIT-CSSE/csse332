@@ -4,7 +4,7 @@ layout: togit
 
 # Exam 1 Preparation
 
-Last updated: Spring 19-20
+Last updated: Fall 20-21
 
 Note that exam contents can change term to term.
 
@@ -12,7 +12,7 @@ Note that exam contents can change term to term.
 
 You should plan to practice using the [sample exams available here](../../SampleExams/).
 
-Exam1-202020, Exam1-201930, Exam1-201930/makeup are probably your best resources.
+Exam1-202030, Exam1-202020, Exam1-201930  are probably your best resources.
 
 But be aware the format of the exam has changed quite a bit from previous years.
 
@@ -32,7 +32,6 @@ But be aware the format of the exam has changed quite a bit from previous years.
   we've given you plus any code you have written
 * No google/other websites but you can use manpages and the professors
   (maybe) can be your google
-* SPECIAL for COVID-19 limited good (listen to my lecture)
 * We try to note the fundamental skills we are looking for in each of
   the parts...be sure you can confidently do those things
 * We will expect you to solve novel problems on the exam, not simply
@@ -55,10 +54,10 @@ But be aware the format of the exam has changed quite a bit from previous years.
 
 ## Exec
 
-* The two flavors of exec (execlp, execvp) and when you want to use
+* The two flavors of exec (`execlp`, `execvp`) and when you want to use
   one or the other
 * How to pass parameters to exec functions - don't forget the final null
-* How to combine with fork/wait to run things in background
+* How to combine with `fork/wait` to run things in background
   foreground, or just convert one process to another
 * Be sure to check for exec failures - can lead to some weird hard to debug stuff!
 
@@ -70,8 +69,7 @@ But be aware the format of the exam has changed quite a bit from previous years.
 
 ## IPC
 
-* Shared memory using mmap (exam1)
-* Pipes (exam1 makeup)
+* Pipes or Shared memory using `mmap` 
 
 ## Makefile
 
