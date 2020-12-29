@@ -138,7 +138,7 @@ threading assignment.
 
 # Thread Sorting (40 points)
 
-Look at the thread\_sorting project in the lab directory. 
+Look at the `thread_sorting` project in the lab directory. 
 
 In this program you will demonstrate your understanding of thread
 creation, joining, and just some general purpose concurrent algorithm
@@ -148,6 +148,7 @@ We want time how long it takes to sort with various sort algorithms.  We'll do
 this with 3 different sorting methods (all the sorting code is given
 to you).  We will do this sorting in parallel using threads.  We will
 print some info about how fast the various sort methods were.
+
 
 The program is in the file threads.c and takes two command line arguments: 
     
@@ -180,7 +181,9 @@ Here's some example output from my solution:
     6 7 8 9 10 
     1 2 3 4 5 
     
-
+**Note that the final result is only regionally sorted.** Namely, only the numbers
+within a group which is assigned to one thread are sorted. The overall data array
+doesn't need to be sorted in this lab.
 
 1.  We've given you code that handles the input arguments and
     generating the numbers to sort, so you don't need to worry about
@@ -194,12 +197,12 @@ Here's some example output from my solution:
     algorithms. One third of the threads created should use a brute
     force sorting algorithm.  One third should use bubble sort. And
     finally, one third should use merge sort.  You can assume it
-    divides evenly.  I built a function called thread\_dispatch that
-    my pthread\_create calls.  thread\_dispatch then looks at its
+    divides evenly.  I built a function called `thread_dispatch` that
+    my `pthread_create` calls.  `thread_dispatch` then looks at its
     parameters to figure out which of the 3 sorting functions it ought
     to run (exactly what those parameters are though, is up to you).
     
-    Make your thread\_dispatch print "Sorting indexes..." messages as
+    Make your thread\_dispatch print `"Sorting indexes..."` messages as
     in the example output above.  Note that I put a sleep(1) after the
     first Sorting indexes printf - this makes its obvious my threads
     run in parallel even if the sorting they do is really fast.
@@ -233,7 +236,7 @@ Here's some example output from my solution:
 
 ## The problem
 
-Compile and run add\_a\_lot.c.  You will see that it uses multiple
+Compile and run `add_a_lot.c`.  You will see that it uses multiple
 threads to repeatedly add to a global variable.  However, the final
 sum is not correct because as multiple threads edit the variable they
 interfere.
@@ -275,18 +278,18 @@ possible way.
 
 Semaphores contain an internal count.  There are two operations:
 
-1.  sem\_post - increases the count.  This has the potential to unblock
+1.  `sem_post` - increases the count.  This has the potential to unblock
     waiting processes.
-2.  sem\_wait - attempt to decrement the count.  If the count is greater
+2.  `sem_wait` - attempt to decrement the count.  If the count is greater
     than 1, this works and the process continues.  If the count is 0,
     the process blocks (i.e. does not return) until some other thread
     increments the count after which the thread can continue.
 
 These are all carefully designed so that, regardless of the
 interleaving of calls, the semaphore behaves consistently.  For
-example, if say semaphore count\_1 is one, and two processes simultaneously
-attempt to sem\_wait() on it, exactly one will be allowed to continue and
-exactly one will be blocked waiting for a sem\_post.
+example, if say semaphore count is one, and two processes simultaneously
+attempt to `sem_wait()` on it, exactly one will be allowed to continue and
+exactly one will be blocked waiting for a `sem_post`.
 
 How can we use these two operations to protect our code?  We could
 make our data an actual semaphore, but that is not very flexible.
@@ -306,11 +309,11 @@ its count to 1.
 
 Then in the code we want to protect from interference, we'll to this:
 
-1.  sem\_wait - if the count is zero that means another thread is in
+1.  `sem_wait` - if the count is zero that means another thread is in
     the critical section so we'll block
 2.  Now we know we're the only thread in the critical section so we
     can safely update the global variables
-3.  sem\_post - increment the count because we're out of the critical
+3.  `sem_post` - increment the count because we're out of the critical
     section and we want to let any other threads that are blocked to
     proceed
 
