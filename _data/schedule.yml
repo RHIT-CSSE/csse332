@@ -146,6 +146,7 @@
   other:
     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=0fb3a0f5-de42-4290-8c98-ac98010071cc">Videos</a>
     - No activity!  Do a practice exam
+    - SRT has a review session from 7-8 PM
 16:
   reading:
   topics:
@@ -153,41 +154,41 @@
     - 3 Hour exam sometime today
   materials: 
   other:  
-# 17:
-#   reading: 
-#    - Chapter 4
-#   topics: 
-#    - More Threads
-#    - Thread Libraries
-#    - Threading Issues
-#   materials: MoreThreads
-#   other:
-#    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%22f8699b79-8af3-4417-8af0-ab92011c674b%22">Videos</a>
-#    - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=1898986&forceview=1">Activity Submission</a>
-# 18:
-#   reading:
-#   topics:
-#           - <b>Lab</b> Threads and Semaphore Basics
-#   other:
-#     - <a href="Homework/SemaphoreLab/README"> Lab Instructions</a>
-#     - No video or activity today
-# 19:
-#   reading:  Chapter 5
-#   topics: 
-#     - Process Synchronization
-#   materials: ProcessSync
-#   other:
-#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%2292aaa87d-6f3b-4a9e-b6fb-ab9800def45b%22">Videos</a>
-#     - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=1911511">Activity Submission</a>
-# 20:
-#   reading:
-#     - Chapter 4
-#   topics:
-#     - User-space Threads and Kernel Threads
-#   materials: KernelThreads
-#   other:
-#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%22bbc3865c-4039-41c5-9314-ab980136af62%22">Videos</a>
-#     - No activity today just start Hybrid Threads
+17:
+  reading: 
+   - Chapter 4
+  topics: 
+   - More Threads
+   - Thread Libraries
+   - Threading Issues
+  materials: MoreThreads
+  other:
+   - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=bfb13e2d-3671-47d8-814e-ac9f0148279d">Video Lecture</a>
+   - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424069">Activity Submission</a>
+18:
+  reading:
+  topics:
+          - <b>Lab</b> Threads and Semaphore Basics
+  other:
+    - <a href="Homework/SemaphoreLab/README"> Lab Instructions</a>
+    - No video or activity today
+19:
+  reading:  Chapter 5
+  topics: 
+    - Process Synchronization
+  materials: ProcessSync
+  other:
+    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=90fd773a-4471-43c5-90b8-aca0013f3eae">Video Lecture</a>
+    - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424074">Activity Submission</a>
+20:
+  reading:
+    - Chapter 4
+  topics:
+    - User-space Threads and Kernel Threads
+  materials: KernelThreads
+  other:
+    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%22bbc3865c-4039-41c5-9314-ab980136af62%22">Videos</a>
+    - No activity today just start Hybrid Threads
 # 21:
 #   reading: Chapter 5
 #   topics:

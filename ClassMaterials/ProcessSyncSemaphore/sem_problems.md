@@ -70,7 +70,7 @@ semaphores are initialized to 1.
 4.
 
     sem_wait(&sem)
-    while(train_in_junction == 0);
+    while(train_in_junction == 1);
     train_in_junction = 1;
     sem_post(&sem);
     enter_junction();
