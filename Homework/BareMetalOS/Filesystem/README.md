@@ -64,10 +64,7 @@ The Map records which sectors are available and which sectors
 are currently used by files.  This makes it easy to find a free sector
 when writing a file.  Each sector on the disk is represented by one
 byte in the Map.  A byte entry of 0xFF means that the sector
-is used.  A byte entry of 0x00 means that the sector is free.  You
-will not need to read or modify the Map in this milestone
-since you are only reading files in this milestone.  You will need to
-read and modify the Map in the next milestone.
+is used.  A byte entry of 0x00 means that the sector is free.
 
 The Directory lists the names and locations of the files.
 There are 16 file entries in the Directory and each entry
