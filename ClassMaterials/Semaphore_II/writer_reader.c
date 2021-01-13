@@ -43,8 +43,6 @@ int main()
 {
     int i,b; 
     pthread_t rtid[5],wtid[5];
-    sem_init(&mutex,0,1);
-    sem_init(&writeblock,0,1);
     //create writer
     for(i=0;i<=1;i++)
         pthread_create(&wtid[i],NULL,writer,(void *)&i);
