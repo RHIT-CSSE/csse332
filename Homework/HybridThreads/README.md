@@ -129,6 +129,8 @@ disadvantages of userspace threads was that this feature can't exist).
 Make a variable thread local like this:
 
     __thread int current_thread_index;
+   
+> Note that it is two underscores before `thread`.
 
 Now when one of your scheduler threads sets current\_thread\_index (or
 whatever you called it) it only sets it within their thread.  When a
