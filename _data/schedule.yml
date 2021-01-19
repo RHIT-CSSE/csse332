@@ -212,7 +212,7 @@
   topics:
     - Lab time Semaphores 1/2
     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=fd0a718a-f08a-4bc0-ab77-ab9f00deb4ff">Videos</a>
-    - No activity today, just start on Semaphore Labs
+    - No activity today, just start on Semaphore Homework
   materials: 
   other:
 24:
@@ -223,45 +223,45 @@
   other:
     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%2213ad6831-8bb8-4654-a52f-aba001488e7e%22">Videos</a>
     - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424089">Activity Submission</a>
-# 25:
-#   reading: Chapter 7
-#   topics:
-#     - Deadlock and Starvation
-#   materials: DeadlockStarvation
-#   other:
-#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%22d8f66dd5-9b83-4f88-9ee0-aba300dd05b5%22">Videos</a>
-#     - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=1937191">Activity Submission</a>
-# 26:
-#   reading: 
-#   topics: 
-#     - Skills Test Review
-#   materials: Exam2Prep
-#   other:
-#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%2212294dc2-ec88-42bf-91c2-aba500e231c7%22">Video</a>
-#     - No activity, do a practice exam!  
-# 27:
-#   reading:
-#   topics:
-#     - Threading Skills Test
-#     - EVENING EXAM 5:30-8:30
-#   materials: 
-#   other:  
-# 28:
-#   reading: Chapter 7
-#   topics:
-#     - Deadlock Avoidance
-#   materials: DeadlockAvoidance
-#   other:  
-#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%22e2e35897-541b-49fc-852c-aba700fb6787%22">Videos</a>
-#     - No activity for today
-# 29:
-#   reading:
-#   topics:
-#     - Segmentation
-#   materials: Segmentation
-#   other:
-#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%2218301b4e-f25f-43b1-900d-abaa014b7ac3%22"> Videos </a>
-#     - <a href-"https://moodle.rose-hulman.edu/mod/quiz/view.php?id=1950096"> Activity </a>
+25:
+  reading: Chapter 7
+  topics:
+    - Deadlock and Starvation
+  materials: DeadlockStarvation
+  other:
+    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%22d8f66dd5-9b83-4f88-9ee0-aba300dd05b5%22">Videos</a>
+    - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424099">Activity Submission</a>
+26:
+  reading: Chapter 7
+  topics:
+    - Deadlock Avoidance
+  materials: DeadlockAvoidance
+  other:  
+    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%22e2e35897-541b-49fc-852c-aba700fb6787%22">Videos</a>
+    - No activity for today
+27:
+  reading: 
+  topics: 
+    - Skills Test Review
+  materials: Exam2Prep
+  other:
+    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%2212294dc2-ec88-42bf-91c2-aba500e231c7%22">Video</a>
+    - No activity, do a practice exam!  
+28:
+  reading:
+  topics:
+    - Exam 2 (Threading Skills Test)
+    - Any 3 hours today
+  materials: 
+  other:  
+29:
+  reading:
+  topics:
+    - Segmentation
+  materials: Segmentation
+  other:
+    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=b3b7e1f9-7421-4249-b7b9-acb4012f48df">Video Lecture</a>
+    - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2424104">Activity Submission</a>
 # 30:
 #   reading:
 #   topics:
