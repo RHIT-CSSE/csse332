@@ -1,4 +1,4 @@
-Solve the 5 problems, each worth 20 points.  Note the sample output
+Solve the 4 problems, each worth 25 points.  Note the sample output
 files to check your solutions (though there is randomness, so there
 may be some variations)
 
@@ -20,5 +20,4 @@ Some guidance on how we grade:
 1. balloon
 2. threeJobs
 3. band
-4. pri_sem
-5. or_sem
+4. choose one between pri_sem and or_sem
