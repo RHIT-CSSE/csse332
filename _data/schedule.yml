@@ -247,6 +247,7 @@
   other:
     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%2212294dc2-ec88-42bf-91c2-aba500e231c7%22">Video</a>
     - No activity, do a practice exam!  
+    - SRT has a review session at 7 PM.
 28:
   reading:
   topics:
@@ -262,61 +263,61 @@
   other:
     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=b3b7e1f9-7421-4249-b7b9-acb4012f48df">Video Lecture</a>
     - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2424104">Activity Submission</a>
-# 30:
-#   reading:
-#   topics:
-#     - Paging
-#   materials: Paging
-#   other:
-#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=83ca0a13-5b70-4d86-9eba-abab012c8148">Videos</a>
-#     - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=1952226"> Activity </a>
-# 31:
-#   reading:
-#   topics:
-#     - Page Replacement Algorithms
-#   materials: PageReplacement
-#   other:  
-#      - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=9da717f1-b2b9-47d3-9cb8-abad00fce80c">Videos</a>
-#      - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=1955826&forceview=1">Activity Submission</a>
-# 32:
-#   reading:
-#   topics:
-#     - Lab/Project Work Time
-#   materials: 
-#   other:  
-#     - No video today just start VM Lab 1
-#     - <a href="Homework/VirtualMemoryLab/README"> Lab Instructions</a>
-# 33:
-#   reading:
-#   topics:
-#           - More Virtual Memory
-#   materials: TLB
-#   other:  
-#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=fb42399d-2ed9-4731-84a0-abb10120c949"> Videos </a>
-#     - No activity today
-# 34:
-#   reading:
-#   topics:
-#         - Advanced Paging
-#   materials: AdvancedPageTable
-#   other:
-#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%22312127c3-75df-4d31-9884-abb300e7710a%22"> Videos </a>
-#     - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=1781432">Activity</a>
-# 35:
-#   reading:
-#   topics:
-#     - Reference Counting
-#   materials: ReferenceCounting
-#   other:  
-#     - <a href="ClassMaterials/ReferenceCounting/reference_counting">Reference Counting Slides</a>
-#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=5d815ae5-41bf-4e48-8f21-abb4013009d7">Videos</a>
-#     - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=1971946&forceview=1">Activity Submission</a>
-# 36:
-#   reading:
-#   topics: 
-#     - Intro to Garbage Collection Lab
-#   materials: 
-#   other:  <a href="Homework/GarbageCollect"> Lab Instructions</a>
+30:
+  reading:
+  topics:
+    - Paging
+  materials: Paging
+  other:
+    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=3783c289-a5fc-45f3-b09d-acb501773c89">Video Lecture</a>
+    - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2424109"> Activity Submission </a>
+31:
+  reading:
+  topics:
+    - Page Replacement Algorithms
+  materials: PageReplacement
+  other:  
+     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=9da717f1-b2b9-47d3-9cb8-abad00fce80c">Videos</a>
+     - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424114">Activity Submission</a>
+32:
+  reading:
+  topics:
+    - Lab/Project Work Time
+  materials: 
+  other:  
+    - No video today just start VM Lab 1
+    - <a href="Homework/VirtualMemoryLab/README"> Lab Instructions</a>
+33:
+  reading:
+  topics:
+          - More Virtual Memory
+  materials: TLB
+  other:  
+    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=fb42399d-2ed9-4731-84a0-abb10120c949"> Videos </a>
+    - No activity today
+34:
+  reading:
+  topics:
+        - Advanced Paging
+  materials: AdvancedPageTable
+  other:
+    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=db9c7e92-e41e-4773-a1c6-acbd0136ad28">Video Lecture</a>
+    - <a href=https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2424119">Activity Submission</a>
+35:
+  reading:
+  topics:
+    - Reference Counting
+  materials: ReferenceCounting
+  other:  
+    - <a href="ClassMaterials/ReferenceCounting/reference_counting">Reference Counting Slides</a>
+    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=5d815ae5-41bf-4e48-8f21-abb4013009d7">Videos</a>
+    - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424124">Activity Submission</a>
+36:
+  reading:
+  topics: 
+    - Intro to Garbage Collection Lab
+  materials: 
+  other:  <a href="Homework/GarbageCollect">Lab Instructions</a>
 # 37:
 #   reading:
 #   topics:
