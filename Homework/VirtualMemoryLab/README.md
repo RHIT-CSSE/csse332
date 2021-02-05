@@ -79,7 +79,7 @@ Like an operating system, we want to start the stack and the heap very
 far apart to accommodate the largest possible programs.  But also like
 an operating system, we'd prefer if we didn't have to allocate all
 that memory upfront because most programs won't use all of it.  In the
-paged_forth.c right now, we allocate the entire (10 page) memory block
+paged_forth.c right now, we allocate the entire (20 page) memory block
 upfront.
 
 We want to change that.  Here's the plan:
@@ -256,7 +256,7 @@ You only need to submit paged_forth.c.
 
 # Rubric
 
-To test step 1 we'll update max pages to 10 and test
+To test step 1 we'll update max pages to 20 and test
 
 | Part                                                                      | Points |
 |---------------------------------------------------------------------------|--------|

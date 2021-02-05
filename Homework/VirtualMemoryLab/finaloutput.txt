@@ -4,6 +4,7 @@ in handler with invalid address 0xf9f8c000
 mapping page 0
 in handler with invalid address 0xf9f8d000
 mapping page 1
+finished loading starter forth
 in handler with invalid address 0xf9f9eff8
 unmapping page 19
 mapping page 18
