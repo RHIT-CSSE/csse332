@@ -118,7 +118,7 @@ memory rather than the old.
 This is the approach we're going to take with our forth
 implementation.  We're going to have what I'll call the "universal"
 memory region.  Each forth will be initialized to operate in the same
-12 pages of our programs address space.  However, that universal
+22 pages of our programs address space.  However, that universal
 region will share physical memory with some other part of our
 program's memory space (i.e. we will have two parts of our virtual
 memory space, both of which correspond to the same physical memory and
@@ -192,7 +192,7 @@ this giant region of memory "frames".
 Now when we want to run some particular forth, we want to map some
 part of our frames region into the universal region.
 
-I wrote a function called switch\_current\_to(int forthnum) that does
+You need to write a function called switch\_current\_to(int forthnum) that does
 this because we need it in a couple places.
 
 The idea is exactly the same as the code above in the section "How can we do this?".  Our first mmap is already done in initialize\_forths.  Our second mmap is going to use the same file descriptor but it is going to be different in a couple of key ways:
@@ -255,7 +255,7 @@ which pages are in which region for each forth instance.  We'll store
 it in the forth\_extra\_data struct.
 
 Instead, it will need to keep track of which frames in the giant chunk
-correspond the 12 pages of the forth process.  So I made a integer
+correspond the 22 pages of the forth process.  So I made a integer
 page\_table array.  Initially all entries are initialized to -1
 meaning PAGE\_UNCREATED.  Then as pages are mapped from segfaults, I
 insert their frame number at the corresponding slot in the current
@@ -270,7 +270,8 @@ that function, test case 3 should pass as well.
 
 # Step 3: Basic forking
 
-Now that we've got the basics down we can implement fork.  The basic
+Now that we've got the basics down we can implement fork. Please write a new
+function `fork_forth` to do this part. The basic
 idea of fork is quite simple:
 
 1.  When a process intends to fork, find a new fork slot to
@@ -281,7 +282,9 @@ idea of fork is quite simple:
     field by hand.
 3.  For each page mapped in the parent's page\_table, find a new
     frame, copy the data into it (again memcpy), and map that new
-    frame in the child's page table
+    frame in the child's page table. This requires you storing the begining
+    address of the giant region of memory (as your frames) in
+    `initialize_forths`.
 4.  Return the process id of the child in the forked\_child\_id field
     of the run\_object (take a look at run\_forth\_until\_event to
     see what I mean)
@@ -297,7 +300,8 @@ the child.  To make this possible, there's a function called
 push\_onto\_forth\_stack that adds an integer to a particular forth
 stack.  Note: this function uses the stack_top variable in the forth
 data object - for it to work properly you'll need to have that
-particular forth mapped in the universal region.
+particular forth mapped in the universal region. Keep adding code to your
+`fork_forth` function to finish this part.
 
 If you do this correctly unit tests 5 and 6 should pass - 6 just
 involves more forking.
@@ -321,7 +325,7 @@ Note that in this system an arbitrary number of processes might share
 a frame of memory (e.g. a process forks, and forks again while some of
 its memory is still shared with its parent - now those frames are
 shared with 3 processes).  We'll need to keep track of how many
-processes are using each frame (I made a big array num\_shared for the
+processes are using each frame (You can make a big array `num_shared` for the
 purpose).  When a page is initially allocated it should have a count
 of 1.  When a process forks all its frame counts should be incremented.
 When a write causes a frame to be copied the original's count should
@@ -333,10 +337,11 @@ page and should be mapped readonly (i.e. omit PROT\_WRITE from the
 mmap).  If the frame's share count = 1, its unique to that process and
 can be mapped as usual.
 
-In our segmentation fault handler, if a segmentation fault occurs for
-a page that we mapped but mapped readonly, it's causes by a write
-attempt.  So we should unmap that particular section of the shared
-memory region, copy the data in the readonly page to a new frame, put
+In our segmentation fault handler, if a segmentation fault occurs for a page
+that we mapped but mapped readonly, it's causes by a write attempt. This
+situation can be detected by checking the page table to see whether the page
+has been created or not. So we should unmap that particular section of the
+shared memory region, copy the data in the readonly page to a new frame, put
 that frame in the processes page table, map it in the shared region as
 writeable, and continue the process.
 
