@@ -3,3 +3,4 @@ _site
 *.o
 a.out
 grading
+.DS_Store
