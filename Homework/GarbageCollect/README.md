@@ -49,9 +49,9 @@ memory needs to be reclaimed it's possible to decrement HERE.  But as
 multiple sections of code use the heap, certain parts of the heap may
 be no longer in use yet there is no good way to reclaim that memory.
 
-In this assignment, we intend to use garbage collection to identify
+In this assignment, we intend to use garbage collection to **identify
 parts of the heap that are no longer accessible and then move memory
-regions (and references to those regions) to compact the unused space.
+regions (and references to those regions) to compact the unused space**.
 
 # How Our Garbage Collector Will Operate
 
@@ -117,20 +117,20 @@ cause memory corruption bugs.
 Once regions have been marked as accessible and inaccessible, we will
 compact memory.  The basic algorithm will be:
 
-1.  We are going to have a variable which represents the next unused
-part of memory to write to.  Initially this will be initialized to the
-start of forth's memory (this is represented by the variable stackheap
-BTW).  Then, as we copy used regions into this space, we'll increment
-this variable so it's always pointing to space that is safe for
-writing.
+1.  We are going to reorganize/relocate the regions by 1) removing the
+    inaccessible memory regions and 2) compacting the accesible memory
+    regions. The way to compact regions is simply writing them back to
+    back into the heap space. You can find the begining of heap by checking
+    the start address of the first memory region before compacting.
 
 
 2. For each accessible memory region, starting from low memory regions
    and going to high
    
-   a. Copy the region into the next available space in writable memory
+   a. Copy the region into the next available heap space. You can track
+      the current end of heap space by using a variable/pointer.
    
-   b. Increment writable memory corresponding to the size of the
+   b. Increment that pointer corresponding to the size of the
       region you're copying
    
 This process will naturally overwrite all inaccessible regions
@@ -221,15 +221,14 @@ accessible regions" above but here are a few hints.
    structure to note if a particular region has been marked as
    referenced.  Be sure you initialize all of those values to false as
    your start your algorithm.
-2. The algorithm I describe above is a bit similar to shortest path
-   algorithm for walking a graph breadth first.  If you like, you
-   could also use recursion to solve this problem - just be aware that
+2. The algorithm I describe above is a bit similar to graph search algorithm.
+    If you like, you could also use recursion to solve this problem - just be aware that
    circular references are possible.
 3. The 2 regions that start your algorithm are the stack and latest.
    To determine the currently accessible stack, it's the region
-   between forth.stack\_top and forth.stack\_bot (note the stack
+   between `forth.stack_top` and `forth.stack_bot` (note the stack
    starts high and grows to low so stack_top is the lower memory
-   address).  Latest is forth.latest.
+   address).  Latest is `forth.latest`.
 4. You'll almost certainly want to write a function that given a
    pointer, returns the region that it points to or null if it does
    not point to any real region.  You'll use it in several places.
