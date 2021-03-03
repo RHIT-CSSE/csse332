@@ -13,7 +13,7 @@
       Video Lecture </a>
     - <a href="https://repl.it/@RHITcsse/ArrayListExample#main.c" target="_blank" rel="noopener noreferrer">
       In-Class Coding </a>
-    - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2564002"> Activity Submission </a>
+    - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2692786"> Activity Submission </a>
 2:
   reading:
   topics:
@@ -44,7 +44,7 @@
     - ProcessBasics
   other:
     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=b39b686c-f4c2-483a-8999-ac5201542245">Video Lecture </a>
-    - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2551000"> Quiz </a>
+    - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2692789"> Quiz </a>
 5:
   reading:
   topics:
@@ -52,7 +52,7 @@
   materials: Signals
   other:
     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=1ab63b55-b88b-42ce-ac0d-ac6100fa1988">Video Lecture</a>
-    - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424029">Activity Submission</a>
+    - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2692792">Activity Submission</a>
 6:
   reading:
     - Chapter 3
@@ -62,287 +62,287 @@
   materials: Fork
   other:
     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=64353224-98e2-472b-b301-ac7d01254d25">Video Lecture</a>
-    - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424034">Activity Submission</a>
-7:
-  reading:
-  topics:
-    - Makefiles
-  materials: Makefiles
-  other:
-    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=c7b8d6af-279e-41e1-9b7a-ac7d0159b72d">Video Lecture</a>
-    - <a href="https://rhit-csse.github.io/csse332/ClassMaterials/Makefiles/makefiles.html#1">Slides</a>
-    - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424039">Activity Submission</a>
-8:
-  reading:
-  topics:
-    - Project Kickoff
-  materials: ProjectKickoff
-  other:
-     - No activity today
-     - But do find a partner (if you wish) and figure out how you will collaborate!
-     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=6a8576ee-78d5-48a7-b188-ac7e013be54e">Video Lecture</a>
-# # NOTE: uncomment these one were no longer on a COVID-19 schedule
-# #    - <a href="https://docs.google.com/spreadsheets/d/1LOndSGkmqj_sQTuEUWwDuUL4jryyhnDVn2nrHbQcAfc/edit?usp=sharing">Team Signup Spreadsheet</a>
-# #    - <a href="https://github.com/RHIT-CSSE/csse332/blob/master/Homework/BareMetalOS/InputOutput/GitlabInstructions.md">Repo Setup Instructions</a>
-9:
-  reading:
-          - Sects. 10.1-10.3
-          - Sect. 10.6
-  topics:
-    - Filesystem I
-  materials: Filesystem_1
-  other:
-    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=06688a07-e4ae-4192-a2a1-ac830120fdb1">Video Lecture</a>
-    - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424044">Activity Submission</a>
+    - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2692795">Activity Submission</a>
+# 7:
+#   reading:
+#   topics:
+#     - Makefiles
+#   materials: Makefiles
+#   other:
+#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=c7b8d6af-279e-41e1-9b7a-ac7d0159b72d">Video Lecture</a>
+#     - <a href="https://rhit-csse.github.io/csse332/ClassMaterials/Makefiles/makefiles.html#1">Slides</a>
+#     - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424039">Activity Submission</a>
+# 8:
+#   reading:
+#   topics:
+#     - Project Kickoff
+#   materials: ProjectKickoff
+#   other:
+#      - No activity today
+#      - But do find a partner (if you wish) and figure out how you will collaborate!
+#      - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=6a8576ee-78d5-48a7-b188-ac7e013be54e">Video Lecture</a>
+# # # NOTE: uncomment these one were no longer on a COVID-19 schedule
+# # #    - <a href="https://docs.google.com/spreadsheets/d/1LOndSGkmqj_sQTuEUWwDuUL4jryyhnDVn2nrHbQcAfc/edit?usp=sharing">Team Signup Spreadsheet</a>
+# # #    - <a href="https://github.com/RHIT-CSSE/csse332/blob/master/Homework/BareMetalOS/InputOutput/GitlabInstructions.md">Repo Setup Instructions</a>
+# 9:
+#   reading:
+#           - Sects. 10.1-10.3
+#           - Sect. 10.6
+#   topics:
+#     - Filesystem I
+#   materials: Filesystem_1
+#   other:
+#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=06688a07-e4ae-4192-a2a1-ac830120fdb1">Video Lecture</a>
+#     - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424044">Activity Submission</a>
 
-10:
-  reading: Section 11.1 - 11.5
-  topics: 
-    - Filesystem II
-  materials: Filesystem_2
-  other:
-    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=f9f76f26-a8e8-430c-b175-ac84017a3fb9">Video Lecture</a>
-    - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424049">Activity Submission</a>
-11:
-  reading:
-          - Chapter 3
-  topics:
-          - Inter Process Communication
-  materials: IPC
-  other:
-    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=8df3ec4f-3225-4169-9540-ac8a015d9f87">Video Lecture</a>
-    - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424054">Activity Submission</a>
-12:
-  reading:
-  topics:
-          - <b>Lab</b> Ext2 Filesystem
-  materials:
-  other:
-    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=3b950a31-c6d9-42ba-b8c4-ac8e015e1292">Videos</a>
-    - <a href="Homework/ext2/README"> Lab Instructions</a>
-13:
-  reading:
-          - Chapter 6
-  topics:
-    - CPU Scheduling 1
-  materials: CPU_Scheduling1
-  other:
-    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=f48ee0bf-5c81-458c-b3c6-ac91014a48c1">Video Lecture</a>
-    - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2424059">Activity</a>
-14:
-  reading:
-          - Chapter 6
-  topics:
-    - CPU Scheduling 2
-  materials: CPU_Scheduling2
-  other:
-    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=ac5bb018-1376-4055-a576-ac9201537ea9">Video Lecture</a>
-    - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2424064">Activity</a>
-15:
-  reading:
-  topics:
-    - Skills Test Review
-  materials: Exam1Prep
-  other:
-    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=0fb3a0f5-de42-4290-8c98-ac98010071cc">Videos</a>
-    - No activity!  Do a practice exam
-    - SRT has a review session from 7-8 PM
-16:
-  reading:
-  topics:
-    - Fork/Signals/Makefiles skills tests
-    - 3 Hour exam sometime today
-  materials: 
-  other:  
-17:
-  reading: 
-   - Chapter 4
-  topics: 
-   - More Threads
-   - Thread Libraries
-   - Threading Issues
-  materials: MoreThreads
-  other:
-   - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=bfb13e2d-3671-47d8-814e-ac9f0148279d">Video Lecture</a>
-   - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424069">Activity Submission</a>
-18:
-  reading:
-  topics:
-          - <b>Lab</b> Threads and Semaphore Basics
-  other:
-    - <a href="Homework/SemaphoreLab/README"> Lab Instructions</a>
-    - No video or activity today
-19:
-  reading:  Chapter 5
-  topics: 
-    - Process Synchronization
-  materials: ProcessSync
-  other:
-    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=90fd773a-4471-43c5-90b8-aca0013f3eae">Video Lecture</a>
-    - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424074">Activity Submission</a>
-20:
-  reading:
-    - Chapter 4
-  topics:
-    - User-space Threads and Kernel Threads
-  materials: KernelThreads
-  other:
-    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%22bbc3865c-4039-41c5-9314-ab980136af62%22">Videos</a>
-    - No activity today just start Hybrid Threads
-21:
-  reading: Chapter 5
-  topics:
-    - Process Synchronization
-    - Semaphores
-  materials: ProcessSyncSemaphore
-  other:
-    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=2023d480-12ce-4d46-8efb-aca20151a578">Video Lecture</a>
-    - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424079">Activity Submission</a>
-22:
-  reading: Chapter 5
-  topics:
-    - Semaphore Practice
-  materials: Semaphore_II
-  other:
-     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=5c3e34d4-7013-4fe3-98f0-aca7014211d4">Video Lecture</a>
-     - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424084">Activity Submission</a>
-     - <a href="https://greenteapress.com/wp/semaphores/">Little Book of Semaphores</a>
-23:
-  reading:
-  topics:
-    - Lab time Semaphores 1/2
-    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=fd0a718a-f08a-4bc0-ab77-ab9f00deb4ff">Videos</a>
-    - No activity today, just start on Semaphore Homework
-  materials: 
-  other:
-24:
-  reading:  
-  topics: 
-    - Scoreboard
-  materials: Scoreboard
-  other:
-    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%2213ad6831-8bb8-4654-a52f-aba001488e7e%22">Videos</a>
-    - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424089">Activity Submission</a>
-25:
-  reading: Chapter 7
-  topics:
-    - Deadlock and Starvation
-  materials: DeadlockStarvation
-  other:
-    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%22d8f66dd5-9b83-4f88-9ee0-aba300dd05b5%22">Videos</a>
-    - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424099">Activity Submission</a>
-26:
-  reading: Chapter 7
-  topics:
-    - Deadlock Avoidance
-  materials: DeadlockAvoidance
-  other:  
-    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%22e2e35897-541b-49fc-852c-aba700fb6787%22">Videos</a>
-    - No activity for today
-27:
-  reading: 
-  topics: 
-    - Skills Test Review
-  materials: Exam2Prep
-  other:
-    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%2212294dc2-ec88-42bf-91c2-aba500e231c7%22">Video</a>
-    - No activity, do a practice exam!  
-    - SRT has a review session at 7 PM.
-28:
-  reading:
-  topics:
-    - Exam 2 (Threading Skills Test)
-    - Any 3 hours today
-  materials: 
-  other:  
-29:
-  reading:
-  topics:
-    - Segmentation
-  materials: Segmentation
-  other:
-    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=b3b7e1f9-7421-4249-b7b9-acb4012f48df">Video Lecture</a>
-    - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2424104">Activity Submission</a>
-30:
-  reading:
-  topics:
-    - Paging
-  materials: Paging
-  other:
-    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=3783c289-a5fc-45f3-b09d-acb501773c89">Video Lecture</a>
-    - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2424109"> Activity Submission </a>
-31:
-  reading:
-  topics:
-    - Page Replacement Algorithms
-  materials: PageReplacement
-  other:  
-     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=9da717f1-b2b9-47d3-9cb8-abad00fce80c">Videos</a>
-     - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424114">Activity Submission</a>
-32:
-  reading:
-  topics:
-    - Lab/Project Work Time
-  materials: 
-  other:  
-    - No video today just start VM Lab 1
-    - <a href="Homework/VirtualMemoryLab/README"> Lab Instructions</a>
-33:
-  reading:
-  topics:
-          - More Virtual Memory
-  materials: TLB
-  other:  
-    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=fb42399d-2ed9-4731-84a0-abb10120c949"> Videos </a>
-    - No activity today
-34:
-  reading:
-  topics:
-        - Advanced Paging
-  materials: AdvancedPageTable
-  other:
-    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=db9c7e92-e41e-4773-a1c6-acbd0136ad28">Video Lecture</a>
-    - <a href=https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2424119">Activity Submission</a>
-35:
-  reading:
-  topics:
-    - Reference Counting
-  materials: ReferenceCounting
-  other:  
-    - <a href="ClassMaterials/ReferenceCounting/reference_counting">Reference Counting Slides</a>
-    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=5d815ae5-41bf-4e48-8f21-abb4013009d7">Videos</a>
-    - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424124">Activity Submission</a>
-36:
-  reading:
-  topics: 
-    - Intro to Garbage Collection Lab
-  materials: 
-  other:  <a href="Homework/GarbageCollect">Lab Instructions</a>
-37:
-  reading:
-  topics:
-    - More Garbage Collection
-  materials: GarbageCollection2 
-  other:  
-    - <a href="ClassMaterials/GarbageCollection2/garbage_collection">Garbage Collection 2 Slides</a>
-    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%223e90f5db-b5d0-48b2-8e56-abb9014984bb%22"> Videos </a>
-    - No activity for today
-38:
-  reading:
-  topics:
-    - Garbage Collection Lab Work Time
-  materials: 
-  other:  
-39:
-  reading:
-  topics:
-    - Garbage Collection Lab Work Time
-  materials:
-  other:
+# 10:
+#   reading: Section 11.1 - 11.5
+#   topics: 
+#     - Filesystem II
+#   materials: Filesystem_2
+#   other:
+#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=f9f76f26-a8e8-430c-b175-ac84017a3fb9">Video Lecture</a>
+#     - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424049">Activity Submission</a>
+# 11:
+#   reading:
+#           - Chapter 3
+#   topics:
+#           - Inter Process Communication
+#   materials: IPC
+#   other:
+#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=8df3ec4f-3225-4169-9540-ac8a015d9f87">Video Lecture</a>
+#     - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424054">Activity Submission</a>
+# 12:
+#   reading:
+#   topics:
+#           - <b>Lab</b> Ext2 Filesystem
+#   materials:
+#   other:
+#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=3b950a31-c6d9-42ba-b8c4-ac8e015e1292">Videos</a>
+#     - <a href="Homework/ext2/README"> Lab Instructions</a>
+# 13:
+#   reading:
+#           - Chapter 6
+#   topics:
+#     - CPU Scheduling 1
+#   materials: CPU_Scheduling1
+#   other:
+#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=f48ee0bf-5c81-458c-b3c6-ac91014a48c1">Video Lecture</a>
+#     - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2424059">Activity</a>
+# 14:
+#   reading:
+#           - Chapter 6
+#   topics:
+#     - CPU Scheduling 2
+#   materials: CPU_Scheduling2
+#   other:
+#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=ac5bb018-1376-4055-a576-ac9201537ea9">Video Lecture</a>
+#     - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2424064">Activity</a>
+# 15:
+#   reading:
+#   topics:
+#     - Skills Test Review
+#   materials: Exam1Prep
+#   other:
+#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=0fb3a0f5-de42-4290-8c98-ac98010071cc">Videos</a>
+#     - No activity!  Do a practice exam
+#     - SRT has a review session from 7-8 PM
+# 16:
+#   reading:
+#   topics:
+#     - Fork/Signals/Makefiles skills tests
+#     - 3 Hour exam sometime today
+#   materials: 
+#   other:  
+# 17:
+#   reading: 
+#    - Chapter 4
+#   topics: 
+#    - More Threads
+#    - Thread Libraries
+#    - Threading Issues
+#   materials: MoreThreads
+#   other:
+#    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=bfb13e2d-3671-47d8-814e-ac9f0148279d">Video Lecture</a>
+#    - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424069">Activity Submission</a>
+# 18:
+#   reading:
+#   topics:
+#           - <b>Lab</b> Threads and Semaphore Basics
+#   other:
+#     - <a href="Homework/SemaphoreLab/README"> Lab Instructions</a>
+#     - No video or activity today
+# 19:
+#   reading:  Chapter 5
+#   topics: 
+#     - Process Synchronization
+#   materials: ProcessSync
+#   other:
+#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=90fd773a-4471-43c5-90b8-aca0013f3eae">Video Lecture</a>
+#     - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424074">Activity Submission</a>
+# 20:
+#   reading:
+#     - Chapter 4
+#   topics:
+#     - User-space Threads and Kernel Threads
+#   materials: KernelThreads
+#   other:
+#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%22bbc3865c-4039-41c5-9314-ab980136af62%22">Videos</a>
+#     - No activity today just start Hybrid Threads
+# 21:
+#   reading: Chapter 5
+#   topics:
+#     - Process Synchronization
+#     - Semaphores
+#   materials: ProcessSyncSemaphore
+#   other:
+#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=2023d480-12ce-4d46-8efb-aca20151a578">Video Lecture</a>
+#     - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424079">Activity Submission</a>
+# 22:
+#   reading: Chapter 5
+#   topics:
+#     - Semaphore Practice
+#   materials: Semaphore_II
+#   other:
+#      - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=5c3e34d4-7013-4fe3-98f0-aca7014211d4">Video Lecture</a>
+#      - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424084">Activity Submission</a>
+#      - <a href="https://greenteapress.com/wp/semaphores/">Little Book of Semaphores</a>
+# 23:
+#   reading:
+#   topics:
+#     - Lab time Semaphores 1/2
+#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=fd0a718a-f08a-4bc0-ab77-ab9f00deb4ff">Videos</a>
+#     - No activity today, just start on Semaphore Homework
+#   materials: 
+#   other:
+# 24:
+#   reading:  
+#   topics: 
+#     - Scoreboard
+#   materials: Scoreboard
+#   other:
+#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%2213ad6831-8bb8-4654-a52f-aba001488e7e%22">Videos</a>
+#     - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424089">Activity Submission</a>
+# 25:
+#   reading: Chapter 7
+#   topics:
+#     - Deadlock and Starvation
+#   materials: DeadlockStarvation
+#   other:
+#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%22d8f66dd5-9b83-4f88-9ee0-aba300dd05b5%22">Videos</a>
+#     - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424099">Activity Submission</a>
+# 26:
+#   reading: Chapter 7
+#   topics:
+#     - Deadlock Avoidance
+#   materials: DeadlockAvoidance
+#   other:  
+#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%22e2e35897-541b-49fc-852c-aba700fb6787%22">Videos</a>
+#     - No activity for today
+# 27:
+#   reading: 
+#   topics: 
+#     - Skills Test Review
+#   materials: Exam2Prep
+#   other:
+#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%2212294dc2-ec88-42bf-91c2-aba500e231c7%22">Video</a>
+#     - No activity, do a practice exam!  
+#     - SRT has a review session at 7 PM.
+# 28:
+#   reading:
+#   topics:
+#     - Exam 2 (Threading Skills Test)
+#     - Any 3 hours today
+#   materials: 
+#   other:  
+# 29:
+#   reading:
+#   topics:
+#     - Segmentation
+#   materials: Segmentation
+#   other:
+#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=b3b7e1f9-7421-4249-b7b9-acb4012f48df">Video Lecture</a>
+#     - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2424104">Activity Submission</a>
+# 30:
+#   reading:
+#   topics:
+#     - Paging
+#   materials: Paging
+#   other:
+#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=3783c289-a5fc-45f3-b09d-acb501773c89">Video Lecture</a>
+#     - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2424109"> Activity Submission </a>
+# 31:
+#   reading:
+#   topics:
+#     - Page Replacement Algorithms
+#   materials: PageReplacement
+#   other:  
+#      - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=9da717f1-b2b9-47d3-9cb8-abad00fce80c">Videos</a>
+#      - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424114">Activity Submission</a>
+# 32:
+#   reading:
+#   topics:
+#     - Lab/Project Work Time
+#   materials: 
+#   other:  
+#     - No video today just start VM Lab 1
+#     - <a href="Homework/VirtualMemoryLab/README"> Lab Instructions</a>
+# 33:
+#   reading:
+#   topics:
+#           - More Virtual Memory
+#   materials: TLB
+#   other:  
+#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=fb42399d-2ed9-4731-84a0-abb10120c949"> Videos </a>
+#     - No activity today
+# 34:
+#   reading:
+#   topics:
+#         - Advanced Paging
+#   materials: AdvancedPageTable
+#   other:
+#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=db9c7e92-e41e-4773-a1c6-acbd0136ad28">Video Lecture</a>
+#     - <a href=https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2424119">Activity Submission</a>
+# 35:
+#   reading:
+#   topics:
+#     - Reference Counting
+#   materials: ReferenceCounting
+#   other:  
+#     - <a href="ClassMaterials/ReferenceCounting/reference_counting">Reference Counting Slides</a>
+#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=5d815ae5-41bf-4e48-8f21-abb4013009d7">Videos</a>
+#     - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424124">Activity Submission</a>
+# 36:
+#   reading:
+#   topics: 
+#     - Intro to Garbage Collection Lab
+#   materials: 
+#   other:  <a href="Homework/GarbageCollect">Lab Instructions</a>
+# 37:
+#   reading:
+#   topics:
+#     - More Garbage Collection
+#   materials: GarbageCollection2 
+#   other:  
+#     - <a href="ClassMaterials/GarbageCollection2/garbage_collection">Garbage Collection 2 Slides</a>
+#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%223e90f5db-b5d0-48b2-8e56-abb9014984bb%22"> Videos </a>
+#     - No activity for today
+# 38:
+#   reading:
+#   topics:
+#     - Garbage Collection Lab Work Time
+#   materials: 
+#   other:  
+# 39:
+#   reading:
+#   topics:
+#     - Garbage Collection Lab Work Time
+#   materials:
+#   other:
 
-40:
-  reading:
-  topics:
-    - No Class
-  materials: 
-  other:  
+# 40:
+#   reading:
+#   topics:
+#     - No Class
+#   materials: 
+#   other:  

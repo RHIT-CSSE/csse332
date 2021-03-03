@@ -222,12 +222,16 @@ $table-header-border: 1px solid #FFF;
         background-color: $highlight-color;
       }
     }
-    tr.border_top {
+    tr.border {
       border: $cell-border;
-      &:nth-child(odd) { // highlight the odd rows with a color
-        background-color: $highlight-color;
-      }
-      border-top:3px solid #167F80;
+      background-color: #20b8bb !important;
+      color: $header-text-color;
+      // border-top:3px solid #20b8bb;
+      // border-bottom:3px solid #167F80;
+      line-height: 0px;
+      padding: 0;
+      font-family: 'Arial';
+      font-weight: 700;
     }
 
     th {
@@ -236,7 +240,7 @@ $table-header-border: 1px solid #FFF;
       background-color: $header-background-color;
       color: $header-text-color;
       padding: 1em;
-      &:first-child { // show the first table header for mobile
+      &:first-child { // show t0e first table header for mobile
         display: table-cell;
         text-align: center;
       }
