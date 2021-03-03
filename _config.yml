@@ -16,7 +16,7 @@ author: Mohammad A. Noureddine
 navbar-links:
   Moodle: "https://moodle.rose-hulman.edu/course/view.php?id=81937"
   Syllabus: "syllabus"
-  Schedule:
+  Schedule: "schedule"
   # Resources:
   #   - Beautiful Jekyll: "https://beautifuljekyll.com"
   #   - Learn markdown: "https://www.markdowntutorial.com/"
