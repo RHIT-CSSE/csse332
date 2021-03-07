@@ -121,15 +121,15 @@ layout: page
 title: Class Schedule
 ---
 
-**Jump to week**: [0](#w0) [1](#w1) [2](#w2) [3](#w3) [4](#w4) [5](#w5) [6](#w6) [7](#w7) [8](#w8) [9](#w9) [10](#w10)
+**Jump to week**: **[0](#w0) [1](#w1) [2](#w2) [3](#w3) [4](#w4) [5](#w5) [6](#w6) [7](#w7) [8](#w8) [9](#w9) [10](#w10)**
 
 <table>
 <colgroup>
 <col width="10%" />
-<col width="22.5%" />
-<col width="22.5%" />
-<col width="22.5%" />
-<col width="22.5%" />
+<col width="15%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
 </colgroup>"""
     f.write(header)
 
@@ -146,11 +146,11 @@ def write_table_header(f):
     # TODO: Make this one call to write. This is bad but helpful when debugging
     f.write("<thead>\n")
     f.write("<tr class=\"header\">\n")
-    f.write("<th> Week </th>\n")
-    f.write("<th> Session </th>\n")
-    f.write("<th> Reading </th>\n")
-    f.write("<th> Topics </th>\n")
-    f.write("<th> Material </th>\n")
+    f.write("<th style=\"background-color:#167F92;color:#FFF;\"> Week </th>\n")
+    f.write("<th style=\"background-color:#167F92;color:#FFF;\"> Session </th>\n")
+    f.write("<th style=\"background-color:#167F92;color:#FFF;\"> Reading </th>\n")
+    f.write("<th style=\"background-color:#167F92;color:#FFF;\"> Topics </th>\n")
+    f.write("<th style=\"background-color:#167F92;color:#FFF;\"> Material </th>\n")
     f.write("</tr>\n")
     f.write("</thead>\n")
 
@@ -189,9 +189,9 @@ def is_class_session(session):
 
 def start_column(f, options=None):
     if options:
-        f.write("<td align=\"center\" markdown=\"span\" {}>\n".format(options))
+        f.write("<td markdown=\"span\" {}>\n".format(options))
     else:
-        f.write("<td align=\"center\" markdown=\"span\">\n")
+        f.write("<td markdown=\"span\">\n")
 
 
 def end_column(f):
@@ -222,7 +222,7 @@ def write_table_body(f, schedule, num_of_sessions_per_week, classes):
 
         # check if we need a new week column
         if week != previous_week:
-            f.write("""<td rowspan="{1}" markdown="span" align="center"><a name=\"w{0}\">{0}</a></td>\n""".format(
+            f.write("""<td rowspan="{1}" markdown="span" style=\"font-size:xx-large;\"><a name=\"w{0}\">{0}</a></td>\n""".format(
                 week, num_of_sessions_per_week[week]))
 
 
@@ -240,8 +240,8 @@ def write_table_body(f, schedule, num_of_sessions_per_week, classes):
                 class_content = classes[session_num]
                 # check for reading material
                 if class_content['reading']:
-                    start_column(f)
-                    f.write("{::nomarkdown}<ul>\n")
+                    start_column(f, 'style=\"text-align:left\"')
+                    f.write("{::nomarkdown}<ul style=\"margin:0;padding:.5rem\">\n")
                     for item in class_content['reading']:
                         f.write("<li> {} </li>\n".format(item))
                     f.write("</ul>{:/}\n")
@@ -252,8 +252,9 @@ def write_table_body(f, schedule, num_of_sessions_per_week, classes):
                 
                 # check for topics
                 if class_content['topics']:
-                    start_column(f)
-                    f.write("{::nomarkdown}<ul>\n")
+                    start_column(f, 'style=\"text-align:left\"')
+                    # f.write("{::nomarkdown}<ul>\n")
+                    f.write("{::nomarkdown}<ul style=\"margin:0;padding:.5rem\">\n")
                     for topic in class_content['topics']:
                         f.write("<li> {} </li>\n".format(topic))
                     f.write("</ul>{:/}\n")
@@ -269,7 +270,8 @@ def write_table_body(f, schedule, num_of_sessions_per_week, classes):
                     if type(class_content['materials']) is str:
                         f.write(class_content['materials'] + "<br/>")
                     else:
-                        f.write("{::nomarkdown}<ul>\n")
+                        # f.write("{::nomarkdown}<ul>\n")
+                        f.write("{::nomarkdown}<ul style=\"margin:0;padding:.5rem\">\n")
                         for material in class_content['materials']:
                             f.write("<li>{}</li>".format(material))
                         f.write("</ul>{:/}\n")
@@ -281,9 +283,9 @@ def write_table_body(f, schedule, num_of_sessions_per_week, classes):
                 end_column(f)
 
             except KeyError:
-                f.write("<td align=\"center\" markdown=\"span\" colspan=\"3\">N/A</td>\n")
+                f.write("<td markdown=\"span\" colspan=\"3\">N/A</td>\n")
         else:
-            f.write("<td align=\"center\" markdown=\"span\" colspan=\"4\">N/A</td>\n")
+            f.write("<td markdown=\"span\" colspan=\"4\">N/A</td>\n")
         f.write("</tr>\n")
 
 # %%

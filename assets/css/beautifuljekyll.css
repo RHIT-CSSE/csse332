@@ -808,7 +808,7 @@ table {
   padding: 0;
 }
 table tr {
-  border-top: 1px solid #cccccc;
+  border-top: 3px solid #cccccc;
   background-color: #ffffff;
   margin: 0;
   padding: 0;
@@ -817,15 +817,19 @@ table tr:nth-child(2n) {
   background-color: #f8f8f8;
 }
 table tr th {
+  font-family: 'Courier New', Courier, monospace;
   font-weight: bold;
-  border: 1px solid #cccccc;
-  text-align: left;
+  font-size: x-large;
+  border: 1.5px solid #cccccc;
+  text-align: center;
   margin: 0;
   padding: 0.375rem 0.8125rem;
 }
 table tr td {
-  border: 1px solid #cccccc;
-  text-align: left;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: medium;
+  border: 2px solid #cccccc;
+  text-align: center;
   margin: 0;
   padding: 0.375rem 0.8125rem;
 }
