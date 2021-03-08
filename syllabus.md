@@ -3,29 +3,42 @@ title: Syllabus
 layout: page
 ---
 
-# Changes!
+## Course Description
 
-There needed to be [changes to this course to move to a fully online format](covid19_revisions.md).
+Students learn fundamental concepts of modern operating systems by studying
+how and why operating systems have evolved. Topics include CPU scheduling,
+process synchronization, memory management, file systems, I/O systems,
+privacy and security, and performance evaluation. Students implement parts of
+an operating system as a means of exploring the details of some of these
+topics. Students will also implement Linux kernel modules to explore the
+interactions between user-space and kernel-space.
 
-### Course Description
+## Prerequisite Topics
 
-Students learn fundamental concepts of modern operating systems by studying how and why operating systems have evolved. Topics include CPU scheduling, process synchronization, memory management, file systems, I/O systems, privacy and security, and performance evaluation. Students implement parts of an operating system as a means of exploring the details of some of these topics.
+It is assumed that students are familiar with the C programming language and
+are well on their way to being independent programmers (i.e. they have a
+solid command of the material in CSSE-220). It is also assumed that students
+have an understanding of the material covered in CSSE-132 or CSSE-232
+including interrupts and exceptions, the relationship between high-level
+languages and assembly code, and processor resources such as registers.
 
-### Prerequisite Topics
+## Textbook
 
-It is assumed that students are familiar with the C programming language and are well on their way to being independent programmers (i.e. they have a solid command of the material in CSSE-220). It is also assumed that students have an understanding of the material covered in CSSE-132 or CSSE-232 including interrupts and exceptions, the relationship between high-level languages and assembly code, and processor resources such as registers.
+### Recommended textbook
 
-### Textbook
+* Operating Systems: Three Easy Pieces, version 1.00, Remzi H. Arpaci-Dusseau and Andrea C. Apraci-Dusseau, August 2018.
+    * You can obtain a free copy of the textbook at: [Operating Systems: Three Easy Pieces](https://pages.cs.wisc.edu/~remzi/OSTEP/)
 
-#### Optional
+> Unless otherwise specified, all Chapters and Sections listed on the schedule refer to the above textbook and chapters.
 
-* Operating System Concepts, 9th Edition, Abraham Silberschatz, Greg Gagne, and Peter B. Galvin, Wiley, 2012.
+### Other great references
+* Modern Operating Systems, 4th Edition, Andrew S. Tanenbaum, Herbert Bos, Pearson Education, 2015.
 
-> Unless otherwise specified, all Chapters and Sections listed on the schedule refer to Operating System Concepts.
+* Linux kernel development, Robert Love, Pearson Education, 2010.
 
-* A free open-source textbook: [Operating Systems: Three Easy Pieces](http://pages.cs.wisc.edu/~remzi/OSTEP/)
+* Operating System Concepts, 10th Edition, Abraham Silberschatz, Greg Gagne, and Peter B. Galvin, Wiley, 2018.
 
-#### Other References
+### Other References
 
 * C Programming Language, 2nd Edition, Brian W. Kernighan and Dennis M. Ritchie, Prentice Hall, 1988.
 
@@ -33,17 +46,17 @@ It is assumed that students are familiar with the C programming language and are
 
 * Advanced Programming in the UNIX Environment, 2nd Edition, W. Richard Stevens and Stephen A. Rago, Addison-Wesley Professional, 2008.
 
-#### Electronic Course Materials
+### Electronic Course Materials
 
 * Electronic course materials, including the schedule, may be accessed directly at:
 [https://rhit-csse.github.io/csse332](https://rhit-csse.github.io/csse332).
 
-* All grades and assignment feedback will posted on Moodle.
+* All grades and assignment feedback will be posted on Moodle.
 
-* Posting questions, discussions, and answers to questions asked are best done on the course’s Piazza site.
+* Posting questions, discussions, and answers to questions asked are best done on the course’s Campuswire site.
 
 
-### Deadlines and Late Policy
+## Deadlines and Late Policy
 
 The deadlines of all homeworks, labs, and project milestones are listed on on the [schedule](https://rhit-csse.github.io/csse332/schedule.html) page.
 
@@ -56,7 +69,7 @@ However we understand that situations can arise. We handle all situations on a c
 * We keep track of extensions per student and if you seem to be overusing the privilege we will stop allowing extensions.
 * If the reason you are late is because you are having trouble completing the assignment (e.g. a bug you can’t fix or just difficulty understanding) get help from an instructor. Don’t assume that more time will fix the problem; plan to get help.
 
-#### Special Arrangements
+## Special Arrangements
 
 If circumstances have caused you to miss/fail several assignments OR
 if your current situation in OS seems overwhelming, you should contact
@@ -69,7 +82,7 @@ quickly - but it never hurts to have a discussion, however
 unsalvageable the situation may feel.  Please talk to your professor
 if you are having problems!
 
-### Homework Assignments/Labs
+## Homework Assignments/Labs
 
 Homework assignments, including Labs, are listed on the class
 schedule. Some homework assignments require code solutions and
@@ -94,7 +107,7 @@ the advanced assignments, and those looking for an A will need to
 complete nearly all of them.  Advanced assignments can be done in
 groups of 2, or individually.
 
-### Exams
+## Exams
 
 There will be 2 skill exams.  Passing *each* exam is required to pass
 the course (unless otherwise specified, passing means getting 65% or
@@ -102,7 +115,7 @@ better).  Each exam will have a makeup and the higher of the two exam
 grades will be used.  However, if you fail both the exam and the
 makeup, you fail the course.
 
-### Grading
+## Grading
 
 | Item                  | Weight |
 | :-------------------- | :----- |
@@ -115,7 +128,7 @@ Generally, 90-100% is an A, 80-89% is a B, etc.
 
 * NOTE: You must pass each skill exam (usually 65% or better) to pass the course *
 
-### Handling Grading Issues
+## Handling Grading Issues
 
 Most of the homeworks in this course are graded by TAs.  You should be able to see the TA who graded your assignment on the course schedule AND the grade notification email that Moodle sends should also identify them.  When you have a grading issue, please contact the grading TA first...particularly for issues like:
 
@@ -125,7 +138,7 @@ Most of the homeworks in this course are graded by TAs.  You should be able to s
 
 If you talk to the grading TA and you disagree with their analysis of your code or you feel the grading standards were unfair (or unfairly applied) please contact your instructor.  We want to help you but everything goes smoother if logistical issues come to the TAs first.
 
-### Collaboration, Cheating and Professional Behavior
+## Collaboration, Cheating and Professional Behavior
 
 Collaboration is encouraged on homework and laboratories. It is prohibited on all quizzes and exams. When you collaborate, you must properly credit your collaborators and clearly indicate the extent of the collaboration. Working out a solution as a group is acceptable collaboration. Each individual is responsible for understanding the entire solution. For homework, this means that once a group solution has been achieved, each collaborator must rework the problem and write up the solution independently. Copying is not collaboration. Failure to properly acknowledge collaboration can be considered cheating.
 
