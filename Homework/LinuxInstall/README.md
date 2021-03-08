@@ -25,11 +25,15 @@ You will also want the extension pack, downloaded at the same place.
 Install VirtualBox on your system, and [then download this
 file](http://mirror.csse.rose-hulman.edu/.csse332/CSSE332.ova).
 
+
 You should be able to run that file and it should install an
-appropriate virtual machine on your system.  The first time it starts
-up it should ask you to configure a username and password (for max
-ease of use, I recommend you use the same username as your rose
-login).
+appropriate virtual machine on your system. Once you imported the VM
+instance, you will be able to login with credentials shown below:
+
+```
+username: ubuntu
+password: csse332
+```
 
 
 # Windows 10 Linux Subsystem

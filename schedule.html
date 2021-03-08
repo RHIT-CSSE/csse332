@@ -90,7 +90,9 @@ layout: schedule
       {% unless {{session.name}} contains "#" %}
             <tr bgcolor="#ddf" >
         <td colspan="4">
-          <a href="{{ site.github.repository_url }}/tree/master/Homework/{{ session.dirname }}">{{session.name}}</a> DUE {{ session.date | date: "%a %d %b %Y %l:%M %P" }}
+          {% if session.dirname %}<a href="{{ site.github.repository_url }}/tree/master/Homework/{{ session.dirname }}">{{session.name}}</a>
+          {% else %}{{session.name}}{% endif %} 
+          DUE {{ session.date | date: "%a %d %b %Y %l:%M %P" }}
           {% if session.moodle %}<a href="{{ session.moodle }}"> Submit Here</a>{% endif %}
           {% if session.grader %} <font color="#aaa"> grader: {{session.grader}}@</font> {% endif %} 
         </td>
