@@ -48,54 +48,65 @@ languages and assembly code, and processor resources such as registers.
 
 ### Electronic Course Materials
 
-* Electronic course materials, including the schedule, may be accessed directly at:
-[https://rhit-csse.github.io/csse332](https://rhit-csse.github.io/csse332).
+* Electronic course materials, including the schedule, may be accessed directly at the [course
+  website]({{ site.baseurl }}).
 
-* All grades and assignment feedback will be posted on Moodle.
+* All grades and assignment feedback will be posted on
+  [Moodle](https://moodle.rose-hulman.edu/course/view.php?id=81937).
 
-* Posting questions, discussions, and answers to questions asked are best done on the course’s Campuswire site.
+* Posting questions, discussions, and answers to questions asked are best done on the course’s
+  [Campuswire site](https://campuswire.com/c/GC2D3779C/feed).
 
 
 ## Deadlines and Late Policy
 
-The deadlines of all homeworks, labs, and project milestones are listed on on the [schedule](https://rhit-csse.github.io/csse332/schedule.html) page.
+The deadlines of all homeworks, labs, and project milestones are listed on on the
+[schedule]({{ site.baseurl }}/schedule/) page.
 
-In general, you should plan ahead and submit assignments on time. This course has no ’late day’ policy and late assignments are generally worth 0 points unless you have made arrangements.
+In general, you should plan ahead and submit assignments on time. This course has no ’late day’
+policy and late assignments are generally worth 0 points unless you have made arrangements.
 
-However we understand that situations can arise. We handle all situations on a case-by-case basis. Here are some general guidelines:
+However we understand that situations can arise. We handle all situations on a case-by-case basis.
+Here are some general guidelines:
 
 * The usual extension is 24 hours or for extreme circumstances 48 hours
-* We expect to be notified as soon as is feasible. If you are very ill, we understand that that might be slightly after the assignment due date. For other situations, it’s usually possible to notify us in advance.
-* We keep track of extensions per student and if you seem to be overusing the privilege we will stop allowing extensions.
-* If the reason you are late is because you are having trouble completing the assignment (e.g. a bug you can’t fix or just difficulty understanding) get help from an instructor. Don’t assume that more time will fix the problem; plan to get help.
+* We expect to be notified as soon as is feasible. If you are very ill, we understand that that
+might be slightly after the assignment due date. For other situations, it’s usually possible to
+notify us in advance.
+* We keep track of extensions per student and if you seem to be overusing the privilege we will stop
+allowing extensions.
+* If the reason you are late is because you are having trouble completing the assignment (e.g. a bug
+you can’t fix or just difficulty understanding) get help from an instructor. Don’t assume that more
+time will fix the problem; plan to get help.
 
 ## Special Arrangements
 
-If circumstances have caused you to miss/fail several assignments OR
-if your current situation in OS seems overwhelming, you should contact
-the professor right away.  Sometimes it is possible to make up missed
-work for partial credit - these situations are always handled on a
-case-by-case basis.
+If circumstances have caused you to miss/fail several assignments OR if your current situation in OS
+seems overwhelming, you should contact the professor right away.  Sometimes it is possible to make
+up missed work for partial credit - these situations are always handled on a case-by-case basis.
 
-The best chance of success is when these problems are addressed
-quickly - but it never hurts to have a discussion, however
-unsalvageable the situation may feel.  Please talk to your professor
-if you are having problems!
+The best chance of success is when these problems are addressed quickly - but it never hurts to have
+a discussion, however unsalvageable the situation may feel.  Please talk to your professor if you
+are having problems!
 
 ## Homework Assignments/Labs
 
 Homework assignments, including Labs, are listed on the class
 schedule. Some homework assignments require code solutions and
 submission instructions can be found
-[here](https://github.com/RHIT-CSSE/csse332/blob/master/Docs/getting_and_submitting_code.md). Others
+[here]({{ site.baseurl }}/docs/submission_instructions/). Others
 involve Moodle or paper and pencil solutions.
 
-There are ~9 "regular" programming assignments, plus assorted Moodle
+There are ~6 "regular" programming assignments, plus assorted Moodle
 quizzes and minor assignments (you can see the exact weight of
 everything in Moodle).  These assignments are integral to your
-understanding of OS - missing any of them can making passing OS quite
-hard.  All these assignments are done individually, with the exception
-of the BareMetalOS assignment which is done in assigned groups.
+understanding of OS - missing any of them can make passing OS quite
+hard.  All these assignments are done individually.
+
+There is one term project consisting of three milestones spread across the entire quarter. This
+project replaces the BareMetalOS assignments in the previous version of the class. I highly
+recommend that you work on this assignment in pairs. Group members can be from either section 03 or
+section 04.
 
 There are also 6 ADVANCED assignments.  Advanced assignments generally
 involve trickier programming but explore more interesting topics.
@@ -119,20 +130,28 @@ makeup, you fail the course.
 
 | Item                  | Weight |
 | :-------------------- | :----- |
-| Assignments/Labs      | 55%    |
-| ADVANCED  Assignments | 15%    |
+| Assignments/Labs      | 40%    |
+| ADVANCED  Assignments | 14%    |
+| Term Project          | 15%    |
 | Exams                 | 30%    |
+| Mystery               | 1%     |
 
+The mystery item is left for you to figure out.
 
-Generally, 90-100% is an A, 80-89% is a B, etc.
+I generally follow the registrar's interpretation of letter grades, which you can find
+[here](https://www.rose-hulman.edu/campus-life/student-services/registrar/rules-and-procedures/grades.html)
+under the grades description section.
 
-* NOTE: You must pass each skill exam (usually 65% or better) to pass the course *
+* NOTE: You must pass each skill exam (usually 65% or better) to pass the course 
 
 ## Handling Grading Issues
 
-Most of the homeworks in this course are graded by TAs.  You should be able to see the TA who graded your assignment on the course schedule AND the grade notification email that Moodle sends should also identify them.  When you have a grading issue, please contact the grading TA first...particularly for issues like:
+Most of the homeworks in this course are graded by TAs.  You should be able to see the TA who graded
+your assignment on the course schedule AND the grade notification email that Moodle sends should
+also identify them.  When you have a grading issue, please contact the grading TA
+first...particularly for issues like:
 
-+ The code your submitted works on your computer but not the TAs
++ The code you submitted works on your computer but not the TAs
 + The TA didn't notice but you actually did do the thing requested, it was just in a different place etc.
 + You submitted the wrong files
 

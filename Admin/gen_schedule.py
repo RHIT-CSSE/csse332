@@ -40,13 +40,13 @@ def parse_time_str(time_string):
     assignment_fmt = '%Y-%m-%d %H:%M:%S'
     try:
         ret_obj = dt.strptime(time_string, schedule_fmt)
-    except ValueError as e:
+    except ValueError:
         logging.debug("Failed to parse {} as {}, trying {}".format(
             time_string, schedule_fmt, assignment_fmt
         ))
         try:
             ret_obj = dt.strptime(time_string, assignment_fmt)
-        except ValueError as e:
+        except ValueError:
             logging.error(
                 "Failed to parse datetime string {}".format(time_string))
 
