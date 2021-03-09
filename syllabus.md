@@ -1,6 +1,8 @@
 ---
 title: Syllabus
-layout: page
+layout: post
+readtime: true
+date: Mon Mar  8 19:06:23 2021
 ---
 
 ## Course Description
