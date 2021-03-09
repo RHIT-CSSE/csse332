@@ -16,6 +16,13 @@ some of the concepts you learned in CSSE 132 into your memory. If you remember a
 would expect  it would take you about an hour to complete this assignment. If you syntax is a bit
 rusty, then this will serve as great practice for the class. 
 
+## Logistics
+* [Source directory](https://github.com/rhit-csse332/csse332-202130/tree/main/homeworks/00_pointer_practice)
+* [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708040&forceview=1)
+* Due date: Fri, Mar 12 2021 23:55
+* [Submission instructions]({{ site.baseurl }}/docs/submission_instructions/)
+
+
 ## Problems and solving them
 There are five problems of increasing difficulty with included test cases. The only file you need
 to concern yourself with is `main.c`, but please do not edit any of the test cases. 
