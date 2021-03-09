@@ -23,7 +23,7 @@ title: Class Schedule
 </thead>
 <tbody>
 <tr>
-<td rowspan="4" markdown="span" style="font-size:xx-large;"><a name="w0">0</a></td>
+<td rowspan="3" markdown="span" style="font-size:xx-large;"><a name="w0">0</a></td>
 <td markdown="span">
 1 <br/> Thu, Mar 11 2021</td>
 <td markdown="span">
@@ -39,9 +39,6 @@ title: Class Schedule
 Coming soon</td>
 </tr>
 <tr>
-<td markdown="span" colspan="4">N/A</td>
-</tr>
-<tr>
 <td markdown="span">
 2 <br/> Fri, Mar 12 2021</td>
 <td markdown="span">
@@ -55,10 +52,9 @@ Coming soon</td>
 Coming soon</td>
 </tr>
 <tr>
-<td markdown="span" colspan="4">N/A</td>
-</tr>
+<td markdown="span" colspan="4"> [Pointer Practice]({{ site.baseurl }}/docs/00_pointer_practice) DUE Fri, Mar 12 2021 23:55  [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708040&forceview=1) </td></tr>
 <tr>
-<td rowspan="6" markdown="span" style="font-size:xx-large;"><a name="w1">1</a></td>
+<td rowspan="4" markdown="span" style="font-size:xx-large;"><a name="w1">1</a></td>
 <td markdown="span">
 3 <br/> Mon, Mar 15 2021</td>
 <td markdown="span" style="text-align:left">
@@ -77,9 +73,6 @@ Coming soon</td>
 Coming soon</td>
 </tr>
 <tr>
-<td markdown="span" colspan="4">N/A</td>
-</tr>
-<tr>
 <td markdown="span">
 4 <br/> Tue, Mar 16 2021</td>
 <td markdown="span" colspan="3">N/A</td>
@@ -88,9 +81,6 @@ Coming soon</td>
 <td markdown="span">
 5 <br/> Thu, Mar 18 2021</td>
 <td markdown="span" colspan="3">N/A</td>
-</tr>
-<tr>
-<td markdown="span" colspan="4">N/A</td>
 </tr>
 <tr>
 <td markdown="span">

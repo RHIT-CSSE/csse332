@@ -285,7 +285,20 @@ def write_table_body(f, schedule, num_of_sessions_per_week, classes):
             except KeyError:
                 f.write("<td markdown=\"span\" colspan=\"3\">N/A</td>\n")
         else:
-            f.write("<td markdown=\"span\" colspan=\"4\">N/A</td>\n")
+            # assignment
+            try:
+                assignment_name = session['name']
+                assignment_dir = session['dirname']
+                assignment_date = get_session_date(session)
+                assignment_box = session['moodle']
+
+                f.write("<td markdown=\"span\" colspan=\"4\"> [{}]({{{{ site.baseurl }}}}/docs/{}) DUE {} {} </td>".format(
+                    assignment_name, assignment_dir, assignment_date.strftime("%a, %b %d %Y %H:%M"), assignment_box
+                ))
+            except KeyError:
+                logging.error("Failed to extract assignment from csv file!")
+                raise RuntimeError("Unexpected csv file entry...")
+                f.write("<td markdown=\"span\" colspan=\"4\">N/A</td>\n")
         f.write("</tr>\n")
 
 # %%
