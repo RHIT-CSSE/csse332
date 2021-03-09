@@ -1,8 +1,8 @@
 name,dirname,date,grader,moodle
-Pointer Practice,PointerPractice,2021-03-12 23:55:00,,https://moodle.rose-hulman.edu/mod/assign/view.php?id=2692705
-Linux Install,LinuxInstall,2021-03-11 23:55:00,,https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2692702
-Userspace Threads,UserspaceThreadsLab1,2021-03-15 23:55:00,,https://moodle.rose-hulman.edu/mod/assign/view.php?id=2692708
-ADVANCED Userspace Threads With Preemption,UserspaceThreadsLab2,2021-03-18 23:55:00,,https://moodle.rose-hulman.edu/mod/assign/view.php?id=2692711
+Pointer Practice,00_pointer_practice,2021-03-12 23:55:00,, [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708040&forceview=1)
+# Linux Install,LinuxInstall,2021-03-11 23:55:00,,https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2692702
+# Userspace Threads,UserspaceThreadsLab1,2021-03-15 23:55:00,,https://moodle.rose-hulman.edu/mod/assign/view.php?id=2692708
+# ADVANCED Userspace Threads With Preemption,UserspaceThreadsLab2,2021-03-18 23:55:00,,https://moodle.rose-hulman.edu/mod/assign/view.php?id=2692711
 # Simple Shell/Makefiles,SimpleShell,2020-12-10 23:55:00,niey,https://moodle.rose-hulman.edu/mod/assign/view.php?id=2423909
 # BareMetalOs InputOutput,BareMetalOS/InputOutput,2020-12-14 23:55:00,meinzecp,https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424224
 # Process Lab/Debugging,ProcessLab,2020-12-17 23:55:00,meinzecp,https://moodle.rose-hulman.edu/mod/assign/view.php?id=2423919

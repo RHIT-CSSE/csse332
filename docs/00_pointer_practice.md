@@ -1,0 +1,1 @@
+../homeworks/00_pointer_practice/readme.md
