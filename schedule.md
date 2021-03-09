@@ -23,7 +23,7 @@ title: Class Schedule
 </thead>
 <tbody>
 <tr>
-<td rowspan="3" markdown="span" style="font-size:xx-large;"><a name="w0">0</a></td>
+<td rowspan="4" markdown="span" style="font-size:xx-large;"><a name="w0">0</a></td>
 <td markdown="span">
 1 <br/> Thu, Mar 11 2021</td>
 <td markdown="span">
@@ -38,6 +38,8 @@ title: Class Schedule
 <td markdown="span">
 Coming soon</td>
 </tr>
+<tr>
+<td markdown="span" colspan="4"> [Linux Install]({{ site.baseurl }}/docs/01_linux_install) DUE Thu, Mar 11 2021 23:55  [Submission box](https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2708037&forceview=1) </td></tr>
 <tr>
 <td markdown="span">
 2 <br/> Fri, Mar 12 2021</td>

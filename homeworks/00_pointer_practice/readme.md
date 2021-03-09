@@ -4,7 +4,7 @@ title: Pointer Practice
 readtime: true
 date: Tue Mar  9 09:48:07 2021
 gh-repo: rhit-csse332/csse332-202130
-gh-badge: [star,watch,fork,follow]
+gh-badge: [star,watch,follow]
 ---
 
 ## Introduction and aim
