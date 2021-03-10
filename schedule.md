@@ -39,7 +39,7 @@ title: Class Schedule
 Coming soon</td>
 </tr>
 <tr>
-<td markdown="span" colspan="4"> [Linux Install]({{ site.baseurl }}/docs/01_linux_install) DUE Thu, Mar 11 2021 23:55  [Submission box](https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2708037&forceview=1) </td></tr>
+<td markdown="span" colspan="4"> [Linux Install]({{ site.baseurl }}/docs/01_linux_install) DUE Thu, Mar 11 2021 23:55 [Submission box](https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2708037&forceview=1) </td></tr>
 <tr>
 <td markdown="span">
 2 <br/> Fri, Mar 12 2021</td>
@@ -54,9 +54,9 @@ Coming soon</td>
 Coming soon</td>
 </tr>
 <tr>
-<td markdown="span" colspan="4"> [Pointer Practice]({{ site.baseurl }}/docs/00_pointer_practice) DUE Fri, Mar 12 2021 23:55  [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708040&forceview=1) </td></tr>
+<td markdown="span" colspan="4"> [Pointer Practice]({{ site.baseurl }}/docs/00_pointer_practice) DUE Fri, Mar 12 2021 23:55 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708040&forceview=1) </td></tr>
 <tr>
-<td rowspan="4" markdown="span" style="font-size:xx-large;"><a name="w1">1</a></td>
+<td rowspan="5" markdown="span" style="font-size:xx-large;"><a name="w1">1</a></td>
 <td markdown="span">
 3 <br/> Mon, Mar 15 2021</td>
 <td markdown="span" style="text-align:left">
@@ -74,6 +74,8 @@ Coming soon</td>
 <td markdown="span">
 Coming soon</td>
 </tr>
+<tr>
+<td markdown="span" colspan="4"> [Userspace Threads]({{ site.baseurl }}/docs/01_userspace_thread_1) DUE Mon, Mar 15 2021 23:55 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708043) </td></tr>
 <tr>
 <td markdown="span">
 4 <br/> Tue, Mar 16 2021</td>
