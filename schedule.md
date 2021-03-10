@@ -51,7 +51,7 @@ Coming soon</td>
 </ul>{:/}
 </td>
 <td markdown="span">
-Coming soon</td>
+<a href="{{ site.baseurl }}/docs/01_userspace_thread_1/"> Lab Instructions</a><br/><a href="{{ site.baseurl }}/docs/submission_instructions/"> Getting and submitting code</a><br/><a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4947ba52-f883-497d-9192-ac8401325dd7"> Video Tutorial </a></td>
 </tr>
 <tr>
 <td markdown="span" colspan="4"> [Pointer Practice]({{ site.baseurl }}/docs/00_pointer_practice) DUE Fri, Mar 12 2021 23:55 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708040&forceview=1) </td></tr>

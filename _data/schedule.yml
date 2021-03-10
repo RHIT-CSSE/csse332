@@ -15,7 +15,9 @@
     - <b>Lab</b> Userspace Threading
   materials:
   other: 
-        - Coming soon
+        - <a href="{{ site.baseurl }}/docs/01_userspace_thread_1/"> Lab Instructions</a>
+        - <a href="{{ site.baseurl }}/docs/submission_instructions/"> Getting and submitting code</a>
+        - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4947ba52-f883-497d-9192-ac8401325dd7"> Video Tutorial </a>
 3:
   reading:
     - Bookmark this page
