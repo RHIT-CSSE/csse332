@@ -556,11 +556,11 @@ Submit all assignment source files (c files, h files) but not binaries
 
 | Part                                                                                   | Point Value |
 |:---------------------------------------------------------------------------------------|-------------|
-| Test 1: Scheduling a single thread once                                                | 40          |
-| Test 2(a): Scheduling 2 threads that each run the same code                            | 16          |
-| Test 2(b): Scheduling 3 threads where 2 run the same code and 1 runs different code    | 12          |
-| Test 2(interleave): Scheduling 2 threads that interleave their execution               | 12          |
-| Test 3: Scheduling a thread that creates many quick threads                            | 40          |
-| Test 4: Scheduling threads that each runs a function that takes a parameter            | 20          |
-| Test 5: Scheduling threads that run functions that don't explicitly call finish_thread | 20          |
-| Test 6: Running Test 5 with valgrind to look for memory leaks and other errors         | 40          |
+| Test 1: Scheduling a single thread once                                                | 20          |
+| Test 2(a): Scheduling 2 threads that each run the same code                            | 8          |
+| Test 2(b): Scheduling 3 threads where 2 run the same code and 1 runs different code    | 6          |
+| Test 2(interleave): Scheduling 2 threads that interleave their execution               | 6          |
+| Test 3: Scheduling a thread that creates many quick threads                            | 20          |
+| Test 4: Scheduling threads that each runs a function that takes a parameter            | 10          |
+| Test 5: Scheduling threads that run functions that don't explicitly call finish_thread | 10          |
+| Test 6: Running Test 5 with valgrind to look for memory leaks and other errors         | 20          |
