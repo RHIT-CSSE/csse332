@@ -83,54 +83,54 @@ void do_nothing() {
 }
 
 void my_free_func(void* free_me) {
-    printf("freeing %p value %d\n", free_me, * (int*) free_me);
-    free(free_me);
+	printf("freeing %p value %d\n", free_me, * (int*) free_me);
+	free(free_me);
 }
 
 int main() {
-    int nums[NUM_MAX];
-    struct array_list *mylist;
+	int nums[NUM_MAX];
+	struct array_list *mylist;
 
-    // mylist = array_list_new(do_nothing);
-    // we will fix do_nothing in the last step
-    mylist = array_list_new(my_free_func);
-    
-    // adds a bunch of numbers to the list
-    for(int i = 1; i <= NUM_MAX; i++) {
-        // nums[i - 1] = i;
-        // // remember, void pointers can only safely store pointer
-        // // values.  So we can't insert our intvalues directly.
-        // // Instead, we must insert pointers to the ints
-        // array_list_add(mylist, &nums[i - 1]);
+	// mylist = array_list_new(do_nothing);
+	// we will fix do_nothing in the last step
+	mylist = array_list_new(my_free_func);
 
-        int* value = malloc(sizeof(int));
-        *value = i;
-        printf("malloced %p value %d\n", value, *value);
-        array_list_add(mylist, value);
-    }
+	// adds a bunch of numbers to the list
+	for(int i = 1; i <= NUM_MAX; i++) {
+		// nums[i - 1] = i;
+		// // remember, void pointers can only safely store pointer
+		// // values.  So we can't insert our intvalues directly.
+		// // Instead, we must insert pointers to the ints
+		// array_list_add(mylist, &nums[i - 1]);
 
-    // removes a couple randomly
-    for(int i = 1; i <= NUM_TO_DELETE; i++) {
-        int rand_index = rand() % array_list_length(mylist);
+		int* value = malloc(sizeof(int));
+		*value = i;
+		printf("malloced %p value %d\n", value, *value);
+		array_list_add(mylist, value);
+	}
 
-        // STEP 2 HINT: you'll need to retrieve the value using
-        // get_idx before the remove so you can safely free
+	// removes a couple randomly
+	for(int i = 1; i <= NUM_TO_DELETE; i++) {
+		int rand_index = rand() % array_list_length(mylist);
 
-        // STEP 2 only : int* value = array_list_get_idx(mylist, rand_index);
-        array_list_del_idx(mylist, rand_index, 1);
-        // STEP 2 only: printf("freeing %p value %d\n", value, *value);
-        // STEP 2 only: free(value);
-    }
+		// STEP 2 HINT: you'll need to retrieve the value using
+		// get_idx before the remove so you can safely free
 
-    printf("mylist (size %lu) values:\n", array_list_length(mylist));
-    for(int i = 0; i < array_list_length(mylist); i++) {
-        void *result_as_vp = array_list_get_idx(mylist, i);
-        int *result = (int*) result_as_vp;
-        printf("%d\n", *result);
-    }
+		// STEP 2 only : int* value = array_list_get_idx(mylist, rand_index);
+		array_list_del_idx(mylist, rand_index, 1);
+		// STEP 2 only: printf("freeing %p value %d\n", value, *value);
+		// STEP 2 only: free(value);
+	}
 
-    // free the array list which may leak some values until step 3
-    array_list_free(mylist);
-    
-    return 0;
+	printf("mylist (size %lu) values:\n", array_list_length(mylist));
+	for(int i = 0; i < array_list_length(mylist); i++) {
+		void *result_as_vp = array_list_get_idx(mylist, i);
+		int *result = (int*) result_as_vp;
+		printf("%d\n", *result);
+	}
+
+	// free the array list which may leak some values until step 3
+	array_list_free(mylist);
+
+	return 0;
 }

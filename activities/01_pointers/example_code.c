@@ -29,35 +29,35 @@ void void_pointer_example() {
 }
 
 void malloc_example() {
-  
-  printf("\n\nmalloc stuff\n\n");
-  
-  // malloc allocates memory on the heap
-  // you pass it the size to allocate in bytes
-  // it will allocate that much memory for you
-  // but don't compute the size directly - use sizeof
-  
-  void *malloc_result = malloc(4*sizeof(int));
-  if(malloc_result == NULL) {
-      //malloc can of course fail if you're out of memory
-      exit(77);
-  }
-  int *data = malloc_result;
-  for(int i = 0; i < 4; i++) {
-    data[i] = i+1;
-  }
-  printf("data %d %d %d %d\n", data[0], data[1], data[2], data[3]);
-  
-  //note that there are generally no protections for accessing outside of alloced space
-  printf("unsafely accessing data out of bounds %d\n", data[4]);
-  
-  //you must always free by passing the same pointer you got orignally from malloc
-  //otherwise you will leak memory
-  free(malloc_result);
-  // be aware that freeing the same memory twice is unsafe and bad
-  
-  //again, you won't usually get an error if you do something stupid, just strange data corruption
-  printf("unsafely accessing data after free %d %d %d %d\n", data[0], data[1], data[2], data[3]);
+
+	printf("\n\nmalloc stuff\n\n");
+
+	// malloc allocates memory on the heap
+	// you pass it the size to allocate in bytes
+	// it will allocate that much memory for you
+	// but don't compute the size directly - use sizeof
+
+	void *malloc_result = malloc(4*sizeof(int));
+	if(malloc_result == NULL) {
+		//malloc can of course fail if you're out of memory
+		exit(77);
+	}
+	int *data = malloc_result;
+	for(int i = 0; i < 4; i++) {
+		data[i] = i+1;
+	}
+	printf("data %d %d %d %d\n", data[0], data[1], data[2], data[3]);
+
+	//note that there are generally no protections for accessing outside of alloced space
+	printf("unsafely accessing data out of bounds %d\n", data[4]);
+
+	//you must always free by passing the same pointer you got orignally from malloc
+	//otherwise you will leak memory
+	free(malloc_result);
+	// be aware that freeing the same memory twice is unsafe and bad
+
+	//again, you won't usually get an error if you do something stupid, just strange data corruption
+	printf("unsafely accessing data after free %d %d %d %d\n", data[0], data[1], data[2], data[3]);
 }
 
 int example_1(double val1, double val2) {
