@@ -48,7 +48,7 @@ itself handles threads.
 [Take a look here]({{ site.gh_repository_url }}/tree/main/homeworks/01_userspace_thread_1/basic_threads_in_use_example.c) to see how the
 thread system we're building is intended to be used. Here are the highlights for quick access:
 * [Source
-code](https://github.com/rhit-csse332/csse332-202130/tree/main/homeworks/01_userspace_threads_1)
+code](https://github.com/rhit-csse332/csse332-202130/tree/main/homeworks/01_userspace_thread_1)
 * [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708043)
 * [Submission
 instructions](https://rhit-csse332.github.io/csse332-202130/docs/submission_instructions/)
