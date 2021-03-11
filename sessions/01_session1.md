@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Session 1: Pointers Review
+title: Session 1 Pointers Review
 readtime: true
 date: Wed Mar 10 21:15:18 2021
 gh-repo: rhit-csse332/csse332-202130
@@ -17,11 +17,12 @@ pointers, void pointers, memory management, and function pointers.
 Section](https://rosehulman-my.sharepoint.com/personal/noureddi_rose-hulman_edu/_layouts/OneNote.aspx?id=%2Fpersonal%2Fnoureddi_rose-hulman_edu%2FDocuments%2FClass%20Notebooks%2FCSSE%20332%20Operating%20Systems&wd=target%28_Content%20Library%2FSession%201.one%7CB6A37146-6E41-4B80-8E9A-980A4685F9E5%2F%29 onenote:https://rosehulman-my.sharepoint.com/personal/noureddi_rose-hulman_edu/Documents/Class%20Notebooks/CSSE%20332%20Operating%20Systems/_Content%20Library/Session%201.one#section-id={B6A37146-6E41-4B80-8E9A-980A4685F9E5}&end)
 * [Activity source directory](https://github.com/rhit-csse332/csse332-202130/tree/main/activities/01_pointers)
 * [Activity submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708124)
+* [Clear/Muddy Questions](https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2752890)
 * [Submission instructions]({{ site.baseurl }}/docs/submission_instructions/)
 * __Due date__: Thursday, Mar 11, 2021, 23:55
 
 
-## Outline
+### Outline
 * [Introduction and announcements](#announcements) ~ 2:00 minutes
 * [Pointers review and void pointers](#pointers-review) ~ 12:00 minutes + 5:00 minutes demo
 * [Pointer arithmetic](#pointer-arithmetic) ~ 12:00 minutes + 5:00 minutes demo
@@ -89,4 +90,6 @@ function is called based on which function our pointer addresses.
 
 # Conclusion
 Once you have complete the activity for this session, please go ahead and submit your code to the
-Moodle drop box [here](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708124).
+Moodle drop box [here](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708124). There is also
+a short quiz for you to list your clear/muddy questions, you can submit that quiz
+[here](https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2752890).
