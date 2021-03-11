@@ -7,7 +7,7 @@ gh-repo: rhit-csse332/csse332-202130
 gh-badge: [star,watch,follow]
 ---
 
-## Introduction and aim
+# Introduction and aim
 In this session, we will do a quick review of some of the basic concepts in C, specifically
 pointers, void pointers, memory management, and function pointers. 
 
@@ -29,12 +29,12 @@ Section](https://rosehulman-my.sharepoint.com/personal/noureddi_rose-hulman_edu/
 * [Function pointers](#function-pointers) ~ 12:00 minutes
 * [Conclusion](#conclusion)
 
-## Announcements
+# Announcements
 In this first short video, we will make a few announcements and set out our aim for this session.
 
 <iframe src="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=4048b3b0-93f3-4b9a-930e-ace7014a55e5&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="360" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
-## Pointers review
+# Pointers review
 In this video, we will go over C pointers and review some of their basic concepts. We will also talk
 about void pointers, which are C pointers that can point to _anything_.
 
@@ -45,7 +45,7 @@ comfortable with your pointers.
 
 <iframe src="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=17cdbb7a-a3be-40c6-a6c0-ace7016af3d8&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="360" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
-### Pointer arithmetic
+# Pointer arithmetic
 In this video, we talk about pointer arithmetic and dive into the details of what happens when we
 increment pointers, both typed pointers and void pointers.
 
@@ -62,7 +62,7 @@ are comfortable with pointer arithmetic.
 
 ---
 
-### Memory management
+# Memory management
 In this video, we talk about `malloc` and `free`, the main ways to allocate and deallocate _dynamic_
 memory in C.
 
@@ -74,7 +74,7 @@ memory in C.
 
 ---
 
-### Function pointers
+# Function pointers
 Finally, we revisit the concept of function pointers that allow us to dynamically change which
 function is called based on which function our pointer addresses. 
 
@@ -87,6 +87,6 @@ function is called based on which function our pointer addresses.
 
 ---
 
-## Conclusion
+# Conclusion
 Once you have complete the activity for this session, please go ahead and submit your code to the
 Moodle drop box [here](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708124).
