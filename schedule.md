@@ -36,7 +36,7 @@ title: Class Schedule
 </ul>{:/}
 </td>
 <td markdown="span">
-Coming soon</td>
+<a href="{{ site.baseurl }}/sessions/01_session1/"> Session Information </a></td>
 </tr>
 <tr>
 <td markdown="span" colspan="4"> [Linux Install]({{ site.baseurl }}/docs/01_linux_install) DUE Thu, Mar 11 2021 23:55 [Submission box](https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2708037&forceview=1) </td></tr>

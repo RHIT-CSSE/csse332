@@ -7,7 +7,7 @@
 
   materials: 
   other: 
-          - Coming soon
+          - <a href="{{ site.baseurl }}/sessions/01_session1/"> Session Information </a>
 
 2:
   reading:
