@@ -67,6 +67,10 @@ are comfortable with pointer arithmetic.
 In this video, we talk about `malloc` and `free`, the main ways to allocate and deallocate _dynamic_
 memory in C.
 
+_This video include a bonus voice appearance by Herman the cat who was not particularly happy with
+the fact that I locked him out of the room. I guess he wanted to learn about memory management in C
+as well_.
+
 <iframe src="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=9a66f0c6-92b3-4ce2-8abe-ace8000d793e&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="360" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
 ---
