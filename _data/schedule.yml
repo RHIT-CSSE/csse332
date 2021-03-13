@@ -27,7 +27,7 @@
   reading:
     - Bookmark this page
     - <a href="syllabus">Syllabus</a>
-    - Chapter 1
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/intro.pdf"> Introduction to OS </a>
   topics:
     - Course Overview
     - Introduction to OS
@@ -38,6 +38,8 @@
       target="_blank" rel="noopener noreferrer">
       Video Lecture </a>
 4:
+  reading:
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf">Processes</a>
   topics:
     - Process Basics
   materials:
@@ -47,6 +49,7 @@
     - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2692789"> Quiz </a>
 5:
   reading:
+    - <a href="https://www.geeksforgeeks.org/signals-c-language/"> Signals </a>
   topics:
     - Signals
   materials: Signals
@@ -55,7 +58,7 @@
     - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2692792">Activity Submission</a>
 6:
   reading:
-    - Chapter 3
+    - <a href="https://www.geeksforgeeks.org/fork-system-call/"> Fork in C </a>
   topics:
           - Processes Operation
           - Forking Child Processes
@@ -63,46 +66,46 @@
   other:
     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=64353224-98e2-472b-b301-ac7d01254d25">Video Lecture</a>
     - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2692795">Activity Submission</a>
-# 7:
-#   reading:
-#   topics:
-#     - Makefiles
-#   materials: Makefiles
-#   other:
-#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=c7b8d6af-279e-41e1-9b7a-ac7d0159b72d">Video Lecture</a>
-#     - <a href="https://rhit-csse.github.io/csse332/ClassMaterials/Makefiles/makefiles.html#1">Slides</a>
-#     - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424039">Activity Submission</a>
-# 8:
-#   reading:
-#   topics:
-#     - Project Kickoff
-#   materials: ProjectKickoff
-#   other:
-#      - No activity today
-#      - But do find a partner (if you wish) and figure out how you will collaborate!
-#      - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=6a8576ee-78d5-48a7-b188-ac7e013be54e">Video Lecture</a>
-# # # NOTE: uncomment these one were no longer on a COVID-19 schedule
-# # #    - <a href="https://docs.google.com/spreadsheets/d/1LOndSGkmqj_sQTuEUWwDuUL4jryyhnDVn2nrHbQcAfc/edit?usp=sharing">Team Signup Spreadsheet</a>
-# # #    - <a href="https://github.com/RHIT-CSSE/csse332/blob/master/Homework/BareMetalOS/InputOutput/GitlabInstructions.md">Repo Setup Instructions</a>
-# 9:
-#   reading:
-#           - Sects. 10.1-10.3
-#           - Sect. 10.6
-#   topics:
-#     - Filesystem I
-#   materials: Filesystem_1
-#   other:
-#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=06688a07-e4ae-4192-a2a1-ac830120fdb1">Video Lecture</a>
-#     - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424044">Activity Submission</a>
+7:
+  reading:
+    - <a href="https://www.gnu.org/software/make/manual/html_node/Introduction.html"> Makefile Handbook </a>
+  topics:
+    - Makefiles
+  materials: Makefiles
+  other:
+    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=c7b8d6af-279e-41e1-9b7a-ac7d0159b72d">Video Lecture</a>
+    - <a href="https://rhit-csse.github.io/csse332/ClassMaterials/Makefiles/makefiles.html#1">Slides</a>
+    - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2692798">Activity Submission</a>
+8:
+  reading:
+  topics:
+    - Project Kickoff
+  materials: ProjectKickoff
+  other:
+     - No activity today
+     - But do find a partner (if you wish) and figure out how you will collaborate!
+     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=6a8576ee-78d5-48a7-b188-ac7e013be54e">Video Lecture</a>
+# # NOTE: uncomment these one were no longer on a COVID-19 schedule
+# #    - <a href="https://docs.google.com/spreadsheets/d/1LOndSGkmqj_sQTuEUWwDuUL4jryyhnDVn2nrHbQcAfc/edit?usp=sharing">Team Signup Spreadsheet</a>
+# #    - <a href="https://github.com/RHIT-CSSE/csse332/blob/master/Homework/BareMetalOS/InputOutput/GitlabInstructions.md">Repo Setup Instructions</a>
+9:
+  reading:
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/file-implementation.pdf"> Filesystem Implementation </a>
+  topics:
+    - Filesystem I
+  materials: Filesystem_1
+  other:
+    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=06688a07-e4ae-4192-a2a1-ac830120fdb1">Video Lecture</a>
+    - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2692801">Activity Submission</a>
 
-# 10:
-#   reading: Section 11.1 - 11.5
-#   topics: 
-#     - Filesystem II
-#   materials: Filesystem_2
-#   other:
-#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=f9f76f26-a8e8-430c-b175-ac84017a3fb9">Video Lecture</a>
-#     - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424049">Activity Submission</a>
+10:
+  reading:
+  topics: 
+    - Filesystem II
+  materials: Filesystem_2
+  other:
+    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=f9f76f26-a8e8-430c-b175-ac84017a3fb9">Video Lecture</a>
+    - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2692804">Activity Submission</a>
 # 11:
 #   reading:
 #           - Chapter 3
