@@ -61,9 +61,8 @@ title: Class Schedule
 3 <br/> Mon, Mar 15 2021</td>
 <td markdown="span" style="text-align:left">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
-<li> Bookmark this page </li>
-<li> <a href="{{ site.baseurl }}/syllabus">Syllabus</a> </li>
-<li> Chapter 1 </li>
+<li> <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/intro.pdf">Chapter 1</a> </li>
+<li> <a href="https://cacm.acm.org/magazines/2016/3/198874-lessons-learned-from-30-years-of-minix/fulltext"> Lessons Learned From 30 Years of Minix </a> </li>
 </ul>{:/}
 </td>
 <td markdown="span" style="text-align:left">
@@ -72,7 +71,7 @@ title: Class Schedule
 </ul>{:/}
 </td>
 <td markdown="span">
-Coming soon</td>
+<a href="{{ site.baseurl }}/sessions/02_session2/"> Session Information </a></td>
 </tr>
 <tr>
 <td markdown="span" colspan="4"> [Userspace Threads]({{ site.baseurl }}/docs/01_userspace_thread_1) DUE Mon, Mar 15 2021 23:55 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708043) </td></tr>

@@ -20,14 +20,13 @@
         - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4947ba52-f883-497d-9192-ac8401325dd7"> Video Tutorial </a>
 3:
   reading:
-    - Bookmark this page
-    - <a href="{{ site.baseurl }}/syllabus">Syllabus</a>
-    - Chapter 1
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/intro.pdf">Chapter 1</a>
+    - <a href="https://cacm.acm.org/magazines/2016/3/198874-lessons-learned-from-30-years-of-minix/fulltext"> Lessons Learned From 30 Years of Minix </a>
   topics:
     - Introduction to OS
   materials: 
   other:
-    - Coming soon
+    - <a href="{{ site.baseurl }}/sessions/02_session2/"> Session Information </a>
 # 4:
 #   reading:
 #   topics:
