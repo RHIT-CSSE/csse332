@@ -74,3 +74,7 @@ do the following:
 * Fill out the clear/muddy survey [here](https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2760012)
 
 <iframe src="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=516b2ca0-c57f-410c-9f18-acec000be909&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="360" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
+# Advanced Lab 1 Intro
+Professor Song has prepared a short intro for you for our first advanced lab. You can find it
+[here](https://rose-hulman.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=7b3e6a5d-d200-4ca9-8f24-ac52016e6c1b)
