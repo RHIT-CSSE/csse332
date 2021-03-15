@@ -27,33 +27,29 @@
   materials: 
   other:
     - <a href="{{ site.baseurl }}/sessions/02_session2/"> Session Information </a>
-# 4:
-#   reading:
-#   topics:
-#     - Process Basics
-#   materials:
-#     - ProcessBasics
-#   other:
-#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=b39b686c-f4c2-483a-8999-ac5201542245">Video Lecture </a>
-#     - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2692789"> Quiz </a>
-# 5:
-#   reading:
-#   topics:
-#     - Signals
-#   materials: Signals
-#   other:
-#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=1ab63b55-b88b-42ce-ac0d-ac6100fa1988">Video Lecture</a>
-#     - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2692792">Activity Submission</a>
-# 6:
-#   reading:
-#     - Chapter 3
-#   topics:
-#           - Processes Operation
-#           - Forking Child Processes
-#   materials: Fork
-#   other:
-#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=64353224-98e2-472b-b301-ac7d01254d25">Video Lecture</a>
-#     - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2692795">Activity Submission</a>
+4:
+  reading:
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf"> Chapter 2 </a>
+  topics:
+    - Process Basics
+  materials:
+  other:
+    - <a href="{{ site.baseurl }}/sessions/03_session3/"> Session Information </a>
+5:
+  reading:
+  topics:
+    - Signals
+  materials: 
+  other:
+    - Coming soon
+6:
+  reading:
+  topics:
+          - Processes Operation
+          - Forking Child Processes
+  materials: 
+  other:
+    - Coming soon
 # 7:
 #   reading:
 #   topics:

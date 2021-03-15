@@ -78,19 +78,47 @@ title: Class Schedule
 <tr>
 <td markdown="span">
 4 <br/> Tue, Mar 16 2021</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf"> Chapter 2 </a> </li>
+</ul>{:/}
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> Process Basics </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+<a href="{{ site.baseurl }}/sessions/03_session3/"> Session Information </a></td>
 </tr>
 <tr>
 <td markdown="span">
 5 <br/> Thu, Mar 18 2021</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> Signals </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+Coming soon</td>
 </tr>
 <tr>
 <td markdown="span" colspan="4"> [ADVANCED Userspace Threads With Preemption]({{ site.baseurl }}/docs/02_userspace_thread_2) DUE Thu, Mar 18 2021 23:55 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708046) </td></tr>
 <tr>
 <td markdown="span">
 6 <br/> Fri, Mar 19 2021</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> Processes Operation </li>
+<li> Forking Child Processes </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+Coming soon</td>
 </tr>
 <tr>
 <td rowspan="4" markdown="span" style="font-size:xx-large;"><a name="w2">2</a></td>
