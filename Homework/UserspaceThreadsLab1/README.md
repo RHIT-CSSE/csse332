@@ -547,8 +547,7 @@ how to run it (if this doesn't work you may have to install valgrind):
 
 # Conclusion
 
-Submit all assignment source files (c files, h files) but not binaries
-(example1, run_tests, .o files) via Moodle.
+Submit the file you modified (i.e., `basic_threads.c`) via Moodle.
 
 <a id="foo"></a>
 
