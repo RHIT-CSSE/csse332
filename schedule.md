@@ -121,11 +121,13 @@ Coming soon</td>
 Coming soon</td>
 </tr>
 <tr>
-<td rowspan="4" markdown="span" style="font-size:xx-large;"><a name="w2">2</a></td>
+<td rowspan="5" markdown="span" style="font-size:xx-large;"><a name="w2">2</a></td>
 <td markdown="span">
 7 <br/> Mon, Mar 22 2021</td>
 <td markdown="span" colspan="3">N/A</td>
 </tr>
+<tr>
+<td markdown="span" colspan="4"> [Simple Shell/Makefiles]({{ site.baseurl }}/docs/03_simple_shell) DUE Mon, Mar 22 2021 23:55 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708049) </td></tr>
 <tr>
 <td markdown="span">
 8 <br/> Tue, Mar 23 2021</td>
