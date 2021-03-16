@@ -39,7 +39,7 @@ title: Class Schedule
 <a href="{{ site.baseurl }}/sessions/01_session1/"> Session Information </a></td>
 </tr>
 <tr>
-<td markdown="span" colspan="4"> [Linux Install]({{ site.baseurl }}/docs/01_linux_install) DUE Thu, Mar 11 2021 23:55 [Submission box](https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2708037&forceview=1) </td></tr>
+<td markdown="span" colspan="4"> [Linux Install]({{ site.baseurl }}/docs/01_linux_install) DUE Thu, Mar 11 2021 23:55 [Submission box](https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2708037&forceview=1)</td></tr>
 <tr>
 <td markdown="span">
 2 <br/> Fri, Mar 12 2021</td>
@@ -54,7 +54,7 @@ title: Class Schedule
 <a href="{{ site.baseurl }}/docs/01_userspace_thread_1/"> Lab Instructions</a><br/><a href="{{ site.baseurl }}/docs/submission_instructions/"> Getting and submitting code</a><br/><a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4947ba52-f883-497d-9192-ac8401325dd7"> Video Tutorial </a></td>
 </tr>
 <tr>
-<td markdown="span" colspan="4"> [Pointer Practice]({{ site.baseurl }}/docs/00_pointer_practice) DUE Fri, Mar 12 2021 23:55 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708040&forceview=1) </td></tr>
+<td markdown="span" colspan="4"> [Pointer Practice]({{ site.baseurl }}/docs/00_pointer_practice) DUE Fri, Mar 12 2021 23:55 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708040&forceview=1) <font color="#aaa"> grader: @wangj14 </font> </td></tr>
 <tr>
 <td rowspan="6" markdown="span" style="font-size:xx-large;"><a name="w1">1</a></td>
 <td markdown="span">
@@ -74,7 +74,7 @@ title: Class Schedule
 <a href="{{ site.baseurl }}/sessions/02_session2/"> Session Information </a></td>
 </tr>
 <tr>
-<td markdown="span" colspan="4"> [Userspace Threads]({{ site.baseurl }}/docs/01_userspace_thread_1) DUE Mon, Mar 15 2021 23:55 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708043) </td></tr>
+<td markdown="span" colspan="4"> [Userspace Threads]({{ site.baseurl }}/docs/01_userspace_thread_1) DUE Mon, Mar 15 2021 23:55 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708043) <font color="#aaa"> grader: @niey </font> </td></tr>
 <tr>
 <td markdown="span">
 4 <br/> Tue, Mar 16 2021</td>
@@ -105,7 +105,7 @@ title: Class Schedule
 Coming soon</td>
 </tr>
 <tr>
-<td markdown="span" colspan="4"> [ADVANCED Userspace Threads With Preemption]({{ site.baseurl }}/docs/02_userspace_thread_2) DUE Thu, Mar 18 2021 23:55 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708046) </td></tr>
+<td markdown="span" colspan="4"> [ADVANCED Userspace Threads With Preemption]({{ site.baseurl }}/docs/02_userspace_thread_2) DUE Thu, Mar 18 2021 23:55 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708046) <font color="#aaa"> grader: @wangj14 </font> </td></tr>
 <tr>
 <td markdown="span">
 6 <br/> Fri, Mar 19 2021</td>
@@ -127,7 +127,7 @@ Coming soon</td>
 <td markdown="span" colspan="3">N/A</td>
 </tr>
 <tr>
-<td markdown="span" colspan="4"> [Simple Shell/Makefiles]({{ site.baseurl }}/docs/03_simple_shell) DUE Mon, Mar 22 2021 23:55 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708049) </td></tr>
+<td markdown="span" colspan="4"> [Simple Shell/Makefiles]({{ site.baseurl }}/docs/03_simple_shell) DUE Mon, Mar 22 2021 23:55 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708049)</td></tr>
 <tr>
 <td markdown="span">
 8 <br/> Tue, Mar 23 2021</td>
