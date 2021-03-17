@@ -37,11 +37,12 @@
     - <a href="{{ site.baseurl }}/sessions/03_session3/"> Session Information </a>
 5:
   reading:
+    - <a href="https://man7.org/linux/man-pages/man7/signal.7.html">Signal - Linux manual page </a>
   topics:
     - Signals
   materials: 
   other:
-    - Coming soon
+    - <a href="{{ site.baseurl }}/sessions/05_session5/"> Session Information </a>
 6:
   reading:
   topics:

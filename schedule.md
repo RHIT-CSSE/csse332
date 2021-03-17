@@ -94,7 +94,10 @@ title: Class Schedule
 <tr>
 <td markdown="span">
 5 <br/> Thu, Mar 18 2021</td>
-<td markdown="span">
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> <a href="https://man7.org/linux/man-pages/man7/signal.7.html">Signal - Linux manual page </a> </li>
+</ul>{:/}
 </td>
 <td markdown="span" style="text-align:left">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
@@ -102,7 +105,7 @@ title: Class Schedule
 </ul>{:/}
 </td>
 <td markdown="span">
-Coming soon</td>
+<a href="{{ site.baseurl }}/sessions/05_session5/"> Session Information </a></td>
 </tr>
 <tr>
 <td markdown="span" colspan="4"> [ADVANCED Userspace Threads With Preemption]({{ site.baseurl }}/docs/02_userspace_thread_2) DUE Thu, Mar 18 2021 23:55 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708046) <font color="#aaa"> grader: @wangj14 </font> </td></tr>
