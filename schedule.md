@@ -112,7 +112,12 @@ title: Class Schedule
 <tr>
 <td markdown="span">
 6 <br/> Fri, Mar 19 2021</td>
-<td markdown="span">
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> <a href="https://man7.org/linux/man-pages/man3/exec.3.html"> exec man page </a> </li>
+<li> <a href="https://man7.org/linux/man-pages/man2/fork.2.html"> fork man page </a> </li>
+<li> <a href="https://man7.org/linux/man-pages/man2/waitid.2.html"> wait man page </a> </li>
+</ul>{:/}
 </td>
 <td markdown="span" style="text-align:left">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
@@ -121,7 +126,7 @@ title: Class Schedule
 </ul>{:/}
 </td>
 <td markdown="span">
-Coming soon</td>
+<a href="{{ site.baseurl }}/sessions/06_session6/"> Session Information </a></td>
 </tr>
 <tr>
 <td rowspan="5" markdown="span" style="font-size:xx-large;"><a name="w2">2</a></td>
