@@ -132,7 +132,18 @@ title: Class Schedule
 <td rowspan="5" markdown="span" style="font-size:xx-large;"><a name="w2">2</a></td>
 <td markdown="span">
 7 <br/> Mon, Mar 22 2021</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> <a href="https://www.gnu.org/software/make/manual/html_node/index.html"> GNU make manual </a> </li>
+</ul>{:/}
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> Makefiles </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+<a href="{{ site.baseurl }}/sessions/07_session7/"> Session Information </a></td>
 </tr>
 <tr>
 <td markdown="span" colspan="4"> [Simple Shell/Makefiles]({{ site.baseurl }}/docs/03_simple_shell) DUE Mon, Mar 22 2021 23:55 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708049)</td></tr>

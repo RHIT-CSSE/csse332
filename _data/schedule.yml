@@ -54,15 +54,14 @@
   materials: 
   other:
     - <a href="{{ site.baseurl }}/sessions/06_session6/"> Session Information </a>
-# 7:
-#   reading:
-#   topics:
-#     - Makefiles
-#   materials: Makefiles
-#   other:
-#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=c7b8d6af-279e-41e1-9b7a-ac7d0159b72d">Video Lecture</a>
-#     - <a href="https://rhit-csse.github.io/csse332/ClassMaterials/Makefiles/makefiles.html#1">Slides</a>
-#     - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424039">Activity Submission</a>
+7:
+  reading:
+    - <a href="https://www.gnu.org/software/make/manual/html_node/index.html"> GNU make manual </a>
+  topics:
+    - Makefiles
+  materials: 
+  other:
+    - <a href="{{ site.baseurl }}/sessions/07_session7/"> Session Information </a>
 # 8:
 #   reading:
 #   topics:
