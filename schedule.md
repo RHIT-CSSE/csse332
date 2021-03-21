@@ -129,7 +129,7 @@ title: Class Schedule
 <a href="{{ site.baseurl }}/sessions/06_session6/"> Session Information </a></td>
 </tr>
 <tr>
-<td rowspan="5" markdown="span" style="font-size:xx-large;"><a name="w2">2</a></td>
+<td rowspan="6" markdown="span" style="font-size:xx-large;"><a name="w2">2</a></td>
 <td markdown="span">
 7 <br/> Mon, Mar 22 2021</td>
 <td markdown="span" style="text-align:left">
@@ -150,24 +150,52 @@ title: Class Schedule
 <tr>
 <td markdown="span">
 8 <br/> Tue, Mar 23 2021</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> Project Kickoff (In-class) </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+No activity today</td>
 </tr>
 <tr>
 <td markdown="span">
 9 <br/> Thu, Mar 25 2021</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> Filesystems I </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+Coming soon</td>
 </tr>
+<tr>
+<td markdown="span" colspan="4"> [Process Lab/Debugging]({{ site.baseurl }}/docs/04_process_lab) DUE Thu, Mar 25 2021 23:55 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708055)</td></tr>
 <tr>
 <td markdown="span">
 10 <br/> Fri, Mar 26 2021</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> Filesystems II </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+Coming soon</td>
 </tr>
 <tr>
-<td rowspan="4" markdown="span" style="font-size:xx-large;"><a name="w3">3</a></td>
+<td rowspan="5" markdown="span" style="font-size:xx-large;"><a name="w3">3</a></td>
 <td markdown="span">
 11 <br/> Mon, Mar 29 2021</td>
 <td markdown="span" colspan="3">N/A</td>
 </tr>
+<tr>
+<td markdown="span" colspan="4"> [Project Milestone 1]({{ site.baseurl }}/docs/05_milestone1) DUE Mon, Mar 29 2021 23:55 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708256)</td></tr>
 <tr>
 <td markdown="span">
 12 <br/> Tue, Mar 30 2021</td>

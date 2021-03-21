@@ -62,37 +62,38 @@
   materials: 
   other:
     - <a href="{{ site.baseurl }}/sessions/07_session7/"> Session Information </a>
-# 8:
-#   reading:
-#   topics:
-#     - Project Kickoff
-#   materials: ProjectKickoff
-#   other:
-#      - No activity today
-#      - But do find a partner (if you wish) and figure out how you will collaborate!
-#      - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=6a8576ee-78d5-48a7-b188-ac7e013be54e">Video Lecture</a>
+8:
+  reading:
+  topics:
+    - Project Kickoff (In-class)
+  materials: 
+  other:
+     - No activity today
 # # # NOTE: uncomment these one were no longer on a COVID-19 schedule
 # # #    - <a href="https://docs.google.com/spreadsheets/d/1LOndSGkmqj_sQTuEUWwDuUL4jryyhnDVn2nrHbQcAfc/edit?usp=sharing">Team Signup Spreadsheet</a>
 # # #    - <a href="https://github.com/RHIT-CSSE/csse332/blob/master/Homework/BareMetalOS/InputOutput/GitlabInstructions.md">Repo Setup Instructions</a>
-# 9:
-#   reading:
-#           - Sects. 10.1-10.3
-#           - Sect. 10.6
-#   topics:
-#     - Filesystem I
-#   materials: Filesystem_1
-#   other:
-#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=06688a07-e4ae-4192-a2a1-ac830120fdb1">Video Lecture</a>
-#     - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424044">Activity Submission</a>
+9:
+  reading:
+          # - Sects. 10.1-10.3
+          # - Sect. 10.6
+  topics:
+    - Filesystems I
+  materials: 
+  other:
+    - Coming soon
+    # - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=06688a07-e4ae-4192-a2a1-ac830120fdb1">Video Lecture</a>
+    # - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424044">Activity Submission</a>
 
-# 10:
-#   reading: Section 11.1 - 11.5
-#   topics: 
-#     - Filesystem II
-#   materials: Filesystem_2
-#   other:
-#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=f9f76f26-a8e8-430c-b175-ac84017a3fb9">Video Lecture</a>
-#     - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424049">Activity Submission</a>
+10:
+  reading: 
+  # Section 11.1 - 11.5
+  topics: 
+    - Filesystems II
+  materials: 
+  other:
+    - Coming soon
+    # - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=f9f76f26-a8e8-430c-b175-ac84017a3fb9">Video Lecture</a>
+    # - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424049">Activity Submission</a>
 # 11:
 #   reading:
 #           - Chapter 3

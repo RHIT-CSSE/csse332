@@ -1,9 +1,14 @@
 ---
-title: Makefile, GDB and Process
-layout: togit
+title: GDB and Processes
+layout: post
+date: Sat Mar 20 23:47:35 2021
+readtime: true
+gh-repo: rhit-csse332/csse332-202130
+gh-badge: [star,watch,follow]
 ---
+# Processes and GDB 
 
-## Objectives
+# Objectives
 
 Following completion of this lab you should be able to:
 * Use the GNU Debugger, gdb, to debug your code.
@@ -11,18 +16,25 @@ Following completion of this lab you should be able to:
 * Use the *fork* system call to spawn child processes.
 * Explain process creation, process termination and process management.
 
+Here are the highlights for quick access
+* [Source code]({{ site.gh_repository_url }}/tree/main/homeworks/04_process_lab)
+* [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708055)
+* [Submission instructions](https://rhit-csse332.github.io/csse332-202130/docs/submission_instructions/)
+
 ### Tasks
 
 #### GNU Debugger
 
-Follow the instructions in the [./gdbtutorial.html](https://rhit-csse.github.io/csse332/Homework/ProcessLab/gdbtutorial) to familiarize yourself with using gdb to debug your code.  
+Follow the instructions in the
+[gdbtutorial](https://rhit-csse.github.io/csse332/Homework/ProcessLab/gdbtutorial) to
+familiarize yourself with using gdb to debug your code.  
 gdb is a convenient utility that you should use to diagnose and correct 
 bugs in your code.
 
 #### CharsStringsFiles
 
 Checkout the *CharsStringsFiles* project from your repository
-repository onto your local machine.  Type your answers to the 
+onto your local machine.  Type your answers to the 
 questions below in the file `ANSWERS.txt`.
 
 
@@ -80,7 +92,7 @@ When you compile these files, be sure to pass the "-ggdb" flag to gcc or it won'
   What is the root cause of the error in Problem 1?
   Hint: Use *gdb*.
 
-3. (5 points) %
+3. (5 points) 
   Make the necessary modifications to correct the root cause of the
   error you identified in Problems 1 and 2.  
 
@@ -111,7 +123,7 @@ When you run it, you should see something like this:
     Test Passed
     Test Failed: test 3 always fails
 
-This code run three tests in parallel using pthreads (that's the
+This code runs three tests in parallel using pthreads (that's the
 standard unix threading framework that will use throughout the class).
 The tests are run in parallel because they have a long setup method.
 Unfortunately, test1 and test2 modify a shared global memory structure
@@ -182,7 +194,7 @@ child our code will look something like this:
     }
 
 Then we'll use the stat_loc output that we can retrieve from wait to
-access the access code.  Hint: check out "main 3 wait" for the details
+access the access code.  Hint: check out `man 3 wait` for the details
 and pay particular attention to WEXITSTATUS.
 
 Once we get this working our output will look like this (this shows
@@ -293,7 +305,7 @@ processes as they are done (otherwise we don't know what pipe in our
 array to check once we detect a failure).
 
 To do this, we'll store the child process ids in the parent and then
-use the command waitpid (as usual, look at the man page for details)
+use the command `waitpid` (as usual, look at the man page for details)
 to wait for a particular process to finish.
 
 When you're done the output should look like this:
@@ -319,12 +331,7 @@ any test that runs longer that 3 seconds will be aborted.
 Uncomment test 5 which enters an infinite loop.
 
 The easiest way to do this is to schedule a alarm signal in the child.
-Then I handle that alarm signal to cause a special exit code.
-
-[You can see an introduction to signals
-here](https://rhit-csse.github.io/csse332/Homework/UserspaceThreadsLab2/sigintro.html),
-though we will discuss them in class soon.
-
+Then you can handle that alarm signal to cause a special exit code.
 
 When you finished this the output should look similar to this:
 
