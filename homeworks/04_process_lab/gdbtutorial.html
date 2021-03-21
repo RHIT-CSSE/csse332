@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="iso-8859-1"?> <!DOCTYPE html PUBLIC
+"-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+  <head>
+    <meta http-equiv="content-type" content="text/html;
+    charset=iso-8859-1" />
+    <title>
+      CSSE 332: GDB Tutorial  
+    </title>
+    <link rel="stylesheet" href="../style/style.css" />		
+  </head>
+  <body>
+    <h1>
+      CSSE 332 -- Operating Systems
+    </h1>
+    <h2>
+      GDB Tutorial
+    </h2>
+    
+    <p>This is a short tutorial to get you acquainted with GDB,
+	the <a href="http://sourceware.org/gdb/">GNU Project
+	debugger</a>, and its command-line interface. You are
+	encouraged to use the
+      <a href="gdb-reference-card.pdf">GDB reference card</a> for more
+      details.  Commands
+      reviewed: <strong><em>run</em></strong>, <strong><em>continue</em></strong>,
+      <strong><em>next</em></strong>, <strong><em>break</em></strong>, <strong>
+	<em>delete</em></strong>, <strong><em>print</em></strong>, <strong><em>display</em></strong>, 
+      <strong><em>step</em></strong>,
+      and <strong><em>quit</em></strong>.</p>
+    <ol>
+      <li>
+	Checkout the <strong><em>gdbtutorial</em></strong> project in
+	the <strong><em>examples</em></strong> directory from your
+	repository onto your local machine.</li>
+      <li>
+	Examine the contents of the files quickly to get an idea of
+	what the program should do.<ol>
+	  <li>In <strong><em>author.h</em></strong>, you will find the
+	    definition of a structure and the function prototype of a
+	    related function. </li>
+	  <li>In <strong><em>author.c</em></strong>, you will find the
+	    definition of the function declared in author.h. </li>
+	  <li>In <strong><em>gdbexample.c</em></strong>, you will find
+	    a main function that uses the definitions and declarations
+	    in the author.{c,h} files.</li>
+	  <li>In <strong><em>Makefile</em></strong>, you have the
+	    contents of a Makefile that you will use to compile this
+	    project.</li>
+	</ol>
+      </li>
+      <li>To compile the programs, using the Makefile, type:<br />
+	<b>&gt;&gt;&gt; </b>make</li>
+      <li>To invoke GDB on program <em>test</em>, enter: <br />
+	<b>&gt;&gt;&gt; </b>gdb ./test
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//gdb
+	&lt;executable_program&gt;</li>
+      <li>To begin debugging, set a breakpoint. Breakpoints can be set
+	at line numbers or at functions. In the following steps we
+	will set three breakpoints: at <em>main</em>, at a line in
+	function <em>display_author_details</em> in source
+	file <em>author.c</em>, and at the function
+	<em>display_author_details</em> itself.<br />
+	<b>&gt;&gt;&gt; </b>break
+	main&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//break
+	&lt;function-name&gt;<br />
+	<b>&gt;&gt;&gt; </b>b
+	author.c:6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//b
+	&lt;line-number&gt;. Note the default is the program that
+	contains main(). Use the &lt;file-name&gt;:&lt;line-number&gt;
+	for other files.<br />
+	<b>&gt;&gt;&gt; </b>break
+	display_author_details&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	//Since the function is defined only in one file, you don't
+	have to specify the file name.</li>
+      <li>To display all current breakpoints:<br />
+	&gt;&gt;&gt;<b> </b> info break
+      </li>
+      <li>To delete a breakpoint:<br /> &gt;&gt;&gt; delete
+	2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	//delete &lt;breakpoint-number-obtained-from-list&gt; </li>
+      <li>To begin running the program<br /> &gt;&gt;&gt; run
+	2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //run
+	&lt;list-of-command-line-arguments&gt;
+	<p>The program will run until the first breakpoint is reached
+	  (in our case at function <em>main</em>).</p> </li>
+      <li>The line of code displayed will be the line that will be
+	executed next. To go to the next line
+	use <strong><em>next</em></strong> or
+	<strong><em>n</em></strong>.<br />  &gt;&gt;&gt;
+	next&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	//Step to the next statement; also skip over a user-defined
+	function.<br />  &gt;&gt;&gt; n</li>
+      <li>Keep moving until you get to the line in gdbexample.c with
+	statement: <br />
+	<em>int count = atoi(argv[1]);<br />
+	</em>To display the value of count after the statement has
+	executed, use
+	<strong><em>display</em></strong>.<br />  &gt;&gt;&gt; display
+	count&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	//display &lt;variable-name&gt;
+	<p>When you type <strong><em>next</em></strong> again, you
+	  should see the value of count change.  Note that
+	  using <strong><em>display</em></strong> allows you to
+	  continuously watch the variable, while it is in
+	  scope.</p> </li>
+      <li>To undisplay a varaible,
+	use <strong><em>undisplay</em></strong> as follows:<br />
+	&gt;&gt;&gt; undisplay
+	1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //undisplay
+	&lt;display_value_number&gt; </li>
+      <li>To look at pointers and their values, let's use the <strong>
+	  <em>print</em></strong> command. This will also show us the
+	values of the variables, but only for the current state of the
+	program.<br />  &gt;&gt;&gt; print
+	&amp;one&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	//display the address of <em>one</em>. <br /> &gt;&gt;&gt;
+	display
+	ptr&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	//display value of <em>ptr</em>, which will be some random
+	address<br /> &gt;&gt;&gt; print
+	*ptr&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	//display the value pointed to by <em>ptr</em>, which will be
+	the random values currently at the random address.</li>
+      <li>Execute the following sequence of statements:<br />
+	&gt;&gt;&gt; display
+	one&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	//display the value of <em>one</em>.<br />  &gt;&gt;&gt;
+	next&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	//Do this until you have executed the statement <br />
+	<em>strcpy(one.book_name[2],&quot;Harry Potter and the
+	  Prisoner of Azkaban&quot;);</em>
+	<p>You should notice that the value of <em>one</em> changed as
+	  its fields got assigned values.</p></li>
+      <li>Now, use <strong><em>display</em></strong> to examine the
+      address of
+	<em>one</em>. Also, use <strong><em>display</em></strong> to
+	examine the value pointed to by <em>ptr</em>.
+	<ol>
+	  <li>What do you observe? </li>
+	  <li>How would you display the value
+	  of <em>one.name</em>? </li>
+	  <li>How would you use display to examine the same value
+	  using <em>ptr</em>?</li>
+	</ol>
+      </li>
+      <li>To skip the next few lines of code and get to the next
+	breakpoint use <strong><em>continue</em></strong>
+	or <strong><em>c</em></strong>.  <br /> &gt;&gt;&gt;
+	continue&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	//Go to the next breakpoint or end of the program if there are
+	no more breakpoints.<p>  This will probably take you to the
+	function display_author_details. Feel free to test some of the
+	commands you have just learned.</p></li>
+      <li>To enter a function when moving from one statement to the
+	next, use <strong><em>step</em></strong> instead of
+	next.<br />  &gt;&gt;&gt;
+	step&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	//Step into the user-defined function in the next
+	statement.</li>
+      <li>Whenever you are done,
+	type <strong><em>quit</em></strong>.<br />  &gt;&gt;&gt; quit
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//quit
+	the execution of the program and gdb</li>
+    </ol>
+  </body>
+</html>

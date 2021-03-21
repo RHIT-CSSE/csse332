@@ -1,0 +1,152 @@
+By Character:
+there was a young woman named Bright
+whose speed was much faster than light.
+she set out one day
+in a relative way,
+and returned on the previous night.
+-Geri Taran
+
+
+By Line:
+There was a fat gourmet named Finney
+Who hated to see people skinny
+Which I think best explains
+Why he left his remains
+To a cannibal tribe in New Guinea
+
+
+By whole file:
+IBM
+----------------------------------------
+A woman who worked for Big Blue
+Wrote lim'ricks that stopped at line two
+
+Sun Microsystems
+----------------------------------------
+Another who worked for Sun
+
+
+Capitalizing: Data\Bright.txt
+There was a young woman named Bright
+Whose speed was much faster than light.
+She set out one day
+In a relative way,
+And returned on the previous night.
+-Geri Taran
+
+
+Downcasing: Data\Finney.txt
+there was a fat gourmet named finney
+who hated to see people skinny
+which i think best explains
+why he left his remains
+to a cannibal tribe in new guinea
+
+
+Upcasing: Data\IBMvsSun.txt
+IBM
+----------------------------------------
+A WOMAN WHO WORKED FOR BIG BLUE
+WROTE LIM'RICKS THAT STOPPED AT LINE TWO
+
+SUN MICROSYSTEMS
+----------------------------------------
+ANOTHER WHO WORKED FOR SUN
+
+
+Swapping case: Data\McGarr.txt
+i HEARD THAT OLD rEGGIE mCgARR 
+dIED PEACEFULLY, WITH HIS CIGAR, 
+pEACEFULLY DREAMING, 
+nOT YELLING AND SCREAMING 
+lIKE FOLKS IN THE BACK OF HIS CAR. 
+
+
+Capitalizing words: Data\Beauty.txt
+By Beauty I Am Not A Star.
+There Are Others More Handsome By Far.
+My Face I Don't Mind It.
+Because I'm Behind It.
+It's The People In Front That I Jar.
+
+
+Left justifying: Data\Ilene.txt
+|There once was a lady, Ilene,                                           |
+|Who lived on distilled kerosene,                                        |
+|But she started absorbin'                                               |
+|A new hydrocarbon                                                       |
+|And since then she's never benzene!                                     |
+
+
+Right justifying: Data\Liquor.txt
+|                                 On Liquor Production  by David M. Smith|
+|                                                                        |
+|                                     A friend who's in liquor production|
+|                                Owns a still of astounding construction.|
+|                                                       The alcohol boils|
+|                                               Through magnetic coils...|
+|                                She says that it's "proof by induction."|
+
+
+Center justifying: Data\OldEdward.txt
+|                    While he was out walking alone,                     |
+|                      Old Edward decided to clone.                      |
+|                       He found himself doubled,                        |
+|                      But not the least troubled                        |
+|                    For two Eds are better than one!                    |
+
+
+Reversing: Data\MissKeyes.txt
+
+,seyeK ssiM ,egelloc ta nediam A
+,s'D .tiL dna s'AB htiw nwod dethgieW
+;niarts eht morf despalloC
+nialp s'tI" ,rotcod reh diaS
+"!seerged yb flesruoy gnillik er'uoY
+sitnaSeD sirhC yb dettimbuS-
+
+Stripping: Data\Pythagoras.txt
+|Pythagoras had a good ruse|
+|With a rule just for triangles to use|
+|"Add the squares of each side,"|
+|He said with some pride,|
+|"That's the square of the hypotenuse!"|
+|by Lucy Blades|
+
+
+Finding in: Data\IntroToC.txt
+First we learned Pyth-->on, then C.
+Think the same; press a different key!
+Semi-col-->ons and braces,
+Pointers up to our faces.
+The next topics are malloc and free!
+
+
+Replacing in: Data\FluteTutor.txt
+A tutor who tooted a flute,
+Tried to tutor two tooters to toot.
+Said the two to the tutor,
+"Is it harder to toot, or
+To tutor two tooters to toot?" 
+-Submitted by Chris DeSantis
+----
+A fufor who foofed a flufe,
+Tried fo fufor fwo foofers fo foof.
+Said fhe fwo fo fhe fufor,
+"Is if harder fo foof, or
+To fufor fwo foofers fo foof?" 
+-Submiffed by Chris DeSanfis
+----
+A fufor who fufed a flufe,
+Tried fo fufor fwo fufers fo fuf.
+Said fhe fwo fo fhe fufor,
+"Is if harder fo fuf, or
+To fufor fwo fufers fo fuf?" 
+-Submiffed by Chris DeSanfis
+----
+A fu2r who fufed a flufe,
+Tried 2 fu2r fwo fufers 2 fuf.
+Said fhe fwo 2 fhe fu2r,
+"Is if harder 2 fuf, or
+To fu2r fwo fufers 2 fuf?" 
+-Submiffed by Chris DeSanfis
