@@ -195,7 +195,7 @@ Coming soon</td>
 <td markdown="span" colspan="3">N/A</td>
 </tr>
 <tr>
-<td markdown="span" colspan="4"> [Project Milestone 1]({{ site.baseurl }}/docs/05_milestone1) DUE Mon, Mar 29 2021 23:55 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708256)</td></tr>
+<td markdown="span" colspan="4"> [Project Milestone 1]({{ site.baseurl }}/docs/zz_project) DUE Mon, Mar 29 2021 23:55 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708256)</td></tr>
 <tr>
 <td markdown="span">
 12 <br/> Tue, Mar 30 2021</td>
