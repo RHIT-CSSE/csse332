@@ -20,13 +20,13 @@ follows that is a single input argument, until the newline.  This
 parsing is already written for you and should work out something like
 this:
 
-    SHELL% emacs somefile.txt
-    Command is 'emacs' with argument 'somefile.txt'
-    SHELL% emacs
-    Command is 'emacs' with no arguments
+    SHELL% xeyes
+    Command is 'xeyes' with no arguments
+    SHELL% xeyes
+    Command is 'xeyes' with no arguments
     SHELL% ^C
 
-Note it will not actually run emacs - that will be part of your job.
+Note it will not actually run xeyes - that will be part of your job.
 
 # Building
 
@@ -78,10 +78,10 @@ one program while another keeps running).  Using fork, modify the code
 so if you prefix a command with \`\`BG'' it runs that command in the
 background.  That is, if you type:
 
-    BGemacs 
+    BGxeyes 
 
-it will open an emacs window and return to the prompt before
-emacs finishes running.  You should be able to run as many background
+it will open an `xeyes` window and return to the prompt before
+`xeyes` finishes running.  You should be able to run as many background
 commands as you like.
 
 Example output:
@@ -130,9 +130,9 @@ fork/wait.  The shell will start a parent process which will start a child proce
 
 # Step 4: Zombies
 
-Run your simpleshell, start a program (e.g emacs or gedit) in the
+Run your simpleshell, start a program (e.g xeyes) in the
 background from your simple shell, and then NOT IN YOUR SIMPLE SHELL but in some other terminal
-run "ps -a".  How many instances of the program are running?  Next,
+run "ps -a", though it may work in the simple shell.  How many instances of the program are running?  Next,
 exit the background program, but do not exit simpleshell, and NOT IN
 YOUR SIMPLE SHELL run "ps -a" again.  You should see something like
 "simpleshell defunct".  Defunct processes are zombie processes
@@ -172,7 +172,7 @@ that Makefile.
 
 # Conclusion
 
-Submit your simpleshell.c and the Make problem makefile in the usual way.
+Submit your `simpleshell.c` and the `Makefile` in the usual way.
 
 # Common problems
 
