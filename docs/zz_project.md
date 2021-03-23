@@ -26,7 +26,7 @@ At the end of this milestone, we will answer the following questions:
 
 ## Logistics
 * **Starter code**: None. Wait what? Yup, you read it right. There is no starter code in this
-project. You will write things from scratch! (Well that's a lit, but you will have to set up your
+project. You will write things from scratch! (Well that's a lie, but you will have to set up your
 directory structure and create your files - you should be able to do this by now, right?)
 * [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708256)
 * **Due date**: Monday March 29, 11:59 pm
