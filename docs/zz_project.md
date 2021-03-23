@@ -15,7 +15,7 @@ status, and scheduling them to meet some real time guarantees. Eventually, our m
 _rate-monotonic scheduler_ (RMS) that assigns priorities to running processes, decide when to accept
 or reject incoming processes, and preempt a running process in case one with higher priority shows
 up. This project will be organized in 3 to 4 milestones, depending on how our quarter goes.  But
-let's put to the side for now, and focus on getting our feet wet with kernel modules development. 
+let's put that the side for now, and focus on getting our feet wet with kernel modules development. 
 
 ## Learning objectives
 At the end of this milestone, we will answer the following questions:
@@ -36,7 +36,7 @@ There are two things I would like to bring to your attention before we get start
 
 ### Virtual machines
 For this project, we will be doing our development using a Linux virtual machine. If you have not
-set your up yet, then please do so ASAP. You can use whichever Linux flavor that works best for you. 
+set yours up yet, then please do so ASAP. You can use whichever Linux flavor that works best for you. 
 
 However, if you have been using your VM to also do your class assignments, then **PLEASE**
 (**PLEASE** **PLEASE**^100) make sure you have a backup of your code (either somewhere else or
@@ -65,12 +65,12 @@ more easily. This is in contrast to a microkernel where the functionality of the
 broken down into several isolated processes (sometimes called servers). The microkernel approach
 tends to sacrifice performance for the ability to isolate services, i.e., if the schedule crashes,
 it can be rebooted without contaminating the memory space the file system. You can read more about
-these two choices in the famous Tanenbaum-Torvlads debate
+these two choices in the famous Tanenbaum-Torvalds debate
 [here](https://en.wikipedia.org/wiki/Tanenbaum%E2%80%93Torvalds_debate) and
 [here](https://www.oreilly.com/openbook/opensources/book/appa.html).
 
 However, in order to also protect against the disadvantages of monolithic kernels, the Linux kernel
-provides support _kernel threads_, the ability to preempt itself (called _kernel preemption_), and
+provides support for _kernel threads_, the ability to preempt itself (called _kernel preemption_), and
 a modular design that supports the loading and unloading of additional pieces of software, called
 __modules__.
 
@@ -79,15 +79,15 @@ __modules__.
 ## Why modules?
 Imagine you are running a version of Linux and you are quite happy with it, but then you decide to
 purchase a new gaming controller, or a new recording device (let's stick with the controller so I
-don't have to write everything twice). Your controller a designed by a fancy new company and they
+don't have to write everything twice). Your controller is designed by a fancy new company and they
 decided that their devices will adhere to a completely new communication protocol that they
 invented, let's call it _WeKnowBetterProtocol_.
-So you decide, to plug your controller in through USB, and then nothing happens! Well, the current
+So you decide to plug your controller in through USB, and then nothing happens! Well, the current
 version of Linux you have does not speak _WeKnowBetterProtocol_, so your controller at this point is
-pretty much useless. What do we fix that?
+pretty much useless. How do we fix that?
 
 Well one thing we can do is to throw away our entire operating system, add to it support for
-_WeKnowBetterProtocol_, recompiled it, and then install the new version. That doesn't sound like
+_WeKnowBetterProtocol_, recompile it, and then install the new version. That doesn't sound like
 fun, right? Fortunately, Linux provides with a very useful feature: _kernel modules_. The developer
 of _WeKnowBetterProtocol_ can write a module for their controller that allows the kernel to
 understand _WeKnowBetterProtocol_ and then magically, and at runtime, insert (or install) the module
@@ -117,36 +117,37 @@ that allows us to treat our module as if it was a file we can read and write to!
 
 ## Baby: Hello World! kernel module
 Okay, time to flex our kernel coding muscles and get busy coding our first kernel module. This will
-be simply module that will print `Module csse332 initializing...` upon entry, and `Module csse332
+simply be a module that  prints `Module csse332 initializing...` upon entry, and `Module csse332
 exiting...` upon exit. Entry? Exit? Printing? What do those mean?
 
 ### Anatomy of a module
 Our operating system kernel is already running, so what does it mean to add another piece of code to
 it dynamically? Well, the kernel is well-equipped to handle runtime addition of code. To support
 that, it allows developers to insert modules into the kernel using the `insmod` command. Once a
-module is inserted into the kernel, the kernel will run some initializaing code, and using the
-concept of callbacks, the kernel can ask the module if it wants to run some of its own
-initialization code. 
+module is inserted into the kernel, the kernel will run some initialization code, and using the
+concept of [callbacks](https://www.geeksforgeeks.org/callbacks-in-c/), the kernel can ask the module
+if it wants to run some of its own initialization code. 
 
 So, no `main` function. You just need to point the kernel to what you would like your module to do
 upon initialization, and the kernel will make sure that executes for you!
 
 Similarly, the kernel allows you to remove modules. Once is a module is set to be removed, the
-kernel will ask the module if it likes to run any cleanup code. All you have to do again point the
+kernel will ask the module if it likes to run any cleanup code. All you have to do again is to point the
 kernel to which function you'd like to execute when exiting, and the kernel will call that for you.
 Nice isn't it?
 
 ### Printing in the kernel
 We mentioned printing, but where does the kernel print? Does it use the same `printf` functions we
-use when writing user applications. Well, not exactly. The kernel write to its own "files" and have
+use when writing user applications. Well, not exactly. The kernel writes to its own "files" and have
 specific commands that allow you to see those printed messages. However, since the kernel must be
 running with performance in mind, it tends to rate-limit your print messages so that you don't end
 up blocking the entire kernel while waiting for I/O operations to finish. 
 
 Luckily, the Linux kernel is well-equipped to allow us to log important messages. To that extent,
-the kernel provides us with the function `printk` (k standing for kernel). `printk` messages are
-printed to a kernel log buffer, that can be access from userspace by reading `/dev/kmsg`. Also,
-luckily, we can use the `dmesg` utility to see the kernel's log messages on our console. 
+the kernel provides us with the function `printk` (k standing for kernel, genius right?). `printk`
+messages are printed to a kernel log buffer, that can be accessed from userspace by reading
+`/dev/kmsg`. Also, luckily, we can use the `dmesg` utility to see the kernel's log messages on our
+console. 
 
 However, unlike `printf`, `printk` requires us to provide a logging level. For example, printing at
 the info level can be done using
@@ -156,7 +157,7 @@ the info level can be done using
 The kernel has several log levels (`KERN_EMERG`, `KERN_ALERT`, `KERN_CRIT`, etc.), and depending on
 how you configure your logging levels, not all messages will be printed. For example, if I choose to
 print at the debug-level using `KERN_DEBUG`, the kernel will by default ignore those messages since
-it is not configure to print debug information when it is in release mode. In the project, we will
+it is not configured to print debug information when it is in release mode. In this project, we will
 mostly rely on info-level messages since we are writing a small light-weight module. However, be
 aware that if you use `printk` inside of a loop, the kernel might limit your printing to avoid
 blocking the kernel for I/O operations. 
@@ -217,8 +218,8 @@ __init csse_init(void)
 You can see that we used `static` and `__init` in that function's signature. What do those mean?
 `static` tells our compiler that the scope of this function is only to be kept in this file (i.e.,
 we do not want to export it to other files or scopes). The `__init` attribute informs our compiler
-that this function shall only be run once when the kernel loads, therefore it can free up the space
-occupied by the function after the first time the kernel loads. 
+that this function shall only be run once when the kernel loads the module, therefore it can free up
+the space occupied by the function after the first time the kernel loads it. 
 
 Similarly, let's write our exit function:
 ```
@@ -270,6 +271,12 @@ corresponding object file (make sure you adjust this if you chose a different on
 two lines make use of the makefiles located in your own Linux distribution to perform the correct
 build steps. There are more options we can specify, but for this class, that's all we need to do!
 
+If your compilation fails due to missing files, make sure you install the Linux kernel heads for
+your kernel version. On Ubuntu, you can do so using
+```
+sudo apt install -y linux-headers-$(uname -r)
+```
+
 #### Testing your module
 Alright, now go ahead and build your module using
 ```
@@ -301,7 +308,7 @@ so, let's use `dmesg` as follows:
 dmesg 
 ```
 That will dump everything that the kernel has written so far. It's a long list, so can we
-manipulated a bit more? Of course we can! Recall that little message we prepended  to the start of
+manipulate it a bit more? Of course we can! Recall that little message we prepended  to the start of
 all our kernel printouts? Let's ask `dmesg` to only show kernel messages that start with that
 prefix. To do so, use
 ```
@@ -321,7 +328,7 @@ And let's confirm again using `dmesg`
 ```
 dmesg | grep csse332
 ```
-and you should something that looks as follows:
+and you should see something that looks as follows:
 ```
 [  359.817310] [csse332]: Module csse 332 exiting...
 ```
@@ -359,12 +366,12 @@ initialization to make sure that your module is behaving correctly. As always, u
 * `rmmod` to remove your module. 
 
 # Preschool: Step 2: Your module learns to talk 
-So our module now maintains an array of integer as a data structure. Great! But what use is this
+So our module now maintains an array of integers as a data structure. Great! But what use is this
 data structure for us if we cannot read and write to it? In this step, we will need to allow users
 to communicate with our module using the `procfs` pseudo filesystem. 
 
 ## Create a directory entry for our module
-First, we need to create an entry for our module in `procfs`. Our goal is the create an entry for
+First, we need to create an entry for our module in `procfs`. Our goal is to create an entry for
 our module under `/proc/csse332/status`. You can think of it as a file to and from which our user
 applications can write and read. Note that this is all managed in software! Nothing that you will do
 will be written or read from disk!
@@ -378,12 +385,12 @@ parent_entry = proc_mkdir("csse332", NULL);
  */
 ```
 Your job is to answer the following questions:
-1. Where should piece of code go in your code?
-1. What is the return type of `proc_mkdir`? And where do I declared the variable that will hold that
+1. Where should this piece of code go in your code?
+1. What is the return type of `proc_mkdir`? And where do I declare the variable that will hold that
    entry?
 1. What should you do if the creation of the entry fails? (_hint_: Recall that if have allocated
    anything, it must be free appropriately!)
-1. Finally, when should be cleanup and remove out entry?
+1. Finally, when should we cleanup and remove our entry?
 
 Note that the final question is very important. If you fail to cleanup after yourself (i.e., remove
 your created directory when needed, you won't be able to insert your module again). So go back to
@@ -398,7 +405,10 @@ to see all files and directories under `procfs`.
 
 ## Create a file for our module
 Awesome, so we have created our directory, now it's time to create our pseudo-file under our
-directory. To do so, we will use the `proc_create` call. Here is the signature of the function
+directory. To do so, we will use the `proc_create` call. We would like to create an entry called
+`status` under the `csse332` directory we created in the previous step. So the path to our entry
+would be `proc/csse332/status`. **Please make sure you stick to the same naming convention as this
+document, otherwise, it will break our grading setup.** Here is the signature of the function
 ```
 struct proc_dir_entry *proc_create(
   const char *name, umod_t mode, struct proc_dir_entry *parent,
@@ -412,10 +422,10 @@ summoning Satan, at least not yet!
 * `parent` is the parent directory of our entry, which is the directory we created previously!
 * `proc_fops` are the operations that your module would support (such as reading and writing).
 
-So the first parameters sounds reasonable, but what the heck is the last one, `proc_fops`? Where do we
+So the first parameters sound reasonable, but what the heck is the last one, `proc_fops`? Where do we
 get that one from. Well, you're going to have to create it! That is the crux of this assignment. The
 `struct file_operations` structure is simply a structure of function pointers that you must set so
-that you users can read and write to the `procfs` entry for your module. You can find more
+that your users can read and write to the `procfs` entry for your module. You can find more
 information about the content of this structure
 [here](https://tldp.org/LDP/lkmpg/2.4/html/c577.htm). Note that you do NOT have to implement all of
 the functions for this entry. In this step, we will focus on the `read` and `write` callbacks. Any
@@ -472,6 +482,10 @@ static const struct file_operations csse332_fops = {
 
 Now you know that you can create your `procfs` entry by passing the address of `csse332_fops` as the
 last parameter to your `proc_create` function. 
+
+Finally, recall that anything you create or allocate, you must destroy or free. So make sure that
+you appropriate delete your `procfs` entry and directory before your module exits. Again, failure to
+do will stop you from inserting your module again for testing!
 
 Go ahead and create the entry, then verify that you can read and write to it (Of course, nothing
 will happen at this point, but make sure that no errors show up). After inserting your module, you
