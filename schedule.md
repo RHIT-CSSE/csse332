@@ -171,7 +171,7 @@ No activity today</td>
 </ul>{:/}
 </td>
 <td markdown="span">
-Coming soon</td>
+<a href="{{ site.baseurl }}/sessions/09_session9/"> Session Information </a></td>
 </tr>
 <tr>
 <td markdown="span" colspan="4"> [Process Lab/Debugging]({{ site.baseurl }}/docs/04_process_lab) DUE Thu, Mar 25 2021 23:55 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708055)</td></tr>
@@ -186,7 +186,7 @@ Coming soon</td>
 </ul>{:/}
 </td>
 <td markdown="span">
-Coming soon</td>
+<a href="{{ site.baseurl }}/sessions/10_session10/"> Session Information </a></td>
 </tr>
 <tr>
 <td rowspan="5" markdown="span" style="font-size:xx-large;"><a name="w3">3</a></td>

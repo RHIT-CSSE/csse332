@@ -80,9 +80,7 @@
     - Filesystems I
   materials: 
   other:
-    - Coming soon
-    # - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=06688a07-e4ae-4192-a2a1-ac830120fdb1">Video Lecture</a>
-    # - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424044">Activity Submission</a>
+    - <a href="{{ site.baseurl }}/sessions/09_session9/"> Session Information </a>
 
 10:
   reading: 
@@ -91,9 +89,7 @@
     - Filesystems II
   materials: 
   other:
-    - Coming soon
-    # - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=f9f76f26-a8e8-430c-b175-ac84017a3fb9">Video Lecture</a>
-    # - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424049">Activity Submission</a>
+    - <a href="{{ site.baseurl }}/sessions/10_session10/"> Session Information </a>
 # 11:
 #   reading:
 #           - Chapter 3
