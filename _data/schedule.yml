@@ -69,13 +69,9 @@
   materials: 
   other:
      - No activity today
-# # # NOTE: uncomment these one were no longer on a COVID-19 schedule
-# # #    - <a href="https://docs.google.com/spreadsheets/d/1LOndSGkmqj_sQTuEUWwDuUL4jryyhnDVn2nrHbQcAfc/edit?usp=sharing">Team Signup Spreadsheet</a>
-# # #    - <a href="https://github.com/RHIT-CSSE/csse332/blob/master/Homework/BareMetalOS/InputOutput/GitlabInstructions.md">Repo Setup Instructions</a>
 9:
   reading:
-          # - Sects. 10.1-10.3
-          # - Sect. 10.6
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/file-implementation.pdf"> Chapter 40 </a>
   topics:
     - Filesystems I
   materials: 
@@ -84,7 +80,7 @@
 
 10:
   reading: 
-  # Section 11.1 - 11.5
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/file-implementation.pdf"> Chapter 40 </a>
   topics: 
     - Filesystems II
   materials: 

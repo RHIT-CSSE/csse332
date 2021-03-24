@@ -163,7 +163,10 @@ No activity today</td>
 <tr>
 <td markdown="span">
 9 <br/> Thu, Mar 25 2021</td>
-<td markdown="span">
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/file-implementation.pdf"> Chapter 40 </a> </li>
+</ul>{:/}
 </td>
 <td markdown="span" style="text-align:left">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
@@ -178,7 +181,10 @@ No activity today</td>
 <tr>
 <td markdown="span">
 10 <br/> Fri, Mar 26 2021</td>
-<td markdown="span">
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/file-implementation.pdf"> Chapter 40 </a> </li>
+</ul>{:/}
 </td>
 <td markdown="span" style="text-align:left">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
@@ -189,7 +195,7 @@ No activity today</td>
 <a href="{{ site.baseurl }}/sessions/10_session10/"> Session Information </a></td>
 </tr>
 <tr>
-<td rowspan="5" markdown="span" style="font-size:xx-large;"><a name="w3">3</a></td>
+<td rowspan="6" markdown="span" style="font-size:xx-large;"><a name="w3">3</a></td>
 <td markdown="span">
 11 <br/> Mon, Mar 29 2021</td>
 <td markdown="span" colspan="3">N/A</td>
@@ -206,6 +212,8 @@ No activity today</td>
 13 <br/> Thu, Apr 01 2021</td>
 <td markdown="span" colspan="3">N/A</td>
 </tr>
+<tr>
+<td markdown="span" colspan="4"> [ADVANCED Ext2 Filesystem]({{ site.baseurl }}/docs/06_ext2) DUE Thu, Apr 01 2021 23:55 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708052)</td></tr>
 <tr>
 <td markdown="span">
 14 <br/> Fri, Apr 02 2021</td>
