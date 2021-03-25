@@ -198,26 +198,58 @@ No activity today</td>
 <td rowspan="6" markdown="span" style="font-size:xx-large;"><a name="w3">3</a></td>
 <td markdown="span">
 11 <br/> Mon, Mar 29 2021</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> Inter Process Communication </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+Coming soon</td>
 </tr>
 <tr>
 <td markdown="span" colspan="4"> [Project Milestone 1]({{ site.baseurl }}/docs/zz_project) DUE Mon, Mar 29 2021 23:55 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708256)</td></tr>
 <tr>
 <td markdown="span">
 12 <br/> Tue, Mar 30 2021</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> <b>Lab</b> Ext2 Filesystem </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+Coming soon</td>
 </tr>
 <tr>
 <td markdown="span">
 13 <br/> Thu, Apr 01 2021</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> CPU Scheduling 1 </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+Coming soon</td>
 </tr>
 <tr>
 <td markdown="span" colspan="4"> [ADVANCED Ext2 Filesystem]({{ site.baseurl }}/docs/06_ext2) DUE Thu, Apr 01 2021 23:55 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708052)</td></tr>
 <tr>
 <td markdown="span">
 14 <br/> Fri, Apr 02 2021</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> CPU Scheduling 2 </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+Coming soon</td>
 </tr>
 <tr>
 <td rowspan="4" markdown="span" style="font-size:xx-large;"><a name="w4">4</a></td>
