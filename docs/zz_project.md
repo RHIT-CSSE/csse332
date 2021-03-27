@@ -478,7 +478,7 @@ csse332_read(struct file *filp, char __user *buff,
  * @return number of bytes written, 0 if none, and a negative error code on failure. 
  */
 static ssize_t
-csse332_write(struct file *filp, char __user *buff,
+csse332_write(struct file *filp, const char __user *buff,
     size_t count, loff_t *offp)
 {
         /* Your write code goes here ... */
