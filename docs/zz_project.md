@@ -532,8 +532,8 @@ csse332_write(struct file *filp, const char __user *buff,
 }
 
 static const struct proc_ops csse332_fops = {
-        .read  = csse332_read,
-        .write = csse332_write,
+        .proc_read  = csse332_read,
+        .proc_write = csse332_write,
 };
 ```
 
