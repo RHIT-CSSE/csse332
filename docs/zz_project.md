@@ -422,6 +422,7 @@ summoning Satan, at least not yet!
 * `parent` is the parent directory of our entry, which is the directory we created previously!
 * `proc_fops` are the operations that your module would support (such as reading and writing).
 
+
 So the first parameters sound reasonable, but what the heck is the last one, `proc_fops`? Where do we
 get that one from. Well, you're going to have to create it! That is the crux of this assignment. The
 `struct file_operations` structure is simply a structure of function pointers that you must set so
@@ -434,7 +435,18 @@ that it must call your `read` function. Similarly, any time a user writes to you
 the OS will magically figure out that is must call your `write` function. 
 
 To help you get started, I have provided you with empty stubs that allow you to successfully create
-your `procfs` entry and test it out. You can find the code below
+your `procfs` entry and test it out. 
+
+**NOTE**: It appears that as of Linux version 5.6, the signature of the above function has changed
+to accept a `const struct proc_ops *proc_fops` instead of the `const struct file_operations
+*proc_fops` that we show above. To handle this issue, first check what your kernel version is. To do
+so, use the command
+```
+uname -r
+```
+
+#### If you version number is < 5.6, then use the code below:
+
 ```
 /**
  * csse332_read - Read handler for milestone 1 of the term project
@@ -479,6 +491,52 @@ static const struct file_operations csse332_fops = {
         .write = csse332_write,
 };
 ```
+
+#### If your version is > 5.6, then use the code below:
+```
+/**
+ * csse332_read - Read handler for milestone 1 of the term project
+ *
+ * @filp  The file pointer to the current file we are reading
+ * @buff  The userspace buffer that we must fill out to the user
+ * @count The number of bytes we can write to the user (i.e., size of buff)
+ * @offp  The offset into the file we are reading
+ *
+ * @return 0 if there is nothing left to read from the entry, otherwise, return number
+ *  of bytes read so far. On error, return appropriate error code (negative number)
+ */
+static ssize_t
+csse332_read(struct file *filp, char __user *buff,
+    size_t count, loff_t *offp)
+{
+        /* Your read code goes here ... */
+        return 0; // please don't remove this line until you are ready to write your own!
+}
+
+/**
+ * csse332_write - Write handler for milestone 1 of the term project
+ *
+ * @filp  The file pointer to the current file we are reading
+ * @buff  The userspace buffer that we must copy from the user
+ * @count The number of bytes we can read from the user (i.e., size of buff)
+ * @offp  The offset into the file we are writing to 
+ *
+ * @return number of bytes written, 0 if none, and a negative error code on failure. 
+ */
+static ssize_t
+csse332_write(struct file *filp, const char __user *buff,
+    size_t count, loff_t *offp)
+{
+        /* Your write code goes here ... */
+        return count; // please don't remove this line until you are ready to write your own!
+}
+
+static const struct proc_ops csse332_fops = {
+        .read  = csse332_read,
+        .write = csse332_write,
+};
+```
+
 
 Now you know that you can create your `procfs` entry by passing the address of `csse332_fops` as the
 last parameter to your `proc_create` function. 
