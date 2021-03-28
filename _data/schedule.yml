@@ -88,12 +88,13 @@
     - <a href="{{ site.baseurl }}/sessions/10_session10/"> Session Information </a>
 11:
   reading:
+    - <a href="https://tldp.org/LDP/lpg/node7.html"> Chapter 6 of The Linux Documentation Project (tldp) </a>
           # - Chapter 3
   topics:
           - Inter Process Communication
   materials: 
   other:
-    - Coming soon
+    - <a href="{{ site.baseurl }}/sessions/11_session11/"> Session Information </a>
     # - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=8df3ec4f-3225-4169-9540-ac8a015d9f87">Video Lecture</a>
     # - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424054">Activity Submission</a>
 12:
@@ -102,7 +103,7 @@
           - <b>Lab</b> Ext2 Filesystem
   materials:
   other:
-    - Coming soon
+    - In-class.
     # - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=3b950a31-c6d9-42ba-b8c4-ac8e015e1292">Videos</a>
     # - <a href="Homework/ext2/README"> Lab Instructions</a>
 13:

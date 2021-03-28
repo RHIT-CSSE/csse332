@@ -198,7 +198,10 @@ No activity today</td>
 <td rowspan="6" markdown="span" style="font-size:xx-large;"><a name="w3">3</a></td>
 <td markdown="span">
 11 <br/> Mon, Mar 29 2021</td>
-<td markdown="span">
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> <a href="https://tldp.org/LDP/lpg/node7.html"> Chapter 6 of The Linux Documentation Project (tldp) </a> </li>
+</ul>{:/}
 </td>
 <td markdown="span" style="text-align:left">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
@@ -206,7 +209,7 @@ No activity today</td>
 </ul>{:/}
 </td>
 <td markdown="span">
-Coming soon</td>
+<a href="{{ site.baseurl }}/sessions/11_session11/"> Session Information </a></td>
 </tr>
 <tr>
 <td markdown="span" colspan="4"> [Project Milestone 1]({{ site.baseurl }}/docs/zz_project) DUE Mon, Mar 29 2021 23:55 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708256)</td></tr>
@@ -221,7 +224,7 @@ Coming soon</td>
 </ul>{:/}
 </td>
 <td markdown="span">
-Coming soon</td>
+In-class.</td>
 </tr>
 <tr>
 <td markdown="span">
