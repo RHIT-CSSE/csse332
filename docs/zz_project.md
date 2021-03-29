@@ -549,11 +549,11 @@ Go ahead and create the entry, then verify that you can read and write to it (Of
 will happen at this point, but make sure that no errors show up). After inserting your module, you
 can test the `write` handler using
 ```
-echo "hello" > /dev/csse332/status
+echo "hello" > /proc/csse332/status
 ```
 and you can test your `read` handler using
 ```
-cat /dev/csse332/status
+cat /proc/csse332/status
 ```
 If no errors show up, you are good to go to the next step!
 
@@ -613,7 +613,7 @@ You do not need to worry about the offset `offp` in writing, you will take care 
 Test your code by inserting your module into the kernel and then trying to write to it. For example,
 to write the value 10 at index 5, use
 ```
-echo "5 10" > /dev/csse332/status
+echo "5 10" > /proc/csse332/status
 ```
 Then check `dmesg` to see if your code is behaving correctly. Also, make sure to test for out of
 bounds input commands and make sure your code is correctly handling those!
@@ -648,7 +648,7 @@ Here's how I would suggest your approach this step:
    (check if the user's buffer has enough room for your message, i.e., if the `count` parameter
    indicates that the user has enough room to hold your message). 
 1. Return 0 to tell the user to stop reading
-1. Test your code using `cat /dev/csse332/status` and make sure you can see the message from your
+1. Test your code using `cat /proc/csse332/status` and make sure you can see the message from your
    module. 
 
 Once you have the above working, now is the time to implement your array reading logic. Note that
