@@ -1,0 +1,50 @@
+Rubric for grading Problem 1
+Fork, Exec, and Signals -- server-admin.c
+All work for this problem should have been done in the server-admin.c file.
+
+Part (a) - max 10 points:
+    In the runWebServer() function
+    1.  (3 points) fork() is called in the parent process
+
+    2.  (2 points) A check is made to confirm that fork() was successful. 
+        An error message should be displayed if fork fails
+
+    3.  (2 points) A check is made to determine whether we are in the 
+        child process 
+
+    4.  (3 points) In the child process, an 'exec' function is called to 
+        run the "./server" program. No parameters are needed
+
+
+Part (b) - max 10 points:
+    In the runWebServer() function
+    1.  (2 points) If fork() did not fail and we are not in child, 
+        assume we are in the parent process 
+
+    2.  (4 points) Call wait() or waitpid() in the parent process to wait 
+        on the child
+
+    3.  (4 points) After waiting for the child process to terminate, 
+        if the "./server" program has been started fewer than MAX_STARTS times,
+        call fork() again to spawn a child process to run the "./server" 
+        program. In order words, calling fork(), running the "./server" program
+        in a child process, and waiting on the child should all be done in a
+        for loop.
+
+
+Part (c) - max 10 points:
+    Using the SIGUSR1 signal to trigger a safe shutdown of the system
+    1.  (2 points) In main(), set up a signal handler to catch SIGUSR1 signal
+        e.g., signal(SIGUSR1, signal_handler_function); OR 
+        signal(SIGUSR1, &signal_handler_function);
+
+    2.  (2 points) Define a signal handler function to catch and process the 
+        SIGUSR1 signal, prototype should look something like this: 
+        void handle_user_signal(int signum)
+
+    3.  In the signal handler function:
+        - (2 points) call kill(childPid, SIGKILL); where childPid is the pid
+          of the child process
+        - (2 points) call wait or waitpid() to wait for the child to terminate
+        - (2 points) exit the server-admin gracefully with an appropriate
+          message

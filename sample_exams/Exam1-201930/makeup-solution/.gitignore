@@ -1,0 +1,17 @@
+*.o
+para_benchmark
+para_benchmark_0
+para_benchmark_2
+para_benchmark_3
+para_benchmark_4
+para_benchmark_5
+para_benchmark_6
+para_benchmark_7
+fast_receiver
+fast_sender
+slow_receiver
+slow_sender
+unreliable_receiver
+unreliable_sender
+.#*
+a.out

@@ -1,0 +1,7 @@
+#!/bin/sh
+
+gcc -std=gnu99 fast_receiver.c common.c -o fast_receiver
+gcc -std=gnu99 fast_sender.c common.c -o fast_sender
+gcc -std=gnu99 slow_receiver.c common.c -o slow_receiver
+gcc -std=gnu99 unreliable_receiver.c common.c -o unreliable_receiver
+gcc -std=gnu99 unreliable_sender.c common.c -o unreliable_sender

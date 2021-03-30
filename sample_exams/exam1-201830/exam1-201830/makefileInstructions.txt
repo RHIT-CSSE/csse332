@@ -1,0 +1,18 @@
+# The exam code has 3 executables.  As a reminder, this is how you
+# build each of them:
+#
+# gcc web-server.c -o server
+# gcc server-admin.c -o server-admin
+# gcc -pthread producer-consumer.c -o prodcon
+#
+# (5 points) 
+# (a) Setup a makefile with the appropriate dependencies so that
+# each of these executables is rebuilt when their corresponding c
+# files is edited (and correspondingly, not rebuilt if they are up to
+# date with their source files).  Because each executable has exactly one
+# C file dependency, you don't need to separate compiling and linking into 
+# two separate steps (though you can, if you wish).
+#
+# (b) setup an "all" rule so that "make all" builds all 3 executables.
+#
+# (c) setup a "clean" rule to remove all executables and emacs backup files. 
