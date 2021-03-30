@@ -67,8 +67,7 @@ on-disk layout that is similar to (but more complicated than) the
 idealized filesystem we covered in class.  Here's a picture describing
 ext2's on-disk layout:
 
-![The Ex2 Filesystem](ext2.png)
-
+![The Ex2 Filesystem]({{ site.baseurl }}/docs/ext2.png)
 
 At one level, an ext2 filesystem is just a series of blocks on disk,
 starting with block 0 and ending with block N, where N = (disk\_size /
