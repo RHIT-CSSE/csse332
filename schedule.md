@@ -229,7 +229,10 @@ In-class.</td>
 <tr>
 <td markdown="span">
 13 <br/> Thu, Apr 01 2021</td>
-<td markdown="span">
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched.pdf"> Chapter 7 </a> </li>
+</ul>{:/}
 </td>
 <td markdown="span" style="text-align:left">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
@@ -237,14 +240,17 @@ In-class.</td>
 </ul>{:/}
 </td>
 <td markdown="span">
-Coming soon</td>
+<a href="{{ site.baseurl }}/sessions/13_session13/"> Session Information </a></td>
 </tr>
 <tr>
 <td markdown="span" colspan="4"> [ADVANCED Ext2 Filesystem]({{ site.baseurl }}/docs/06_ext2) DUE Thu, Apr 01 2021 23:55 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708052)</td></tr>
 <tr>
 <td markdown="span">
 14 <br/> Fri, Apr 02 2021</td>
-<td markdown="span">
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched-mlfq.pdf"> Chapter 8 </a> </li>
+</ul>{:/}
 </td>
 <td markdown="span" style="text-align:left">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">

@@ -108,16 +108,18 @@
     # - <a href="Homework/ext2/README"> Lab Instructions</a>
 13:
   reading:
+      - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched.pdf"> Chapter 7 </a>
           # - Chapter 6
   topics:
     - CPU Scheduling 1
   materials:
   other:
-    - Coming soon
+      - <a href="{{ site.baseurl }}/sessions/13_session13/"> Session Information </a>
     # - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=f48ee0bf-5c81-458c-b3c6-ac91014a48c1">Video Lecture</a>
     # - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2424059">Activity</a>
 14:
   reading:
+      - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched-mlfq.pdf"> Chapter 8 </a>
           # - Chapter 6
   topics:
     - CPU Scheduling 2
