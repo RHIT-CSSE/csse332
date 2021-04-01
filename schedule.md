@@ -261,11 +261,13 @@ In-class.</td>
 Coming soon</td>
 </tr>
 <tr>
-<td rowspan="4" markdown="span" style="font-size:xx-large;"><a name="w4">4</a></td>
+<td rowspan="5" markdown="span" style="font-size:xx-large;"><a name="w4">4</a></td>
 <td markdown="span">
 15 <br/> Mon, Apr 05 2021</td>
 <td markdown="span" colspan="3">N/A</td>
 </tr>
+<tr>
+<td markdown="span" colspan="4"> CPU Scheduling DUE Mon, Apr 05 2021 23:59 [Take the quiz on Moodle](https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2708058)</td></tr>
 <tr>
 <td markdown="span">
 16 <br/> Tue, Apr 06 2021</td>

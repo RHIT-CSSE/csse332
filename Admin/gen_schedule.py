@@ -293,18 +293,33 @@ def write_table_body(f, schedule, num_of_sessions_per_week, classes):
                 assignment_box = session['moodle']
                 assignment_grader = session['grader']
 
-                if assignment_grader is not None and assignment_grader != '':
-                    assignment_grader = "<font color=\"#aaa\"> grader: @{} </font>".format(assignment_grader)
-                    f.write("<td markdown=\"span\" colspan=\"4\"> [{}]({{{{ site.baseurl }}}}/docs/{}) DUE {} {} {} </td>".format(
-                        assignment_name, assignment_dir,
-                        assignment_date.strftime("%a, %b %d %Y %H:%M"),
-                        assignment_box, assignment_grader
-                    ))
+                if assignment_dir is not None and assignment_dir != "":
+                    if assignment_grader is not None and assignment_grader != '':
+                        assignment_grader = "<font color=\"#aaa\"> grader: @{} </font>".format(assignment_grader)
+                        f.write("<td markdown=\"span\" colspan=\"4\"> [{}]({{{{ site.baseurl }}}}/docs/{}) DUE {} {} {} </td>".format(
+                            assignment_name, assignment_dir,
+                            assignment_date.strftime("%a, %b %d %Y %H:%M"),
+                            assignment_box, assignment_grader
+                        ))
+                    else:
+                        f.write("<td markdown=\"span\" colspan=\"4\"> [{}]({{{{ site.baseurl }}}}/docs/{}) DUE {} {}</td>".format(
+                            assignment_name, assignment_dir,
+                            assignment_date.strftime("%a, %b %d %Y %H:%M"), assignment_box
+                        ))
                 else:
-                    f.write("<td markdown=\"span\" colspan=\"4\"> [{}]({{{{ site.baseurl }}}}/docs/{}) DUE {} {}</td>".format(
-                        assignment_name, assignment_dir,
-                        assignment_date.strftime("%a, %b %d %Y %H:%M"), assignment_box
-                    ))
+                    if assignment_grader is not None and assignment_grader != '':
+                        assignment_grader = "<font color=\"#aaa\"> grader: @{} </font>".format(assignment_grader)
+                        f.write("<td markdown=\"span\" colspan=\"4\"> {} DUE {} {} {} </td>".format(
+                            assignment_name,
+                            assignment_date.strftime("%a, %b %d %Y %H:%M"),
+                            assignment_box, assignment_grader
+                        ))
+                    else:
+                        f.write("<td markdown=\"span\" colspan=\"4\"> {} DUE {} {}</td>".format(
+                            assignment_name,
+                            assignment_date.strftime("%a, %b %d %Y %H:%M"), assignment_box
+                        ))
+
             except KeyError:
                 logging.error("Failed to extract assignment from csv file!")
                 raise RuntimeError("Unexpected csv file entry...")
