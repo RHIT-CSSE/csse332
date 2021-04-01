@@ -125,7 +125,7 @@
     - CPU Scheduling 2
   materials: 
   other:
-    - Coming soon
+    - <a href="{{ site.baseurl }}/sessions/14_session14/"> Session Information </a>
     # - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=ac5bb018-1376-4055-a576-ac9201537ea9">Video Lecture</a>
     # - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2424064">Activity</a>
 15:
