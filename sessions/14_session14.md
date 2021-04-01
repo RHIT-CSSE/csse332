@@ -42,8 +42,8 @@ In this video, I will walk you through the activity for this session.
 In this video, we present three challenges that might make our MLFQ system go wrong. Those
 challenges are:
 1. Starvation
-1. Gaming the system (i.e., malicious process)
 1. Process changes its behavior from CPU intensive to I/O intensive. 
+1. Gaming the system (i.e., malicious process)
 
 # Priority boosting
 In this video, we introduce priority boosting as a solution to challenges (1) and (3) above. 
