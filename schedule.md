@@ -264,19 +264,46 @@ Coming soon</td>
 <td rowspan="5" markdown="span" style="font-size:xx-large;"><a name="w4">4</a></td>
 <td markdown="span">
 15 <br/> Mon, Apr 05 2021</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> Exam 1 review (In-class) </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+Exam1Prep<br/>No activity!  Do a practice exam</td>
 </tr>
 <tr>
 <td markdown="span" colspan="4"> CPU Scheduling DUE Mon, Apr 05 2021 23:59 [Take the quiz on Moodle](https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2708058)</td></tr>
 <tr>
 <td markdown="span">
 16 <br/> Tue, Apr 06 2021</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> Fork/Signals/Makefiles/pipes skills tests </li>
+<li> 3 Hour exam sometime today </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+</td>
 </tr>
 <tr>
 <td markdown="span">
 17 <br/> Thu, Apr 08 2021</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> More Threads </li>
+<li> Thread Libraries </li>
+<li> Threading Issues </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+Coming soon</td>
 </tr>
 <tr>
 <td markdown="span">

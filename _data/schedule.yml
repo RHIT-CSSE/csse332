@@ -128,33 +128,31 @@
     - Coming soon
     # - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=ac5bb018-1376-4055-a576-ac9201537ea9">Video Lecture</a>
     # - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2424064">Activity</a>
-# 15:
-#   reading:
-#   topics:
-#     - Skills Test Review
-#   materials: Exam1Prep
-#   other:
-#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=0fb3a0f5-de42-4290-8c98-ac98010071cc">Videos</a>
-#     - No activity!  Do a practice exam
-#     - SRT has a review session from 7-8 PM
-# 16:
-#   reading:
-#   topics:
-#     - Fork/Signals/Makefiles skills tests
-#     - 3 Hour exam sometime today
-#   materials: 
-#   other:  
-# 17:
-#   reading: 
-#    - Chapter 4
-#   topics: 
-#    - More Threads
-#    - Thread Libraries
-#    - Threading Issues
-#   materials: MoreThreads
-#   other:
-#    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=bfb13e2d-3671-47d8-814e-ac9f0148279d">Video Lecture</a>
-#    - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424069">Activity Submission</a>
+15:
+  reading:
+  topics:
+    - Exam 1 review (In-class)
+  materials: Exam1Prep
+  other:
+    - No activity!  Do a practice exam
+16:
+  reading:
+  topics:
+    - Fork/Signals/Makefiles/pipes skills tests
+    - 3 Hour exam sometime today
+  materials: 
+  other:  
+17:
+  reading: 
+  topics: 
+   - More Threads
+   - Thread Libraries
+   - Threading Issues
+  materials: 
+  other:
+    - Coming soon
+   # - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=bfb13e2d-3671-47d8-814e-ac9f0148279d">Video Lecture</a>
+   # - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424069">Activity Submission</a>
 # 18:
 #   reading:
 #   topics:
