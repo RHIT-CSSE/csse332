@@ -1,0 +1,28 @@
+all: shell.bin order.bin cook.bin deliver.bin
+
+order.o: order.c library.h
+	gcc -c order.c -o order.o
+
+cook.o: cook.c library.h
+	gcc -c cook.c -o cook.o
+
+deliver.o: deliver.c library.h
+	gcc -c deliver.c -o deliver.o
+
+order.bin: order.o
+	gcc order.o -o order.bin
+
+cook.bin: cook.o
+	gcc cook.o -o cook.bin
+	
+deliver.bin: deliver.o
+	gcc deliver.o -o deliver.bin
+
+shell.o: shell.c 
+	gcc -c shell.c -o shell.o
+
+shell.bin: shell.o
+	gcc shell.o -o shell.bin
+
+clean:
+	rm *.o *.bin
