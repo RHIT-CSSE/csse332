@@ -176,16 +176,18 @@
     - <a href="Homework/SemaphoreLab/README"> Lab Instructions</a>
     - No video or activity today
 19:
-  reading:  Chapter 5
-  topics: 
+  reading: 
     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf">Concurrency and Threads</a>
+  topics: 
+    - Intro to Pthread
+    - Concurrent Issues
   materials: ProcessSync
   other:
     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=90fd773a-4471-43c5-90b8-aca0013f3eae">Video Lecture</a>
     - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2692819">Activity Submission</a>
 20:
   reading:
-    - Chapter 4
+    - <a href="https://www.tutorialspoint.com/operating_system/os_multi_threading.htm">Kernel Threads v.s. User Threads Tutorial</a>
   topics:
     - User-space Threads and Kernel Threads
   materials: KernelThreads
