@@ -1,7 +1,7 @@
 ---
 title: Threads and Semaphores Basics
 layout: post
-date: Wed Apr  7 19:00:10 2021
+date: Wed Apr 7 19:00:10 2021
 readtime: true
 gh-repo: rhit-csse332/csse332-202130
 gh-badge: [star,watch,follow]
@@ -29,7 +29,7 @@ gh-badge: [star,watch,follow]
 <!-- markdown-toc end -->
 
 ## Logistics
-* [Source code]({{ site.gh_repository_url }}/tree/main/homeworks/07_semaphore_basics)
+* [Source code]({{ site.gh_repository_url }}/tree/main/homeworks/07_semaphores_basics)
 * [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708061)
 * [Submission instructions](https://rhit-csse332.github.io/csse332-202130/docs/submission_instructions/)
 
