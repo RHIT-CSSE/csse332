@@ -321,7 +321,7 @@ Exam1Prep<br/>No activity!  Do a practice exam</td>
 <td markdown="span" colspan="3">N/A</td>
 </tr>
 <tr>
-<td markdown="span" colspan="4"> [Threads and Semaphore Basics]({{ site.baseurl }}/docs/07_semaphores_basics) DUE Mon, Apr 12 2021 23:59 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708061)</td></tr>
+<td markdown="span" colspan="4"> [Threads and Semaphore Basics]({{ site.baseurl }}/docs/07_semaphore_lab) DUE Mon, Apr 12 2021 23:59 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708061)</td></tr>
 <tr>
 <td markdown="span">
 20 <br/> Tue, Apr 13 2021</td>
