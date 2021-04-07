@@ -175,23 +175,24 @@
   other:
     - <a href="Homework/SemaphoreLab/README"> Lab Instructions</a>
     - No video or activity today
-# 19:
-#   reading:  Chapter 5
-#   topics: 
-#     - Process Synchronization
-#   materials: ProcessSync
-#   other:
-#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=90fd773a-4471-43c5-90b8-aca0013f3eae">Video Lecture</a>
-#     - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424074">Activity Submission</a>
-# 20:
-#   reading:
-#     - Chapter 4
-#   topics:
-#     - User-space Threads and Kernel Threads
-#   materials: KernelThreads
-#   other:
-#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%22bbc3865c-4039-41c5-9314-ab980136af62%22">Videos</a>
-#     - No activity today just start Hybrid Threads
+19:
+  reading:  Chapter 5
+  topics: 
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf">Concurrency and Threads</a>
+  materials: ProcessSync
+  other:
+    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=90fd773a-4471-43c5-90b8-aca0013f3eae">Video Lecture</a>
+    - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2692819">Activity Submission</a>
+20:
+  reading:
+    - Chapter 4
+  topics:
+    - User-space Threads and Kernel Threads
+  materials: KernelThreads
+  other:
+    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%22bbc3865c-4039-41c5-9314-ab980136af62%22">Videos</a>
+    - No activity today just start Hybrid Threads
+    - Exam 1 Makeup is today
 # 21:
 #   reading: Chapter 5
 #   topics:
