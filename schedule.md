@@ -315,11 +315,13 @@ Exam1Prep<br/>No activity!  Do a practice exam</td>
 <td markdown="span" colspan="3">N/A</td>
 </tr>
 <tr>
-<td rowspan="2" markdown="span" style="font-size:xx-large;"><a name="w5">5</a></td>
+<td rowspan="3" markdown="span" style="font-size:xx-large;"><a name="w5">5</a></td>
 <td markdown="span">
 19 <br/> Mon, Apr 12 2021</td>
 <td markdown="span" colspan="3">N/A</td>
 </tr>
+<tr>
+<td markdown="span" colspan="4"> [Threads and Semaphore Basics]({{ site.baseurl }}/docs/07_semaphores_basics) DUE Mon, Apr 12 2021 23:59 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708061)</td></tr>
 <tr>
 <td markdown="span">
 20 <br/> Tue, Apr 13 2021</td>
