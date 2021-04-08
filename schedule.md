@@ -312,7 +312,18 @@ Exam1Prep<br/>No activity!  Do a practice exam</td>
 <tr>
 <td markdown="span">
 18 <br/> Fri, Apr 09 2021</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-sema.pdf"> Chapter 31 </a> </li>
+</ul>{:/}
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> Semaphores </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+Coming soon</td>
 </tr>
 <tr>
 <td rowspan="3" markdown="span" style="font-size:xx-large;"><a name="w5">5</a></td>

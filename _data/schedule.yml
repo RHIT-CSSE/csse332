@@ -147,21 +147,20 @@
       - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf"> Chapter 26 </a>
       - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-api.pdf"> Chapter 27 </a>
   topics: 
-   - More Threads
-   - Thread Libraries
-   - Threading Issues
+      - More Threads
+      - Thread Libraries
+      - Threading Issues
   materials: 
   other:
     - <a href="{{ site.baseurl }}/sessions/17_session17/"> Session Information </a>
-   # - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=bfb13e2d-3671-47d8-814e-ac9f0148279d">Video Lecture</a>
-   # - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424069">Activity Submission</a>
-# 18:
-#   reading:
-#   topics:
-#           - <b>Lab</b> Threads and Semaphore Basics
-#   other:
-#     - <a href="Homework/SemaphoreLab/README"> Lab Instructions</a>
-#     - No video or activity today
+18:
+  reading:
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-sema.pdf"> Chapter 31 </a>
+  topics:
+    - Semaphores
+  materials:
+  other:
+    - Coming soon
 # 19:
 #   reading:  Chapter 5
 #   topics: 
