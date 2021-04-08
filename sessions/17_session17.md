@@ -16,6 +16,7 @@ concurrency.
 ## Logistics
 * [Slides]()
 * [Class notebook section]()
+* [Source code]({{ site.gh_repository_url }}/tree/main/activities/17_threads)
 * [Activity submission](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708154)
 * [Clear/Muddy survey](https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2785929)
 
