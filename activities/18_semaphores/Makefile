@@ -14,9 +14,15 @@ c.bin: ActivityC.o
 d.bin: ActivityD.o
 	gcc -o $@ $^ -pthread
 
-solutions: a_solution.bin
+solutions: a_solution.bin b_solution.bin c_solution.bin
 
 a_solution.bin: ActivityA_solution.o
+	gcc -o $@ $^ -pthread
+
+b_solution.bin: ActivityB_solution.o
+	gcc -o $@ $^ -pthread
+
+c_solution.bin: ActivityC_solution.o
 	gcc -o $@ $^ -pthread
 
 clean:
