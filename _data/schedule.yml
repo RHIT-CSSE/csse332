@@ -160,7 +160,7 @@
     - Semaphores
   materials:
   other:
-    - Coming soon
+    - <a href="{{ site.baseurl }}/sessions/18_session18/"> Session Information </a>
 # 19:
 #   reading:  Chapter 5
 #   topics: 
