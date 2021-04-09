@@ -58,11 +58,11 @@ producer(void *arg)
 {
 	int i;
 	for (i = 0; i < loops; i++) {
-		sem_wait(&mutex);
 		sem_wait(&empty);
+		sem_wait(&mutex);
 		put(i);
-		sem_post(&full);
 		sem_post(&mutex);
+		sem_post(&full);
 		printf("Producer produced %d\n", i);
 	}
 }
@@ -75,11 +75,11 @@ consumer(void *arg)
 {
 	int value = 0, i = 0;
 	for(; i < loops; i++) {
-		sem_wait(&mutex);
 		sem_wait(&full);
+		sem_wait(&mutex);
 		value = get();
-		sem_post(&empty);
 		sem_post(&mutex);
+		sem_post(&empty);
 		printf("Consumer consumed %d\n", value);
 	}
 }
