@@ -11,12 +11,10 @@ int array_size;
 int share;
 volatile unsigned long long sum;
 
-void *run_thread(void *arg)
+void *run_fn(void *arg)
 {
 	int start_index = *((int *)arg);
-	pthread_id_np_t tid;
-	tid = pthread_getthreadid_np();
-	printf("Thread %d starting from %d\n", tid, start_index);
+	printf("New thread starting at index %d\n", start_index);
 	for(int i = start_index; i < start_index+share; ++i) {
 		sum += array[i];
 	}
@@ -47,11 +45,11 @@ main(int argc, char **argv)
 	share = array_size / 2;
 	start_index[0] = 0;
 	start_index[1] = share;
-	pthread_create(&thread[0], NULL, run_fn, &start_index[0]);
-	pthread_create(&thread[1], NULL, run_fn, &start_index[1]);
+	pthread_create(&threads[0], NULL, run_fn, &start_index[0]);
+	pthread_create(&threads[1], NULL, run_fn, &start_index[1]);
 
-	pthread_join(thread[0], NULL);
-	pthread_join(thread[1], NULL);
+	pthread_join(threads[0], NULL);
+	pthread_join(threads[1], NULL);
 
 	printf("The value of the sum is %llu\n", sum);
 }
