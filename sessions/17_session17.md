@@ -33,3 +33,13 @@ In-class activity and clear/muddy survey are due on Friday before the start of s
 | __Break__ | 2 minutes |
 | Concurrency issues | 15 minutes |
 | Conclusion and moving forward | 3 minutes |
+
+# Video Recording
+It turned out that I forgot to hit record when we started the lecture (what a great way to start
+things off Mohammad!!). So Dr Song has kindly provided his videos below:
+
+<iframe src="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=b3bb2e7b-13a8-4066-9b11-ac9f014f12a2&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="360" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
+<iframe src="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=1ef020c9-87ed-474f-9dda-ac9f015ad342&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="360" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
+<iframe src="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=ad16b132-24da-4a84-99d0-aca00028e717&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="360" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>

@@ -31,3 +31,7 @@ In-class activity and clear/muddy survey will be due on Saturday at 2:00 pm ET.
 | In-class activity time               | 25 minutes | 
 
 
+# Video Recording
+You can find the video recording of this lecture below
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/HY-s3fyHrqo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
