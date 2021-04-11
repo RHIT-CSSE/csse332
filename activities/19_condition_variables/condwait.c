@@ -11,6 +11,16 @@
  * function below.
  */
 
+
+/*
+ * exit from a given thread
+ */
+void
+thread_exit(void)
+{
+	/* Implement this function */
+}
+
 void *
 child(void *arg)
 {
@@ -18,7 +28,7 @@ child(void *arg)
 	printf("Child\n");
 	sleep(5);
 	printf("Child completed\n");
-	return NULL;
+	thread_exit();
 }
 
 /**

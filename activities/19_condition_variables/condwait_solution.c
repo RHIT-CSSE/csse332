@@ -22,6 +22,7 @@ child(void *arg)
 	printf("Child\n");
 	sleep(5);
 	printf("Child completed\n");
+	/* this is the code for thread_exit */
 	pthread_mutex_lock(&mutex);
 	done = 1;
 	pthread_cond_signal(&wait_cond);
