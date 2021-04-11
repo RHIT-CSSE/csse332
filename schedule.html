@@ -51,7 +51,7 @@ layout: schedule
       <tr {% if event.bgcolor %} bgcolor="#{{event.bgcolor}}" {% endif %} >
 
         <td>
-          {{ session.class_num }} <br/> {{ session.date | date: "%a, %b %d %Y" }}
+          {{ session.class_num }} <br/> {{ session.date | date: "%A" }} <br/> {{ session.date | date: "%b %d" }}
         </td>
           <td>
                   {% for item in event.reading %}
@@ -79,7 +79,7 @@ layout: schedule
 
       <tr>
         <td class="center">
-          {{ session.class_num }} <br/> {{ session.date | date: "%a, %b %d %Y" }}
+          {{ session.class_num }} <br/> {{ session.date | date: "%A" }} <br/> {{ session.date | date: "%b %d" }}
         </td>
         <td class="center" colspan="3" >
           N/A 
@@ -92,7 +92,7 @@ layout: schedule
         <td colspan="4">
           {% if session.dirname %}<a href="{{ site.github.repository_url }}/tree/master/Homework/{{ session.dirname }}">{{session.name}}</a>
           {% else %}{{session.name}}{% endif %} 
-          DUE {{ session.date | date: "%a %d %b %Y %l:%M %P" }}
+          DUE {{ session.date | date: "%A %D %l:%M %P" }}
           {% if session.moodle %}<a href="{{ session.moodle }}"> Submit Here</a>{% endif %}
           {% if session.grader %} <font color="#aaa"> grader: {{session.grader}}@</font> {% endif %} 
         </td>
