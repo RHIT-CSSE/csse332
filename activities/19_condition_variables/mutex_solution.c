@@ -7,7 +7,7 @@
 #include <pthread.h>
 
 /**
- * This is the same exercises as the one we did in session 18. Instead this time,
+ * This is the same exercise as the one we did in session 18. Instead this time,
  * we would like to use a single lock (a mutex) to solve this problem. Your solution
  * must be optimal, i.e., for large arrays, it should perform FASTER than the sequential
  * attempt.

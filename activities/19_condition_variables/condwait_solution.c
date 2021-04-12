@@ -11,6 +11,10 @@
  * function below.
  */
 
+pthread_cond_t wait_cond;
+pthread_mutex_t mutex;
+int done = 0;
+
 void *
 child(void *arg)
 {
@@ -18,6 +22,10 @@ child(void *arg)
 	printf("Child\n");
 	sleep(5);
 	printf("Child completed\n");
+	pthread_mutex_lock(&mutex);
+	done = 1;
+	pthread_cond_signal(&wait_cond);
+	pthread_mutex_unlock(&mutex);
 	return NULL;
 }
 
@@ -29,6 +37,11 @@ void
 thread_join(void)
 {
 	/* Implement this function */
+	pthread_mutex_lock(&mutex);
+	while (!done)
+		pthread_cond_wait(&wait_cond, &mutex);
+	pthread_mutex_unlock(&mutex);
+	printf("Parent done...\n");
 }
 
 int
