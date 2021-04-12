@@ -19,6 +19,11 @@ const int loops = 100;
 int buffer[MAX];
 int fill = 0;
 int use = 0;
+int count = 0;
+
+pthread_mutex_t lock;
+pthread_cond_t empty;
+pthread_cond_t full;
 
 /**
  * Put a value into the buffer and increment the fill index.
@@ -28,6 +33,7 @@ put(int value)
 {
 	buffer[fill] = value;
 	fill = (fill + 1) % MAX;
+	count++;
 }
 
 /**
@@ -38,6 +44,7 @@ get()
 {
 	int value = buffer[use];
 	use = (use + 1) % MAX;
+	count--;
 	return value;
 }
 
@@ -49,7 +56,12 @@ producer(void *arg)
 {
 	int i;
 	for (i = 0; i < loops; i++) {
+		pthread_mutex_lock(&lock);
+		while(count == MAX)
+			pthread_cond_wait(&empty, &lock);
 		put(i);
+		pthread_cond_signal(&full);
+		pthread_mutex_unlock(&lock);
 		printf("Producer produced %d\n", i);
 	}
 }
@@ -62,7 +74,12 @@ consumer(void *arg)
 {
 	int value = 0, i = 0;
 	for(; i < loops; i++) {
+		pthread_mutex_lock(&lock);
+		while(count == 0)
+			pthread_cond_wait(&full, &lock);
 		value = get();
+		pthread_cond_signal(&empty);
+		pthread_mutex_unlock(&lock);
 		printf("Consumer consumed %d\n", value);
 	}
 }
@@ -73,6 +90,10 @@ main(int argc, char **argv)
 	/* the threads */
 	pthread_t producer_threads[NUM_PRODUCERS];
 	pthread_t consumer_threads[NUM_CONSUMERS];
+
+	pthread_mutex_init(&lock, NULL);
+	pthread_cond_init(&empty, NULL);
+	pthread_cond_init(&full, NULL);
 
 	/* create the producer threads */
 	for (int i = 0; i < NUM_PRODUCERS; ++i)
