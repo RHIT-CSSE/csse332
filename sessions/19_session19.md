@@ -29,3 +29,7 @@ In-class activity and clear/muddy survey will be due on Tuesday at 2:00 pm ET.
 | Mutex:binary semaphore      |  5 minutes |
 | Condition variables + small demo | 15 minutes |
 | Producer/consumer activity | 25 minutes |
+
+# Video recording
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/J0tdNA0PCiM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
