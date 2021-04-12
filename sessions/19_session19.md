@@ -20,3 +20,12 @@ at their usage and API as well as briefly talk about how to implement them in pr
 * [Clear/Muddy survey](https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2788095)
 
 In-class activity and clear/muddy survey will be due on Tuesday at 2:00 pm ET.
+
+# Outline
+
+|           Topic             |           Time              |
+| :-------------------------- | --------------------------- |
+| Announcements and recap     |  5 minutes |
+| Mutex:binary semaphore      |  5 minutes |
+| Condition variables + small demo | 15 minutes |
+| Producer/consumer activity | 25 minutes |
