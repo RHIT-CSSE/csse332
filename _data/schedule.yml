@@ -161,14 +161,14 @@
   materials:
   other:
     - <a href="{{ site.baseurl }}/sessions/18_session18/"> Session Information </a>
-# 19:
-#   reading:  Chapter 5
-#   topics: 
-#     - Process Synchronization
-#   materials: ProcessSync
-#   other:
-#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=90fd773a-4471-43c5-90b8-aca0013f3eae">Video Lecture</a>
-#     - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424074">Activity Submission</a>
+19:
+  reading: 
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 </a>
+  topics: 
+    - Mutex and condition variables
+  materials:
+  other:
+    - <a href="{{ site.baseurl }}/sessions/19_session19/"> Session Information </a>
 # 20:
 #   reading:
 #     - Chapter 4

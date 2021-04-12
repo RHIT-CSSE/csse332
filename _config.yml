@@ -35,6 +35,7 @@ round-avatar: true
 # then specify the following parameter
 #title-img: /path/to/image
 gh_repository_url: "https://github.com/rhit-csse332/csse332-202130"
+gh_activity_url: "https://github.com/rhit-csse332/csse332-202130/tree/main/activities"
 
 
 # --- Footer social media links --- #

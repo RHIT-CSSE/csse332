@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Session 17 Intro to Threads
+title: Session 18 Semaphores
 readtime: true
 date: Fri Apr  9 11:20:10 2021
 gh-repo: rhit-csse332/csse332-202130

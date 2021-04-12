@@ -329,7 +329,18 @@ Exam1Prep<br/>No activity!  Do a practice exam</td>
 <td rowspan="3" markdown="span" style="font-size:xx-large;"><a name="w5">5</a></td>
 <td markdown="span">
 19 <br/> Mon, Apr 12 2021</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 </a> </li>
+</ul>{:/}
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> Mutex and condition variables </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+<a href="{{ site.baseurl }}/sessions/19_session19/"> Session Information </a></td>
 </tr>
 <tr>
 <td markdown="span" colspan="4"> [Threads and Semaphore Basics]({{ site.baseurl }}/docs/07_semaphore_lab) DUE Mon, Apr 12 2021 23:59 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708061)</td></tr>
