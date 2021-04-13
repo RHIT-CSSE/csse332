@@ -347,7 +347,18 @@ Exam1Prep<br/>No activity!  Do a practice exam</td>
 <tr>
 <td markdown="span">
 20 <br/> Tue, Apr 13 2021</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> <a href="{{ site.baseurl }}/docs/milestone2/"> Milestone 2 </a> </li>
+</ul>{:/}
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> Project milestone 2 </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+Coming soon</td>
 </tr>
 <tr>
 <td rowspan="4" markdown="span" style="font-size:xx-large;"><a name="w6">6</a></td>
