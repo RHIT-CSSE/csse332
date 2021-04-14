@@ -361,11 +361,13 @@ Exam1Prep<br/>No activity!  Do a practice exam</td>
 <a href="{{ site.baseurl }}/sessions/20_session20/"> Session Information </a></td>
 </tr>
 <tr>
-<td rowspan="4" markdown="span" style="font-size:xx-large;"><a name="w6">6</a></td>
+<td rowspan="5" markdown="span" style="font-size:xx-large;"><a name="w6">6</a></td>
 <td markdown="span">
 21 <br/> Mon, Apr 19 2021</td>
 <td markdown="span" colspan="3">N/A</td>
 </tr>
+<tr>
+<td markdown="span" colspan="4"> [Semaphores Homework I]({{ site.baseurl }}/docs/08_semaphores_homework1) DUE Mon, Apr 19 2021 23:59  [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708067) <font color="#aaa"> grader: @  </font> </td></tr>
 <tr>
 <td markdown="span">
 22 <br/> Tue, Apr 20 2021</td>

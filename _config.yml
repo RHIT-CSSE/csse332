@@ -36,6 +36,8 @@ round-avatar: true
 #title-img: /path/to/image
 gh_repository_url: "https://github.com/rhit-csse332/csse332-202130"
 gh_activity_url: "https://github.com/rhit-csse332/csse332-202130/tree/main/activities"
+gh_homeworks_url: "https://github.com/rhit-csse332/csse332-202130/tree/main/homeworks"
+
 
 
 # --- Footer social media links --- #
