@@ -32,6 +32,6 @@ Some guidance on how we grade:
 4. choose one between pri_sem and or_sem
 
 ## Logistics
-* [Source code]({{ site.gh_homeworks_url }}/08_semaphores_homework2)
+* [Source code]({{ site.gh_homeworks_url }}/09_semaphores_homework2)
 * [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708073)
 * [Submission instructions](https://rhit-csse332.github.io/csse332-202130/docs/submission_instructions/)
