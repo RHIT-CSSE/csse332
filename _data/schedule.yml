@@ -176,7 +176,7 @@
     - Project milestone 2
   materials: 
   other:
-    - Coming soon
+    - <a href="{{ site.baseurl }}/sessions/20_session20/"> Session Information </a>
 # 21:
 #   reading: Chapter 5
 #   topics:
