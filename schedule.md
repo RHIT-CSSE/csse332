@@ -361,34 +361,75 @@ Exam1Prep<br/>No activity!  Do a practice exam</td>
 <a href="{{ site.baseurl }}/sessions/20_session20/"> Session Information </a></td>
 </tr>
 <tr>
-<td rowspan="5" markdown="span" style="font-size:xx-large;"><a name="w6">6</a></td>
+<td rowspan="6" markdown="span" style="font-size:xx-large;"><a name="w6">6</a></td>
 <td markdown="span">
 21 <br/> Mon, Apr 19 2021</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> <a href="https://greenteapress.com/wp/semaphores/">Little Book of Semaphores - section 4.2 </a> </li>
+</ul>{:/}
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> More Semaphores </li>
+<li> Readers/Writers problem </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+Coming soon</td>
 </tr>
 <tr>
-<td markdown="span" colspan="4"> [Semaphores Homework I]({{ site.baseurl }}/docs/08_semaphores_homework1) DUE Mon, Apr 19 2021 23:59  [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708067) <font color="#aaa"> grader: @  </font> </td></tr>
+<td markdown="span" colspan="4"> [Semaphores Homework I]({{ site.baseurl }}/docs/08_semaphores_homework1) DUE Mon, Apr 19 2021 23:59  [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708067)</td></tr>
 <tr>
 <td markdown="span">
 22 <br/> Tue, Apr 20 2021</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> Even more semaphores </li>
+<li> Scoreboard </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+Coming soon</td>
 </tr>
 <tr>
 <td markdown="span">
 23 <br/> Thu, Apr 22 2021</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> Kernel threads vs User threads </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+Coming soon</td>
 </tr>
+<tr>
+<td markdown="span" colspan="4"> [ADVANCED Semaphores Homework 2]({{ site.baseurl }}/docs/09_semaphores_homework2) DUE Thu, Apr 22 2021 23:59  [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708073)</td></tr>
 <tr>
 <td markdown="span">
 24 <br/> Fri, Apr 23 2021</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> Lab time (Hybrid threads demo) </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+Coming soon</td>
 </tr>
 <tr>
-<td rowspan="4" markdown="span" style="font-size:xx-large;"><a name="w7">7</a></td>
+<td rowspan="5" markdown="span" style="font-size:xx-large;"><a name="w7">7</a></td>
 <td markdown="span">
 25 <br/> Mon, Apr 26 2021</td>
 <td markdown="span" colspan="3">N/A</td>
 </tr>
+<tr>
+<td markdown="span" colspan="4"> [Project Milestone II]({{ site.baseurl }}/docs/milestone2) DUE Mon, Apr 26 2021 23:59 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708259)</td></tr>
 <tr>
 <td markdown="span">
 26 <br/> Tue, Apr 27 2021</td>

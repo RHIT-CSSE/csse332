@@ -177,40 +177,39 @@
   materials: 
   other:
     - <a href="{{ site.baseurl }}/sessions/20_session20/"> Session Information </a>
-# 21:
-#   reading: Chapter 5
-#   topics:
-#     - Process Synchronization
-#     - Semaphores
-#   materials: ProcessSyncSemaphore
-#   other:
-#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=2023d480-12ce-4d46-8efb-aca20151a578">Video Lecture</a>
-#     - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424079">Activity Submission</a>
-# 22:
-#   reading: Chapter 5
-#   topics:
-#     - Semaphore Practice
-#   materials: Semaphore_II
-#   other:
-#      - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=5c3e34d4-7013-4fe3-98f0-aca7014211d4">Video Lecture</a>
-#      - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424084">Activity Submission</a>
-#      - <a href="https://greenteapress.com/wp/semaphores/">Little Book of Semaphores</a>
-# 23:
-#   reading:
-#   topics:
-#     - Lab time Semaphores 1/2
-#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=fd0a718a-f08a-4bc0-ab77-ab9f00deb4ff">Videos</a>
-#     - No activity today, just start on Semaphore Homework
-#   materials: 
-#   other:
-# 24:
-#   reading:  
-#   topics: 
-#     - Scoreboard
-#   materials: Scoreboard
-#   other:
-#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%2213ad6831-8bb8-4654-a52f-aba001488e7e%22">Videos</a>
-#     - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424089">Activity Submission</a>
+21:
+  reading: 
+     - <a href="https://greenteapress.com/wp/semaphores/">Little Book of Semaphores - section 4.2 </a>
+  topics:
+    - More Semaphores
+    - Readers/Writers problem
+  materials: 
+  other:
+    - Coming soon
+22:
+  reading: 
+  topics:
+    - Even more semaphores
+    - Scoreboard
+  materials: 
+  other:
+    - Coming soon
+     # - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=5c3e34d4-7013-4fe3-98f0-aca7014211d4">Video Lecture</a>
+     # - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424084">Activity Submission</a>
+23:
+  reading:
+  topics:
+    - Kernel threads vs User threads
+  materials: 
+  other:
+    - Coming soon
+24:
+  reading:  
+  topics: 
+    - Lab time (Hybrid threads demo)
+  materials: 
+  other:
+    - Coming soon
 # 25:
 #   reading: Chapter 7
 #   topics:
