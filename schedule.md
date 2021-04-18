@@ -376,7 +376,7 @@ Exam1Prep<br/>No activity!  Do a practice exam</td>
 </ul>{:/}
 </td>
 <td markdown="span">
-Coming soon</td>
+<a href="{{ site.baseurl }}/sessions/21_session21/"> Session Information </a></td>
 </tr>
 <tr>
 <td markdown="span" colspan="4"> [Semaphores Homework I]({{ site.baseurl }}/docs/08_semaphores_homework1) DUE Mon, Apr 19 2021 23:59  [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708067)</td></tr>
