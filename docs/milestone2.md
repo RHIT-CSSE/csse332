@@ -29,6 +29,7 @@ gh-badge: [star,watch,follow]
     * [Important note](#important-note)
   * [Synchronization](#synchronization)
 * [Graduation: Killing misbehaving processes and module parameters](#graduation-killing-misbehaving-processes-and-module-parameters)
+* [Milestone Evaluation](#milestone-evaluation)
 * [Rubric](#rubric)
 
 <!-- vim-markdown-toc -->
@@ -45,17 +46,17 @@ In this milestone, we will design and implement a process monitoring module.
 This module will allow processes to register with it and de-register from it.
 The module will monitor the process's behavior every 5 seconds, updating its
 internal imitation process control block (PCB). The module will allow users to
-see that status of all process that have registered with it by reading the
+see the status of all process that have registered with it by reading the
 status using the `procfs` pseudo file system (much like we did in milestone 1).
 Finally, the module will terminate any process that exceeds its allowed time
 limit of execution. In other words, the module will keep an eye on processes and
 how long they have been executing, and then kill those processes that exceed a
 certain predefined time limit. We will also adjust our module to accept a
-parameter, name the time limit after which it should kill a running process.
+parameter, namely the time limit after which it should kill a running process.
 
 Below is a diagram that shows the different components that we will implement in
 this milestone
-![Milestone 2]({{ site.baseurl }}/docs/milestone2.pdf)
+![Milestone 2]({{ site.baseurl }}/docs/milestone2.png)
 
 ## Learning objectives
 In this milestone, we will gain familiarity with the following concepts:
@@ -66,7 +67,7 @@ In this milestone, we will gain familiarity with the following concepts:
   execution that the kernel can be in. You will take a look at the dangers of
   performing certain operations from certain contexts.
 - __kernel synchronization__: The Linux kernel is a multi-threaded kernel.
-  Different threads of execution can be execution concurrently, so you will need
+  Different threads of execution can be executing concurrently, so you will need
   to protect your critical sections.  Concurrency in the Linux kernel is
   challenging and you must be aware of the different contexts of execution to be
   able to identity which types of concurrency mechanisms to use.
@@ -123,7 +124,7 @@ building a doubly linked list of `struct list_head`, then how do I get the
 actual entries of my data structures?
 
 Great question! Fortunately, the Linux kernel developers' have you covered. You
-can use the function `list_entry` to go from a `struct list_head` to its
+can use the macro `list_entry` to go from a `struct list_head` to its
 enclosing custom structure.
 
 ## Example: A linked list
@@ -141,7 +142,7 @@ struct my_str_list {
 };
 ```
 Now I can start iterating through my list. For example, assume I have already
-inserted a entry into my list and I would like to recover it, then I can do
+inserted an entry into my list and I would like to recover it, then I can do
 something like this:
 ```c
 /* get the first entry in the list */
@@ -180,8 +181,8 @@ milestone 1 to do the following:
        integers, initialized to -1.
     1. Modify your `write` handler to set the appropriate integer in the linked
        list. In other words, if the user requests to write to index 5, then you
-       code must first traverse the linked list to appropriate element, and then
-       use `list_entry` or any other set of list API calls to set the
+       code must first traverse the linked list to the appropriate element, and
+       then use `list_entry` or any other set of list API calls to set the
        appropriate number.
 1. Modify your `read` handler to read from the linked list instead from the
    array. This is a little bit tricky, so let's talk about it a bit more.
@@ -195,10 +196,10 @@ instead of an array:
    code, so tread carefully.
 1. Use the `private_data` void pointer in the `struct file *filp` parameter of
    the `read` handler.  The `private_data` field is a void pointer, initially
-   set to `NULL`, that the kernel provide for you to use as you wish (i.e., you
+   set to `NULL`, that the kernel provides for you to use as you wish (i.e., you
    can cast into whatever you want, allocate it, free it, etc.).  The
    `private_data` field is persistent as long as the user has the file open,
-   i.e., for the same user in the same read session, `private_data_` can be used
+   i.e., for the same user in the same read session, `private_data` can be used
    to maintain state across different and subsequent `read` calls.
     - This approach is better than the first one, and less error prone. It
     requires more rewrite of your `read` handler, but is much more stable than
@@ -376,7 +377,7 @@ Awesome! Let's now switch to the process of registration.
 
 ### Registering a process
 When a user process would like to register, it must write into our `procfs`
-entry (we called it `/proc/csse332/status` a message with the following format
+entry (we called it `/proc/csse332/status`) a message with the following format
 ```
 R, pid
 ```
@@ -452,7 +453,7 @@ registered process, and then update the values in the `csse332_info` structure.
 
 Timers allow you to schedule the execution of a function at a particular
 time in the future. Kernel timers are data structures that instruct the kernel
-to execute a (1) user-defined function with (2) user-defined arguments and (3)
+to execute (1) a user-defined function with (2) user-defined arguments and (3)
 at a user-defined time.  Timers run asynchronously, i.e., they can trigger at
 any point during execution and cause a context switch of the current running job
 if allowed.
@@ -463,7 +464,7 @@ our user-defined time function will run in the software interrupt context (also
 referred to as the softirq context), which means that we have limitations on
 what we can do in our user-defined timer functions. Those limitations are:
 1. No access to user space is allowed. Because we are not running in process
-   context, there is not path to user space.
+   context, there is no path to user space.
 1. The `current` pointer is not meaningful in this context.
 1. More importantly, __no sleeping or scheduling__ may be performed. This means
    that you cannot use any function that might sleep, including `printk` and its
@@ -510,10 +511,10 @@ Perform the following steps:
   ```
 - Your timer handler should only queue works on the workqueue.
 - Your work handler is where the real work of updating the database must happen.
-  - To figure out which values you need to updated the database information,
+  - To figure out which values you need to update the database information,
   take a look at the `struct task_struct` definition
   [here](https://elixir.bootlin.com/linux/v4.5/source/include/linux/sched.h#L1389).
-- In your initiation function,
+- In your initialization function,
   - Setup and schedule the timer to run in the future after 5 seconds. For more
   information, check out [this LWN article](https://lwn.net/Articles/735887/).
   - Create the work queue and allocate space for the work while passing the
@@ -531,7 +532,7 @@ seconds.
 
 ## Synchronization
 You might have noticed now that we do have a huge race condition! Our database
-is access and updated by several entities. For example, a process might issue a
+is accessed and updated by several entities. For example, a process might issue a
 write right at the same time that a timer expires, and another process is trying
 to read. Even worse, several processes might be reading/writing to our database
 at the same time, and then a timer expires! Ugly!
@@ -549,7 +550,7 @@ Notes:
    the contexts that might access your database, then select the appropriate
    type of locking mechanisms.
 1. Be careful not to create deadlocks! A deadlock in the kernel is drastic, it
-   will break your machine and you will have to restart later on.
+   will break your machine and you will have to restart it.
 
 # Graduation: Killing misbehaving processes and module parameters
 By now, you should be able to read and write to your module, register and
@@ -584,5 +585,23 @@ Your job in this task is do the following:
    __Note__: You may assume that all processes in our system can have children
    by not grandchildren.
 
+# Milestone Evaluation
+Please take a moment to fill out the survey about this milestone by following [this
+link](https://forms.gle/gRT6fKTKFd2qekiu5)
+
 # Rubric
-Will be updated soon.
+
+| Part                                                                        | Point Value |
+|:----------------------------------------------------------------------------|-------------|
+| Registration                                                                | 10   |
+| De-registration                                                             | 10   |
+| Reading the database content                                                | 10   |
+| Maintaining the database (kernel linked list, correct add, correct delete)  | 40   |
+| Timers correctly set up works                                               | 40   |
+| Correct implementation of the workqueue                                     | 40   | 
+| Correct updates to the database                                             | 20   |
+| Kill misbehaving processes                                                  | 20   |
+| Kernel synchronization                                                      | 40   |
+| Survey                                                                      | 10   |
+| __Total__                                                                   | 240  |
+
