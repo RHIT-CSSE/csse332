@@ -11,6 +11,7 @@ Sections 03 and 04.
 * Similarly, you can find the course schedule with due dates [here]({{ site.baseurl }}/schedule/) or
 on the top right. 
 * Introduction and course format information is [here](docs/welcome/).
+* Virtual Machine setup tips are [here](docs/vm_setup).
 
 This site is self-contained on in `git` [repo](https://github.com/rhit-csse332/csse332-202130.git).
 It is a repository of all course materials (slides, assignments, in class, code, etc.). Feel free to
