@@ -20,4 +20,4 @@ readers/writers problem using semaphores and/or mutex.
 
 # Video recording
 
-Coming soon.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7-BSioVXdGk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
