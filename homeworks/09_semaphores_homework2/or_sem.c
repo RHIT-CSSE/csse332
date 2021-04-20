@@ -6,6 +6,9 @@
 #include <stdlib.h>
 
 /**
+    *** This one is for your entertainment, you do not have to submit this ***
+    *** problem.                                                           ***
+
     The goal of sem_or is to create a new type of waiting that will
     wait on two semaphores at once, and then return when either
     semaphore is unlocked.

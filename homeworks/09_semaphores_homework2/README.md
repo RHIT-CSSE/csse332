@@ -29,7 +29,7 @@ Some guidance on how we grade:
 1. balloon
 2. threeJobs
 3. band
-4. choose one between pri_sem and or_sem
+4. pri_sem
 
 ## Logistics
 * [Source code]({{ site.gh_homeworks_url }}/09_semaphores_homework2)
