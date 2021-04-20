@@ -392,7 +392,7 @@ Exam1Prep<br/>No activity!  Do a practice exam</td>
 </ul>{:/}
 </td>
 <td markdown="span">
-Coming soon</td>
+<a href="{{ site.baseurl }}/sessions/22_session22/"> Session Information </a></td>
 </tr>
 <tr>
 <td markdown="span">

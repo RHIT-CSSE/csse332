@@ -193,7 +193,7 @@
     - Scoreboard
   materials: 
   other:
-    - Coming soon
+    - <a href="{{ site.baseurl }}/sessions/22_session22/"> Session Information </a>
      # - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=5c3e34d4-7013-4fe3-98f0-aca7014211d4">Video Lecture</a>
      # - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424084">Activity Submission</a>
 23:

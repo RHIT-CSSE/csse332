@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Session 20 Milestone 2
+title: Session 21 More Semaphores
 readtime: true
 date: Tues Apr 13
 gh-repo: rhit-csse332/csse332-202130
