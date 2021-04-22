@@ -15,10 +15,10 @@ both userspace threads and kernelspace threads (i.e. pthreads).  Our
 goal is to allow a large number of low-cost user threads, but to also
 get the ability to run threads on different CPUs at the same time.
 
-The basic approach we will take is create multiple schedulers
+The basic approach we will take is to create multiple schedulers
 (i.e. parent threads) that each run in their own kernelspace thread.
 These threads will independently walk across the same global
-ucontext\_t threads array, and select userspace threads to run.  To
+`ucontext_t` threads array, and select userspace threads to run.  To
 make this work we will need to use semaphores to prevent concurrency
 bugs.
 
@@ -39,85 +39,91 @@ You will start from your code for the basic threads assignment; all
 the threading functions will be the same.  There will be a new version
 of schedule\_threads
 
-    void schedule_hybrid_threads(int num_pthreads);
+```c
+void schedule_hybrid_threads(int num_pthreads);
+```
 
-We will also allow for a MAX_THREADS count of 100 rather than 5.
+We will also allow for a `MAX_THREADS` count of 100 rather than 5.
 
 To begin:
 
 Take your solution to the previous lab assignment and
 
-1.  Copy basic\_threads.c to the directory containing the initial code
+1.  Copy `basic_threads.c` to the directory containing the initial code
 
 for this assignment.
 
-1.  Rename it to hybrid\_threads.c
-2.  Change it to include hybrid\_threads.h rather than basic\_threads.h
-3.  Modify schedule\_threads to match the new signature
-4.  Change MAX_THREADS to 100
+1.  Rename it to `hybrid_threads.c`
+2.  Change it to include `hybrid_threads.h` rather than basic\_threads.h
+3.  Modify `schedule_threads` to match the new signature
+4.  Change` MAX_THREADS` to 100
 
 # Adding more thread states
 
 The first change we need to make won't even require pthreads, but it's
 necessary before we can move forward.  In your existing system, you
-probably have an array of booleans (I called mine is\_valid) that
+probably have an array of booleans (I called mine `is_valid`) that
 determines if each userspace thread slot contains a runnable thread
 for the scheduler to switch to.
 
 Now that we can have multiple threads executing at once, we need to be
 more careful.  A thread might be valid, but currently be being run by
 another process so it isn't safe to run it.  In my hybrid thread
-solution changed my is\_valid array into an array called thread\_state
+solution, I changed my `is_valid` array into an array called `thread_state`
 that looks like this:
 
-    #define INVALID 0
-    #define PAUSED 1
-    #define RUNNING 2
-    #define FINISHED 3
-    #define CREATING 4
-    
-    char thread_state[MAX_THREADS];
+```c
+#define INVALID 0
+#define PAUSED 1
+#define RUNNING 2
+#define FINISHED 3
+#define CREATING 4
 
-Paused is the state of a thread that is runnable but not currently
-running.  Finished is the state of a thread that has been completed
-but not yet had its memory freed (consider the concurrency bug you
-might get if you instead just marked it as INVALID).  Creating is for
-when a create thread process has claimed a spot, but it is not yet
-fully filled in with things like makecontext.
+char thread_state[MAX_THREADS];
+```
 
-You aren't required to use my states but it's at least a good starting
-point.  Moreover, it's best to switch your system over to the new
-states and test before we introduce the complexity of pthreads.
+`PAUSED` is the state of a thread that is runnable but not currently running.
+`FINISHED` is the state of a thread that has been completed but not yet had its
+memory freed (consider the concurrency bug you might get if you instead just
+marked it as `INVALID`).  `CREATING` is for when a create thread process has
+claimed a spot, but it is not yet fully filled in with things like
+`makecontext`.
 
-A small issue is how to detect completion now that we have a bunch of
-new states.  The rule we'll want is that the scheduler can return once
-every thread is in the INVALID state.
+You aren't required to use my states but it's at least a good starting point.
+Moreover, it's best to switch your system over to the new states and test before
+we introduce the complexity of pthreads.
 
-We've included a test file called us1tests.c which is basically a copy
-of the userspace threading 1 tests, simply revised to use the new
-schedule threads but always pass "1" as the number of pthreads.
+A small issue is how to detect completion now that we have a bunch of new
+states.  The rule we'll want is that the scheduler can return once every
+thread is in the `INVALID` state.
+
+We've included a test file called `us1tests.c` which is basically a copy of the
+userspace threading 1 tests, simply revised to use the new schedule threads but
+always pass "1" as the number of pthreads.
 
 Build/run them like this:
 
-    $ make us1tests
-    $ ./us1tests
+```shell
+$ make us1tests
+$ ./us1tests
+```
 
-Revise your code to use the new states and then make sure these tests
-still pass before your proceed.
+Revise your code to use the new states and then make sure these tests still pass
+before your proceed.
 
 # Basic parallelism
 
-Take a look at standalone1.c and build/run it.  You should not see
+Take a look at `standalone1.c` and build/run it.  You should not see
 interleaving between "ONE" and "TWO" because there are no yields.  We
 will fix that by running each thread in its own pthread.  The basic
 operation is pretty simple - take your current scheduler code and put
-it into a function suitable to invoking from pthread\_create (I called
-mine schedule\_threads\_pthread but whatever you like is fine).
-schedule\_threads\_pthread will take an return a void pointer, but for
+it into a function suitable to invoking from `pthread_create` (I called
+mine `schedule_threads_pthread`but whatever you like is fine).
+`schedule_threads_pthread` will take and return a void pointer, but for
 what we're doing those values will always be null.
 
-Then make a new schedule\_hybrid\_threads which simply calls
-pthread\_create once for each thread we want, then joins them to
+Then make a new `schedule_hybrid_threads` which simply calls
+`pthread_create` once for each thread we want, then joins them to
 complete.
 
 There are two problems:
@@ -125,7 +131,7 @@ There are two problems:
 2. Thread specific globals
 
 Consider the int you use to store the current thread (I called mine
-current\_thread\_index).  In the old system, there was one scheduler
+`current_thread_index`).  In the old system, there was one scheduler
 and one running thread so that global make sense.  In the new system,
 there is one scheduler per pthread and one running thread per pthread.
 So when a thread yields how does it know what index it ought to return
@@ -137,23 +143,25 @@ disadvantages of userspace threads was that this feature can't exist).
 
 Make a variable thread local like this:
 
-    __thread int current_thread_index;
-   
+```c
+__thread int current_thread_index;
+```
+
 > Note that it is two underscores before `thread`.
 
-Now when one of your scheduler threads sets current\_thread\_index (or
+Now when one of your scheduler threads sets `current_thread_index` (or
 whatever you called it) it only sets it within their thread.  When a
-yield function reads current\_thread\_index it reads the value for the
+yield function reads `current_thread_index` it reads the value for the
 thread it is running in.
 
 Think carefully about which variables you want to make thread local.
 You don't want your thread array or state array local - then threads
 won't pull their userspace threads from a common queue.  The only
-other variable I had to make thread local was my parent ucontext\_t
+other variable I had to make thread local was my parent `ucontext_t`
 but your implementation could be slightly different.
 
-If you handle the thread local storage correctly, you standalone1 will
-probably start interleaving.  Do keep a careful eye on how standalone1
+If you handle the thread local storage correctly, you `standalone1` will
+probably start interleaving.  Do keep a careful eye on how `standalone1`
 terminates.  It should print a final "done" at the end - if it's
 not you've messed up something.
 
@@ -161,7 +169,7 @@ not you've messed up something.
 
 Now that we've got the basics going, it's time to think about
 concurrency issues.  The most straightforward issue is that schedulers
-might in parallel select the same thread for running and then that
+might, in parallel, select the same thread for running and then that
 thread would run twice.  We need to prevent this from happening.  But
 on the other hand, we can't have some semaphore that's locked for the
 duration of a userspace thread's execution...that removes the
@@ -196,7 +204,7 @@ These last three are similar but have to do with creation:
 6. If there are invalid slots to be used, thread creation should not
    be blocked (similar to 3 above).
 7. You can assume that the number of threads desired is always less
-   than the MAX_THREADs of the system (i.e. you don't need to worry
+   than the `MAX_THREADS` of the system (i.e. you don't need to worry
    about blocking thread creation due to lack of thread space). (BUT
    if you're curious this also has a pretty simple fix)
 
@@ -208,7 +216,7 @@ not require a large number of semaphores.  I won't reveal the solution
 but here's two hints:
 
 1.  Of the 4 thread states, 2 correspond to thread slots that are
-    unowned (INVALID, PAUSED) while for the rest a thread in that
+    unowned (INVALID, PAUSED) while for the rest, a thread in that
     state must already be owned.  Contention only arises when multiple
     threads attempt to transition something from an unowned state to
     an owned state.
@@ -224,17 +232,21 @@ but here's two hints:
 To test your system without creation (i.e. all threads are created
 upfront so there's no concurrency problem there):
 
-    $ make basic_para_tests
-    $ ./basic_para_tests
+```shell
+$ make basic_para_tests
+$ ./basic_para_tests
+```
 
 To test creation:
     
-    $ make create_para_tests
-    $ ./create_para_tests
+```shell
+$ make create_para_tests
+$ ./create_para_tests
+```
 
 # Submitting
 
-Submit hybrid\_threads.c and hybrid\_threads.h.
+Submit `hybrid_threads.c` and `hybrid_threads.h`.
 
 # Rubric
 
@@ -242,7 +254,7 @@ Submit hybrid\_threads.c and hybrid\_threads.h.
 |:--------------------|--------|---------------------------------------------------------------------------------------------------|
 | us1tests            | 15     | we'll look at your code and make sure you really made it use multiple states                      |
 | standalone1         | 15     | should be interleaved                                                                             |
-| basic\_para\_tests  | 40     | Note that we will also examine your code to ensure you don't have concurrency bugs the tests miss |
-| create\_para\_tests | 10     | should be pretty straightforward if you did the last step right                                   |
+| `basic_para_tests`  | 40     | Note that we will also examine your code to ensure you don't have concurrency bugs the tests miss |
+| `create_para_tests` | 10     | should be pretty straightforward if you did the last step right                                   |
 
 
