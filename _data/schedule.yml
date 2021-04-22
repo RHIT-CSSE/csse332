@@ -202,14 +202,13 @@
     - Kernel threads vs User threads
   materials: 
   other:
-    - Coming soon
+    - <a href="{{ site.baseurl }}/sessions/23_session23/"> Session Information </a>
 24:
   reading:  
   topics: 
-    - Lab time (Hybrid threads demo)
+    - Lab time
   materials: 
   other:
-    - Coming soon
 # 25:
 #   reading: Chapter 7
 #   topics:

@@ -405,7 +405,7 @@ Exam1Prep<br/>No activity!  Do a practice exam</td>
 </ul>{:/}
 </td>
 <td markdown="span">
-Coming soon</td>
+<a href="{{ site.baseurl }}/sessions/23_session23/"> Session Information </a></td>
 </tr>
 <tr>
 <td markdown="span" colspan="4"> [ADVANCED Semaphores Homework 2]({{ site.baseurl }}/docs/09_semaphores_homework2) DUE Thu, Apr 22 2021 23:59  [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708073)</td></tr>
@@ -416,11 +416,11 @@ Coming soon</td>
 </td>
 <td markdown="span" style="text-align:left">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
-<li> Lab time (Hybrid threads demo) </li>
+<li> Lab time </li>
 </ul>{:/}
 </td>
 <td markdown="span">
-Coming soon</td>
+</td>
 </tr>
 <tr>
 <td rowspan="5" markdown="span" style="font-size:xx-large;"><a name="w7">7</a></td>
