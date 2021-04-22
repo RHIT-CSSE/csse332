@@ -446,11 +446,13 @@ Exam1Prep<br/>No activity!  Do a practice exam</td>
 <td markdown="span" colspan="3">N/A</td>
 </tr>
 <tr>
-<td rowspan="4" markdown="span" style="font-size:xx-large;"><a name="w8">8</a></td>
+<td rowspan="5" markdown="span" style="font-size:xx-large;"><a name="w8">8</a></td>
 <td markdown="span">
 29 <br/> Mon, May 03 2021</td>
 <td markdown="span" colspan="3">N/A</td>
 </tr>
+<tr>
+<td markdown="span" colspan="4"> [ADVANCED Hybrid Threads]({{ site.baseurl }}/docs/10_hybrid_threads) DUE Mon, May 03 2021 23:59 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708064)</td></tr>
 <tr>
 <td markdown="span">
 30 <br/> Tue, May 04 2021</td>
