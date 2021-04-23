@@ -89,6 +89,7 @@ In this milestone, we will gain familiarity with the following concepts:
 - [Submission
 box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708259&forceview=1)
 - __Due Date__: Monday, April 26, 2021 at 23:59 pm.
+- __Starter code if you did not have milestone 1:__ [project.c]({{ site.baseurl }}/docs/project.c)
 
 # Grade-school: Linked lists and process information
 Okay now that we are in grade-school, it's time to start doing interesting
