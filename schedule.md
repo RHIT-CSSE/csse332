@@ -420,30 +420,63 @@ Exam1Prep<br/>No activity!  Do a practice exam</td>
 </ul>{:/}
 </td>
 <td markdown="span">
-</td>
+<a href="https://youtu.be/Kn310EWLWX8"> Session Recodring </a></td>
 </tr>
 <tr>
 <td rowspan="5" markdown="span" style="font-size:xx-large;"><a name="w7">7</a></td>
 <td markdown="span">
 25 <br/> Mon, Apr 26 2021</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> Deadlocks and Starvation </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+Coming soon</td>
 </tr>
 <tr>
 <td markdown="span" colspan="4"> [Project Milestone II]({{ site.baseurl }}/docs/milestone2) DUE Mon, Apr 26 2021 23:59 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708259)</td></tr>
 <tr>
 <td markdown="span">
 26 <br/> Tue, Apr 27 2021</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> Deadlock Avoidance </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+Coming soon</td>
 </tr>
 <tr>
 <td markdown="span">
 27 <br/> Thu, Apr 29 2021</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> Exam 2 Review </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+Coming soon</td>
 </tr>
 <tr>
 <td markdown="span">
 28 <br/> Fri, Apr 30 2021</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> Exam 2 </li>
+<li> 6:00 to 9:00 pm </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+</td>
 </tr>
 <tr>
 <td rowspan="5" markdown="span" style="font-size:xx-large;"><a name="w8">8</a></td>

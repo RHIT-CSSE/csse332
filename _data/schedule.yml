@@ -209,38 +209,35 @@
     - Lab time
   materials: 
   other:
-# 25:
-#   reading: Chapter 7
-#   topics:
-#     - Deadlock and Starvation
-#   materials: DeadlockStarvation
-#   other:
-#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%22d8f66dd5-9b83-4f88-9ee0-aba300dd05b5%22">Videos</a>
-#     - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424099">Activity Submission</a>
-# 26:
-#   reading: Chapter 7
-#   topics:
-#     - Deadlock Avoidance
-#   materials: DeadlockAvoidance
-#   other:  
-#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%22e2e35897-541b-49fc-852c-aba700fb6787%22">Videos</a>
-#     - No activity for today
-# 27:
-#   reading: 
-#   topics: 
-#     - Skills Test Review
-#   materials: Exam2Prep
-#   other:
-#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%2212294dc2-ec88-42bf-91c2-aba500e231c7%22">Video</a>
-#     - No activity, do a practice exam!  
-#     - SRT has a review session at 7 PM.
-# 28:
-#   reading:
-#   topics:
-#     - Exam 2 (Threading Skills Test)
-#     - Any 3 hours today
-#   materials: 
-#   other:  
+    - <a href="https://youtu.be/Kn310EWLWX8"> Session Recodring </a>
+25:
+  reading:
+  topics:
+    - Deadlocks and Starvation
+  materials:
+  other:
+    - Coming soon
+26:
+  reading:
+  topics:
+    - Deadlock Avoidance
+  materials:
+  other:  
+    - Coming soon
+27:
+  reading: 
+  topics: 
+    - Exam 2 Review
+  materials: 
+  other:
+    - Coming soon
+28:
+  reading:
+  topics:
+    - Exam 2
+    - 6:00 to 9:00 pm
+  materials: 
+  other:  
 # 29:
 #   reading:
 #   topics:
