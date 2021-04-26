@@ -426,7 +426,10 @@ Exam1Prep<br/>No activity!  Do a practice exam</td>
 <td rowspan="5" markdown="span" style="font-size:xx-large;"><a name="w7">7</a></td>
 <td markdown="span">
 25 <br/> Mon, Apr 26 2021</td>
-<td markdown="span">
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-bugs.pdf"> Chapter 32 </a> </li>
+</ul>{:/}
 </td>
 <td markdown="span" style="text-align:left">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
@@ -434,7 +437,7 @@ Exam1Prep<br/>No activity!  Do a practice exam</td>
 </ul>{:/}
 </td>
 <td markdown="span">
-Coming soon</td>
+<a href="{{ site.baseurl }}/sessions/25_session25/"> Session Information </a></td>
 </tr>
 <tr>
 <td markdown="span" colspan="4"> [Project Milestone II]({{ site.baseurl }}/docs/milestone2) DUE Mon, Apr 26 2021 23:59 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708259)</td></tr>

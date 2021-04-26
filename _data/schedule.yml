@@ -212,11 +212,12 @@
     - <a href="https://youtu.be/Kn310EWLWX8"> Session Recodring </a>
 25:
   reading:
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-bugs.pdf"> Chapter 32 </a>
   topics:
     - Deadlocks and Starvation
   materials:
   other:
-    - Coming soon
+    - <a href="{{ site.baseurl }}/sessions/25_session25/"> Session Information </a>
 26:
   reading:
   topics:
