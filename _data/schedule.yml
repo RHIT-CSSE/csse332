@@ -216,6 +216,7 @@
   other:
      - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=5c3e34d4-7013-4fe3-98f0-aca7014211d4">Video Lecture</a>
      - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2692825">Activity Submission</a>
+     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=13ae3b57-c871-42c8-9566-acbb013989b0">Demo Video</a>
 23:
   reading:
   topics:
@@ -264,38 +265,41 @@
     - Any 3 hours today
   materials: 
   other:  
-# 29:
-#   reading:
-#   topics:
-#     - Segmentation
-#   materials: Segmentation
-#   other:
-#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=b3b7e1f9-7421-4249-b7b9-acb4012f48df">Video Lecture</a>
-#     - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2424104">Activity Submission</a>
-# 30:
-#   reading:
-#   topics:
-#     - Paging
-#   materials: Paging
-#   other:
-#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=3783c289-a5fc-45f3-b09d-acb501773c89">Video Lecture</a>
-#     - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2424109"> Activity Submission </a>
-# 31:
-#   reading:
-#   topics:
-#     - Page Replacement Algorithms
-#   materials: PageReplacement
-#   other:  
-#      - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=9da717f1-b2b9-47d3-9cb8-abad00fce80c">Videos</a>
-#      - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424114">Activity Submission</a>
-# 32:
-#   reading:
-#   topics:
-#     - Lab/Project Work Time
-#   materials: 
-#   other:  
-#     - No video today just start VM Lab 1
-#     - <a href="Homework/VirtualMemoryLab/README"> Lab Instructions</a>
+29:
+  reading:
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-segmentation.pdf">Segmentation</a>
+  topics:
+    - Segmentation
+  materials: Segmentation
+  other:
+    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=b3b7e1f9-7421-4249-b7b9-acb4012f48df">Video Lecture</a>
+    - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2692834">Activity Submission</a>
+30:
+  reading:
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-paging.pdf">Introduction to Paging</a>
+  topics:
+    - Paging
+  materials: Paging
+  other:
+    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=3783c289-a5fc-45f3-b09d-acb501773c89">Video Lecture</a>
+    - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2692837">Activity Submission</a>
+31:
+  reading:
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-beyondphys.pdf">Swapping Mechanisms</a>
+  topics:
+    - Page Replacement Algorithms
+  materials: PageReplacement
+  other:  
+     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=9da717f1-b2b9-47d3-9cb8-abad00fce80c">Videos</a>
+     - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2692840">Activity Submission</a>
+32:
+  reading:
+  topics:
+    - Lab/Project Work Time
+  materials: 
+  other:  
+    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=80b0bf26-8e03-4ea7-80b6-acc9014a046d">Demo Video</a>
+    - <a href="Homework/VirtualMemoryLab/README"> Lab Instructions</a>
 # 33:
 #   reading:
 #   topics:
@@ -308,6 +312,7 @@
 #   reading:
 #   topics:
 #         - Advanced Paging
+    # - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-smalltables.pdf">Advanced Page Tables</a>
 #   materials: AdvancedPageTable
 #   other:
 #     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=db9c7e92-e41e-4773-a1c6-acbd0136ad28">Video Lecture</a>
