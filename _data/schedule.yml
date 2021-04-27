@@ -221,14 +221,14 @@
 26:
   reading:
   topics:
-    - Deadlock Avoidance
+    - Exam 2 Review
   materials:
   other:  
-    - Coming soon
+    - <a href="{{ site.baseurl }}/docs/exam2_guidelines/">Exam 2 Guidelines </a>
 27:
   reading: 
   topics: 
-    - Exam 2 Review
+    - Deadlock Avoidance
   materials: 
   other:
     - Coming soon
@@ -237,8 +237,10 @@
   topics:
     - Exam 2
     - 6:00 to 9:00 pm
+    - Lake room at the union
   materials: 
   other:  
+    - <a href="{{ site.baseurl }}/docs/exam2_guidelines/">Exam 2 Guidelines </a>
 # 29:
 #   reading:
 #   topics:

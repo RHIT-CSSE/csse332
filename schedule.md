@@ -448,11 +448,11 @@ Exam1Prep<br/>No activity!  Do a practice exam</td>
 </td>
 <td markdown="span" style="text-align:left">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
-<li> Deadlock Avoidance </li>
+<li> Exam 2 Review </li>
 </ul>{:/}
 </td>
 <td markdown="span">
-Coming soon</td>
+<a href="{{ site.baseurl }}/docs/exam2_guidelines/">Exam 2 Guidelines </a></td>
 </tr>
 <tr>
 <td markdown="span">
@@ -461,7 +461,7 @@ Coming soon</td>
 </td>
 <td markdown="span" style="text-align:left">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
-<li> Exam 2 Review </li>
+<li> Deadlock Avoidance </li>
 </ul>{:/}
 </td>
 <td markdown="span">
@@ -476,10 +476,11 @@ Coming soon</td>
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
 <li> Exam 2 </li>
 <li> 6:00 to 9:00 pm </li>
+<li> Lake room at the union </li>
 </ul>{:/}
 </td>
 <td markdown="span">
-</td>
+<a href="{{ site.baseurl }}/docs/exam2_guidelines/">Exam 2 Guidelines </a></td>
 </tr>
 <tr>
 <td rowspan="5" markdown="span" style="font-size:xx-large;"><a name="w8">8</a></td>
