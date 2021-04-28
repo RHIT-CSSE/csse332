@@ -452,7 +452,7 @@ Exam1Prep<br/>No activity!  Do a practice exam</td>
 </ul>{:/}
 </td>
 <td markdown="span">
-<a href="{{ site.baseurl }}/docs/exam2_guidelines/">Exam 2 Guidelines </a></td>
+<a href="{{ site.baseurl }}/docs/exam2_guidelines/">Exam 2 Guidelines </a><br/><a href="https://youtu.be/63U2lSIPhro"> Video recording </a></td>
 </tr>
 <tr>
 <td markdown="span">
