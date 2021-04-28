@@ -440,8 +440,6 @@ Exam1Prep<br/>No activity!  Do a practice exam</td>
 <a href="{{ site.baseurl }}/sessions/25_session25/"> Session Information </a></td>
 </tr>
 <tr>
-<td markdown="span" colspan="4"> [Project Milestone II]({{ site.baseurl }}/docs/milestone2) DUE Mon, Apr 26 2021 23:59 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708259)</td></tr>
-<tr>
 <td markdown="span">
 26 <br/> Tue, Apr 27 2021</td>
 <td markdown="span">
@@ -461,11 +459,11 @@ Exam1Prep<br/>No activity!  Do a practice exam</td>
 </td>
 <td markdown="span" style="text-align:left">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
-<li> Deadlock Avoidance </li>
+<li> More exam 2 review </li>
 </ul>{:/}
 </td>
 <td markdown="span">
-Coming soon</td>
+<a href="{{ site.baseurl }}/docs/exam2_guidelines/">Exam 2 Guidelines </a></td>
 </tr>
 <tr>
 <td markdown="span">
@@ -483,27 +481,61 @@ Coming soon</td>
 <a href="{{ site.baseurl }}/docs/exam2_guidelines/">Exam 2 Guidelines </a></td>
 </tr>
 <tr>
+<td markdown="span" colspan="4"> [Project Milestone II]({{ site.baseurl }}/docs/milestone2) DUE Sun, May 02 2021 23:59 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708259)</td></tr>
+<tr>
 <td rowspan="5" markdown="span" style="font-size:xx-large;"><a name="w8">8</a></td>
 <td markdown="span">
 29 <br/> Mon, May 03 2021</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> Deadlock detection and avoidance </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+Coming soon</td>
 </tr>
-<tr>
-<td markdown="span" colspan="4"> [ADVANCED Hybrid Threads]({{ site.baseurl }}/docs/10_hybrid_threads) DUE Mon, May 03 2021 23:59 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708064)</td></tr>
 <tr>
 <td markdown="span">
 30 <br/> Tue, May 04 2021</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> Segmentation </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+Coming soon</td>
 </tr>
 <tr>
 <td markdown="span">
 31 <br/> Thu, May 06 2021</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> Paging </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+Coming soon</td>
 </tr>
+<tr>
+<td markdown="span" colspan="4"> [ADVANCED Hybrid Threads]({{ site.baseurl }}/docs/10_hybrid_threads) DUE Thu, May 06 2021 23:59 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708064)</td></tr>
 <tr>
 <td markdown="span">
 32 <br/> Fri, May 07 2021</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> Page Replacement Algorithms </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+Coming soon</td>
 </tr>
 <tr>
 <td rowspan="4" markdown="span" style="font-size:xx-large;"><a name="w9">9</a></td>
