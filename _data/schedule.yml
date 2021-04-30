@@ -242,7 +242,7 @@
   materials: 
   other:  
     - <a href="{{ site.baseurl }}/docs/exam2_guidelines/">Exam 2 Guidelines </a>
-    - <a href=https://youtu.be/LkE3NcVhSp4">Video recording</a>
+    - <a href="https://youtu.be/LkE3NcVhSp4">Video recording</a>
 29:
   reading:
   topics:
