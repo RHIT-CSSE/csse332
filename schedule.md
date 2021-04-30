@@ -420,7 +420,7 @@ Exam1Prep<br/>No activity!  Do a practice exam</td>
 </ul>{:/}
 </td>
 <td markdown="span">
-<a href="https://youtu.be/Kn310EWLWX8"> Session Recodring </a></td>
+<a href="https://youtu.be/Kn310EWLWX8"> Session Recording </a></td>
 </tr>
 <tr>
 <td rowspan="5" markdown="span" style="font-size:xx-large;"><a name="w7">7</a></td>
@@ -478,7 +478,7 @@ Exam1Prep<br/>No activity!  Do a practice exam</td>
 </ul>{:/}
 </td>
 <td markdown="span">
-<a href="{{ site.baseurl }}/docs/exam2_guidelines/">Exam 2 Guidelines </a></td>
+<a href="{{ site.baseurl }}/docs/exam2_guidelines/">Exam 2 Guidelines </a><br/><a href=https://youtu.be/LkE3NcVhSp4">Video recording</a></td>
 </tr>
 <tr>
 <td markdown="span" colspan="4"> [Project Milestone II]({{ site.baseurl }}/docs/milestone2) DUE Sun, May 02 2021 23:59 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708259)</td></tr>

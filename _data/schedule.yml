@@ -209,7 +209,7 @@
     - Lab time
   materials: 
   other:
-    - <a href="https://youtu.be/Kn310EWLWX8"> Session Recodring </a>
+    - <a href="https://youtu.be/Kn310EWLWX8"> Session Recording </a>
 25:
   reading:
     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-bugs.pdf"> Chapter 32 </a>
@@ -242,6 +242,7 @@
   materials: 
   other:  
     - <a href="{{ site.baseurl }}/docs/exam2_guidelines/">Exam 2 Guidelines </a>
+    - <a href=https://youtu.be/LkE3NcVhSp4">Video recording</a>
 29:
   reading:
   topics:
