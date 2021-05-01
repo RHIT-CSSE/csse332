@@ -10,25 +10,34 @@ sem_t agentSem, tobaccoSem, paperSem, matchSem;
 void *
 agentA(void *ignored)
 {
-	sem_wait(&agentSem);
-	sem_post(&tobaccoSem);
-	sem_post(&paperSem);
+	while(1) {
+		sem_wait(&agentSem);
+		sem_post(&tobaccoSem);
+		sem_post(&paperSem);
+	}
+	return NULL;
 }
 
 void *
 agentB(void *ignored)
 {
-	sem_wait(&agentSem);
-	sem_post(&tobaccoSem);
-	sem_post(&matchSem);
+	while(1) {
+		sem_wait(&agentSem);
+		sem_post(&tobaccoSem);
+		sem_post(&matchSem);
+	}
+	return NULL;
 }
 
 void *
 agentC(void *ignored)
 {
-	sem_wait(&agentSem);
-	sem_post(&paperSem);
-	sem_post(&matchSem);
+	while (1) {
+		sem_wait(&agentSem);
+		sem_post(&paperSem);
+		sem_post(&matchSem);
+	}
+	return NULL;
 }
 
 void
@@ -42,28 +51,37 @@ smoke(void)
 void *
 smokerPaper(void *ignored)
 {
-	sem_wait(&tobaccoSem);
-	sem_wait(&matchSem);
-	smoke();
-	sem_post(&agentSem);
+	while(1) {
+		sem_wait(&tobaccoSem);
+		sem_wait(&matchSem);
+		smoke();
+		sem_post(&agentSem);
+	}
+	return NULL;
 }
 
 void *
 smokerTobacco(void *ignored)
 {
-	sem_wait(&paperSem);
-	sem_wait(&matchSem);
-	smoke();
-	sem_post(&agentSem);
+	while(1) {
+		sem_wait(&paperSem);
+		sem_wait(&matchSem);
+		smoke();
+		sem_post(&agentSem);
+	}
+	return NULL;
 }
 
 void *
 smokerMatches(void *ignored)
 {
-	sem_wait(&tobaccoSem);
-	sem_wait(&paperSem);
-	smoke();
-	sem_post(&agentSem);
+	while(1) {
+		sem_wait(&tobaccoSem);
+		sem_wait(&paperSem);
+		smoke();
+		sem_post(&agentSem);
+	}
+	return NULL;
 }
 
 #define NUM_AGENTS 3
@@ -73,9 +91,9 @@ int
 main(int argc, char **argv)
 {
 	sem_init(&agentSem, 0, 1);
-	sem_init(&tobaccoSem, 0, 1);
-	sem_init(&paperSem, 0, 1);
-	sem_init(&matchSem, 0, 1);
+	sem_init(&tobaccoSem, 0, 0);
+	sem_init(&paperSem, 0, 0);
+	sem_init(&matchSem, 0, 0);
 
 	pthread_t agents[3];
 	pthread_t smokers[3];
