@@ -300,38 +300,40 @@
   other:  
     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=80b0bf26-8e03-4ea7-80b6-acc9014a046d">Demo Video</a>
     - <a href="Homework/VirtualMemoryLab/README"> Lab Instructions</a>
-# 33:
-#   reading:
-#   topics:
-#           - More Virtual Memory
-#   materials: TLB
-#   other:  
-#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=fb42399d-2ed9-4731-84a0-abb10120c949"> Videos </a>
-#     - No activity today
-# 34:
-#   reading:
-#   topics:
-#         - Advanced Paging
-    # - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-smalltables.pdf">Advanced Page Tables</a>
-#   materials: AdvancedPageTable
-#   other:
-#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=db9c7e92-e41e-4773-a1c6-acbd0136ad28">Video Lecture</a>
-#     - <a href=https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2424119">Activity Submission</a>
-# 35:
-#   reading:
-#   topics:
-#     - Reference Counting
-#   materials: ReferenceCounting
-#   other:  
-#     - <a href="ClassMaterials/ReferenceCounting/reference_counting">Reference Counting Slides</a>
-#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=5d815ae5-41bf-4e48-8f21-abb4013009d7">Videos</a>
-#     - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424124">Activity Submission</a>
-# 36:
-#   reading:
-#   topics: 
-#     - Intro to Garbage Collection Lab
-#   materials: 
-#   other:  <a href="Homework/GarbageCollect">Lab Instructions</a>
+33:
+  reading:
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-tlbs.pdf">Paging - Faster Translations</a>
+  topics:
+          - More Virtual Memory
+  materials: TLB
+  other:  
+    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=fb42399d-2ed9-4731-84a0-abb10120c949"> Videos </a>
+    - No activity today
+34:
+  reading:
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-smalltables.pdf">Paging - Smaller Tables</a>
+  topics:
+        - Advanced Paging
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-smalltables.pdf">Advanced Page Tables</a>
+  materials: AdvancedPageTable
+  other:
+    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=db9c7e92-e41e-4773-a1c6-acbd0136ad28">Video Lecture</a>
+    - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2692843">Activity Submission</a>
+35:
+  reading:
+  topics:
+    - Reference Counting
+  materials: ReferenceCounting
+  other:  
+    - <a href="ClassMaterials/ReferenceCounting/reference_counting">Reference Counting Slides</a>
+    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=5d815ae5-41bf-4e48-8f21-abb4013009d7">Videos</a>
+    - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2692846">Activity Submission</a>
+36:
+  reading:
+  topics: 
+    - Intro to Garbage Collection Lab
+  materials: 
+  other:  <a href="Homework/GarbageCollect">Lab Instructions</a>
 # 37:
 #   reading:
 #   topics:
