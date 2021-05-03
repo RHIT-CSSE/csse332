@@ -1,5 +1,5 @@
 ---
-title: Semaphores Homework I
+title: Kernel Threads Advanced Lab
 layout: post
 date: Wed Apr 21 
 readtime: true
@@ -57,6 +57,14 @@ for this assignment.
 2.  Change it to include `hybrid_threads.h` rather than basic\_threads.h
 3.  Modify `schedule_threads` to match the new signature
 4.  Change` MAX_THREADS` to 100
+
+## Walkthrough video
+
+This is walkthrough video that you can take a look at after completing the above
+step. Please ignore the part that has to do with Microsoft Teams.
+
+<iframe src="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=e9dd2a93-3535-4bc9-9999-acb40139fdde&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="360" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
 
 # Adding more thread states
 
