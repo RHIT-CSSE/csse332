@@ -249,14 +249,15 @@
     - Deadlock detection and avoidance
   materials: 
   other:
-    - Coming soon
+    - <a href="{{ site.baseurl }}/sessions/29_session29/"> Session Information </a>
 30:
   reading:
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-segmentation.pdf"> Chapter 16 </a>
   topics:
     - Segmentation
   materials: 
   other:
-    - Coming soon
+    - <a href="{{ site.baseurl }}/sessions/30_session30/"> Session Information </a>
 31:
   reading:
   topics:

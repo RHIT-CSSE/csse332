@@ -494,12 +494,15 @@ Exam1Prep<br/>No activity!  Do a practice exam</td>
 </ul>{:/}
 </td>
 <td markdown="span">
-Coming soon</td>
+<a href="{{ site.baseurl }}/sessions/29_session29/"> Session Information </a></td>
 </tr>
 <tr>
 <td markdown="span">
 30 <br/> Tue, May 04 2021</td>
-<td markdown="span">
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-segmentation.pdf"> Chapter 16 </a> </li>
+</ul>{:/}
 </td>
 <td markdown="span" style="text-align:left">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
@@ -507,7 +510,7 @@ Coming soon</td>
 </ul>{:/}
 </td>
 <td markdown="span">
-Coming soon</td>
+<a href="{{ site.baseurl }}/sessions/30_session30/"> Session Information </a></td>
 </tr>
 <tr>
 <td markdown="span">
