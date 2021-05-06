@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Session 30: Segmentation
+title: Session 30 Segmentation
 readtime: true
 date: Tue May  4 08:35:24 2021
 gh-repo: rhit-csse332/csse332-202130
@@ -27,4 +27,5 @@ We will look at two of the early methods to achieve memory virtualization:
 
 # Video recording
 
-Coming soon.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GmzPDYfsNfY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+

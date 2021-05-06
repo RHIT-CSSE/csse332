@@ -264,14 +264,14 @@
     - Paging
   materials: 
   other:  
-    - Coming soon
+    - <a href="{{ site.baseurl }}/sessions/31_session31/"> Session Information </a>
 32:
   reading:
   topics:
-    - Page Replacement Algorithms
+    - More Paging
   materials: 
   other:  
-    - Coming soon
+    - <a href="{{ site.baseurl }}/sessions/32_session32/"> Session Information </a>
 # 33:
 #   reading:
 #   topics:
