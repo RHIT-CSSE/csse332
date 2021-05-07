@@ -268,10 +268,10 @@
 32:
   reading:
   topics:
-    - More Paging
+    - Milestone 3 Kickoff
   materials: 
   other:  
-    - <a href="{{ site.baseurl }}/sessions/32_session32/"> Session Information </a>
+    - <a href="{{ site.baseurl }}/docs/checkpoint1/"> Session Information </a>
 # 33:
 #   reading:
 #   topics:

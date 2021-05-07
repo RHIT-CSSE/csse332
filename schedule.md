@@ -534,11 +534,11 @@ Exam1Prep<br/>No activity!  Do a practice exam</td>
 </td>
 <td markdown="span" style="text-align:left">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
-<li> More Paging </li>
+<li> Milestone 3 Kickoff </li>
 </ul>{:/}
 </td>
 <td markdown="span">
-<a href="{{ site.baseurl }}/sessions/32_session32/"> Session Information </a></td>
+<a href="{{ site.baseurl }}/docs/checkpoint1/"> Session Information </a></td>
 </tr>
 <tr>
 <td rowspan="5" markdown="span" style="font-size:xx-large;"><a name="w9">9</a></td>
