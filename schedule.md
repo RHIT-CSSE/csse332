@@ -541,7 +541,7 @@ Exam1Prep<br/>No activity!  Do a practice exam</td>
 <a href="{{ site.baseurl }}/docs/checkpoint1/"> Session Information </a></td>
 </tr>
 <tr>
-<td rowspan="5" markdown="span" style="font-size:xx-large;"><a name="w9">9</a></td>
+<td rowspan="6" markdown="span" style="font-size:xx-large;"><a name="w9">9</a></td>
 <td markdown="span">
 33 <br/> Mon, May 10 2021</td>
 <td markdown="span" colspan="3">N/A</td>
@@ -563,6 +563,8 @@ Exam1Prep<br/>No activity!  Do a practice exam</td>
 36 <br/> Fri, May 14 2021</td>
 <td markdown="span" colspan="3">N/A</td>
 </tr>
+<tr>
+<td markdown="span" colspan="4"> [Milestone 3 Checkpoint 1]({{ site.baseurl }}/docs/checkpoint1) DUE Fri, May 14 2021 23:59 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2815155)</td></tr>
 <tr>
 <td rowspan="4" markdown="span" style="font-size:xx-large;"><a name="w10">10</a></td>
 <td markdown="span">

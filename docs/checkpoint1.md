@@ -18,6 +18,15 @@ gh-badge: [star,watch,follow]
   * [Stopping the thread](#stopping-the-thread)
   * [Testing](#testing)
 * [Sophomore: First-In-First-Out Round Robin Scheduling](#sophomore-first-in-first-out-round-robin-scheduling)
+  * [Logistics](#logistics)
+    * [Testing](#testing-1)
+  * [Data structures](#data-structures)
+    * [The queue](#the-queue)
+    * [The currently running process PCB](#the-currently-running-process-pcb)
+  * [Scheduling](#scheduling)
+  * [Registration](#registration)
+  * [Yield](#yield)
+  * [Deregistration](#deregistration)
 
 <!-- vim-markdown-toc -->
 
@@ -220,5 +229,136 @@ year! Exciting...
 
 # Sophomore: First-In-First-Out Round Robin Scheduling
 
-Coming up next!
+Now that we know how to use kernel threads, let's go ahead and start with our
+implementation of a FIFO round robin scheduler. There are a few things that
+we'd want to worry about, so let's go through them one by one.
+
+## Logistics
+
+We saw in the previous section that we can use `set_current_state` to change the
+state of the `current` task structure. However, to implement a scheduler, we
+will also need to change the state of other tasks, not just `current`. To help
+you out, I have provided you with code to do so. Copy the code below into your
+module source.
+
+```c
+static inline void
+set_task_state(struct task_struct *tsk, long state)
+{
+	smp_store_mb(tsk->state, state);
+}
+```
+
+### Testing
+
+In order to help you test things out, I have added a user space library and a
+few applications for you to use. You can find the source code for these
+applications and its documentation
+[here](https://github.com/rhit-csse332/userlib). Feel free to simply clone this
+repository or to fork it if you would like to write your own test cases.
+
+
+## Data structures
+
+First, let's figure out our data structures.
+
+### The queue
+
+To implement a FIFO scheduler, we will definitely need a run queue to hold the
+set of processes that we would like to run in the order that they come into our
+system. Our linked list of processes can serve this purpose very well, however,
+you can also create a separate list to represent the run queue; that is totally
+up to you. In my implementation, I used the database to serve the dual purpose
+of holding the list of registered processes as well as the run queue.
+
+### The currently running process PCB
+
+Since our scheduler will now take over the scheduling mechanism, it must then
+remember which process it is currently running. We will assume that we will only
+be running a single process at a time, even if we have several processors (or
+CPU cores) available. We therefore have to keep track of the currently scheduled
+process. To do so, add a global PCB variable by the name
+`current_scheduled_process` (or any name you like) to your module, and
+initialize it to `NULL` in your initialization function.
+
+## Scheduling
+
+The scheduling thread is the crux of this checkpoint and it is where all the fun
+stuff happens. Every time the scheduler thread wakes up, it needs to do the
+following (in the following order):
+1. Cancel any pending timers (since it might be waken up from a `yield` call).
+1. If there is no currently a running process (first time we run, no processes
+   to schedule, etc.), it will pick the next process to run from the run queue.
+   Go to step 4.
+2. If there were a process running (i.e., we scheduled a process before),
+   then we must:
+   - Put the currently running process to sleep (set its state to
+       `TASK_INTERRUPTIBLE`). Do not call `schedule()` yet.
+   - Pick the next process to run
+3. If the run queue is empty, the scheduler will do nothing
+3. Prepare the next process for running (update the run queue, etc.)
+4. Set the kernel thread's state to `TASK_INTERRUPTIBLE` (as we did in the
+   previous section)
+5. Set a new timer for a new quantum
+6. Call `schedule()`
+
+__Hint__: Make sure to put the previously running process back on the run
+queue.
+
+__Hint__: The macro `list_first_entry` might cause a segmentation fault if
+called on an empty linked list. Use the `list_empty` function (defined
+[here](https://elixir.bootlin.com/linux/latest/source/include/linux/list.h#L280))
+to check if the list is empty before using `list_first_entry`.
+
+## Registration
+
+Now let's take care of registering new processes. When a process registers, the
+following must happen:
+- Allocate and initialize a PCB for the process
+- Add the PCB to the database
+- (NEW) Add the process to the tail of the run queue (this might be resolved by
+  the previous step if you are using the database as the run queue).
+- (NEW) __Put the process to sleep__.
+
+Since a process that has just registered does not have a turn in our round robin
+scheduler yet, we will initially put the process to sleep. This will have the
+undesired effect of having the first process to register into the system 
+wait for one quantum in order to run, even if there are no other processes in
+the system. But we will live with that.
+
+To put a process to sleep, you can use the following code
+```c
+set_current_state(TASK_INTERRUPTIBLE);
+schedule();
+```
+
+## Yield
+
+When a process yields, it should inform the scheduler that it is yielding and
+call on the scheduler to schedule another process. To wake up the scheduling
+thread, you can use the following code
+```c
+wake_up_process(scheduler_thread);
+```
+
+## Deregistration
+
+Now this one is a little bit tricky, because we a process might write `W` to
+deregister, but then be swapped out right before it has deregistered, so then
+bad things will happen if you are not careful.
+
+To avoid this problem, we will delete things from the deregistration handler and
+then call on the scheduler to take care of the rest. Therefore, in the
+deregistration handler, do the following:
+1. If the process trying to deregister is the currently running process (use the
+   global struct that we defined in the logistics section), then simply `kfree` the
+   pointer and set `current_scheduled_process` to `NULL`.
+2. If the process trying to deregister is not the currently running process
+   (might happen due to unfortunate timing from our scheduler), then find the
+   process in the database and the run queue, delete it from both, then free the
+   pointer.
+
+__HINT__: Make sure in all these steps to hold appropriate locks over the
+database and run queue, otherwise, as we always say, bad things will happen!
+
 
