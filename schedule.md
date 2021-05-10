@@ -544,7 +544,15 @@ Exam1Prep<br/>No activity!  Do a practice exam</td>
 <td rowspan="6" markdown="span" style="font-size:xx-large;"><a name="w9">9</a></td>
 <td markdown="span">
 33 <br/> Mon, May 10 2021</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> Project and assignment work time </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+No activity today</td>
 </tr>
 <tr>
 <td markdown="span" colspan="4"> [Virtual Memory Lab 1]({{ site.baseurl }}/docs/11_virtualmem) DUE Mon, May 10 2021 23:59 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708094)</td></tr>

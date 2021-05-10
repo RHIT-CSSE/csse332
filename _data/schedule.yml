@@ -272,14 +272,13 @@
   materials: 
   other:  
     - <a href="{{ site.baseurl }}/docs/checkpoint1/"> Session Information </a>
-# 33:
-#   reading:
-#   topics:
-#           - More Virtual Memory
-#   materials: TLB
-#   other:  
-#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=fb42399d-2ed9-4731-84a0-abb10120c949"> Videos </a>
-#     - No activity today
+33:
+  reading:
+  topics:
+    - Project and assignment work time
+  materials: 
+  other:  
+    - No activity today
 # 34:
 #   reading:
 #   topics:
