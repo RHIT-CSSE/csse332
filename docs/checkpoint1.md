@@ -27,6 +27,7 @@ gh-badge: [star,watch,follow]
   * [Registration](#registration)
   * [Yield](#yield)
   * [Deregistration](#deregistration)
+* [Expected output](#expected-output)
 
 <!-- vim-markdown-toc -->
 
@@ -361,4 +362,10 @@ deregistration handler, do the following:
 __HINT__: Make sure in all these steps to hold appropriate locks over the
 database and run queue, otherwise, as we always say, bad things will happen!
 
+# Expected output
+
+I have recorded a short video for you to show what the expected output of
+running the test code.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/aRq45kF2xsU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
