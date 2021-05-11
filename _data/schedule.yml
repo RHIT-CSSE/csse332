@@ -279,29 +279,27 @@
   materials: 
   other:  
     - No activity today
-# 34:
-#   reading:
-#   topics:
-#         - Advanced Paging
-#   materials: AdvancedPageTable
-#   other:
-#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=db9c7e92-e41e-4773-a1c6-acbd0136ad28">Video Lecture</a>
-#     - <a href=https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2424119">Activity Submission</a>
-# 35:
-#   reading:
-#   topics:
-#     - Reference Counting
-#   materials: ReferenceCounting
-#   other:  
-#     - <a href="ClassMaterials/ReferenceCounting/reference_counting">Reference Counting Slides</a>
-#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=5d815ae5-41bf-4e48-8f21-abb4013009d7">Videos</a>
-#     - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424124">Activity Submission</a>
-# 36:
-#   reading:
-#   topics: 
-#     - Intro to Garbage Collection Lab
-#   materials: 
-#   other:  <a href="Homework/GarbageCollect">Lab Instructions</a>
+34:
+  reading:
+  topics:
+        - Paging issues
+  materials: 
+  other:
+    - <a href="{{ site.baseurl }}/sessions/34_session34/"> Session Information </a>
+35:
+  reading:
+  topics:
+    - Page replacement algorithms
+  materials: 
+  other:  
+    - Coming soon
+36:
+  reading:
+  topics: 
+    - Intro to OS security
+  materials: 
+  other:  
+    - Coming soon 
 # 37:
 #   reading:
 #   topics:

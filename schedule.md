@@ -559,17 +559,41 @@ No activity today</td>
 <tr>
 <td markdown="span">
 34 <br/> Tue, May 11 2021</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> Paging issues </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+<a href="{{ site.baseurl }}/sessions/34_session34/"> Session Information </a></td>
 </tr>
 <tr>
 <td markdown="span">
 35 <br/> Thu, May 13 2021</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> Page replacement algorithms </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+Coming soon</td>
 </tr>
 <tr>
 <td markdown="span">
 36 <br/> Fri, May 14 2021</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> Intro to OS security </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+Coming soon</td>
 </tr>
 <tr>
 <td markdown="span" colspan="4"> [Milestone 3 Checkpoint 1]({{ site.baseurl }}/docs/checkpoint1) DUE Fri, May 14 2021 23:59 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2815155)</td></tr>
