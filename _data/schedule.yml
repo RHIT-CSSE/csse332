@@ -332,7 +332,7 @@
   topics: 
     - Intro to Garbage Collection Lab
   materials: 
-  other:  <a href="Homework/GarbageCollect">Lab Instructions</a>
+  other:  <a href="Homework/GarbageCollect/README">Lab Instructions</a>
 37:
   reading:
   topics:

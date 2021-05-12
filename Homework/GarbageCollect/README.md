@@ -1,3 +1,36 @@
+---
+title: Gabage Collection Lab
+layout: togit
+---
+
+<!-- TOC -->
+
+- [Forth and Memory](#forth-and-memory)
+    - [1. <a name='Theforthstack'></a>The forth stack](#1-a-nametheforthstackathe-forth-stack)
+    - [2. <a name='Theheap'></a>The heap](#2-a-nametheheapathe-heap)
+- [How Our Garbage Collector Will Operate](#how-our-garbage-collector-will-operate)
+    - [1. <a name='Trackingallocatedregions'></a>Tracking allocated regions](#1-a-nametrackingallocatedregionsatracking-allocated-regions)
+    - [2. <a name='Findingaccessibleregions'></a>Finding accessible regions](#2-a-namefindingaccessibleregionsafinding-accessible-regions)
+    - [3. <a name='CollectingtheGarbage'></a>Collecting the Garbage](#3-a-namecollectingthegarbageacollecting-the-garbage)
+- [Step 1: Record all regions](#step-1-record-all-regions)
+    - [1. <a name='Howtostoreregioninformation'></a>How to store region information](#1-a-namehowtostoreregioninformationahow-to-store-region-information)
+    - [2. <a name='Howthecallbacksarecalled'></a>How the callbacks are called](#2-a-namehowthecallbacksarecalledahow-the-callbacks-are-called)
+    - [3. <a name='WhatdoIneedtodo'></a>What do I need to do?](#3-a-namewhatdoineedtodoawhat-do-i-need-to-do)
+    - [4. <a name='Testing'></a>Testing](#4-a-nametestingatesting)
+- [Step 2: Identify all inaccessible regions](#step-2-identify-all-inaccessible-regions)
+    - [1. <a name='Testing-1'></a>Testing](#1-a-nametesting-1atesting)
+- [Step 3: Garbage collect](#step-3-garbage-collect)
+    - [1. <a name='a:gc_no_pointer_rewrite'></a>3a: gc\_no\_pointer\_rewrite](#1-a-nameagc_no_pointer_rewritea3a-gc\_no\_pointer\_rewrite)
+    - [2. <a name='b:gc_stack_update'></a>3b: gc\_stack\_update](#2-a-namebgc_stack_updatea3b-gc\_stack\_update)
+    - [3. <a name='c:gc_internal_data_update'></a>3c: gc\_internal\_data\_update](#3-a-namecgc_internal_data_updatea3c-gc\_internal\_data\_update)
+    - [4. <a name='d:gc_unaligned_data_update'></a>3d: gc\_unaligned\_data\_update](#4-a-namedgc_unaligned_data_updatea3d-gc\_unaligned\_data\_update)
+    - [5. <a name='e:gc_code_relocation'></a>3e: gc\_code\_relocation](#5-a-nameegc_code_relocationa3e-gc\_code\_relocation)
+- [Conclusion](#conclusion)
+- [Rubric](#rubric)
+
+<!-- /TOC -->
+
+
 In this assignment, we build a simple garbage collector for the forth
 programming language.
 
@@ -13,7 +46,7 @@ Forth has a similar memory layout with 2 regions (actually 3, but
 we're going to ignore the return stack for the purposes of this
 assignment).  
 
-## The forth stack
+## 1. <a name='Theforthstack'></a>The forth stack
 
 The first region is the stack.  Code like this
 
@@ -38,7 +71,7 @@ The fact that all local memory is stored in a single space will be
 very handy to us as we try and compute what parts of memory are still
 accessible.
 
-## The heap
+## 2. <a name='Theheap'></a>The heap
 
 The second region is the heap.  A variable called HERE keeps track of
 the next available space on the heap.  Adding new functions, values,
@@ -58,7 +91,7 @@ regions (and references to those regions) to compact the unused space**.
 This section will explain the general approach and then Steps 1 - 3 below
 will walk you through the process.
 
-## Tracking allocated regions
+## 1. <a name='Trackingallocatedregions'></a>Tracking allocated regions
 
 To garbage collect, first we must have a idea of regions of memory.
 In some languages "regions" might correspond to individual objects or
@@ -70,7 +103,7 @@ We will annotate core forth functions to track regions and call
 callbacks in C.  You will build an internal data structure that tracks
 all currently allocated regions and where they start and end.
 
-## Finding accessible regions
+## 2. <a name='Findingaccessibleregions'></a>Finding accessible regions
 
 At some point, forth's execution will be paused and the garbage
 collector will be explicitly invoked (this is in contrast to modern
@@ -112,7 +145,7 @@ Forth routinely uses pointer arithmetic so we're just going to have be
 aware of the way garbage collection works in our test code or we can
 cause memory corruption bugs.
 
-## Collecting the Garbage
+## 3. <a name='CollectingtheGarbage'></a>Collecting the Garbage
 
 Once regions have been marked as accessible and inaccessible, we will
 compact memory.  The basic algorithm will be:
@@ -149,7 +182,7 @@ To do this, we'll have two callbacks: handle\_alloc\_begin() and
 handle\_alloc\_end().  Begin will be called at the start of an
 allocation and end will be called at the end of an allocation.
 
-## How to store region information
+## 1. <a name='Howtostoreregioninformation'></a>How to store region information
 
 You need to store information for each allocated region - at minimum
 where it begins and ends.  How you store it is up to you, but I do
@@ -171,7 +204,7 @@ have some suggestions:
     one you write yourself or one your found on the internet) feel
     free.
 
-## How the callbacks are called
+## 2. <a name='Howthecallbacksarecalled'></a>How the callbacks are called
 
 The callbacks are configured in the function initialize\_forth\_for\_test().  
 This function is called before each test case.  
@@ -182,7 +215,7 @@ forth functions like ":" (function declaration) "VARIABLE" and
 before they begin (calling handle\_alloc\_begin()) and when they end
 (calling handle\_alloc\_end()).
 
-## What do I need to do?
+## 3. <a name='WhatdoIneedtodo'></a>What do I need to do?
 
 All of the tricky forth code that this section needs is implemented
 for you.  What you need to do is:
@@ -203,7 +236,7 @@ for you.  What you need to do is:
    our garbage collection algorithm, but they are used by the first
    test case.
    
-## Testing
+## 4. <a name='Testing'></a>Testing
 
 There is one testcase for this step: test\_region\_records.  Running
 
@@ -253,7 +286,7 @@ I reccommend you write a seperate function to identify inaccessable regions.
 You can call it whatever you like but you'll need to invoke it from
 compute\_unrefed\_size() which is what the test cases use (see below).
 
-## Testing
+## 1. <a name='Testing-1'></a>Testing
 
 All the tests in this section use the function
 compute\_unrefed\_size() which returns the number of unreferenced
@@ -277,7 +310,7 @@ I've tried to simplify things by making a set of gradually more
 difficult tests.  You'll need to uncomment them one at a time from
 main.
 
-## 3a: gc\_no\_pointer\_rewrite
+## 1. <a name='a:gc_no_pointer_rewrite'></a>3a: gc\_no\_pointer\_rewrite
 
 So there are basically 2 things we need to do:
 
@@ -308,7 +341,7 @@ Here's a few hints:
 5. Update forth.here when you're all done or your newly reclaimed
    memory won't be usable.
 
-## 3b: gc\_stack\_update
+## 2. <a name='b:gc_stack_update'></a>3b: gc\_stack\_update
 
 The next test requires you to rewrite pointers but only pointers that
 are on forth's stack.
@@ -325,7 +358,7 @@ A few hints:
    reflect their new positions - garbage collection can happen
    multiple times
    
-## 3c: gc\_internal\_data\_update
+## 3. <a name='c:gc_internal_data_update'></a>3c: gc\_internal\_data\_update
 
 For this test, you must also update pointers within the memory
 regions.
@@ -337,7 +370,7 @@ regions.
    destinations known).
 
 
-## 3d: gc\_unaligned\_data\_update
+## 4. <a name='d:gc_unaligned_data_update'></a>3d: gc\_unaligned\_data\_update
 
 If you did 3c right, this might immediately work.  If you assumed that
 pointers occur on 8-byte boundaries like the do on the forth stack,
@@ -351,7 +384,7 @@ probably going to discover a problem here.  Take a look at memmove
 instead.
 
 
-## 3e: gc\_code\_relocation
+## 5. <a name='e:gc_code_relocation'></a>3e: gc\_code\_relocation
 
 So this is where things get weird.  In forth, the heap contains not
 only data but actual compiled code...meaning we might need to relocate
