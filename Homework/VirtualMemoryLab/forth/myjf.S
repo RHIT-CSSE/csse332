@@ -226,7 +226,7 @@ code_\label :			// assembler code follows
 	pop %rbx
 	cmp %rbx,%rax
 	sete %al
-	movzbq %al,%eax
+	movzbq %al,%rax
 	push %rax
 	NEXT
 
