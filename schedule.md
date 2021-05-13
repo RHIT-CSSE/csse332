@@ -580,7 +580,7 @@ No activity today</td>
 </ul>{:/}
 </td>
 <td markdown="span">
-Coming soon</td>
+<a href="{{ site.baseurl }}/sessions/35_session35/"> Session Information </a></td>
 </tr>
 <tr>
 <td markdown="span">

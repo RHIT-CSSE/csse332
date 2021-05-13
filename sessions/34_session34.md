@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Session 34: Paging Issues
+title: Session 34 Paging Issues
 readtime: true
 date: Mon May 10 19:55:33 2021
 gh-repo: rhit-csse332/csse332-202130

@@ -292,7 +292,7 @@
     - Page replacement algorithms
   materials: 
   other:  
-    - Coming soon
+    - <a href="{{ site.baseurl }}/sessions/35_session35/"> Session Information </a>
 36:
   reading:
   topics: 

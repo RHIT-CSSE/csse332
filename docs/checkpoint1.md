@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Term Project (Milestone 3: Checkpoint I)
+title: Term Project (Milestone 3 - Checkpoint I)
 readtime: true
 date: Fri May  7 11:49:55 2021
 gh-repo: rhit-csse332/csse332-202130
