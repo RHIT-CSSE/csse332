@@ -20,8 +20,13 @@ gh-badge: [star,watch,follow]
   * [Data structures](#data-structures)
   * [Timers](#timers)
   * [Registration](#registration)
-* [Senior: Rules 3 and 5](#senior-rules-3-and-5)
-* [Rubric: Rule 4](#rubric-rule-4)
+  * [Yielding](#yielding)
+  * [Deregistration](#deregistration)
+  * [The scheduler](#the-scheduler)
+  * [Testing](#testing)
+* [Senior: Rule 5](#senior-rule-5)
+* [Graduation: Rules 3 and 4](#graduation-rules-3-and-4)
+* [Rubric](#rubric)
 
 <!-- vim-markdown-toc -->
 
@@ -178,7 +183,73 @@ registering process to sleep. That was my way of implementing my system, it is
 up to you to design your approach to handling registration. Make sure to
 document your decisions in your project report.
 
-# Senior: Rules 3 and 5
+## Yielding
 
-# Rubric: Rule 4
+The yield process does not change much from checkpoint 1, all you have to do is
+to make sure that the process that is yielding is the currently running one (how
+would you do that?) then wake up the scheduler to take on the work after that.
+
+## Deregistration
+
+The process of deregistration is similar to the case we did in checkpoint 1. If
+the deregistering process is the currently running one, then we need to do the
+following:
+1. Cancel the process's timer
+2. Remove the process from its corresponding queue
+3. Wake up the scheduler to take over.
+4. Set the currently running process pointer to NULL (to avoid segfaults form
+   the scheduler -- think about why).
+
+Otherwise (i.e., if the deregistering process is not the currently running one
+-- due to the weird scheduling issue with multiple CPUs), then we only need to
+delete the process from its queue, and no need to wake up the scheduler. 
+
+## The scheduler
+
+The scheduler is where most of the work needs to happen. _The scheduler must
+always maintain knowledge of the currently running process_. Note that the
+scheduler may be called (or waken up) from three different places in the code:
+1. A timer from a process
+2. A process yielding
+3. A process deregistering
+
+To avoid issues with the scheduler being called from outside of a timer
+interrupt, I suggested that you always cancel the timer of the currently running
+process, if any. This will guarantee that the scheduler will only run once.
+
+The first thing the scheduler must do is to pick a new process to run, if any.
+To do, if must scan all of the queues in order of priority, and select the first
+available process to be run, at the highest priority level available. 
+
+After finding the next process to run, the scheduler must put the currently
+running process to sleep. 
+
+Finally, the scheduler will wake up the next process to run, adjust the
+currently running process pointer (change your local pointer, DO NOT CHANGE THE
+`current` pointer, you will brick your machine if you do), and set the timer for
+the process to trigger after exactly one quantum (note that the quantum will be
+different depending on which queue does the process come from).
+
+## Testing
+
+At this point, you should have an MLFQ system that satisfies rules 1 and 2 of
+the MLFQ rules. 
+
+Test your system by first inserting the module and running two instances of the
+`userapp` from the `userlib` that I provided you with. The first one you run
+should go into the higher priority queue, while the second one should go in the
+queue following that one. The expected output is that the first process will run
+to completion and then and only then will the second process run. 
+
+Next, try to run three instances of `userapp` and make sure they the first one
+runs and finishes first, then the second one, then the third. 
+
+# Senior: Rule 5
+
+
+
+# Graduation: Rules 3 and 4
+
+
+# Rubric
 
