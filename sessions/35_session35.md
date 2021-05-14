@@ -32,5 +32,5 @@ is it going to replace? That's what we're going to answer in today's lecture.
 
 # Video recordings
 
-Coming soon...
+<iframe width="560" height="315" src="https://www.youtube.com/embed/m-g5P_oS_Fc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
