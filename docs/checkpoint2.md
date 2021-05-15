@@ -25,6 +25,7 @@ gh-badge: [star,watch,follow]
   * [The scheduler](#the-scheduler)
   * [Testing](#testing)
 * [Senior: Rule 5](#senior-rule-5)
+  * [Testing](#testing-1)
 * [Graduation: Rules 3 and 4](#graduation-rules-3-and-4)
 * [Rubric](#rubric)
 
@@ -242,11 +243,41 @@ queue following that one. The expected output is that the first process will run
 to completion and then and only then will the second process run. 
 
 Next, try to run three instances of `userapp` and make sure they the first one
-runs and finishes first, then the second one, then the third. 
+runs and finishes first, then the second one, then the third. Here's a quick
+tutorial video that shows you what you should expect when running your code.
+
+<iframe src="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=7716083a-db37-4d11-abcf-ad2801527267&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="360" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
 
 # Senior: Rule 5
 
+In this section, we will simply add support for rule 5, which states that every
+`P` seconds, we will put everything into the top most queue. I chose a value of
+10 seconds, but it is up to you to choose and justify the value you choose for
+your module.
 
+You can implement this step either using a kernel thread or using a work queue,
+it is totally up to you. I chose to use another kernel thread in my
+implementation. 
+
+Here's how things go in this step, every `P` seconds, a timer will go off and
+wake up a thread or add a work onto the work queue. Once that work executes (or
+the thread wakes up), it will look at all the lower priority queue in order, and
+move their corresponding entries in the topmost priority queue. That way, the
+next time that the scheduler runs, it will for sure run those processes that
+were originally in the lower priority queues. 
+
+__Note__ If you maintain references in each process to which queue it belongs
+to, don't forget to update those after you make the changes!
+
+## Testing
+
+To test support for rule 5, set a shorter time period for the bumping mechanism
+to happen (I tested it with a 1 second timer). Then start two `userapp`s from
+the given test code. You should first see the first process running on its own,
+then a short while later, the second process will join it in the execution, and
+they will start running in a round-robin fashion. Here's a quick video to
+illustrate this process:
 
 # Graduation: Rules 3 and 4
 
