@@ -618,5 +618,8 @@ Coming soon</td>
 40 <br/> Fri, May 21 2021</td>
 <td markdown="span" colspan="3">N/A</td>
 </tr>
+<tr>
+<td rowspan="1" markdown="span" style="font-size:xx-large;"><a name="w11">11</a></td>
+<td markdown="span" colspan="4"> [Milestone 3 Checkpoint 2]({{ site.baseurl }}/docs/checkpoint2) DUE Thu, May 27 2021 17:00 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708262)</td></tr>
 </tbody>
 </table>

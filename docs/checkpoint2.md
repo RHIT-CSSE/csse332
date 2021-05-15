@@ -27,6 +27,9 @@ gh-badge: [star,watch,follow]
 * [Senior: Rule 5](#senior-rule-5)
   * [Testing](#testing-1)
 * [Graduation: Rules 3 and 4](#graduation-rules-3-and-4)
+  * [Rule 3](#rule-3)
+  * [Rule 4](#rule-4)
+  * [Testing](#testing-2)
 * [Rubric](#rubric)
 
 <!-- vim-markdown-toc -->
@@ -35,7 +38,7 @@ gh-badge: [star,watch,follow]
 
 In the second checkpoint of milestone 3, we will finally put things together and
 design our Multi-Level-Feedback-Queue (MLFQ) scheduling algorithm. We will start
-from our FIFO round robin scheduler that we design in checkpoint I and use that
+from our FIFO round robin scheduler that we designed in checkpoint I and use that
 to lead us forward into our design and implementation. 
 
 ## Learning objectives
@@ -54,7 +57,7 @@ Recall [our
 discussion](https://rhit-csse332.github.io/csse332-202130/sessions/14_session14/)
 of the MLFQ scheduling algorithm from Session 14. In MLFQ, we will try to
 optimize for both the _turnaround_ as well as the _response time_. The MLFQ
-scheduling algorithm is composed for five rules:
+scheduling algorithm is composed of five rules:
 1. If `Priority(A) > Priority(B)`, then A runs and B doesn't.
 2. If `Priority(A) == Priority(B)`, then A and B run in round-robin fashion
    using the quantum length __of the given queue__.
@@ -88,18 +91,19 @@ justify your design choices__.
 
 # Submission
 
-Please submit the following to the moodle dropbox by the 5:00 on the last day of
-finals:
+Please submit the following to the moodle dropbox by 5:00 pm on the last day of
+finals (Thursday May 27):
 - Your project source code (so far, we've been using `project.c`)
 - Your makefile
+- Your test files
 - A project report (in PDF format) that contains the following:
   - An overview of your design (one paragraph)
   - A list of your design decisions, along with justification for each design
     decision (one paragraph per design decision)
   - A list of the challenges you faced, along with a description of how you
-    overcame (or did not) the challenge.
+    overcame (or did not overcome) the challenge.
   - A description of your testing environment along with screenshots showing
-    your test cases. I suggested your record a video of your test cases to
+    your test cases. I suggest your record a video of your test cases to
     explain them to me, but that is optional, screenshots will do.
 
 If you were not able to complete the project, then please include a detailed
@@ -123,10 +127,10 @@ etc.).
 ## Data structures
 
 To achieve our goal, let's first start by modifying our data structures. Instead
-of a single linked list, we will now a linked list (i.e., a queue) for each of
-our run queues (recall, you must have at least three). In my implementation, I
-found it easier to declare a structure for each queue, something along the lines
-of:
+of a single linked list, we will now need a linked list (i.e., a queue) for each
+of our run queues (recall, you must have at least three). In my implementation,
+I found it easier to declare a structure for each queue, something along the
+lines of:
 ```c
 #define MAX_QUEUES 3
 
@@ -166,8 +170,8 @@ and so on.
 
 In my implementation, instead of keeping a single global timer, I found it
 easier to create a timer for each process that is being scheduled. Once I know
-the process I need to schedule and the queue from which it was scheduler, I can
-use `mod_timer` to appropriately set when the next timer will go on.
+the process I need to schedule and the queue from which it was scheduled, I can
+use `mod_timer` to appropriately set when the next timer will go off.
 
 ## Registration
 
@@ -187,8 +191,9 @@ document your decisions in your project report.
 ## Yielding
 
 The yield process does not change much from checkpoint 1, all you have to do is
-to make sure that the process that is yielding is the currently running one (how
-would you do that?) then wake up the scheduler to take on the work after that.
+to make sure that the process that is yielding is the currently scheduled one
+(how would you do that?) then wake up the scheduler to take on the work after
+that.
 
 ## Deregistration
 
@@ -197,9 +202,9 @@ the deregistering process is the currently running one, then we need to do the
 following:
 1. Cancel the process's timer
 2. Remove the process from its corresponding queue
-3. Wake up the scheduler to take over.
-4. Set the currently running process pointer to NULL (to avoid segfaults form
+3. Set the currently running process pointer to NULL (to avoid segfaults form
    the scheduler -- think about why).
+4. Wake up the scheduler to take over.
 
 Otherwise (i.e., if the deregistering process is not the currently running one
 -- due to the weird scheduling issue with multiple CPUs), then we only need to
@@ -215,11 +220,11 @@ scheduler may be called (or waken up) from three different places in the code:
 3. A process deregistering
 
 To avoid issues with the scheduler being called from outside of a timer
-interrupt, I suggested that you always cancel the timer of the currently running
+interrupt, I suggest that you always cancel the timer of the currently running
 process, if any. This will guarantee that the scheduler will only run once.
 
 The first thing the scheduler must do is to pick a new process to run, if any.
-To do, if must scan all of the queues in order of priority, and select the first
+To do so, you must scan all of the queues in order of priority, and select the first
 available process to be run, at the highest priority level available. 
 
 After finding the next process to run, the scheduler must put the currently
@@ -252,18 +257,18 @@ tutorial video that shows you what you should expect when running your code.
 # Senior: Rule 5
 
 In this section, we will simply add support for rule 5, which states that every
-`P` seconds, we will put everything into the top most queue. I chose a value of
-10 seconds, but it is up to you to choose and justify the value you choose for
+`S` seconds, we will put everything into the top most queue. I chose a value of
+50 seconds, but it is up to you to choose and justify the value you choose for
 your module.
 
 You can implement this step either using a kernel thread or using a work queue,
 it is totally up to you. I chose to use another kernel thread in my
 implementation. 
 
-Here's how things go in this step, every `P` seconds, a timer will go off and
+Here's how things go in this step, every `S` seconds, a timer will go off and
 wake up a thread or add a work onto the work queue. Once that work executes (or
 the thread wakes up), it will look at all the lower priority queue in order, and
-move their corresponding entries in the topmost priority queue. That way, the
+move their corresponding entries to the topmost priority queue. That way, the
 next time that the scheduler runs, it will for sure run those processes that
 were originally in the lower priority queues. 
 
@@ -279,8 +284,62 @@ then a short while later, the second process will join it in the execution, and
 they will start running in a round-robin fashion. Here's a quick video to
 illustrate this process:
 
+<iframe src="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=81a34d71-aa73-406a-9bc3-ad29017b2dde&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="360" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
 # Graduation: Rules 3 and 4
 
+Let's finalize our system with the addition of support for rules 3 and 4. 
+
+## Rule 3
+
+Adding support for rule 3 is pretty much straightforward. Change your code for
+the registration function to add the new processes to the topmost queue. Until
+we implement rule 4, we are back now to a round robin scheduler.
+
+## Rule 4
+
+Implementing rule 4 requires some more infrastructure. We need to track how long
+have the process been running in each queue, and if that time interval goes over
+the quantum of the queue it belongs to, downgrade the process to the next level
+queue. 
+
+Here is an example to illustrate this: let's assume process A registers into our
+system. It therefore starts at the topmost queue with a quantum of 1 second.
+Assume also that the quantum for the second queue is 2 seconds, and the quantum
+for the third queue is 3 seconds. Here's what going to happen to process A:
+```
+A registers --> A runs for 1 second
+                   --> A gets demoted to queue 2 --> A runs for 2 seconds
+                                                      --> A gets demoted to queue 3 --> A runs for 3 seconds
+```
+
+Assume now that process B registers, but process B yields execution every 400
+ms. Here's what's going to happen to B:
+```
+B registers --> B runs for 400 ms --> B yields --> B runs for 400 ms --> B yields --> B runs for 400 ms --> B yields --> B gets demoted to queue 2 --> ...
+```
+
+You will need to add information to your `csse332_info` structure to support
+remembering for how long has this process been running in the current queue, and
+then every time you schedule out a process, you check if it should be demoted. 
+
+## Testing
+
+One of the challenges of this milestone is designing test cases for your system.
+Read the code provided in the `userlib` repository and design your test cases so
+that you test all 5 rules of MLFQ. Add a description of your test case to your
+project report and feel free to record a video showing the details of your
+testing. 
 
 # Rubric
 
+| Part     | Point Value | Comments |
+|:---------|-------------|----------|
+| Rule 1   |   100       |          |
+| Rule 2   |   100       |          |
+| Rule 3   |    10       |          |
+| Rule 4   |    40       |          |
+| Rule 5   |    50       |          |
+| Testing  |    40       | Graded according to the parts you complete |
+| Report   |    20       |          |
+| Total    |   360       |          |
