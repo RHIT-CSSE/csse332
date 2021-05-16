@@ -2,8 +2,8 @@
 #include <string.h>
 #include <stdlib.h>
 
-int
-main(int argc, char **argv)
+void
+_main(void)
 {
 	char message[20];
 	char name[10];
@@ -15,4 +15,10 @@ main(int argc, char **argv)
 	printf("Hi %s you are %s.\n", name, message);
 
 	exit(0);
+}
+
+int
+main(int argc, char **argv)
+{
+	_main();
 }

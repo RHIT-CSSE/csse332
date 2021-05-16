@@ -23,9 +23,15 @@ vulnerable_fn(void)
 	gets(input);
 }
 
-int
-main(int argc, char **argv)
+void
+_main(void)
 {
 	vulnerable_fn();
 	print_good_outcome();
+}
+
+int
+main(int argc, char **argv)
+{
+	_main();
 }
