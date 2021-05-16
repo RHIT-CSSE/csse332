@@ -332,7 +332,9 @@
   topics: 
     - Intro to Garbage Collection Lab
   materials: 
-  other:  <a href="Homework/GarbageCollect/README">Lab Instructions</a>
+  other:  
+    - <a href="Homework/GarbageCollect/README">Lab Instructions</a>
+    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f64dc415-8d2f-4517-b46e-acd00139d96f">Demo Video</a>
 37:
   reading:
   topics:
