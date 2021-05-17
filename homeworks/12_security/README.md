@@ -15,6 +15,7 @@ gh-badge: [star,watch,follow]
 * [Control flow hijacking](#control-flow-hijacking)
   * [Learning objectives](#learning-objectives)
   * [Logistics](#logistics)
+* [Prelude](#prelude)
 * [Part 1 (\*)](#part-1-)
   * [Submission](#submission)
 * [Part 2 (\*)](#part-2-)
@@ -78,6 +79,14 @@ vulnerabilities.
 The virtual machine is loaded with python 2.7, please do not upgrade python as
 python 3 will give you some pain when trying to write non-printable ascii
 characters (which we will need to do).
+
+# Prelude
+
+Before you get started (and every time you reboot your machine), you will need to run the script
+`disable_aslr.sh` that is provided for you in the repository. To do simply, simply type
+```shell
+$ ./disable_aslr.sh
+```
 
 # Part 1 (\*)
 
