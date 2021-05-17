@@ -16,7 +16,7 @@ vulnerable_fn(char *argument)
 }
 
 int
-main(int argc, char **argv)
+_main(int argc, char **argv)
 {
 	if (argc != 2) {
 		fprintf(stderr, "ERROR: Need an input argument!\n");

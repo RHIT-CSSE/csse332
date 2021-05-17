@@ -16,13 +16,13 @@ part1: part1.c
 
 part2: part2.c
 
-part3: part3.c
+part3: part3.c helper.c
 
-part4: part4.c
+part4: part4.c helper.c
 
-part5: part5.c
+part5: part5.c helper.c
 
-part6: part6.c
+part6: part6.c helper.c
 
 
 clean:

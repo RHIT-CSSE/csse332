@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 void
 vulnerable_fn(char *argument)
@@ -15,7 +16,7 @@ vulnerable_fn(char *argument)
 
 
 int
-main(int argc, char **argv)
+_main(int argc, char **argv)
 {
 	if (argc < 2) {
 		fprintf(stderr, "ERROR: Required input argument\n");
