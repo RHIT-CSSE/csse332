@@ -1,6 +1,6 @@
 .PHONY: all clean
 
-all: part1 part2 part3 part4 part5 part6
+all: part1 part2 part3 part4 part5 part6 part7
 
 CC := gcc
 CFLAGS  := -m32 -static -U_FORTIFY_SOURCE
@@ -11,6 +11,7 @@ part3: CFLAGS += -fno-stack-protector -z execstack
 part4: CFLAGS += -fno-stack-protector -z execstack
 part5: CFLAGS += -fno-stack-protector
 part6: CFLAGS += -fno-stack-protector
+part7: CFLAGS += -fno-stack-protector -z execstack
 
 part1: part1.c
 
@@ -24,6 +25,7 @@ part5: part5.c helper.c
 
 part6: part6.c helper.c
 
+part7: part7.c helper.c
 
 clean:
-	rm -f part2 part2 part3 part4 part5 part6
+	rm -f part1 part2 part3 part4 part5 part6 part7
