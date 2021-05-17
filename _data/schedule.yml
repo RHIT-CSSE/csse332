@@ -296,19 +296,16 @@
 36:
   reading:
   topics: 
-    - Intro to OS security
+    - Project work time
   materials: 
   other:  
-    - Coming soon 
-# 37:
-#   reading:
-#   topics:
-#     - More Garbage Collection
-#   materials: GarbageCollection2 
-#   other:  
-#     - <a href="ClassMaterials/GarbageCollection2/garbage_collection">Garbage Collection 2 Slides</a>
-#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%223e90f5db-b5d0-48b2-8e56-abb9014984bb%22"> Videos </a>
-#     - No activity for today
+37:
+  reading:
+  topics:
+    - Intro to security
+  materials: 
+  other:  
+    - <a href="{{ site.baseurl }}/sessions/37_session37/"> Session Information </a>
 # 38:
 #   reading:
 #   topics:

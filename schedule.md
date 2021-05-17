@@ -589,11 +589,11 @@ No activity today</td>
 </td>
 <td markdown="span" style="text-align:left">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
-<li> Intro to OS security </li>
+<li> Project work time </li>
 </ul>{:/}
 </td>
 <td markdown="span">
-Coming soon</td>
+</td>
 </tr>
 <tr>
 <td markdown="span" colspan="4"> [Milestone 3 Checkpoint 1]({{ site.baseurl }}/docs/checkpoint1) DUE Fri, May 14 2021 23:59 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2815155)</td></tr>
@@ -601,7 +601,15 @@ Coming soon</td>
 <td rowspan="5" markdown="span" style="font-size:xx-large;"><a name="w10">10</a></td>
 <td markdown="span">
 37 <br/> Mon, May 17 2021</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> Intro to security </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+<a href="{{ site.baseurl }}/sessions/37_session37/"> Session Information </a></td>
 </tr>
 <tr>
 <td markdown="span">
