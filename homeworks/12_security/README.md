@@ -45,11 +45,12 @@ a controlled environment__.
 # Control flow hijacking
 
 In the lab, we will learn how to perform control hijacking attacks by exploiting
-buffer overflows bugs. Control hijacking refers to an attack attempt to divert
-the control flow of a program away from normal execution to execute arbitrary
-attack code (typically, dropping into a root shell). Each one of the provided
-programs contains a security vulnerability that you must exploit to hijack the
-control flow of the program and satisfy the requirements of each part.
+buffer overflows bugs. Control hijacking refers to an attack that attempts to
+divert the control flow of a program away from normal execution to execute
+arbitrary attack code (typically, dropping into a root shell). Each one of the
+provided programs contains a security vulnerability that you must exploit to
+hijack the control flow of the program and satisfy the requirements of each
+part.
 
 ## Learning objectives
 
@@ -71,6 +72,8 @@ vulnerabilities.
 - [Submission box](https://moodle.rose-hulman.edu/course/view.php?id=81937)
 - [Submission instructions](https://rhit-csse332.github.io/csse332-202130/docs/submission_instructions/)
 - [`gdb` reference card](https://users.ece.utexas.edu/~adnan/gdb-refcard.pdf)
+- [Smashing the stack for fun and profit](https://inst.eecs.berkeley.edu/~cs161/fa08/papers/stack_smashing.pdf)
+- [The geometry of innocent flesh on the bone](https://hovav.net/ucsd/dist/geometry.pdf)
 
 The virtual machine is loaded with python 2.7, please do not upgrade python as
 python 3 will give you some pain when trying to write non-printable ascii
@@ -90,7 +93,7 @@ Hi mohammad you are a wonderful person!.
 
 Your job is to pass an input to this program such that it will change the 
 output of the program. We will create our input using a `python` script which
-will then redirect to the standard input for this program. When successfully
+we will then redirect to the standard input for this program. When successfully
 completing this part, you should see something that looks like the following
 ```shell
 $ python part1.py | ./part1
@@ -102,7 +105,7 @@ Here are some suggested steps that you might take:
 1. Examine `part1.c`, where is the buffer overflow?
 2. Start `part1` in `gdb` and disassemble the `_main` function. Identify the
    function calls and their arguments and local variables.
-3. Draw a picture of the stack, where is the variable that you will overwrite
+3. Draw a picture of the stack, where is the variable that you will overflow 
    and where is your target? How are they stored relative to each other?
 4. How can your input affect the values of other variables in the code. Test
    your thought process by trying different inputs to the program.
@@ -173,7 +176,7 @@ Have a nice day =)
 
 Your job is to overwrite the return address of a function that you must
 identify, in order to cause the program to execute the function
-`print_bad_outcode` instead of executing `print_good_outcome`. By successfully
+`print_bad_outcome` instead of executing `print_good_outcome`. By successfully
 completing this part, you should see something like the following
 ```shell
 $ python part2.py | ./part2
@@ -193,8 +196,8 @@ Here's a suggested way to approach this problem
    vulnerable buffer stored with respect to the `%ebp` register (which contains
    the frame pointer). Where is the return address stored?
 5. Examine the `%esp` and `%ebp` registers using `(gdb) info reg`
-6. What should the value of the return address of the vulnerable function (i.e.,
-   where should this function return to).
+6. What should the value of the return address of the vulnerable function be
+   (i.e., where should this function return to).
 7. Examine the return address of the vulnerable function. To examine two words
    of memory at `%ebp` use `(gdb) x/2wx $ebp`.
 8. What should your input be to overwrite the return address?
@@ -268,7 +271,7 @@ Here is a suggested approach:
    so, you can use the following gdb instruction `(gdb) x/32bx 0x<address>`.
 8. Disassemble the shellcode using `(gdb) disassemble/r 0x<address>,+32`. What
    is it doing? Note the call to `int` and check what it is doing.
-9. Modify `part3.py` so that the input overflows the buffer and cause the
+9. Modify `part3.py` so that the input overflows the buffer and causes the
    program to run the shellcode.
 
 ## Submission
@@ -293,7 +296,7 @@ to use a safer function called `strncpy` (check the manpage for `strncpy` if you
 are not sure what the difference between it and `strcpy` is). Therefore, the
 exploit technique we used in the previous part no longer works. 
 
-Lucky for us, the developer miscalculate the size of the buffer. Hopefully this
+Lucky for us, the developer miscalculated the size of the buffer. Hopefully this
 will help you figure out another way to redirect the program's control flow to
 execute our shell code. 
 
@@ -303,12 +306,12 @@ Create a python program, called `part4.py`, that prints the line you must pass
 as an argument to your `part4` to cause the creation of a root shell. To test
 your code, use the following:
 ```shell
-$ ./part4 $(python part4.py)
+$ sudo ./part4 $(python part4.py)
 ```
 
 # Part 5 (\*\*\*\*)
 
-In this part, the developers are really on our tail, they have enable data
+In this part, the developers are really on our tail, they have enabled data
 execution prevention (DEP) in the compiler so that no code from the stack can be
 executed. What are we to do? Do we just give up? Never!
 
@@ -328,7 +331,7 @@ Create a python program, called `part5.py`, that prints the line you must pass
 as an argument to your `part5` to cause the creation of a root shell. To test
 your code, use the following:
 ```shell
-$ ./part5 $(python part5.py)
+$ sudo ./part5 $(python part5.py)
 ```
 
 ---
@@ -358,7 +361,7 @@ Create a python program, called `part6.py`, that prints the line you must pass
 as an argument to your `part6` to cause the creation of a root shell. To test
 your code, use the following:
 ```shell
-$ ./part6 $(python part6.py)
+$ sudo ./part6 $(python part6.py)
 ```
 
 
@@ -375,7 +378,7 @@ Create a python program, called `part7.py`, that prints the line you must pass
 as an argument to your `part6` to cause the creation of a root shell. To test
 your code, use the following:
 ```shell
-$ ./part7 $(python part7.py)
+$ sudo ./part7 $(python part7.py)
 ```
 
 # Rubric
