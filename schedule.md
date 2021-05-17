@@ -598,7 +598,7 @@ Coming soon</td>
 <tr>
 <td markdown="span" colspan="4"> [Milestone 3 Checkpoint 1]({{ site.baseurl }}/docs/checkpoint1) DUE Fri, May 14 2021 23:59 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2815155)</td></tr>
 <tr>
-<td rowspan="4" markdown="span" style="font-size:xx-large;"><a name="w10">10</a></td>
+<td rowspan="5" markdown="span" style="font-size:xx-large;"><a name="w10">10</a></td>
 <td markdown="span">
 37 <br/> Mon, May 17 2021</td>
 <td markdown="span" colspan="3">N/A</td>
@@ -618,6 +618,8 @@ Coming soon</td>
 40 <br/> Fri, May 21 2021</td>
 <td markdown="span" colspan="3">N/A</td>
 </tr>
+<tr>
+<td markdown="span" colspan="4"> [ADVANCED Security Lab]({{ site.baseurl }}/docs/12_security) DUE Sun, May 23 2021 23:59 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2821302)</td></tr>
 <tr>
 <td rowspan="1" markdown="span" style="font-size:xx-large;"><a name="w11">11</a></td>
 <td markdown="span" colspan="4"> [Milestone 3 Checkpoint 2]({{ site.baseurl }}/docs/checkpoint2) DUE Thu, May 27 2021 17:00 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708262)</td></tr>
