@@ -614,17 +614,41 @@ No activity today</td>
 <tr>
 <td markdown="span">
 38 <br/> Tue, May 18 2021</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> Control flow integrity attacks and defenses </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+<a href="{{ site.baseurl }}/sessions/38_session38/"> Session Information </a></td>
 </tr>
 <tr>
 <td markdown="span">
 39 <br/> Thu, May 20 2021</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> Return oriented programming </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+Coming soon</td>
 </tr>
 <tr>
 <td markdown="span">
 40 <br/> Fri, May 21 2021</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> Guest lecture </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+</td>
 </tr>
 <tr>
 <td markdown="span" colspan="4"> [ADVANCED Security Lab]({{ site.baseurl }}/docs/12_security) DUE Sun, May 23 2021 23:59 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2821302)</td></tr>

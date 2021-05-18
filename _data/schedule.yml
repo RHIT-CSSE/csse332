@@ -306,22 +306,24 @@
   materials: 
   other:  
     - <a href="{{ site.baseurl }}/sessions/37_session37/"> Session Information </a>
-# 38:
-#   reading:
-#   topics:
-#     - Garbage Collection Lab Work Time
-#   materials: 
-#   other:  
-# 39:
-#   reading:
-#   topics:
-#     - Garbage Collection Lab Work Time
-#   materials:
-#   other:
+38:
+  reading:
+  topics:
+    - Control flow integrity attacks and defenses
+  materials: 
+  other:  
+    - <a href="{{ site.baseurl }}/sessions/38_session38/"> Session Information </a>
+39:
+  reading:
+  topics:
+    - Return oriented programming
+  materials:
+  other:
+    - Coming soon
 
-# 40:
-#   reading:
-#   topics:
-#     - No Class
-#   materials: 
-#   other:  
+40:
+  reading:
+  topics:
+    - Guest lecture
+  materials: 
+  other:  

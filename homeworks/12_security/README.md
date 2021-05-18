@@ -357,7 +357,8 @@ __Hint__: You might find the tool `ROPgadget` useful. Here's a link to the
 information: [ROPgadget](https://github.com/JonathanSalwan/ROPgadget).
 
 __Hint__: You might find it useful to read through the paper "The Geometry of
-Innocent Flesh on the Bone" listed in the resources section.
+Innocent Flesh on the Bone" listed in the resources section. Focus on sections
+3.4 and 4 of the paper.
 
 __Hint__: To disassemble a program outside of `gdb`, you can use
 ```shell
