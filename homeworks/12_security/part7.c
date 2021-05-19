@@ -56,9 +56,9 @@ _main(int argc, char **argv)
 	strcpy(c->name, argv[3]);
 
 	/* cleanup everything */
-	list_remove(a);
-	list_remove(b);
 	list_remove(c);
+	list_remove(b);
+	list_remove(a);
 
 	return 0;
 }
