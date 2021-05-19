@@ -3,8 +3,8 @@
 #include <stdio.h>
 
 struct llnode {
-	struct llnode *next;
 	struct llnode *prev;
+	struct llnode *next;
 	char name[32];
 };
 
