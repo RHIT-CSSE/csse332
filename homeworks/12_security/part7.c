@@ -48,7 +48,7 @@ _main(int argc, char **argv)
 	/* create three node back to back: a -> b -> c */
 	struct llnode *a = list_insert(0);
 	struct llnode *b = list_insert(a);
-	struct llnode *c = list_insert(c);
+	struct llnode *c = list_insert(b);
 
 	/* copy the nodes' names from the command line arguments */
 	strcpy(a->name, argv[1]);
