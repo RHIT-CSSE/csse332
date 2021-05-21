@@ -635,7 +635,7 @@ No activity today</td>
 </ul>{:/}
 </td>
 <td markdown="span">
-Coming soon</td>
+<a href="{{ site.baseurl }}/sessions/39_session39/"> Session Information </a></td>
 </tr>
 <tr>
 <td markdown="span">
@@ -644,7 +644,7 @@ Coming soon</td>
 </td>
 <td markdown="span" style="text-align:left">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
-<li> Guest lecture </li>
+<li> No class </li>
 </ul>{:/}
 </td>
 <td markdown="span">
