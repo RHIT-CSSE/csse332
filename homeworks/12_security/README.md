@@ -338,9 +338,10 @@ function call, and try to pass `/bin/sh` to `system` and see what happens.
 
 Create a python program, called `part5.py`, that prints the line you must pass
 as an argument to your `part5` to cause the creation of a root shell. To test
-your code, use the following:
+your code and avoid issues with special characters, use the following:
 ```shell
-$ sudo ./part5 $(python part5.py)
+$ python part5.py > a.txt
+$ sudo ./part5 $(cat a.txt)
 ```
 
 ---
