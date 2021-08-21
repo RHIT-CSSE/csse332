@@ -1,121 +1,121 @@
 ---
 - type: class_session
   class_num: 1
-  date: 2021-03-11 08:00
+  date: 2021-09-02 08:00
 - type: class_session
   class_num: 2
-  date: 2021-03-12 08:00
+  date: 2021-09-03 08:00
 - type: class_session
   class_num: 3
-  date: 2021-03-15 08:00
+  date: 2021-09-06 08:00
 - type: class_session
   class_num: 4
-  date: 2021-03-16 08:00
+  date: 2021-09-07 08:00
 - type: class_session
   class_num: 5
-  date: 2021-03-18 08:00
+  date: 2021-09-09 08:00
 - type: class_session
   class_num: 6
-  date: 2021-03-19 08:00
+  date: 2021-09-10 08:00
 - type: class_session
   class_num: 7
-  date: 2021-03-22 08:00
+  date: 2021-09-13 08:00
 - type: class_session
   class_num: 8
-  date: 2021-03-23 08:00
+  date: 2021-09-14 08:00
 - type: class_session
   class_num: 9
-  date: 2021-03-25 08:00
+  date: 2021-09-16 08:00
 - type: class_session
   class_num: 10
-  date: 2021-03-26 08:00
+  date: 2021-09-17 08:00
 - type: class_session
   class_num: 11
-  date: 2021-03-29 08:00
+  date: 2021-09-20 08:00
 - type: class_session
   class_num: 12
-  date: 2021-03-30 08:00
+  date: 2021-09-21 08:00
 - type: class_session
   class_num: 13
-  date: 2021-04-01 08:00
+  date: 2021-09-23 08:00
 - type: class_session
   class_num: 14
-  date: 2021-04-02 08:00
+  date: 2021-09-24 08:00
 - type: class_session
   class_num: 15
-  date: 2021-04-05 08:00
+  date: 2021-09-27 08:00
 - type: class_session
   class_num: 16
-  date: 2021-04-06 08:00
+  date: 2021-09-28 08:00
 - type: class_session
   class_num: 17
-  date: 2021-04-08 08:00
+  date: 2021-09-30 08:00
 - type: class_session
   class_num: 18
-  date: 2021-04-09 08:00
+  date: 2021-10-01 08:00
 - type: class_session
   class_num: 19
-  date: 2021-04-12 08:00
+  date: 2021-10-04 08:00
 - type: class_session
   class_num: 20
-  date: 2021-04-13 08:00
+  date: 2021-10-05 08:00
 - type: class_session
   class_num: 21
-  date: 2021-04-19 08:00
+  date: 2021-10-07 08:00
 - type: class_session
   class_num: 22
-  date: 2021-04-20 08:00
+  date: 2021-10-08 08:00
 - type: class_session
   class_num: 23
-  date: 2021-04-22 08:00
+  date: 2021-10-11 08:00
 - type: class_session
   class_num: 24
-  date: 2021-04-23 08:00
+  date: 2021-10-12 08:00
 - type: class_session
   class_num: 25
-  date: 2021-04-26 08:00
+  date: 2021-10-18 08:00
 - type: class_session
   class_num: 26
-  date: 2021-04-27 08:00
+  date: 2021-10-19 08:00
 - type: class_session
   class_num: 27
-  date: 2021-04-29 08:00
+  date: 2021-10-21 08:00
 - type: class_session
   class_num: 28
-  date: 2021-04-30 08:00
+  date: 2021-10-22 08:00
 - type: class_session
   class_num: 29
-  date: 2021-05-03 08:00
+  date: 2021-10-25 08:00
 - type: class_session
   class_num: 30
-  date: 2021-05-04 08:00
+  date: 2021-10-26 08:00
 - type: class_session
   class_num: 31
-  date: 2021-05-06 08:00
+  date: 2021-10-28 08:00
 - type: class_session
   class_num: 32
-  date: 2021-05-07 08:00
+  date: 2021-10-29 08:00
 - type: class_session
   class_num: 33
-  date: 2021-05-10 08:00
+  date: 2021-11-01 08:00
 - type: class_session
   class_num: 34
-  date: 2021-05-11 08:00
+  date: 2021-11-02 08:00
 - type: class_session
   class_num: 35
-  date: 2021-05-13 08:00
+  date: 2021-11-04 08:00
 - type: class_session
   class_num: 36
-  date: 2021-05-14 08:00
+  date: 2021-11-05 08:00
 - type: class_session
   class_num: 37
-  date: 2021-05-17 08:00
+  date: 2021-11-08 08:00
 - type: class_session
   class_num: 38
-  date: 2021-05-18 08:00
+  date: 2021-11-09 08:00
 - type: class_session
   class_num: 39
-  date: 2021-05-20 08:00
+  date: 2021-11-11 08:00
 - type: class_session
   class_num: 40
-  date: 2021-05-21 08:00
+  date: 2021-11-12 08:00

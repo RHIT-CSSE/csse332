@@ -8,7 +8,7 @@ from datetime import datetime as dt
 
 
 # %%
-def find_sources_root(tree_root='csse332-202130'):
+def find_sources_root(tree_root='csse332'):
     """
     Find the root directory containing the sources for the website.
 

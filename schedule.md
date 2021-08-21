@@ -23,9 +23,9 @@ title: Class Schedule
 </thead>
 <tbody>
 <tr>
-<td rowspan="4" markdown="span" style="font-size:xx-large;"><a name="w0">0</a></td>
+<td rowspan="2" markdown="span" style="font-size:xx-large;"><a name="w0">0</a></td>
 <td markdown="span">
-1 <br/> Thu, Mar 11 2021</td>
+1 <br/> Thu, Sep 02 2021</td>
 <td markdown="span">
 </td>
 <td markdown="span" style="text-align:left">
@@ -39,10 +39,8 @@ title: Class Schedule
 <a href="{{ site.baseurl }}/sessions/01_session1/"> Session Information </a></td>
 </tr>
 <tr>
-<td markdown="span" colspan="4"> [Linux Install]({{ site.baseurl }}/docs/01_linux_install) DUE Thu, Mar 11 2021 23:55 [Submission box](https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2708037&forceview=1)</td></tr>
-<tr>
 <td markdown="span">
-2 <br/> Fri, Mar 12 2021</td>
+2 <br/> Fri, Sep 03 2021</td>
 <td markdown="span">
 </td>
 <td markdown="span" style="text-align:left">
@@ -54,11 +52,9 @@ title: Class Schedule
 <a href="{{ site.baseurl }}/docs/01_userspace_thread_1/"> Lab Instructions</a><br/><a href="{{ site.baseurl }}/docs/submission_instructions/"> Getting and submitting code</a><br/><a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4947ba52-f883-497d-9192-ac8401325dd7"> Video Tutorial </a></td>
 </tr>
 <tr>
-<td markdown="span" colspan="4"> [Pointer Practice]({{ site.baseurl }}/docs/00_pointer_practice) DUE Fri, Mar 12 2021 23:55 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708040&forceview=1) <font color="#aaa"> grader: @wangj14 </font> </td></tr>
-<tr>
-<td rowspan="6" markdown="span" style="font-size:xx-large;"><a name="w1">1</a></td>
+<td rowspan="4" markdown="span" style="font-size:xx-large;"><a name="w1">1</a></td>
 <td markdown="span">
-3 <br/> Mon, Mar 15 2021</td>
+3 <br/> Mon, Sep 06 2021</td>
 <td markdown="span" style="text-align:left">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
 <li> <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/intro.pdf">Chapter 1</a> </li>
@@ -74,10 +70,8 @@ title: Class Schedule
 <a href="{{ site.baseurl }}/sessions/02_session2/"> Session Information </a></td>
 </tr>
 <tr>
-<td markdown="span" colspan="4"> [Userspace Threads]({{ site.baseurl }}/docs/01_userspace_thread_1) DUE Mon, Mar 15 2021 23:55 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708043) <font color="#aaa"> grader: @niey </font> </td></tr>
-<tr>
 <td markdown="span">
-4 <br/> Tue, Mar 16 2021</td>
+4 <br/> Tue, Sep 07 2021</td>
 <td markdown="span" style="text-align:left">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
 <li> <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf"> Chapter 2 </a> </li>
@@ -93,7 +87,7 @@ title: Class Schedule
 </tr>
 <tr>
 <td markdown="span">
-5 <br/> Thu, Mar 18 2021</td>
+5 <br/> Thu, Sep 09 2021</td>
 <td markdown="span" style="text-align:left">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
 <li> <a href="https://man7.org/linux/man-pages/man7/signal.7.html">Signal - Linux manual page </a> </li>
@@ -108,10 +102,8 @@ title: Class Schedule
 <a href="{{ site.baseurl }}/sessions/05_session5/"> Session Information </a></td>
 </tr>
 <tr>
-<td markdown="span" colspan="4"> [ADVANCED Userspace Threads With Preemption]({{ site.baseurl }}/docs/02_userspace_thread_2) DUE Thu, Mar 18 2021 23:55 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708046) <font color="#aaa"> grader: @wangj14 </font> </td></tr>
-<tr>
 <td markdown="span">
-6 <br/> Fri, Mar 19 2021</td>
+6 <br/> Fri, Sep 10 2021</td>
 <td markdown="span" style="text-align:left">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
 <li> <a href="https://man7.org/linux/man-pages/man3/exec.3.html"> exec man page </a> </li>
@@ -129,9 +121,9 @@ title: Class Schedule
 <a href="{{ site.baseurl }}/sessions/06_session6/"> Session Information </a></td>
 </tr>
 <tr>
-<td rowspan="6" markdown="span" style="font-size:xx-large;"><a name="w2">2</a></td>
+<td rowspan="4" markdown="span" style="font-size:xx-large;"><a name="w2">2</a></td>
 <td markdown="span">
-7 <br/> Mon, Mar 22 2021</td>
+7 <br/> Mon, Sep 13 2021</td>
 <td markdown="span" style="text-align:left">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
 <li> <a href="https://www.gnu.org/software/make/manual/html_node/index.html"> GNU make manual </a> </li>
@@ -146,10 +138,8 @@ title: Class Schedule
 <a href="{{ site.baseurl }}/sessions/07_session7/"> Session Information </a></td>
 </tr>
 <tr>
-<td markdown="span" colspan="4"> [Simple Shell/Makefiles]({{ site.baseurl }}/docs/03_simple_shell) DUE Mon, Mar 22 2021 23:55 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708049)</td></tr>
-<tr>
 <td markdown="span">
-8 <br/> Tue, Mar 23 2021</td>
+8 <br/> Tue, Sep 14 2021</td>
 <td markdown="span">
 </td>
 <td markdown="span" style="text-align:left">
@@ -162,7 +152,7 @@ No activity today</td>
 </tr>
 <tr>
 <td markdown="span">
-9 <br/> Thu, Mar 25 2021</td>
+9 <br/> Thu, Sep 16 2021</td>
 <td markdown="span" style="text-align:left">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
 <li> <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/file-implementation.pdf"> Chapter 40 </a> </li>
@@ -177,10 +167,8 @@ No activity today</td>
 <a href="{{ site.baseurl }}/sessions/09_session9/"> Session Information </a></td>
 </tr>
 <tr>
-<td markdown="span" colspan="4"> [Process Lab/Debugging]({{ site.baseurl }}/docs/04_process_lab) DUE Thu, Mar 25 2021 23:55 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708055)</td></tr>
-<tr>
 <td markdown="span">
-10 <br/> Fri, Mar 26 2021</td>
+10 <br/> Fri, Sep 17 2021</td>
 <td markdown="span" style="text-align:left">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
 <li> <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/file-implementation.pdf"> Chapter 40 </a> </li>
@@ -195,9 +183,9 @@ No activity today</td>
 <a href="{{ site.baseurl }}/sessions/10_session10/"> Session Information </a></td>
 </tr>
 <tr>
-<td rowspan="6" markdown="span" style="font-size:xx-large;"><a name="w3">3</a></td>
+<td rowspan="4" markdown="span" style="font-size:xx-large;"><a name="w3">3</a></td>
 <td markdown="span">
-11 <br/> Mon, Mar 29 2021</td>
+11 <br/> Mon, Sep 20 2021</td>
 <td markdown="span" style="text-align:left">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
 <li> <a href="https://tldp.org/LDP/lpg/node7.html"> Chapter 6 of The Linux Documentation Project (tldp) </a> </li>
@@ -212,10 +200,8 @@ No activity today</td>
 <a href="{{ site.baseurl }}/sessions/11_session11/"> Session Information </a></td>
 </tr>
 <tr>
-<td markdown="span" colspan="4"> [Project Milestone 1]({{ site.baseurl }}/docs/zz_project) DUE Mon, Mar 29 2021 23:55 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708256)</td></tr>
-<tr>
 <td markdown="span">
-12 <br/> Tue, Mar 30 2021</td>
+12 <br/> Tue, Sep 21 2021</td>
 <td markdown="span">
 </td>
 <td markdown="span" style="text-align:left">
@@ -228,7 +214,7 @@ In-class.</td>
 </tr>
 <tr>
 <td markdown="span">
-13 <br/> Thu, Apr 01 2021</td>
+13 <br/> Thu, Sep 23 2021</td>
 <td markdown="span" style="text-align:left">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
 <li> <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched.pdf"> Chapter 7 </a> </li>
@@ -243,10 +229,8 @@ In-class.</td>
 <a href="{{ site.baseurl }}/sessions/13_session13/"> Session Information </a></td>
 </tr>
 <tr>
-<td markdown="span" colspan="4"> [ADVANCED Ext2 Filesystem]({{ site.baseurl }}/docs/06_ext2) DUE Thu, Apr 01 2021 23:55 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708052)</td></tr>
-<tr>
 <td markdown="span">
-14 <br/> Fri, Apr 02 2021</td>
+14 <br/> Fri, Sep 24 2021</td>
 <td markdown="span" style="text-align:left">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
 <li> <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched-mlfq.pdf"> Chapter 8 </a> </li>
@@ -261,9 +245,9 @@ In-class.</td>
 <a href="{{ site.baseurl }}/sessions/14_session14/"> Session Information </a></td>
 </tr>
 <tr>
-<td rowspan="5" markdown="span" style="font-size:xx-large;"><a name="w4">4</a></td>
+<td rowspan="4" markdown="span" style="font-size:xx-large;"><a name="w4">4</a></td>
 <td markdown="span">
-15 <br/> Mon, Apr 05 2021</td>
+15 <br/> Mon, Sep 27 2021</td>
 <td markdown="span">
 </td>
 <td markdown="span" style="text-align:left">
@@ -275,10 +259,8 @@ In-class.</td>
 Exam1Prep<br/>No activity!  Do a practice exam</td>
 </tr>
 <tr>
-<td markdown="span" colspan="4"> CPU Scheduling DUE Mon, Apr 05 2021 23:59 [Take the quiz on Moodle](https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2708058)</td></tr>
-<tr>
 <td markdown="span">
-16 <br/> Tue, Apr 06 2021</td>
+16 <br/> Tue, Sep 28 2021</td>
 <td markdown="span">
 </td>
 <td markdown="span" style="text-align:left">
@@ -292,7 +274,7 @@ Exam1Prep<br/>No activity!  Do a practice exam</td>
 </tr>
 <tr>
 <td markdown="span">
-17 <br/> Thu, Apr 08 2021</td>
+17 <br/> Thu, Sep 30 2021</td>
 <td markdown="span" style="text-align:left">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
 <li> <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf"> Chapter 26 </a> </li>
@@ -311,7 +293,7 @@ Exam1Prep<br/>No activity!  Do a practice exam</td>
 </tr>
 <tr>
 <td markdown="span">
-18 <br/> Fri, Apr 09 2021</td>
+18 <br/> Fri, Oct 01 2021</td>
 <td markdown="span" style="text-align:left">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
 <li> <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-sema.pdf"> Chapter 31 </a> </li>
@@ -326,9 +308,9 @@ Exam1Prep<br/>No activity!  Do a practice exam</td>
 <a href="{{ site.baseurl }}/sessions/18_session18/"> Session Information </a></td>
 </tr>
 <tr>
-<td rowspan="3" markdown="span" style="font-size:xx-large;"><a name="w5">5</a></td>
+<td rowspan="4" markdown="span" style="font-size:xx-large;"><a name="w5">5</a></td>
 <td markdown="span">
-19 <br/> Mon, Apr 12 2021</td>
+19 <br/> Mon, Oct 04 2021</td>
 <td markdown="span" style="text-align:left">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
 <li> <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 </a> </li>
@@ -343,10 +325,8 @@ Exam1Prep<br/>No activity!  Do a practice exam</td>
 <a href="{{ site.baseurl }}/sessions/19_session19/"> Session Information </a></td>
 </tr>
 <tr>
-<td markdown="span" colspan="4"> [Threads and Semaphore Basics]({{ site.baseurl }}/docs/07_semaphore_lab) DUE Mon, Apr 12 2021 23:59 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708061)</td></tr>
-<tr>
 <td markdown="span">
-20 <br/> Tue, Apr 13 2021</td>
+20 <br/> Tue, Oct 05 2021</td>
 <td markdown="span" style="text-align:left">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
 <li> <a href="{{ site.baseurl }}/docs/milestone2/"> Milestone 2 </a> </li>
@@ -361,9 +341,8 @@ Exam1Prep<br/>No activity!  Do a practice exam</td>
 <a href="{{ site.baseurl }}/sessions/20_session20/"> Session Information </a></td>
 </tr>
 <tr>
-<td rowspan="6" markdown="span" style="font-size:xx-large;"><a name="w6">6</a></td>
 <td markdown="span">
-21 <br/> Mon, Apr 19 2021</td>
+21 <br/> Thu, Oct 07 2021</td>
 <td markdown="span" style="text-align:left">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
 <li> <a href="https://greenteapress.com/wp/semaphores/">Little Book of Semaphores - section 4.2 </a> </li>
@@ -379,10 +358,8 @@ Exam1Prep<br/>No activity!  Do a practice exam</td>
 <a href="{{ site.baseurl }}/sessions/21_session21/"> Session Information </a></td>
 </tr>
 <tr>
-<td markdown="span" colspan="4"> [Semaphores Homework I]({{ site.baseurl }}/docs/08_semaphores_homework1) DUE Mon, Apr 19 2021 23:59  [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708067)</td></tr>
-<tr>
 <td markdown="span">
-22 <br/> Tue, Apr 20 2021</td>
+22 <br/> Fri, Oct 08 2021</td>
 <td markdown="span">
 </td>
 <td markdown="span" style="text-align:left">
@@ -395,8 +372,9 @@ Exam1Prep<br/>No activity!  Do a practice exam</td>
 <a href="{{ site.baseurl }}/sessions/22_session22/"> Session Information </a></td>
 </tr>
 <tr>
+<td rowspan="2" markdown="span" style="font-size:xx-large;"><a name="w6">6</a></td>
 <td markdown="span">
-23 <br/> Thu, Apr 22 2021</td>
+23 <br/> Mon, Oct 11 2021</td>
 <td markdown="span">
 </td>
 <td markdown="span" style="text-align:left">
@@ -408,10 +386,8 @@ Exam1Prep<br/>No activity!  Do a practice exam</td>
 <a href="{{ site.baseurl }}/sessions/23_session23/"> Session Information </a></td>
 </tr>
 <tr>
-<td markdown="span" colspan="4"> [ADVANCED Semaphores Homework 2]({{ site.baseurl }}/docs/09_semaphores_homework2) DUE Thu, Apr 22 2021 23:59  [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708073)</td></tr>
-<tr>
 <td markdown="span">
-24 <br/> Fri, Apr 23 2021</td>
+24 <br/> Tue, Oct 12 2021</td>
 <td markdown="span">
 </td>
 <td markdown="span" style="text-align:left">
@@ -423,9 +399,9 @@ Exam1Prep<br/>No activity!  Do a practice exam</td>
 <a href="https://youtu.be/Kn310EWLWX8"> Session Recording </a></td>
 </tr>
 <tr>
-<td rowspan="5" markdown="span" style="font-size:xx-large;"><a name="w7">7</a></td>
+<td rowspan="4" markdown="span" style="font-size:xx-large;"><a name="w7">7</a></td>
 <td markdown="span">
-25 <br/> Mon, Apr 26 2021</td>
+25 <br/> Mon, Oct 18 2021</td>
 <td markdown="span" style="text-align:left">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
 <li> <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-bugs.pdf"> Chapter 32 </a> </li>
@@ -441,7 +417,7 @@ Exam1Prep<br/>No activity!  Do a practice exam</td>
 </tr>
 <tr>
 <td markdown="span">
-26 <br/> Tue, Apr 27 2021</td>
+26 <br/> Tue, Oct 19 2021</td>
 <td markdown="span">
 </td>
 <td markdown="span" style="text-align:left">
@@ -454,7 +430,7 @@ Exam1Prep<br/>No activity!  Do a practice exam</td>
 </tr>
 <tr>
 <td markdown="span">
-27 <br/> Thu, Apr 29 2021</td>
+27 <br/> Thu, Oct 21 2021</td>
 <td markdown="span">
 </td>
 <td markdown="span" style="text-align:left">
@@ -467,7 +443,7 @@ Exam1Prep<br/>No activity!  Do a practice exam</td>
 </tr>
 <tr>
 <td markdown="span">
-28 <br/> Fri, Apr 30 2021</td>
+28 <br/> Fri, Oct 22 2021</td>
 <td markdown="span">
 </td>
 <td markdown="span" style="text-align:left">
@@ -481,11 +457,9 @@ Exam1Prep<br/>No activity!  Do a practice exam</td>
 <a href="{{ site.baseurl }}/docs/exam2_guidelines/">Exam 2 Guidelines </a><br/><a href="https://youtu.be/LkE3NcVhSp4">Video recording</a></td>
 </tr>
 <tr>
-<td markdown="span" colspan="4"> [Project Milestone II]({{ site.baseurl }}/docs/milestone2) DUE Sun, May 02 2021 23:59 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708259)</td></tr>
-<tr>
-<td rowspan="5" markdown="span" style="font-size:xx-large;"><a name="w8">8</a></td>
+<td rowspan="4" markdown="span" style="font-size:xx-large;"><a name="w8">8</a></td>
 <td markdown="span">
-29 <br/> Mon, May 03 2021</td>
+29 <br/> Mon, Oct 25 2021</td>
 <td markdown="span">
 </td>
 <td markdown="span" style="text-align:left">
@@ -498,7 +472,7 @@ Exam1Prep<br/>No activity!  Do a practice exam</td>
 </tr>
 <tr>
 <td markdown="span">
-30 <br/> Tue, May 04 2021</td>
+30 <br/> Tue, Oct 26 2021</td>
 <td markdown="span" style="text-align:left">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
 <li> <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-segmentation.pdf"> Chapter 16 </a> </li>
@@ -514,7 +488,7 @@ Exam1Prep<br/>No activity!  Do a practice exam</td>
 </tr>
 <tr>
 <td markdown="span">
-31 <br/> Thu, May 06 2021</td>
+31 <br/> Thu, Oct 28 2021</td>
 <td markdown="span">
 </td>
 <td markdown="span" style="text-align:left">
@@ -526,10 +500,8 @@ Exam1Prep<br/>No activity!  Do a practice exam</td>
 <a href="{{ site.baseurl }}/sessions/31_session31/"> Session Information </a></td>
 </tr>
 <tr>
-<td markdown="span" colspan="4"> [ADVANCED Hybrid Threads]({{ site.baseurl }}/docs/10_hybrid_threads) DUE Thu, May 06 2021 23:59 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708064)</td></tr>
-<tr>
 <td markdown="span">
-32 <br/> Fri, May 07 2021</td>
+32 <br/> Fri, Oct 29 2021</td>
 <td markdown="span">
 </td>
 <td markdown="span" style="text-align:left">
@@ -541,9 +513,9 @@ Exam1Prep<br/>No activity!  Do a practice exam</td>
 <a href="{{ site.baseurl }}/docs/checkpoint1/"> Session Information </a></td>
 </tr>
 <tr>
-<td rowspan="6" markdown="span" style="font-size:xx-large;"><a name="w9">9</a></td>
+<td rowspan="4" markdown="span" style="font-size:xx-large;"><a name="w9">9</a></td>
 <td markdown="span">
-33 <br/> Mon, May 10 2021</td>
+33 <br/> Mon, Nov 01 2021</td>
 <td markdown="span">
 </td>
 <td markdown="span" style="text-align:left">
@@ -555,10 +527,8 @@ Exam1Prep<br/>No activity!  Do a practice exam</td>
 No activity today</td>
 </tr>
 <tr>
-<td markdown="span" colspan="4"> [Virtual Memory Lab 1]({{ site.baseurl }}/docs/11_virtualmem) DUE Mon, May 10 2021 23:59 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708094)</td></tr>
-<tr>
 <td markdown="span">
-34 <br/> Tue, May 11 2021</td>
+34 <br/> Tue, Nov 02 2021</td>
 <td markdown="span">
 </td>
 <td markdown="span" style="text-align:left">
@@ -571,7 +541,7 @@ No activity today</td>
 </tr>
 <tr>
 <td markdown="span">
-35 <br/> Thu, May 13 2021</td>
+35 <br/> Thu, Nov 04 2021</td>
 <td markdown="span">
 </td>
 <td markdown="span" style="text-align:left">
@@ -584,7 +554,7 @@ No activity today</td>
 </tr>
 <tr>
 <td markdown="span">
-36 <br/> Fri, May 14 2021</td>
+36 <br/> Fri, Nov 05 2021</td>
 <td markdown="span">
 </td>
 <td markdown="span" style="text-align:left">
@@ -596,11 +566,9 @@ No activity today</td>
 </td>
 </tr>
 <tr>
-<td markdown="span" colspan="4"> [Milestone 3 Checkpoint 1]({{ site.baseurl }}/docs/checkpoint1) DUE Fri, May 14 2021 23:59 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2815155)</td></tr>
-<tr>
-<td rowspan="5" markdown="span" style="font-size:xx-large;"><a name="w10">10</a></td>
+<td rowspan="4" markdown="span" style="font-size:xx-large;"><a name="w10">10</a></td>
 <td markdown="span">
-37 <br/> Mon, May 17 2021</td>
+37 <br/> Mon, Nov 08 2021</td>
 <td markdown="span">
 </td>
 <td markdown="span" style="text-align:left">
@@ -613,7 +581,7 @@ No activity today</td>
 </tr>
 <tr>
 <td markdown="span">
-38 <br/> Tue, May 18 2021</td>
+38 <br/> Tue, Nov 09 2021</td>
 <td markdown="span">
 </td>
 <td markdown="span" style="text-align:left">
@@ -626,7 +594,7 @@ No activity today</td>
 </tr>
 <tr>
 <td markdown="span">
-39 <br/> Thu, May 20 2021</td>
+39 <br/> Thu, Nov 11 2021</td>
 <td markdown="span">
 </td>
 <td markdown="span" style="text-align:left">
@@ -639,7 +607,7 @@ No activity today</td>
 </tr>
 <tr>
 <td markdown="span">
-40 <br/> Fri, May 21 2021</td>
+40 <br/> Fri, Nov 12 2021</td>
 <td markdown="span">
 </td>
 <td markdown="span" style="text-align:left">
@@ -650,10 +618,5 @@ No activity today</td>
 <td markdown="span">
 </td>
 </tr>
-<tr>
-<td markdown="span" colspan="4"> [ADVANCED Security Lab]({{ site.baseurl }}/docs/12_security) DUE Sun, May 23 2021 23:59 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2821302)</td></tr>
-<tr>
-<td rowspan="1" markdown="span" style="font-size:xx-large;"><a name="w11">11</a></td>
-<td markdown="span" colspan="4"> [Milestone 3 Checkpoint 2]({{ site.baseurl }}/docs/checkpoint2) DUE Thu, May 27 2021 17:00 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708262)</td></tr>
 </tbody>
 </table>
