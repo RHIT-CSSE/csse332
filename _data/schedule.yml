@@ -1,32 +1,32 @@
 1:
   reading:
-  topics:
-          - Void Pointers
-          - Malloc and Free
-          - Function Pointers
-
-  materials: 
-  other: 
-          - <a href="{{ site.baseurl }}/sessions/01_session1/"> Session Information </a>
-
-2:
-  reading:
-  topics:
-    - <b>Lab</b> Userspace Threading
-  materials:
-  other: 
-        - <a href="{{ site.baseurl }}/docs/01_userspace_thread_1/"> Lab Instructions</a>
-        - <a href="{{ site.baseurl }}/docs/submission_instructions/"> Getting and submitting code</a>
-        - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4947ba52-f883-497d-9192-ac8401325dd7"> Video Tutorial </a>
-3:
-  reading:
     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/intro.pdf">Chapter 1</a>
     - <a href="https://cacm.acm.org/magazines/2016/3/198874-lessons-learned-from-30-years-of-minix/fulltext"> Lessons Learned From 30 Years of Minix </a>
   topics:
     - Introduction to OS
   materials: 
   other:
-    - <a href="{{ site.baseurl }}/sessions/02_session2/"> Session Information </a>
+    # - <a href="{{ site.baseurl }}/sessions/02_session2/"> Session Information </a>
+2:
+  reading:
+  topics:
+    - Void Pointers
+    - Malloc and Free
+    - Function Pointers
+
+  materials: 
+  other: 
+    - <a href="{{ site.baseurl }}/sessions/01_session1/"> Session Information </a>
+
+3:
+  reading:
+  topics:
+    - <b>Lab</b> Userspace Threading
+  materials:
+  other: 
+    - <a href="{{ site.baseurl }}/docs/01_userspace_thread_1/"> Lab Instructions</a>
+    - <a href="{{ site.baseurl }}/docs/submission_instructions/"> Getting and submitting code</a>
+    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4947ba52-f883-497d-9192-ac8401325dd7"> Video Tutorial </a>
 4:
   reading:
     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf"> Chapter 2 </a>
@@ -54,276 +54,276 @@
   materials: 
   other:
     - <a href="{{ site.baseurl }}/sessions/06_session6/"> Session Information </a>
-7:
-  reading:
-    - <a href="https://www.gnu.org/software/make/manual/html_node/index.html"> GNU make manual </a>
-  topics:
-    - Makefiles
-  materials: 
-  other:
-    - <a href="{{ site.baseurl }}/sessions/07_session7/"> Session Information </a>
-8:
-  reading:
-  topics:
-    - Project Kickoff (In-class)
-  materials: 
-  other:
-     - No activity today
-9:
-  reading:
-    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/file-implementation.pdf"> Chapter 40 </a>
-  topics:
-    - Filesystems I
-  materials: 
-  other:
-    - <a href="{{ site.baseurl }}/sessions/09_session9/"> Session Information </a>
+# 7:
+#   reading:
+#     - <a href="https://www.gnu.org/software/make/manual/html_node/index.html"> GNU make manual </a>
+#   topics:
+#     - Makefiles
+#   materials: 
+#   other:
+#     - <a href="{{ site.baseurl }}/sessions/07_session7/"> Session Information </a>
+# 8:
+#   reading:
+#   topics:
+#     - Project Kickoff (In-class)
+#   materials: 
+#   other:
+#      - No activity today
+# 9:
+#   reading:
+#     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/file-implementation.pdf"> Chapter 40 </a>
+#   topics:
+#     - Filesystems I
+#   materials: 
+#   other:
+#     - <a href="{{ site.baseurl }}/sessions/09_session9/"> Session Information </a>
 
-10:
-  reading: 
-    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/file-implementation.pdf"> Chapter 40 </a>
-  topics: 
-    - Filesystems II
-  materials: 
-  other:
-    - <a href="{{ site.baseurl }}/sessions/10_session10/"> Session Information </a>
-11:
-  reading:
-    - <a href="https://tldp.org/LDP/lpg/node7.html"> Chapter 6 of The Linux Documentation Project (tldp) </a>
-          # - Chapter 3
-  topics:
-          - Inter Process Communication
-  materials: 
-  other:
-    - <a href="{{ site.baseurl }}/sessions/11_session11/"> Session Information </a>
-    # - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=8df3ec4f-3225-4169-9540-ac8a015d9f87">Video Lecture</a>
-    # - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424054">Activity Submission</a>
-12:
-  reading:
-  topics:
-          - <b>Lab</b> Ext2 Filesystem
-  materials:
-  other:
-    - In-class.
-    # - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=3b950a31-c6d9-42ba-b8c4-ac8e015e1292">Videos</a>
-    # - <a href="Homework/ext2/README"> Lab Instructions</a>
-13:
-  reading:
-      - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched.pdf"> Chapter 7 </a>
-          # - Chapter 6
-  topics:
-    - CPU Scheduling 1
-  materials:
-  other:
-      - <a href="{{ site.baseurl }}/sessions/13_session13/"> Session Information </a>
-    # - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=f48ee0bf-5c81-458c-b3c6-ac91014a48c1">Video Lecture</a>
-    # - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2424059">Activity</a>
-14:
-  reading:
-      - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched-mlfq.pdf"> Chapter 8 </a>
-          # - Chapter 6
-  topics:
-    - CPU Scheduling 2
-  materials: 
-  other:
-    - <a href="{{ site.baseurl }}/sessions/14_session14/"> Session Information </a>
-    # - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=ac5bb018-1376-4055-a576-ac9201537ea9">Video Lecture</a>
-    # - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2424064">Activity</a>
-15:
-  reading:
-  topics:
-    - Exam 1 review (In-class)
-  materials: Exam1Prep
-  other:
-    - No activity!  Do a practice exam
-16:
-  reading:
-  topics:
-    - Fork/Signals/Makefiles/pipes skills tests
-    - 3 Hour exam sometime today
-  materials: 
-  other:  
-17:
-  reading: 
-      - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf"> Chapter 26 </a>
-      - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-api.pdf"> Chapter 27 </a>
-  topics: 
-      - More Threads
-      - Thread Libraries
-      - Threading Issues
-  materials: 
-  other:
-    - <a href="{{ site.baseurl }}/sessions/17_session17/"> Session Information </a>
-18:
-  reading:
-    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-sema.pdf"> Chapter 31 </a>
-  topics:
-    - Semaphores
-  materials:
-  other:
-    - <a href="{{ site.baseurl }}/sessions/18_session18/"> Session Information </a>
-19:
-  reading: 
-    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 </a>
-  topics: 
-    - Mutex and condition variables
-  materials:
-  other:
-    - <a href="{{ site.baseurl }}/sessions/19_session19/"> Session Information </a>
-20:
-  reading:
-    - <a href="{{ site.baseurl }}/docs/milestone2/"> Milestone 2 </a>
-  topics:
-    - Project milestone 2
-  materials: 
-  other:
-    - <a href="{{ site.baseurl }}/sessions/20_session20/"> Session Information </a>
-21:
-  reading: 
-     - <a href="https://greenteapress.com/wp/semaphores/">Little Book of Semaphores - section 4.2 </a>
-  topics:
-    - More Semaphores
-    - Readers/Writers problem
-  materials: 
-  other:
-    - <a href="{{ site.baseurl }}/sessions/21_session21/"> Session Information </a>
-22:
-  reading: 
-  topics:
-    - Even more semaphores
-    - Scoreboard
-  materials: 
-  other:
-    - <a href="{{ site.baseurl }}/sessions/22_session22/"> Session Information </a>
-     # - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=5c3e34d4-7013-4fe3-98f0-aca7014211d4">Video Lecture</a>
-     # - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424084">Activity Submission</a>
-23:
-  reading:
-  topics:
-    - Kernel threads vs User threads
-  materials: 
-  other:
-    - <a href="{{ site.baseurl }}/sessions/23_session23/"> Session Information </a>
-24:
-  reading:  
-  topics: 
-    - Lab time
-  materials: 
-  other:
-    - <a href="https://youtu.be/Kn310EWLWX8"> Session Recording </a>
-25:
-  reading:
-    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-bugs.pdf"> Chapter 32 </a>
-  topics:
-    - Deadlocks and Starvation
-  materials:
-  other:
-    - <a href="{{ site.baseurl }}/sessions/25_session25/"> Session Information </a>
-26:
-  reading:
-  topics:
-    - Exam 2 Review
-  materials:
-  other:  
-    - <a href="{{ site.baseurl }}/docs/exam2_guidelines/">Exam 2 Guidelines </a>
-    - <a href="https://youtu.be/63U2lSIPhro"> Video recording </a>
-27:
-  reading: 
-  topics: 
-    - More exam 2 review
-  materials: 
-  other:
-    - <a href="{{ site.baseurl }}/docs/exam2_guidelines/">Exam 2 Guidelines </a>
-28:
-  reading:
-  topics:
-    - Exam 2
-    - 6:00 to 9:00 pm
-    - Lake room at the union
-  materials: 
-  other:  
-    - <a href="{{ site.baseurl }}/docs/exam2_guidelines/">Exam 2 Guidelines </a>
-    - <a href="https://youtu.be/LkE3NcVhSp4">Video recording</a>
-29:
-  reading:
-  topics:
-    - Deadlock detection and avoidance
-  materials: 
-  other:
-    - <a href="{{ site.baseurl }}/sessions/29_session29/"> Session Information </a>
-30:
-  reading:
-    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-segmentation.pdf"> Chapter 16 </a>
-  topics:
-    - Segmentation
-  materials: 
-  other:
-    - <a href="{{ site.baseurl }}/sessions/30_session30/"> Session Information </a>
-31:
-  reading:
-  topics:
-    - Paging
-  materials: 
-  other:  
-    - <a href="{{ site.baseurl }}/sessions/31_session31/"> Session Information </a>
-32:
-  reading:
-  topics:
-    - Milestone 3 Kickoff
-  materials: 
-  other:  
-    - <a href="{{ site.baseurl }}/docs/checkpoint1/"> Session Information </a>
-33:
-  reading:
-  topics:
-    - Project and assignment work time
-  materials: 
-  other:  
-    - No activity today
-34:
-  reading:
-  topics:
-        - Paging issues
-  materials: 
-  other:
-    - <a href="{{ site.baseurl }}/sessions/34_session34/"> Session Information </a>
-35:
-  reading:
-  topics:
-    - Page replacement algorithms
-  materials: 
-  other:  
-    - <a href="{{ site.baseurl }}/sessions/35_session35/"> Session Information </a>
-36:
-  reading:
-  topics: 
-    - Project work time
-  materials: 
-  other:  
-37:
-  reading:
-  topics:
-    - Intro to security
-  materials: 
-  other:  
-    - <a href="{{ site.baseurl }}/sessions/37_session37/"> Session Information </a>
-38:
-  reading:
-  topics:
-    - Control flow integrity attacks and defenses
-  materials: 
-  other:  
-    - <a href="{{ site.baseurl }}/sessions/38_session38/"> Session Information </a>
-39:
-  reading:
-  topics:
-    - Return oriented programming
-  materials:
-  other:
-    - <a href="{{ site.baseurl }}/sessions/39_session39/"> Session Information </a>
+# 10:
+#   reading: 
+#     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/file-implementation.pdf"> Chapter 40 </a>
+#   topics: 
+#     - Filesystems II
+#   materials: 
+#   other:
+#     - <a href="{{ site.baseurl }}/sessions/10_session10/"> Session Information </a>
+# 11:
+#   reading:
+#     - <a href="https://tldp.org/LDP/lpg/node7.html"> Chapter 6 of The Linux Documentation Project (tldp) </a>
+#           # - Chapter 3
+#   topics:
+#           - Inter Process Communication
+#   materials: 
+#   other:
+#     - <a href="{{ site.baseurl }}/sessions/11_session11/"> Session Information </a>
+#     # - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=8df3ec4f-3225-4169-9540-ac8a015d9f87">Video Lecture</a>
+#     # - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424054">Activity Submission</a>
+# 12:
+#   reading:
+#   topics:
+#           - <b>Lab</b> Ext2 Filesystem
+#   materials:
+#   other:
+#     - In-class.
+#     # - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=3b950a31-c6d9-42ba-b8c4-ac8e015e1292">Videos</a>
+#     # - <a href="Homework/ext2/README"> Lab Instructions</a>
+# 13:
+#   reading:
+#       - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched.pdf"> Chapter 7 </a>
+#           # - Chapter 6
+#   topics:
+#     - CPU Scheduling 1
+#   materials:
+#   other:
+#       - <a href="{{ site.baseurl }}/sessions/13_session13/"> Session Information </a>
+#     # - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=f48ee0bf-5c81-458c-b3c6-ac91014a48c1">Video Lecture</a>
+#     # - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2424059">Activity</a>
+# 14:
+#   reading:
+#       - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched-mlfq.pdf"> Chapter 8 </a>
+#           # - Chapter 6
+#   topics:
+#     - CPU Scheduling 2
+#   materials: 
+#   other:
+#     - <a href="{{ site.baseurl }}/sessions/14_session14/"> Session Information </a>
+#     # - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=ac5bb018-1376-4055-a576-ac9201537ea9">Video Lecture</a>
+#     # - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2424064">Activity</a>
+# 15:
+#   reading:
+#   topics:
+#     - Exam 1 review (In-class)
+#   materials: Exam1Prep
+#   other:
+#     - No activity!  Do a practice exam
+# 16:
+#   reading:
+#   topics:
+#     - Fork/Signals/Makefiles/pipes skills tests
+#     - 3 Hour exam sometime today
+#   materials: 
+#   other:  
+# 17:
+#   reading: 
+#       - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf"> Chapter 26 </a>
+#       - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-api.pdf"> Chapter 27 </a>
+#   topics: 
+#       - More Threads
+#       - Thread Libraries
+#       - Threading Issues
+#   materials: 
+#   other:
+#     - <a href="{{ site.baseurl }}/sessions/17_session17/"> Session Information </a>
+# 18:
+#   reading:
+#     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-sema.pdf"> Chapter 31 </a>
+#   topics:
+#     - Semaphores
+#   materials:
+#   other:
+#     - <a href="{{ site.baseurl }}/sessions/18_session18/"> Session Information </a>
+# 19:
+#   reading: 
+#     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 </a>
+#   topics: 
+#     - Mutex and condition variables
+#   materials:
+#   other:
+#     - <a href="{{ site.baseurl }}/sessions/19_session19/"> Session Information </a>
+# 20:
+#   reading:
+#     - <a href="{{ site.baseurl }}/docs/milestone2/"> Milestone 2 </a>
+#   topics:
+#     - Project milestone 2
+#   materials: 
+#   other:
+#     - <a href="{{ site.baseurl }}/sessions/20_session20/"> Session Information </a>
+# 21:
+#   reading: 
+#      - <a href="https://greenteapress.com/wp/semaphores/">Little Book of Semaphores - section 4.2 </a>
+#   topics:
+#     - More Semaphores
+#     - Readers/Writers problem
+#   materials: 
+#   other:
+#     - <a href="{{ site.baseurl }}/sessions/21_session21/"> Session Information </a>
+# 22:
+#   reading: 
+#   topics:
+#     - Even more semaphores
+#     - Scoreboard
+#   materials: 
+#   other:
+#     - <a href="{{ site.baseurl }}/sessions/22_session22/"> Session Information </a>
+#      # - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=5c3e34d4-7013-4fe3-98f0-aca7014211d4">Video Lecture</a>
+#      # - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424084">Activity Submission</a>
+# 23:
+#   reading:
+#   topics:
+#     - Kernel threads vs User threads
+#   materials: 
+#   other:
+#     - <a href="{{ site.baseurl }}/sessions/23_session23/"> Session Information </a>
+# 24:
+#   reading:  
+#   topics: 
+#     - Lab time
+#   materials: 
+#   other:
+#     - <a href="https://youtu.be/Kn310EWLWX8"> Session Recording </a>
+# 25:
+#   reading:
+#     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-bugs.pdf"> Chapter 32 </a>
+#   topics:
+#     - Deadlocks and Starvation
+#   materials:
+#   other:
+#     - <a href="{{ site.baseurl }}/sessions/25_session25/"> Session Information </a>
+# 26:
+#   reading:
+#   topics:
+#     - Exam 2 Review
+#   materials:
+#   other:  
+#     - <a href="{{ site.baseurl }}/docs/exam2_guidelines/">Exam 2 Guidelines </a>
+#     - <a href="https://youtu.be/63U2lSIPhro"> Video recording </a>
+# 27:
+#   reading: 
+#   topics: 
+#     - More exam 2 review
+#   materials: 
+#   other:
+#     - <a href="{{ site.baseurl }}/docs/exam2_guidelines/">Exam 2 Guidelines </a>
+# 28:
+#   reading:
+#   topics:
+#     - Exam 2
+#     - 6:00 to 9:00 pm
+#     - Lake room at the union
+#   materials: 
+#   other:  
+#     - <a href="{{ site.baseurl }}/docs/exam2_guidelines/">Exam 2 Guidelines </a>
+#     - <a href="https://youtu.be/LkE3NcVhSp4">Video recording</a>
+# 29:
+#   reading:
+#   topics:
+#     - Deadlock detection and avoidance
+#   materials: 
+#   other:
+#     - <a href="{{ site.baseurl }}/sessions/29_session29/"> Session Information </a>
+# 30:
+#   reading:
+#     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-segmentation.pdf"> Chapter 16 </a>
+#   topics:
+#     - Segmentation
+#   materials: 
+#   other:
+#     - <a href="{{ site.baseurl }}/sessions/30_session30/"> Session Information </a>
+# 31:
+#   reading:
+#   topics:
+#     - Paging
+#   materials: 
+#   other:  
+#     - <a href="{{ site.baseurl }}/sessions/31_session31/"> Session Information </a>
+# 32:
+#   reading:
+#   topics:
+#     - Milestone 3 Kickoff
+#   materials: 
+#   other:  
+#     - <a href="{{ site.baseurl }}/docs/checkpoint1/"> Session Information </a>
+# 33:
+#   reading:
+#   topics:
+#     - Project and assignment work time
+#   materials: 
+#   other:  
+#     - No activity today
+# 34:
+#   reading:
+#   topics:
+#         - Paging issues
+#   materials: 
+#   other:
+#     - <a href="{{ site.baseurl }}/sessions/34_session34/"> Session Information </a>
+# 35:
+#   reading:
+#   topics:
+#     - Page replacement algorithms
+#   materials: 
+#   other:  
+#     - <a href="{{ site.baseurl }}/sessions/35_session35/"> Session Information </a>
+# 36:
+#   reading:
+#   topics: 
+#     - Project work time
+#   materials: 
+#   other:  
+# 37:
+#   reading:
+#   topics:
+#     - Intro to security
+#   materials: 
+#   other:  
+#     - <a href="{{ site.baseurl }}/sessions/37_session37/"> Session Information </a>
+# 38:
+#   reading:
+#   topics:
+#     - Control flow integrity attacks and defenses
+#   materials: 
+#   other:  
+#     - <a href="{{ site.baseurl }}/sessions/38_session38/"> Session Information </a>
+# 39:
+#   reading:
+#   topics:
+#     - Return oriented programming
+#   materials:
+#   other:
+#     - <a href="{{ site.baseurl }}/sessions/39_session39/"> Session Information </a>
 
-40:
-  reading:
-  topics:
-    - No class
-  materials: 
-  other:  
+# 40:
+#   reading:
+#   topics:
+#     - No class
+#   materials: 
+#   other:  
