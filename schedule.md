@@ -23,7 +23,7 @@ title: Class Schedule
 </thead>
 <tbody>
 <tr>
-<td rowspan="2" markdown="span" style="font-size:xx-large;"><a name="w0">0</a></td>
+<td rowspan="3" markdown="span" style="font-size:xx-large;"><a name="w0">0</a></td>
 <td markdown="span">
 1 <br/> Thu, Sep 02 2021</td>
 <td markdown="span" style="text-align:left">
@@ -53,72 +53,30 @@ title: Class Schedule
 </ul>{:/}
 </td>
 <td markdown="span">
-<a href="{{ site.baseurl }}/sessions/01_session1/"> Session Information </a></td>
+</td>
 </tr>
+<tr>
+<td markdown="span" colspan="4"> [Linux Install]({{ site.baseurl }}/docs/01_linux_install) DUE Fri, Sep 03 2021 23:55 [Submission box](https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2933257)</td></tr>
 <tr>
 <td rowspan="4" markdown="span" style="font-size:xx-large;"><a name="w1">1</a></td>
 <td markdown="span">
 3 <br/> Mon, Sep 06 2021</td>
-<td markdown="span">
-</td>
-<td markdown="span" style="text-align:left">
-{::nomarkdown}<ul style="margin:0;padding:.5rem">
-<li> <b>Lab</b> Userspace Threading </li>
-</ul>{:/}
-</td>
-<td markdown="span">
-<a href="{{ site.baseurl }}/docs/01_userspace_thread_1/"> Lab Instructions</a><br/><a href="{{ site.baseurl }}/docs/submission_instructions/"> Getting and submitting code</a><br/><a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4947ba52-f883-497d-9192-ac8401325dd7"> Video Tutorial </a></td>
+<td markdown="span" colspan="3">N/A</td>
 </tr>
 <tr>
 <td markdown="span">
 4 <br/> Tue, Sep 07 2021</td>
-<td markdown="span" style="text-align:left">
-{::nomarkdown}<ul style="margin:0;padding:.5rem">
-<li> <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf"> Chapter 2 </a> </li>
-</ul>{:/}
-</td>
-<td markdown="span" style="text-align:left">
-{::nomarkdown}<ul style="margin:0;padding:.5rem">
-<li> Process Basics </li>
-</ul>{:/}
-</td>
-<td markdown="span">
-<a href="{{ site.baseurl }}/sessions/03_session3/"> Session Information </a></td>
+<td markdown="span" colspan="3">N/A</td>
 </tr>
 <tr>
 <td markdown="span">
 5 <br/> Thu, Sep 09 2021</td>
-<td markdown="span" style="text-align:left">
-{::nomarkdown}<ul style="margin:0;padding:.5rem">
-<li> <a href="https://man7.org/linux/man-pages/man7/signal.7.html">Signal - Linux manual page </a> </li>
-</ul>{:/}
-</td>
-<td markdown="span" style="text-align:left">
-{::nomarkdown}<ul style="margin:0;padding:.5rem">
-<li> Signals </li>
-</ul>{:/}
-</td>
-<td markdown="span">
-<a href="{{ site.baseurl }}/sessions/05_session5/"> Session Information </a></td>
+<td markdown="span" colspan="3">N/A</td>
 </tr>
 <tr>
 <td markdown="span">
 6 <br/> Fri, Sep 10 2021</td>
-<td markdown="span" style="text-align:left">
-{::nomarkdown}<ul style="margin:0;padding:.5rem">
-<li> <a href="https://man7.org/linux/man-pages/man3/exec.3.html"> exec man page </a> </li>
-<li> <a href="https://man7.org/linux/man-pages/man2/fork.2.html"> fork man page </a> </li>
-<li> <a href="https://man7.org/linux/man-pages/man2/waitid.2.html"> wait man page </a> </li>
-</ul>{:/}
-</td>
-<td markdown="span" style="text-align:left">
-{::nomarkdown}<ul style="margin:0;padding:.5rem">
-<li> Processes Operation </li>
-<li> Forking Child Processes </li>
-</ul>{:/}
-</td>
-<td markdown="span">
-<a href="{{ site.baseurl }}/sessions/06_session6/"> Session Information </a></td>
+<td markdown="span" colspan="3">N/A</td>
 </tr>
 <tr>
 <td rowspan="4" markdown="span" style="font-size:xx-large;"><a name="w2">2</a></td>
