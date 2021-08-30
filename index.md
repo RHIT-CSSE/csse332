@@ -11,7 +11,6 @@ Welcome to CSSE 332, Operating Systems, for the Fall 2021-22 quarter.
   }}/docs/unofficial/).
 * Similarly, you can find the course schedule with due dates [here]({{
   site.baseurl }}/schedule/) or on the top right. 
-* Introduction and course format information is [here](docs/welcome/).
 * Virtual Machine setup tips are [here](docs/vm_setup).
 
 This site is self-contained on in `git`
