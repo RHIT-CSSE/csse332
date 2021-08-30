@@ -11,7 +11,7 @@ Welcome to CSSE 332, Operating Systems, for the Fall 2021-22 quarter.
   }}/docs/unofficial/).
 * Similarly, you can find the course schedule with due dates [here]({{
   site.baseurl }}/schedule/) or on the top right. 
-* Virtual Machine setup tips are [here](docs/vm_setup).
+* Virtual Machine setup tips are [here](docs/01_linux_install/)
 
 This site is self-contained on in `git`
 [repo](https://github.com/rhit-csse332/csse332-202130.git).  It is a repository
