@@ -23,41 +23,41 @@
     - <a href="{{ site.gh_activity_url }}/01_pointers"> Activity </a>
     - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933248">  Activity Submission </a>
 
-# 3:
-#   reading:
-#   topics:
-#     - <b>Lab</b> Userspace Threading
-#   materials:
-#   other: 
-#     - <a href="{{ site.baseurl }}/docs/01_userspace_thread_1/"> Lab Instructions</a>
-#     - <a href="{{ site.baseurl }}/docs/submission_instructions/"> Getting and submitting code</a>
+3:
+  reading:
+  topics:
+    - <b>Lab</b> Userspace Threading
+  materials:
+  other: 
+    - <a href="{{ site.baseurl }}/docs/01_userspace_thread_1/"> Lab Instructions</a>
+    - <a href="{{ site.baseurl }}/docs/submission_instructions/"> Getting and submitting code</a>
 #     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4947ba52-f883-497d-9192-ac8401325dd7"> Video Tutorial </a>
-# 4:
-#   reading:
-#     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf"> Chapter 2 </a>
-#   topics:
-#     - Process Basics
-#   materials:
-#   other:
-#     - <a href="{{ site.baseurl }}/sessions/03_session3/"> Session Information </a>
-# 5:
-#   reading:
-#     - <a href="https://man7.org/linux/man-pages/man7/signal.7.html">Signal - Linux manual page </a>
-#   topics:
-#     - Signals
-#   materials: 
-#   other:
+4:
+  reading:
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf"> Chapter 2 </a>
+  topics:
+    - Basics of Processes
+  materials:
+  other:
+    # - <a href="{{ site.baseurl }}/sessions/03_session3/"> Session Information </a>
+5:
+  reading:
+    - <a href="https://man7.org/linux/man-pages/man7/signal.7.html">Signal - Linux manual page </a>
+  topics:
+    - Signals
+  materials: 
+  other:
 #     - <a href="{{ site.baseurl }}/sessions/05_session5/"> Session Information </a>
-# 6:
-#   reading:
-#     - <a href="https://man7.org/linux/man-pages/man3/exec.3.html"> exec man page </a>
-#     - <a href="https://man7.org/linux/man-pages/man2/fork.2.html"> fork man page </a>
-#     - <a href="https://man7.org/linux/man-pages/man2/waitid.2.html"> wait man page </a>
-#   topics:
-#           - Processes Operation
-#           - Forking Child Processes
-#   materials: 
-#   other:
+6:
+  reading:
+    - <a href="https://man7.org/linux/man-pages/man3/exec.3.html"> exec man page </a>
+    - <a href="https://man7.org/linux/man-pages/man2/fork.2.html"> fork man page </a>
+    - <a href="https://man7.org/linux/man-pages/man2/waitid.2.html"> wait man page </a>
+  topics:
+    - Processes Operation
+    - Forking Child Processes
+  materials: 
+  other:
 #     - <a href="{{ site.baseurl }}/sessions/06_session6/"> Session Information </a>
 # 7:
 #   reading:
