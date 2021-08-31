@@ -38,7 +38,7 @@ title: Class Schedule
 </ul>{:/}
 </td>
 <td markdown="span">
-</td>
+<a href="https://rosehulman-my.sharepoint.com/:p:/g/personal/noureddi_rose-hulman_edu/Ed5xz_-IYohJkY181epr6f4BGXWhlPajqlUpqVpbMKwBvg?e=bR0qAw"> Slides </a><br/>No activity today</td>
 </tr>
 <tr>
 <td markdown="span">
@@ -53,7 +53,7 @@ title: Class Schedule
 </ul>{:/}
 </td>
 <td markdown="span">
-</td>
+<a href="https://rosehulman-my.sharepoint.com/:p:/g/personal/noureddi_rose-hulman_edu/EcmqJLbNxRNPuUiRgvmIEBEBVUyjWk4wvoDA8wdlhZw-xg?e=c0WMVI"> Slides </a><br/><a href="{{ site.gh_activity_url }}/01_pointers"> Activity </a><br/><a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933248">  Activity Submission </a></td>
 </tr>
 <tr>
 <td markdown="span" colspan="4"> [Linux Install]({{ site.baseurl }}/docs/01_linux_install) DUE Fri, Sep 03 2021 23:55 [Submission box](https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2933257)</td></tr>

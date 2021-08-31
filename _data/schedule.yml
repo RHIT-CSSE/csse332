@@ -7,6 +7,8 @@
   materials: 
   other:
     # - <a href="{{ site.baseurl }}/sessions/02_session2/"> Session Information </a>
+    - <a href="https://rosehulman-my.sharepoint.com/:p:/g/personal/noureddi_rose-hulman_edu/Ed5xz_-IYohJkY181epr6f4BGXWhlPajqlUpqVpbMKwBvg?e=bR0qAw"> Slides </a>
+    - No activity today
 2:
   reading:
   topics:
@@ -17,6 +19,9 @@
   materials: 
   other: 
     # - <a href="{{ site.baseurl }}/sessions/01_session1/"> Session Information </a>
+    - <a href="https://rosehulman-my.sharepoint.com/:p:/g/personal/noureddi_rose-hulman_edu/EcmqJLbNxRNPuUiRgvmIEBEBVUyjWk4wvoDA8wdlhZw-xg?e=c0WMVI"> Slides </a>
+    - <a href="{{ site.gh_activity_url }}/01_pointers"> Activity </a>
+    - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933248">  Activity Submission </a>
 
 # 3:
 #   reading:
