@@ -48,8 +48,8 @@ itself handles threads.
 [Take a look here]({{ site.gh_repository_url }}/tree/main/homeworks/01_userspace_thread_1/basic_threads_in_use_example.c) to see how the
 thread system we're building is intended to be used. Here are the highlights for quick access:
 * [Source
-code](https://github.com/rhit-csse332/csse332-202130/tree/main/homeworks/01_userspace_thread_1)
-* [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708043)
+code](https://github.com/rhit-csse332/csse332/tree/main/homeworks/01_userspace_thread_1)
+* [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933287)
 * [Submission
 instructions](https://rhit-csse332.github.io/csse332-202130/docs/submission_instructions/)
 
@@ -85,16 +85,16 @@ just writing parallel algorithms.
 The most common use is event-based programming.  Imagine you want some
 code to run when the mouse is clicked, while at the same time doing
 some tricky calculation.  Without threads, your calculation code is
-going to polluted in various places by checking the mouse.  Or imagine
+going to be polluted in various places by checking the mouse.  Or imagine
 data is periodically coming in from some source (say a network
-download) and the same time other aspects of your program in running.
-You want the download data to written to a file (say) but that's not
+download) and at the same time other aspects of your program are running.
+You want the download data to be written to a file (say) but that's not
 something the rest of you application should be constantly checking
 and doing.  Even if the OS doesn't support threads, with userspace
 threads we can easily handle all of this.
 
-Another benefit is userspace threads tend to be quite a bit more
-lightweight than kernel managed threads.  So if you want to write code
+Another benefit is that userspace threads tend to be quite a bit more
+lightweight than kernel or OS-managed threads.  So if you want to write code
 with a LOT of parallelism, usually using a kernel thread for each one
 uses too much memory and is too slow.  The parallel languages Erlang,
 Elixir, and Go for example, make use of a mix of userspace and kernel
@@ -140,7 +140,7 @@ To compile and run this code, use gcc
 
 You should see the parent and the child switch between each other.
 
-You'll want to understand this code completely before continuing on.
+**You'll want to understand this code completely before continuing on.**
 
 
 <a id="org6d43de9"></a>
@@ -159,7 +159,7 @@ But take heart, the various test cases below will walk you through it.
 
 The code you're writing is a library and doesn't have a main.
 
-Compile this code like this to build the test application.
+Compile the code like this to build the test application.
 
     gcc tests.c CuTest.c basic_threads.c -o run_tests
 
