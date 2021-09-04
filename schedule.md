@@ -127,11 +127,13 @@ title: Class Schedule
 </td>
 </tr>
 <tr>
-<td rowspan="4" markdown="span" style="font-size:xx-large;"><a name="w2">2</a></td>
+<td rowspan="6" markdown="span" style="font-size:xx-large;"><a name="w2">2</a></td>
 <td markdown="span">
 7 <br/> Mon, Sep 13 2021</td>
 <td markdown="span" colspan="3">N/A</td>
 </tr>
+<tr>
+<td markdown="span" colspan="4"> [ADVANCED Userspace Threads With Preemption]({{ site.baseurl }}/docs/02_userspace_thread_2) DUE Mon, Sep 13 2021 23:59 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933290&forceview=1) <font color="#aaa"> grader: @nixonm </font> </td></tr>
 <tr>
 <td markdown="span">
 8 <br/> Tue, Sep 14 2021</td>
@@ -142,6 +144,8 @@ title: Class Schedule
 9 <br/> Thu, Sep 16 2021</td>
 <td markdown="span" colspan="3">N/A</td>
 </tr>
+<tr>
+<td markdown="span" colspan="4"> [Simple Shell/Makefiles]({{ site.baseurl }}/docs/03_simple_shell) DUE Thu, Sep 16 2021 23:59 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933317) <font color="#aaa"> grader: @nixonm </font> </td></tr>
 <tr>
 <td markdown="span">
 10 <br/> Fri, Sep 17 2021</td>
