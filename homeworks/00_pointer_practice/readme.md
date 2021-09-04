@@ -37,10 +37,12 @@ You can solve these problems in one of two ways:
 2. You can also do this assignment completely online in a web-based C
    programming environment [here](https://repl.it/@RHITcsse/OSPointerPractice).
 
+<!--
 If you won't have time or computer access during the break, this assignment will
 be due on the second day of the term (Friday), so you can try to squeeze it
 during our work time in class. If you have any questions, please reach out via
 Email or Teams as soon as possible. 
+-->
 
 ## Submission
 Once you complete the assignment, you can submit your code via Moodle
