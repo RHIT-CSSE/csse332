@@ -87,7 +87,7 @@ title: Class Schedule
 </ul>{:/}
 </td>
 <td markdown="span">
-</td>
+<a href="https://rosehulman-my.sharepoint.com/:p:/g/personal/noureddi_rose-hulman_edu/EdPw3KFKdB5MvhzLp7bUTq8BElTXlbO3eizdxldTsPXxUQ?e=pQh7Zr"> Slides </a><br/><a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2933266"> Activity </a></td>
 </tr>
 <tr>
 <td markdown="span">
@@ -103,7 +103,7 @@ title: Class Schedule
 </ul>{:/}
 </td>
 <td markdown="span">
-</td>
+<a href="https://rosehulman-my.sharepoint.com/:p:/g/personal/noureddi_rose-hulman_edu/EXbapWVhr95AuCwpFZbBss0Bvk0vLyJXY6O18azbxDsI1A?e=mhzW6h"> Slides </a><br/><a href="{{ site.gh_activity_url }}/05_signals">  Activity </a><br/><a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933275"> Activity Submission </a></td>
 </tr>
 <tr>
 <td markdown="span" colspan="4"> [Userspace Threads]({{ site.baseurl }}/docs/01_userspace_thread_1) DUE Thu, Sep 09 2021 23:59 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933287&forceview=1) <font color="#aaa"> grader: @nixonm </font> </td></tr>
@@ -124,7 +124,7 @@ title: Class Schedule
 </ul>{:/}
 </td>
 <td markdown="span">
-</td>
+<a href="https://rosehulman-my.sharepoint.com/:p:/g/personal/noureddi_rose-hulman_edu/EcCd3G_NmWNFhYw2-KQ4OYoBezGgHu7X2FIutTAnMrTTlw?e=tj090V"> Slides </a><br/><a href="{{ site.gh_activity_url }}/06_fork_exec"> Activity </a><br/><a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933281"> Activity Submission </a></td>
 </tr>
 <tr>
 <td rowspan="6" markdown="span" style="font-size:xx-large;"><a name="w2">2</a></td>

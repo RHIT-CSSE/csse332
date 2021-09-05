@@ -39,6 +39,8 @@
     - Basics of Processes
   materials:
   other:
+    - <a href="https://rosehulman-my.sharepoint.com/:p:/g/personal/noureddi_rose-hulman_edu/EdPw3KFKdB5MvhzLp7bUTq8BElTXlbO3eizdxldTsPXxUQ?e=pQh7Zr"> Slides </a>
+    - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2933266"> Activity </a>
     # - <a href="{{ site.baseurl }}/sessions/03_session3/"> Session Information </a>
 5:
   reading:
@@ -47,6 +49,9 @@
     - Signals
   materials: 
   other:
+    - <a href="https://rosehulman-my.sharepoint.com/:p:/g/personal/noureddi_rose-hulman_edu/EXbapWVhr95AuCwpFZbBss0Bvk0vLyJXY6O18azbxDsI1A?e=mhzW6h"> Slides </a>
+    - <a href="{{ site.gh_activity_url }}/05_signals">  Activity </a>
+    - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933275"> Activity Submission </a>
 #     - <a href="{{ site.baseurl }}/sessions/05_session5/"> Session Information </a>
 6:
   reading:
@@ -58,6 +63,9 @@
     - Forking Child Processes
   materials: 
   other:
+    - <a href="https://rosehulman-my.sharepoint.com/:p:/g/personal/noureddi_rose-hulman_edu/EcCd3G_NmWNFhYw2-KQ4OYoBezGgHu7X2FIutTAnMrTTlw?e=tj090V"> Slides </a>
+    - <a href="{{ site.gh_activity_url }}/06_fork_exec"> Activity </a>
+    - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933281"> Activity Submission </a>
 #     - <a href="{{ site.baseurl }}/sessions/06_session6/"> Session Information </a>
 # 7:
 #   reading:
