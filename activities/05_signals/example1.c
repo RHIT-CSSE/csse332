@@ -20,7 +20,7 @@ void disable_sigint_signal() {
     // easy as saying SIG_UNBLOCK
     //
     // As always, check the manpage for details
-    // type "man sigpocmask" on the command line
+    // type "man sigprocmask" on the command line
     if(sigprocmask(SIG_BLOCK, &mask, NULL) < 0) {
         perror ("sigprocmask");
     }
@@ -56,7 +56,7 @@ int main()
     signal(SIGINT, ouch);
 
     // disable sigint signal.  Uncomment this and see what happens.
-    // disable_sigint_signal();
+    disable_sigint_signal();
     
     int i;
     for(i = 0; i < 6; i++) {
