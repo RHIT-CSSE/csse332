@@ -1,4 +1,4 @@
-all: execExample.bin forkExample.bin buffalosay.bin forkActivity.bin forkActivitySolution.bin
+all: execExample.bin forkExample.bin buffalosay.bin forkActivity.bin forkActivitySolution.bin orphanExample.bin
 
 execExample.bin: execExample.c
 	gcc execExample.c -o execExample.bin
@@ -15,5 +15,8 @@ forkActivity.bin: buffalosay.bin forkActivity.c
 forkActivitySolution.bin: buffalosay.bin forkActivitySolution.c
 	gcc forkActivitySolution.c -o forkActivitySolution.bin
 
+orphanExample.bin: orphanExample.o
+	gcc -o orphanExample.bin $^
+
 clean:
-	rm -f *.bin
+	rm -f *.bin *.o
