@@ -67,28 +67,42 @@
     - <a href="{{ site.gh_activity_url }}/06_fork_exec"> Activity </a>
     - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933281"> Activity Submission </a>
 #     - <a href="{{ site.baseurl }}/sessions/06_session6/"> Session Information </a>
-# 7:
-#   reading:
-#     - <a href="https://www.gnu.org/software/make/manual/html_node/index.html"> GNU make manual </a>
-#   topics:
-#     - Makefiles
-#   materials: 
-#   other:
+7:
+  reading:
+    - <a href="https://www.gnu.org/software/make/manual/html_node/index.html"> GNU make manual </a>
+  topics:
+    - Makefiles
+  materials: 
+  other:
+    - <a href="{{ site.gh_activity_url }}/07_makefiles/">Activity</a>
+    - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933296"> Activity Submission </a>
 #     - <a href="{{ site.baseurl }}/sessions/07_session7/"> Session Information </a>
-# 8:
-#   reading:
-#   topics:
-#     - Project Kickoff (In-class)
-#   materials: 
-#   other:
-#      - No activity today
-# 9:
-#   reading:
-#     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/file-implementation.pdf"> Chapter 40 </a>
-#   topics:
-#     - Filesystems I
-#   materials: 
-#   other:
+8:
+   reading:
+     - <a href="https://tldp.org/LDP/lpg/node7.html"> Chapter 6 of The Linux Documentation Project (tldp) </a>
+   topics:
+           - Inter Process Communication
+   materials: 
+   other:
+    - <a href="{{ site.gh_activity_url }}/11_ipc/">Activity</a>
+    - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933326&forceview=1"> Activity Submission </a>
+#     - <a href="{{ site.baseurl }}/sessions/11_session11/"> Session Information </a>
+9:
+  reading:
+  topics:
+    - <b>Lab</b> Project Kickoff
+  materials: 
+  other:
+     - No activity today
+10:
+  reading:
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/file-implementation.pdf"> Chapter 40 </a>
+  topics:
+    - Filesystems I
+  materials: 
+  other:
+    - <a href="{{ site.gh_activity_url }}/09_filesystems_i/">Activity</a>
+    - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933302"> Activity Submission </a>
 #     - <a href="{{ site.baseurl }}/sessions/09_session9/"> Session Information </a>
 
 # 10:
@@ -99,17 +113,6 @@
 #   materials: 
 #   other:
 #     - <a href="{{ site.baseurl }}/sessions/10_session10/"> Session Information </a>
-# 11:
-#   reading:
-#     - <a href="https://tldp.org/LDP/lpg/node7.html"> Chapter 6 of The Linux Documentation Project (tldp) </a>
-#           # - Chapter 3
-#   topics:
-#           - Inter Process Communication
-#   materials: 
-#   other:
-#     - <a href="{{ site.baseurl }}/sessions/11_session11/"> Session Information </a>
-#     # - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=8df3ec4f-3225-4169-9540-ac8a015d9f87">Video Lecture</a>
-#     # - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2424054">Activity Submission</a>
 # 12:
 #   reading:
 #   topics:
