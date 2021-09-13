@@ -141,7 +141,7 @@ title: Class Schedule
 </ul>{:/}
 </td>
 <td markdown="span">
-<a href="{{ site.gh_activity_url }}/07_makefiles/">Activity</a><br/><a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933296"> Activity Submission </a></td>
+<a href="https://rosehulman-my.sharepoint.com/:p:/g/personal/noureddi_rose-hulman_edu/ETSbGLHm3wNAp50Lr9mEeVEBrjSLvc9sd6-m6xCoVUdHOA?e=xQbGks"> Slides </a><br/><a href="{{ site.gh_activity_url }}/07_makefiles/">Activity</a><br/><a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933296"> Activity Submission </a></td>
 </tr>
 <tr>
 <td markdown="span" colspan="4"> [ADVANCED Userspace Threads With Preemption]({{ site.baseurl }}/docs/02_userspace_thread_2) DUE Mon, Sep 13 2021 23:59 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933290&forceview=1) <font color="#aaa"> grader: @nixonm </font> </td></tr>

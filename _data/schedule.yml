@@ -74,6 +74,7 @@
     - Makefiles
   materials: 
   other:
+    - <a href="https://rosehulman-my.sharepoint.com/:p:/g/personal/noureddi_rose-hulman_edu/ETSbGLHm3wNAp50Lr9mEeVEBrjSLvc9sd6-m6xCoVUdHOA?e=xQbGks"> Slides </a>
     - <a href="{{ site.gh_activity_url }}/07_makefiles/">Activity</a>
     - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933296"> Activity Submission </a>
 #     - <a href="{{ site.baseurl }}/sessions/07_session7/"> Session Information </a>
