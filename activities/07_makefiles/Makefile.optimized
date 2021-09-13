@@ -1,0 +1,16 @@
+all: almain.bin
+
+SOURCES := $(wildcard *.c)
+OBJECTS := $(SOURCES:%.c=%.o)
+DEPS := $(SOURCES:%.c=%.d)
+CFLAGS += -MMD -MP
+
+almain.bin: ${OBJECTS}
+	gcc -o $@ $^
+
+.PHONY: clean all
+
+clean:
+	rm -f *.bin *.o *.i *.s
+
+-include $(DEPS)
