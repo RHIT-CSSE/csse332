@@ -19,3 +19,19 @@
 # Hint: for your testing, typing "touch <filename>" will make a file appear to be edited
 #
 # Bonus hint: TAB characters are required in Makefiles for indenting rules, spaces won't do the job
+
+all: almain.bin
+
+almain.bin: almain.o arraylist.o 
+	gcc -o $@ $^
+
+almain.o: almain.c arraylist.h
+	gcc -c almain.c
+
+arraylist.o: arraylist.c arraylist.h
+	gcc -c $^
+
+.PHONY: clean all
+
+clean:
+	rm -f makefiles.zip almain.bin *.o

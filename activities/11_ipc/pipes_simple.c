@@ -28,12 +28,14 @@ int main(void)
 		/* Child process closes up input side of pipe */
 		close(fd[0]);
 		write(fd[1], data, (strlen(data)+1));
+		close(fd[1]);
 		return 0;
 	} else {
 		/* Parent process closes up output side of pipe */
 		close(fd[1]);
 		nbytes = read(fd[0], readbuffer, 80);
 		printf("Received string: %s", readbuffer);
+		close(fd[0]);
 
 	}
 
