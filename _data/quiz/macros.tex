@@ -1,0 +1,132 @@
+\newcommand{\tfidk}[1]{%
+    \vspace{0.05in}
+    \begin{oneparchoices}
+        \ifnum#1=1
+            \CorrectChoice T
+        \else
+            \choice T
+        \fi
+        \ifnum#1=2
+            \CorrectChoice F
+        \else
+            \choice F
+        \fi
+        \choice IDK
+    \end{oneparchoices}
+    \vspace{0.05in}%
+}
+
+\newcommand{\Fix}[1]{\noindent\emph{\hl{TODO: #1}}}
+\newcommand{\todo}[1]{\noindent\emph{\hl{TODO: #1}}}
+
+\newcommand{\CodeIn}[1]{{\small \texttt{#1}}}
+\newcommand{\CI}[1]{\CodeIn{#1}}
+\newcommand{\bigtheta}[1]{\ensuremath{\Theta\left(#1\right)}}
+
+\usepackage{xstring}
+\newcommand{\PP}[1]{
+    \smallskip
+    \noindent{\bf \IfEndWith{#1}{.}{#1}{#1.}}
+}
+
+% easy paranthesis placement
+\newcommand{\pr}[1]{\left(#1\right)}
+
+% for eval macros
+\newcommand{\DefMacro}[2]{\expandafter\newcommand\csname rmk-#1\endcsname{#2}}
+\newcommand{\UseMacro}[1]{\csname rmk-#1\endcsname}
+
+% for drawing the colored circles to mention the figure
+%% Ported from Wajih's code
+\newcommand*\BC[1]{%
+    \begin{tikzpicture}[baseline=(C.base)]
+        \node[draw,circle,fill=yyellow,inner sep=0.2pt](C) {\textcolor{black}{#1}};
+    \end{tikzpicture}
+}
+
+%% lstlisting config
+
+% Set the default code path
+% \lstset{inputpath=code/}
+
+% ----------
+% THIS BELOW COPIED FROM vkuncak/doc/vmcai09/defs.tex
+\definecolor{gray}{RGB}{211,211,211}
+\definecolor{yyellow}{HTML}{FFFF99}
+\definecolor{ghkeyword}{HTML}{d73a49}
+\definecolor{ghnormal}{HTML}{032f62}
+\newcommand{\jbasicstyle}{\scriptsize\sffamily}
+\newcommand{\jnumberstyle}{\tiny}
+\newcommand{\Hilight}{\makebox[0pt][l]{\color{gray}\rule[-3pt]{0.80\linewidth}
+{9pt}}}
+\lstdefinelanguage{pseudo}{
+    morekeywords={if,else,return,map},
+    keywordstyle=\bfseries,
+    lineskip=-0.1em,
+    numbers=none,
+    numberstyle=\jnumberstyle,
+    numbersep=4pt,
+    basicstyle=\scriptsize,
+    basicstyle=\jbasicstyle,
+    breaklines=true,
+    breakautoindent=true,
+    commentstyle=\color{dkgreen},
+    tabsize=2,
+    columns=fullflexible,
+    morecomment=*[l][\textsl]{//},
+    mathescape=true,
+}
+
+\lstdefinelanguage{p4}{
+    morekeywords={state, parser, packet_in, out, inout, metadata,
+        standard_metadata_t,
+        transition, select, default, table, key, action, default_action, apply, actions,
+    size},
+    morecomment=[l]{//},
+    morecomment=[s]{/*}{*/},
+    morestring=[b]",
+    keywordstyle=\bfseries\color{ghkeyword},
+    backgroundcolor=\color{white},
+    basicstyle=\color{ghnormal},
+}
+
+\definecolor{dkgreen}{rgb}{0,.4,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\definecolor{light-gray}{gray}{0.95} %the shade of grey that stack exchange uses
+\newcommand{\cbasicstyle}{\scriptsize\sffamily}
+\newcommand{\cnumberstyle}{\tiny}
+
+% \lstset{frame=tb,
+%     language=C,
+%     backgroundcolor=\color{light-gray},
+%     aboveskip=0mm,
+%     belowskip=0mm,
+%     % showstringspaces=false,
+%     % columns=flexible,
+%     numberstyle=\jnumberstyle,
+%     basicstyle=\scriptsize,
+%     basicstyle=\jbasicstyle,
+%     numbers=none,
+%     numberstyle=\tiny\color{gray},
+%     keywordstyle=\color{blue},
+%     commentstyle=\bfseries\color{dkgreen},
+%     stringstyle=\color{mauve},
+%     breaklines=true,
+%     breakatwhitespace=true,
+%     tabsize=2
+% }
+
+\SetKwProg{Fn}{Func}{}{}
+
+\newcommand{\algorithmfootnote}[2][\footnotesize]{%
+  \let\old@algocf@finish\@algocf@finish% Store algorithm finish macro
+  \def\@algocf@finish{\old@algocf@finish% Update finish macro to insert "footnote"
+    \leavevmode\rlap{\begin{minipage}{\linewidth}
+    #1#2
+    \end{minipage}}%
+  }%
+}
+
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+
