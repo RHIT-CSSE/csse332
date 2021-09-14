@@ -1,7 +1,7 @@
 /*
 
-Here is some code that uses fork to speed up factoring.  Yes, I agree
-it factors in a super dumb way.
+   Here is some code that uses fork to speed up factoring.  Yes, I agree
+   it factors in a super dumb way.
 
 First: Understand the code
 
@@ -21,7 +21,7 @@ finish one solution, try the other.
 
 Take a look at shared_simple and pipes_simple
 
- */
+*/
 #include <stdio.h>
 #include <string.h>
 #include <unistd.h>
@@ -31,32 +31,32 @@ Take a look at shared_simple and pipes_simple
 int main(void)
 {
 
-  unsigned long long int target, i, start = 0;
-  printf("Give a number to factor.\n");
-  // 18446744073709551615 is max, I think
-  // I think 666666662 gives good results
-  scanf("%llu",&target);
+	unsigned long long int target, i, start = 0;
+	printf("Give a number to factor.\n");
+	// 18446744073709551615 is max, I think
+	// I think 666666662 gives good results
+	scanf("%llu",&target);
 
-  int pid = fork();
-  if(pid == 0) {
-    start = 2;
-  } else {
-    pid = fork();
-    if(pid == 0) {
-      start = 3;
-    } else {
-      // I'm the parent
-      wait(NULL);
-      wait(NULL);
-      printf("Finished.\n");
-      return 0;
-    }
-  }
+	int pid = fork();
+	if(pid == 0) {
+		start = 2;
+	} else {
+		pid = fork();
+		if(pid == 0) {
+			start = 3;
+		} else {
+			// I'm the parent
+			wait(NULL);
+			wait(NULL);
+			printf("Finished.\n");
+			return 0;
+		}
+	}
 
-  for(i = start; i <= target/2; i = i + 2) {
-    if(target % i == 0) {
-      printf("%llu is a factor\n", i);
-    }
-  }
-  return 0;
+	for(i = start; i <= target/2; i = i + 2) {
+		if(target % i == 0) {
+			printf("%llu is a factor\n", i);
+		}
+	}
+	return 0;
 }
