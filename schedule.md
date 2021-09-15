@@ -172,7 +172,7 @@ title: Class Schedule
 </ul>{:/}
 </td>
 <td markdown="span">
-No activity today</td>
+<a href="{{ site.baseurl }}/docs/zz_project"> Lab Instructions </a><br/>No activity today</td>
 </tr>
 <tr>
 <td markdown="span" colspan="4"> [Simple Shell/Makefiles]({{ site.baseurl }}/docs/03_simple_shell) DUE Thu, Sep 16 2021 23:59 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933317) <font color="#aaa"> grader: @nixonm </font> </td></tr>

@@ -94,7 +94,8 @@
     - <b>Lab</b> Project Kickoff
   materials: 
   other:
-     - No activity today
+    - <a href="{{ site.baseurl }}/docs/zz_project"> Lab Instructions </a>
+    - No activity today
 10:
   reading:
     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/file-implementation.pdf"> Chapter 40 </a>
