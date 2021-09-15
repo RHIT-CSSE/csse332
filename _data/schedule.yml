@@ -107,45 +107,42 @@
     - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933302"> Activity Submission </a>
 #     - <a href="{{ site.baseurl }}/sessions/09_session9/"> Session Information </a>
 
-# 10:
-#   reading: 
-#     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/file-implementation.pdf"> Chapter 40 </a>
-#   topics: 
-#     - Filesystems II
-#   materials: 
-#   other:
-#     - <a href="{{ site.baseurl }}/sessions/10_session10/"> Session Information </a>
-# 12:
-#   reading:
-#   topics:
-#           - <b>Lab</b> Ext2 Filesystem
-#   materials:
-#   other:
-#     - In-class.
+11:
+  reading: 
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/file-implementation.pdf"> Chapter 40 </a>
+  topics: 
+    - Filesystems II
+  materials: 
+  other:
+    - <a href="{{ site.gh_activity_url }}/10_filesystems_ii/">Activity</a>
+    - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933308&forceview=1"> Activity Submission </a>
+12:
+  reading:
+      - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched.pdf"> Chapter 7 </a>
+          # - Chapter 6
+  topics:
+    - CPU Scheduling I
+  materials:
+  other:
+    - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2933332&forceview=1"> Scheduling Quiz </a>
+13:
+  reading:
+  topics:
+          - <b>Lab</b> Ext2 Filesystem
+  materials:
+  other:
+    - No activity today
 #     # - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=3b950a31-c6d9-42ba-b8c4-ac8e015e1292">Videos</a>
 #     # - <a href="Homework/ext2/README"> Lab Instructions</a>
-# 13:
-#   reading:
-#       - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched.pdf"> Chapter 7 </a>
-#           # - Chapter 6
-#   topics:
-#     - CPU Scheduling 1
-#   materials:
-#   other:
-#       - <a href="{{ site.baseurl }}/sessions/13_session13/"> Session Information </a>
-#     # - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=f48ee0bf-5c81-458c-b3c6-ac91014a48c1">Video Lecture</a>
-#     # - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2424059">Activity</a>
-# 14:
-#   reading:
-#       - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched-mlfq.pdf"> Chapter 8 </a>
-#           # - Chapter 6
-#   topics:
-#     - CPU Scheduling 2
-#   materials: 
-#   other:
-#     - <a href="{{ site.baseurl }}/sessions/14_session14/"> Session Information </a>
-#     # - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=ac5bb018-1376-4055-a576-ac9201537ea9">Video Lecture</a>
-#     # - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2424064">Activity</a>
+14:
+  reading:
+      - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2933338&forceview=1"> Chapter 8 </a>
+          # - Chapter 6
+  topics:
+    - CPU Scheduling II
+  materials: 
+  other:
+    - <a href=""> Scheduling II Quiz </a>
 # 15:
 #   reading:
 #   topics:

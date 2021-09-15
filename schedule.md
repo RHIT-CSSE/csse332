@@ -193,25 +193,70 @@ title: Class Schedule
 <a href="{{ site.gh_activity_url }}/09_filesystems_i/">Activity</a><br/><a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933302"> Activity Submission </a></td>
 </tr>
 <tr>
-<td rowspan="4" markdown="span" style="font-size:xx-large;"><a name="w3">3</a></td>
+<td rowspan="6" markdown="span" style="font-size:xx-large;"><a name="w3">3</a></td>
 <td markdown="span">
 11 <br/> Mon, Sep 20 2021</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/file-implementation.pdf"> Chapter 40 </a> </li>
+</ul>{:/}
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> Filesystems II </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+<a href="{{ site.gh_activity_url }}/10_filesystems_ii/">Activity</a><br/><a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933308&forceview=1"> Activity Submission </a></td>
 </tr>
+<tr>
+<td markdown="span" colspan="4"> [Process Lab/Debugging]({{ site.baseurl }}/docs/04_process_lab) DUE Mon, Sep 20 2021 23:59 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933320) <font color="#aaa"> grader: @nixonm </font> </td></tr>
 <tr>
 <td markdown="span">
 12 <br/> Tue, Sep 21 2021</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched.pdf"> Chapter 7 </a> </li>
+</ul>{:/}
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> CPU Scheduling I </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+<a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2933332&forceview=1"> Scheduling Quiz </a></td>
 </tr>
 <tr>
 <td markdown="span">
 13 <br/> Thu, Sep 23 2021</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> <b>Lab</b> Ext2 Filesystem </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+No activity today</td>
 </tr>
+<tr>
+<td markdown="span" colspan="4"> [Project Lab 0]({{ site.baseurl }}/docs/zz_project) DUE Thu, Sep 23 2021 23:59 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933575) <font color="#aaa"> grader: @nixonm </font> </td></tr>
 <tr>
 <td markdown="span">
 14 <br/> Fri, Sep 24 2021</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2933338&forceview=1"> Chapter 8 </a> </li>
+</ul>{:/}
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> CPU Scheduling II </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+<a href=""> Scheduling II Quiz </a></td>
 </tr>
 <tr>
 <td rowspan="4" markdown="span" style="font-size:xx-large;"><a name="w4">4</a></td>
