@@ -77,6 +77,8 @@
     - <a href="https://rosehulman-my.sharepoint.com/:p:/g/personal/noureddi_rose-hulman_edu/ETSbGLHm3wNAp50Lr9mEeVEBrjSLvc9sd6-m6xCoVUdHOA?e=xQbGks"> Slides </a>
     - <a href="{{ site.gh_activity_url }}/07_makefiles/">Activity</a>
     - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933296"> Activity Submission </a>
+    - <a href="https://youtu.be/Pect1FUKhvk"> Advanced Makefiles </a>
+    - <a href="https://bytes.usc.edu/cs104/wiki/makefile/"> Makefiles cheatsheet </a>
 #     - <a href="{{ site.baseurl }}/sessions/07_session7/"> Session Information </a>
 8:
    reading:
@@ -143,20 +145,20 @@
   materials: 
   other:
     - <a href=""> Scheduling II Quiz </a>
-# 15:
-#   reading:
-#   topics:
-#     - Exam 1 review (In-class)
-#   materials: Exam1Prep
-#   other:
-#     - No activity!  Do a practice exam
-# 16:
-#   reading:
-#   topics:
-#     - Fork/Signals/Makefiles/pipes skills tests
-#     - 3 Hour exam sometime today
-#   materials: 
-#   other:  
+15:
+  reading:
+  topics:
+    - Exam 1 review (In-class)
+  materials: Exam1Prep
+  other:
+    - No activity!  Do a practice exam
+16:
+  reading:
+  topics:
+    - Fork/Signals/Makefiles/pipes skills tests
+    - 3 Hour exam TBA
+  materials: 
+  other:  
 # 17:
 #   reading: 
 #       - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf"> Chapter 26 </a>

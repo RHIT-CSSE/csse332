@@ -141,7 +141,7 @@ title: Class Schedule
 </ul>{:/}
 </td>
 <td markdown="span">
-<a href="https://rosehulman-my.sharepoint.com/:p:/g/personal/noureddi_rose-hulman_edu/ETSbGLHm3wNAp50Lr9mEeVEBrjSLvc9sd6-m6xCoVUdHOA?e=xQbGks"> Slides </a><br/><a href="{{ site.gh_activity_url }}/07_makefiles/">Activity</a><br/><a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933296"> Activity Submission </a></td>
+<a href="https://rosehulman-my.sharepoint.com/:p:/g/personal/noureddi_rose-hulman_edu/ETSbGLHm3wNAp50Lr9mEeVEBrjSLvc9sd6-m6xCoVUdHOA?e=xQbGks"> Slides </a><br/><a href="{{ site.gh_activity_url }}/07_makefiles/">Activity</a><br/><a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933296"> Activity Submission </a><br/><a href="https://youtu.be/Pect1FUKhvk"> Advanced Makefiles </a><br/><a href="https://bytes.usc.edu/cs104/wiki/makefile/"> Makefiles cheatsheet </a></td>
 </tr>
 <tr>
 <td markdown="span" colspan="4"> [ADVANCED Userspace Threads With Preemption]({{ site.baseurl }}/docs/02_userspace_thread_2) DUE Mon, Sep 13 2021 23:59 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933290&forceview=1) <font color="#aaa"> grader: @nixonm </font> </td></tr>
@@ -262,12 +262,29 @@ No activity today</td>
 <td rowspan="4" markdown="span" style="font-size:xx-large;"><a name="w4">4</a></td>
 <td markdown="span">
 15 <br/> Mon, Sep 27 2021</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> Exam 1 review (In-class) </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+Exam1Prep<br/>No activity!  Do a practice exam</td>
 </tr>
 <tr>
 <td markdown="span">
 16 <br/> Tue, Sep 28 2021</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> Fork/Signals/Makefiles/pipes skills tests </li>
+<li> 3 Hour exam TBA </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+</td>
 </tr>
 <tr>
 <td markdown="span">
