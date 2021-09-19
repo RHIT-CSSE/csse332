@@ -116,8 +116,9 @@
     - Filesystems II
   materials: 
   other:
-    - <a href="{{ site.gh_activity_url }}/10_filesystems_ii/">Activity</a>
-    - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933308&forceview=1"> Activity Submission </a>
+    - No activity today
+    # - <a href="{{ site.gh_activity_url }}/10_filesystems_ii/">Activity</a>
+    # - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933308&forceview=1"> Activity Submission </a>
 12:
   reading:
       - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched.pdf"> Chapter 7 </a>

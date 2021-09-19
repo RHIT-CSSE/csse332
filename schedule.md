@@ -207,7 +207,7 @@ title: Class Schedule
 </ul>{:/}
 </td>
 <td markdown="span">
-<a href="{{ site.gh_activity_url }}/10_filesystems_ii/">Activity</a><br/><a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933308&forceview=1"> Activity Submission </a></td>
+No activity today</td>
 </tr>
 <tr>
 <td markdown="span" colspan="4"> [Process Lab/Debugging]({{ site.baseurl }}/docs/04_process_lab) DUE Mon, Sep 20 2021 23:59 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933320) <font color="#aaa"> grader: @nixonm </font> </td></tr>
