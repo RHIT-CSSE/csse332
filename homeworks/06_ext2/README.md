@@ -1,9 +1,9 @@
 ---
 title: Ext2 file system
 layout: post
-date: Wed Mar 24 13:08:31 2021
+date: Sun Sep 19 14:55:10 2021 
 readtime: true
-gh-repo: rhit-csse332/csse332-202130
+gh-repo: rhit-csse332/csse332
 gh-badge: [star,watch,follow]
 ---
 
@@ -50,15 +50,16 @@ your errors.
 
 Here are the highlights for quick access:
 * [Source code]({{ site.gh_repository_url }}/tree/main/homeworks/06_ext2)
-* [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708052)
-* [Submission instructions](https://rhit-csse332.github.io/csse332-202130/docs/submission_instructions/)
+* [Submission
+box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933347&forceview=1)
+* [Submission instructions](https://rhit-csse332.github.io/csse332/docs/submission_instructions/)
 
 # Understanding ext2
 
 In this section of the project web page, we'll give you a good enough
 understanding of the ext2 filesystem to finish the project.  If you're
 curious for more information, there are several books and web pages
-that discuss the ext2 file system in gory detail; for example, see see
+that discuss the ext2 file system in gory detail; for example, see
 chatper 9.1 of [The Linux
 Kernel](https://www.tldp.org/LDP/tlk/fs/filesystem.html),
 or [this very detailed doc](https://www.nongnu.org/ext2-doc/ext2.html).  

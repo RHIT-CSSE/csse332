@@ -259,7 +259,7 @@ No activity today</td>
 <a href=""> Scheduling II Quiz </a></td>
 </tr>
 <tr>
-<td rowspan="4" markdown="span" style="font-size:xx-large;"><a name="w4">4</a></td>
+<td rowspan="5" markdown="span" style="font-size:xx-large;"><a name="w4">4</a></td>
 <td markdown="span">
 15 <br/> Mon, Sep 27 2021</td>
 <td markdown="span">
@@ -291,6 +291,8 @@ Exam1Prep<br/>No activity!  Do a practice exam</td>
 17 <br/> Thu, Sep 30 2021</td>
 <td markdown="span" colspan="3">N/A</td>
 </tr>
+<tr>
+<td markdown="span" colspan="4"> [ADVANCED Ext2 Filesystem]({{ site.baseurl }}/docs/06_ext2) DUE Thu, Sep 30 2021 23:59 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933347&forceview=1)</td></tr>
 <tr>
 <td markdown="span">
 18 <br/> Fri, Oct 01 2021</td>
