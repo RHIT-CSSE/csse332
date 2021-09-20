@@ -214,6 +214,19 @@ No activity today</td>
 <tr>
 <td markdown="span">
 12 <br/> Tue, Sep 21 2021</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> <b>Lab</b> Ext2 Filesystem </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+No activity today</td>
+</tr>
+<tr>
+<td markdown="span">
+13 <br/> Thu, Sep 23 2021</td>
 <td markdown="span" style="text-align:left">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
 <li> <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched.pdf"> Chapter 7 </a> </li>
@@ -226,19 +239,6 @@ No activity today</td>
 </td>
 <td markdown="span">
 <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2933332&forceview=1"> Scheduling Quiz </a></td>
-</tr>
-<tr>
-<td markdown="span">
-13 <br/> Thu, Sep 23 2021</td>
-<td markdown="span">
-</td>
-<td markdown="span" style="text-align:left">
-{::nomarkdown}<ul style="margin:0;padding:.5rem">
-<li> <b>Lab</b> Ext2 Filesystem </li>
-</ul>{:/}
-</td>
-<td markdown="span">
-No activity today</td>
 </tr>
 <tr>
 <td markdown="span" colspan="4"> [Project Lab 0]({{ site.baseurl }}/docs/zz_project) DUE Thu, Sep 23 2021 23:59 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933575) <font color="#aaa"> grader: @nixonm </font> </td></tr>
