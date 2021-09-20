@@ -118,8 +118,15 @@
   other:
     - No activity today
     # - <a href="{{ site.gh_activity_url }}/10_filesystems_ii/">Activity</a>
-    # - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933308&forceview=1"> Activity Submission </a>
 12:
+  reading:
+  topics:
+          - <b>Lab</b> Ext2 Filesystem
+  materials:
+  other:
+    - No activity today
+    # - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933308&forceview=1"> Activity Submission </a>
+13:
   reading:
       - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched.pdf"> Chapter 7 </a>
           # - Chapter 6
@@ -128,13 +135,6 @@
   materials:
   other:
     - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2933332&forceview=1"> Scheduling Quiz </a>
-13:
-  reading:
-  topics:
-          - <b>Lab</b> Ext2 Filesystem
-  materials:
-  other:
-    - No activity today
 #     # - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=3b950a31-c6d9-42ba-b8c4-ac8e015e1292">Videos</a>
 #     # - <a href="Homework/ext2/README"> Lab Instructions</a>
 14:
