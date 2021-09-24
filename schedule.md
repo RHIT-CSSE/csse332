@@ -256,7 +256,7 @@ No activity today</td>
 </ul>{:/}
 </td>
 <td markdown="span">
-<a href=""> Scheduling II Quiz </a></td>
+<a href="https://rosehulman-my.sharepoint.com/:p:/g/personal/noureddi_rose-hulman_edu/EVof4XRz43xPu_ZLvAbbDd8B66m7KGXsFfJuVfPPUOu82g?e=CbCRaG"> Slides </a><br/><a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2933338"> Scheduling II Quiz </a></td>
 </tr>
 <tr>
 <td rowspan="5" markdown="span" style="font-size:xx-large;"><a name="w4">4</a></td>
