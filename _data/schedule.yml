@@ -161,25 +161,31 @@
     - 3 Hour exam TBA
   materials: 
   other:  
+17:
+  reading:
+  topics:
+    - No class / Mohammad was sick :/
+  materials:
+  other:
 # 17:
-#   reading: 
-#       - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf"> Chapter 26 </a>
-#       - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-api.pdf"> Chapter 27 </a>
-#   topics: 
-#       - More Threads
-#       - Thread Libraries
-#       - Threading Issues
-#   materials: 
-#   other:
-#     - <a href="{{ site.baseurl }}/sessions/17_session17/"> Session Information </a>
-# 18:
-#   reading:
-#     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-sema.pdf"> Chapter 31 </a>
-#   topics:
-#     - Semaphores
-#   materials:
-#   other:
-#     - <a href="{{ site.baseurl }}/sessions/18_session18/"> Session Information </a>
+  # reading: 
+  #     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf"> Chapter 26 </a>
+  #     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-api.pdf"> Chapter 27 </a>
+  # topics: 
+  #     - More Threads
+  #     - Thread Libraries
+  #     - Threading Issues
+  # materials: 
+  # other:
+  #   - <a href="{{ site.baseurl }}/sessions/17_session17/"> Session Information </a>
+18:
+  reading:
+    # - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-sema.pdf"> Chapter 31 </a>
+  topics:
+    - Scheduling wrap up and exam discussion
+  materials:
+  other:
+    # - <a href="{{ site.baseurl }}/sessions/18_session18/"> Session Information </a>
 # 19:
 #   reading: 
 #     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 </a>

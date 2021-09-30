@@ -289,14 +289,30 @@ Exam1Prep<br/>No activity!  Do a practice exam</td>
 <tr>
 <td markdown="span">
 17 <br/> Thu, Sep 30 2021</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> No class / Mohammad was sick :/ </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+</td>
 </tr>
 <tr>
 <td markdown="span" colspan="4"> [ADVANCED Ext2 Filesystem]({{ site.baseurl }}/docs/06_ext2) DUE Thu, Sep 30 2021 23:59 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933347&forceview=1)</td></tr>
 <tr>
 <td markdown="span">
 18 <br/> Fri, Oct 01 2021</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> Scheduling wrap up and exam discussion </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+</td>
 </tr>
 <tr>
 <td rowspan="4" markdown="span" style="font-size:xx-large;"><a name="w5">5</a></td>
