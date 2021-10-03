@@ -315,7 +315,7 @@ Exam1Prep<br/>No activity!  Do a practice exam</td>
 </td>
 </tr>
 <tr>
-<td rowspan="4" markdown="span" style="font-size:xx-large;"><a name="w5">5</a></td>
+<td rowspan="5" markdown="span" style="font-size:xx-large;"><a name="w5">5</a></td>
 <td markdown="span">
 19 <br/> Mon, Oct 04 2021</td>
 <td markdown="span" style="text-align:left">
@@ -362,6 +362,8 @@ Exam1Prep<br/>No activity!  Do a practice exam</td>
 <td markdown="span">
 </td>
 </tr>
+<tr>
+<td markdown="span" colspan="4"> CPU Scheduling DUE Thu, Oct 07 2021 23:59 [Take the quiz on Moodle](https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2933368&forceview=1)</td></tr>
 <tr>
 <td markdown="span">
 22 <br/> Fri, Oct 08 2021</td>
