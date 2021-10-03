@@ -7,3 +7,6 @@ serve:
 
 background:
 	tmux new -d -s server "bundle exec jekyll serve"
+
+kill:
+	tmux kill-session -t server

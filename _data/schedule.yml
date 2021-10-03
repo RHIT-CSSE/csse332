@@ -167,17 +167,6 @@
     - No class / Mohammad was sick :/
   materials:
   other:
-# 17:
-  # reading: 
-  #     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf"> Chapter 26 </a>
-  #     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-api.pdf"> Chapter 27 </a>
-  # topics: 
-  #     - More Threads
-  #     - Thread Libraries
-  #     - Threading Issues
-  # materials: 
-  # other:
-  #   - <a href="{{ site.baseurl }}/sessions/17_session17/"> Session Information </a>
 18:
   reading:
     # - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-sema.pdf"> Chapter 31 </a>
@@ -186,22 +175,41 @@
   materials:
   other:
     # - <a href="{{ site.baseurl }}/sessions/18_session18/"> Session Information </a>
-# 19:
-#   reading: 
-#     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 </a>
-#   topics: 
-#     - Mutex and condition variables
-#   materials:
-#   other:
-#     - <a href="{{ site.baseurl }}/sessions/19_session19/"> Session Information </a>
-# 20:
-#   reading:
-#     - <a href="{{ site.baseurl }}/docs/milestone2/"> Milestone 2 </a>
-#   topics:
-#     - Project milestone 2
-#   materials: 
-#   other:
-#     - <a href="{{ site.baseurl }}/sessions/20_session20/"> Session Information </a>
+19:
+  reading: 
+      - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf"> Chapter 26 </a>
+      # - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-api.pdf"> Chapter 27 </a>
+  topics: 
+      - More Threads
+      - Thread Libraries
+      - Threading Issues
+  materials: 
+  other:
+    # - <a href="{{ site.baseurl }}/sessions/17_session17/"> Session Information </a>
+20:
+  reading: 
+    # - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 </a>
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-sema.pdf"> Chapter 31 </a>
+  topics: 
+    - Semaphores
+  materials:
+  other:
+    # - <a href="{{ site.baseurl }}/sessions/19_session19/"> Session Information </a>
+21:
+  reading:
+    # - <a href="{{ site.baseurl }}/docs/milestone2/"> Milestone 2 </a>
+  topics:
+    - <b>Lab</b> Project work time
+  materials: 
+  other:
+    # - <a href="{{ site.baseurl }}/sessions/20_session20/"> Session Information </a>
+22:
+  reading:
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 </a>
+  topics:
+    - Mutex and Condition Variables
+  materials:
+  other:
 # 21:
 #   reading: 
 #      - <a href="https://greenteapress.com/wp/semaphores/">Little Book of Semaphores - section 4.2 </a>
