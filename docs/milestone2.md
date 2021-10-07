@@ -2,8 +2,8 @@
 layout: post
 title: Term Project (Milestone 2)
 readtime: true
-date: Tue Apr 13 12:19:58 2021
-gh-repo: rhit-csse332/csse332-202130
+date: Wed Oct  6 19:21:51 2021
+gh-repo: rhit-csse332/csse332
 gh-badge: [star,watch,follow]
 ---
 
@@ -46,7 +46,7 @@ In this milestone, we will design and implement a process monitoring module.
 This module will allow processes to register with it and de-register from it.
 The module will monitor the process's behavior every 5 seconds, updating its
 internal imitation process control block (PCB). The module will allow users to
-see the status of all process that have registered with it by reading the
+see the status of all processes that have registered with it by reading the
 status using the `procfs` pseudo file system (much like we did in milestone 1).
 Finally, the module will terminate any process that exceeds its allowed time
 limit of execution. In other words, the module will keep an eye on processes and
@@ -85,11 +85,11 @@ In this milestone, we will gain familiarity with the following concepts:
 
 ## Logistics
 - __Starter code__: Your code from [milestone
-1](https://rhit-csse332.github.io/csse332-202130/docs/zz_project/).
-- [Submission
-box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708259&forceview=1)
-- __Due Date__: Monday, April 26, 2021 at 23:59 pm.
+1](https://rhit-csse332.github.io/csse332/docs/zz_project/).
+- __Due Date__:  Monday October 18, 2021 @11:59 pm.
 - __Starter code if you did not have milestone 1:__ [project.c]({{ site.baseurl }}/docs/project.c)
+- __Submission box__: [Moodle
+box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933578&forceview=1)
 
 # Grade-school: Linked lists and process information
 Okay now that we are in grade-school, it's time to start doing interesting
@@ -124,7 +124,7 @@ Now, you must be asking the following question: if the kernel's linked list is
 building a doubly linked list of `struct list_head`, then how do I get the
 actual entries of my data structures?
 
-Great question! Fortunately, the Linux kernel developers' have you covered. You
+Great question! Fortunately, the Linux kernel developers have you covered. You
 can use the macro `list_entry` to go from a `struct list_head` to its
 enclosing custom structure.
 
@@ -181,11 +181,11 @@ milestone 1 to do the following:
     1. Modify your initialization function to create a linked list of 10
        integers, initialized to -1.
     1. Modify your `write` handler to set the appropriate integer in the linked
-       list. In other words, if the user requests to write to index 5, then you
+       list. In other words, if the user requests to write to index 5, then your
        code must first traverse the linked list to the appropriate element, and
        then use `list_entry` or any other set of list API calls to set the
        appropriate number.
-1. Modify your `read` handler to read from the linked list instead from the
+1. Modify your `read` handler to read from the linked list instead of from the
    array. This is a little bit tricky, so let's talk about it a bit more.
 
 There are three main ways to modify your `read` handler to handle a linked list
@@ -215,6 +215,14 @@ instead of an array:
 I have provided you with a skeleton of what implementing sequential access to
 your linked list would look like. I have highlighted the places in which you
 should be adding your code.
+
+First, add the following file to your set of includes
+```c
+#include <linux/version.h>
+```
+
+Then add the following skeleton code and fill in the blanks
+
 ```c
 static void *csse332_start(struct seq_file *s, loff_t *pos)
 {
@@ -389,13 +397,13 @@ Your kernel module must parse this message, and then do the following:
   register itself, and not register another process with another `pid`. But how
   do I do that I hear you say? How can I know the process trying to register is
   the same one as the one issuing the `write` call? Luckily, the kernel's got
-  you covered. When executing in process context (review our in-class disucssion
-  for more information), the kernel maintains a pointer to the current running
-  user process that can be accessed by using the `current` macro defined in
-  `linux/sched.h`. So your job boils down to asserting that the `pid` passed to
-  `write` is the same as that of the `current` task struct. Make sure to return
-  meaningful error codes. Violation of this condition is a permissions issues
-  and not a memory corruption or an invalid parameter.
+  you covered. When executing in process context, the kernel maintains a pointer
+  to the current running user process that can be accessed by using the
+  `current` macro defined in `linux/sched.h`. So your job boils down to
+  asserting that the `pid` passed to `write` is the same as that of the
+  `current` task struct. Make sure to return meaningful error codes. Violation
+  of this condition is a permissions issues and not a memory corruption or an
+  invalid parameter.
 - If the command passed is `R`, then the module must register the process by
   - allocating a `struct csse332_info` for the process
   - updating the variables of this structure
@@ -517,10 +525,17 @@ Perform the following steps:
   [here](https://elixir.bootlin.com/linux/v4.5/source/include/linux/sched.h#L1389).
 - In your initialization function,
   - Setup and schedule the timer to run in the future after 5 seconds. For more
-  information, check out [this LWN article](https://lwn.net/Articles/735887/).
+  information, check out Section 13.2 from the Linux Kernel Programming Guide
+  (lkmpg) at [this link](https://sysprog21.github.io/lkmpg/).
   - Create the work queue and allocate space for the work while passing the
-  correct parameters. You can find out more about the work queue API
-  [here](https://lwn.net/Articles/11360/).
+  correct parameters. You can find out more about the work queue API in Section
+  14.2 of the above kernel guide. 
+
+  **NOTE**: Although the kernel guide mentions the use of `schedule_work`, that
+  function is not really the one we need in this project. Take a look at
+  `queue_work` at the following
+  [link](https://elixir.bootlin.com/linux/latest/source/include/linux/workqueue.h#L504).
+
 - Recall that everything you allocate and initialize, you must later on destroy
 or free.
 
@@ -586,9 +601,11 @@ Your job in this task is do the following:
    __Note__: You may assume that all processes in our system can have children
    by not grandchildren.
 
+<!--
 # Milestone Evaluation
 Please take a moment to fill out the survey about this milestone by following [this
 link](https://forms.gle/gRT6fKTKFd2qekiu5)
+-->
 
 # Rubric
 
@@ -603,6 +620,5 @@ link](https://forms.gle/gRT6fKTKFd2qekiu5)
 | Correct updates to the database                                             | 20   |
 | Kill misbehaving processes                                                  | 20   |
 | Kernel synchronization                                                      | 40   |
-| Survey                                                                      | 10   |
-| __Total__                                                                   | 240  |
+| __Total__                                                                   | 230  |
 

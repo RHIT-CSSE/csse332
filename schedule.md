@@ -392,11 +392,13 @@ Exam1Prep<br/>No activity!  Do a practice exam</td>
 <td markdown="span" colspan="3">N/A</td>
 </tr>
 <tr>
-<td rowspan="4" markdown="span" style="font-size:xx-large;"><a name="w7">7</a></td>
+<td rowspan="5" markdown="span" style="font-size:xx-large;"><a name="w7">7</a></td>
 <td markdown="span">
 25 <br/> Mon, Oct 18 2021</td>
 <td markdown="span" colspan="3">N/A</td>
 </tr>
+<tr>
+<td markdown="span" colspan="4"> [Project Milestone II]({{ site.baseurl }}/docs/milestone2) DUE Mon, Oct 18 2021 23:59 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933578&forceview=1)</td></tr>
 <tr>
 <td markdown="span">
 26 <br/> Tue, Oct 19 2021</td>
