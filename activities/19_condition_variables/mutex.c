@@ -7,7 +7,7 @@
 #include <pthread.h>
 
 /**
- * This is the same exercises as the one we did in session 18. Instead this time,
+ * This is the same exercise as the one we did in session 18. Instead this time,
  * we would like to use a single lock (a mutex) to solve this problem. Your solution
  * must be optimal, i.e., for large arrays, it should perform FASTER than the sequential
  * attempt.
@@ -17,7 +17,6 @@ int *array;
 int array_size;
 int share;
 volatile unsigned long long sum;
-pthread_mutex_t lock;
 
 static void output_time_difference(char* name, struct timeval* start,
 			    struct timeval* end)
@@ -32,14 +31,9 @@ static void output_time_difference(char* name, struct timeval* start,
 void *run_fn(void *arg)
 {
 	int start_index = *((int *)arg);
-	int local_sum = 0;
 	for (int i = start_index; i < start_index + share; ++i) {
-		local_sum += array[i];
+		sum += array[i];
 	}
-
-	pthread_mutex_lock(&lock);
-	sum += local_sum;
-	pthread_mutex_unlock(&lock);
 	return NULL;
 }
 
@@ -75,7 +69,6 @@ int main(int argc, char **argv)
 	output_time_difference("== \tSequential sum", &start, &end);
 
 	/* now do it using two threads */
-	pthread_mutex_init(&lock, NULL);
 	share = array_size / 2;
 	start_index[0] = 0;
 	start_index[1] = share;
@@ -87,7 +80,6 @@ int main(int argc, char **argv)
 	pthread_join(threads[1], NULL);
 	gettimeofday(&end, NULL);
 
-	pthread_mutex_destroy(&lock);
 	printf("== \tThe value of the sum under threads is %llu ==\n", sum);
 	output_time_difference("== \tThreaded sum", &start, &end);
 
