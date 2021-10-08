@@ -207,9 +207,12 @@
   reading:
     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 </a>
   topics:
-    - Mutex and Condition Variables
+    - More Sempahores
   materials:
   other:
+    - <a href="https://rosehulman-my.sharepoint.com/:p:/g/personal/noureddi_rose-hulman_edu/ESOpQoj830lAu2b_Rm9M120BCu6RrjWvn_ns_98s7uFpUg?e=cvGCdu"> Slides </a>
+    - <a href="{{ site.gh_activity_url }}/18_semaphores/"> Activity </a>
+
 # 21:
 #   reading: 
 #      - <a href="https://greenteapress.com/wp/semaphores/">Little Book of Semaphores - section 4.2 </a>

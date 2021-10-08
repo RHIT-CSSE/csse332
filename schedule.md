@@ -374,14 +374,14 @@ Exam1Prep<br/>No activity!  Do a practice exam</td>
 </td>
 <td markdown="span" style="text-align:left">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
-<li> Mutex and Condition Variables </li>
+<li> More Sempahores </li>
 </ul>{:/}
 </td>
 <td markdown="span">
-</td>
+<a href="https://rosehulman-my.sharepoint.com/:p:/g/personal/noureddi_rose-hulman_edu/ESOpQoj830lAu2b_Rm9M120BCu6RrjWvn_ns_98s7uFpUg?e=cvGCdu"> Slides </a><br/><a href="{{ site.gh_activity_url }}/18_semaphores/"> Activity </a></td>
 </tr>
 <tr>
-<td rowspan="2" markdown="span" style="font-size:xx-large;"><a name="w6">6</a></td>
+<td rowspan="3" markdown="span" style="font-size:xx-large;"><a name="w6">6</a></td>
 <td markdown="span">
 23 <br/> Mon, Oct 11 2021</td>
 <td markdown="span" colspan="3">N/A</td>
@@ -391,6 +391,8 @@ Exam1Prep<br/>No activity!  Do a practice exam</td>
 24 <br/> Tue, Oct 12 2021</td>
 <td markdown="span" colspan="3">N/A</td>
 </tr>
+<tr>
+<td markdown="span" colspan="4"> [Threads and Semaphore Basics]({{ site.baseurl }}/docs/07_semaphore_lab) DUE Thu, Oct 14 2021 23:59 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933392&forceview=1) <font color="#aaa"> grader: @nixonm </font> </td></tr>
 <tr>
 <td rowspan="5" markdown="span" style="font-size:xx-large;"><a name="w7">7</a></td>
 <td markdown="span">
