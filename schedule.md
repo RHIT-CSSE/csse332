@@ -392,7 +392,6 @@ Exam1Prep<br/>No activity!  Do a practice exam</td>
 <td markdown="span" style="text-align:left">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
 <li> Mutex </li>
-<li> Condition variables </li>
 </ul>{:/}
 </td>
 <td markdown="span">
@@ -408,11 +407,12 @@ Exam1Prep<br/>No activity!  Do a practice exam</td>
 </td>
 <td markdown="span" style="text-align:left">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> Condition variables </li>
 <li> More concurrency </li>
 </ul>{:/}
 </td>
 <td markdown="span">
-</td>
+<a href="https://rosehulman-my.sharepoint.com/:p:/g/personal/noureddi_rose-hulman_edu/ESaiuG2DRclCu8Jxx9fLtmMBYV_rbAZUM_JyXnXmZwDmZg?e=KkPWYA"> Slides </a><br/><a href="{{ site.gh_activity_url }}/19_condition_variables"> Activity </a></td>
 </tr>
 <tr>
 <td markdown="span" colspan="4"> [Threads and Semaphore Basics]({{ site.baseurl }}/docs/07_semaphore_lab) DUE Thu, Oct 14 2021 23:59 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933392&forceview=1) <font color="#aaa"> grader: @nixonm </font> </td></tr>

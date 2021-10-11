@@ -217,7 +217,6 @@
     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 </a>
   topics:
     - Mutex
-    - Condition variables
   materials:
   other:
     - <a href="https://rosehulman-my.sharepoint.com/:p:/g/personal/noureddi_rose-hulman_edu/ESaiuG2DRclCu8Jxx9fLtmMBYV_rbAZUM_JyXnXmZwDmZg?e=KkPWYA"> Slides </a>
@@ -226,9 +225,12 @@
   reading:
     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 </a>
   topics:
+    - Condition variables
     - More concurrency
   materials:
   other:
+    - <a href="https://rosehulman-my.sharepoint.com/:p:/g/personal/noureddi_rose-hulman_edu/ESaiuG2DRclCu8Jxx9fLtmMBYV_rbAZUM_JyXnXmZwDmZg?e=KkPWYA"> Slides </a>
+    - <a href="{{ site.gh_activity_url }}/19_condition_variables"> Activity </a>
 
 # 21:
 #   reading: 

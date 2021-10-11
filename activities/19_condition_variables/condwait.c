@@ -6,7 +6,7 @@
 #include <pthread.h>
 
 /**
- * In this exercises, we will try to again simulate pthread_join using condition
+ * In this exercise, we will try to again simulate pthread_join using condition
  * variables. We will create a thread and then implement the thread_join
  * function below.
  */
