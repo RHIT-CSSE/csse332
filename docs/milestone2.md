@@ -29,7 +29,6 @@ gh-badge: [star,watch,follow]
     * [Important note](#important-note)
   * [Synchronization](#synchronization)
 * [Graduation: Killing misbehaving processes and module parameters](#graduation-killing-misbehaving-processes-and-module-parameters)
-* [Milestone Evaluation](#milestone-evaluation)
 * [Rubric](#rubric)
 
 <!-- vim-markdown-toc -->
@@ -92,6 +91,9 @@ In this milestone, we will gain familiarity with the following concepts:
 box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933578&forceview=1)
 
 # Grade-school: Linked lists and process information
+
+__Pain Meter__: Easy/Medium
+
 Okay now that we are in grade-school, it's time to start doing interesting
 things. In this step, we will set up the infrastructure for us to maintain state
 information about each process that registers with our system.
@@ -278,6 +280,9 @@ static const struct proc_ops csse332_fops = {
 ```
 
 # Middle School: Maintain process information
+
+__Pain Meter__: Easy
+
 So we have our database set up now, and we can read from it using one of the
 three methods above. Awesome! Now, let's make our database hold some important
 information. In what follows, let's assume that we did something like
@@ -426,6 +431,9 @@ must parse the command and then
   its elements.
 
 # High School: Timers, Work queues, and synchronization
+
+__Pain Meter__: Hard
+
 Okay now that we have our infrastructure set up, let's get started with
 regularly updating the contents of our data structures. To do so, we will use
 two important concepts provided by the Linux kernel: __timers__ and __work
@@ -569,6 +577,9 @@ Notes:
    will break your machine and you will have to restart it.
 
 # Graduation: Killing misbehaving processes and module parameters
+
+__Pain Meter__: Medium
+
 By now, you should be able to read and write to your module, register and
 de-register processes, and your timer handler and work are handling the updates
 to the database.
@@ -600,12 +611,6 @@ Your job in this task is do the following:
 
    __Note__: You may assume that all processes in our system can have children
    by not grandchildren.
-
-<!--
-# Milestone Evaluation
-Please take a moment to fill out the survey about this milestone by following [this
-link](https://forms.gle/gRT6fKTKFd2qekiu5)
--->
 
 # Rubric
 
