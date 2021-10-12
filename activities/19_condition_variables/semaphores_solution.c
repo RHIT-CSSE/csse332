@@ -54,9 +54,9 @@ csse332_sem_wait(csse332_sem_t *s)
 {
 	/* ADD YOUR CODE HERE */
 	pthread_mutex_lock(&s->lock);
-	while(s->value <= 0)
-		pthread_cond_wait(&s->cond, &s->lock);
 	s->value--;
+	while(s->value < 0)
+		pthread_cond_wait(&s->cond, &s->lock);
 	pthread_mutex_unlock(&s->lock);
 }
 
