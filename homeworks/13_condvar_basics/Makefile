@@ -3,6 +3,7 @@ all: max inorder prodcons_condvar
 .PHONY: clean all
 
 LDLIBS += -pthread
+CFLAGS += -ggdb
 
 max: max.o
 
