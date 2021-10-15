@@ -231,6 +231,34 @@
   other:
     - <a href="https://rosehulman-my.sharepoint.com/:p:/g/personal/noureddi_rose-hulman_edu/ESaiuG2DRclCu8Jxx9fLtmMBYV_rbAZUM_JyXnXmZwDmZg?e=KkPWYA"> Slides </a>
     - <a href="{{ site.gh_activity_url }}/19_condition_variables"> Activity </a>
+25:
+  reading:
+  topics:
+    - <b> Lab </b> Project work time
+  materials:
+  other:
+
+26:
+  reading:
+  topics:
+    - Producer/Consumer using condition variables
+  materials:
+  other:
+
+27:
+  reading:
+  topics:
+    - Readers/Writers problem
+  materials:
+  other:
+
+28:
+  reading:
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-bugs.pdf"> Chapter 32 </a>
+  topics:
+    - Deadlocks and Starvation
+  materials:
+  other:
 
 # 21:
 #   reading: 

@@ -417,27 +417,64 @@ Exam1Prep<br/>No activity!  Do a practice exam</td>
 <tr>
 <td markdown="span" colspan="4"> [Threads and Semaphore Basics]({{ site.baseurl }}/docs/07_semaphore_lab) DUE Thu, Oct 14 2021 23:59 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933392&forceview=1) <font color="#aaa"> grader: @nixonm </font> </td></tr>
 <tr>
-<td rowspan="5" markdown="span" style="font-size:xx-large;"><a name="w7">7</a></td>
+<td rowspan="6" markdown="span" style="font-size:xx-large;"><a name="w7">7</a></td>
 <td markdown="span">
 25 <br/> Mon, Oct 18 2021</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> <b> Lab </b> Project work time </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+</td>
 </tr>
 <tr>
 <td markdown="span" colspan="4"> [Project Milestone II]({{ site.baseurl }}/docs/milestone2) DUE Mon, Oct 18 2021 23:59 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933578&forceview=1)</td></tr>
 <tr>
 <td markdown="span">
 26 <br/> Tue, Oct 19 2021</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> Producer/Consumer using condition variables </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+</td>
 </tr>
 <tr>
 <td markdown="span">
 27 <br/> Thu, Oct 21 2021</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> Readers/Writers problem </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+</td>
 </tr>
+<tr>
+<td markdown="span" colspan="4"> [Condition Variables Homework I]({{ site.baseurl }}/docs/13_condvar_basics) DUE Thu, Oct 21 2021 23:59  [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933422&forceview=1) <font color="#aaa"> grader: @nixonm </font> </td></tr>
 <tr>
 <td markdown="span">
 28 <br/> Fri, Oct 22 2021</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-bugs.pdf"> Chapter 32 </a> </li>
+</ul>{:/}
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> Deadlocks and Starvation </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+</td>
 </tr>
 <tr>
 <td rowspan="4" markdown="span" style="font-size:xx-large;"><a name="w8">8</a></td>
