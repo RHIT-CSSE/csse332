@@ -1,4 +1,4 @@
-/* Copyright 2019 Rose-Hulman */
+/* Copyright 2021 Rose-Hulman */
 #include <stdio.h>
 #include <pthread.h>
 #include <semaphore.h>

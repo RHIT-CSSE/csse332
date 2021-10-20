@@ -15,17 +15,16 @@
 /**
   Imagine there is a shared memory space called house.
 
-  There are 3 different kinds of operations on house: carpenters,
-  painters, and decorators.  For any particular kind of operation,
-  there can be an unlimited number of threads doing the same
-  operation at once (e.g. unlimited carpenter threads etc.).
-  However, only one kind of operation can be done at a time (so even
-  a single carpenter should block all painters and vice versa).
+  There are 3 different kinds of operations on house: carpenters, painters, and
+  decorators.  For any particular kind of operation, there can be an unlimited
+  number of threads doing the same operation at once (e.g. unlimited carpenter
+  threads etc.).  However, only one kind of operation can be done at a time (so
+  even a single carpenter should block all painters and vice versa).
 
-  Use semaphores to enforce this constraint.  You don't have to worry
-  about starvation (e.g. that constantly arriving decorators might
-  prevent carpenters from ever running) - though maybe it would be
-  fun to consider how you would solve in that case.
+  Use mutex locks and condition variables to enforce this constraint.  You don't
+  have to worry about starvation (e.g. that constantly arriving decorators might
+  prevent carpenters from ever running) - though maybe it would be fun to
+  consider how you would solve in that case.
 
   This is similar to the readers/writers problem BTW.
  **/
