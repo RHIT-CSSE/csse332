@@ -480,41 +480,94 @@ Exam1Prep<br/>No activity!  Do a practice exam</td>
 <td rowspan="5" markdown="span" style="font-size:xx-large;"><a name="w8">8</a></td>
 <td markdown="span">
 29 <br/> Mon, Oct 25 2021</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-segmentation.pdf"> Chapter 16 </a> </li>
+</ul>{:/}
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> Deadlocks wrap up & Segmentation </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+</td>
 </tr>
 <tr>
 <td markdown="span">
 30 <br/> Tue, Oct 26 2021</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> Paging </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+</td>
 </tr>
 <tr>
 <td markdown="span">
 31 <br/> Thu, Oct 28 2021</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> Paging issues </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+</td>
 </tr>
 <tr>
 <td markdown="span" colspan="4"> [Condition Variables Homework 2]({{ site.baseurl }}/docs/14_condvar_advanced) DUE Thu, Oct 28 2021 23:59  [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933425&forceview=1) <font color="#aaa"> grader: @nixonm </font> </td></tr>
 <tr>
 <td markdown="span">
 32 <br/> Fri, Oct 29 2021</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> Page replacement algorithms </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+</td>
 </tr>
 <tr>
-<td rowspan="4" markdown="span" style="font-size:xx-large;"><a name="w9">9</a></td>
+<td rowspan="5" markdown="span" style="font-size:xx-large;"><a name="w9">9</a></td>
 <td markdown="span">
 33 <br/> Mon, Nov 01 2021</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> Exam 2 review </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+</td>
 </tr>
 <tr>
 <td markdown="span">
 34 <br/> Tue, Nov 02 2021</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> No class. Exam 2 6:00 - 9:00 pm. </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+</td>
 </tr>
 <tr>
 <td markdown="span">
 35 <br/> Thu, Nov 04 2021</td>
 <td markdown="span" colspan="3">N/A</td>
 </tr>
+<tr>
+<td markdown="span" colspan="4"> [Virtual Memory Lab 1]({{ site.baseurl }}/docs/11_virtualmem) DUE Thu, Nov 04 2021 23:59 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933497&forceview=1)</td></tr>
 <tr>
 <td markdown="span">
 36 <br/> Fri, Nov 05 2021</td>

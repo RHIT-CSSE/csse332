@@ -1,9 +1,9 @@
 ---
 title: Virtual Memory Lab
 layout: post
-date: Thu May  6 10:08:38 2021
+date: Fri Oct 22 13:16:24 2021 
 readtime: true
-gh-repo: rhit-csse332/csse332-202130
+gh-repo: rhit-csse332/csse332
 gh-badge: [star,watch,follow]
 ---
 
@@ -23,7 +23,7 @@ our VM will do something pretty similar.
 
 ## Logistics
 - [Source code]({{ site.gh_homeworks_url }}/11_virtualmem)
-- [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708094)
+- [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933497&forceview=1)
 - [Submission instructions](https://rhit-csse332.github.io/csse332-202130/docs/submission_instructions/)
 
 # Forth

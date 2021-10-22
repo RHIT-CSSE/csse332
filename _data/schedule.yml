@@ -260,6 +260,60 @@
   materials:
   other:
 
+29:
+  reading:
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-segmentation.pdf"> Chapter 16 </a>
+  topics:
+    - Deadlocks wrap up & Segmentation
+  materials: 
+  other:
+    # - <a href="{{ site.baseurl }}/sessions/30_session30/"> Session Information </a>
+    
+30:
+  reading:
+  topics:
+    - Paging
+  materials: 
+  other:  
+    # - <a href="{{ site.baseurl }}/sessions/31_session31/"> Session Information </a>
+    
+31:
+  reading:
+  topics:
+        - Paging issues
+  materials: 
+  other:
+    # - <a href="{{ site.baseurl }}/sessions/34_session34/"> Session Information </a>
+
+32:
+  reading:
+  topics:
+    - Page replacement algorithms
+  materials: 
+  other:  
+    # - <a href="{{ site.baseurl }}/sessions/35_session35/"> Session Information </a>
+    
+33:
+  reading:
+  topics:
+    - Exam 2 review
+  materials:
+  other:
+
+34:
+  reading:
+  topics:
+    - No class. Exam 2 6:00 - 9:00 pm.
+  materials:
+  other:
+
+# <#>:
+#   reading:
+#   topics:
+#   materials:
+#   other:
+
+
 # 21:
 #   reading: 
 #      - <a href="https://greenteapress.com/wp/semaphores/">Little Book of Semaphores - section 4.2 </a>
