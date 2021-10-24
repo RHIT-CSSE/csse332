@@ -47,7 +47,7 @@
    One thing to note and always remember is that the thread the locks a mutex lock
    should be the one that unlocks it. Attempting to unlock another thread's mutex
    lock results in undefined behavior. This problem can be circumvented by using a
-   semaphore, which you are allowed to use in this problem.
+   semaphore, which you are not allowed to use in this problem.
    */
 
 #include <stdio.h>
