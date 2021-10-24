@@ -23,8 +23,8 @@
   available, they complain to the little red hen and wait (in the kitchen)
   for the next batch to be ready.
 
-  Use semaphores to enforce this constraint. Note: the global numLoaves 
-  variable should be left as is (i.e. do not make it a semaphore).
+  Use mutex locks and condition variables to enforce this constraint. Note: the
+  global numLoaves variable should be left as is.
 
   look at littleRedHenSampleOutput.txt for an example correct output
   sequence
@@ -39,7 +39,7 @@ void *littleRedHenThread(void *arg) {
 
 	for (batch = 1; batch <= 6; batch++) {
 		sleep(2);  // just makes it obvious that it won't work without
-		// semaphores
+		// condition variables
 		numLoaves += 7;
 		printf("%-20s: A fresh batch of bread is ready.\n", name);
 	}
