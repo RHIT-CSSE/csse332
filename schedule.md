@@ -487,7 +487,7 @@ Exam1Prep<br/>No activity!  Do a practice exam</td>
 </td>
 <td markdown="span" style="text-align:left">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
-<li> Deadlocks wrap up & Segmentation </li>
+<li> Deadlocks wrap up </li>
 </ul>{:/}
 </td>
 <td markdown="span">
@@ -500,7 +500,7 @@ Exam1Prep<br/>No activity!  Do a practice exam</td>
 </td>
 <td markdown="span" style="text-align:left">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
-<li> Paging </li>
+<li> Segmentation and Paging </li>
 </ul>{:/}
 </td>
 <td markdown="span">

@@ -264,7 +264,7 @@
   reading:
     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-segmentation.pdf"> Chapter 16 </a>
   topics:
-    - Deadlocks wrap up & Segmentation
+    - Deadlocks wrap up 
   materials: 
   other:
     # - <a href="{{ site.baseurl }}/sessions/30_session30/"> Session Information </a>
@@ -272,7 +272,7 @@
 30:
   reading:
   topics:
-    - Paging
+    - Segmentation and Paging
   materials: 
   other:  
     # - <a href="{{ site.baseurl }}/sessions/31_session31/"> Session Information </a>
