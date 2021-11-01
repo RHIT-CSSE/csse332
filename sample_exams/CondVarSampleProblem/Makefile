@@ -1,4 +1,4 @@
-all: game game_solution
+all: game game_solution barber barber_solution
 
 .PHONY: all clean
 
@@ -9,5 +9,9 @@ game: game.o
 
 game_solution: game_solution.o
 
+barber: barber.o
+
+barber_solution: barber_solution.o
+
 clean:
-	rm -rf *.o game game_solution
+	rm -rf *.o game game_solution barber barber_solution
