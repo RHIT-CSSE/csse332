@@ -17,7 +17,7 @@ int num_chairs_occupied = 0;
 void*
 barber_fn(void *arg)
 {
-	printf("The barber is now in the stop...\n");
+	printf("The barber is now in the shop...\n");
 
 	while(1) {
 		pthread_mutex_lock(&lock);

@@ -10,7 +10,7 @@
 void*
 barber_fn(void *arg)
 {
-	printf("The barber is now in the stop...\n");
+	printf("The barber is now in the shop...\n");
 
 	while(1) {
 		// start cutting hair
