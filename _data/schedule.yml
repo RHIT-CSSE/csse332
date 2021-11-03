@@ -314,6 +314,21 @@
 #   other:
 
 
+35:
+  reading:
+  topics:
+    - Intro to OS security
+  materials:
+  other:
+
+36:
+  reading:
+  topics:
+    - Control flow integrity attacks
+  materials:
+  other:
+
+
 # 21:
 #   reading: 
 #      - <a href="https://greenteapress.com/wp/semaphores/">Little Book of Semaphores - section 4.2 </a>

@@ -564,21 +564,39 @@ Exam1Prep<br/>No activity!  Do a practice exam</td>
 <tr>
 <td markdown="span">
 35 <br/> Thu, Nov 04 2021</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> Intro to OS security </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+</td>
 </tr>
 <tr>
 <td markdown="span" colspan="4"> [Virtual Memory Lab 1]({{ site.baseurl }}/docs/11_virtualmem) DUE Thu, Nov 04 2021 23:59 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933497&forceview=1)</td></tr>
 <tr>
 <td markdown="span">
 36 <br/> Fri, Nov 05 2021</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> Control flow integrity attacks </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+</td>
 </tr>
 <tr>
-<td rowspan="4" markdown="span" style="font-size:xx-large;"><a name="w10">10</a></td>
+<td rowspan="6" markdown="span" style="font-size:xx-large;"><a name="w10">10</a></td>
 <td markdown="span">
 37 <br/> Mon, Nov 08 2021</td>
 <td markdown="span" colspan="3">N/A</td>
 </tr>
+<tr>
+<td markdown="span" colspan="4"> [ADVANCED Virtual Memory Lab 2]({{ site.baseurl }}/docs/15_advancedmem) DUE Mon, Nov 08 2021 23:59 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=3054535) <font color="#aaa"> grader: @nixonm </font> </td></tr>
 <tr>
 <td markdown="span">
 38 <br/> Tue, Nov 09 2021</td>
@@ -590,9 +608,14 @@ Exam1Prep<br/>No activity!  Do a practice exam</td>
 <td markdown="span" colspan="3">N/A</td>
 </tr>
 <tr>
+<td markdown="span" colspan="4"> [Security Lab]({{ site.baseurl }}/docs/12_security) DUE Thu, Nov 11 2021 23:59 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933512) <font color="#aaa"> grader: @nixonm </font> </td></tr>
+<tr>
 <td markdown="span">
 40 <br/> Fri, Nov 12 2021</td>
 <td markdown="span" colspan="3">N/A</td>
 </tr>
+<tr>
+<td rowspan="1" markdown="span" style="font-size:xx-large;"><a name="w11">11</a></td>
+<td markdown="span" colspan="4"> [Milestone 3]({{ site.baseurl }}/docs/milestone3) DUE Thu, Nov 18 2021 23:59 [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933581&forceview=1) <font color="#aaa"> grader: @nixonm </font> </td></tr>
 </tbody>
 </table>
