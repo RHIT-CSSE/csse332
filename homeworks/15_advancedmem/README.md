@@ -1,5 +1,5 @@
 ---
-title: Advanced Security Lab
+title: Advanced Memory Lab
 layout: post
 date: Wed Nov  3 08:42:45 2021 
 readtime: true

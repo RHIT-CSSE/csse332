@@ -1,5 +1,5 @@
 ---
-title: Advanced Security Lab
+title: Security Lab
 layout: post
 date: Wed Nov  3 08:59:43 2021 
 readtime: true
