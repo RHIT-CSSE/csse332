@@ -76,6 +76,11 @@ vulnerabilities.
 - [Smashing the stack for fun and profit](https://inst.eecs.berkeley.edu/~cs161/fa08/papers/stack_smashing.pdf)
 - [The geometry of innocent flesh on the bone](https://hovav.net/ucsd/dist/geometry.pdf)
 
+- Download and import
+  [this](https://rosehulman-my.sharepoint.com/:u:/g/personal/noureddi_rose-hulman_edu/EejpXUQSSclCjyZHv3AYRRcB-uLoVrekwaQmWGlLbHsrOw?e=ijxunO)
+  virtual machine as we will be needing a 32-bit system with some older versions of `gcc` and
+  `python`.
+
 The virtual machine is loaded with python 2.7, please do not upgrade python as
 python 3 will give you some pain when trying to write non-printable ascii
 characters (which we will need to do).
