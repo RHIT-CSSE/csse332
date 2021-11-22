@@ -9,324 +9,324 @@
     # - <a href="{{ site.baseurl }}/sessions/02_session2/"> Session Information </a>
     - <a href="https://rosehulman-my.sharepoint.com/:p:/g/personal/noureddi_rose-hulman_edu/Ed5xz_-IYohJkY181epr6f4BGXWhlPajqlUpqVpbMKwBvg?e=bR0qAw"> Slides </a>
     - No activity today
-2:
-  reading:
-  topics:
-    - Void Pointers
-    - Malloc and Free
-    - Function Pointers
-
-  materials: 
-  other: 
-    # - <a href="{{ site.baseurl }}/sessions/01_session1/"> Session Information </a>
-    - <a href="https://rosehulman-my.sharepoint.com/:p:/g/personal/noureddi_rose-hulman_edu/EcmqJLbNxRNPuUiRgvmIEBEBVUyjWk4wvoDA8wdlhZw-xg?e=c0WMVI"> Slides </a>
-    - <a href="{{ site.gh_activity_url }}/01_pointers"> Activity </a>
-    - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933248">  Activity Submission </a>
-
-3:
-  reading:
-  topics:
-    - <b>Lab</b> Userspace Threading
-  materials:
-  other: 
-    - <a href="{{ site.baseurl }}/docs/01_userspace_thread_1/"> Lab Instructions</a>
-    - <a href="{{ site.baseurl }}/docs/submission_instructions/"> Getting and submitting code</a>
-#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4947ba52-f883-497d-9192-ac8401325dd7"> Video Tutorial </a>
-4:
-  reading:
-    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf"> Chapter 2 </a>
-  topics:
-    - Basics of Processes
-  materials:
-  other:
-    - <a href="https://rosehulman-my.sharepoint.com/:p:/g/personal/noureddi_rose-hulman_edu/EdPw3KFKdB5MvhzLp7bUTq8BElTXlbO3eizdxldTsPXxUQ?e=pQh7Zr"> Slides </a>
-    - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2933266"> Activity </a>
-    # - <a href="{{ site.baseurl }}/sessions/03_session3/"> Session Information </a>
-5:
-  reading:
-    - <a href="https://man7.org/linux/man-pages/man7/signal.7.html">Signal - Linux manual page </a>
-  topics:
-    - Signals
-  materials: 
-  other:
-    - <a href="https://rosehulman-my.sharepoint.com/:p:/g/personal/noureddi_rose-hulman_edu/EXbapWVhr95AuCwpFZbBss0Bvk0vLyJXY6O18azbxDsI1A?e=mhzW6h"> Slides </a>
-    - <a href="{{ site.gh_activity_url }}/05_signals">  Activity </a>
-    - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933275"> Activity Submission </a>
-#     - <a href="{{ site.baseurl }}/sessions/05_session5/"> Session Information </a>
-6:
-  reading:
-    - <a href="https://man7.org/linux/man-pages/man3/exec.3.html"> exec man page </a>
-    - <a href="https://man7.org/linux/man-pages/man2/fork.2.html"> fork man page </a>
-    - <a href="https://man7.org/linux/man-pages/man2/waitid.2.html"> wait man page </a>
-  topics:
-    - Processes Operation
-    - Forking Child Processes
-  materials: 
-  other:
-    - <a href="https://rosehulman-my.sharepoint.com/:p:/g/personal/noureddi_rose-hulman_edu/EcCd3G_NmWNFhYw2-KQ4OYoBezGgHu7X2FIutTAnMrTTlw?e=tj090V"> Slides </a>
-    - <a href="{{ site.gh_activity_url }}/06_fork_exec"> Activity </a>
-    - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933281"> Activity Submission </a>
-#     - <a href="{{ site.baseurl }}/sessions/06_session6/"> Session Information </a>
-7:
-  reading:
-    - <a href="https://www.gnu.org/software/make/manual/html_node/index.html"> GNU make manual </a>
-  topics:
-    - Makefiles
-  materials: 
-  other:
-    - <a href="https://rosehulman-my.sharepoint.com/:p:/g/personal/noureddi_rose-hulman_edu/ETSbGLHm3wNAp50Lr9mEeVEBrjSLvc9sd6-m6xCoVUdHOA?e=xQbGks"> Slides </a>
-    - <a href="{{ site.gh_activity_url }}/07_makefiles/">Activity</a>
-    - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933296"> Activity Submission </a>
-    - <a href="https://youtu.be/Pect1FUKhvk"> Advanced Makefiles </a>
-    - <a href="https://bytes.usc.edu/cs104/wiki/makefile/"> Makefiles cheatsheet </a>
-#     - <a href="{{ site.baseurl }}/sessions/07_session7/"> Session Information </a>
-8:
-   reading:
-     - <a href="https://tldp.org/LDP/lpg/node7.html"> Chapter 6 of The Linux Documentation Project (tldp) </a>
-   topics:
-           - Inter Process Communication
-   materials: 
-   other:
-    - <a href="{{ site.gh_activity_url }}/11_ipc/">Activity</a>
-    - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933326&forceview=1"> Activity Submission </a>
-#     - <a href="{{ site.baseurl }}/sessions/11_session11/"> Session Information </a>
-9:
-  reading:
-  topics:
-    - <b>Lab</b> Project Kickoff
-  materials: 
-  other:
-    - <a href="{{ site.baseurl }}/docs/zz_project"> Lab Instructions </a>
-    - No activity today
-10:
-  reading:
-    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/file-implementation.pdf"> Chapter 40 </a>
-  topics:
-    - Filesystems I
-  materials: 
-  other:
-    - <a href="{{ site.gh_activity_url }}/09_filesystems_i/">Activity</a>
-    - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933302"> Activity Submission </a>
-#     - <a href="{{ site.baseurl }}/sessions/09_session9/"> Session Information </a>
-
-11:
-  reading: 
-    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/file-implementation.pdf"> Chapter 40 </a>
-  topics: 
-    - Filesystems II
-  materials: 
-  other:
-    - No activity today
-    # - <a href="{{ site.gh_activity_url }}/10_filesystems_ii/">Activity</a>
-12:
-  reading:
-  topics:
-          - <b>Lab</b> Ext2 Filesystem
-  materials:
-  other:
-    - No activity today
-    # - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933308&forceview=1"> Activity Submission </a>
-13:
-  reading:
-      - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched.pdf"> Chapter 7 </a>
-          # - Chapter 6
-  topics:
-    - CPU Scheduling I
-  materials:
-  other:
-    - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2933332&forceview=1"> Scheduling Quiz </a>
-#     # - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=3b950a31-c6d9-42ba-b8c4-ac8e015e1292">Videos</a>
-#     # - <a href="Homework/ext2/README"> Lab Instructions</a>
-14:
-  reading:
-      - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2933338&forceview=1"> Chapter 8 </a>
-          # - Chapter 6
-  topics:
-    - CPU Scheduling II
-  materials: 
-  other:
-    - <a href="https://rosehulman-my.sharepoint.com/:p:/g/personal/noureddi_rose-hulman_edu/EVof4XRz43xPu_ZLvAbbDd8B66m7KGXsFfJuVfPPUOu82g?e=CbCRaG"> Slides </a>
-    - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2933338"> Scheduling II Quiz </a>
-15:
-  reading:
-  topics:
-    - Exam 1 review (In-class)
-  materials: Exam1Prep
-  other:
-    - No activity!  Do a practice exam
-16:
-  reading:
-  topics:
-    - Fork/Signals/Makefiles/pipes skills tests
-    - 3 Hour exam TBA
-  materials: 
-  other:  
-17:
-  reading:
-  topics:
-    - No class / Mohammad was sick :/
-  materials:
-  other:
-18:
-  reading:
-    # - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-sema.pdf"> Chapter 31 </a>
-  topics:
-    - Scheduling wrap up and exam discussion
-  materials:
-  other:
-    # - <a href="{{ site.baseurl }}/sessions/18_session18/"> Session Information </a>
-19:
-  reading: 
-      - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf"> Chapter 26 </a>
-      # - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-api.pdf"> Chapter 27 </a>
-  topics: 
-      - More Threads
-      - Thread Libraries
-      - Threading Issues
-  materials: 
-  other:
-    # - <a href="{{ site.baseurl }}/sessions/17_session17/"> Session Information </a>
-20:
-  reading: 
-    # - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 </a>
-    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-sema.pdf"> Chapter 31 </a>
-  topics: 
-    - Semaphores
-  materials:
-  other:
-    # - <a href="{{ site.baseurl }}/sessions/19_session19/"> Session Information </a>
-21:
-  reading:
-    # - <a href="{{ site.baseurl }}/docs/milestone2/"> Milestone 2 </a>
-  topics:
-    - <b>Lab</b> Project work time
-  materials: 
-  other:
-    # - <a href="{{ site.baseurl }}/sessions/20_session20/"> Session Information </a>
-22:
-  reading:
-    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 </a>
-  topics:
-    - More Sempahores
-  materials:
-  other:
-    - <a href="https://rosehulman-my.sharepoint.com/:p:/g/personal/noureddi_rose-hulman_edu/ESOpQoj830lAu2b_Rm9M120BCu6RrjWvn_ns_98s7uFpUg?e=cvGCdu"> Slides </a>
-    - <a href="{{ site.gh_activity_url }}/18_semaphores/"> Activity </a>
-23:
-  reading:
-    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 </a>
-  topics:
-    - Mutex
-  materials:
-  other:
-    - <a href="https://rosehulman-my.sharepoint.com/:p:/g/personal/noureddi_rose-hulman_edu/ESaiuG2DRclCu8Jxx9fLtmMBYV_rbAZUM_JyXnXmZwDmZg?e=KkPWYA"> Slides </a>
-    - <a href="{{ site.gh_activity_url }}/19_condition_variables"> Activity </a>
-24:
-  reading:
-    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 </a>
-  topics:
-    - Condition variables
-    - More concurrency
-  materials:
-  other:
-    - <a href="https://rosehulman-my.sharepoint.com/:p:/g/personal/noureddi_rose-hulman_edu/ESaiuG2DRclCu8Jxx9fLtmMBYV_rbAZUM_JyXnXmZwDmZg?e=KkPWYA"> Slides </a>
-    - <a href="{{ site.gh_activity_url }}/19_condition_variables"> Activity </a>
-25:
-  reading:
-  topics:
-    - <b> Lab </b> Project work time
-  materials:
-  other:
-
-26:
-  reading:
-  topics:
-    - Producer/Consumer using condition variables
-  materials:
-  other:
-
-27:
-  reading:
-  topics:
-    - Readers/Writers problem
-  materials:
-  other:
-
-28:
-  reading:
-    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-bugs.pdf"> Chapter 32 </a>
-  topics:
-    - Deadlocks and Starvation
-  materials:
-  other:
-
-29:
-  reading:
-    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-segmentation.pdf"> Chapter 16 </a>
-  topics:
-    - Deadlocks wrap up 
-  materials: 
-  other:
-    # - <a href="{{ site.baseurl }}/sessions/30_session30/"> Session Information </a>
-    
-30:
-  reading:
-  topics:
-    - Segmentation and Paging
-  materials: 
-  other:  
-    # - <a href="{{ site.baseurl }}/sessions/31_session31/"> Session Information </a>
-    
-31:
-  reading:
-  topics:
-        - Paging issues
-  materials: 
-  other:
-    # - <a href="{{ site.baseurl }}/sessions/34_session34/"> Session Information </a>
-
-32:
-  reading:
-  topics:
-    - Page replacement algorithms
-  materials: 
-  other:  
-    # - <a href="{{ site.baseurl }}/sessions/35_session35/"> Session Information </a>
-    
-33:
-  reading:
-  topics:
-    - Exam 2 review
-  materials:
-  other:
-
-34:
-  reading:
-  topics:
-    - No class. Exam 2 6:00 - 9:00 pm.
-  materials:
-  other:
-
-# <#>:
+# 2:
 #   reading:
 #   topics:
+#     - Void Pointers
+#     - Malloc and Free
+#     - Function Pointers
+
+#   materials: 
+#   other: 
+#     # - <a href="{{ site.baseurl }}/sessions/01_session1/"> Session Information </a>
+#     - <a href="https://rosehulman-my.sharepoint.com/:p:/g/personal/noureddi_rose-hulman_edu/EcmqJLbNxRNPuUiRgvmIEBEBVUyjWk4wvoDA8wdlhZw-xg?e=c0WMVI"> Slides </a>
+#     - <a href="{{ site.gh_activity_url }}/01_pointers"> Activity </a>
+#     - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933248">  Activity Submission </a>
+
+# 3:
+#   reading:
+#   topics:
+#     - <b>Lab</b> Userspace Threading
+#   materials:
+#   other: 
+#     - <a href="{{ site.baseurl }}/docs/01_userspace_thread_1/"> Lab Instructions</a>
+#     - <a href="{{ site.baseurl }}/docs/submission_instructions/"> Getting and submitting code</a>
+# #     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4947ba52-f883-497d-9192-ac8401325dd7"> Video Tutorial </a>
+# 4:
+#   reading:
+#     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf"> Chapter 2 </a>
+#   topics:
+#     - Basics of Processes
+#   materials:
+#   other:
+#     - <a href="https://rosehulman-my.sharepoint.com/:p:/g/personal/noureddi_rose-hulman_edu/EdPw3KFKdB5MvhzLp7bUTq8BElTXlbO3eizdxldTsPXxUQ?e=pQh7Zr"> Slides </a>
+#     - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2933266"> Activity </a>
+#     # - <a href="{{ site.baseurl }}/sessions/03_session3/"> Session Information </a>
+# 5:
+#   reading:
+#     - <a href="https://man7.org/linux/man-pages/man7/signal.7.html">Signal - Linux manual page </a>
+#   topics:
+#     - Signals
+#   materials: 
+#   other:
+#     - <a href="https://rosehulman-my.sharepoint.com/:p:/g/personal/noureddi_rose-hulman_edu/EXbapWVhr95AuCwpFZbBss0Bvk0vLyJXY6O18azbxDsI1A?e=mhzW6h"> Slides </a>
+#     - <a href="{{ site.gh_activity_url }}/05_signals">  Activity </a>
+#     - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933275"> Activity Submission </a>
+# #     - <a href="{{ site.baseurl }}/sessions/05_session5/"> Session Information </a>
+# 6:
+#   reading:
+#     - <a href="https://man7.org/linux/man-pages/man3/exec.3.html"> exec man page </a>
+#     - <a href="https://man7.org/linux/man-pages/man2/fork.2.html"> fork man page </a>
+#     - <a href="https://man7.org/linux/man-pages/man2/waitid.2.html"> wait man page </a>
+#   topics:
+#     - Processes Operation
+#     - Forking Child Processes
+#   materials: 
+#   other:
+#     - <a href="https://rosehulman-my.sharepoint.com/:p:/g/personal/noureddi_rose-hulman_edu/EcCd3G_NmWNFhYw2-KQ4OYoBezGgHu7X2FIutTAnMrTTlw?e=tj090V"> Slides </a>
+#     - <a href="{{ site.gh_activity_url }}/06_fork_exec"> Activity </a>
+#     - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933281"> Activity Submission </a>
+# #     - <a href="{{ site.baseurl }}/sessions/06_session6/"> Session Information </a>
+# 7:
+#   reading:
+#     - <a href="https://www.gnu.org/software/make/manual/html_node/index.html"> GNU make manual </a>
+#   topics:
+#     - Makefiles
+#   materials: 
+#   other:
+#     - <a href="https://rosehulman-my.sharepoint.com/:p:/g/personal/noureddi_rose-hulman_edu/ETSbGLHm3wNAp50Lr9mEeVEBrjSLvc9sd6-m6xCoVUdHOA?e=xQbGks"> Slides </a>
+#     - <a href="{{ site.gh_activity_url }}/07_makefiles/">Activity</a>
+#     - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933296"> Activity Submission </a>
+#     - <a href="https://youtu.be/Pect1FUKhvk"> Advanced Makefiles </a>
+#     - <a href="https://bytes.usc.edu/cs104/wiki/makefile/"> Makefiles cheatsheet </a>
+# #     - <a href="{{ site.baseurl }}/sessions/07_session7/"> Session Information </a>
+# 8:
+#    reading:
+#      - <a href="https://tldp.org/LDP/lpg/node7.html"> Chapter 6 of The Linux Documentation Project (tldp) </a>
+#    topics:
+#            - Inter Process Communication
+#    materials: 
+#    other:
+#     - <a href="{{ site.gh_activity_url }}/11_ipc/">Activity</a>
+#     - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933326&forceview=1"> Activity Submission </a>
+# #     - <a href="{{ site.baseurl }}/sessions/11_session11/"> Session Information </a>
+# 9:
+#   reading:
+#   topics:
+#     - <b>Lab</b> Project Kickoff
+#   materials: 
+#   other:
+#     - <a href="{{ site.baseurl }}/docs/zz_project"> Lab Instructions </a>
+#     - No activity today
+# 10:
+#   reading:
+#     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/file-implementation.pdf"> Chapter 40 </a>
+#   topics:
+#     - Filesystems I
+#   materials: 
+#   other:
+#     - <a href="{{ site.gh_activity_url }}/09_filesystems_i/">Activity</a>
+#     - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933302"> Activity Submission </a>
+# #     - <a href="{{ site.baseurl }}/sessions/09_session9/"> Session Information </a>
+
+# 11:
+#   reading: 
+#     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/file-implementation.pdf"> Chapter 40 </a>
+#   topics: 
+#     - Filesystems II
+#   materials: 
+#   other:
+#     - No activity today
+#     # - <a href="{{ site.gh_activity_url }}/10_filesystems_ii/">Activity</a>
+# 12:
+#   reading:
+#   topics:
+#           - <b>Lab</b> Ext2 Filesystem
+#   materials:
+#   other:
+#     - No activity today
+#     # - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933308&forceview=1"> Activity Submission </a>
+# 13:
+#   reading:
+#       - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched.pdf"> Chapter 7 </a>
+#           # - Chapter 6
+#   topics:
+#     - CPU Scheduling I
+#   materials:
+#   other:
+#     - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2933332&forceview=1"> Scheduling Quiz </a>
+# #     # - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=3b950a31-c6d9-42ba-b8c4-ac8e015e1292">Videos</a>
+# #     # - <a href="Homework/ext2/README"> Lab Instructions</a>
+# 14:
+#   reading:
+#       - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2933338&forceview=1"> Chapter 8 </a>
+#           # - Chapter 6
+#   topics:
+#     - CPU Scheduling II
+#   materials: 
+#   other:
+#     - <a href="https://rosehulman-my.sharepoint.com/:p:/g/personal/noureddi_rose-hulman_edu/EVof4XRz43xPu_ZLvAbbDd8B66m7KGXsFfJuVfPPUOu82g?e=CbCRaG"> Slides </a>
+#     - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2933338"> Scheduling II Quiz </a>
+# 15:
+#   reading:
+#   topics:
+#     - Exam 1 review (In-class)
+#   materials: Exam1Prep
+#   other:
+#     - No activity!  Do a practice exam
+# 16:
+#   reading:
+#   topics:
+#     - Fork/Signals/Makefiles/pipes skills tests
+#     - 3 Hour exam TBA
+#   materials: 
+#   other:  
+# 17:
+#   reading:
+#   topics:
+#     - No class / Mohammad was sick :/
+#   materials:
+#   other:
+# 18:
+#   reading:
+#     # - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-sema.pdf"> Chapter 31 </a>
+#   topics:
+#     - Scheduling wrap up and exam discussion
+#   materials:
+#   other:
+#     # - <a href="{{ site.baseurl }}/sessions/18_session18/"> Session Information </a>
+# 19:
+#   reading: 
+#       - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf"> Chapter 26 </a>
+#       # - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-api.pdf"> Chapter 27 </a>
+#   topics: 
+#       - More Threads
+#       - Thread Libraries
+#       - Threading Issues
+#   materials: 
+#   other:
+#     # - <a href="{{ site.baseurl }}/sessions/17_session17/"> Session Information </a>
+# 20:
+#   reading: 
+#     # - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 </a>
+#     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-sema.pdf"> Chapter 31 </a>
+#   topics: 
+#     - Semaphores
+#   materials:
+#   other:
+#     # - <a href="{{ site.baseurl }}/sessions/19_session19/"> Session Information </a>
+# 21:
+#   reading:
+#     # - <a href="{{ site.baseurl }}/docs/milestone2/"> Milestone 2 </a>
+#   topics:
+#     - <b>Lab</b> Project work time
+#   materials: 
+#   other:
+#     # - <a href="{{ site.baseurl }}/sessions/20_session20/"> Session Information </a>
+# 22:
+#   reading:
+#     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 </a>
+#   topics:
+#     - More Sempahores
+#   materials:
+#   other:
+#     - <a href="https://rosehulman-my.sharepoint.com/:p:/g/personal/noureddi_rose-hulman_edu/ESOpQoj830lAu2b_Rm9M120BCu6RrjWvn_ns_98s7uFpUg?e=cvGCdu"> Slides </a>
+#     - <a href="{{ site.gh_activity_url }}/18_semaphores/"> Activity </a>
+# 23:
+#   reading:
+#     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 </a>
+#   topics:
+#     - Mutex
+#   materials:
+#   other:
+#     - <a href="https://rosehulman-my.sharepoint.com/:p:/g/personal/noureddi_rose-hulman_edu/ESaiuG2DRclCu8Jxx9fLtmMBYV_rbAZUM_JyXnXmZwDmZg?e=KkPWYA"> Slides </a>
+#     - <a href="{{ site.gh_activity_url }}/19_condition_variables"> Activity </a>
+# 24:
+#   reading:
+#     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 </a>
+#   topics:
+#     - Condition variables
+#     - More concurrency
+#   materials:
+#   other:
+#     - <a href="https://rosehulman-my.sharepoint.com/:p:/g/personal/noureddi_rose-hulman_edu/ESaiuG2DRclCu8Jxx9fLtmMBYV_rbAZUM_JyXnXmZwDmZg?e=KkPWYA"> Slides </a>
+#     - <a href="{{ site.gh_activity_url }}/19_condition_variables"> Activity </a>
+# 25:
+#   reading:
+#   topics:
+#     - <b> Lab </b> Project work time
 #   materials:
 #   other:
 
+# 26:
+#   reading:
+#   topics:
+#     - Producer/Consumer using condition variables
+#   materials:
+#   other:
 
-35:
-  reading:
-  topics:
-    - Intro to OS security
-  materials:
-  other:
+# 27:
+#   reading:
+#   topics:
+#     - Readers/Writers problem
+#   materials:
+#   other:
 
-36:
-  reading:
-  topics:
-    - Control flow integrity attacks
-  materials:
-  other:
+# 28:
+#   reading:
+#     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-bugs.pdf"> Chapter 32 </a>
+#   topics:
+#     - Deadlocks and Starvation
+#   materials:
+#   other:
+
+# 29:
+#   reading:
+#     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-segmentation.pdf"> Chapter 16 </a>
+#   topics:
+#     - Deadlocks wrap up 
+#   materials: 
+#   other:
+#     # - <a href="{{ site.baseurl }}/sessions/30_session30/"> Session Information </a>
+    
+# 30:
+#   reading:
+#   topics:
+#     - Segmentation and Paging
+#   materials: 
+#   other:  
+#     # - <a href="{{ site.baseurl }}/sessions/31_session31/"> Session Information </a>
+    
+# 31:
+#   reading:
+#   topics:
+#         - Paging issues
+#   materials: 
+#   other:
+#     # - <a href="{{ site.baseurl }}/sessions/34_session34/"> Session Information </a>
+
+# 32:
+#   reading:
+#   topics:
+#     - Page replacement algorithms
+#   materials: 
+#   other:  
+#     # - <a href="{{ site.baseurl }}/sessions/35_session35/"> Session Information </a>
+    
+# 33:
+#   reading:
+#   topics:
+#     - Exam 2 review
+#   materials:
+#   other:
+
+# 34:
+#   reading:
+#   topics:
+#     - No class. Exam 2 6:00 - 9:00 pm.
+#   materials:
+#   other:
+
+# # <#>:
+# #   reading:
+# #   topics:
+# #   materials:
+# #   other:
+
+
+# 35:
+#   reading:
+#   topics:
+#     - Intro to OS security
+#   materials:
+#   other:
+
+# 36:
+#   reading:
+#   topics:
+#     - Control flow integrity attacks
+#   materials:
+#   other:
 
 
 # 21:

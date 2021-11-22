@@ -67,7 +67,7 @@ def determine_starting_week(schedule):
     start_time = parse_time_str(starting_session)
     if not start_time:
         raise RuntimeError("Could not find starting week number")
-    if start_time.day >= 2:
+    if start_time.weekday() >= 2:
         return 0
     else:
         return 1
