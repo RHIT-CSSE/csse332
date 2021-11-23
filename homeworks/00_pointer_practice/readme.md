@@ -2,7 +2,7 @@
 layout: post
 title: Pointer Practice
 readtime: true
-date: Wed Sep  1 20:58:45 2021
+date: Tue Nov 23 11:59:56 2021
 gh-repo: rhit-csse332/csse332
 gh-badge: [star,watch,follow]
 ---
@@ -18,9 +18,8 @@ hour to complete this assignment. If your syntax is a bit rusty, then this will
 serve as great practice for the class. 
 
 ## Logistics
-* [Source directory](https://github.com/rhit-csse332/csse332-202130/tree/main/homeworks/00_pointer_practice)
-* [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933254&forceview=1)
-* Due date: Monday September 6 @ 23:59
+* [Source directory](https://github.com/rhit-csse332/csse332/tree/main/homeworks/00_pointer_practice)
+* Submit on [gradescope](https://www.gradescope.com/courses/334393)
 * [Submission instructions]({{ site.baseurl }}/docs/submission_instructions/)
 
 
@@ -45,12 +44,8 @@ Email or Teams as soon as possible.
 -->
 
 ## Submission
-Once you complete the assignment, you can submit your code via Moodle
-[here](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933254&forceview=1)
+Once you complete the assignment, you can submit your code via Gradescope.
 
 For you convenience, here is a link to the [submission instructions]({{ site.baseurl
 }}/docs/submission_instructions/).
 
-## Acknowledgments
-This assignment is based on content kindly provided by Professor Micheal Hewner
-and Lixing Song from Rose Hulman's CSSE department.

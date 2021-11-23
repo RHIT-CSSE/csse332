@@ -23,13 +23,13 @@ title: Class Schedule
 </thead>
 <tbody>
 <tr>
-<td rowspan="4" markdown="span" style="font-size:xx-large;"><a name="w1">1</a></td>
+<td rowspan="6" markdown="span" style="font-size:xx-large;"><a name="w1">1</a></td>
 <td markdown="span">
 1 <br/> Mon, Nov 29 2021</td>
 <td markdown="span" style="text-align:left">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
-<li> <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/intro.pdf">Chapter 1</a> </li>
 <li> <a href="https://cacm.acm.org/magazines/2016/3/198874-lessons-learned-from-30-years-of-minix/fulltext"> Lessons Learned From 30 Years of Minix </a> </li>
+<li> <a href="https://dsf.berkeley.edu/cs262/unix.pdf"> The UNIX Time-Sharing System </a> </li>
 </ul>{:/}
 </td>
 <td markdown="span" style="text-align:left">
@@ -38,22 +38,59 @@ title: Class Schedule
 </ul>{:/}
 </td>
 <td markdown="span">
-<a href="https://rosehulman-my.sharepoint.com/:p:/g/personal/noureddi_rose-hulman_edu/Ed5xz_-IYohJkY181epr6f4BGXWhlPajqlUpqVpbMKwBvg?e=bR0qAw"> Slides </a><br/>No activity today</td>
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li><a href="https://pages.cs.wisc.edu/~remzi/OSTEP/intro.pdf">Chapter 1</a></li></ul>{:/}
+</td>
 </tr>
+<tr>
+<td markdown="span" colspan="4"> [Linux Install]({{ site.baseurl }}/docs/01_linux_install) DUE Mon, Nov 29 2021 23:59 Submit to [Gradescope](https://www.gradescope.com/courses/334393)</td></tr>
 <tr>
 <td markdown="span">
 2 <br/> Tue, Nov 30 2021</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> <a href="https://www.tutorialspoint.com/cprogramming/c_pointers.htm">TutorialsPoint - C pointers </a> </li>
+</ul>{:/}
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> Void Pointers </li>
+<li> Malloc and Free </li>
+<li> Function Pointers </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+</td>
 </tr>
 <tr>
 <td markdown="span">
 3 <br/> Thu, Dec 02 2021</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> The process abstraction </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li><a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf"> Chapter 2 </a></li></ul>{:/}
+</td>
 </tr>
+<tr>
+<td markdown="span" colspan="4"> [Pointer Practice]({{ site.baseurl }}/docs/00_pointer_practice) DUE Thu, Dec 02 2021 23:59 Submit to [Gradescope](https://www.gradescope.com/courses/334393)</td></tr>
 <tr>
 <td markdown="span">
 4 <br/> Fri, Dec 03 2021</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> <b>Lab</b> Userspace Threading </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+<a href="{{ site.baseurl }}/docs/01_userspace_thread_1/"> Lab Instructions</a><br/><a href="{{ site.baseurl }}/docs/submission_instructions/"> Getting and submitting code</a></td>
 </tr>
 <tr>
 <td rowspan="4" markdown="span" style="font-size:xx-large;"><a name="w2">2</a></td>

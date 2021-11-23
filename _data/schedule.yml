@@ -1,47 +1,44 @@
 1:
   reading:
-    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/intro.pdf">Chapter 1</a>
     - <a href="https://cacm.acm.org/magazines/2016/3/198874-lessons-learned-from-30-years-of-minix/fulltext"> Lessons Learned From 30 Years of Minix </a>
+    - <a href="https://dsf.berkeley.edu/cs262/unix.pdf"> The UNIX Time-Sharing System </a>
   topics:
     - Introduction to OS
   materials: 
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/intro.pdf">Chapter 1</a>
   other:
-    # - <a href="{{ site.baseurl }}/sessions/02_session2/"> Session Information </a>
-    - <a href="https://rosehulman-my.sharepoint.com/:p:/g/personal/noureddi_rose-hulman_edu/Ed5xz_-IYohJkY181epr6f4BGXWhlPajqlUpqVpbMKwBvg?e=bR0qAw"> Slides </a>
-    - No activity today
-# 2:
-#   reading:
-#   topics:
-#     - Void Pointers
-#     - Malloc and Free
-#     - Function Pointers
 
-#   materials: 
-#   other: 
-#     # - <a href="{{ site.baseurl }}/sessions/01_session1/"> Session Information </a>
-#     - <a href="https://rosehulman-my.sharepoint.com/:p:/g/personal/noureddi_rose-hulman_edu/EcmqJLbNxRNPuUiRgvmIEBEBVUyjWk4wvoDA8wdlhZw-xg?e=c0WMVI"> Slides </a>
-#     - <a href="{{ site.gh_activity_url }}/01_pointers"> Activity </a>
-#     - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933248">  Activity Submission </a>
+2:
+  reading:
+    - <a href="https://www.tutorialspoint.com/cprogramming/c_pointers.htm">TutorialsPoint - C pointers </a>
+  topics:
+    - Void Pointers
+    - Malloc and Free
+    - Function Pointers
+  materials: 
+  other: 
 
-# 3:
-#   reading:
-#   topics:
-#     - <b>Lab</b> Userspace Threading
-#   materials:
-#   other: 
-#     - <a href="{{ site.baseurl }}/docs/01_userspace_thread_1/"> Lab Instructions</a>
-#     - <a href="{{ site.baseurl }}/docs/submission_instructions/"> Getting and submitting code</a>
-# #     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4947ba52-f883-497d-9192-ac8401325dd7"> Video Tutorial </a>
-# 4:
-#   reading:
-#     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf"> Chapter 2 </a>
-#   topics:
-#     - Basics of Processes
-#   materials:
-#   other:
+3:
+  reading:
+  topics:
+    - The process abstraction
+  materials:
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf"> Chapter 2 </a>
+  other:
 #     - <a href="https://rosehulman-my.sharepoint.com/:p:/g/personal/noureddi_rose-hulman_edu/EdPw3KFKdB5MvhzLp7bUTq8BElTXlbO3eizdxldTsPXxUQ?e=pQh7Zr"> Slides </a>
 #     - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2933266"> Activity </a>
 #     # - <a href="{{ site.baseurl }}/sessions/03_session3/"> Session Information </a>
+
+4:
+  reading:
+  topics:
+    - <b>Lab</b> Userspace Threading
+  materials:
+  other: 
+    - <a href="{{ site.baseurl }}/docs/01_userspace_thread_1/"> Lab Instructions</a>
+    - <a href="{{ site.baseurl }}/docs/submission_instructions/"> Getting and submitting code</a>
+#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4947ba52-f883-497d-9192-ac8401325dd7"> Video Tutorial </a>
+
 # 5:
 #   reading:
 #     - <a href="https://man7.org/linux/man-pages/man7/signal.7.html">Signal - Linux manual page </a>

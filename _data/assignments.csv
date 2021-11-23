@@ -1,6 +1,6 @@
 name,dirname,date,grader,moodle
-# Linux Install,01_linux_install,2021-09-03 23:55:00,nixonm,[Submission box](https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2933257)
-# Pointer Practice,00_pointer_practice,2021-09-06 23:59:00,nixonm,[Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933254&forceview=1)
+Linux Install,01_linux_install,2021-11-29 23:59:00,,Submit to [Gradescope](https://www.gradescope.com/courses/334393)
+Pointer Practice,00_pointer_practice,2021-12-02 23:59:00,,Submit to [Gradescope](https://www.gradescope.com/courses/334393)
 # Userspace Threads,01_userspace_thread_1,2021-09-09 23:59:00,nixonm,[Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933287&forceview=1)
 # ADVANCED Userspace Threads With Preemption,02_userspace_thread_2,2021-09-13 23:59:00,nixonm,[Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933290&forceview=1)
 # Simple Shell/Makefiles,03_simple_shell,2021-09-16 23:59:00,nixonm,[Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933317)
