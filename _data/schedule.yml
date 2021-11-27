@@ -6,6 +6,7 @@
     - Introduction to OS
   materials: 
     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/intro.pdf">Chapter 1</a>
+    - <a href="{{ site.github.repository_url }}/tree/master/ClassMaterials/IntroToOS">IntroToOS</a>
   other:
 
 2:
