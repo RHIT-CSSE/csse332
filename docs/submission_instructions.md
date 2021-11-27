@@ -16,10 +16,10 @@ sudo apt install -y git
 Once it is installed, checkout the corresponding repo for the assignment. For example, to checkout
 the repo containing all the material for this class, you can use
 ```shell
-git clone https://github.com/rhit-csse332/csse332-202130.git
+git clone https://github.com/rhit-csse332/csse332.git
 ```
 That should check out a complete copy of the 332 course materials (including slides, sample exams,
-etc.) to your local system in a csse332-202130 directory.
+etc.) to your local system in a csse332 directory.
 
 As we add new stuff to the repo, you may need to update your local copy. To get the latest, `cd`
 into your csse-202130 directory and then:

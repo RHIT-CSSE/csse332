@@ -3,7 +3,7 @@ layout: post
 title: Session 29 Deadlock Detection
 readtime: true
 date: Tue May  4 08:35:24 2021
-gh-repo: rhit-csse332/csse332-202130
+gh-repo: rhit-csse332/csse332
 gh-badge: [star,watch,follow]
 ---
 

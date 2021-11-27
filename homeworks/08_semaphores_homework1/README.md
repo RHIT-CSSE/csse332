@@ -3,7 +3,7 @@ title: Semaphores Homework I
 layout: post
 date: Wed Apr 14
 readtime: true
-gh-repo: rhit-csse332/csse332-202130
+gh-repo: rhit-csse332/csse332
 gh-badge: [star,watch,follow]
 ---
 
@@ -40,5 +40,5 @@ Some guidance on how we grade:
 ## Logistics
 * [Source code]({{ site.gh_homeworks_url }}/08_semaphores_homework1)
 * [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708067)
-* [Submission instructions](https://rhit-csse332.github.io/csse332-202130/docs/submission_instructions/)
+* [Submission instructions](https://rhit-csse332.github.io/csse332ubmission_instructions/)
 

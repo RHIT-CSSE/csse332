@@ -1,10 +1,9 @@
 ---
 layout: page 
 title: CSSE 332 Operating Systems
-subtitle: Fall 212210
 ---
 
-Welcome to CSSE 332, Operating Systems, for the Fall 2021-22 quarter.
+Welcome to CSSE 332, Operating Systems.
 * You can find the official syllabus [here]({{ site.baseurl }}/syllabus/) or on
   the top right.
 * You can find the unofficial syllabus [here]({{ site.baseurl
@@ -14,7 +13,7 @@ Welcome to CSSE 332, Operating Systems, for the Fall 2021-22 quarter.
 * Virtual Machine setup tips are [here](docs/01_linux_install/)
 
 This site is self-contained on in `git`
-[repo](https://github.com/rhit-csse332/csse332-202130.git).  It is a repository
+[repo](https://github.com/rhit-csse332/csse332.git).  It is a repository
 of all course materials (slides, assignments, in class, code, etc.). Feel free
 to check it out and poke around!
 

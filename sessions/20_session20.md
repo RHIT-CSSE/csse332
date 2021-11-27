@@ -3,7 +3,7 @@ layout: post
 title: Session 20 Milestone 2
 readtime: true
 date: Tues Apr 13
-gh-repo: rhit-csse332/csse332-202130
+gh-repo: rhit-csse332/csse332
 gh-badge: [star,watch,follow]
 ---
 

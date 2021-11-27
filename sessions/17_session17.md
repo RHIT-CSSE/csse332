@@ -3,7 +3,7 @@ layout: post
 title: Session 17 Intro to Threads
 readtime: true
 date: Wed 07 Apr 2021 05:42:12 PM EDT
-gh-repo: rhit-csse332/csse332-202130
+gh-repo: rhit-csse332/csse332
 gh-badge: [star,watch,follow]
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: Term Project (Milestone 3)
 readtime: true
 date: Tue Oct 26 17:47:18 2021 
-gh-repo: rhit-csse332/csse332-202130
+gh-repo: rhit-csse332/csse332
 gh-badge: [star,watch,follow]
 ---
 

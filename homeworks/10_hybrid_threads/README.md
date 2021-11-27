@@ -3,7 +3,7 @@ title: Kernel Threads Advanced Lab
 layout: post
 date: Wed Apr 21 
 readtime: true
-gh-repo: rhit-csse332/csse332-202130
+gh-repo: rhit-csse332/csse332
 gh-badge: [star,watch,follow]
 ---
 
@@ -25,7 +25,7 @@ bugs.
 ## Logistcs
 - [Source code]({{ site.gh_homeworks_url }}/10_hybrid_threads)
 - [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708064)
-- [Submission instructions](https://rhit-csse332.github.io/csse332-202130/docs/submission_instructions/)
+- [Submission instructions](https://rhit-csse332.github.io/csse332ubmission_instructions/)
 
 # Moving from Basic to Hybrid
 

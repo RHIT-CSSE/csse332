@@ -3,7 +3,7 @@ title: Userspace Threads with Preemption
 layout: post
 date: Sat Mar 13 12:16:42 2021
 readtime: true
-gh-repo: rhit-csse332/csse332-202130
+gh-repo: rhit-csse332/csse332
 gh-badge: [star,watch,follow]
 ---
 
@@ -46,7 +46,7 @@ So in this assignment, we'll make our system preemptive. That is, we'll force
 our threads to give up control even if they don't yield. Here are the highlights for quick access:
 * [Source code]({{ site.gh_repository_url }}/tree/main/homeworks/02_userspace_thread_2/)
 * [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708046)
-* [Submission instructions](https://rhit-csse332.github.io/csse332-202130/docs/submission_instructions/)
+* [Submission instructions](https://rhit-csse332.github.io/csse332ubmission_instructions/)
 
 
 <a id="orgb1cd0a7"></a>

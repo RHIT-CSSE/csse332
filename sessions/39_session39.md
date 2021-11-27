@@ -3,7 +3,7 @@ layout: post
 title: Session 39 Security Wrap Up
 readtime: true
 date: Fri May 21 11:02:44 2021
-gh-repo: rhit-csse332/csse332-202130
+gh-repo: rhit-csse332/csse332
 gh-badge: [star,watch,follow]
 ---
 

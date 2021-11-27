@@ -3,7 +3,7 @@ layout: post
 title: Session 13 Scheduling I
 readtime: true
 date: Wed 31 Mar 2021 01:03:43 PM EDT
-gh-repo: rhit-csse332/csse332-202130
+gh-repo: rhit-csse332/csse332
 gh-badge: [star,watch,follow]
 ---
 

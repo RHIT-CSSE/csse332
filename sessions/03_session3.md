@@ -3,7 +3,7 @@ layout: post
 title: Session 3 Process Basics
 readtime: true
 date: Sun Mar 14 21:39:03 2021
-gh-repo: rhit-csse332/csse332-202130
+gh-repo: rhit-csse332/csse332
 gh-badge: [star,watch,follow]
 ---
 

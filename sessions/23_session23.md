@@ -3,7 +3,7 @@ layout: post
 title: Session 23 Kernel threads vs User threads
 readtime: true
 date: Web April 21
-gh-repo: rhit-csse332/csse332-202130
+gh-repo: rhit-csse332/csse332
 gh-badge: [star,watch,follow]
 ---
 

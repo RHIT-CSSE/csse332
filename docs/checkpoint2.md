@@ -3,7 +3,7 @@ layout: post
 title: Term Project (Milestone 3 - Checkpoint II)
 readtime: true
 date: Fri May  7 11:49:55 2021
-gh-repo: rhit-csse332/csse332-202130
+gh-repo: rhit-csse332/csse332
 gh-badge: [star,watch,follow]
 ---
 
@@ -54,7 +54,7 @@ In this checkpoint, we will
 # Multi-Level Feedback Queue
 
 Recall [our
-discussion](https://rhit-csse332.github.io/csse332-202130/sessions/14_session14/)
+discussion](https://rhit-csse332.github.io/csse332/sessions/14_session14/)
 of the MLFQ scheduling algorithm from Session 14. In MLFQ, we will try to
 optimize for both the _turnaround_ as well as the _response time_. The MLFQ
 scheduling algorithm is composed of five rules:

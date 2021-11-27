@@ -3,7 +3,7 @@ layout: post
 title: Session 35 Page Replacement Policies
 readtime: true
 date: Thu May 13 09:49:49 2021
-gh-repo: rhit-csse332/csse332-202130
+gh-repo: rhit-csse332/csse332
 gh-badge: [star,watch,follow]
 ---
 
@@ -26,7 +26,7 @@ is it going to replace? That's what we're going to answer in today's lecture.
 ## Logistics
 
 - [Class notebook section](https://rosehulman-my.sharepoint.com/personal/noureddi_rose-hulman_edu/_layouts/OneNote.aspx?id=%2Fpersonal%2Fnoureddi_rose-hulman_edu%2FDocuments%2FClass%20Notebooks%2FCSSE%20332%20Operating%20Systems&wd=target%28_Content%20Library%2FSession%2035%20Page%20Replacement%20Policies.one%7CC8750C19-3AA2-BF4F-A142-AF8D501C5644%2F%29)
-- [Activity excel sheet](https://github.com/rhit-csse332/csse332-202130/blob/main/activities/35_activity.xlsx?raw=true)
+- [Activity excel sheet](https://github.com/rhit-csse332/csse332/blob/main/activities/35_activity.xlsx?raw=true)
 - [Activity submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708178)
 - [Clear/muddy survey](https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2819250)
 

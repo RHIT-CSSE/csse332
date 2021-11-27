@@ -3,7 +3,7 @@ layout: post
 title: Welcome to CSSE 332
 readtime: true
 date: Tue Mar  9 21:07:58 2021
-gh-repo: rhit-csse332/csse332-202130
+gh-repo: rhit-csse332/csse332
 gh-badge: [star,watch,follow]
 ---
 

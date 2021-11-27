@@ -3,7 +3,7 @@ layout: post
 title: Session 19 More Concurrency
 readtime: true
 date: Mon Apr 12 09:50:22 2021
-gh-repo: rhit-csse332/csse332-202130
+gh-repo: rhit-csse332/csse332
 gh-badge: [star,watch,follow]
 ---
 

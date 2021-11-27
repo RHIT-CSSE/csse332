@@ -53,11 +53,10 @@ languages and assembly code, and processor resources such as registers.
 * Electronic course materials, including the schedule, may be accessed directly at the [course
   website]({{ site.baseurl }}).
 
-* All grades and assignment feedback will be posted on
-  [Moodle](https://moodle.rose-hulman.edu/course/view.php?id=81937).
+* All grades and assignment feedback will be posted on **Moodle**.
 
 * Posting questions, discussions, and answers to questions asked are best done on the course’s
-  [Campuswire site](https://campuswire.com/c/GC2D3779C/feed).
+  **Campuswire**.
 
 
 ## Deadlines and Late Policy
@@ -71,7 +70,7 @@ policy and late assignments are generally worth 0 points unless you have made ar
 However we understand that situations can arise. We handle all situations on a case-by-case basis.
 Here are some general guidelines:
 
-* The usual extension is 24 hours or for extreme circumstances 48 hours
+* The usual extension is 24 hours upon request or for extreme circumstances 48 hours
 * We expect to be notified as soon as is feasible. If you are very ill, we understand that that
 might be slightly after the assignment due date. For other situations, it’s usually possible to
 notify us in advance.

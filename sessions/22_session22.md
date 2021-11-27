@@ -3,7 +3,7 @@ layout: post
 title: Session 22 Scoreboard
 readtime: true
 date: Tue Apr 20 09:32:25 2021
-gh-repo: rhit-csse332/csse332-202130
+gh-repo: rhit-csse332/csse332
 gh-badge: [star,watch,follow]
 ---
 

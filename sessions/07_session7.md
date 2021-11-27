@@ -3,7 +3,7 @@ layout: post
 title: Session 7 Makefiles
 readtime: true
 date: Fri Mar 19 21:04:44 2021
-gh-repo: rhit-csse332/csse332-202130
+gh-repo: rhit-csse332/csse332
 gh-badge: [star,watch,follow]
 ---
 

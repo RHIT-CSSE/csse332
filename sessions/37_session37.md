@@ -3,7 +3,7 @@ layout: post
 title: Session 37 Intro to Security
 readtime: true
 date: Mon May 17 15:25:36 2021
-gh-repo: rhit-csse332/csse332-202130
+gh-repo: rhit-csse332/csse332
 gh-badge: [star,watch,follow]
 ---
 

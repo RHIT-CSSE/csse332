@@ -3,7 +3,7 @@ layout: post
 title: Exam 2 Guide
 readtime: true
 date: Tues April 27
-gh-repo: rhit-csse332/csse332-202130
+gh-repo: rhit-csse332/csse332
 gh-badge: [star,watch,follow]
 ---
 
@@ -21,7 +21,7 @@ You exam will be:
 + 1 2-part thread creation question (40 points)
 
 The best preparation for this exam 2 is
-[Exam2-202020](https://github.com/rhit-csse332/csse332-202130/tree/main/sample_exams/Exam2-202020),
+[Exam2-202020](https://github.com/rhit-csse332/csse332/tree/main/sample_exams/Exam2-202020),
 which is the only released exam in the newer
 exam format (where thread-creation questions and semaphore questions were both
 on the same exam).

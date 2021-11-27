@@ -71,7 +71,7 @@ vulnerabilities.
 
 - [Source code]({{ site.gh_homeworks_url }}/12_security)
 - [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933512)
-- [Submission instructions](https://rhit-csse332.github.io/csse332-202130/docs/submission_instructions/)
+- [Submission instructions](https://rhit-csse332.github.io/csse332ubmission_instructions/)
 - [`gdb` reference card](https://users.ece.utexas.edu/~adnan/gdb-refcard.pdf)
 - [Smashing the stack for fun and profit](https://inst.eecs.berkeley.edu/~cs161/fa08/papers/stack_smashing.pdf)
 - [The geometry of innocent flesh on the bone](https://hovav.net/ucsd/dist/geometry.pdf)

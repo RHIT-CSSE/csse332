@@ -3,7 +3,7 @@ layout: post
 title: Session 1 Pointers Review
 readtime: true
 date: Wed Mar 10 21:15:18 2021
-gh-repo: rhit-csse332/csse332-202130
+gh-repo: rhit-csse332/csse332
 gh-badge: [star,watch,follow]
 ---
 
@@ -15,7 +15,7 @@ pointers, void pointers, memory management, and function pointers.
 * [Slides](https://rosehulman-my.sharepoint.com/:p:/g/personal/noureddi_rose-hulman_edu/EcmqJLbNxRNPuUiRgvmIEBEBVUyjWk4wvoDA8wdlhZw-xg?e=Xx2ofO)
 * [Class Notebook
 Section](https://rosehulman-my.sharepoint.com/personal/noureddi_rose-hulman_edu/_layouts/OneNote.aspx?id=%2Fpersonal%2Fnoureddi_rose-hulman_edu%2FDocuments%2FClass%20Notebooks%2FCSSE%20332%20Operating%20Systems&wd=target%28_Content%20Library%2FSession%201.one%7CB6A37146-6E41-4B80-8E9A-980A4685F9E5%2F%29 onenote:https://rosehulman-my.sharepoint.com/personal/noureddi_rose-hulman_edu/Documents/Class%20Notebooks/CSSE%20332%20Operating%20Systems/_Content%20Library/Session%201.one#section-id={B6A37146-6E41-4B80-8E9A-980A4685F9E5}&end)
-* [Activity source directory](https://github.com/rhit-csse332/csse332-202130/tree/main/activities/01_pointers)
+* [Activity source directory](https://github.com/rhit-csse332/csse332/tree/main/activities/01_pointers)
 * [Activity submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708124)
 * [Clear/Muddy Questions](https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2752890)
 * [Submission instructions]({{ site.baseurl }}/docs/submission_instructions/)

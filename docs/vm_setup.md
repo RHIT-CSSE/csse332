@@ -3,7 +3,7 @@ layout: post
 title: Virtual Machine Setup
 readtime: true
 date: Sun Apr 18 13:39:01 2021
-gh-repo: rhit-csse332/csse332-202130
+gh-repo: rhit-csse332/csse332
 gh-badge: [star,watch,follow]
 ---
 

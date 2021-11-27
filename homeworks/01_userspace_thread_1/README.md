@@ -3,7 +3,7 @@ title: Userspace Threads
 layout: post
 date: Tue Mar  9 19:28:55 2021
 readtime: true
-gh-repo: rhit-csse332/csse332-202130
+gh-repo: rhit-csse332/csse332
 gh-badge: [star,watch,follow]
 ---
 
@@ -51,7 +51,7 @@ thread system we're building is intended to be used. Here are the highlights for
 code](https://github.com/rhit-csse332/csse332/tree/main/homeworks/01_userspace_thread_1)
 * [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933287)
 * [Submission
-instructions](https://rhit-csse332.github.io/csse332-202130/docs/submission_instructions/)
+instructions](https://rhit-csse332.github.io/csse332ubmission_instructions/)
 
 
 

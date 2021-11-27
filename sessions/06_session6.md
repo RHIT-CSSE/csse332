@@ -3,7 +3,7 @@ layout: post
 title: Session 6 Fork & Exec
 readtime: true
 date: Wed Mar 17 18:36:42 2021
-gh-repo: rhit-csse332/csse332-202130
+gh-repo: rhit-csse332/csse332
 gh-badge: [star,watch,follow]
 ---
 

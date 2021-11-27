@@ -38,9 +38,9 @@ Henceforth all "git pull" commands will pull from the course repo but
 all "git push" commands will push to your private backup.
 
 So if I want to make a private backup of the csse332 repo which I had
-cloned in `~/csse332-202130` it would look like this:
+cloned in `~/csse332` it would look like this:
 
-    cd ~/csse332-202130
+    cd ~/csse332
     git remote set-url  --push origin git@github.com:hewner/ExampleCSSERepo.git
     git push
 
