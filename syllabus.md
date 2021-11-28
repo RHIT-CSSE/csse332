@@ -134,9 +134,6 @@ makeup, you fail the course.
 | ADVANCED  Assignments | 15%    |
 | Term Project          | 15%    |
 | Exams                 | 30%    |
-<!-- | Mystery               | 1%     | -->
-
-<!-- The mystery item is left for you to figure out. -->
 
 I generally follow the registrar's interpretation of letter grades, which you can find
 [here](https://www.rose-hulman.edu/campus-life/student-services/registrar/rules-and-procedures/grades.html)
