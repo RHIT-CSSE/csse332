@@ -39,7 +39,7 @@ title: Class Schedule
 </td>
 <td markdown="span">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
-<li><a href="https://pages.cs.wisc.edu/~remzi/OSTEP/intro.pdf">Chapter 1</a></li><li><a href="{{ site.github.repository_url }}/tree/master/ClassMaterials/IntroToOS">IntroToOS</a></li></ul>{:/}
+<li><a href="https://pages.cs.wisc.edu/~remzi/OSTEP/intro.pdf">Chapter 1</a></li><li><a href="{{ site.gh_repository_url }}/tree/main/ClassMaterials/IntroToOS">IntroToOS</a></li></ul>{:/}
 </td>
 </tr>
 <tr>
