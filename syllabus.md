@@ -106,8 +106,7 @@ hard.  All these assignments are done individually.
 
 There is one term project consisting of three milestones spread across the entire quarter. This
 project replaces the BareMetalOS assignments in the previous version of the class. I highly
-recommend that you work on this assignment in pairs. Group members can be from either section 03 or
-section 04.
+recommend that you work on this assignment in pairs. 
 
 There are also 6 ADVANCED assignments.  Advanced assignments generally
 involve trickier programming but explore more interesting topics.
