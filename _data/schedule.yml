@@ -17,6 +17,7 @@
     - Malloc and Free
     - Function Pointers
   materials: 
+    - <a href="{{ site.gh_repository_url }}/tree/main/ClassMaterials/C_Pointers">C_Pointers</a>
   other: 
 
 3:
@@ -25,6 +26,8 @@
     - The process abstraction
   materials:
     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf"> Chapter 2 </a>
+    - <a href="{{ site.gh_repository_url }}/tree/main/ClassMaterials/ProcessBasics">ProcessBasics</a>
+    - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=3131011">Activity</a>
   other:
 #     - <a href="https://rosehulman-my.sharepoint.com/:p:/g/personal/noureddi_rose-hulman_edu/EdPw3KFKdB5MvhzLp7bUTq8BElTXlbO3eizdxldTsPXxUQ?e=pQh7Zr"> Slides </a>
 #     - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2933266"> Activity </a>

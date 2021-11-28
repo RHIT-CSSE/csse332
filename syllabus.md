@@ -83,10 +83,10 @@ time will fix the problem; plan to get help.
 ## Special Arrangements
 
 If circumstances have caused you to miss/fail several assignments OR if your current situation in OS
-seems overwhelming, you should contact the professor right away.  Sometimes it is possible to make
+seems overwhelming, you should contact your instructor right away.  Sometimes it is possible to make
 up missed work for partial credit - these situations are always handled on a case-by-case basis.
 
-The best chance of success is when these problems are addressed quickly - but it never hurts to have
+The best chance of success is when these problems are addressed timely - but it never hurts to have
 a discussion, however unsalvageable the situation may feel.  Please talk to your professor if you
 are having problems!
 
@@ -132,12 +132,12 @@ makeup, you fail the course.
 | Item                  | Weight |
 | :-------------------- | :----- |
 | Assignments/Labs      | 40%    |
-| ADVANCED  Assignments | 14%    |
+| ADVANCED  Assignments | 15%    |
 | Term Project          | 15%    |
 | Exams                 | 30%    |
-| Mystery               | 1%     |
+<!-- | Mystery               | 1%     | -->
 
-The mystery item is left for you to figure out.
+<!-- The mystery item is left for you to figure out. -->
 
 I generally follow the registrar's interpretation of letter grades, which you can find
 [here](https://www.rose-hulman.edu/campus-life/student-services/registrar/rules-and-procedures/grades.html)
