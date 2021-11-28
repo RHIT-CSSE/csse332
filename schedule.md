@@ -60,6 +60,8 @@ title: Class Schedule
 </ul>{:/}
 </td>
 <td markdown="span">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li><a href="{{ site.gh_repository_url }}/tree/main/ClassMaterials/C_Pointers">C_Pointers</a></li></ul>{:/}
 </td>
 </tr>
 <tr>
@@ -74,7 +76,7 @@ title: Class Schedule
 </td>
 <td markdown="span">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
-<li><a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf"> Chapter 2 </a></li></ul>{:/}
+<li><a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf"> Chapter 2 </a></li><li><a href="{{ site.gh_repository_url }}/tree/main/ClassMaterials/ProcessBasics">ProcessBasics</a></li><li><a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=3131011">Activity</a></li></ul>{:/}
 </td>
 </tr>
 <tr>
