@@ -49,7 +49,7 @@ instructions.
 
 Next, download and install (simply by double-clicking) the VirtualBox Extension
 Pack from the following [direct
-link](https://download.virtualbox.org/virtualbox/6.1.26/Oracle_VM_VirtualBox_Extension_Pack-6.1.26.vbox-extpack).
+link](https://download.virtualbox.org/virtualbox/6.1.30/Oracle_VM_VirtualBox_Extension_Pack-6.1.30.vbox-extpack).
 
 # Importing the Class VM
 
