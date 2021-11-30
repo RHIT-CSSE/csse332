@@ -82,39 +82,31 @@ void do_nothing() {
 }
 
 int main() {
-    struct array_list *mylist;
+	int nums[NUM_MAX];
+	struct array_list *mylist;
 
-    // mylist = array_list_new(do_nothing);
-    // we will fix do_nothing in STEP 3
-    mylist = array_list_new(do_nothing);
-    
-    // adds a bunch of numbers to the list
-    for(int i = 1; i <= NUM_MAX; i++) {
-        int *memory = malloc(sizeof(int));
-        *memory = i;
-        printf("allocating %p %d\n", memory, *memory);
-        array_list_add(mylist, memory);        
-    }
+	// mylist = array_list_new(do_nothing);
+	// we will fix do_nothing in STEP 3
+	mylist = array_list_new(do_nothing);
 
-    // removes a couple randomly
-    for(int i = 1; i <= NUM_TO_DELETE; i++) {
-        int rand_index = rand() % array_list_length(mylist);
+	// adds a bunch of numbers to the list
+	for(int i = 1; i <= NUM_MAX; i++) {
+		nums[i-1] = i;
+		array_list_add(mylist, &nums[i-1]);
+	}
 
-        int* memory = array_list_get_idx(mylist, rand_index);
-        printf("freeing %p %d\n", memory, *memory);
-        array_list_del_idx(mylist, rand_index, 1);
-        free(memory);
-    }
+	// removes a couple randomly
+	for(int i = 1; i <= NUM_TO_DELETE; i++) {
+		int rand_index = rand() % array_list_length(mylist);
 
-    printf("mylist (size %lu) values:\n", array_list_length(mylist));
-    // Your STEP 1 printing loop will go here
-    for(int i = 0; i < array_list_length(mylist); i++) {
-        int* current = array_list_get_idx(mylist, i);
-        printf("%d\n", *current);
-    }
-    
-    // free the array list which may leak some values until step 3
-    array_list_free(mylist);
-    
-    return 0;
+		array_list_del_idx(mylist, rand_index, 1);
+	}
+
+	printf("mylist (size %lu) values:\n", array_list_length(mylist));
+	// Your STEP 1 printing loop will go here
+
+	// free the array list which may leak some values until step 3
+	array_list_free(mylist);
+
+	return 0;
 }
