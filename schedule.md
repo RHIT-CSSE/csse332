@@ -98,26 +98,73 @@ title: Class Schedule
 <td rowspan="6" markdown="span" style="font-size:xx-large;"><a name="w2">2</a></td>
 <td markdown="span">
 5 <br/> Mon, Dec 06 2021</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> <a href="https://man7.org/linux/man-pages/man7/signal.7.html">Signal - Linux manual page </a> </li>
+</ul>{:/}
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> Signals </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+</td>
 </tr>
 <tr>
 <td markdown="span" colspan="4"> [Userspace Threads]({{ site.baseurl }}/docs/01_userspace_thread_1) DUE Mon, Dec 06 2021 23:59 Submit to [Gradescope](https://www.gradescope.com/courses/334393)</td></tr>
 <tr>
 <td markdown="span">
 6 <br/> Tue, Dec 07 2021</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> <a href="https://man7.org/linux/man-pages/man3/exec.3.html"> exec man page </a> </li>
+<li> <a href="https://man7.org/linux/man-pages/man2/fork.2.html"> fork man page </a> </li>
+<li> <a href="https://man7.org/linux/man-pages/man2/waitid.2.html"> wait man page </a> </li>
+</ul>{:/}
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> Process Operations </li>
+<li> Forking Child Processes </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+</td>
 </tr>
 <tr>
 <td markdown="span">
 7 <br/> Thu, Dec 09 2021</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> <a href="https://www.gnu.org/software/make/manual/html_node/index.html"> GNU make manual </a> </li>
+</ul>{:/}
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> Makefiles </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+<a href="https://youtu.be/Pect1FUKhvk"> Advanced Makefiles </a><br/><a href="https://bytes.usc.edu/cs104/wiki/makefile/"> Makefiles cheatsheet </a></td>
 </tr>
 <tr>
 <td markdown="span" colspan="4"> [ADVANCED Userspace Threads With Preemption]({{ site.baseurl }}/docs/02_userspace_thread_2) DUE Thu, Dec 09 2021 23:59 Submit to [Gradescope](https://www.gradescope.com/courses/334393)</td></tr>
 <tr>
 <td markdown="span">
 8 <br/> Fri, Dec 10 2021</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> <a href="https://tldp.org/LDP/lpg/node7.html"> Chapter 6 of The Linux Documentation Project (tldp) </a> </li>
+</ul>{:/}
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> Inter Process Communication </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+</td>
 </tr>
 <tr>
 <td rowspan="4" markdown="span" style="font-size:xx-large;"><a name="w3">3</a></td>
