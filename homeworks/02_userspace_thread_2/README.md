@@ -45,7 +45,6 @@ of multiple threads running in parallel.
 So in this assignment, we'll make our system preemptive. That is, we'll force
 our threads to give up control even if they don't yield. Here are the highlights for quick access:
 * [Source code]({{ site.gh_repository_url }}/tree/main/homeworks/02_userspace_thread_2/)
-* [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708046)
 * [Submission instructions](https://rhit-csse332.github.io/csse332ubmission_instructions/)
 
 
