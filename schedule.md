@@ -95,11 +95,13 @@ title: Class Schedule
 <a href="{{ site.baseurl }}/docs/01_userspace_thread_1/"> Lab Instructions</a><br/><a href="{{ site.baseurl }}/docs/submission_instructions/"> Getting and submitting code</a></td>
 </tr>
 <tr>
-<td rowspan="4" markdown="span" style="font-size:xx-large;"><a name="w2">2</a></td>
+<td rowspan="6" markdown="span" style="font-size:xx-large;"><a name="w2">2</a></td>
 <td markdown="span">
 5 <br/> Mon, Dec 06 2021</td>
 <td markdown="span" colspan="3">N/A</td>
 </tr>
+<tr>
+<td markdown="span" colspan="4"> [Userspace Threads]({{ site.baseurl }}/docs/01_userspace_thread_1) DUE Mon, Dec 06 2021 23:59 Submit to [Gradescope](https://www.gradescope.com/courses/334393)</td></tr>
 <tr>
 <td markdown="span">
 6 <br/> Tue, Dec 07 2021</td>
@@ -110,6 +112,8 @@ title: Class Schedule
 7 <br/> Thu, Dec 09 2021</td>
 <td markdown="span" colspan="3">N/A</td>
 </tr>
+<tr>
+<td markdown="span" colspan="4"> [ADVANCED Userspace Threads With Preemption]({{ site.baseurl }}/docs/02_userspace_thread_2) DUE Thu, Dec 09 2021 23:59 Submit to [Gradescope](https://www.gradescope.com/courses/334393)</td></tr>
 <tr>
 <td markdown="span">
 8 <br/> Fri, Dec 10 2021</td>

@@ -49,7 +49,6 @@ itself handles threads.
 thread system we're building is intended to be used. Here are the highlights for quick access:
 * [Source
 code](https://github.com/rhit-csse332/csse332/tree/main/homeworks/01_userspace_thread_1)
-* [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933287)
 * [Submission
 instructions](https://rhit-csse332.github.io/csse332ubmission_instructions/)
 
@@ -558,7 +557,7 @@ how to run it (if this doesn't work you may have to install valgrind):
 # Conclusion
 
 Submit all assignment source files (c files, h files) but not binaries
-(example1, run_tests, .o files) via Moodle.
+(example1, run_tests, .o files) via Gradescope.
 
 <a id="foo"></a>
 
