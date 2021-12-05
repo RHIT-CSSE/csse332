@@ -49,6 +49,7 @@
   topics:
     - Signals
   materials: 
+    - <a href="{{ site.gh_repository_url }}/tree/main/ClassMaterials/Signals">Signals</a>
   other:
 #     - <a href="https://rosehulman-my.sharepoint.com/:p:/g/personal/noureddi_rose-hulman_edu/EXbapWVhr95AuCwpFZbBss0Bvk0vLyJXY6O18azbxDsI1A?e=mhzW6h"> Slides </a>
 #     - <a href="{{ site.gh_activity_url }}/05_signals">  Activity </a>
@@ -64,6 +65,7 @@
     - Process Operations
     - Forking Child Processes
   materials: 
+    - <a href="{{ site.gh_repository_url }}/tree/main/ClassMaterials/Fork">Fork</a>
   other:
 #     - <a href="https://rosehulman-my.sharepoint.com/:p:/g/personal/noureddi_rose-hulman_edu/EcCd3G_NmWNFhYw2-KQ4OYoBezGgHu7X2FIutTAnMrTTlw?e=tj090V"> Slides </a>
 #     - <a href="{{ site.gh_activity_url }}/06_fork_exec"> Activity </a>
@@ -76,10 +78,11 @@
   topics:
     - Makefiles
   materials: 
+    - <a href="{{ site.gh_repository_url }}/tree/main/ClassMaterials/Makefiles">Makefiles</a>
   other:
 #     - <a href="{{ site.gh_activity_url }}/07_makefiles/">Activity</a>
 #     - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933296"> Activity Submission </a>
-     - <a href="https://youtu.be/Pect1FUKhvk"> Advanced Makefiles </a>
+     - <a href="https://youtu.be/Pect1FUKhvk"> Advanced Makefiles (Video) </a>
      - <a href="https://bytes.usc.edu/cs104/wiki/makefile/"> Makefiles cheatsheet </a>
 # #     - <a href="{{ site.baseurl }}/sessions/07_session7/"> Session Information </a>
 
@@ -89,6 +92,7 @@
    topics:
            - Inter Process Communication
    materials: 
+    - <a href="{{ site.gh_repository_url }}/tree/main/ClassMaterials/IPC">IPC</a>
    other:
 #     - <a href="{{ site.gh_activity_url }}/11_ipc/">Activity</a>
 #     - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933326&forceview=1"> Activity Submission </a>

@@ -109,6 +109,8 @@ title: Class Schedule
 </ul>{:/}
 </td>
 <td markdown="span">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li><a href="{{ site.gh_repository_url }}/tree/main/ClassMaterials/Signals">Signals</a></li></ul>{:/}
 </td>
 </tr>
 <tr>
@@ -130,6 +132,8 @@ title: Class Schedule
 </ul>{:/}
 </td>
 <td markdown="span">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li><a href="{{ site.gh_repository_url }}/tree/main/ClassMaterials/Fork">Fork</a></li></ul>{:/}
 </td>
 </tr>
 <tr>
@@ -146,7 +150,9 @@ title: Class Schedule
 </ul>{:/}
 </td>
 <td markdown="span">
-<a href="https://youtu.be/Pect1FUKhvk"> Advanced Makefiles </a><br/><a href="https://bytes.usc.edu/cs104/wiki/makefile/"> Makefiles cheatsheet </a></td>
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li><a href="{{ site.gh_repository_url }}/tree/main/ClassMaterials/Makefiles">Makefiles</a></li></ul>{:/}
+<a href="https://youtu.be/Pect1FUKhvk"> Advanced Makefiles (Video) </a><br/><a href="https://bytes.usc.edu/cs104/wiki/makefile/"> Makefiles cheatsheet </a></td>
 </tr>
 <tr>
 <td markdown="span" colspan="4"> [ADVANCED Userspace Threads With Preemption]({{ site.baseurl }}/docs/02_userspace_thread_2) DUE Thu, Dec 09 2021 23:59 Submit to [Gradescope](https://www.gradescope.com/courses/334393)</td></tr>
@@ -164,6 +170,8 @@ title: Class Schedule
 </ul>{:/}
 </td>
 <td markdown="span">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li><a href="{{ site.gh_repository_url }}/tree/main/ClassMaterials/IPC">IPC</a></li></ul>{:/}
 </td>
 </tr>
 <tr>
