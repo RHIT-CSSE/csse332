@@ -24,14 +24,11 @@ bool child_done;
 void threadFunction()
 {
     int i;
-    for(i = 1; i <= 10; i++) {
-        printf("5) child thread running %d of 10\n", i);
-        sleep(1);
-        //swapcontext( &child, &parent );
-    }
+    printf("5) child thread\nPress Ctrl+C now\n");
+    sleep(5);
     printf( " 6) Child thread exiting\n" );
     child_done = true;
-    
+    swapcontext(&child, &parent);
 }
 
 void man_yield(){
