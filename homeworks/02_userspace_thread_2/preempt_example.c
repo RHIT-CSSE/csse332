@@ -36,7 +36,7 @@ int main()
     child.uc_link = 0;
     child.uc_stack.ss_sp = malloc( THREAD_STACK_SIZE );
     child.uc_stack.ss_size = THREAD_STACK_SIZE;
-    child.uc_stack.ss_flags = 0;        
+    child.uc_stack.ss_flags = 0;
     if ( child.uc_stack.ss_sp == 0 ) {
         perror( "malloc: Could not allocate stack" );
         exit( 1 );
@@ -51,16 +51,16 @@ int main()
 
     // set an alarm signal to go off after 20 microseconds
     // the second 0 means the alarm won't repeat
-    ualarm(20, 0); 
+    ualarm(5000, 0);
 
     // Execute the child context
     printf( "Switching to child thread\n" );
     swapcontext( &parent, &child );
 
 
-    ualarm(20, 0); // if we did not install the alarm again, we'd get
+    ualarm(5000, 0); // if we did not install the alarm again, we'd get
                    // trapped forever
-    
+
     printf( "Switching to child thread a second time\n" );
     swapcontext( &parent, &child );
 
