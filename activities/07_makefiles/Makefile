@@ -22,16 +22,3 @@
 
 all: almain.bin
 
-almain.bin: almain.o arraylist.o 
-	gcc -o $@ $^
-
-almain.o: almain.c arraylist.h
-	gcc -c almain.c
-
-arraylist.o: arraylist.c arraylist.h
-	gcc -c $^
-
-.PHONY: clean all
-
-clean:
-	rm -f makefiles.zip almain.bin *.o

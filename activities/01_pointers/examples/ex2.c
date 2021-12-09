@@ -24,7 +24,6 @@ main(int argc, char **argv)
 	printf("&a[1] is	%p\n", &a[1]);
 	printf("sizeof(int) is	%lu\n", sizeof(int));
 
-#if 0
 	// let's do some weird stuff
 	printf("\n\n*********************************\n");
 	cptr = (char *)iptr;
@@ -34,8 +33,9 @@ main(int argc, char **argv)
 
 	printf("\n\n*********************************\n");
 	printf("*cptr is		%x\n", *cptr);
-	printf("*(cptr+1) is		%x\n", *(cptr+1));
+	printf("*(cptr+4) is		%x\n", *(cptr+4));
 
+#if 0
 	// what if we read back as an integer?
 	cptr++;
 	iptr = (int *)cptr;

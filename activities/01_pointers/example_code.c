@@ -88,6 +88,7 @@ void function_pointer_example() {
   
   //and then at some future time call that function through the pointer
   int result = my_fun_pointer(66,7);
+  int result2 = (*my_fun_pointer)(66, 7);
   other_fun_pointer();
   
   //then reassign and call again if you wish
@@ -97,8 +98,8 @@ void function_pointer_example() {
 }
 
 int main(void) {
-  void_pointer_example();
-  malloc_example();
+  /* void_pointer_example(); */
+  /* malloc_example(); */
   function_pointer_example();
   return 0;
 }

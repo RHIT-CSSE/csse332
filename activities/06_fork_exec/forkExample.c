@@ -15,7 +15,7 @@ int main() {
 	if (pid == 0) {
 		printf("I am the child process\n");
 		sleep(1);  // wait 1 second
-		exit(3); // THIS EXIT IS IMPORTANT
+		// exit(3); // THIS EXIT IS IMPORTANT
 		// If it was not here, the child would go
 		// and run the parent code below
 	} 
