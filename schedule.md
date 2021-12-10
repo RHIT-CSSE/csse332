@@ -175,25 +175,67 @@ title: Class Schedule
 </td>
 </tr>
 <tr>
-<td rowspan="4" markdown="span" style="font-size:xx-large;"><a name="w3">3</a></td>
+<td rowspan="6" markdown="span" style="font-size:xx-large;"><a name="w3">3</a></td>
 <td markdown="span">
 9 <br/> Mon, Dec 13 2021</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> <b>Lab</b> Process Lab </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+</td>
 </tr>
+<tr>
+<td markdown="span" colspan="4"> [Simple Shell/Makefiles]({{ site.baseurl }}/docs/03_simple_shell) DUE Mon, Dec 13 2021 23:59 Submit to [Gradescope](https://www.gradescope.com/courses/334393)</td></tr>
 <tr>
 <td markdown="span">
 10 <br/> Tue, Dec 14 2021</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/file-implementation.pdf"> Chapter 40 </a> </li>
+</ul>{:/}
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> Filesystems I </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+</td>
 </tr>
 <tr>
 <td markdown="span">
 11 <br/> Thu, Dec 16 2021</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/file-implementation.pdf"> Chapter 40 </a> </li>
+</ul>{:/}
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> Filesystems II </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+</td>
 </tr>
+<tr>
+<td markdown="span" colspan="4"> [Process Lab/Debugging]({{ site.baseurl }}/docs/04_process_lab) DUE Thu, Dec 16 2021 23:59 Submit to [Gradescope](https://www.gradescope.com/courses/334393)</td></tr>
 <tr>
 <td markdown="span">
 12 <br/> Fri, Dec 17 2021</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> <b>Lab</b> Ext2 Filesystem </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+</td>
 </tr>
 <tr>
 <td rowspan="4" markdown="span" style="font-size:xx-large;"><a name="w4">4</a></td>

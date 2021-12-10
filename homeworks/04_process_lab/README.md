@@ -18,8 +18,6 @@ Following completion of this lab you should be able to:
 
 Here are the highlights for quick access
 * [Source code]({{ site.gh_repository_url }}/tree/main/homeworks/04_process_lab)
-* [Submission
-box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933320)
 * [Submission instructions](https://rhit-csse332.github.io/csse332/docs/submission_instructions/)
 
 ### Tasks

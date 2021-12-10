@@ -17,8 +17,6 @@ called bash - that's probably the one you're using right now.  Just
 like preferred text editors, unix people tend to have a preferred
 shell (alternatives include zsh, csh). Here are the highlights for quick access
 * [Source code]({{ site.gh_repository_url }}/tree/main/homeworks/03_simple_shell)
-* [Submission
-box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933317)
 * [Submission instructions](https://rhit-csse332.github.io/csse332/docs/submission_instructions/)
 
 # What we've given you
