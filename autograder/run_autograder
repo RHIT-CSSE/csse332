@@ -9,7 +9,7 @@ gcc main.c CuTest.c -o main.bin
 
 touch /autograder/results/results.json
 cat > /autograder/results/results.json <<ENDOFWPA
-{ "score":-1,
+{ "score":0,
   "output": "Ignore the auto-generated score here. Your submission will be graded by our graders later.",
   "visibility": "visible",
   "stdout_visibility": "visible"
