@@ -186,7 +186,7 @@ title: Class Schedule
 </ul>{:/}
 </td>
 <td markdown="span">
-</td>
+<a href="{{ site.gh_repository_url }}/tree/main/homeworks/04_process_lab">Lab Instruction</a></td>
 </tr>
 <tr>
 <td markdown="span" colspan="4"> [Simple Shell/Makefiles]({{ site.baseurl }}/docs/03_simple_shell) DUE Mon, Dec 13 2021 23:59 Submit to [Gradescope](https://www.gradescope.com/courses/334393)</td></tr>
@@ -204,6 +204,8 @@ title: Class Schedule
 </ul>{:/}
 </td>
 <td markdown="span">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li><a href="{{ site.gh_repository_url }}/tree/main/ClassMaterials/Filesystem_1">Filesystem 1</a></li></ul>{:/}
 </td>
 </tr>
 <tr>
@@ -220,6 +222,8 @@ title: Class Schedule
 </ul>{:/}
 </td>
 <td markdown="span">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li><a href="{{ site.gh_repository_url }}/tree/main/ClassMaterials/Filesystem_2">Filesystem 2</a></li></ul>{:/}
 </td>
 </tr>
 <tr>
@@ -235,6 +239,8 @@ title: Class Schedule
 </ul>{:/}
 </td>
 <td markdown="span">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li><a href="{{ site.gh_repository_url }}/tree/main/homeworks/06_ext2">Lab Instruction</a></li></ul>{:/}
 </td>
 </tr>
 <tr>
