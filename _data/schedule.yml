@@ -97,42 +97,40 @@
 #     - <a href="{{ site.gh_activity_url }}/11_ipc/">Activity</a>
 #     - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933326&forceview=1"> Activity Submission </a>
 # #     - <a href="{{ site.baseurl }}/sessions/11_session11/"> Session Information </a>
-# 9:
-#   reading:
-#   topics:
-#     - <b>Lab</b> Project Kickoff
-#   materials: 
-#   other:
-#     - <a href="{{ site.baseurl }}/docs/zz_project"> Lab Instructions </a>
-#     - No activity today
-# 10:
-#   reading:
-#     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/file-implementation.pdf"> Chapter 40 </a>
-#   topics:
-#     - Filesystems I
-#   materials: 
-#   other:
-#     - <a href="{{ site.gh_activity_url }}/09_filesystems_i/">Activity</a>
-#     - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933302"> Activity Submission </a>
-# #     - <a href="{{ site.baseurl }}/sessions/09_session9/"> Session Information </a>
+9:
+  reading:
+  topics:
+    - <b>Lab</b> Process Lab
+  materials: 
+  other:
+    # - <a href="{{ site.baseurl }}/docs/zz_project"> Lab Instructions </a>
+    # - No activity today
 
-# 11:
-#   reading: 
-#     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/file-implementation.pdf"> Chapter 40 </a>
-#   topics: 
-#     - Filesystems II
-#   materials: 
-#   other:
-#     - No activity today
-#     # - <a href="{{ site.gh_activity_url }}/10_filesystems_ii/">Activity</a>
-# 12:
-#   reading:
-#   topics:
-#           - <b>Lab</b> Ext2 Filesystem
-#   materials:
-#   other:
-#     - No activity today
-#     # - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933308&forceview=1"> Activity Submission </a>
+10:
+  reading:
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/file-implementation.pdf"> Chapter 40 </a>
+  topics:
+    - Filesystems I
+  materials: 
+  other:
+    # - <a href="{{ site.gh_activity_url }}/09_filesystems_i/">Activity</a>
+    # - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933302"> Activity Submission </a>
+
+11:
+  reading: 
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/file-implementation.pdf"> Chapter 40 </a>
+  topics: 
+    - Filesystems II
+  materials: 
+  other:
+    # - No activity today
+    # - <a href="{{ site.gh_activity_url }}/10_filesystems_ii/">Activity</a>
+12:
+  reading:
+  topics:
+          - <b>Lab</b> Ext2 Filesystem
+  materials:
+  other:
 # 13:
 #   reading:
 #       - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched.pdf"> Chapter 7 </a>

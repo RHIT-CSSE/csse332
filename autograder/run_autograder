@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+find /autograder/submission/ -type f -maxdepth 2 -name "main.c" -exec cp {} /autograder/source/source_code/main.c \;
+
+cd /autograder/source/source_code
+
+gcc main.c CuTest.c -o main.bin
+./main.bin 2>&1
+
+touch /autograder/results/results.json
+cat > /autograder/results/results.json <<ENDOFWPA
+{ "score":0,
+  "output": "Ignore the auto-generated score here. Your submission will be graded by our graders later.",
+  "visibility": "visible",
+  "stdout_visibility": "visible"
+}
+ENDOFWPA
