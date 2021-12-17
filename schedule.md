@@ -23,6 +23,9 @@ title: Class Schedule
 </thead>
 <tbody>
 <tr>
+<td rowspan="1" markdown="span" style="font-size:xx-large;"><a name="w0">0</a></td>
+<td markdown="span" colspan="4"> [ADVANCED Ext2 Filesystem]({{ site.baseurl }}/docs/06_ext2) DUE Sat, Feb 06 2021 23:59 Submit to [Gradescope](https://www.gradescope.com/courses/334393)</td></tr>
+<tr>
 <td rowspan="6" markdown="span" style="font-size:xx-large;"><a name="w1">1</a></td>
 <td markdown="span">
 1 <br/> Mon, Nov 29 2021</td>
