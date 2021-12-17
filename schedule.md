@@ -23,9 +23,6 @@ title: Class Schedule
 </thead>
 <tbody>
 <tr>
-<td rowspan="1" markdown="span" style="font-size:xx-large;"><a name="w0">0</a></td>
-<td markdown="span" colspan="4"> [ADVANCED Ext2 Filesystem]({{ site.baseurl }}/docs/06_ext2) DUE Sat, Feb 06 2021 23:59 Submit to [Gradescope](https://www.gradescope.com/courses/334393)</td></tr>
-<tr>
 <td rowspan="6" markdown="span" style="font-size:xx-large;"><a name="w1">1</a></td>
 <td markdown="span">
 1 <br/> Mon, Nov 29 2021</td>
@@ -247,7 +244,7 @@ title: Class Schedule
 </td>
 </tr>
 <tr>
-<td rowspan="4" markdown="span" style="font-size:xx-large;"><a name="w4">4</a></td>
+<td rowspan="5" markdown="span" style="font-size:xx-large;"><a name="w4">4</a></td>
 <td markdown="span">
 13 <br/> Mon, Jan 03 2022</td>
 <td markdown="span" colspan="3">N/A</td>
@@ -262,6 +259,8 @@ title: Class Schedule
 15 <br/> Thu, Jan 06 2022</td>
 <td markdown="span" colspan="3">N/A</td>
 </tr>
+<tr>
+<td markdown="span" colspan="4"> [ADVANCED Ext2 Filesystem]({{ site.baseurl }}/docs/06_ext2) DUE Thu, Jan 06 2022 23:59 Submit to [Gradescope](https://www.gradescope.com/courses/334393)</td></tr>
 <tr>
 <td markdown="span">
 16 <br/> Fri, Jan 07 2022</td>
