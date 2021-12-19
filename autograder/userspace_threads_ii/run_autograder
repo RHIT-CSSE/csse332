@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+
+find /autograder/submission/ -type f -maxdepth 2 -name "preempt_threads.c" -exec cp {} /autograder/source/source_code/ \;
+
+cd /autograder/source/source_code
+
+echo "########## Running standalone 1 ##########"
+gcc standalone1.c preempt_threads.c -o standalone1
+./standalone1 2>&1
+
+echo "########## Running standalone 2 ##########"
+gcc standalone2.c preempt_threads.c -o standalone2
+./standalone2 2>&1
+
+echo "########## Running preempt_tests ##########"
+gcc preempt_tests.c preempt_threads.c CuTest.c -o preempt_tests
+./preempt_tests 2>&1
+
+touch /autograder/results/results.json
+cat > /autograder/results/results.json <<ENDOFWPA
+{ "score":0,
+  "output": "Ignore the auto-generated score here. Your submission will be graded by our graders later.",
+  "visibility": "visible",
+  "stdout_visibility": "visible"
+}
+ENDOFWPA
