@@ -135,41 +135,37 @@
   materials:
     - <a href="{{ site.gh_repository_url }}/tree/main/homeworks/06_ext2">Lab Instruction</a>
   other:
-# 13:
-#   reading:
-#       - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched.pdf"> Chapter 7 </a>
-#           # - Chapter 6
-#   topics:
-#     - CPU Scheduling I
-#   materials:
-#   other:
-#     - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2933332&forceview=1"> Scheduling Quiz </a>
-# #     # - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=3b950a31-c6d9-42ba-b8c4-ac8e015e1292">Videos</a>
-# #     # - <a href="Homework/ext2/README"> Lab Instructions</a>
-# 14:
-#   reading:
-#       - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2933338&forceview=1"> Chapter 8 </a>
-#           # - Chapter 6
-#   topics:
-#     - CPU Scheduling II
-#   materials: 
-#   other:
-#     - <a href="https://rosehulman-my.sharepoint.com/:p:/g/personal/noureddi_rose-hulman_edu/EVof4XRz43xPu_ZLvAbbDd8B66m7KGXsFfJuVfPPUOu82g?e=CbCRaG"> Slides </a>
-#     - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2933338"> Scheduling II Quiz </a>
-# 15:
-#   reading:
-#   topics:
-#     - Exam 1 review (In-class)
-#   materials: Exam1Prep
-#   other:
-#     - No activity!  Do a practice exam
-# 16:
-#   reading:
-#   topics:
-#     - Fork/Signals/Makefiles/pipes skills tests
-#     - 3 Hour exam TBA
-#   materials: 
-#   other:  
+
+13:
+  reading:
+  topics:
+    - Exam Review
+  materials:
+  other:
+
+14:
+  reading:
+  topics:
+    - No class, Exam on Wednesday
+  materials:
+  other:
+
+15:
+  reading:
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched.pdf"> Chapter 7 </a>
+  topics:
+    - CPU scheduling I
+  materials:
+  other:
+
+16:
+  reading:
+    - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2933338&forceview=1"> Chapter 8 </a>
+  topics:
+    - CPU scheduling II
+  materials:
+  other:
+
 # 17:
 #   reading:
 #   topics:
