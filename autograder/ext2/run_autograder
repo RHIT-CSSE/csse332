@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+find /autograder/submission/ -type f -maxdepth 2 -name "ext2access.c" -exec cp {} /autograder/source/source_code/ \;
+
+cd /autograder/source/source_code
+
+echo "########## Compiling ##########"
+make clean && make
+
+echo "########## Running testcode ##########"
+./testcode 451_filesystem.ext2 || true
+
+touch /autograder/results/results.json
+cat > /autograder/results/results.json <<ENDOFWPA
+{ "score":0,
+  "output": "Ignore the auto-generated score here. Your submission will be graded by our graders later.",
+  "visibility": "visible",
+  "stdout_visibility": "visible"
+}
+ENDOFWPA

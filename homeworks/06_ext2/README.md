@@ -50,8 +50,6 @@ your errors.
 
 Here are the highlights for quick access:
 * [Source code]({{ site.gh_repository_url }}/tree/main/homeworks/06_ext2)
-* [Submission
-box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933347&forceview=1)
 * [Submission instructions](https://rhit-csse332.github.io/csse332/docs/submission_instructions/)
 
 # Understanding ext2
@@ -448,7 +446,7 @@ it run.  Run valgrind on your solution to ensure memory correctness.
 
 # Turning in
 
-Submit your ex2access.c
+Submit your ext2access.c on gradescope.
 
 # Rubic
 
