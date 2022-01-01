@@ -141,12 +141,13 @@
   topics:
     - Exam Review
   materials:
+    - <a href="{{ site.gh_repository_url }}/tree/main/sample_exams">Sample Exams</a>
   other:
 
 14:
   reading:
   topics:
-    - No class, Exam on Wednesday
+    - No class, Exam on Wednesday Evening
   materials:
   other:
 
@@ -156,6 +157,8 @@
   topics:
     - CPU scheduling I
   materials:
+    - <a href="{{ site.gh_repository_url }}/tree/main/ClassMaterials/CPU_Scheduling1">CPU_Scheduling1</a>
+    - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=3131053">Activity</a>
   other:
 
 16:
@@ -164,6 +167,8 @@
   topics:
     - CPU scheduling II
   materials:
+    - <a href="{{ site.gh_repository_url }}/tree/main/ClassMaterials/CPU_Scheduling2">CPU_Scheduling2</a>
+    - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=3131056">Activity</a>
   other:
 
 # 17:

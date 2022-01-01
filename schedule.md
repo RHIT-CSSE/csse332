@@ -255,6 +255,8 @@ title: Class Schedule
 </ul>{:/}
 </td>
 <td markdown="span">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li><a href="{{ site.gh_repository_url }}/tree/main/sample_exams">Sample Exams</a></li></ul>{:/}
 </td>
 </tr>
 <tr>
@@ -264,7 +266,7 @@ title: Class Schedule
 </td>
 <td markdown="span" style="text-align:left">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
-<li> No class, Exam on Wednesday </li>
+<li> No class, Exam on Wednesday Evening </li>
 </ul>{:/}
 </td>
 <td markdown="span">
@@ -284,6 +286,8 @@ title: Class Schedule
 </ul>{:/}
 </td>
 <td markdown="span">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li><a href="{{ site.gh_repository_url }}/tree/main/ClassMaterials/CPU_Scheduling1">CPU_Scheduling1</a></li><li><a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=3131053">Activity</a></li></ul>{:/}
 </td>
 </tr>
 <tr>
@@ -302,14 +306,18 @@ title: Class Schedule
 </ul>{:/}
 </td>
 <td markdown="span">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li><a href="{{ site.gh_repository_url }}/tree/main/ClassMaterials/CPU_Scheduling2">CPU_Scheduling2</a></li><li><a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=3131056">Activity</a></li></ul>{:/}
 </td>
 </tr>
 <tr>
-<td rowspan="4" markdown="span" style="font-size:xx-large;"><a name="w5">5</a></td>
+<td rowspan="5" markdown="span" style="font-size:xx-large;"><a name="w5">5</a></td>
 <td markdown="span">
 17 <br/> Mon, Jan 10 2022</td>
 <td markdown="span" colspan="3">N/A</td>
 </tr>
+<tr>
+<td markdown="span" colspan="4"> CPU Scheduling DUE Mon, Jan 10 2022 23:59 [Take the quiz on Moodle](https://moodle.rose-hulman.edu/mod/quiz/view.php?id=3130966)</td></tr>
 <tr>
 <td markdown="span">
 18 <br/> Tue, Jan 11 2022</td>
