@@ -256,7 +256,7 @@ title: Class Schedule
 </td>
 <td markdown="span">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
-<li><a href="{{ site.gh_repository_url }}/tree/main/sample_exams">Sample Exams</a></li></ul>{:/}
+<li><a href="{{ site.gh_repository_url }}/tree/main/ClassMaterials/Exam1Prep">Exam1Prep</a></li><li><a href="{{ site.gh_repository_url }}/tree/main/sample_exams">Sample Exams</a></li></ul>{:/}
 </td>
 </tr>
 <tr>

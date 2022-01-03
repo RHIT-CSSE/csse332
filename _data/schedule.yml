@@ -141,6 +141,7 @@
   topics:
     - Exam Review
   materials:
+    - <a href="{{ site.gh_repository_url }}/tree/main/ClassMaterials/Exam1Prep">Exam1Prep</a>
     - <a href="{{ site.gh_repository_url }}/tree/main/sample_exams">Sample Exams</a>
   other:
 
