@@ -172,12 +172,72 @@
     - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=3131056">Activity</a>
   other:
 
-# 17:
-#   reading:
-#   topics:
-#     - No class / Mohammad was sick :/
-#   materials:
-#   other:
+17:
+  reading: 
+      - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf"> Chapter 26 </a>
+  topics: 
+      - More Threads
+      - Thread Libraries
+      - Threading Issues
+  materials: 
+  other:
+
+18:
+  reading: 
+    # - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 </a>
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-sema.pdf"> Chapter 31 </a>
+  topics: 
+    - Semaphores
+  materials:
+  other:
+    # - <a href="{{ site.baseurl }}/sessions/19_session19/"> Session Information </a>
+
+19:
+  reading:
+  topics:
+    - <b> Lab time </b>
+  materials:
+  other:
+
+20:
+  reading:
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 </a>
+  topics:
+    - Mutex & condition variables
+  materials:
+  other:
+
+21:
+  reading:
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 </a>
+  topics:
+    - Condition variables
+    - More concurrency
+  materials:
+  other:
+
+22:
+  reading:
+  topics:
+    - Producer/Consumer using condition variables
+  materials:
+  other:
+
+23:
+  reading:
+  topics:
+    - Readers/Writers problem
+  materials:
+  other:
+
+24:
+  reading:
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-bugs.pdf"> Chapter 32 </a>
+  topics:
+    - Deadlocks and Starvation
+  materials:
+  other:
+
 # 18:
 #   reading:
 #     # - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-sema.pdf"> Chapter 31 </a>
