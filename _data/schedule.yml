@@ -173,6 +173,13 @@
   other:
 
 17:
+  reading:
+  topics:
+    - Exam 1 discussion
+  materials:
+  other:
+
+18:
   reading: 
       - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf"> Chapter 26 </a>
   topics: 
@@ -182,22 +189,14 @@
   materials: 
   other:
 
-18:
+19:
   reading: 
-    # - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 </a>
-    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-sema.pdf"> Chapter 31 </a>
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 </a>
   topics: 
-    - Semaphores
+    - Mutexes
   materials:
   other:
     # - <a href="{{ site.baseurl }}/sessions/19_session19/"> Session Information </a>
-
-19:
-  reading:
-  topics:
-    - <b> Lab time </b>
-  materials:
-  other:
 
 20:
   reading:

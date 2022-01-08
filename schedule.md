@@ -314,6 +314,21 @@ title: Class Schedule
 <td rowspan="6" markdown="span" style="font-size:xx-large;"><a name="w5">5</a></td>
 <td markdown="span">
 17 <br/> Mon, Jan 10 2022</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> Exam 1 discussion </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+</td>
+</tr>
+<tr>
+<td markdown="span" colspan="4"> CPU Scheduling DUE Mon, Jan 10 2022 23:59 [Take the quiz on Moodle](https://moodle.rose-hulman.edu/mod/quiz/view.php?id=3130966)</td></tr>
+<tr>
+<td markdown="span">
+18 <br/> Tue, Jan 11 2022</td>
 <td markdown="span" style="text-align:left">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
 <li> <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf"> Chapter 26 </a> </li>
@@ -330,31 +345,16 @@ title: Class Schedule
 </td>
 </tr>
 <tr>
-<td markdown="span" colspan="4"> CPU Scheduling DUE Mon, Jan 10 2022 23:59 [Take the quiz on Moodle](https://moodle.rose-hulman.edu/mod/quiz/view.php?id=3130966)</td></tr>
-<tr>
-<td markdown="span">
-18 <br/> Tue, Jan 11 2022</td>
-<td markdown="span" style="text-align:left">
-{::nomarkdown}<ul style="margin:0;padding:.5rem">
-<li> <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-sema.pdf"> Chapter 31 </a> </li>
-</ul>{:/}
-</td>
-<td markdown="span" style="text-align:left">
-{::nomarkdown}<ul style="margin:0;padding:.5rem">
-<li> Semaphores </li>
-</ul>{:/}
-</td>
-<td markdown="span">
-</td>
-</tr>
-<tr>
 <td markdown="span">
 19 <br/> Thu, Jan 13 2022</td>
-<td markdown="span">
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 </a> </li>
+</ul>{:/}
 </td>
 <td markdown="span" style="text-align:left">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
-<li> <b> Lab time </b> </li>
+<li> Mutexes </li>
 </ul>{:/}
 </td>
 <td markdown="span">
