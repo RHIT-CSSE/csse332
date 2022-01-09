@@ -1,7 +1,7 @@
 ---
 title: Threads and Mutex Basics
 layout: post
-date: Wed Apr 7 19:00:10 2021
+date: January 9 2022
 readtime: true
 gh-repo: rhit-csse332/csse332
 gh-badge: [star,watch,follow]
