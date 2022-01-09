@@ -1,5 +1,5 @@
 ---
-title: Threads and Semaphores Basics
+title: Threads and Mutex Basics
 layout: post
 date: Wed Apr 7 19:00:10 2021
 readtime: true
@@ -18,7 +18,7 @@ gh-badge: [star,watch,follow]
   * [The problem](#the-problem)
   * [The solution - Mutex locks](#the-solution---mutex-locks)
   * [Operation](#operation)
-  * [Using Semaphores to protect a critical section](#using-semaphores-to-protect-a-critical-section)
+  * [Using mutex locks to protect a critical section](#using-mutex-locks-to-protect-a-critical-section)
   * [Doing this in code](#doing-this-in-code)
   * [Solve it!](#solve-it)
 * [Basic Mutex 2: RedBluePurple (50 points)](#basic-mutex-2-redbluepurple-50-points)
@@ -29,7 +29,7 @@ gh-badge: [star,watch,follow]
 
 
 # Logistics
-* [Source code]({{ site.gh_repository_url }}/tree/main/homeworks/07_semaphores_basics)
+* [Source code]({{ site.gh_repository_url }}/tree/main/homeworks/07_mutex_basics)
 * [Submission instructions](https://rhit-csse332.github.io/csse332ubmission_instructions/)
 
 # Building things
@@ -43,7 +43,7 @@ encourage you to create some Makefiles as needed but its up to you.
 
 # Thread Factoring (20 points)
 
-Look in the thread\_factoring project in the Homework/SemaphoreLab
+Look in the thread\_factoring project in the `homeworks/07_mutex_basics`
 directory.
 
 Start by understanding the code in threadExample.c (you may have seen
@@ -302,7 +302,7 @@ at the next section.
 
 
 
-## Using Semaphores to protect a critical section
+## Using mutex locks to protect a critical section
 
 So the idea is that we're going to create a mutex and initialize it to be in the unlocked state.
 
@@ -321,11 +321,11 @@ Then in the code we want to protect from interference, we'll to this:
     
         #include <pthread.h>
 
-2.  Declare a global semaphore
+2.  Declare a global mutex 
     
         pthread_mutex_t mutex;
 
-3.  In your main, initialize the semaphore with an initial count of 1
+3.  In your main, initialize the mutex:
     
         pthread_mutex_init(&mutex, 0);
 
