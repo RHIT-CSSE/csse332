@@ -410,22 +410,22 @@ red\_blue\_purple.c file.
 </tr>
 
 <tr>
-<td class="org-left">Basic Semaphores 1</td>
-<td class="org-left">Follows instructions and eliminates concurrency bug using semaphores</td>
+<td class="org-left">Basic mutex 1</td>
+<td class="org-left">Follows instructions and eliminates concurrency bug using mutex locks</td>
 <td class="org-right">20</td>
 </tr>
 
 
 <tr>
-<td class="org-left">Basic Semaphores 2</td>
-<td class="org-left">Semaphores used correctly (e.g. created, freed with proper functions)</td>
+<td class="org-left">Basic mutex 2</td>
+<td class="org-left">Mutex locks used correctly (e.g. created, freed with proper functions)</td>
 <td class="org-right">25</td>
 </tr>
 
 
 <tr>
-<td class="org-left">Basic Semaphores 2</td>
-<td class="org-left">All concurrency bugs elliminated</td>
+<td class="org-left">Basic mutex 2</td>
+<td class="org-left">All concurrency bugs eliminated</td>
 <td class="org-right">25</td>
 </tr>
 </tbody>

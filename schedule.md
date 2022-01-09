@@ -361,7 +361,7 @@ title: Class Schedule
 </td>
 </tr>
 <tr>
-<td markdown="span" colspan="4"> [Threads and Semaphore Basics]({{ site.baseurl }}/docs/07_semaphore_lab) DUE Thu, Jan 13 2022 23:59 Submit to [Gradescope](https://www.gradescope.com/courses/334393)</td></tr>
+<td markdown="span" colspan="4"> [Threads and Mutex Basics]({{ site.baseurl }}/docs/07_mutex_lab) DUE Thu, Jan 13 2022 23:59 Submit to [Gradescope](https://www.gradescope.com/courses/334393)</td></tr>
 <tr>
 <td markdown="span">
 20 <br/> Fri, Jan 14 2022</td>
