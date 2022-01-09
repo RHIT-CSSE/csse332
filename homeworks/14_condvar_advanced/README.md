@@ -12,6 +12,9 @@ gh-badge: [star,watch,follow]
 In this assignment, we will have further practice with condition variables and
 mutex locks. There are five problems, you are only required to solve __four__ of
 these five problems.
+
+[Code Folder]({{ site.gh_repository_url }}/tree/main/homeworks/14_condvar_advanced)
+
 ## Band
 
 This problem refers to the code in the file `band.c`. Imagine a group of friends

@@ -175,7 +175,7 @@
 17:
   reading:
   topics:
-    - Exam 1 discussion
+    - Exam 1 Discussion
   materials:
   other:
 
@@ -183,10 +183,11 @@
   reading: 
       - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf"> Chapter 26 </a>
   topics: 
-      - More Threads
+      - Pthreads
       - Thread Libraries
       - Threading Issues
   materials: 
+    - <a href="{{ site.gh_repository_url }}/tree/main/ClassMaterials/MoreThreads">Pthreads</a>
   other:
 
 19:
