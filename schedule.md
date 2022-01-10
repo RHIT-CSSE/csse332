@@ -356,7 +356,7 @@ title: Class Schedule
 </td>
 <td markdown="span" style="text-align:left">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
-<li> {'<b> Lab': 'Threads and Mutex Basics </b>'} </li>
+<li> <b> Lab:</b> Threads and Mutex Basics </li>
 </ul>{:/}
 </td>
 <td markdown="span">
