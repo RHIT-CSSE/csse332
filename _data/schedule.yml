@@ -194,7 +194,7 @@
   reading: 
     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 </a>
   topics: 
-    - Mutexes
+    - <b> Lab: Threads and Mutex Basics </b>
   materials:
   other:
     # - <a href="{{ site.baseurl }}/sessions/19_session19/"> Session Information </a>

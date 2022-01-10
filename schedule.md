@@ -318,7 +318,7 @@ title: Class Schedule
 </td>
 <td markdown="span" style="text-align:left">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
-<li> Exam 1 discussion </li>
+<li> Exam 1 Discussion </li>
 </ul>{:/}
 </td>
 <td markdown="span">
@@ -336,12 +336,14 @@ title: Class Schedule
 </td>
 <td markdown="span" style="text-align:left">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
-<li> More Threads </li>
+<li> Pthreads </li>
 <li> Thread Libraries </li>
 <li> Threading Issues </li>
 </ul>{:/}
 </td>
 <td markdown="span">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li><a href="{{ site.gh_repository_url }}/tree/main/ClassMaterials/MoreThreads">Pthreads</a></li></ul>{:/}
 </td>
 </tr>
 <tr>
@@ -354,7 +356,7 @@ title: Class Schedule
 </td>
 <td markdown="span" style="text-align:left">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
-<li> Mutexes </li>
+<li> {'<b> Lab': 'Threads and Mutex Basics </b>'} </li>
 </ul>{:/}
 </td>
 <td markdown="span">
