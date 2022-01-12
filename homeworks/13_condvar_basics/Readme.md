@@ -12,7 +12,7 @@ gh-badge: [star,watch,follow]
 In this assignment, we will have a quick practice with condition variables and
 mutexes. There are three problems that you must solve using condition variables. 
 
-[Coder Folder]({{ site.gh_repository_url }}/tree/main/homeworks/13_condvar_basics)
+[Code Folder]({{ site.gh_repository_url }}/tree/main/homeworks/13_condvar_basics)
 
 ## In-order
 

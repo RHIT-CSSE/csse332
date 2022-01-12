@@ -196,6 +196,7 @@
   topics: 
     - <b> Lab:</b> Threads and Mutex Basics 
   materials:
+    - <a href="{{ site.gh_repository_url }}/tree/main/homeworks/07_mutex_basics">Lab Instructions</a>
   other:
     # - <a href="{{ site.baseurl }}/sessions/19_session19/"> Session Information </a>
 
@@ -203,8 +204,9 @@
   reading:
     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 </a>
   topics:
-    - Mutex & condition variables
+    - Mutex & Condition Variables
   materials:
+    - <a href="{{ site.gh_repository_url }}/tree/main/ClassMaterials/ConditionVariables">ConditionVariables</a>
   other:
 
 21:
