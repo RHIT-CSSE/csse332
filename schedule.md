@@ -360,6 +360,8 @@ title: Class Schedule
 </ul>{:/}
 </td>
 <td markdown="span">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li><a href="{{ site.gh_repository_url }}/tree/main/homeworks/07_mutex_basics">Lab Instructions</a></li></ul>{:/}
 </td>
 </tr>
 <tr>
@@ -374,10 +376,12 @@ title: Class Schedule
 </td>
 <td markdown="span" style="text-align:left">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
-<li> Mutex & condition variables </li>
+<li> Mutex & Condition Variables </li>
 </ul>{:/}
 </td>
 <td markdown="span">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li><a href="{{ site.gh_repository_url }}/tree/main/ClassMaterials/ConditionVariables">ConditionVariables</a></li></ul>{:/}
 </td>
 </tr>
 <tr>
