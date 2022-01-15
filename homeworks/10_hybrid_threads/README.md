@@ -1,7 +1,7 @@
 ---
 title: Kernel Threads Advanced Lab
 layout: post
-date: Wed Apr 21 
+date: Sat Jan 15 07:33:17 2022
 readtime: true
 gh-repo: rhit-csse332/csse332
 gh-badge: [star,watch,follow]
@@ -19,12 +19,11 @@ The basic approach we will take is to create multiple schedulers
 (i.e. parent threads) that each run in their own kernelspace thread.
 These threads will independently walk across the same global
 `ucontext_t` threads array, and select userspace threads to run.  To
-make this work we will need to use semaphores to prevent concurrency
+make this work we will need to use mutex locks to prevent concurrency
 bugs.
 
 ## Logistcs
 - [Source code]({{ site.gh_homeworks_url }}/10_hybrid_threads)
-- [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2708064)
 - [Submission instructions](https://rhit-csse332.github.io/csse332ubmission_instructions/)
 
 # Moving from Basic to Hybrid
@@ -179,7 +178,7 @@ Now that we've got the basics going, it's time to think about
 concurrency issues.  The most straightforward issue is that schedulers
 might, in parallel, select the same thread for running and then that
 thread would run twice.  We need to prevent this from happening.  But
-on the other hand, we can't have some semaphore that's locked for the
+on the other hand, we can't have some mutex that's locked for the
 duration of a userspace thread's execution...that removes the
 parallelism that pthreads gives us.
 
@@ -220,7 +219,7 @@ You can make the non-creation tests pass first before you try and
 implement the last 3 rules.
 
 There is a simple solution that implements all these rules...and does
-not require a large number of semaphores.  I won't reveal the solution
+not require a large number of mutex locks.  I won't reveal the solution
 but here's two hints:
 
 1.  Of the 4 thread states, 2 correspond to thread slots that are

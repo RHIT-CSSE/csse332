@@ -385,7 +385,7 @@ title: Class Schedule
 </td>
 </tr>
 <tr>
-<td rowspan="5" markdown="span" style="font-size:xx-large;"><a name="w6">6</a></td>
+<td rowspan="6" markdown="span" style="font-size:xx-large;"><a name="w6">6</a></td>
 <td markdown="span">
 21 <br/> Mon, Jan 17 2022</td>
 <td markdown="span" style="text-align:left">
@@ -395,8 +395,7 @@ title: Class Schedule
 </td>
 <td markdown="span" style="text-align:left">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
-<li> Condition variables </li>
-<li> More concurrency </li>
+<li> Producer/Consumer using condition variables </li>
 </ul>{:/}
 </td>
 <td markdown="span">
@@ -411,7 +410,7 @@ title: Class Schedule
 </td>
 <td markdown="span" style="text-align:left">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
-<li> Producer/Consumer using condition variables </li>
+<li> Readers/Writers problem </li>
 </ul>{:/}
 </td>
 <td markdown="span">
@@ -424,12 +423,14 @@ title: Class Schedule
 </td>
 <td markdown="span" style="text-align:left">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
-<li> Readers/Writers problem </li>
+<li> <b>Lab</b> Userspace threads and kernel space threads </li>
 </ul>{:/}
 </td>
 <td markdown="span">
 </td>
 </tr>
+<tr>
+<td markdown="span" colspan="4"> [ADVANCED Hybrid Threads]({{ site.baseurl }}/docs/10_hybrid_threads) DUE Thu, Jan 20 2022 23:59 Submit to [Gradescope](https://www.gradescope.com/courses/334393)</td></tr>
 <tr>
 <td markdown="span">
 24 <br/> Fri, Jan 21 2022</td>
@@ -450,24 +451,62 @@ title: Class Schedule
 <td rowspan="5" markdown="span" style="font-size:xx-large;"><a name="w7">7</a></td>
 <td markdown="span">
 25 <br/> Mon, Jan 24 2022</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-segmentation.pdf"> Chapter 16 </a> </li>
+</ul>{:/}
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> Segmentation </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+</td>
 </tr>
 <tr>
 <td markdown="span" colspan="4"> [ADVANCED Condition Variables Homework 2]({{ site.baseurl }}/docs/14_condvar_advanced) DUE Mon, Jan 24 2022 23:59 Submit to [Gradescope](https://www.gradescope.com/courses/334393)</td></tr>
 <tr>
 <td markdown="span">
 26 <br/> Tue, Jan 25 2022</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> Exam Review </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+</td>
 </tr>
 <tr>
 <td markdown="span">
 27 <br/> Thu, Jan 27 2022</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> No class, Exam 2 </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+</td>
 </tr>
 <tr>
 <td markdown="span">
 28 <br/> Fri, Jan 28 2022</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-paging.pdf"> Chapter 18 </a> </li>
+</ul>{:/}
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> Paging </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+</td>
 </tr>
 <tr>
 <td rowspan="4" markdown="span" style="font-size:xx-large;"><a name="w8">8</a></td>

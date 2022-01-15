@@ -213,22 +213,21 @@
   reading:
     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 </a>
   topics:
-    - Condition variables
-    - More concurrency
+    - Producer/Consumer using condition variables
   materials:
   other:
 
 22:
   reading:
   topics:
-    - Producer/Consumer using condition variables
+    - Readers/Writers problem
   materials:
   other:
 
 23:
   reading:
   topics:
-    - Readers/Writers problem
+    - <b>Lab</b> Userspace threads and kernel space threads
   materials:
   other:
 
@@ -240,138 +239,38 @@
   materials:
   other:
 
-# 18:
-#   reading:
-#     # - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-sema.pdf"> Chapter 31 </a>
-#   topics:
-#     - Scheduling wrap up and exam discussion
-#   materials:
-#   other:
-#     # - <a href="{{ site.baseurl }}/sessions/18_session18/"> Session Information </a>
-# 19:
-#   reading: 
-#       - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf"> Chapter 26 </a>
-#       # - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-api.pdf"> Chapter 27 </a>
-#   topics: 
-#       - More Threads
-#       - Thread Libraries
-#       - Threading Issues
-#   materials: 
-#   other:
-#     # - <a href="{{ site.baseurl }}/sessions/17_session17/"> Session Information </a>
-# 20:
-#   reading: 
-#     # - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 </a>
-#     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-sema.pdf"> Chapter 31 </a>
-#   topics: 
-#     - Semaphores
-#   materials:
-#   other:
-#     # - <a href="{{ site.baseurl }}/sessions/19_session19/"> Session Information </a>
-# 21:
-#   reading:
-#     # - <a href="{{ site.baseurl }}/docs/milestone2/"> Milestone 2 </a>
-#   topics:
-#     - <b>Lab</b> Project work time
-#   materials: 
-#   other:
-#     # - <a href="{{ site.baseurl }}/sessions/20_session20/"> Session Information </a>
-# 22:
-#   reading:
-#     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 </a>
-#   topics:
-#     - More Sempahores
-#   materials:
-#   other:
-#     - <a href="https://rosehulman-my.sharepoint.com/:p:/g/personal/noureddi_rose-hulman_edu/ESOpQoj830lAu2b_Rm9M120BCu6RrjWvn_ns_98s7uFpUg?e=cvGCdu"> Slides </a>
-#     - <a href="{{ site.gh_activity_url }}/18_semaphores/"> Activity </a>
-# 23:
-#   reading:
-#     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 </a>
-#   topics:
-#     - Mutex
-#   materials:
-#   other:
-#     - <a href="https://rosehulman-my.sharepoint.com/:p:/g/personal/noureddi_rose-hulman_edu/ESaiuG2DRclCu8Jxx9fLtmMBYV_rbAZUM_JyXnXmZwDmZg?e=KkPWYA"> Slides </a>
-#     - <a href="{{ site.gh_activity_url }}/19_condition_variables"> Activity </a>
-# 24:
-#   reading:
-#     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 </a>
-#   topics:
-#     - Condition variables
-#     - More concurrency
-#   materials:
-#   other:
-#     - <a href="https://rosehulman-my.sharepoint.com/:p:/g/personal/noureddi_rose-hulman_edu/ESaiuG2DRclCu8Jxx9fLtmMBYV_rbAZUM_JyXnXmZwDmZg?e=KkPWYA"> Slides </a>
-#     - <a href="{{ site.gh_activity_url }}/19_condition_variables"> Activity </a>
-# 25:
-#   reading:
-#   topics:
-#     - <b> Lab </b> Project work time
-#   materials:
-#   other:
-
-# 26:
-#   reading:
-#   topics:
-#     - Producer/Consumer using condition variables
-#   materials:
-#   other:
-
-# 27:
-#   reading:
-#   topics:
-#     - Readers/Writers problem
-#   materials:
-#   other:
-
-# 28:
-#   reading:
-#     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-bugs.pdf"> Chapter 32 </a>
-#   topics:
-#     - Deadlocks and Starvation
-#   materials:
-#   other:
-
-# 29:
-#   reading:
-#     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-segmentation.pdf"> Chapter 16 </a>
-#   topics:
-#     - Deadlocks wrap up 
-#   materials: 
-#   other:
-#     # - <a href="{{ site.baseurl }}/sessions/30_session30/"> Session Information </a>
     
-# 30:
-#   reading:
-#   topics:
-#     - Segmentation and Paging
-#   materials: 
-#   other:  
-#     # - <a href="{{ site.baseurl }}/sessions/31_session31/"> Session Information </a>
+25:
+  reading:
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-segmentation.pdf"> Chapter 16 </a>
+  topics:
+    - Segmentation
+  materials: 
+  other:  
     
-# 31:
-#   reading:
-#   topics:
-#         - Paging issues
-#   materials: 
-#   other:
-#     # - <a href="{{ site.baseurl }}/sessions/34_session34/"> Session Information </a>
+26:
+  reading:
+  topics:
+    - Exam Review
+  materials: 
+  other:
+    # - <a href="{{ site.baseurl }}/sessions/34_session34/"> Session Information </a>
 
-# 32:
-#   reading:
-#   topics:
-#     - Page replacement algorithms
-#   materials: 
-#   other:  
-#     # - <a href="{{ site.baseurl }}/sessions/35_session35/"> Session Information </a>
+27:
+  reading:
+  topics:
+    - No class, Exam 2 
+  materials: 
+  other:  
+    # - <a href="{{ site.baseurl }}/sessions/35_session35/"> Session Information </a>
     
-# 33:
-#   reading:
-#   topics:
-#     - Exam 2 review
-#   materials:
-#   other:
+28:
+  reading:
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-paging.pdf"> Chapter 18 </a>
+  topics:
+    - Paging
+  materials:
+  other:
 
 # 34:
 #   reading:
