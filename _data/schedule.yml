@@ -222,7 +222,7 @@
   topics:
     - <b>Lab</b> Userspace threads and kernel space threads
   materials:
-    - <a href="{{ site.gh_repository_url }}/tree/main/homeworks/10_hybrid_threads">Lab Instructions</a>
+    - <a href="{{ site.baseurl }}/docs/10_hybrid_threads">Lab Instructions</a>
   other:
 23:
   reading:

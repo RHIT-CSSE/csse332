@@ -417,7 +417,7 @@ title: Class Schedule
 </td>
 <td markdown="span">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
-<li><a href="{{ site.gh_repository_url }}/tree/main/homeworks/10_hybrid_threads">Lab Instructions</a></li></ul>{:/}
+<li><a href="{{ site.baseurl }}/docs/10_hybrid_threads">Lab Instructions</a></li></ul>{:/}
 </td>
 </tr>
 <tr>
