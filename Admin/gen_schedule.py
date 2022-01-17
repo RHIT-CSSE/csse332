@@ -222,6 +222,7 @@ def write_table_body(f, schedule, num_of_sessions_per_week, classes):
 
         # check if we need a new week column
         if week != previous_week:
+            f.write("""<tr><td markdown="span" colspan="5" style=\"padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;\"></td></tr>""")
             f.write("""<td rowspan="{1}" markdown="span" style=\"font-size:xx-large;\"><a name=\"w{0}\">{0}</a></td>\n""".format(
                 week, num_of_sessions_per_week[week]))
 
@@ -240,7 +241,7 @@ def write_table_body(f, schedule, num_of_sessions_per_week, classes):
                 class_content = classes[session_num]
                 # check for reading material
                 if class_content['reading']:
-                    start_column(f, 'style=\"text-align:left\"')
+                    start_column(f, 'style=\"text-align:left;\"')
                     f.write("{::nomarkdown}<ul style=\"margin:0;padding:.5rem\">\n")
                     for item in class_content['reading']:
                         f.write("<li> {} </li>\n".format(item))
