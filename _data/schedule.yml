@@ -215,22 +215,21 @@
   topics:
     - Producer/Consumer using condition variables
   materials:
+    - <a href="{{ site.gh_repository_url }}/tree/main/ClassMaterials/CV_ProducerConsumer">CV_ProducerConsumer</a>
   other:
-
 22:
+  reading:
+  topics:
+    - <b>Lab</b> Userspace threads and kernel space threads
+  materials:
+    - <a href="{{ site.gh_repository_url }}/tree/main/homeworks/10_hybrid_threads">Lab Instructions</a>
+  other:
+23:
   reading:
   topics:
     - Readers/Writers problem
   materials:
   other:
-
-23:
-  reading:
-  topics:
-    - <b>Lab</b> Userspace threads and kernel space threads
-  materials:
-  other:
-
 24:
   reading:
     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-bugs.pdf"> Chapter 32 </a>

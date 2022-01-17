@@ -399,6 +399,8 @@ title: Class Schedule
 </ul>{:/}
 </td>
 <td markdown="span">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li><a href="{{ site.gh_repository_url }}/tree/main/ClassMaterials/CV_ProducerConsumer">CV_ProducerConsumer</a></li></ul>{:/}
 </td>
 </tr>
 <tr>
@@ -410,10 +412,12 @@ title: Class Schedule
 </td>
 <td markdown="span" style="text-align:left">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
-<li> Readers/Writers problem </li>
+<li> <b>Lab</b> Userspace threads and kernel space threads </li>
 </ul>{:/}
 </td>
 <td markdown="span">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li><a href="{{ site.gh_repository_url }}/tree/main/homeworks/10_hybrid_threads">Lab Instructions</a></li></ul>{:/}
 </td>
 </tr>
 <tr>
@@ -423,7 +427,7 @@ title: Class Schedule
 </td>
 <td markdown="span" style="text-align:left">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
-<li> <b>Lab</b> Userspace threads and kernel space threads </li>
+<li> Readers/Writers problem </li>
 </ul>{:/}
 </td>
 <td markdown="span">
