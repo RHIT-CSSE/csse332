@@ -67,7 +67,7 @@ learned a better way of using mutex locks, and that is using `pthread_mutex_t`.
 You can replace calls to `sem_wait` with a call to `pthread_mutex_lock` and
 calls to `sem_post` with a call to `pthread_mutex_unlock`.
 
-<iframe src="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=e9dd2a93-3535-4bc9-9999-acb40139fdde&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="360" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+<iframe src="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6ba07cdb-b172-43e5-8a6c-ae210107fdc3" height="360" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
 
 # Adding more thread states
