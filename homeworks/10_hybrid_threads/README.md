@@ -62,6 +62,11 @@ for this assignment.
 This is walkthrough video that you can take a look at after completing the above
 step. Please ignore the part that has to do with Microsoft Teams.
 
+This video refers to use semaphores for implementing a lock, but in our class we
+learned a better way of using mutex locks, and that is using `pthread_mutex_t`.
+You can replace calls to `sem_wait` with a call to `pthread_mutex_lock` and
+calls to `sem_post` with a call to `pthread_mutex_unlock`.
+
 <iframe src="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=e9dd2a93-3535-4bc9-9999-acb40139fdde&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="360" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
 
