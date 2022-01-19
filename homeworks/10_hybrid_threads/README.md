@@ -267,6 +267,6 @@ Submit `hybrid_threads.c` and `hybrid_threads.h`.
 | us1tests            | 15     | we'll look at your code and make sure you really made it use multiple states                      |
 | standalone1         | 15     | should be interleaved                                                                             |
 | `basic_para_tests`  | 40     | Note that we will also examine your code to ensure you don't have concurrency bugs the tests miss |
-| `create_para_tests` | 10     | should be pretty straightforward if you did the last step right                                   |
+| `create_para_tests` | 10     | You may fail the 1 of the test cases occationally even with correct solution, which is okay.      |
 
 
