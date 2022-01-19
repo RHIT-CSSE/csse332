@@ -229,6 +229,7 @@
   topics:
     - Readers/Writers problem
   materials:
+    - <a href="{{ site.gh_repository_url }}/tree/main/ClassMaterials/CV_ReaderWriter">CV_ReaderWriter</a>
   other:
 24:
   reading:
