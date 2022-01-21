@@ -18,7 +18,7 @@
    do their writes in a particular order, or require that only one
    thread write at one time).
 
-   The given code uses semaphores to protect files a b c d.  However,
+   The given code uses mutex locks to protect files a b c d.  However,
    it also has a concurrency bug.
 
    PART 1 (10 points): In a comment, explain what the exisiting
