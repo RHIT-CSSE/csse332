@@ -237,6 +237,7 @@
   topics:
     - Deadlocks and Starvation
   materials:
+    - <a href="{{ site.gh_repository_url }}/tree/main/ClassMaterials/DeadlockStarvation">DeadlockStarvation</a>
   other:
 
     
