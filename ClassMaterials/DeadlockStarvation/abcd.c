@@ -33,22 +33,22 @@
 
  */
 
-sem_t a, b, c, d;
+pthread_mutex_t a, b, c, d;
 
 void* ab(void *ignore) {
     for(int i = 0; i < NUM_LOOPS; i++) {
         // calculate
         usleep(10000 + (random() % 10000));
         // now write
-        sem_wait(&a);
-        sem_wait(&b);
+        pthread_mutex_lock(&a);
+        pthread_mutex_lock(&b);
 
         printf("ab starting writing to files a & b\n");
         sleep(1);
         printf("ab finished writing to files a & b\n");
         
-        sem_post(&a);
-        sem_post(&b);
+        pthread_mutex_unlock(&a);
+        pthread_mutex_unlock(&b);
     }
     return NULL;
 }
@@ -58,15 +58,15 @@ void* bc(void *ignore) {
         // calculate
         usleep(10000 + (random() % 10000));
         // now write
-        sem_wait(&b);
-        sem_wait(&c);
+        pthread_mutex_lock(&b);
+        pthread_mutex_lock(&c);
 
         printf("bc starting writing to files b & c\n");
         sleep(1);
         printf("bc finished writing to files b & c\n");
         
-        sem_post(&b);
-        sem_post(&c);
+        pthread_mutex_unlock(&b);
+        pthread_mutex_unlock(&c);
     }
     return NULL;
 }
@@ -76,15 +76,15 @@ void* cd(void *ignore) {
         // calculate
         usleep(10000 + (random() % 10000));
         // now write
-        sem_wait(&c);
-        sem_wait(&d);
+        pthread_mutex_lock(&c);
+        pthread_mutex_lock(&d);
 
         printf("cd starting writing to files c & d\n");
         sleep(1);
         printf("cd finished writing to files c & d\n");
         
-        sem_post(&c);
-        sem_post(&d);
+        pthread_mutex_unlock(&c);
+        pthread_mutex_unlock(&d);
     }
     return NULL;
 }
@@ -94,15 +94,15 @@ void* da(void *ignore) {
         // calculate
         usleep(10000 + (random() % 10000));
         // now write
-        sem_wait(&d);
-        sem_wait(&a);
+        pthread_mutex_lock(&d);
+        pthread_mutex_lock(&a);
 
         printf("da starting writing to files d & a\n");
         sleep(1);
         printf("da finished writing to files d & a\n");
         
-        sem_post(&d);
-        sem_post(&a);
+        pthread_mutex_unlock(&d);
+        pthread_mutex_unlock(&a);
     }
     return NULL;
 }
@@ -112,10 +112,10 @@ void* da(void *ignore) {
 int main(int argc, char **argv) {
 
     pthread_t threads[4];
-    sem_init(&a, 0, 1);
-    sem_init(&b, 0, 1);
-    sem_init(&c, 0, 1);
-    sem_init(&d, 0, 1);
+    pthread_mutex_init(&a,NULL);
+    pthread_mutex_init(&b,NULL);
+    pthread_mutex_init(&c,NULL);
+    pthread_mutex_init(&d,NULL);
     
     pthread_create(&threads[0], NULL, ab, NULL);
     pthread_create(&threads[1], NULL, bc, NULL);
