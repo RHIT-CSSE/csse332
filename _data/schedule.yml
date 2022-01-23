@@ -247,7 +247,9 @@
   topics:
     - Segmentation
   materials: 
+    - <a href="{{ site.gh_repository_url }}/tree/main/ClassMaterials/Segmentation">Segmentation</a>
   other:  
+    - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=3131077">Activity</a>
     
 26:
   reading:

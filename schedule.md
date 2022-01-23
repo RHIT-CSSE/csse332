@@ -470,7 +470,9 @@ title: Class Schedule
 </ul>{:/}
 </td>
 <td markdown="span">
-</td>
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li><a href="{{ site.gh_repository_url }}/tree/main/ClassMaterials/Segmentation">Segmentation</a></li></ul>{:/}
+<a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=3131077">Activity</a></td>
 </tr>
 <tr>
 <td markdown="span" colspan="4"> [ADVANCED Condition Variables Homework 2]({{ site.baseurl }}/docs/14_condvar_advanced) DUE Mon, Jan 24 2022 23:59 Submit to [Gradescope](https://www.gradescope.com/courses/334393)</td></tr>
