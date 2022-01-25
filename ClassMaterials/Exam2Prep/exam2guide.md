@@ -4,7 +4,7 @@ layout: togit
 
 # Exam 2 Preparation
 
-Last updated: Spring 19-20
+Last updated: Winter 21-22
 
 Note that exam contents can change term to term.
 
@@ -15,26 +15,7 @@ You exam will be:
 + 3 semaphore questions (60 points)
 + 1 2-part thread creation question (40 points)
 
-The best preparation for this exam 2 is
-[Exam2-202020](../../SampleExams/Exam2-202020/), which is the only
-released exam in the newer exam format (where thread-creation
-questions and semaphore questions were both on the same exam).
-
-For older exams, here's what I recommend.
-
-For thread creation questions:
-
-+ exam2-201930 (mergesort) longer than the threading question on your exam, but basic idea is good
-+ exam1-201830 (producer-consumer)
-+ exam2-201830 computer/backups.c
-+ exam1-201630 ThreadCommander shorter than the threading question on your exam (see csse332\_exam1\_computer.pdf for instructions)
-
-For semaphore questions:
-
-+ exam3-201930 more semaphore questions than on your exam, but more is better practice right?
-+ exam2-201630 maybe on the easier side
-+ exam2-201830 para\_seri\_para definitely easier
-
+I'll update this a bit with the correct sample exams to look at.
 
 # General Guidance
 
@@ -66,13 +47,14 @@ For semaphore questions:
 * How to create/wait/post on semaphores, how to use semaphores to
   prevent concurrency problems while still allowing parallelism
         
-## Semaphores
+## Condition Variables & Mutexes
 
-* Semaphores, including waits and posts
+* Mutex Lock & Unlock
+* CVs Wait Signal Broadcast
 * Concurrent algorithms we've talked about like producer consumer,
-  reader/writer, the scoreboard problems, and dining philosophers
+  reader/writer
 
-### Semaphore specific advice
+### CV specific advice
 
 * Always feel free to ask if you feel you do not understand what is
   correct and incorrect behavior
@@ -80,34 +62,39 @@ For semaphore questions:
   still concurrency bugs
 * You can use sleeps to adjust timing and try and evidence weird
   concurrency conditions BUT never rely on sleeps to make your code work
-* Don't decide up-front how many semaphores you need - step through the
-  various cases adding semaphores as they are required
+* Simple problems can be solved sometimes with multiple mutexes and no
+  CVS.  However more complex problems almost always require CVs.
+* If you have CVs there's usually no reason to have more than one 1
+  mutex, and the ability to "lock the world" is one of the main
+  benefits of CVs
+* Don't be scared to have more than 1 CV - have 1 CV for each kind of
+  waiting.  But always share the same mutex.
+* Your CVs must always be in while loops.  If they are not they are
+  buggy.
+* Think very carefully about what state you will track.  A thread must
+  always be able to know if it safe for it to proceed when it awakens.
 * Think hard about edge cases and deadlocks - usually your code will
   not evidence these kinds of problems in testing
 * Never allow two concurrent threads to modify a variable or a thread
   to read a variable while in an inconsistent state
-* Busywaits and weird semaphore functions are never needed to solve
+* Busywaits and weird CV functions are never needed to solve
   the problem
 * BUT if you are stuck and can't figure out how to solve a problem the
-  normal way, busywaits and weird semaphore functions are worth a lot
-  more than nothing
+  normal way, busywaits are worth a lot more than nothing
   
 ### How we will grade
 
-Each semaphore problem will be worth 20 points
-
-* You can get 5/20 points if your semaphore-based solution reliably
+* You can get 25% points if your semaphore-based solution reliably
   produces correct output with the given data (and small
   modifications).  0 points if doing this requires weird sleeps or
   other hacky non-general purpose code.
-* You can get 10/20 points you did above and your solution is
+* You can get 50% points you did above and your solution is
   plausible and does not do something obviously bad.  It's impossible
   to enumerate every obviously bad thing but here's a big one : having
   multiple concurrent threads modify a global variable.  Basically
   this is for solutions that basically are OK but miss some edge
   cases.
-* You can get 15/20 points if you have a fully working solution but
-  you utilize busywaits or non-standard semaphore functions
-  (i.e. stuff other than init, post, wait, and destroy)
+* You can get 75% points if you have a fully working solution but
+  you utilize busywaits or non-standard CVs functions
 * A fully correct solution, even if it's not the one we envisioned, is
   20/20
