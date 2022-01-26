@@ -275,6 +275,37 @@
   materials:
   other:
 
+29:
+  reading:
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-beyondphys.pdf"> Chapter 21 </a>
+  topics:
+    - Page replacement algorithms
+  materials:
+  other:
+
+30:
+  reading:
+  topics:
+    - <b>Lab</b> Advanced Memory Lab
+  materials:
+  other:
+
+31:
+  reading:
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-tlbs.pdf"> Chapter 19 </a>
+  topics:
+    - More virtual memory
+  materials:
+  other:
+
+32:
+  reading:
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-smalltables.pdf"> Chapter 20 </a>
+  topics:
+    - Advanced page tables
+  materials:
+  other:
+
 # 34:
 #   reading:
 #   topics:

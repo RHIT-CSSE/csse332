@@ -23,7 +23,6 @@ our VM will do something pretty similar.
 
 ## Logistics
 - [Source code]({{ site.gh_homeworks_url }}/11_virtualmem)
-- [Submission box](https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933497&forceview=1)
 - [Submission instructions](https://rhit-csse332.github.io/csse332ubmission_instructions/)
 
 # Forth
