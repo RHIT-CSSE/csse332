@@ -516,7 +516,9 @@ title: Class Schedule
 </ul>{:/}
 </td>
 <td markdown="span">
-</td>
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li><a href="{{ site.gh_repository_url }}/tree/main/ClassMaterials/Paging">Paging</a></li></ul>{:/}
+<a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=3131080">Activity</a></td>
 </tr>
 <tr>
 <tr><td markdown="span" colspan="5" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;"></td></tr><td rowspan="6" markdown="span" style="font-size:xx-large;"><a name="w8">8</a></td>

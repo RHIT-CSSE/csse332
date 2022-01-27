@@ -272,8 +272,10 @@
     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-paging.pdf"> Chapter 18 </a>
   topics:
     - Paging
-  materials:
-  other:
+  materials: 
+    - <a href="{{ site.gh_repository_url }}/tree/main/ClassMaterials/Paging">Paging</a>
+  other:  
+    - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=3131080">Activity</a>
 
 29:
   reading:
