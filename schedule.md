@@ -547,6 +547,7 @@ title: Class Schedule
 <td markdown="span" style="text-align:left">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
 <li> <b>Lab</b> Advanced Memory Lab </li>
+<li> Makeup exam 2 </li>
 </ul>{:/}
 </td>
 <td markdown="span">
@@ -557,12 +558,13 @@ title: Class Schedule
 31 <br/> Thu, Feb 03 2022</td>
 <td markdown="span" style="text-align:left;">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
-<li> <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-tlbs.pdf"> Chapter 19 </a> </li>
+<li> <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-smalltables.pdf"> Chapter 20 </a> </li>
 </ul>{:/}
 </td>
 <td markdown="span" style="text-align:left">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
-<li> More virtual memory </li>
+<li> Paging the page tables </li>
+<li> Inverted page tables </li>
 </ul>{:/}
 </td>
 <td markdown="span">
@@ -573,30 +575,45 @@ title: Class Schedule
 <tr>
 <td markdown="span">
 32 <br/> Fri, Feb 04 2022</td>
-<td markdown="span" style="text-align:left;">
-{::nomarkdown}<ul style="margin:0;padding:.5rem">
-<li> <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-smalltables.pdf"> Chapter 20 </a> </li>
-</ul>{:/}
+<td markdown="span">
 </td>
 <td markdown="span" style="text-align:left">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
-<li> Advanced page tables </li>
+<li> Introduction to memory safety </li>
 </ul>{:/}
 </td>
 <td markdown="span">
 </td>
 </tr>
 <tr>
-<tr><td markdown="span" colspan="5" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;"></td></tr><td rowspan="4" markdown="span" style="font-size:xx-large;"><a name="w9">9</a></td>
+<tr><td markdown="span" colspan="5" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;"></td></tr><td rowspan="5" markdown="span" style="font-size:xx-large;"><a name="w9">9</a></td>
 <td markdown="span">
 33 <br/> Mon, Feb 07 2022</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> Control flow integrity attacks </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+</td>
 </tr>
 <tr>
 <td markdown="span">
 34 <br/> Tue, Feb 08 2022</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:left">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> <b>Lab</b> Security assignment </li>
+</ul>{:/}
+</td>
+<td markdown="span">
+</td>
 </tr>
+<tr>
+<td markdown="span" colspan="4"> [ADVANCED Security Lab]({{ site.baseurl }}/docs/12_security) DUE Tue, Feb 08 2022 23:59 Submit to [Gradescope](https://www.gradescope.com/courses/334393)</td></tr>
 <tr>
 <td markdown="span">
 35 <br/> Thu, Feb 10 2022</td>

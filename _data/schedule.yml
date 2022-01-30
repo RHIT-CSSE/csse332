@@ -289,22 +289,37 @@
   reading:
   topics:
     - <b>Lab</b> Advanced Memory Lab
+    - Makeup exam 2
   materials:
   other:
 
 31:
   reading:
-    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-tlbs.pdf"> Chapter 19 </a>
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-smalltables.pdf"> Chapter 20 </a>
   topics:
-    - More virtual memory
+    - Paging the page tables
+    - Inverted page tables
   materials:
   other:
 
 32:
   reading:
-    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-smalltables.pdf"> Chapter 20 </a>
   topics:
-    - Advanced page tables
+    - Introduction to memory safety
+  materials:
+  other:
+
+33:
+  reading:
+  topics:
+    - Control flow integrity attacks
+  materials:
+  other:
+
+34:
+  reading:
+  topics:
+    - <b>Lab</b> Security assignment
   materials:
   other:
 
