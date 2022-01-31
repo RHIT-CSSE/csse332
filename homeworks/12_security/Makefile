@@ -3,7 +3,7 @@
 all: part1 part2 part3 part4 part5 part6 part7
 
 CC := gcc
-CFLAGS  := -m32 -static -U_FORTIFY_SOURCE
+CFLAGS  := -ggdb -static -U_FORTIFY_SOURCE -fomit-frame-pointer
 
 part1: CFLAGS += -fno-stack-protector -z execstack
 part2: CFLAGS += -fno-stack-protector -z execstack

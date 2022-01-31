@@ -535,6 +535,8 @@ title: Class Schedule
 </ul>{:/}
 </td>
 <td markdown="span">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li><a href="{{ site.gh_repository_url }}/tree/main/ClassMaterials/PageReplacement">PageReplacement</a></li></ul>{:/}
 </td>
 </tr>
 <tr>
@@ -568,6 +570,8 @@ title: Class Schedule
 </ul>{:/}
 </td>
 <td markdown="span">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li><a href="{{ site.gh_repository_url }}/tree/main/ClassMaterials/AdvancedPageTable">AdvancedPageTable</a></li></ul>{:/}
 </td>
 </tr>
 <tr>

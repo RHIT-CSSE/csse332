@@ -283,6 +283,7 @@
   topics:
     - Page replacement algorithms
   materials:
+    - <a href="{{ site.gh_repository_url }}/tree/main/ClassMaterials/PageReplacement">PageReplacement</a>
   other:
 
 30:
@@ -300,6 +301,7 @@
     - Paging the page tables
     - Inverted page tables
   materials:
+    - <a href="{{ site.gh_repository_url }}/tree/main/ClassMaterials/AdvancedPageTable">AdvancedPageTable</a>
   other:
 
 32:
