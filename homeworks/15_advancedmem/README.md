@@ -212,9 +212,9 @@ The idea is exactly the same as the code above in the section "How can we do thi
 
 3. It is going to map at an offset position in the file (this is the last parameter of mmap we haven't used till now).  Forth 0 will have its memory at offset 0 in the file.  Forth 1 will have its memory at offset NUM\_PAGES*getpagesize(), etc.
 
-4. You might think you need to can munmap before you call map, if something has already been mapped.  However it my testing it looks like a new mmap replaces the old.
+4. You need to munmap before you call map, if something has already been mapped.
 
-Call this function two places:
+Call function `switch_current_to(int forthnum)` in these two places:
 
 1.  In create\_forth, just where your old create\_forth mmap was.  Create\_forth actually executes a ton of forth code to initialize the forth environment.
 
