@@ -303,6 +303,7 @@
   materials:
     - <a href="{{ site.gh_repository_url }}/tree/main/ClassMaterials/AdvancedPageTable">AdvancedPageTable</a>
   other:
+    - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=3131086">Activity</a>
 
 32:
   reading:

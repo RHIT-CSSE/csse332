@@ -572,10 +572,8 @@ title: Class Schedule
 <td markdown="span">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
 <li><a href="{{ site.gh_repository_url }}/tree/main/ClassMaterials/AdvancedPageTable">AdvancedPageTable</a></li></ul>{:/}
-</td>
+<a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=3131086">Activity</a></td>
 </tr>
-<tr>
-<td markdown="span" colspan="4"> [ADVANCED Virtual Memory Lab 2]({{ site.baseurl }}/docs/15_advancedmem) DUE Thu, Feb 03 2022 23:59 Submit to [Gradescope](https://www.gradescope.com/courses/334393)</td></tr>
 <tr>
 <td markdown="span">
 32 <br/> Fri, Feb 04 2022</td>
@@ -590,7 +588,9 @@ title: Class Schedule
 </td>
 </tr>
 <tr>
-<tr><td markdown="span" colspan="5" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;"></td></tr><td rowspan="5" markdown="span" style="font-size:xx-large;"><a name="w9">9</a></td>
+<td markdown="span" colspan="4"> [ADVANCED Virtual Memory Lab 2]({{ site.baseurl }}/docs/15_advancedmem) DUE Fri, Feb 04 2022 23:59 Submit to [Gradescope](https://www.gradescope.com/courses/334393)</td></tr>
+<tr>
+<tr><td markdown="span" colspan="5" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;"></td></tr><td rowspan="4" markdown="span" style="font-size:xx-large;"><a name="w9">9</a></td>
 <td markdown="span">
 33 <br/> Mon, Feb 07 2022</td>
 <td markdown="span">
@@ -616,8 +616,6 @@ title: Class Schedule
 <td markdown="span">
 </td>
 </tr>
-<tr>
-<td markdown="span" colspan="4"> [ADVANCED Security Lab]({{ site.baseurl }}/docs/12_security) DUE Tue, Feb 08 2022 23:59 Submit to [Gradescope](https://www.gradescope.com/courses/334393)</td></tr>
 <tr>
 <td markdown="span">
 35 <br/> Thu, Feb 10 2022</td>
