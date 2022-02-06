@@ -590,7 +590,7 @@ title: Class Schedule
 <tr>
 <td markdown="span" colspan="4"> [ADVANCED Virtual Memory Lab 2]({{ site.baseurl }}/docs/15_advancedmem) DUE Fri, Feb 04 2022 23:59 Submit to [Gradescope](https://www.gradescope.com/courses/334393)</td></tr>
 <tr>
-<tr><td markdown="span" colspan="5" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;"></td></tr><td rowspan="4" markdown="span" style="font-size:xx-large;"><a name="w9">9</a></td>
+<tr><td markdown="span" colspan="5" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;"></td></tr><td rowspan="5" markdown="span" style="font-size:xx-large;"><a name="w9">9</a></td>
 <td markdown="span">
 33 <br/> Mon, Feb 07 2022</td>
 <td markdown="span">
@@ -626,6 +626,8 @@ title: Class Schedule
 36 <br/> Fri, Feb 11 2022</td>
 <td markdown="span" colspan="3">N/A</td>
 </tr>
+<tr>
+<td markdown="span" colspan="4"> [Project Checkpoint 1]({{ site.baseurl }}/docs/2122b_project1) DUE Sun, Feb 13 2022 23:59 Submit to [Gradescope](https://www.gradescope.com/courses/334393)</td></tr>
 <tr>
 <tr><td markdown="span" colspan="5" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;"></td></tr><td rowspan="4" markdown="span" style="font-size:xx-large;"><a name="w10">10</a></td>
 <td markdown="span">
