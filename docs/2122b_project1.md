@@ -26,7 +26,6 @@ process, and introduce a more sophisticated scheduler.
 
 # Table of contents
 
-<!-- vim-markdown-toc GFM -->
 
 * [Building xv6](#building-xv6)
   * [Installing prerequisites](#installing-prerequisites)
@@ -40,9 +39,6 @@ process, and introduce a more sophisticated scheduler.
   * [Implementing `pingpong`](#implementing-pingpong)
     * [Implementation plan](#implementation-plan-1)
     * [Building and testing](#building-and-testing-1)
-  * [Implementing `find`](#implementing-find)
-    * [Implementation plan](#implementation-plan-2)
-    * [Building and testing](#building-and-testing-2)
   * [System call tracing using `trace`](#system-call-tracing-using-trace)
     * [Implementation plan](#implementation-plan-3)
   * [Implementing the `ps` utility](#implementing-the-ps-utility)
@@ -50,7 +46,6 @@ process, and introduce a more sophisticated scheduler.
     * [Building and testing](#building-and-testing-3)
 * [Acknowledgements](#acknowledgements)
 
-<!-- vim-markdown-toc -->
 
 
 # Building xv6
@@ -250,7 +245,9 @@ $ pingpong
 $
 ```
 
+<!--
 ## Implementing `find`
+
 
 The goal of this exercise is to implement the UNIX `find` program, which, given
 a file name, finds all the files in a certain directory (and its
@@ -316,6 +313,7 @@ $ find . b
 ./a/b
 $
 ```
+-->
 
 ## System call tracing using `trace`
 
