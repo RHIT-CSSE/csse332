@@ -6,7 +6,6 @@ date:
 gh-repo: rhit-csse332/csse332
 gh-badge: [star,watch,follow]
 ---
-
 # Introduction
 
 xv6 is a simple operating system, created by MIT faculty and students, to
@@ -563,6 +562,11 @@ Here are a few hints to help you implement the system call:
 		to `kernel/vm.c` to count the number of mapped pages, and then use that
 		function from your system call. Don't forget to add the definition of
 		`countmapped` to `kernel/defs.h` under the `vm.c` section.
+- To access the list of processes `proc` from the `sysproc.c` file, you may want
+  add the following line at the start of `sysproc.c` (after the includes):
+  ```c
+  extern struct proc proc[NPROC];
+  ```
 
 ### Building and testing
 
