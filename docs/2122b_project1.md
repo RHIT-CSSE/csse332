@@ -64,7 +64,7 @@ contact your instructor.**
 	```
 2. Second, install the needed dependencies:
 	```shell
-	$ sudo apt install -y it build-essential gdb-multiarch qemu-system-misc gcc-riscv64-linux-gnu binutils-riscv64-linux-gnu
+	$ sudo apt install -y build-essential gdb-multiarch qemu-system-misc gcc-riscv64-linux-gnu binutils-riscv64-linux-gnu
 	```
 
 ## Getting the source code
