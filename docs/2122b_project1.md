@@ -71,7 +71,7 @@ contact your instructor.**
 
 Obtain the xv6 modified source code by cloning the following repository
 ```shell
-$ git clone git@github.com:rhit-csse332/xv6-riscv-public.git
+$ git clone https://github.com/rhit-csse332/xv6-riscv-public.git
 ```
 
 ## Booting xv6
