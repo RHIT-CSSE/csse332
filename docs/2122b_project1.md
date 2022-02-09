@@ -26,24 +26,26 @@ process, and introduce a more sophisticated scheduler.
 # Table of contents
 
 
-* [Building xv6](#building-xv6)
-  * [Installing prerequisites](#installing-prerequisites)
-  * [Getting the source code](#getting-the-source-code)
-  * [Booting xv6](#booting-xv6)
-  * [Troubleshooting](#troubleshooting)
-* [Exercises](#exercises)
-  * [Implementing `sleep`](#implementing-sleep)
-    * [Implementation plan](#implementation-plan)
-    * [Building and testing](#building-and-testing)
-  * [Implementing `pingpong`](#implementing-pingpong)
-    * [Implementation plan](#implementation-plan-1)
-    * [Building and testing](#building-and-testing-1)
-  * [System call tracing using `trace`](#system-call-tracing-using-trace)
-    * [Implementation plan](#implementation-plan-3)
-  * [Implementing the `ps` utility](#implementing-the-ps-utility)
-    * [Implementation plan](#implementation-plan-4)
-    * [Building and testing](#building-and-testing-3)
-* [Acknowledgements](#acknowledgements)
+- [Introduction](#introduction)
+- [Table of contents](#table-of-contents)
+- [Building xv6](#building-xv6)
+	- [Installing prerequisites](#installing-prerequisites)
+	- [Getting the source code](#getting-the-source-code)
+	- [Booting xv6](#booting-xv6)
+	- [Troubleshooting](#troubleshooting)
+- [Exercise](#exercise)
+	- [Implementing `sleep`](#implementing-sleep)
+		- [Implementation plan](#implementation-plan)
+		- [Building and testing](#building-and-testing)
+	- [Implementing `pingpong`](#implementing-pingpong)
+		- [Implementation plan](#implementation-plan-1)
+		- [Building and testing](#building-and-testing-1)
+	- [System call tracing using `trace`](#system-call-tracing-using-trace)
+		- [Implementation plan](#implementation-plan-2)
+	- [Implementing the `ps` utility](#implementing-the-ps-utility)
+		- [Implementation plan](#implementation-plan-3)
+		- [Building and testing](#building-and-testing-2)
+- [Acknowledgements](#acknowledgements)
 
 
 
@@ -124,11 +126,11 @@ Once you have this information, contact your instructor with the output of the
 above commands as well as any error messages you received when compiling. Or
 even better, post a question in CampusWire.
 
-# Exercises
+# Exercise
 
 ## Implementing `sleep`
 
-Before getting started, reach Chapter 1 of the [xv6
+Before getting started, quickly flip through Chapter 1 of the [xv6
 book](https://pdos.csail.mit.edu/6.828/2021/xv6/book-riscv-rev2.pdf); it serves
 as a good introduction to the operating system and its interface.
 
@@ -148,6 +150,7 @@ help in this project.
 
 Here's a list of steps and requirements that will help you implement the `sleep`
 utility in xv6:
+- You need to create a `sleep.c` file under `user` folder. 
 - In `main(int argc, char *argv[])`, `argc` is the argument count and `argv` is
 	the argument vector. Recall that `argv[0]` is always the name of the program
 	being run, so always `argc >= 1`.
@@ -166,8 +169,8 @@ utility in xv6:
 ### Building and testing
 
 To add your utility to the list of available xv6 utilities, add your `sleep`
-program to `UPROGS` in the `Makefile` under the top xv6 directory. The
-content of your `Makefile` should look something like:
+program to `UPROGS` in the `Makefile` under the top xv6 directory. A part of
+your `Makefile` should look something like:
 ```
 UPROGS=\
 	$U/_cat\
@@ -188,6 +191,8 @@ UPROGS=\
 	$U/_zombie\
 	$U/_sleep\
 ```
+
+Note the last line `$U/_sleep\` is what you need to add.
 
 Then compile xv6 and launch into the `qemu` emulator using
 ```shell
@@ -235,7 +240,7 @@ to exchange the bytes. **Recall that UNIX pipes are unidirectional**.
 
 ### Building and testing
 
-Remember to add your program to `UPROGS` in the top level `Makefile`. Compile
+Remember to add your program to `UPROGS` in `Makefile`. Compile
 xv6 using `make qemu` from your terminal, and then, from the xv6 shell:
 ```shell
 $ pingpong
@@ -369,9 +374,9 @@ example, if the `mask` is `1 << SYS_fork`, then only the `fork` system call is
 being traced (all other system calls are ignored by tracing). `SYS_fork` is the
 system call number (syscall number) for `fork` as defined in `kernel/syscall.h`.
 
-Your job is to modify the xv6 **kernel** to print out a line at the end of each
-traced system call, i.e., print those system calls that are executed and that
-are enabled by the `mask` argument. Each line you print should contain the
+Your job is to modify the xv6 **kernel** to print out a line whenever a
+monitored system call is triggered, i.e., only print those system calls that are
+indicated via the `mask` argument. Each line you print should contain the
 process ID, the name of system call being traced, and the return value of the
 system call.
 
@@ -503,11 +508,11 @@ it out for yourself in any UNIX-based distribution, for example, try running `ps
 
 To that end, you will add a `pinfo` system call that collects a bunch of
 information about each process in the system, and stores them in a `struct
-proc_info` data structure that we provide. You can find the definition of that
+psinfo` data structure that we provide. You can find the definition of that
 structure below and in `kernel/ps.h`.
 ```c
 #define MAX_PS_PROC 64
-struct proc_info {
+struct psinfo {
   int active[MAX_PS_PROC];            // active/inactive process
   int pid[MAX_PS_PROC];               // the pid of each active process
   int states[MAX_PS_PROC];            // the state of each active process
@@ -540,16 +545,24 @@ It is better to implement your system call under `sys_pinfo` in
 the process list.
 
 Here are a few hints to help you implement the system call:
-- Read the source code for `allocproc` as an example of how to manipulate the
-  list of processes in the system.
-- `sys_pinfo` accepts as an argument the address of `struct proc_info`, checkout
+- First, to add a new system call, you have to repeat the various steps of
+  updating `kernel/syscall.h`, `user/user.h` and etc, just like what we did for
+  implementing `trace`. Refer to the instructions of `trace` to finish this part. 
+- Read the source code for `allocproc` in `kernel/proc.c` as an example of how
+to manipulate the list of processes in the system.
+- To access the list of processes `proc` from the `sysproc.c` file, you may want
+  add the following line at the start of `sysproc.c` (after the includes):
+  ```c
+  extern struct proc proc[NPROC];
+  ```
+- `sys_pinfo` accepts as an argument the address of `struct psinfo`, checkout
 	`argaddr` for a way to read the argument from the processor registers.
 - When accessing a process's PCB, it is important that you hold the lock over
 	that process. The code in `allocproc` should serve as a good example, but also
 	check out `acquire` and `release` for locking/unlocking a spinlock.
 - **Important note**: Accessing user-space memory from kernel-space is a big NO
   NO in kernel code. Instead, you must first allocate space in kernel memory for
-	the `struct proc_info` that you want to fill out, then use `copyout` to
+	the `struct psinfo` that you want to fill out, then use `copyout` to
 	transfer the data from kernel-space to user-space.
 	- see `sys_fstat()` (`kernel/sysfile.c`) and `filestat()` (`kernel/file.c`)
 		for examples of how to do that.
@@ -562,11 +575,6 @@ Here are a few hints to help you implement the system call:
 		to `kernel/vm.c` to count the number of mapped pages, and then use that
 		function from your system call. Don't forget to add the definition of
 		`countmapped` to `kernel/defs.h` under the `vm.c` section.
-- To access the list of processes `proc` from the `sysproc.c` file, you may want
-  add the following line at the start of `sysproc.c` (after the includes):
-  ```c
-  extern struct proc proc[NPROC];
-  ```
 
 ### Building and testing
 
@@ -584,7 +592,8 @@ PID 	 STATE 	 USED PAGES 	 NAME
 
 We have also provided you with a set of test cases (found in `user/pstest.c`)
 that will test different functionalities of your code. You should pass all the
-tests before you submit your project. To run the `ps` tests, use
+tests before you submit your project. To run the `ps` tests, you need to add
+`_pstest` to `Makefile` and you can compile and use
 ```shell
 $ pstest
 pstest: starting...
