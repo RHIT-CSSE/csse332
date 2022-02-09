@@ -610,6 +610,19 @@ PID 	 STATE 	 USED PAGES 	 NAME
 pstest: OK...
 ```
 
+# Submission Instructions
+
+Before you submit,
+- Make sure your code compiles successfully using `make qemu` and drops into the
+  xv6 shell. 
+- Clean up the directory from all .o files using `make clean`.
+- Create a zip file of your submission. You can do so using the command line
+  from the root directory of your submission using
+  ```shell
+  zip -r submission.zip ./*
+  ```
+- Upload your submission to Gradescope. 
+
 # Acknowledgements
 
 The original version of this lab is based on different assignments provided by
