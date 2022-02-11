@@ -45,6 +45,8 @@ process, and introduce a more sophisticated scheduler.
 	- [Implementing the `ps` utility](#implementing-the-ps-utility)
 		- [Implementation plan](#implementation-plan-3)
 		- [Building and testing](#building-and-testing-2)
+- [Submission Instructions](#submission-instructions)
+- [Rubrics](#rubrics)
 - [Acknowledgements](#acknowledgements)
 
 
@@ -622,6 +624,17 @@ Before you submit,
   zip -r submission.zip ./*
   ```
 - Upload your submission to Gradescope. 
+
+# Rubrics
+
+The project will be graded mostly based on functionality.
+
+| **Part1** | **Points** |
+|-----------|------------|
+| sleep     | 10         |
+| pingpong  | 20         |
+| trace     | 30         |
+| ps        | 40         |
 
 # Acknowledgements
 
