@@ -260,7 +260,7 @@ In order to implement this feature, we need to first be able to call an assembly
 instruction from our kernel code implementation. Luckily, the compiler allows
 you to do by using the `asm` directive as follows:
 ```c
-static inline
+static inline void
 __wfi(void)
 {
 	asm volatile("wfi");
