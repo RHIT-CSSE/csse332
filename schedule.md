@@ -645,7 +645,7 @@ title: Class Schedule
 <tr>
 <td markdown="span" colspan="4"> [Project Checkpoint 1]({{ site.baseurl }}/docs/2122b_project1) DUE Sun, Feb 13 2022 23:59 Submit to [Gradescope](https://www.gradescope.com/courses/334393)</td></tr>
 <tr>
-<tr><td markdown="span" colspan="5" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;"></td></tr><td rowspan="4" markdown="span" style="font-size:xx-large;"><a name="w10">10</a></td>
+<tr><td markdown="span" colspan="5" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;"></td></tr><td rowspan="5" markdown="span" style="font-size:xx-large;"><a name="w10">10</a></td>
 <td markdown="span">
 37 <br/> Mon, Feb 14 2022</td>
 <td markdown="span">
@@ -697,5 +697,7 @@ title: Class Schedule
 <td markdown="span">
 </td>
 </tr>
+<tr>
+<td markdown="span" colspan="4"> [Project Checkpoint 2]({{ site.baseurl }}/docs/2122b_project2) DUE Sun, Feb 20 2022 23:59 Submit to [Gradescope](https://www.gradescope.com/courses/334393)</td></tr>
 </tbody>
 </table>
