@@ -634,7 +634,11 @@ The project will be graded mostly based on functionality.
 | sleep     | 10         |
 | pingpong  | 20         |
 | trace     | 30         |
-| ps        | 40         |
+| ps total        | 40         |
+| ps (pid)       | 5         |
+| ps (state)       | 10         |
+| ps (name)       | 10         |
+| ps (mapped pages)       | 15         |
 
 # Acknowledgements
 
