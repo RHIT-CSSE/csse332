@@ -12,7 +12,7 @@ Note that exam contents can change term to term.
 
 You exam will be:
 
-+ 3 semaphore questions (60 points)
++ 3 condition variable questions (60 points)
 + 1 2-part thread creation question (40 points)
 
 I'll update this a bit with the correct sample exams to look at.
@@ -44,8 +44,8 @@ I'll update this a bit with the correct sample exams to look at.
 * How to pass parameters to threads, how to use structs to pass more
   than one, and how to do it so that all your threads don't end up
   sharing the same parameters
-* How to create/wait/post on semaphores, how to use semaphores to
-  prevent concurrency problems while still allowing parallelism
+* How to use mutexes
+  
         
 ## Condition Variables & Mutexes
 
@@ -84,7 +84,7 @@ I'll update this a bit with the correct sample exams to look at.
   
 ### How we will grade
 
-* You can get 25% points if your semaphore-based solution reliably
+* You can get 25% points if your cv-based solution reliably
   produces correct output with the given data (and small
   modifications).  0 points if doing this requires weird sleeps or
   other hacky non-general purpose code.
