@@ -98,15 +98,11 @@ submission instructions can be found
 [here]({{ site.baseurl }}/docs/submission_instructions/). Others
 involve Moodle or paper and pencil solutions.
 
-There are ~6 "regular" programming assignments, plus assorted Moodle
+There are ~8 "regular" programming assignments, plus assorted Moodle
 quizzes and minor assignments (you can see the exact weight of
 everything in Moodle).  These assignments are integral to your
 understanding of OS - missing any of them can make passing OS quite
 hard.  All these assignments are done individually.
-
-There is one term project consisting of three milestones spread across the entire quarter. This
-project replaces the BareMetalOS assignments in the previous version of the class. I highly
-recommend that you work on this assignment in pairs. 
 
 There are also 6 ADVANCED assignments.  Advanced assignments generally
 involve trickier programming but explore more interesting topics.
@@ -130,10 +126,9 @@ makeup, you fail the course.
 
 | Item                  | Weight |
 | :-------------------- | :----- |
-| Assignments/Labs      | 40%    |
-| ADVANCED  Assignments | 15%    |
-| Term Project          | 15%    |
-| Exams                 | 30%    |
+| Assignments/Labs      | 45%    |
+| ADVANCED  Assignments | 20%    |
+| Exams                 | 35%    |
 
 I generally follow the registrar's interpretation of letter grades, which you can find
 [here](https://www.rose-hulman.edu/campus-life/student-services/registrar/rules-and-procedures/grades.html)
@@ -156,7 +151,10 @@ If you talk to the grading TA and you disagree with their analysis of your code 
 
 ## Collaboration, Cheating and Professional Behavior
 
-Collaboration is encouraged on homework and laboratories. It is prohibited on all quizzes and exams. When you collaborate, you must properly credit your collaborators and clearly indicate the extent of the collaboration. Working out a solution as a group is acceptable collaboration. Each individual is responsible for understanding the entire solution. For homework, this means that once a group solution has been achieved, each collaborator must rework the problem and write up the solution independently. Copying is not collaboration. Failure to properly acknowledge collaboration can be considered cheating.
+Collaboration is encouraged on homework and laboratories. It is prohibited on all quizzes and exams. When you collaborate, you must properly credit your collaborators and clearly indicate the extent of the collaboration.
+
+With code assignments - it is acceptable to discuss your solution with
+other students.  It is acceptable to get some occasional help with a particular section or with debugging.  It is not acceptable to pair-program the assignment together (except for advanced assignments where pairing is allowed).  It is not acceptable to co-write the assignment by discussing the solution line-by-line as you write it.  It is definitely not acceptable to get code from someone else.
 
 Students found to have cheated will be penalized up to -150% of the value of the assignment (yes, that’s a negative grade, beyond a simple 0). This is in addition to cheating being reported and added to your permanent file.
 
