@@ -5,9 +5,9 @@
   topics:
     - Introduction to OS
   materials: 
-    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/intro.pdf">Chapter 1</a>
-    - <a href="{{ site.gh_repository_url }}/tree/main/ClassMaterials/IntroToOS">IntroToOS</a>
+    - IntroToOS
   other:
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/intro.pdf">Chapter 1</a>
 
 2:
   reading:
@@ -17,7 +17,7 @@
     - Malloc and Free
     - Function Pointers
   materials: 
-    - <a href="{{ site.gh_repository_url }}/tree/main/ClassMaterials/C_Pointers">C_Pointers</a>
+    - C_Pointers
   other: 
 
 3:
@@ -25,13 +25,10 @@
   topics:
     - The process abstraction
   materials:
-    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf"> Chapter 2 </a>
-    - <a href="{{ site.gh_repository_url }}/tree/main/ClassMaterials/ProcessBasics">ProcessBasics</a>
-    - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=3131032">Activity</a>
+    - ProcessBasics
   other:
-#     - <a href="https://rosehulman-my.sharepoint.com/:p:/g/personal/noureddi_rose-hulman_edu/EdPw3KFKdB5MvhzLp7bUTq8BElTXlbO3eizdxldTsPXxUQ?e=pQh7Zr"> Slides </a>
-#     - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2933266"> Activity </a>
-#     # - <a href="{{ site.baseurl }}/sessions/03_session3/"> Session Information </a>
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf"> Chapter 2 </a>
+    - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=3131032">Activity</a>
 
 4:
   reading:
@@ -41,7 +38,6 @@
   other: 
     - <a href="{{ site.baseurl }}/docs/01_userspace_thread_1/"> Lab Instructions</a>
     - <a href="{{ site.baseurl }}/docs/submission_instructions/"> Getting and submitting code</a>
-#     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4947ba52-f883-497d-9192-ac8401325dd7"> Video Tutorial </a>
 
 5:
   reading:
@@ -49,12 +45,8 @@
   topics:
     - Signals
   materials: 
-    - <a href="{{ site.gh_repository_url }}/tree/main/ClassMaterials/Signals">Signals</a>
+    - Signals
   other:
-#     - <a href="https://rosehulman-my.sharepoint.com/:p:/g/personal/noureddi_rose-hulman_edu/EXbapWVhr95AuCwpFZbBss0Bvk0vLyJXY6O18azbxDsI1A?e=mhzW6h"> Slides </a>
-#     - <a href="{{ site.gh_activity_url }}/05_signals">  Activity </a>
-#     - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933275"> Activity Submission </a>
-# #     - <a href="{{ site.baseurl }}/sessions/05_session5/"> Session Information </a>
 
 6:
   reading:
@@ -65,12 +57,8 @@
     - Process Operations
     - Forking Child Processes
   materials: 
-    - <a href="{{ site.gh_repository_url }}/tree/main/ClassMaterials/Fork">Fork</a>
+    - Fork
   other:
-#     - <a href="https://rosehulman-my.sharepoint.com/:p:/g/personal/noureddi_rose-hulman_edu/EcCd3G_NmWNFhYw2-KQ4OYoBezGgHu7X2FIutTAnMrTTlw?e=tj090V"> Slides </a>
-#     - <a href="{{ site.gh_activity_url }}/06_fork_exec"> Activity </a>
-#     - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933281"> Activity Submission </a>
-# #     - <a href="{{ site.baseurl }}/sessions/06_session6/"> Session Information </a>
 
 7:
   reading:
@@ -78,7 +66,7 @@
   topics:
     - Makefiles
   materials: 
-    - <a href="{{ site.gh_repository_url }}/tree/main/ClassMaterials/Makefiles">Makefiles</a>
+    - Makefiles
   other:
 #     - <a href="{{ site.gh_activity_url }}/07_makefiles/">Activity</a>
 #     - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933296"> Activity Submission </a>
@@ -92,7 +80,7 @@
    topics:
            - Inter Process Communication
    materials: 
-    - <a href="{{ site.gh_repository_url }}/tree/main/ClassMaterials/IPC">IPC</a>
+    - IPC
    other:
 #     - <a href="{{ site.gh_activity_url }}/11_ipc/">Activity</a>
 #     - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933326&forceview=1"> Activity Submission </a>
@@ -101,11 +89,9 @@
   reading:
   topics:
     - <b>Lab</b> Process Lab
-  materials: 
+  materials:
+    - ../homeworks/04_process_lab
   other:
-    # - <a href="{{ site.baseurl }}/docs/zz_project"> Lab Instructions </a>
-    - <a href="{{ site.gh_repository_url }}/tree/main/homeworks/04_process_lab">Lab Instruction</a>
-    # - No activity today
 
 10:
   reading:
@@ -113,10 +99,8 @@
   topics:
     - Filesystems I
   materials: 
-    - <a href="{{ site.gh_repository_url }}/tree/main/ClassMaterials/Filesystem_1">Filesystem 1</a>
+    - Filesystem_1
   other:
-    # - <a href="{{ site.gh_activity_url }}/09_filesystems_i/">Activity</a>
-    # - <a href="https://moodle.rose-hulman.edu/mod/assign/view.php?id=2933302"> Activity Submission </a>
 
 11:
   reading: 
@@ -124,16 +108,15 @@
   topics: 
     - Filesystems II
   materials: 
-    - <a href="{{ site.gh_repository_url }}/tree/main/ClassMaterials/Filesystem_2">Filesystem 2</a>
+    - Filesystem_2
   other:
-    # - No activity today
-    # - <a href="{{ site.gh_activity_url }}/10_filesystems_ii/">Activity</a>
+
 12:
   reading:
   topics:
           - <b>Lab</b> Ext2 Filesystem
   materials:
-    - <a href="{{ site.gh_repository_url }}/tree/main/homeworks/06_ext2">Lab Instruction</a>
+    - ../homeworks/06_ext2
   other:
 
 13:
@@ -141,8 +124,8 @@
   topics:
     - Exam Review
   materials:
-    - <a href="{{ site.gh_repository_url }}/tree/main/ClassMaterials/Exam1Prep">Exam1Prep</a>
-    - <a href="{{ site.gh_repository_url }}/tree/main/sample_exams">Sample Exams</a>
+    - Exam1Prep
+    - ../sample_exams
   other:
 
 14:
@@ -158,19 +141,18 @@
   topics:
     - CPU scheduling I
   materials:
-    - <a href="{{ site.gh_repository_url }}/tree/main/ClassMaterials/CPU_Scheduling1">CPU_Scheduling1</a>
-    - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=3131053">Activity</a>
+    - CPU_Scheduling1
   other:
-
+    - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=3131053">Activity</a>
 16:
   reading:
     - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=2933338&forceview=1"> Chapter 8 </a>
   topics:
     - CPU scheduling II
   materials:
-    - <a href="{{ site.gh_repository_url }}/tree/main/ClassMaterials/CPU_Scheduling2">CPU_Scheduling2</a>
-    - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=3131056">Activity</a>
+    - CPU_Scheduling2
   other:
+    - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=3131056">Activity</a>
 
 17:
   reading:
@@ -187,7 +169,7 @@
       - Thread Libraries
       - Threading Issues
   materials: 
-    - <a href="{{ site.gh_repository_url }}/tree/main/ClassMaterials/MoreThreads">Pthreads</a>
+    - MoreThreads
   other:
 
 19:
@@ -196,9 +178,9 @@
   topics: 
     - <b> Lab:</b> Threads and Mutex Basics 
   materials:
-    - <a href="{{ site.gh_repository_url }}/tree/main/homeworks/07_mutex_basics">Lab Instructions</a>
+    - ../homeworks/07_mutex_basics
   other:
-    # - <a href="{{ site.baseurl }}/sessions/19_session19/"> Session Information </a>
+
 
 20:
   reading:
@@ -206,7 +188,7 @@
   topics:
     - Mutex & Condition Variables
   materials:
-    - <a href="{{ site.gh_repository_url }}/tree/main/ClassMaterials/ConditionVariables">ConditionVariables</a>
+    - ConditionVariables
   other:
 
 21:
@@ -215,21 +197,21 @@
   topics:
     - Producer/Consumer using condition variables
   materials:
-    - <a href="{{ site.gh_repository_url }}/tree/main/ClassMaterials/CV_ProducerConsumer">CV_ProducerConsumer</a>
+    - CV_ProducerConsumer
   other:
 22:
   reading:
   topics:
     - <b>Lab</b> Userspace threads and kernel space threads
   materials:
-    - <a href="{{ site.baseurl }}/docs/10_hybrid_threads">Lab Instructions</a>
+    - ../homework/10_hybrid_threads
   other:
 23:
   reading:
   topics:
     - Readers/Writers problem
   materials:
-    - <a href="{{ site.gh_repository_url }}/tree/main/ClassMaterials/CV_ReaderWriter">CV_ReaderWriter</a>
+    - CV_ReaderWriter
   other:
 24:
   reading:
@@ -237,7 +219,7 @@
   topics:
     - Deadlocks and Starvation
   materials:
-    - <a href="{{ site.gh_repository_url }}/tree/main/ClassMaterials/DeadlockStarvation">DeadlockStarvation</a>
+    - DeadlockStarvation
   other:
 
     
@@ -247,7 +229,7 @@
   topics:
     - Segmentation
   materials: 
-    - <a href="{{ site.gh_repository_url }}/tree/main/ClassMaterials/Segmentation">Segmentation</a>
+    - Segmentation
   other:  
     - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=3131077">Activity</a>
     
@@ -273,7 +255,7 @@
   topics:
     - Paging
   materials: 
-    - <a href="{{ site.gh_repository_url }}/tree/main/ClassMaterials/Paging">Paging</a>
+    - Paging
   other:  
     - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=3131080">Activity</a>
 
@@ -283,13 +265,12 @@
   topics:
     - Page replacement algorithms
   materials:
-    - <a href="{{ site.gh_repository_url }}/tree/main/ClassMaterials/PageReplacement">PageReplacement</a>
+    - PageReplacement
   other:
 
 30:
   reading:
   topics:
-    - <b>Lab</b> Advanced Memory Lab
     - Makeup exam 2
   materials:
   other:
@@ -301,7 +282,7 @@
     - Paging the page tables
     - Inverted page tables
   materials:
-    - <a href="{{ site.gh_repository_url }}/tree/main/ClassMaterials/AdvancedPageTable">AdvancedPageTable</a>
+    - AdvancedPageTable
   other:
     - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=3131086">Activity</a>
 
