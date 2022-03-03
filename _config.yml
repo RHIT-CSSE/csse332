@@ -14,7 +14,7 @@ author: Mohammad A. Noureddine
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  Moodle: "https://moodle.rose-hulman.edu/course/view.php?id=86830"
+  Moodle: "https://moodle.rose-hulman.edu/course/view.php?id=89554"
   Syllabus: "syllabus"
   Schedule: "schedule"
   # Resources:
@@ -34,9 +34,9 @@ round-avatar: true
 # If you want to have an image logo in the top-left corner instead of having the title of the website,
 # then specify the following parameter
 #title-img: /path/to/image
-gh_repository_url: "https://github.com/rhit-csse332/csse332"
-gh_activity_url: "https://github.com/rhit-csse332/csse332/tree/main/activities"
-gh_homeworks_url: "https://github.com/rhit-csse332/csse332/tree/main/homeworks"
+gh_repository_url: "https://github.com/RHIT-CSSE/csse332"
+gh_activity_url: "https://github.com/RHIT-CSSE/csse332/tree/main/activities"
+gh_homeworks_url: "https://github.com/RHIT-CSSE/csse332/tree/main/homeworks"
 
 
 
