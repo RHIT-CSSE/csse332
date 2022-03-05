@@ -32,6 +32,7 @@ quarter starts so you can be ready from day one.
   * [Optional: Test ssh connectivity](#optional-test-ssh-connectivity)
 * [Hooking VSCode to the VM](#hooking-vscode-to-the-vm)
   * [Obtaining a terminal](#obtaining-a-terminal)
+  * [Obtaining the repo](#obtaining-the-repo)
 * [Troubleshooting](#troubleshooting)
 * [A note on editors](#a-note-on-editors)
 * [Submission](#submission)
@@ -189,8 +190,14 @@ Host csse332
 To get a terminal logged into the virtual machine, simply launch a terminal
 instance from `VSCode` and it will automatically connect to the class machine.
 
-> **NOTE**: The virtual machine already contains a copy of the class repo under
-`/home/csse/csse332/`. Make sure to always update your copy using `git pull`
+## Obtaining the repo
+The current version of the virtual machine contains an invalid copy of the
+course repository. To updated that, do the following from your Linux terminal
+```shell
+cd
+rm -rf csse332/
+git clone https://github.com/RHIT-CSSE/csse332.git
+```
 
 # Troubleshooting
 For the virtual machine installation, contact your instructor or TA to get help

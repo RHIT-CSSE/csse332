@@ -95,8 +95,8 @@ center](https://www.rose-hulman.edu/campus-life/student-services/wellness-and-he
 Also, if you feel comfortable, you can reach out to me so I can help you devise a plan to tackle your
 coursework for CSSE 332. 
 
-Students of Section 04 (and others if you like), if you have read so far into
-the unofficial syllabus, send [Mohammad](mailto:noureddi@rose-hulman.edu) a
+Students of Sections 03 and 04 (and others if you like), if you have read so far
+into the unofficial syllabus, send [Mohammad](mailto:noureddi@rose-hulman.edu) a
 picture of your favorite Norse or Greek god. If you don't have a favorite Norse
 or Greek god, then look them up and pick one, you definitely should. 
 
