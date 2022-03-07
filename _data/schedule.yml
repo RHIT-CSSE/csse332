@@ -28,7 +28,6 @@
     - ProcessBasics
   other:
     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf"> Chapter 2 </a>
-    - <a href="https://moodle.rose-hulman.edu/mod/quiz/view.php?id=3131032">Activity</a>
 
 4:
   reading:
@@ -36,8 +35,8 @@
     - <b>Lab</b> Userspace Threading
   materials:
   other: 
-    - <a href="{{ site.baseurl }}/docs/01_userspace_thread_1/"> Lab Instructions</a>
-    - <a href="{{ site.baseurl }}/docs/submission_instructions/"> Getting and submitting code</a>
+    - <a href="../docs/01_userspace_thread_1/"> Lab Instructions</a>
+    - <a href="../docs/submission_instructions/"> Getting and submitting code</a>
 
 5:
   reading:
