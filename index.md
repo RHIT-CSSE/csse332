@@ -11,6 +11,8 @@ Welcome to CSSE 332, Operating Systems.
 * Similarly, you can find the course schedule with due dates [here]({{
   site.baseurl }}/schedule/) or on the top right. 
 * Virtual Machine setup tips are [here](docs/01_linux_install/)
+* Mohammad's slides are
+[here](https://rosehulman-my.sharepoint.com/:f:/g/personal/noureddi_rose-hulman_edu/Et_SL0dNohVNurEGL6sv0l0BY98XudgkaE3p9TDd1ZnXLQ?e=oaqlAV)
 
 This site is self-contained on in `git`
 [repo](https://github.com/rhit-csse332/csse332.git).  It is a repository
