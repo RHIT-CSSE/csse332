@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{page.name}}</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans:600);
+
+      h1, h2, h3 {
+          font-family: 'IBM Plex Sans', sans-serif;
+      }
+      .remark-code, .remark-inline-code {font-family: 'IBM Plex Mono', monospace;}
+    </style>
+  </head>
+  <body>
+    <div id="source2" style="display: none;">
+      {% capture text %}
+      {% include_relative {{page.name}} %}
+      {% endcapture %}
+      {{ text | escape }}
+    </div>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      var markdown = document.getElementById('source2').innerHTML;
+      var firstDashes = markdown.indexOf("---");
+      var secondDashes = markdown.indexOf("---", firstDashes + 3);
+      var markdownWithoutHeader = markdown.substring(secondDashes + 3);
+      var slideshow = remark.create({source: markdownWithoutHeader});
+    </script>
+  </body>
+</html>
