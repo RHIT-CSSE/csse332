@@ -22,13 +22,11 @@ Here are the highlights for quick access
 
 ### Tasks
 
-#### GNU Debugger
+#### Setup the GNU Debugger with your VSCode
 
-Follow the instructions in the
-[gdbtutorial](https://rhit-csse.github.io/csse332/Homework/ProcessLab/gdbtutorial) to
-familiarize yourself with using gdb to debug your code.  
-gdb is a convenient utility that you should use to diagnose and correct 
-bugs in your code.
+Follow this instructions in [this video](https://www.youtube.com/watch?v=Gw0Ig8XSkbo).  Here's the [config file used in the video](https://gist.github.com/nouredd2/349855e034fb4258f9fec015437c212b).
+
+You will also need to install the C/C++ VSCode extension provided by Microsoft (should be one of the recommended extensions that popup).
 
 #### CharsStringsFiles
 
@@ -89,7 +87,7 @@ When you compile these files, be sure to pass the "-ggdb" flag to gcc or it won'
 
 2. (5 points)
   What is the root cause of the error in Problem 1?
-  Hint: Use *gdb*.
+  Hint: Use the debugger.
 
 3. (5 points) 
   Make the necessary modifications to correct the root cause of the
