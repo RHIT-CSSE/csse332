@@ -6,7 +6,7 @@ ADVANCED Userspace Threads With Preemption,02_userspace_thread_2,2022-03-17 23:5
 Simple Shell/Makefiles,03_simple_shell,2022-03-21 23:59:00,,https://www.gradescope.com/courses/375716
 Process Lab/Debugging,04_process_lab,2022-03-24 23:59:00,,https://www.gradescope.com/courses/375716
 ADVANCED Ext2 Filesystem,06_ext2,2022-03-31 23:59:00,,https://www.gradescope.com/courses/375716
-CPU Scheduling,,2022-04-04 23:59:00,,[Take the quiz on Moodle](https://moodle.rose-hulman.edu/mod/quiz/view.php?id=3262771)
+CPU Scheduling,,2022-04-04 23:59:00,,https://moodle.rose-hulman.edu/mod/quiz/view.php?id=3262771
 Threads and Mutex Basics,07_mutex_lab,2022-04-07 23:59:00,,https://www.gradescope.com/courses/375716
 Condition Variables Homework I,13_condvar_basics,2022-04-18 23:59:00,,https://www.gradescope.com/courses/375716 
 ADVANCED Hybrid Threads,10_hybrid_threads,2022-04-21 23:59:00,,https://www.gradescope.com/courses/375716
