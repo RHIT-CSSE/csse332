@@ -9,7 +9,7 @@
 #include <unistd.h>
 #include <wait.h>
 
-#define WORK_SIZE 80000
+#define WORK_SIZE 20000
 
 // Many thanks to Micah for the initial starting code (which I have modified
 // significantly)
