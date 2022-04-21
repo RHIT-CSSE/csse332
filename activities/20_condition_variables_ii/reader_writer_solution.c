@@ -51,7 +51,7 @@ void *writer(void *arg)
         running_w = running_w - 1;
         pthread_cond_broadcast(&queue);
         pthread_mutex_unlock(&lock);
-        sleep(1);
+        sleep(5);
     }
 }
 
