@@ -84,17 +84,9 @@ I'll update this a bit with the correct sample exams to look at.
   
 ### How we will grade
 
-* You can get 25% points if your cv-based solution reliably
-  produces correct output with the given data (and small
-  modifications).  0 points if doing this requires weird sleeps or
-  other hacky non-general purpose code.
-* You can get 50% points you did above and your solution is
-  plausible and does not do something obviously bad.  It's impossible
-  to enumerate every obviously bad thing but here's a big one : having
-  multiple concurrent threads modify a global variable.  Basically
-  this is for solutions that basically are OK but miss some edge
-  cases.
-* You can get 75% points if you have a fully working solution but
-  you utilize busywaits or non-standard CVs functions
-* A fully correct solution, even if it's not the one we envisioned, is
-  20/20
+* Remember that lots of incorrect programs produce correct looking output - so correct output is not a promise of full credit.  A program that produces correct output is usually better than one that doesn't grade-wise however.
+* We will assign different penalties for the different kinds of mistakes that can be made - very obvious ones like modifying values outside of a lock will have large point values, more obscure bugs will have smaller values
+* This includes of course code that simply produces incorrect concurrent behavior even if you've followed all the basic "rules"
+* Our goal is to train you to make fully correct concurrent programs so any mistake also will cost you 30% of the problem credit
+* The end result is a broken solution with a single error is probably worth > 50% of the points, depending on how big the mistake is.  A submission with numerious mistakes is going to be close to 0 credit
+* A fully correct solution, even if it's not the one we envisioned, is 20/20
