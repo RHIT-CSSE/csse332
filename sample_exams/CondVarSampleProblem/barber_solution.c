@@ -6,23 +6,24 @@
 #define NUM_CUSTOMERS 10
 #define MAX_CHAIRS 4
 
-pthread_cond_t barber_cond;
-pthread_cond_t chairs_cond;
-pthread_cond_t barber_done;
-pthread_mutex_t lock;
+int barber_done = 0;
+int num_waiting = 0;
+int main_chair_is_occupied = 0;
 
-int customer_in_chair = 0;
-int num_chairs_occupied = 0;
+pthread_mutex_t lock = PTHREAD_MUTEX_INITIALIZER;
+pthread_cond_t customer_waiting = PTHREAD_COND_INITIALIZER;
+pthread_cond_t barber_waiting = PTHREAD_COND_INITIALIZER;
+pthread_cond_t main_chair = PTHREAD_COND_INITIALIZER;
+
 
 void*
 barber_fn(void *arg)
 {
 	printf("The barber is now in the shop...\n");
-
 	while(1) {
 		pthread_mutex_lock(&lock);
-		while(customer_in_chair == 0) {
-			pthread_cond_wait(&barber_cond, &lock);
+		while(main_chair_is_occupied == 0) {
+			pthread_cond_wait(&barber_waiting, &lock);
 		}
 		pthread_mutex_unlock(&lock);
 
@@ -30,8 +31,9 @@ barber_fn(void *arg)
 		printf("Barber cutting customer hair\n");
 		sleep(1);
 		pthread_mutex_lock(&lock);
-		pthread_cond_signal(&barber_done);
-		customer_in_chair = 0;
+		main_chair_is_occupied = 0;
+    barber_done = 1;
+		pthread_cond_signal(&main_chair);
 		pthread_mutex_unlock(&lock);
 	}
 }
@@ -39,46 +41,47 @@ barber_fn(void *arg)
 void*
 customer_fn(void *arg)
 {
-	printf("New customer arrived...\n");
-	int added = 0;
+  int added = 0;
+  int num = *(int *)arg;
+	printf("New customer %d arrived...\n", num);
+  pthread_mutex_lock(&lock);
+  if(num_waiting >= MAX_CHAIRS) {
+    pthread_mutex_unlock(&lock);
+    printf("Customer %d leaves since shop is full!\n", num);
+    return NULL;
+  }
 
-	pthread_mutex_lock(&lock);
-	// if no room, just leave
-	if(num_chairs_occupied >= MAX_CHAIRS) {
-		pthread_mutex_unlock(&lock);
-		printf("Customer leaving for chairs are fully occupied...\n");
-		return NULL;
-	}
+  while(main_chair_is_occupied || num_waiting > 0) {
+    // this statement should only execute once!
+    if(!added) {
+      printf("customer %d is in the waiting chair...\n", num);
+      num_waiting++;
+      added = 1;
+    }
+    pthread_cond_wait(&customer_waiting, &lock);
+    printf("customer %d awake and is checking...(%d)\n",
+           num, main_chair_is_occupied);
+    if(main_chair_is_occupied == 0)
+      break;
+  }
+	printf("customer %d ready to sit in the barber chair\n", num);
+  main_chair_is_occupied = 1;
+  if(added)
+    num_waiting--;
+  pthread_mutex_unlock(&lock);
 
-	// check if there's customer on the barber chair
-	while(customer_in_chair) {
-		if(!added) {
-			printf("Customer waiting in the chair...\n");
-			num_chairs_occupied++;
-			added=1;
-		}
-		pthread_cond_wait(&chairs_cond, &lock);
-	}
-	pthread_mutex_unlock(&lock);
+  // tell the barber that I am ready to go in
+  pthread_cond_signal(&barber_waiting);
 
-	printf("customer ready to sit in the barber chair\n");
-	pthread_mutex_lock(&lock);
-	// remove one from the chairs if added
-	if(added)
-		num_chairs_occupied--;
-	customer_in_chair++;
+  pthread_mutex_lock(&lock);
+  while(!barber_done)
+    pthread_cond_wait(&main_chair, &lock);
+  barber_done = 0;
+  pthread_mutex_unlock(&lock);
 
-	// signal the barber
-	pthread_cond_signal(&barber_cond);
-
-	// wait for barber to finish cutting hair
-	pthread_cond_wait(&barber_done, &lock);
-
-	// done with the haircut
-	printf("customer done with the haircut\n");
-	pthread_cond_signal(&chairs_cond);
-	pthread_mutex_unlock(&lock);
-
+  printf("customer %d done with haircut (%d)\n",
+         num, main_chair_is_occupied);
+  pthread_cond_signal(&customer_waiting);
 	return NULL;
 }
 
@@ -88,17 +91,15 @@ main(int argc, char **argv)
 	int i;
 	pthread_t barber;
 	pthread_t customers[NUM_CUSTOMERS];
+  int ids[NUM_CUSTOMERS];
 
-	pthread_cond_init(&barber_cond, 0);
-	pthread_cond_init(&chairs_cond, 0);
-	pthread_cond_init(&barber_done, 0);
-	pthread_mutex_init(&lock, 0);
 
 	pthread_create(&barber, 0, barber_fn, 0);
 	for(i = 0; i < NUM_CUSTOMERS; ++i) {
-		pthread_create(&customers[i], 0, customer_fn, 0);
+    ids[i] = i+1;
+		pthread_create(&customers[i], 0, customer_fn, &ids[i]);
 
-		if(i==6) sleep(1);
+		if(i%3 == 0) sleep(1);
 	}
 
 	for(i = 0; i < NUM_CUSTOMERS; ++i) {
