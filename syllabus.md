@@ -24,6 +24,32 @@ have an understanding of the material covered in CSSE-132 or CSSE-232
 including interrupts and exceptions, the relationship between high-level
 languages and assembly code, and processor resources such as registers.
 
+## Learning Objectives
+
+After completing this class, you should be able to:
+
+1. Explain the objectives and functions of modern operating systems.
+2. Analyze the trade-offs inherent in operating system design.
+3. Explain the hardware support necessary to implement protection mechanisms in
+   operating systems.
+4. Analyze the performance of preemptive and non-preemptive scheduling
+   algorithms.
+5. Explain how processes are created, managed, and terminated by operating
+   systems.
+6. Explain parallelism and the need for synchronization and demonstrate the
+   proper use of common synchronization techniques.
+7. Explain memory hierarchy, including virtual memory, caching, paging and
+   segmentation.
+8. Analyze memory performance and cost-performance trade-offs.
+9. Explain the different approaches to file organization and their strengths and
+   weaknesses.
+10. Design, implement, test, and debug software using a high-level language that
+    uses explicit pointers, as well as explicit static and dynamic memory
+    allocation.
+11. Implement operating system features that satisfy a requirements
+    specification, using an appropriate programming language that fits the
+    description given in outcome 10.
+
 ## Textbook
 
 ### Recommended textbook
