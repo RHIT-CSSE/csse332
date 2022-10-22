@@ -37,6 +37,9 @@ round-avatar: true
 gh_repository_url: "https://github.com/RHIT-CSSE/csse332"
 gh_activity_url: "https://github.com/RHIT-CSSE/csse332/tree/main/activities"
 gh_homeworks_url: "https://github.com/RHIT-CSSE/csse332/tree/main/homeworks"
+gradescope_url: "https://www.gradescope.com/"
+campuswire_url: "https://campuswire.com/"
+course_term: "Winter 2022-23"
 
 
 
@@ -239,4 +242,4 @@ plugins:
 # 2fc73a3a967e97599c9763d05e564189
 
 
-theme: jekyll-theme-minimal
+# theme: jekyll-theme-minimal
