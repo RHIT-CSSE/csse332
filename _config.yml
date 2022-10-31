@@ -37,9 +37,14 @@ round-avatar: true
 gh_repository_url: "https://github.com/RHIT-CSSE/csse332"
 gh_activity_url: "https://github.com/RHIT-CSSE/csse332/tree/main/activities"
 gh_homeworks_url: "https://github.com/RHIT-CSSE/csse332/tree/main/homeworks"
+gh_labs_url: "https://github.com/RHIT-CSSE/csse332/tree/main/labs"
+
 gradescope_url: "https://www.gradescope.com/"
 campuswire_url: "https://campuswire.com/"
 course_term: "Winter 2022-23"
+
+xv6_book_url: "https://pdos.csail.mit.edu/6.828/2022/xv6/book-riscv-rev3.pdf"
+
 
 
 
