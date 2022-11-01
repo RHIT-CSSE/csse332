@@ -47,10 +47,10 @@ system calls and parsing command line arguments.
 ## Learning Objectives
 
 At the end of the lab assignment, you should be able to:
-+ Implement basic pointer manipulation operations in C.
-+ Implement basic structures and structure creation/manipulation operations. 
-+ Compile and boot the xv6 operating system.
-+ Implement standard Unix utilities in the xv6 operating system.
+- Implement basic pointer manipulation operations in C.
+- Implement basic structures and structure creation/manipulation operations. 
+- Compile and boot the xv6 operating system.
+- Implement standard Unix utilities in the xv6 operating system.
 
 ## The xv6 Operating System
 

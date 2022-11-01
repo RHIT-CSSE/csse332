@@ -324,7 +324,7 @@ def write_table_body(f, schedule, num_of_sessions_per_week, classes):
             except KeyError:
                 logging.error("Failed to extract assignment from csv file!")
                 raise RuntimeError("Unexpected csv file entry...")
-                f.write("<td markdown=\"span\" colspan=\"4\">N/A</td>\n")
+            f.write("<td markdown=\"span\" colspan=\"4\">N/A</td>\n")
         f.write("</tr>\n")
 
 # %%
