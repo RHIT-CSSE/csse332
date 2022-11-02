@@ -38,11 +38,11 @@ date: Sat Oct 29 20:08:27 2022
 # Introduction
 
 It is crucial for this class that you have a solid foundation in C programming,
-as it is most widely used language for systems programming (though now facing a
-relatively decent challenge from Rust). Therefore, we have prepare a set of
-practice problems for you to solve and refresh your memory when it comes to C
-programming concepts, as well as introduce some minor new concepts like making
-system calls and parsing command line arguments. 
+as it is the most widely used language for systems programming (though now
+facing a relatively decent challenge from Rust). Therefore, we have prepared a
+set of practice problems for you to solve and refresh your memory when it comes
+to C programming concepts, as well as introduce some minor new concepts like
+making system calls and parsing command line arguments. 
 
 ## Learning Objectives
 
@@ -124,8 +124,8 @@ the control key plus `a` at the same time, then press `x`. Happy hacking!
 
 If the compilation fails, make sure to record any error messages your received.
 Before contacting your instructor, make sure you record the versions of all of
-the tools that are need to compile xv6. You can get those version by running the
-following commands:
+the tools that are needed to compile xv6. You can get those version by running
+the following commands:
 1. Your kernel version:
 ```shell
 $ uname -r
@@ -153,14 +153,14 @@ get back to you as soon as possible.
 # Exercises
 
 There are four sets of exercises in this lab, that range in difficulty from
-straightforward to medium difficulty. Since this is a review lab, there will be
+straightforward to medium. Since this is a review lab, there will be
 no really challenging tasks. Expect those to show in the following labs. 
 
 ## Warmup
 
 The first set of exercises you will solve are warmup exercises that are fairly
 easy and straightforward to solve. Checkout the code in `user/warmup.c` for
-instructions on how to solve these problems. The source code in `wamup.c`
+instructions on how to solve these problems. The source code in `warmup.c`
 contains test cases that will help you test your code and debug in the case of a
 failed implementation. 
 
@@ -177,9 +177,9 @@ $ warmup
 - Note that running `warmup` without any arguments will run **all** of the test
 cases. To run a specific test case, you can use `warmup <num>` when `<num>` is
 an integer that corresponds to the test case you want to run. Check out the
-`main` function `warmup.c` for the mapping between numbers and test cases. 
-- Note that assertions in the test cases written will cause your program to
-fail. 
+`main` function in `warmup.c` for the mapping between numbers and test cases. 
+- Note that failed assertions in the test cases written will cause your program
+to fail. 
 
 ### Running the grading script
 
@@ -233,7 +233,7 @@ and `list` is the actual list in memory that contains the elements.
 
 5. Next, implement the `al_resize` function. It accepts as input a pointer to an
    array list structure and resizes the inner array to double its size. Note
-   that you do no have access to the `realloc` routine, you must implement that
+   that you do not have access to the `realloc` routine, you must implement that
    yourself. 
 
 6. Finally, implement the `al_append` function that accepts a pointer to an
@@ -291,7 +291,7 @@ make: 'kernel/kernel' is up to date.
 
 ## Implementing `sleep`
 
-Before getting started, quickly flip through Chapter 1 of the [xv6 book]({{
+Before getting started, skim through Chapter 1 of the [xv6 book]({{
 site.xv6_book_url }}); it serves as a good introduction to the operating
 system and its interface.
 
@@ -305,15 +305,15 @@ terminal would pause until 10 ticks have passed. You can examine the behavior of
 All user utilities in xv6 will go into the `user/` directory. In there you will
 find examples of other utilities, such as `ls`, `grep`, `mkdir`, `rm`, etc.
 Examining the code behind some of those utilities will prove to be of immense
-help in this project.
+help in this lab.
 
 ### Implementation plan
 
 Here's a list of steps and requirements that will help you implement the `sleep`
 utility in xv6:
 - We have created a file named `sleep.c` for you in the `user/` directory.
-  - The `sleep.c` includes the necessary header files and has an empty `main`
-  function for you to fill out.
+  - The `sleep.c` file includes the necessary header files and has an empty
+  `main` function for you to fill out.
 - In `main(int argc, char **argv)`, `argc` is the argument count and `argv` is
 	the argument vector. Recall that `argv[0]` is always the name of the program
 	being run, so always `argc >= 1`.
