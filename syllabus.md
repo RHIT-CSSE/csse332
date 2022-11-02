@@ -27,10 +27,14 @@ class.
 At the start of this class, we assume that you are familiar with the C
 programming language and are well on your way to become an independent
 programmer. Officially, this means that you should have passed CSSE-132 and
-CSSE-220. However, to make the best out of this class, we strongly recommend
+CSSE-220.
+
+<!--
+However, to make the best out of this class, we strongly recommend
 that you have taken, or are familiar with the topics presented in CSSE 232
 (Computer Architecture I). A lot of the topics we cover will make more sense if
 you have the background knowledge discussed in an architecture class. 
+-->
 
 ## Learning Objectives
 
@@ -47,9 +51,11 @@ After completing this class, you should be able to:
 5. Implement operating system features that satisfy a requirements
    specification using an appropriate programming language. 
 
+
+<!-- TODO: Move into Moodle page.
+
 ## Instructor(s)
 
-<!-- TODO: Update these each term. -->
 
 - [Mohammad Noureddine](https://mnoureddine.com) 
   - Office: Moench F214.
@@ -64,6 +70,8 @@ me as part of your support team. I strive to offer you a welcoming environment
 where you can get help on course content, homework, or anything else really.
 Studies conducted by me in my office show that coming to office hours
 increases your chances of success.
+
+-->
 
 ## Textbook
 
@@ -120,7 +128,7 @@ In general, you should plan ahead and submit assignments on time. This course
 has no ’late day’ policy and late assignments are generally worth 0 points
 unless you have made arrangements.
 
-However we understand that situations can arise. We handle all situations on a
+However, we understand that situations can arise. We handle all situations on a
 case-by-case basis.  Here are some general guidelines:
 
 * The usual extension is 24 hours upon request or for extreme circumstances 48
@@ -153,8 +161,8 @@ Homework assignments that require code solutions and submission instructions can
 be found [here]({{ site.baseurl }}/docs/submission_instructions/).
 
 <!-- TODO: FIX ME -->
-There are "regular" programming assignments, plus assorted quizzes and
-minor assignments (you can see the exact weight of everything in Moodle).  These
+There are "regular" programming assignments, plus assorted quizzes and minor
+assignments (you can see the exact weight of everything in Moodle).  These
 assignments are integral to your understanding of OS - missing any of them can
 make passing OS quite hard.  All these assignments are done individually.
 
@@ -165,7 +173,7 @@ they are harder, the advanced assignments are actually weighted less than
 regular assignments.  If you're willing to accept a C in the course, you don't
 have to do any advanced assignments.  BUT it's our hope everyone will attempt at
 least some of the advanced assignments, and those looking for an A will need to
-complete nearly all of them.  Advanced assignments can be done in groups of 2,
+complete all of them.  Advanced assignments can be done in groups of 2,
 or individually.
 
 ## Exams
@@ -188,8 +196,6 @@ I generally follow the registrar's interpretation of letter grades, which you
 can find
 [here](https://www.rose-hulman.edu/campus-life/student-services/registrar/rules-and-procedures/grades.html)
 under the grades description section.
-
-* NOTE: You must pass each skill exam (usually 65% or better) to pass the course 
 
 ## Handling Grading Issues
 
@@ -235,6 +241,7 @@ Depending on the nature and the egregiousness of the behavior, the penalty grade
 might be a reduction in letter grade or an F in the class.
 
 ## A statement on mental health
+
 I know that as students, you are dealing with a lot of stress, often a lack of
 sleep, and sometimes social isolation. It is easy to neglect your mental (and
 physical) health and lose yourself in the vortex of pressure. Spoken from
