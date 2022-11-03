@@ -278,8 +278,13 @@ def write_table_body(f, schedule, num_of_sessions_per_week, classes):
                         f.write("</ul>{:/}\n")
 
                 # finally check for others
-                if class_content['other']:
-                    f.write('<br/>'.join(class_content['other']))
+                if 'other' in class_content:
+                    logging.warning("The other tag is deprecated. Please consider merging it with the materials tag.")
+                    logging.warning("\tViolating line: {}: {}".format(
+                        'other',
+                        class_content['other']
+                    ))
+                    # f.write('<br/>'.join(class_content['other']))
 
                 end_column(f)
 
