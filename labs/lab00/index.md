@@ -32,6 +32,8 @@ date: Sat Oct 29 20:08:27 2022
     * [Running the grading script](#running-the-grading-script-3)
   * [Running the full grading script](#running-the-full-grading-script)
   * [Submitting your code](#submitting-your-code)
+    * [Submission Checklist](#submission-checklist)
+    * [Grading](#grading)
 
 <!-- vim-markdown-toc -->
 
@@ -441,4 +443,16 @@ From the Linux terminal, issue the command:
 make submit
 ```
 Two files will be generated, `submit-lab0.patch` and `submit-lab0.tar`. **Please
-submit both of these files to the Gradescope** at the appropriate lab link.
+submit both of these files to Gradescope** at the appropriate lab link.
+
+### Submission Checklist
+
+- [ ]  My code compiles and generates the right executables.
+- [ ]  I ran `make grade` to double check the test cases for all of my code.
+- [ ]  I ran `make submit` to generate the `.patch` and `.tar` files.
+- [ ]  I submitted both `.patch` and `.tar` files to [Gradescope]({{
+    site.gradescope_url }}).
+
+### Grading
+
+Check out this assignment's [grading](checklist/) page for more information.

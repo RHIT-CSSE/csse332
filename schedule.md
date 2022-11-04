@@ -34,7 +34,7 @@ title: Class Schedule
 </td>
 </tr>
 <tr>
-<td markdown="span" colspan="4"> [WSL2 Install]({{ site.baseurl }}/docs/01_linux_install) DUE Mon, Nov 28 2022 23:59 [Submission box]({{ site.gradescope_url }}) <font color="#aaa"> grader: @TBA </font> </td></tr>
+<td markdown="span" colspan="4"> [WSL2 Install]({{ site.baseurl }}/labs/wsl) DUE Mon, Nov 28 2022 23:59 [Submission box]({{ site.gradescope_url }}) <font color="#aaa"> grader: @TBA </font> </td></tr>
 <tr>
 <td markdown="span">
 2 <br/> Tue, Nov 29 2022</td>
@@ -56,7 +56,7 @@ title: Class Schedule
 </td>
 </tr>
 <tr>
-<td markdown="span" colspan="4"> C Review & xv6 Introduction DUE Thu, Dec 01 2022 23:59 [Submission box]({{ site.gradescope_url }}) <font color="#aaa"> grader: @TBA </font> </td></tr>
+<td markdown="span" colspan="4"> [C Review & xv6 Introduction]({{ site.baseurl }}/labs/lab00/) DUE Thu, Dec 01 2022 23:59 [Submission box]({{ site.gradescope_url }}) <font color="#aaa"> grader: @TBA </font> </td></tr>
 <tr>
 <td markdown="span">
 4 <br/> Fri, Dec 02 2022</td>
