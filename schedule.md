@@ -23,39 +23,49 @@ title: Class Schedule
 </thead>
 <tbody>
 <tr>
-<tr><td markdown="span" colspan="5" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;"></td></tr><td rowspan="4" markdown="span" style="font-size:xx-large;"><a name="w1">1</a></td>
+<tr><td markdown="span" colspan="5" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;"></td></tr><td rowspan="6" markdown="span" style="font-size:xx-large;"><a name="w1">1</a></td>
 <td markdown="span">
 1 <br/> Mon, Nov 28 2022</td>
-<td markdown="span" style="text-align:left;">
-{::nomarkdown}<ul style="margin:0;padding:.5rem">
-<li> <a href="https://cacm.acm.org/magazines/2016/3/198874-lessons-learned-from-30-years-of-minix/fulltext"> Lessons Learned From 30 Years of Minix </a> </li>
-<li> <a href="https://dsf.berkeley.edu/cs262/unix.pdf"> The UNIX Time-Sharing System </a> </li>
-</ul>{:/}
-</td>
-<td markdown="span" style="text-align:left">
-{::nomarkdown}<ul style="margin:0;padding:.5rem">
-<li> Introduction to OS </li>
-</ul>{:/}
-</td>
 <td markdown="span">
-{::nomarkdown}<ul style="margin:0;padding:.5rem">
-<li>IntroToOS</li><li><a href="https://pages.cs.wisc.edu/~remzi/OSTEP/intro.pdf">Chapter 1</a></li></ul>{:/}
+</td>
+<td markdown="span" style="text-align:center">
+<a href="{{ site.lectureurl }}/session01">C Review</a></td>
+<td markdown="span">
 </td>
 </tr>
 <tr>
+<td markdown="span" colspan="4"> [WSL2 Install]({{ site.baseurl }}/docs/01_linux_install) DUE Mon, Nov 28 2022 23:59 [Submission box]({{ site.gradescope_url }}) <font color="#aaa"> grader: @TBA </font> </td></tr>
+<tr>
 <td markdown="span">
 2 <br/> Tue, Nov 29 2022</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:center">
+<a href="{{ site.lectureurl }}/session02">Introduction: Roles of the OS</a></td>
+<td markdown="span">
+</td>
 </tr>
 <tr>
 <td markdown="span">
 3 <br/> Thu, Dec 01 2022</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:center">
+<a href="{{ site.lectureurl }}/session03"> The Process Abstraction </a></td>
+<td markdown="span">
+</td>
 </tr>
+<tr>
+<td markdown="span" colspan="4"> C Review & xv6 Introduction DUE Thu, Dec 01 2022 23:59 [Submission box]({{ site.gradescope_url }}) <font color="#aaa"> grader: @TBA </font> </td></tr>
 <tr>
 <td markdown="span">
 4 <br/> Fri, Dec 02 2022</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:center">
+<a href="{{ site.lectureurl }}/session04"> Operations on Processes </a></td>
+<td markdown="span">
+</td>
 </tr>
 <tr>
 <tr><td markdown="span" colspan="5" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;"></td></tr><td rowspan="4" markdown="span" style="font-size:xx-large;"><a name="w2">2</a></td>

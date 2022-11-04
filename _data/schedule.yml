@@ -1,12 +1,41 @@
+# <num>:
+#   reading:
+#   topics:
+#   materials: 
+
 1:
   reading:
-    - <a href="https://cacm.acm.org/magazines/2016/3/198874-lessons-learned-from-30-years-of-minix/fulltext"> Lessons Learned From 30 Years of Minix </a>
-    - <a href="https://dsf.berkeley.edu/cs262/unix.pdf"> The UNIX Time-Sharing System </a>
   topics:
-    - Introduction to OS
+    - <a href="{{ site.lectureurl }}/session01">C Review</a>
+  materials:
+
+2:
+  reading:
+  topics:
+    - '<a href="{{ site.lectureurl }}/session02">Introduction: Roles of the OS</a>'
+  materials:
+
+3:
+  reading:
+  topics:
+    - <a href="{{ site.lectureurl }}/session03"> The Process Abstraction </a>
+  materials:
+
+4:
+  reading:
+  topics:
+    - <a href="{{ site.lectureurl }}/session04"> Operations on Processes </a>
   materials: 
-    - IntroToOS
-    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/intro.pdf">Chapter 1</a>
+
+# 1:
+#   reading:
+#     - <a href="https://cacm.acm.org/magazines/2016/3/198874-lessons-learned-from-30-years-of-minix/fulltext"> Lessons Learned From 30 Years of Minix </a>
+#     - <a href="https://dsf.berkeley.edu/cs262/unix.pdf"> The UNIX Time-Sharing System </a>
+#   topics:
+#     - Introduction to OS
+#   materials: 
+#     - IntroToOS
+#     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/intro.pdf">Chapter 1</a>
 
 # 2:
 #   reading:

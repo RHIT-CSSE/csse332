@@ -1,0 +1,3 @@
+name,dirname,date,grader,moodle
+WSL2 Install,01_linux_install,2022-11-28 23:59:00,TBA,[Submission box]({{ site.gradescope_url }})
+C Review & xv6 Introduction,,2022-12-01 23:59:00,TBA,[Submission box]({{ site.gradescope_url }})
