@@ -2,7 +2,7 @@
 layout: post
 title: Unofficial Syllabus
 readtime: true
-date: Mon Mar  8 19:07:39 2021
+date: Sat Nov 26 06:22:56 2022 
 ---
 
 ## So what's this course about?
@@ -38,10 +38,10 @@ I know by now that your brain is going
 Python, do machine learning, and earn the big bucks.
 
 I totally understand and sympathize with you, that was my initial reaction as
-  well. First, before I try to convince you why this class is important, I would
-  urge you to take an hour of your time to watch [James Mickens' keynote
-  talk](https://www.youtube.com/watch?v=ajGX7odA87k) at the Usenix Security 2018
-  conference; it is hilarious but very informative and insightful. 
+well. First, before I try to convince you why this class is important, I would
+urge you to take an hour of your time to watch [James Mickens' keynote
+talk](https://www.youtube.com/watch?v=ajGX7odA87k) at the Usenix Security 2018
+conference; it is hilarious but very informative and insightful. 
 
 Now, back to our question. Imagine the following scenario: You have graduated
 from Rose, are now a famous software developer, and are now on your way to buy
@@ -96,6 +96,14 @@ playing video games \\\_(ツ)\_/ ). So deadlines are to help you stay on top of
 your work and avoid falling behind and finding yourself in a pickle. For
 policies and guidelines, see our official course syllabus at the top right
 corner.
+
+## Annoying your professor
+
+If you have made it this far reading this document, you get the privilege of
+overloading my email inbox with the flags of your favorite World Cup team. If
+you do not like soccer and are following the World Cup, then you can send me a
+funny picture of your pet. If you don't have any pets, then you can send me a
+picture of your favorite Norse or Greek deity.
 
 <!-- 
 ## A statement on mental health

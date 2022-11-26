@@ -11,21 +11,28 @@ Welcome to CSSE 332, Operating Systems.
   the top right.
 * We strongly suggest that you read the unofficial syllabus [here]({{
   site.baseurl }}/docs/unofficial/).
-* You can find the course schedule with due dates [here]({{ site.baseurl
-  }}/schedule/) or on the top right. 
-* Linux setup tips are [here](docs/01_linux_install/).
 * Instructor information and welcome statement can be found [here]({{
   site.baseurl }}/docs/welcome/).
 
-This site is self-contained in a `git`
-[repo](https://github.com/rhit-csse332/csse332.git).  It is a repository of all
-course materials (slides, assignments, in class, code, etc.). Feel free to check
-it out and poke around!
+## Before coming to the first class
 
-## Please Do Not Publish Your Solutions!
-Is is considered an academic misconduct to publish your solutions to the
-problems in this repo in a public way (e.g., by forking this repo and pushing
-solutions to github). 
+Before coming to the first class, please make sure to read the
+[syllabus](/syllabus) and the [unofficial syllabus](/docs/unofficial). Then,
+skim through the [WSL2 installation instructions](/labs/wsl/) to make sure you
+are ready for the first day of class. 
 
-If you wish to have a personal backup, [it is easy to setup a private repo]({{
-  site.baseurl }}/docs/making_a_private_repo/)
+After you have WSL2 installed, it might be worth it to note that this entire
+site and course content are self-contained in a `git` [repository]({{
+  site.gh_repository_url  }}). Feel free to check it out and poke around! 
+
+Then, to get a head start on your assignments, please take a moment to create a
+private repository to host your code for the quarter. It is easy to set up a
+private repository that pulls changes from the public course repository and
+pushes your modifications to your personal private repository. You can find
+instructions on how to set it up for the course content repository
+[here](/docs/making_a_private_repo).
+
+You might also find it useful to setup another private repository for the
+course's xv6 laboratories
+[repository](https://github.com/rhit-csse332/xv6-riscv-public) using the same
+instructions above. 

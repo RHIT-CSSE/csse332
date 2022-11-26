@@ -34,7 +34,7 @@ title: Class Schedule
 </td>
 </tr>
 <tr>
-<td markdown="span" colspan="4"> [WSL2 Install]({{ site.baseurl }}/labs/wsl) DUE Mon, Nov 28 2022 23:59 [Submission box]({{ site.gradescope_url }}) <font color="#aaa"> grader: @TBA </font> </td></tr>
+<td markdown="span" colspan="4"> [WSL2 Install]({{ site.baseurl }}/labs/wsl) DUE Mon, Nov 28 2022 23:59 [Write a comment here](https://campuswire.com/c/G0EB73CA1/feed/1) <font color="#aaa"> grader: @TBA </font> </td></tr>
 <tr>
 <td markdown="span">
 2 <br/> Tue, Nov 29 2022</td>
