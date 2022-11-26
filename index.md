@@ -17,8 +17,9 @@ Welcome to CSSE 332, Operating Systems.
 ## Before coming to the first class
 
 Before coming to the first class, please make sure to read the
-[syllabus](/syllabus) and the [unofficial syllabus](/docs/unofficial). Then,
-skim through the [WSL2 installation instructions](/labs/wsl/) to make sure you
+[syllabus]({{ site.baseurl }}/syllabus) and the [unofficial syllabus]({{
+  site.baseurl }}/docs/unofficial). Then,
+skim through the [WSL2 installation instructions](./labs/wsl/) to make sure you
 are ready for the first day of class. 
 
 After you have WSL2 installed, it might be worth it to note that this entire
@@ -30,7 +31,7 @@ private repository to host your code for the quarter. It is easy to set up a
 private repository that pulls changes from the public course repository and
 pushes your modifications to your personal private repository. You can find
 instructions on how to set it up for the course content repository
-[here](/docs/making_a_private_repo).
+[here]({{ site.baseurl }}/docs/making_a_private_repo).
 
 You might also find it useful to setup another private repository for the
 course's xv6 laboratories
