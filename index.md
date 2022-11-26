@@ -4,20 +4,23 @@ title: CSSE 332 Operating Systems
 ---
 
 Welcome to CSSE 332, Operating Systems.
+
+![xkcd](https://imgs.xkcd.com/comics/operating_systems.png)
+
 * You can find the official syllabus [here]({{ site.baseurl }}/syllabus/) or on
   the top right.
-* You can find the unofficial syllabus [here]({{ site.baseurl
-  }}/docs/unofficial/).
-* Similarly, you can find the course schedule with due dates [here]({{
-  site.baseurl }}/schedule/) or on the top right. 
-* Virtual Machine setup tips are [here](docs/01_linux_install/)
-* Mohammad's slides are
-[here](https://rosehulman-my.sharepoint.com/:f:/g/personal/noureddi_rose-hulman_edu/Et_SL0dNohVNurEGL6sv0l0BY98XudgkaE3p9TDd1ZnXLQ?e=oaqlAV)
+* We strongly suggest that you read the unofficial syllabus [here]({{
+  site.baseurl }}/docs/unofficial/).
+* You can find the course schedule with due dates [here]({{ site.baseurl
+  }}/schedule/) or on the top right. 
+* Linux setup tips are [here](docs/01_linux_install/).
+* Instructor information and welcome statement can be found [here]({{
+  site.baseurl }}/docs/welcome/).
 
-This site is self-contained on in `git`
-[repo](https://github.com/rhit-csse332/csse332.git).  It is a repository
-of all course materials (slides, assignments, in class, code, etc.). Feel free
-to check it out and poke around!
+This site is self-contained in a `git`
+[repo](https://github.com/rhit-csse332/csse332.git).  It is a repository of all
+course materials (slides, assignments, in class, code, etc.). Feel free to check
+it out and poke around!
 
 ## Please Do Not Publish Your Solutions!
 Is is considered an academic misconduct to publish your solutions to the

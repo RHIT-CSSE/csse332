@@ -121,7 +121,7 @@ Pearson Education, 2015.
 
 ## Deadlines and Late Policy
 
-The deadlines of all homeworks, labs, and project milestones are listed on on
+The deadlines of all homeworks, labs, and project milestones are listed on
 the [schedule]({{ site.baseurl }}/schedule/) page.
 
 In general, you should plan ahead and submit assignments on time. This course
@@ -161,20 +161,19 @@ Homework assignments that require code solutions and submission instructions can
 be found [here]({{ site.baseurl }}/docs/submission_instructions/).
 
 <!-- TODO: FIX ME -->
-There are "regular" programming assignments, plus assorted quizzes and minor
+There are regular programming assignments, plus assorted quizzes and minor
 assignments (you can see the exact weight of everything in Moodle).  These
 assignments are integral to your understanding of OS - missing any of them can
 make passing OS quite hard.  All these assignments are done individually.
 
-<!-- TODO: FIX ME -->
-There are also ADVANCED assignments.  Advanced assignments generally involve
+There are also challenge assignments.  Challenge assignments generally involve
 trickier programming but explore more interesting topics.  Despite the fact that
-they are harder, the advanced assignments are actually weighted less than
+they are harder, the challenge assignments are actually weighted less than
 regular assignments.  If you're willing to accept a C in the course, you don't
-have to do any advanced assignments.  BUT it's our hope everyone will attempt at
-least some of the advanced assignments, and those looking for an A will need to
-complete all of them.  Advanced assignments can be done in groups of 2,
-or individually.
+have to do any challenge assignments.  BUT it's our hope everyone will attempt
+at least some of the challenge assignments, and those looking for an A will need
+to complete all of them.  Challenge assignments can be done in groups of 2, or
+individually.
 
 ## Exams
 
@@ -185,11 +184,11 @@ if you fail both the exam and the makeup, you fail the course.
 
 ## Grading
 
-| Item                  | Weight |
-| :-------------------- | :----- |
-| Assignments/Labs      | 40%    |
-| ADVANCED  Assignments | 30%    |
-| Exams                 | 30%    |
+| Item                   | Weight |
+| :--------------------  | :----- |
+| Assignments/Labs       | 40%    |
+| Challenge  Assignments | 25%    |
+| Exams                  | 35%    |
 
 
 I generally follow the registrar's interpretation of letter grades, which you
@@ -225,7 +224,7 @@ projects.
 With code assignments - it is acceptable to discuss your solution with other
 students.  It is acceptable to get some occasional help with a particular
 section or with debugging.  It is not acceptable, nor in your best interest,  to
-pair-program the assignment together (except for advanced assignments where
+pair-program the assignment together (except for challenge assignments where
 pairing is allowed).  It is not acceptable to co-write the assignment by
 discussing the solution line-by-line as you write it.  It is definitely not
 acceptable to get code from someone else.
@@ -242,7 +241,7 @@ might be a reduction in letter grade or an F in the class.
 
 ## A statement on mental health
 
-I know that as students, you are dealing with a lot of stress, often a lack of
+We know that as students, you are dealing with a lot of stress, often a lack of
 sleep, and sometimes social isolation. It is easy to neglect your mental (and
 physical) health and lose yourself in the vortex of pressure. Spoken from
 experience, it is important for you to *make time* for yourself, both mentally
