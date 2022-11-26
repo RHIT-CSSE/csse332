@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # %%
 import yaml
 import pprint as pp
@@ -22,7 +23,6 @@ def find_sources_root(tree_root='csse332'):
 
     logging.info("Root of source tree is {}".format(os.path.join(*curr_dir)))
     return os.path.join(*curr_dir)
-
 
 def parse_time_str(time_string):
     """
@@ -52,7 +52,6 @@ def parse_time_str(time_string):
 
     return ret_obj
 
-
 def determine_starting_week(schedule):
     """
     Determine the starting week of the term.
@@ -71,7 +70,6 @@ def determine_starting_week(schedule):
         return 0
     else:
         return 1
-
 
 def count_weeks(schedule, starting_week):
     """
@@ -106,7 +104,6 @@ def count_weeks(schedule, starting_week):
 
     return week_counter
 
-
 def write_schedule_header(f):
     """
     Write the header for the schedule in the markdown file.
@@ -132,7 +129,6 @@ title: Class Schedule
 <col width="25%" />
 </colgroup>"""
     f.write(header)
-
 
 def write_table_header(f):
     """
@@ -193,11 +189,8 @@ def start_column(f, options=None):
     else:
         f.write("<td markdown=\"span\">\n")
 
-
 def end_column(f):
     f.write("</td>\n")
-
-
 
 def write_table_body(f, schedule, num_of_sessions_per_week, classes):
     """
@@ -253,12 +246,15 @@ def write_table_body(f, schedule, num_of_sessions_per_week, classes):
 
                 # check for topics
                 if class_content['topics']:
-                    start_column(f, 'style=\"text-align:left\"')
-                    # f.write("{::nomarkdown}<ul>\n")
-                    f.write("{::nomarkdown}<ul style=\"margin:0;padding:.5rem\">\n")
-                    for topic in class_content['topics']:
-                        f.write("<li> {} </li>\n".format(topic))
-                    f.write("</ul>{:/}\n")
+                    start_column(f, 'style=\"text-align:center\"')
+                    if len(class_content['topics']) == 1:
+                        f.write(class_content['topics'][0])
+                    else:
+                        # f.write("{::nomarkdown}<ul>\n")
+                        f.write("{::nomarkdown}<ul style=\"margin:0;padding:.5rem\">\n")
+                        for topic in class_content['topics']:
+                            f.write("<li> {} </li>\n".format(topic))
+                        f.write("</ul>{:/}\n")
                     end_column(f)
                 else:
                     start_column(f)
@@ -278,8 +274,13 @@ def write_table_body(f, schedule, num_of_sessions_per_week, classes):
                         f.write("</ul>{:/}\n")
 
                 # finally check for others
-                if class_content['other']:
-                    f.write('<br/>'.join(class_content['other']))
+                if 'other' in class_content:
+                    logging.warning("The other tag is deprecated. Please consider merging it with the materials tag.")
+                    logging.warning("\tViolating line: {}: {}".format(
+                        'other',
+                        class_content['other']
+                    ))
+                    # f.write('<br/>'.join(class_content['other']))
 
                 end_column(f)
 
@@ -297,13 +298,13 @@ def write_table_body(f, schedule, num_of_sessions_per_week, classes):
                 if assignment_dir is not None and assignment_dir != "":
                     if assignment_grader is not None and assignment_grader != '':
                         assignment_grader = "<font color=\"#aaa\"> grader: @{} </font>".format(assignment_grader)
-                        f.write("<td markdown=\"span\" colspan=\"4\"> [{}]({{{{ site.baseurl }}}}/docs/{}) DUE {} {} {} </td>".format(
+                        f.write("<td markdown=\"span\" colspan=\"4\"> [{}]({{{{ site.baseurl }}}}/labs/{}) DUE {} {} {} </td>".format(
                             assignment_name, assignment_dir,
                             assignment_date.strftime("%a, %b %d %Y %H:%M"),
                             assignment_box, assignment_grader
                         ))
                     else:
-                        f.write("<td markdown=\"span\" colspan=\"4\"> [{}]({{{{ site.baseurl }}}}/docs/{}) DUE {} {}</td>".format(
+                        f.write("<td markdown=\"span\" colspan=\"4\"> [{}]({{{{ site.baseurl }}}}/labs/{}) DUE {} {}</td>".format(
                             assignment_name, assignment_dir,
                             assignment_date.strftime("%a, %b %d %Y %H:%M"), assignment_box
                         ))

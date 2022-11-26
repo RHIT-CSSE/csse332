@@ -14,7 +14,9 @@ author: Mohammad A. Noureddine
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  Moodle: "https://moodle.rose-hulman.edu/course/view.php?id=89554"
+  Moodle: "https://moodle.rose-hulman.edu/course/view.php?id=94234"
+  Gradescope: "https://www.gradescope.com/courses/463828"
+  CampusWire: "https://campuswire.com/c/G0EB73CA1/feed"
   Syllabus: "syllabus"
   Schedule: "schedule"
   # Resources:
@@ -34,9 +36,19 @@ round-avatar: true
 # If you want to have an image logo in the top-left corner instead of having the title of the website,
 # then specify the following parameter
 #title-img: /path/to/image
+lectureurl: "/notes"
 gh_repository_url: "https://github.com/RHIT-CSSE/csse332"
 gh_activity_url: "https://github.com/RHIT-CSSE/csse332/tree/main/activities"
 gh_homeworks_url: "https://github.com/RHIT-CSSE/csse332/tree/main/homeworks"
+gh_labs_url: "https://github.com/RHIT-CSSE/csse332/tree/main/labs"
+
+moodle_url: "https://moodle.rose-hulman.edu/course/view.php?id=94234"
+gradescope_url: "https://www.gradescope.com/courses/463828"
+campuswire_url: "https://campuswire.com/c/G0EB73CA1/feed"
+course_term: "Winter 2022-23"
+
+xv6_book_url: "https://pdos.csail.mit.edu/6.828/2022/xv6/book-riscv-rev3.pdf"
+
 
 
 
@@ -239,4 +251,4 @@ plugins:
 # 2fc73a3a967e97599c9763d05e564189
 
 
-theme: jekyll-theme-minimal
+# theme: jekyll-theme-minimal
