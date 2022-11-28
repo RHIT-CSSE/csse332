@@ -17,7 +17,7 @@ At the end of this lecture, you should be able to:
 
 ---
 
-# Topics:
+# Topics
 
 In this lecture, we will cover the following topics:
 - C pointers.
@@ -77,10 +77,10 @@ In this lecture, we will cover the following topics:
     int y = *p; // now y becomes equal to x
     ```
 
-- To print a pointer (i.e., the actual address), you can use the `%x` modifier
+- To print a pointer (i.e., the actual address), you can use the `%p` modifier
   in the `printf` format specifier as follows:
   ```c
-  printf("%x points to %lf in memory.", p, *p);
+  printf("%p points to %lf in memory.", p, *p);
   ```
 
 
@@ -108,9 +108,9 @@ int x = 3;
 double y = 3.14;
 void *p;
 p = &x;
-printf("p = %x, *p = %d\n", p, *(int *)p);
+printf("p = %p, *p = %d\n", p, *(int *)p);
 p = &y;
-printf("p = %x, *p = %lf\n", p, *(double *)p);
+printf("p = %p, *p = %lf\n", p, *(double *)p);
 ```
 
 ### Casting C Pointers
@@ -122,7 +122,7 @@ printf("p = %x, *p = %lf\n", p, *(double *)p);
   ```c
   int *p = &x;
   char *cptr = (char *)p;
-  printf("p = %x, cptr = %x\n", p, cptr);
+  printf("p = %p, cptr = %p\n", p, cptr);
   printf("*p = %d, *cptr = %c\n", *p, *cptr);
   ```
   - ❓ Can you guess what the outcome of the above program is?
