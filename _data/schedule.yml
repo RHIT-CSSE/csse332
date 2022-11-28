@@ -6,25 +6,25 @@
 1:
   reading:
   topics:
-    - <a href="{{ site.lectureurl }}/session01">C Review</a>
+    - <a href="{{ site.baseurl }}/notes/session01/">C Review</a>
   materials:
 
 2:
   reading:
   topics:
-    - '<a href="{{ site.lectureurl }}/session02">Introduction: Roles of the OS</a>'
+    - '<a href="{{ site.baseurl }}/notes/session02">Introduction: Roles of the OS</a>'
   materials:
 
 3:
   reading:
   topics:
-    - <a href="{{ site.lectureurl }}/session03"> The Process Abstraction </a>
+    - <a href="{{ site.baseurl }}/notes/session03"> The Process Abstraction </a>
   materials:
 
 4:
   reading:
   topics:
-    - <a href="{{ site.lectureurl }}/session04"> Operations on Processes </a>
+    - <a href="{{ site.baseurl }}/notes/session04"> Operations on Processes </a>
   materials: 
 
 # 1:

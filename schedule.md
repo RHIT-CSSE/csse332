@@ -29,7 +29,7 @@ title: Class Schedule
 <td markdown="span">
 </td>
 <td markdown="span" style="text-align:center">
-<a href="{{ site.lectureurl }}/session01">C Review</a></td>
+<a href="{{ site.baseurl }}/notes/session01/">C Review</a></td>
 <td markdown="span">
 </td>
 </tr>
@@ -41,7 +41,7 @@ title: Class Schedule
 <td markdown="span">
 </td>
 <td markdown="span" style="text-align:center">
-<a href="{{ site.lectureurl }}/session02">Introduction: Roles of the OS</a></td>
+<a href="{{ site.baseurl }}/notes/session02">Introduction: Roles of the OS</a></td>
 <td markdown="span">
 </td>
 </tr>
@@ -51,7 +51,7 @@ title: Class Schedule
 <td markdown="span">
 </td>
 <td markdown="span" style="text-align:center">
-<a href="{{ site.lectureurl }}/session03"> The Process Abstraction </a></td>
+<a href="{{ site.baseurl }}/notes/session03"> The Process Abstraction </a></td>
 <td markdown="span">
 </td>
 </tr>
@@ -63,7 +63,7 @@ title: Class Schedule
 <td markdown="span">
 </td>
 <td markdown="span" style="text-align:center">
-<a href="{{ site.lectureurl }}/session04"> Operations on Processes </a></td>
+<a href="{{ site.baseurl }}/notes/session04"> Operations on Processes </a></td>
 <td markdown="span">
 </td>
 </tr>
