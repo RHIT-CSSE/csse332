@@ -11,6 +11,7 @@
 
 2:
   reading:
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/intro.pdf"> Chapter 1 of OSTEP </a>
   topics:
     - '<a href="{{ site.baseurl }}/notes/session02">Introduction: Roles of the OS</a>'
   materials:

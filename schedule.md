@@ -38,7 +38,10 @@ title: Class Schedule
 <tr>
 <td markdown="span">
 2 <br/> Tue, Nov 29 2022</td>
-<td markdown="span">
+<td markdown="span" style="text-align:left;">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/intro.pdf"> Chapter 1 of OSTEP </a> </li>
+</ul>{:/}
 </td>
 <td markdown="span" style="text-align:center">
 <a href="{{ site.baseurl }}/notes/session02">Introduction: Roles of the OS</a></td>
