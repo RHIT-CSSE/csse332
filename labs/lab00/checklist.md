@@ -10,7 +10,7 @@ date: Thu Nov  3 22:29:11 2022
 In this class, we will generally try to follow the __EMRN__ grading rubric as
 shown in the figure below.
 
-![EMRN](/assets/img/EMRN-rubric-2020.png)
+![EMRN]({{ site.baseurl }}/assets/img/EMRN-rubric-2020.png)
 
 In addition to a numeric value on your lab, you will receive a letter indicating
 the grader's level of confidence in your abilities based on your performance in
