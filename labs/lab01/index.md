@@ -58,6 +58,10 @@ Note that throughout this lab, we will make several simplifying assumptions that
 will make our lives easier and makes the process of implementing a memory
 manager more enjoyable.
 
+# Getting the Source Code
+
+<!-- TODO: Write this next! -->
+
 # Structures and Definitions
 
 To get you started, we have provided you with some definitions and structures
@@ -94,7 +98,7 @@ and adjusts it so that it is a multiple of `ALIGNMENT` bytes:
 ```
 
 For practical purposes, anytime a user wants to allocate `s` bytes, we must
-align those bytes to the closes multiple of `ALIGNMENT` bytes by using the
+align those bytes to the closest multiple of `ALIGNMENT` bytes by using the
 `ALIGN` macro as follows:
 ```c
 unsigned size_to_allocate = ALIGN(s);
@@ -130,7 +134,7 @@ structure, we actually allocate enough bytes to  hold a multiple of `ALIGNMENT`
 bytes. Since every block contains its own metadata, this helps us make sure that
 each block is always aligned to `ALIGNMENT` bytes. 
 
-Note that each bloc metadata contains two pointers, `prev` and `next`. This
+Note that each block's metadata contains two pointers, `prev` and `next`. This
 indicates that the blocks are maintained in a simple [doubly linked
 list](https://en.wikipedia.org/wiki/Doubly_linked_list). For simplicity, we
 assume that the blocks are sorted by increasing memory order. In other words,

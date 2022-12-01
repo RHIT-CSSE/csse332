@@ -51,7 +51,10 @@ title: Class Schedule
 <tr>
 <td markdown="span">
 3 <br/> Thu, Dec 01 2022</td>
-<td markdown="span">
+<td markdown="span" style="text-align:left;">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf"> Chapter 4 of OSTEP </a> </li>
+</ul>{:/}
 </td>
 <td markdown="span" style="text-align:center">
 <a href="{{ site.baseurl }}/notes/session03"> The Process Abstraction </a></td>
@@ -59,7 +62,7 @@ title: Class Schedule
 </td>
 </tr>
 <tr>
-<td markdown="span" colspan="4"> [C Review & xv6 Introduction]({{ site.baseurl }}/labs/lab00/) DUE Thu, Dec 01 2022 23:59 [Submission box]({{ site.gradescope_url }}) <font color="#aaa"> grader: @TBA </font> </td></tr>
+<td markdown="span" colspan="4"> [C Review & xv6 Introduction]({{ site.baseurl }}/labs/lab00/) DUE Thu, Dec 01 2022 23:59 [Submission box]({{ site.gradescope_url }}) <font color="#aaa"> grader: @ALL </font> </td></tr>
 <tr>
 <td markdown="span">
 4 <br/> Fri, Dec 02 2022</td>

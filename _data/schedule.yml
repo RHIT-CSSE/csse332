@@ -18,6 +18,7 @@
 
 3:
   reading:
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf"> Chapter 4 of OSTEP </a>
   topics:
     - <a href="{{ site.baseurl }}/notes/session03"> The Process Abstraction </a>
   materials:
