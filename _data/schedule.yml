@@ -29,6 +29,30 @@
     - <a href="{{ site.baseurl }}/notes/session04"> Operations on Processes </a>
   materials: 
 
+5:
+  reading:
+  topics:
+    - '<a href="{{ site.baseurl }}/notes/session05"> IPC: Signals </a>'
+  materials: 
+
+6:
+  reading:
+  topics:
+    - '<a href="{{ site.baseurl }}/notes/session06"> IPC: Pipes </a>'
+  materials: 
+
+7:
+  reading:
+  topics:
+    - <a href="{{ site.baseurl }}/notes/session07"> Introductin to Paging </a>
+  materials: 
+
+8:
+  reading:
+  topics:
+    - <b>Lab Day</b>
+  materials: 
+
 # 1:
 #   reading:
 #     - <a href="https://cacm.acm.org/magazines/2016/3/198874-lessons-learned-from-30-years-of-minix/fulltext"> Lessons Learned From 30 Years of Minix </a>
