@@ -26,25 +26,26 @@
 4:
   reading:
   topics:
-    - <a href="{{ site.baseurl }}/notes/session04"> Operations on Processes </a>
-  materials: 
+    - <b> Lab Day </b>
+  materials:
+
 
 5:
   reading:
   topics:
-    - '<a href="{{ site.baseurl }}/notes/session05"> IPC: Signals </a>'
+    - <a href="{{ site.baseurl }}/notes/session04"> Operations on Processes </a>
   materials: 
 
 6:
   reading:
   topics:
-    - '<a href="{{ site.baseurl }}/notes/session06"> IPC: Pipes </a>'
+    - '<a href="{{ site.baseurl }}/notes/session05"> IPC: Signals </a>'
   materials: 
 
 7:
   reading:
   topics:
-    - <a href="{{ site.baseurl }}/notes/session07"> Introductin to Paging </a>
+    - '<a href="{{ site.baseurl }}/notes/session06"> IPC: Pipes </a>'
   materials: 
 
 8:
@@ -52,6 +53,13 @@
   topics:
     - <b>Lab Day</b>
   materials: 
+
+9:
+  reading:
+  topics:
+    - <a href="{{ site.baseurl }}/notes/session07"> Introductin to Paging </a>
+  materials: 
+
 
 # 1:
 #   reading:

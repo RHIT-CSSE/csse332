@@ -69,7 +69,7 @@ title: Class Schedule
 <td markdown="span">
 </td>
 <td markdown="span" style="text-align:center">
-<a href="{{ site.baseurl }}/notes/session04"> Operations on Processes </a></td>
+<b> Lab Day </b></td>
 <td markdown="span">
 </td>
 </tr>
@@ -80,7 +80,7 @@ title: Class Schedule
 <td markdown="span">
 </td>
 <td markdown="span" style="text-align:center">
-<a href="{{ site.baseurl }}/notes/session05"> IPC: Signals </a></td>
+<a href="{{ site.baseurl }}/notes/session04"> Operations on Processes </a></td>
 <td markdown="span">
 </td>
 </tr>
@@ -92,7 +92,7 @@ title: Class Schedule
 <td markdown="span">
 </td>
 <td markdown="span" style="text-align:center">
-<a href="{{ site.baseurl }}/notes/session06"> IPC: Pipes </a></td>
+<a href="{{ site.baseurl }}/notes/session05"> IPC: Signals </a></td>
 <td markdown="span">
 </td>
 </tr>
@@ -102,7 +102,7 @@ title: Class Schedule
 <td markdown="span">
 </td>
 <td markdown="span" style="text-align:center">
-<a href="{{ site.baseurl }}/notes/session07"> Introductin to Paging </a></td>
+<a href="{{ site.baseurl }}/notes/session06"> IPC: Pipes </a></td>
 <td markdown="span">
 </td>
 </tr>
@@ -120,7 +120,12 @@ title: Class Schedule
 <tr><td markdown="span" colspan="5" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;"></td></tr><td rowspan="4" markdown="span" style="font-size:xx-large;"><a name="w3">3</a></td>
 <td markdown="span">
 9 <br/> Mon, Dec 12 2022</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:center">
+<a href="{{ site.baseurl }}/notes/session07"> Introductin to Paging </a></td>
+<td markdown="span">
+</td>
 </tr>
 <tr>
 <td markdown="span">
