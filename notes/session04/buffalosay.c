@@ -7,9 +7,9 @@
 // with (https://asciiart.website/index.php?art=animals/bison)
 
 int main(int argc, char** argv) {
-    if(argc < 2) {
-        printf("Not enough arguments!\n");
-    } else {
+  if(argc < 2) {
+    printf("Not enough arguments!\n");
+  } else {
     printf(
 "             _.-````'-,_\n"
 "   _,.,_ ,-'`           `'-.,_\n"
@@ -25,6 +25,6 @@ int main(int argc, char** argv) {
 "   |           /_(/_(    /_(  /_(\n"
 "   | \n"
 "   < %s > \n\n", argv[1]);
-    }
-    return 0;
+  }
+  return 0;
 }
