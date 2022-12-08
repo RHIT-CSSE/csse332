@@ -77,7 +77,10 @@ title: Class Schedule
 <tr><td markdown="span" colspan="5" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;"></td></tr><td rowspan="6" markdown="span" style="font-size:xx-large;"><a name="w2">2</a></td>
 <td markdown="span">
 5 <br/> Mon, Dec 05 2022</td>
-<td markdown="span">
+<td markdown="span" style="text-align:left;">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-api.pdf"> Chapter 5 of OSTEP </a> </li>
+</ul>{:/}
 </td>
 <td markdown="span" style="text-align:center">
 <a href="{{ site.baseurl }}/notes/session04"> Operations on Processes </a></td>
@@ -89,7 +92,10 @@ title: Class Schedule
 <tr>
 <td markdown="span">
 6 <br/> Tue, Dec 06 2022</td>
-<td markdown="span">
+<td markdown="span" style="text-align:left;">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> <a href="https://www.man7.org/linux/man-pages/man7/signal.7.html"> Signal man page </a> </li>
+</ul>{:/}
 </td>
 <td markdown="span" style="text-align:center">
 <a href="{{ site.baseurl }}/notes/session05"> IPC: Signals </a></td>
@@ -99,7 +105,10 @@ title: Class Schedule
 <tr>
 <td markdown="span">
 7 <br/> Thu, Dec 08 2022</td>
-<td markdown="span">
+<td markdown="span" style="text-align:left;">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> <a href="https://www.man7.org/linux/man-pages/man2/pipe.2.html"> Pipe man page </a> </li>
+</ul>{:/}
 </td>
 <td markdown="span" style="text-align:center">
 <a href="{{ site.baseurl }}/notes/session06"> IPC: Pipes </a></td>

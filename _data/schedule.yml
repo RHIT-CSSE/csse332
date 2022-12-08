@@ -32,18 +32,21 @@
 
 5:
   reading:
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-api.pdf"> Chapter 5 of OSTEP </a>
   topics:
     - <a href="{{ site.baseurl }}/notes/session04"> Operations on Processes </a>
   materials: 
 
 6:
   reading:
+    - <a href="https://www.man7.org/linux/man-pages/man7/signal.7.html"> Signal man page </a>
   topics:
     - '<a href="{{ site.baseurl }}/notes/session05"> IPC: Signals </a>'
   materials: 
 
 7:
   reading:
+    - <a href="https://www.man7.org/linux/man-pages/man2/pipe.2.html"> Pipe man page </a>
   topics:
     - '<a href="{{ site.baseurl }}/notes/session06"> IPC: Pipes </a>'
   materials: 

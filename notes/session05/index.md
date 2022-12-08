@@ -8,12 +8,16 @@ date: Tue Dec  6 07:38:55 2022
 # Learning Objectives
 
 At the end of this lecture, you should be able to:
+- Define inter-process-communication (IPC) and some of its mechanisms.
+- Implement signal sending, receiving, and handling in a Linux environment.
 
 ---
 
 # Topics
 
 In this lecture, we will cover the following topics:
+- Inter Process Communication.
+- Signals.
 
 ---
 
@@ -47,7 +51,8 @@ In this lecture, we will cover the following topics:
   - Signals allow for **IPC**: Inter Process Communication
 - In most circumstances, only the signal number is delivered the signalled task,
   and no further information
-  - So you cannot know who sent you the signal, only that a signal has been delivered to you
+  - So you cannot know who sent you the signal, only that a signal has been
+    delivered to you
   - There are other ways to tell the a task more information, using the
   `siginfo` method to deliver more information, but we won't worry about that
   one for now.
