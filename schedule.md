@@ -134,24 +134,39 @@ title: Class Schedule
 <td markdown="span">
 </td>
 <td markdown="span" style="text-align:center">
-<a href="{{ site.baseurl }}/notes/session07"> Introductin to Paging </a></td>
+<a href="{{ site.baseurl }}/notes/session07"> Introduction to Paging </a></td>
 <td markdown="span">
 </td>
 </tr>
 <tr>
 <td markdown="span">
 10 <br/> Tue, Dec 13 2022</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:center">
+<a href="{{ site.baseurl }}/notes/session08"> More Paging </a></td>
+<td markdown="span">
+</td>
 </tr>
 <tr>
 <td markdown="span">
 11 <br/> Thu, Dec 15 2022</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:center">
+<a href="{{ site.baseurl }}/notes/session09"> Exam Review </a></td>
+<td markdown="span">
+</td>
 </tr>
 <tr>
 <td markdown="span">
 12 <br/> Fri, Dec 16 2022</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:center">
+No class, Exam 1 Day</td>
+<td markdown="span">
+</td>
 </tr>
 <tr>
 <tr><td markdown="span" colspan="5" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;"></td></tr><td rowspan="2" markdown="span" style="font-size:xx-large;"><a name="w4">4</a></td>

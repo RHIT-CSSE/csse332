@@ -60,8 +60,26 @@
 9:
   reading:
   topics:
-    - <a href="{{ site.baseurl }}/notes/session07"> Introductin to Paging </a>
+    - <a href="{{ site.baseurl }}/notes/session07"> Introduction to Paging </a>
   materials: 
+
+10:
+  reading:
+  topics:
+    - <a href="{{ site.baseurl }}/notes/session08"> More Paging </a>
+  materials: 
+
+11:
+  reading:
+  topics:
+    - <a href="{{ site.baseurl }}/notes/session09"> Exam Review </a>
+  materials:
+
+12:
+  reading:
+  topics:
+    - No class, Exam 1 Day
+  materials:
 
 
 # 1:
