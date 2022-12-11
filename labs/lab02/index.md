@@ -274,7 +274,7 @@ scope of this assignment - we'll leave it at that for now.
 # Submitting your code
 
 There are no special submission requirements for this lab, you only have to
-submit the `simpleshell.c` file. __Please do not submit any other files that
+submit the `simpleshell.c` file. __Please do not submit any other files than
 `simpleshell.c`__. 
 
 ## Submission Checklist
