@@ -290,8 +290,8 @@ Test Timed Out
 
 In this problem, we would like to implement the primes sieve, an idea due to
 Doug Mcllroy, the inventor of Unix pipes. Your solution should use `fork` and
-`pipe` to set up a pipeline and check the first prime numbers that are less than
-35. 
+`pipe` to set up a pipeline and check the first prime numbers that are less 
+than 35. 
 
 The first process generates the number 2 through 35 and feeds the numbers that
 are not multiples of 2 into the pipeline. The second process eliminates the
