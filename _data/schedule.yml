@@ -59,14 +59,15 @@
 
 9:
   reading:
+    - <a href="https://www.man7.org/linux/man-pages/man2/pipe.2.html"> Pipe man page </a>
   topics:
-    - <a href="{{ site.baseurl }}/notes/session07"> Introduction to Paging </a>
+    - '<a href="{{ site.baseurl }}/notes/session06"> IPC: Pipes </a>'
   materials: 
 
 10:
   reading:
   topics:
-    - <a href="{{ site.baseurl }}/notes/session08"> More Paging </a>
+    - <a href="{{ site.baseurl }}/notes/session07"> Introduction to Paging </a>
   materials: 
 
 11:
@@ -81,6 +82,11 @@
     - No class, Exam 1 Day
   materials:
 
+# 10:
+#   reading:
+#   topics:
+#     - <a href="{{ site.baseurl }}/notes/session08"> More Paging </a>
+#   materials: 
 
 # 1:
 #   reading:

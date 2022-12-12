@@ -131,10 +131,13 @@ title: Class Schedule
 <tr><td markdown="span" colspan="5" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;"></td></tr><td rowspan="5" markdown="span" style="font-size:xx-large;"><a name="w3">3</a></td>
 <td markdown="span">
 9 <br/> Mon, Dec 12 2022</td>
-<td markdown="span">
+<td markdown="span" style="text-align:left;">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> <a href="https://www.man7.org/linux/man-pages/man2/pipe.2.html"> Pipe man page </a> </li>
+</ul>{:/}
 </td>
 <td markdown="span" style="text-align:center">
-<a href="{{ site.baseurl }}/notes/session07"> Introduction to Paging </a></td>
+<a href="{{ site.baseurl }}/notes/session06"> IPC: Pipes </a></td>
 <td markdown="span">
 </td>
 </tr>
@@ -144,7 +147,7 @@ title: Class Schedule
 <td markdown="span">
 </td>
 <td markdown="span" style="text-align:center">
-<a href="{{ site.baseurl }}/notes/session08"> More Paging </a></td>
+<a href="{{ site.baseurl }}/notes/session07"> Introduction to Paging </a></td>
 <td markdown="span">
 </td>
 </tr>
