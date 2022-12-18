@@ -177,23 +177,43 @@ No class, Exam 1 Day</td>
 <tr><td markdown="span" colspan="5" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;"></td></tr><td rowspan="2" markdown="span" style="font-size:xx-large;"><a name="w4">4</a></td>
 <td markdown="span">
 13 <br/> Mon, Dec 19 2022</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:center">
+Exam 1 Walkthrough</td>
+<td markdown="span">
+</td>
 </tr>
 <tr>
 <td markdown="span">
 14 <br/> Tue, Dec 20 2022</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:center">
+No class, enjoy the break!</td>
+<td markdown="span">
+</td>
 </tr>
 <tr>
 <tr><td markdown="span" colspan="5" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;"></td></tr><td rowspan="2" markdown="span" style="font-size:xx-large;"><a name="w5">5</a></td>
 <td markdown="span">
 15 <br/> Thu, Jan 05 2023</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:center">
+<a href="{{ site.baseurl }}/notes/session15"> Paging </a></td>
+<td markdown="span">
+</td>
 </tr>
 <tr>
 <td markdown="span">
 16 <br/> Fri, Jan 06 2023</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:center">
+<a href="{{ site.baseurl }}/notes/session16"> More Paging </a></td>
+<td markdown="span">
+</td>
 </tr>
 <tr>
 <tr><td markdown="span" colspan="5" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;"></td></tr><td rowspan="4" markdown="span" style="font-size:xx-large;"><a name="w6">6</a></td>

@@ -82,6 +82,30 @@
     - No class, Exam 1 Day
   materials:
 
+13:
+  reading:
+  topics:
+    - Exam 1 Walkthrough
+  materials:
+
+14:
+  reading:
+  topics:
+    - No class, enjoy the break!
+  materials:
+
+15:
+  reading:
+  topics:
+    - <a href="{{ site.baseurl }}/notes/session15"> Paging </a>
+  materials:
+
+16:
+  reading:
+  topics:
+    - <a href="{{ site.baseurl }}/notes/session16"> More Paging </a>
+  materials:
+
 # 10:
 #   reading:
 #   topics:
