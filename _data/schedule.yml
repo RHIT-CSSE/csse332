@@ -103,7 +103,49 @@
 16:
   reading:
   topics:
-    - <a href="{{ site.baseurl }}/notes/session16"> More Paging </a>
+    - <a href="{{ site.baseurl }}/notes/session16"> Page Replacement Algorithms </a>
+  materials:
+
+17:
+  reading:
+  topics:
+    - <a href="{{ site.baseurl }}/notes/session17"> Advanced Paging </a>
+  materials:
+
+18:
+  reading:
+  topics:
+    - '<a href="{{ site.baseurl }}/notes/session18"> Threads: Lightweight Processes </a>'
+  materials:
+
+19:
+  reading:
+  topics:
+    - '<a href="{{ site.baseurl }}/notes/session19"> Concurrency: Mutex & Condition Variables </a>'
+  materials:
+
+20:
+  reading:
+  topics:
+    - '<a href="{{ site.baseurl }}/notes/session20"> Concurrency: Producer-Consumer </a>'
+  materials:
+
+21:
+  reading:
+  topics:
+    - '<a href="{{ site.baseurl }}/notes/session21"> Concurrency: Readers-Writers </a>'
+  materials:
+
+22:
+  reading:
+  topics:
+    - '<a href="{{ site.baseurl }}/notes/session22"> Concurrency: Deadlocks </a>'
+  materials:
+
+23:
+  reading:
+  topics:
+    - '<a href="{{ site.baseurl }}/notes/session23"> Concurrency: RCU </a>'
   materials:
 
 # 10:
