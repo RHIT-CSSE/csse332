@@ -263,13 +263,80 @@ proc_pagetable(struct proc *p)
 
 # Problems with Paging
 
+- ❓ What can you think might be some problems with the current setup of
+  paging?
+
+- First, let's think about accessing memory, say at the address `a[1]`, what
+  does that involve?
+  - The operating system will first need to fetch the page table from memory.
+  - Then it index the page table with the page index from the virtual address
+    and obtain and frame index. 
+  - Then it will go back to memory to fetch the frame and offset into it using
+    the page offset from the provided address.
+- Therefore, to make a single memory access for `a[1]`, we must do __two__
+  memory accesses:
+  1. One to fetch the page table and get the frame index from it.
+  2. One to fetch the actual frame from memory and offset into it using the page
+     offset.
+- ❓ What do you think we could do to speed up the process of accessing
+  the page table?
+
+- Second, let's go back to our previous example, for a 32-bit machine with 4KB
+  pages, we need __4MB__ of memory space just to store the page table.
+- So there is a large memory footprint for storing the page table, which is bad
+  because we have _one page table for each process_, plus the page table for the
+  operating system.
+- Even worse, often processes don't end up using all of their memory address
+  space.
+  - So we store a lot of invalid mappings in the page table that we do not end
+    up using at all.
+- ❓ What do you think we can to reduce the size of the page table?
+  -  Think about what we did when we had a large segment of memory in the
+    segmentation case?
+
+
 ## Slow Memory Lookup
 
 ### The Translation Lookaside Buffer
+
+- To address the problem of the two memory accesses to fetch a single address,
+  we will employ a technique that is often used to speed up memory accesses.
+- That is the mechanism of caching!
+- Each process will store its most frequently used page translation in a cache,
+  called the translation lookaside buffer (TLB).
+- For every memory access, say `a[1]`, the operating system will first quickly
+  check the TLB for the translation of the virtual address into a physical
+  address.
+  - If the translation is found, the operating system will go and fetch the
+    physical address directly from memory.
+    - We have saved a memory access and gained a speedup in execution.
+    - This is called a TLB hit.
+  - If the translation is not found, then we incur a TLB miss.
+    - The operating system must go fetch the page table and find the translation
+      in the page table.
+    - Then the OS will fetch the actual physical address.
+    - The OS will also update the TLB with the mapping that it has found in the
+      page table so that it can speed up access to it later on.
+
+- The concept of caching relies on two import properties in user programs:
+  1. Temporal locality: If a process accesses a memory location, it is likely to
+     access it again soon.
+  2. Temporal locality: If a process accesses a memory location, it is likely to
+     access a location close to it soon.
+- So the TLB will actually fetch a few more page table translations and place
+  them in the TLB.
+- ❓ What if the TLB is full?
+  - If the TLB could fit the entire page table, then we'd be okay. 
+  - But practically it cannot, so what should we do?
+- You will go into more information about caching Comp Arch II.
 
 ## Large Page Tables
 
 ### Multi-level Page Tables
 
+- To address the issue of large page tables, we will treat the page table just
+  like any other large memory region.
+- So we will actually page the page table and create a multi-level page table. 
+- We will discuss this more in depth tomorrow!
 
 
