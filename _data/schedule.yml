@@ -96,6 +96,7 @@
 
 15:
   reading:
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-paging.pdf"> Chapter 8 of OSTEP </a>
   topics:
     - <a href="{{ site.baseurl }}/notes/session15"> Paging </a>
   materials:
