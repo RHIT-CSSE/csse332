@@ -211,10 +211,13 @@ No class, enjoy the break!</td>
 <tr>
 <td markdown="span">
 16 <br/> Fri, Jan 06 2023</td>
-<td markdown="span">
+<td markdown="span" style="text-align:left;">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-smalltables.pdf"> Chapter 12 of OSTEP </a> </li>
+</ul>{:/}
 </td>
 <td markdown="span" style="text-align:center">
-<a href="{{ site.baseurl }}/notes/session16"> Page Replacement Algorithms </a></td>
+<a href="{{ site.baseurl }}/notes/session16"> Multi-level Page Tables </a></td>
 <td markdown="span">
 </td>
 </tr>
