@@ -228,7 +228,7 @@ No class, enjoy the break!</td>
 <td markdown="span">
 </td>
 <td markdown="span" style="text-align:center">
-<a href="{{ site.baseurl }}/notes/session17"> Advanced Paging </a></td>
+<a href="{{ site.baseurl }}/notes/session17"> Paging Activity </a></td>
 <td markdown="span">
 </td>
 </tr>
@@ -240,7 +240,7 @@ No class, enjoy the break!</td>
 <td markdown="span">
 </td>
 <td markdown="span" style="text-align:center">
-<a href="{{ site.baseurl }}/notes/session18"> Threads: Lightweight Processes </a></td>
+<a href="{{ site.baseurl }}/labs/lab05"> Lab: Virtual Memory II </a></td>
 <td markdown="span">
 </td>
 </tr>
@@ -250,7 +250,7 @@ No class, enjoy the break!</td>
 <td markdown="span">
 </td>
 <td markdown="span" style="text-align:center">
-<a href="{{ site.baseurl }}/notes/session19"> Concurrency: Mutex & Condition Variables </a></td>
+<a href="{{ site.baseurl }}/notes/session18"> Threads: Lightweight Processes </a></td>
 <td markdown="span">
 </td>
 </tr>
@@ -262,7 +262,7 @@ No class, enjoy the break!</td>
 <td markdown="span">
 </td>
 <td markdown="span" style="text-align:center">
-<a href="{{ site.baseurl }}/notes/session20"> Concurrency: Producer-Consumer </a></td>
+<a href="{{ site.baseurl }}/notes/session19"> Concurrency: Mutex & Condition Variables </a></td>
 <td markdown="span">
 </td>
 </tr>
@@ -273,7 +273,7 @@ No class, enjoy the break!</td>
 <td markdown="span">
 </td>
 <td markdown="span" style="text-align:center">
-<a href="{{ site.baseurl }}/notes/session21"> Concurrency: Readers-Writers </a></td>
+<a href="{{ site.baseurl }}/notes/session20"> Concurrency: Producer-Consumer </a></td>
 <td markdown="span">
 </td>
 </tr>
@@ -283,7 +283,7 @@ No class, enjoy the break!</td>
 <td markdown="span">
 </td>
 <td markdown="span" style="text-align:center">
-<a href="{{ site.baseurl }}/notes/session22"> Concurrency: Deadlocks </a></td>
+<a href="{{ site.baseurl }}/notes/session21"> Concurrency: Readers-Writers </a></td>
 <td markdown="span">
 </td>
 </tr>
@@ -293,14 +293,19 @@ No class, enjoy the break!</td>
 <td markdown="span">
 </td>
 <td markdown="span" style="text-align:center">
-<a href="{{ site.baseurl }}/notes/session23"> Concurrency: RCU </a></td>
+<a href="{{ site.baseurl }}/notes/session22"> Concurrency: Deadlocks </a></td>
 <td markdown="span">
 </td>
 </tr>
 <tr>
 <td markdown="span">
 24 <br/> Fri, Jan 20 2023</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:center">
+<a href="{{ site.baseurl }}/notes/session23"> Concurrency: RCU </a></td>
+<td markdown="span">
+</td>
 </tr>
 <tr>
 <tr><td markdown="span" colspan="5" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;"></td></tr><td rowspan="4" markdown="span" style="font-size:xx-large;"><a name="w8">8</a></td>

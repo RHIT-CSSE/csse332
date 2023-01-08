@@ -111,40 +111,46 @@
 17:
   reading:
   topics:
-    - <a href="{{ site.baseurl }}/notes/session17"> Advanced Paging </a>
+    - <a href="{{ site.baseurl }}/notes/session17"> Paging Activity </a>
   materials:
 
 18:
   reading:
   topics:
-    - '<a href="{{ site.baseurl }}/notes/session18"> Threads: Lightweight Processes </a>'
+    - '<a href="{{ site.baseurl }}/labs/lab05"> Lab: Virtual Memory II </a>'
   materials:
 
 19:
   reading:
   topics:
-    - '<a href="{{ site.baseurl }}/notes/session19"> Concurrency: Mutex & Condition Variables </a>'
+    - '<a href="{{ site.baseurl }}/notes/session18"> Threads: Lightweight Processes </a>'
   materials:
 
 20:
   reading:
   topics:
-    - '<a href="{{ site.baseurl }}/notes/session20"> Concurrency: Producer-Consumer </a>'
+    - '<a href="{{ site.baseurl }}/notes/session19"> Concurrency: Mutex & Condition Variables </a>'
   materials:
 
 21:
   reading:
   topics:
-    - '<a href="{{ site.baseurl }}/notes/session21"> Concurrency: Readers-Writers </a>'
+    - '<a href="{{ site.baseurl }}/notes/session20"> Concurrency: Producer-Consumer </a>'
   materials:
 
 22:
   reading:
   topics:
-    - '<a href="{{ site.baseurl }}/notes/session22"> Concurrency: Deadlocks </a>'
+    - '<a href="{{ site.baseurl }}/notes/session21"> Concurrency: Readers-Writers </a>'
   materials:
 
 23:
+  reading:
+  topics:
+    - '<a href="{{ site.baseurl }}/notes/session22"> Concurrency: Deadlocks </a>'
+  materials:
+
+24:
   reading:
   topics:
     - '<a href="{{ site.baseurl }}/notes/session23"> Concurrency: RCU </a>'
