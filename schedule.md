@@ -255,7 +255,7 @@ No class, enjoy the break!</td>
 </td>
 </tr>
 <tr>
-<td markdown="span" colspan="4"> [Virtual Memory II]({{ site.baseurl }}/labs/lab05) DUE Thu, Jan 12 2023 23:59 [Submission box]({{ site.gradescope_url }}) <font color="#aaa"> grader: @TBA </font> </td></tr>
+<td markdown="span" colspan="4"> [[Challenge] Virtual Memory II]({{ site.baseurl }}/labs/lab05) DUE Thu, Jan 12 2023 23:59 [Submission box]({{ site.gradescope_url }}) <font color="#aaa"> grader: @TBA </font> </td></tr>
 <tr>
 <td markdown="span">
 20 <br/> Fri, Jan 13 2023</td>

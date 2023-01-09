@@ -18,7 +18,8 @@ to `exec()` in the child, which completely replaces the address space of the
 child. In that case, the copy that we did on `fork()` was very wasteful.
 
 In this lab, we will implement an optimization to `fork()` referred to as
-__copy-on-write__ (COW).
+__copy-on-write__ (COW). Note that this is a challenge assignment and will count
+towards your challenges part of the grade.
 
 ## Learning Objectives
 
