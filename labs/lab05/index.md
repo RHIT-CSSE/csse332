@@ -273,6 +273,9 @@ Here is a reasonable plan of attack:
    ```c
    *pte |= PTE_RSW;
    ```
+   > Note: You should only set this bit if the write bit for the page was not
+   already disabled. If it has been disabled by design, then you should NOT set
+   the RSW bit.
 4. Map the page as is, with the same flags, in the child's page table.
 
 At this point, your xv6 kernel will break. Recall that `fork()` is an essential
