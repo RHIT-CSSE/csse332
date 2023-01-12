@@ -104,7 +104,7 @@ int main(int argc, char** argv) {
   int arguments[THREAD_COUNT];
   for(int i = 0; i < THREAD_COUNT; i++) {
     arguments[i] = i;
-    pthread_create(&tid[i], NULL, threadFun, &argumnets[i]);
+    pthread_create(&tid[i], NULL, threadFun, &arguments[i]);
   }
   pthread_create(&tid[0], NULL, threadFun, &starting1);
 
