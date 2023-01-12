@@ -247,7 +247,10 @@ No class, enjoy the break!</td>
 <tr>
 <td markdown="span">
 19 <br/> Thu, Jan 12 2023</td>
-<td markdown="span">
+<td markdown="span" style="text-align:left;">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf"> Chapter 26 of OSTEP </a> </li>
+</ul>{:/}
 </td>
 <td markdown="span" style="text-align:center">
 <a href="{{ site.baseurl }}/notes/session18"> Threads: Lightweight Processes </a></td>
@@ -267,7 +270,7 @@ No class, enjoy the break!</td>
 </td>
 </tr>
 <tr>
-<tr><td markdown="span" colspan="5" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;"></td></tr><td rowspan="4" markdown="span" style="font-size:xx-large;"><a name="w7">7</a></td>
+<tr><td markdown="span" colspan="5" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;"></td></tr><td rowspan="5" markdown="span" style="font-size:xx-large;"><a name="w7">7</a></td>
 <td markdown="span">
 21 <br/> Mon, Jan 16 2023</td>
 <td markdown="span">
@@ -277,6 +280,8 @@ No class, enjoy the break!</td>
 <td markdown="span">
 </td>
 </tr>
+<tr>
+<td markdown="span" colspan="4"> [Threads & Mutex Basics]({{ site.baseurl }}/labs/lab06) DUE Mon, Jan 16 2023 23:59 [Submission box]({{ site.gradescope_url }}) <font color="#aaa"> grader: @TBA </font> </td></tr>
 <tr>
 <td markdown="span">
 22 <br/> Tue, Jan 17 2023</td>

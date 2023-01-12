@@ -122,6 +122,7 @@
 
 19:
   reading:
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf"> Chapter 26 of OSTEP </a>
   topics:
     - '<a href="{{ site.baseurl }}/notes/session18"> Threads: Lightweight Processes </a>'
   materials:
