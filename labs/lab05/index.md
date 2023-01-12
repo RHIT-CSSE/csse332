@@ -300,6 +300,10 @@ Your output might look slightly differently, but basically the `init` process
 should fail since we cannot `fork()` properly. We will take care of that in the
 next step.
 
+Note that it is okay if your kernel doesn't fail out of the box, you might
+sometimes need to press <Enter> before the kernel breaks; that is perfectly
+acceptable for this step.
+
 # Step 2: Handling Segmentation Faults
 
 It is now time to go back to our page fault handler to make sure that we create
