@@ -129,6 +129,8 @@
 
 20:
   reading:
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-locks.pdf"> Chapter 28 of OSTEP </a>
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 of OSTEP </a>
   topics:
     - '<a href="{{ site.baseurl }}/notes/session19"> Concurrency: Mutex & Condition Variables </a>'
   materials:
