@@ -13,17 +13,12 @@ int total;
 pthread_mutex_t lock;
 
 void *add10000(void *arg) {
-  int local_sum = 0;
   for (int i = 0; i < 10000; i++) {
     // this area: critical section
     // want this to run in mutual exclusion mode
-    /* total++; */
-    local_sum++;
+    total++;
   }
 
-  pthread_mutex_lock(&lock); // try to lock the mutex
-  total += local_sum;
-  pthread_mutex_unlock(&lock);
   return NULL;
 }
 
