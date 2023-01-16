@@ -31,47 +31,47 @@
 
 void* carpenter(void * ignored) {
 
-	printf("starting carpentry\n");
-	sleep(1);
-	printf("finished carpentry\n");
-	return NULL;
+  printf("starting carpentry\n");
+  sleep(1);
+  printf("finished carpentry\n");
+  return NULL;
 }
 
 void* painter(void * ignored) {
 
-	printf("starting painting\n");
-	sleep(1);
-	printf("finished painting\n");
-	return NULL;
+  printf("starting painting\n");
+  sleep(1);
+  printf("finished painting\n");
+  return NULL;
 }
 
 void* decorator(void * ignored) {
 
-	printf("starting decorating\n");
-	sleep(1);
-	printf("finished decorating\n");
-	return NULL;
+  printf("starting decorating\n");
+  sleep(1);
+  printf("finished decorating\n");
+  return NULL;
 }
 
 
 int main(int argc, char **argv) {
-	pthread_t jobs[NUM_CARP + NUM_PAIN + NUM_DECO];
-	for (int i = 0; i < NUM_CARP + NUM_PAIN + NUM_DECO; i++) {
-		void* (*func) (void*) = NULL;
-		if(i < NUM_CARP)
-			func = carpenter;
-		if(i >= NUM_CARP && i < NUM_CARP + NUM_PAIN)
-			func = painter;
-		if(i >= NUM_CARP + NUM_PAIN) {
-			func = decorator;
-		}
-		pthread_create(&jobs[i], NULL, func, NULL);
-	}
+  pthread_t jobs[NUM_CARP + NUM_PAIN + NUM_DECO];
+  for (int i = 0; i < NUM_CARP + NUM_PAIN + NUM_DECO; i++) {
+    void* (*func) (void*) = NULL;
+    if(i < NUM_CARP)
+      func = carpenter;
+    if(i >= NUM_CARP && i < NUM_CARP + NUM_PAIN)
+      func = painter;
+    if(i >= NUM_CARP + NUM_PAIN) {
+      func = decorator;
+    }
+    pthread_create(&jobs[i], NULL, func, NULL);
+  }
 
-	for (int i = 0; i < NUM_CARP + NUM_PAIN + NUM_DECO; i++) {
-		pthread_join(jobs[i], NULL);
-	}
+  for (int i = 0; i < NUM_CARP + NUM_PAIN + NUM_DECO; i++) {
+    pthread_join(jobs[i], NULL);
+  }
 
-	printf("Everything finished.\n");
+  printf("Everything finished.\n");
 
 }

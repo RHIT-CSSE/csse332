@@ -62,42 +62,42 @@ char* names[] = {"drummer", "singer", "guitarist"};
 // because the code is similar, we'll just have one kind of thread
 // and we'll pass its kind as a parameter
 void* friend(void * kind_ptr) {
-	int kind = *((int*) kind_ptr);
-	printf("%s arrived\n", names[kind]);
-	printf("%s playing\n", names[kind]);
-	sleep(1);
-	printf("%s finished playing\n", names[kind]);
+  int kind = *((int*) kind_ptr);
+  printf("%s arrived\n", names[kind]);
+  printf("%s playing\n", names[kind]);
+  sleep(1);
+  printf("%s finished playing\n", names[kind]);
 
-	return NULL;
+  return NULL;
 }
 
 pthread_t friends[100];
 int friend_count = 0;
 
 void create_friend(int* kind) {
-	pthread_create(&friends[friend_count], NULL, friend, kind);
-	friend_count++;
+  pthread_create(&friends[friend_count], NULL, friend, kind);
+  friend_count++;
 }
 
 int main(int argc, char **argv) {
 
-	create_friend(&DRUM);
-	create_friend(&DRUM);
-	create_friend(&GUIT);
-	create_friend(&GUIT);
-	sleep(1);
-	create_friend(&SING);
-	create_friend(&SING);
-	create_friend(&DRUM);
-	create_friend(&GUIT);
-	create_friend(&SING);
+  create_friend(&DRUM);
+  create_friend(&DRUM);
+  create_friend(&GUIT);
+  create_friend(&GUIT);
+  sleep(1);
+  create_friend(&SING);
+  create_friend(&SING);
+  create_friend(&DRUM);
+  create_friend(&GUIT);
+  create_friend(&SING);
 
-	// all threads must be created by this point
-	// note if you didn't create an equal number of each, we'll be stuck forever
-	for (int i = 0; i < friend_count; i++) {
-		pthread_join(friends[i], NULL);
-	}
+  // all threads must be created by this point
+  // note if you didn't create an equal number of each, we'll be stuck forever
+  for (int i = 0; i < friend_count; i++) {
+    pthread_join(friends[i], NULL);
+  }
 
-	printf("Everything finished.\n");
+  printf("Everything finished.\n");
 
 }

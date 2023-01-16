@@ -1,1 +1,0 @@
-../homeworks/14_condvar_advanced/README.md

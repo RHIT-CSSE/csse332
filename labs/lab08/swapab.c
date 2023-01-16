@@ -76,63 +76,63 @@ void swapBA() {
 }
 
 void assert_i_have_a() {
-	static int a_count = 0;
-	// my use of a_count in this function could
-	// theoretically be considered unprotected
-	// but only if more than 1 thread has a
-	if(a_count != 0) {
-		printf("ERROR multiple threads seem to have gotten A\n");
-	}
+  static int a_count = 0;
+  // my use of a_count in this function could
+  // theoretically be considered unprotected
+  // but only if more than 1 thread has a
+  if(a_count != 0) {
+    printf("ERROR multiple threads seem to have gotten A\n");
+  }
 
-	a_count++;
-	usleep(20);
-	if(a_count != 1) {
-		printf("ERROR multiple threads seem to have gotten A\n");
-	}
-	a_count--;
+  a_count++;
+  usleep(20);
+  if(a_count != 1) {
+    printf("ERROR multiple threads seem to have gotten A\n");
+  }
+  a_count--;
 }
 
 void assert_i_have_b() {
-	static int b_count = 0;
-	if(b_count != 0) {
-		printf("ERROR multiple threads seem to have gotten B\n");
-	}
+  static int b_count = 0;
+  if(b_count != 0) {
+    printf("ERROR multiple threads seem to have gotten B\n");
+  }
 
-	b_count++;
-	usleep(5);
-	if(b_count != 1) {
-		printf("ERROR multiple threads seem to have gotten B\n");
-	}
-	b_count--;
+  b_count++;
+  usleep(5);
+  if(b_count != 1) {
+    printf("ERROR multiple threads seem to have gotten B\n");
+  }
+  b_count--;
 }
 
 
 void swapper() {
-	for(int i = 0; i < 10; i++) {
-		lockA();
-		assert_i_have_a();
-		unlockA();
-		lockB();
-		assert_i_have_b();
-		unlockB();
-		lockA();
-		assert_i_have_a();
-		swapAB();
-		assert_i_have_b();
-		swapBA();
-		assert_i_have_a();
-		unlockA();
-	}
+  for(int i = 0; i < 10; i++) {
+    lockA();
+    assert_i_have_a();
+    unlockA();
+    lockB();
+    assert_i_have_b();
+    unlockB();
+    lockA();
+    assert_i_have_a();
+    swapAB();
+    assert_i_have_b();
+    swapBA();
+    assert_i_have_a();
+    unlockA();
+  }
 }
 
 int main(int argc, char **argv) {
-	pthread_t threads[10];
-	for(int i = 0; i < 10; i++) {
-		pthread_create(&threads[i], NULL, (void * (*)(void *)) swapper, NULL);
-	}
-	for(int i = 0; i < 10; i++) {
-		pthread_join(threads[i], NULL);
-	}
+  pthread_t threads[10];
+  for(int i = 0; i < 10; i++) {
+    pthread_create(&threads[i], NULL, (void * (*)(void *)) swapper, NULL);
+  }
+  for(int i = 0; i < 10; i++) {
+    pthread_join(threads[i], NULL);
+  }
 
-	printf("Everything done.\n");
+  printf("Everything done.\n");
 }

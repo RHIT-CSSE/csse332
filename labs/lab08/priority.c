@@ -21,33 +21,33 @@
 
 void *thread(void *arg)
 {
-	int *num = (int *) arg;
-	printf("%d wants to enter the critical section\n", *num);
+  int *num = (int *) arg;
+  printf("%d wants to enter the critical section\n", *num);
 
-	printf("%d has entered the critical section\n", *num);
-	sleep(1);
-	printf("%d is finished with the critical section\n", *num);
+  printf("%d has entered the critical section\n", *num);
+  sleep(1);
+  printf("%d is finished with the critical section\n", *num);
 
-	return NULL;
+  return NULL;
 }
 
 int
 main(int argc, char **argv)
 {
-	int i;
-	pthread_t threads[6];
-	int nums[] = {2, 1, 4, 3, 5, 6};
+  int i;
+  pthread_t threads[6];
+  int nums[] = {2, 1, 4, 3, 5, 6};
 
 
-	for(i = 0; i < 6; i++) {
-		pthread_create(&threads[i], NULL, thread, &nums[i]);
+  for(i = 0; i < 6; i++) {
+    pthread_create(&threads[i], NULL, thread, &nums[i]);
 
-		if(i == 2) sleep(10);
-	}
+    if(i == 2) sleep(10);
+  }
 
-	for(i = 0; i < 6; i++) {
-		pthread_join(threads[i], NULL);
-	}
+  for(i = 0; i < 6; i++) {
+    pthread_join(threads[i], NULL);
+  }
 
-	printf("Everything finished.\n");
+  printf("Everything finished.\n");
 }
