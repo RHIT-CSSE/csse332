@@ -274,7 +274,7 @@ No class, enjoy the break!</td>
 </td>
 </tr>
 <tr>
-<tr><td markdown="span" colspan="5" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;"></td></tr><td rowspan="5" markdown="span" style="font-size:xx-large;"><a name="w7">7</a></td>
+<tr><td markdown="span" colspan="5" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;"></td></tr><td rowspan="6" markdown="span" style="font-size:xx-large;"><a name="w7">7</a></td>
 <td markdown="span">
 21 <br/> Mon, Jan 16 2023</td>
 <td markdown="span">
@@ -306,6 +306,8 @@ No class, enjoy the break!</td>
 <td markdown="span">
 </td>
 </tr>
+<tr>
+<td markdown="span" colspan="4"> [Condition Variables Basics]({{ site.baseurl }}/labs/lab07) DUE Thu, Jan 19 2023 23:59 [Submission box]({{ site.gradescope_url }}) <font color="#aaa"> grader: @TVA </font> </td></tr>
 <tr>
 <td markdown="span">
 24 <br/> Fri, Jan 20 2023</td>
