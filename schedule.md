@@ -307,7 +307,7 @@ No class, enjoy the break!</td>
 </td>
 </tr>
 <tr>
-<td markdown="span" colspan="4"> [Condition Variables Basics]({{ site.baseurl }}/labs/lab07) DUE Thu, Jan 19 2023 23:59 [Submission box]({{ site.gradescope_url }}) <font color="#aaa"> grader: @TVA </font> </td></tr>
+<td markdown="span" colspan="4"> [Condition Variables Basics]({{ site.baseurl }}/labs/lab07) DUE Thu, Jan 19 2023 23:59 [Submission box]({{ site.gradescope_url }}) <font color="#aaa"> grader: @TBA </font> </td></tr>
 <tr>
 <td markdown="span">
 24 <br/> Fri, Jan 20 2023</td>
