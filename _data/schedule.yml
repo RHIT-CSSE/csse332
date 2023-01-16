@@ -137,26 +137,63 @@
 
 21:
   reading:
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 of OSTEP </a>
   topics:
-    - '<a href="{{ site.baseurl }}/notes/session20"> Concurrency: Producer-Consumer </a>'
+    - '<a href="{{ site.baseurl }}/notes/session20"> Concurrency: More Condition Variables </a>'
   materials:
 
 22:
   reading:
   topics:
-    - '<a href="{{ site.baseurl }}/notes/session21"> Concurrency: Readers-Writers </a>'
+    - '<a href="{{ site.baseurl }}/notes/session21"> Concurrency: Producer-Consumer Problem </a>'
   materials:
 
 23:
   reading:
   topics:
-    - '<a href="{{ site.baseurl }}/notes/session22"> Concurrency: Deadlocks </a>'
+    - '<a href="{{ site.baseurl }}/notes/session22"> Concurrency: Readers/Writers Problem </a>'
   materials:
 
 24:
   reading:
   topics:
-    - '<a href="{{ site.baseurl }}/notes/session23"> Concurrency: RCU </a>'
+    - '<a href="{{ site.baseurl }}/notes/session23"> Concurrency: Deadlocks </a>'
+  materials:
+
+25:
+  reading:
+  topics:
+    - '<a href="{{ site.baseurl }}/notes/session24"> Concurrency: RCU </a>'
+  materials:
+
+26:
+  reading:
+  topics:
+    - '<a href="{{ site.baseurl }}/notes/session25"> Exam 2 Review </a>'
+  materials:
+
+27:
+  reading:
+  topics:
+    - Exam 2, No Class
+  materials:
+
+28:
+  reading:
+  topics:
+    - Exam 2 Walkthrough
+  materials:
+
+29:
+  reading:
+  topics:
+    - '<a href="{{ site.baseurl }}/notes/session29"> CPU Scheduling I </a>'
+  materials:
+
+30:
+  reading:
+  topics:
+    - '<a href="{{ site.baseurl }}/notes/session30"> CPU Scheduling II </a>'
   materials:
 
 # 10:
