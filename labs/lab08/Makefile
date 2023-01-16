@@ -1,10 +1,10 @@
 all: band.bin littleredhen.bin priority.bin threeJobs.bin
 
 CFLAGS+=-ggdb
-LDFLIBS+=-pthread -lc
+LDLIBS+=-pthread
 
 %.bin: %.o
-	$(CC) $(CFLAGS) $(LDFLAGS) -o $@ $^
+	$(CC) $(CFLAGS) $(LDLIBS) -o $@ $^
 
 .PHONY: clean
 
