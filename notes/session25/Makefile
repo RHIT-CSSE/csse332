@@ -1,4 +1,4 @@
-all: barbershop.bin barbershop_starvation.bin
+all: barbershop_solution.bin
 
 CFLAGS+=-ggdb
 LDLIBS+=-pthread
