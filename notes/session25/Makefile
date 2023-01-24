@@ -1,6 +1,6 @@
-all: barbershop_solution.bin
+all: barbershop_solution.bin barbershop_full.bin
 
-CFLAGS+=-ggdb
+CFLAGS+=-ggdb -Wall
 LDLIBS+=-pthread
 
 .PHONY: clean

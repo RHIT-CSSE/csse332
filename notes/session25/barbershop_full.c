@@ -7,20 +7,10 @@
 #define NUM_CUSTOMERS     20
 #define NUM_WAITING_CHAIRS 4
 
-// This solution has a minor issue that might cause some out of order prints,
-// but we will accept those for now. The problem might arise in a weird
-// scheduling case when the barber is done cutting a customer's hair and
-// directly calls out for the next one. At that point the scheduler decides to
-// run the next customer before the one that is actually still in the chair, at
-// that point there will be customers in the work chair, the one that is
-// supposed to leave momentarily and the new one that is supposed to enter the
-// work chair and get a hair cut. This is a minor issue that we will accept, and
-// we can easily solve with one more condition variable; we do that in the full
-// solution in this directory.
-
 // state variables
 volatile int num_customers = 0;   // includes both waiting and getting a haircut
 volatile int customer_ready = 0;
+volatile int left_chair = 1;
 
 // concurrency means
 pthread_mutex_t lock          = PTHREAD_MUTEX_INITIALIZER;
@@ -28,6 +18,7 @@ pthread_cond_t barber_cond    = PTHREAD_COND_INITIALIZER;
 pthread_cond_t barber_done    = PTHREAD_COND_INITIALIZER;
 pthread_cond_t waiting_chairs = PTHREAD_COND_INITIALIZER;
 pthread_cond_t ready          = PTHREAD_COND_INITIALIZER;
+pthread_cond_t work_chair     = PTHREAD_COND_INITIALIZER;
 
 void cut_hair(void)
 {
@@ -100,6 +91,11 @@ void *customer_fn(void *arg)
   // hitting the case of starvation.
   pthread_cond_wait(&waiting_chairs, &lock);
 
+  // check if the previous user has left the chair, and if not wait
+  while(!left_chair)
+    pthread_cond_wait(&work_chair, &lock);
+  left_chair = 0;
+
   // let the barber know we are ready
   customer_ready = 1;
   pthread_cond_signal(&ready);
@@ -114,8 +110,12 @@ void *customer_fn(void *arg)
   // themselves.
   printf("Customer %d is waiting for barber to finish haircut...\n", tid);
   pthread_cond_wait(&barber_done, &lock);
-
   printf("Customer %d done with their haircut...\n", tid);
+
+  // I left the chair, so I can let the new customer in!
+  left_chair = 1;
+  pthread_cond_signal(&work_chair);
+
   printf("Customer %d leaves the shop happy...\n", tid);
   pthread_mutex_unlock(&lock);
 
