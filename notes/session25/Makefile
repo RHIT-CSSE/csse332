@@ -1,4 +1,5 @@
-all: barbershop_solution.bin barbershop_full.bin
+all: barbershop_solution.bin barbershop_full.bin\
+	sieve.bin shower.bin task_dispatch.bin stoplight.bin
 
 CFLAGS+=-ggdb -Wall
 LDLIBS+=-pthread
