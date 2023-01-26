@@ -8,7 +8,7 @@ these functions in the .c file rather than the header.
 
 You should not need to modify this header.
 
- */
+*/
 
 void initialize_basic_threads();
 
