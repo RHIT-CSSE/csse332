@@ -285,3 +285,263 @@ void runs_as_thread()
 For simplicity, we are not gonna go through the trouble of implementing
 something like this in this lab.
 
+## Implementation
+
+Your job in this task is to implement `create_new_parameterized_thread`.  First
+start by taking a look at the manpage for `makecontext`. You will see that you
+can pass an arbitrary number of parameters to the `makecontext` function (in
+that way, it is similar to C's `printf` function. That is represented by the
+`...` keyword in the function signature). You just have to make sure that the
+third argument is the number of extra parameters you want to pass to
+`makecontext`.
+
+The code for this step otherwise will be exactly like `create_new_thread`.
+
+A few minor notes and wrinkles:
+
+- The function parameter to `makecontext` is still specified as `void(*)()`,
+  that is a pointer to a function that take no parameters and returns nothing.
+  That's because there is now way to say something like "a pointer to a function
+  that takes an arbitrary number of parameters and returns nothing". Therefore,
+  to make this work, you will have to cast our function parameter to that type.
+  Something like the following:
+  ```c
+  void(*cast_ptr)() = (void(*)()) fun_ptr; ```
+
+- It should irk you that `create_new_thread` and
+  `create_new_parameterized_thread` have basically the same code with minor
+  differences. Will we allow this code duplication? Hell no! It turns out that
+  fixing this is easy though. We can just make `create_new_thread` call
+  `create_new_parameterized_thread` with a null parameter. It might be good
+  practice to take a moment and think why would this be a safe approach?
+  Make sure you fix this slight issue as our graders do not duplicated code.
+
+As usual, compile your `tests.bin` binary and run it using `./run_tests.bin 4`
+and make sure you pass all the tests.
+
+# Test 5: Removing the Need for `finish_thread`.
+
+If you've experimented with writing your own test thread functions, you may have
+noticed how super-bad news it is if you write a threaded function that doesn't
+call `finish_thread` when it returns.  Your program instantly and errorlessly
+terminates, and even judicious use of a debugger can't identify the problem
+(because this is considered a "natural" exit, not an error).
+
+If you haven't seen this, try running Test 5 without implementing any code so
+you see what that looks like.
+
+We could make the error more obvious, but rather than that, it would be better
+if the thread function returning just called `finish_thread` implicitly. The way
+to do this is to add a new helper function that `makecontext` calls (instead
+of the actual thread function).  This function will take 2 parameters, the
+actual thread function pointer and the void pointer parameter to pass it.
+
+Then the helper function will call the actual thread function, and once it
+returns, call `finish_thread`.  If we wanted to, we could also add some
+initialization that occurs before the function call - not needed quite yet, but
+it will be quite handy once we have preemption in a future assignment.
+
+As usual, compile your `tests.bin` binary and run it using `./run_tests.bin 5`
+and make sure you pass all the tests.
+
+# Test 6: Freeing What We Have Malloced
+
+Finally, we have to take care of freeing everything that we have malloced for
+each thread once it finishes.  Your first instinct might be that the helper
+function we implemented in the previous step would be a great place to call 
+`free` to free the thread stack allocation.  **This is a terrible idea!**  (stop
+for a second and see if you can figure out why it is a terrible idea without
+reading my solution)
+
+This is particularly bad news because most of the time this code will probably
+work, because the stack remains in use for such a short time the OS will
+probably not repurpose its page.  But then 1 out of 1000 runs, you'll
+spontaneously get a segmentation fault - good luck tracking that down.  Remember
+that an appropriate amount of paranoia is what is necessary.
+
+## Fixing the Issue
+
+The `free` call we need cannot really happen while we are running the thread,
+thus calling it from `finish_thread` or the helper function is a not a good
+idea. Therefore, the only place we can actually call `free` is the scheduler.
+Once a thread is finished, we need a way to tell our scheduler that that thread
+is done and that we can free its stack. Your job in this step is to implement a
+way to inform the scheduler of when it must free a thread's stack.
+
+## Testing Your Code
+
+To accurately test your implementation, we need to make that every byte of
+memory that you malloc must be freed. One impressive tool that can help us test
+that if `valgrind`. It is real easy to use.
+
+First, make sure ou have `valgrind` installed. If not, then you can install
+using your favorite Linux package manager. Assuming you're on Ubuntu, that would
+look something like `sudo apt install -y valgrind` or maybe using `snap`.
+
+Second, you can run `valgrind` on our final set of test cases. As usual, compile
+your code to generated the updated `tests.bin` binary and then run that binary
+in `valgrind` as follows:
+
+```shell
+$ valgrin ./tests.bin 6
+==17524== Memcheck, a memory error detector
+==17524== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==17524== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==17524== Command: ./memtry 6
+==17524== 
+==17524== Warning: client switching stacks?  SP change: 0x1ffefffc78 --> 0x5202818
+==17524==          to suppress, use: --max-stackframe=137336181856 or greater
+==17524== Warning: client switching stacks?  SP change: 0x52027c8 --> 0x1ffefffc80
+==17524==          to suppress, use: --max-stackframe=137336181944 or greater
+==17524== Warning: client switching stacks?  SP change: 0x1ffefffc78 --> 0x5212858
+==17524==          to suppress, use: --max-stackframe=137336116256 or greater
+==17524==          further instances of this message will not be shown.
+........
+
+OK (8 tests)
+
+==17524== 
+==17524== HEAP SUMMARY:
+==17524==     in use at exit: 0 bytes in 0 blocks
+==17524==   total heap usage: 54 allocs, 54 frees, 2,238,125 bytes allocated
+==17524== 
+==17524== All heap blocks were freed -- no leaks are possible
+==17524== 
+==17524== For counts of detected and suppressed errors, rerun with: -v
+==17524== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+```
+
+If your code is correct, you should see something like the output above.  The
+warning you see in there about switching stacks are okay since we are indeed
+switching stacks.
+
+### Possible Buggy Outcome: Memory Leaks
+
+If your code does not free what it mallocs (i.e., you have memory leaks), then
+your output might look something like the following:
+
+```shell
+valgrind ./run_tests.bin 6                                           
+==17632== Memcheck, a memory error detector
+==17632== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==17632== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==17632== Command: ./memtry 6
+==17632== 
+doing a malloc
+doing a malloc
+==17632== Warning: client switching stacks?  SP change: 0x1ffefffc78 --> 0x5202c58
+==17632==          to suppress, use: --max-stackframe=137336180768 or greater
+==17632== Warning: client switching stacks?  SP change: 0x5202c08 --> 0x1ffefffc80
+==17632==          to suppress, use: --max-stackframe=137336180856 or greater
+==17632== Warning: client switching stacks?  SP change: 0x1ffefffc78 --> 0x5212c98
+==17632==          to suppress, use: --max-stackframe=137336115168 or greater
+==17632==          further instances of this message will not be shown.
+........
+
+OK (8 tests)
+
+==17632== 
+==17632== HEAP SUMMARY:
+==17632==     in use at exit: 2,228,224 bytes in 34 blocks
+==17632==   total heap usage: 54 allocs, 20 frees, 2,238,125 bytes allocated
+==17632== 
+==17632== LEAK SUMMARY:
+==17632==    definitely lost: 1,835,008 bytes in 28 blocks
+==17632==    indirectly lost: 65,536 bytes in 1 blocks
+==17632==      possibly lost: 131,072 bytes in 2 blocks
+==17632==    still reachable: 196,608 bytes in 3 blocks
+==17632==         suppressed: 0 bytes in 0 blocks
+==17632== Rerun with --leak-check=full to see details of leaked memory
+==17632== 
+==17632== For counts of detected and suppressed errors, rerun with: -v
+==17632== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+```
+
+Notice that the output above is telling that we have leaked over 1 MB in our 8
+tests, that is far from ideal!
+
+### Possible Buggy Outcome: Illegal Memory Access
+
+Another type of memory bug that might occur is that of an illegal access to a
+(freed) memory page. In that case, you `valgrind` output might look something
+like the following:
+
+```shell
+$ valgrind ./run_tests.bin 6
+==17746== Memcheck, a memory error detector
+==17746== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==17746== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==17746== Command: ./memtry 6
+==17746== 
+==17746== Warning: client switching stacks?  SP change: 0x1ffefffc78 --> 0x5202818
+==17746==          to suppress, use: --max-stackframe=137336181856 or greater
+==17746== Warning: client switching stacks?  SP change: 0x52027c8 --> 0x1ffefffc80
+==17746==          to suppress, use: --max-stackframe=137336181944 or greater
+==17746== Warning: client switching stacks?  SP change: 0x1ffefffc78 --> 0x5212858
+==17746==          to suppress, use: --max-stackframe=137336116256 or greater
+==17746==          further instances of this message will not be shown.
+==17746== Invalid write of size 8
+==17746==    at 0x4C2E10B: free (vg_replace_malloc.c:530)
+==17746==    by 0x10901D: finish_thread (in /home/hewner/Private/play/threading/memtry)
+==17746==    by 0x108D75: thread_run_helper (in /home/hewner/Private/play/threading/memtry)
+==17746==    by 0x4E8307F: ??? (in /usr/lib/libc-2.26.so)
+==17746==  Address 0x52027a8 is 65,400 bytes inside a block of size 65,536 free'd
+==17746==    at 0x4C2E10B: free (vg_replace_malloc.c:530)
+==17746==    by 0x10901D: finish_thread (in /home/hewner/Private/play/threading/memtry)
+==17746==    by 0x108D75: thread_run_helper (in /home/hewner/Private/play/threading/memtry)
+==17746==    by 0x4E8307F: ??? (in /usr/lib/libc-2.26.so)
+==17746==  Block was alloc'd at
+==17746==    at 0x4C2CEDF: malloc (vg_replace_malloc.c:299)
+==17746==    by 0x108E52: create_new_parameterized_thread (in /home/hewner/Private/play/threading/memtry)
+==17746==    by 0x108D95: create_new_thread (in /home/hewner/Private/play/threading/memtry)
+==17746==    by 0x10960C: test_5 (in /home/hewner/Private/play/threading/memtry)
+==17746==    by 0x109DFB: CuTestRun (in /home/hewner/Private/play/threading/memtry)
+==17746==    by 0x10A53B: CuSuiteRun (in /home/hewner/Private/play/threading/memtry)
+==17746==    by 0x109828: main (in /home/hewner/Private/play/threading/memtry)
+==17746== 
+
+***MANY MANY MORE ERRORS OMITTED HERE***
+
+........
+
+OK (8 tests)
+
+==17746== 
+==17746== HEAP SUMMARY:
+==17746==     in use at exit: 0 bytes in 0 blocks
+==17746==   total heap usage: 54 allocs, 54 frees, 2,238,125 bytes allocated
+==17746== 
+==17746== All heap blocks were freed -- no leaks are possible
+==17746== 
+==17746== For counts of detected and suppressed errors, rerun with: -v
+==17746== ERROR SUMMARY: 136 errors from 36 contexts (suppressed: 0 from 0)
+```
+
+As you can see above, even though the tests seem to run fine, there were
+actually plenty of illegal memory accesses here.
+
+# Submitting Your Code
+
+Submit all assignment source files (c files, h files) but not binaries
+(example1, run_tests, .o files) via Gradescope.
+
+## Submission Checklist
+
+- [ ]  My code compiles and generates the right executables.
+- [ ]  I ran all of the test cases and all the tests pass.
+- [ ]  I ran `valgrind` on my code and no memory bugs were detected.
+- [ ]  I submitted all my source files to Gradescope for grading.
+
+# Grading Rubric
+
+| Part                                                                                   | Point Value |
+|:---------------------------------------------------------------------------------------|-------------|
+| Test 1: Scheduling a single thread once                                                | 40          |
+| Test 2(a): Scheduling 2 threads that each run the same code                            | 16          |
+| Test 2(b): Scheduling 3 threads where 2 run the same code and 1 runs different code    | 12          |
+| Test 2(interleave): Scheduling 2 threads that interleave their execution               | 12          |
+| Test 3: Scheduling a thread that creates many quick threads                            | 40          |
+| Test 4: Scheduling threads that each runs a function that takes a parameter            | 20          |
+| Test 5: Scheduling threads that run functions that don't explicitly call finish_thread | 20          |
+| Test 6: Running Test 5 with valgrind to look for memory leaks and other errors         | 40          |
+
