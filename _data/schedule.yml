@@ -188,12 +188,14 @@
 
 29:
   reading:
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched.pdf"> Chapter 7 of OSTEP </a>
   topics:
     - '<a href="{{ site.baseurl }}/notes/session29"> CPU Scheduling I </a>'
   materials:
 
 30:
   reading:
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched-mlfq.pdf"> Chapter 8 of OSTEP </a>
   topics:
     - '<a href="{{ site.baseurl }}/notes/session30"> CPU Scheduling II </a>'
   materials:
