@@ -200,6 +200,20 @@
     - '<a href="{{ site.baseurl }}/notes/session30"> CPU Scheduling II </a>'
   materials:
 
+31:
+  reading:
+    - <a href="https://pdos.csail.mit.edu/6.828/2022/xv6/book-riscv-rev3.pdf"> Chapter 7 of the xv6 book </a>
+  topics:
+    - <a href="{{ site.baseurl }}/notes/session31"> The xv6 scheduler </a>
+  materials:
+
+32:
+  reading:
+  topics:
+    - <b>Lab Day</b>
+  materials:
+
+
 # 10:
 #   reading:
 #   topics:
