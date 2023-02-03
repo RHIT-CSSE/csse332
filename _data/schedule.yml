@@ -209,6 +209,7 @@
 
 32:
   reading:
+    - <a href="{{ site.baseurl }}/labs/lab11/"> Hybrid Threads </a>
   topics:
     - <b>Lab Day</b>
   materials:

@@ -1,1 +1,0 @@
-../homeworks/10_hybrid_threads/README.md

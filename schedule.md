@@ -417,7 +417,10 @@ Exam 2 Walkthrough</td>
 <tr>
 <td markdown="span">
 32 <br/> Fri, Feb 03 2023</td>
-<td markdown="span">
+<td markdown="span" style="text-align:left;">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> <a href="{{ site.baseurl }}/labs/lab11/"> Hybrid Threads </a> </li>
+</ul>{:/}
 </td>
 <td markdown="span" style="text-align:center">
 <b>Lab Day</b></td>
@@ -425,11 +428,13 @@ Exam 2 Walkthrough</td>
 </td>
 </tr>
 <tr>
-<tr><td markdown="span" colspan="5" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;"></td></tr><td rowspan="4" markdown="span" style="font-size:xx-large;"><a name="w10">10</a></td>
+<tr><td markdown="span" colspan="5" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;"></td></tr><td rowspan="5" markdown="span" style="font-size:xx-large;"><a name="w10">10</a></td>
 <td markdown="span">
 33 <br/> Mon, Feb 06 2023</td>
 <td markdown="span" colspan="3">N/A</td>
 </tr>
+<tr>
+<td markdown="span" colspan="4"> [[Challenge] Hybrid Threads]({{ site.baseurl }}/labs/lab11) DUE Mon, Feb 06 2023 23:59 [Submission box]({{ site.gradescope_url }}) <font color="#aaa"> grader: @TBA </font> </td></tr>
 <tr>
 <td markdown="span">
 34 <br/> Tue, Feb 07 2023</td>
