@@ -431,45 +431,91 @@ Exam 2 Walkthrough</td>
 <tr><td markdown="span" colspan="5" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;"></td></tr><td rowspan="5" markdown="span" style="font-size:xx-large;"><a name="w10">10</a></td>
 <td markdown="span">
 33 <br/> Mon, Feb 06 2023</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span" style="text-align:left;">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> <a href="https://www.eecs.umich.edu/courses/eecs588/static/stack_smashing.pdf"> Smashing The Stack for Fun and Profit </a> </li>
+</ul>{:/}
+</td>
+<td markdown="span" style="text-align:center">
+<a href="{{ site.baseurl }}/notes/session33"> Introduction to Memory Safety </a></td>
+<td markdown="span">
+</td>
 </tr>
 <tr>
 <td markdown="span" colspan="4"> [[Challenge] Hybrid Threads]({{ site.baseurl }}/labs/lab11) DUE Mon, Feb 06 2023 23:59 [Submission box]({{ site.gradescope_url }}) <font color="#aaa"> grader: @TBA </font> </td></tr>
 <tr>
 <td markdown="span">
 34 <br/> Tue, Feb 07 2023</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span" style="text-align:left;">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> <a href="https://hovav.net/ucsd/dist/geometry.pdf"> The Geometry of Innocent Flesh on the Bone </a> </li>
+</ul>{:/}
+</td>
+<td markdown="span" style="text-align:center">
+<a href="{{ site.baseurl }}/notes/session34"> Stack Smashing and Its Variants </a></td>
+<td markdown="span">
+</td>
 </tr>
 <tr>
 <td markdown="span">
 35 <br/> Thu, Feb 09 2023</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:center">
+<b> Project Meetings </b></td>
+<td markdown="span">
+</td>
 </tr>
 <tr>
 <td markdown="span">
 36 <br/> Fri, Feb 10 2023</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:center">
+<b> Stack Smashing Lab and Project Meetings </b></td>
+<td markdown="span">
+</td>
 </tr>
 <tr>
 <tr><td markdown="span" colspan="5" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;"></td></tr><td rowspan="4" markdown="span" style="font-size:xx-large;"><a name="w11">11</a></td>
 <td markdown="span">
 37 <br/> Mon, Feb 13 2023</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:center">
+<a href="{{ site.baseurl }}/notes/session37"> Special Topics in OS Security </a></td>
+<td markdown="span">
+</td>
 </tr>
 <tr>
 <td markdown="span">
 38 <br/> Tue, Feb 14 2023</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:center">
+<a href="{{ site.baseurl }}/notes/session38"> Special Topics in OS </a></td>
+<td markdown="span">
+</td>
 </tr>
 <tr>
 <td markdown="span">
 39 <br/> Thu, Feb 16 2023</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:center">
+<b> Project Meetings </b></td>
+<td markdown="span">
+</td>
 </tr>
 <tr>
 <td markdown="span">
 40 <br/> Fri, Feb 17 2023</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:center">
+<a href="{{ site.baseurl }}/notes/session40"> Class Wrapup and Project Conclusion </a></td>
+<td markdown="span">
+</td>
 </tr>
 </tbody>
 </table>
