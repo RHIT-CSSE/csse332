@@ -428,7 +428,7 @@ Exam 2 Walkthrough</td>
 </td>
 </tr>
 <tr>
-<tr><td markdown="span" colspan="5" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;"></td></tr><td rowspan="5" markdown="span" style="font-size:xx-large;"><a name="w10">10</a></td>
+<tr><td markdown="span" colspan="5" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;"></td></tr><td rowspan="6" markdown="span" style="font-size:xx-large;"><a name="w10">10</a></td>
 <td markdown="span">
 33 <br/> Mon, Feb 06 2023</td>
 <td markdown="span" style="text-align:left;">
@@ -466,6 +466,8 @@ Exam 2 Walkthrough</td>
 <td markdown="span">
 </td>
 </tr>
+<tr>
+<td markdown="span" colspan="4"> [[Challenge] Mini-Project I]({{ site.baseurl }}/labs/lab12) DUE Thu, Feb 09 2023 23:59 [Submission box]({{ site.gradescope_url }}) <font color="#aaa"> grader: @TBA </font> </td></tr>
 <tr>
 <td markdown="span">
 36 <br/> Fri, Feb 10 2023</td>
