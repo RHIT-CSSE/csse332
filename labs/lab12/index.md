@@ -312,3 +312,9 @@ would want to see come to alive, I would be more than happy to sit down and talk
 to you about it. We would devise a plan that simplifies the problem as much as
 possible to make it doable within the time available.
 
+# Submission
+
+After our in-class discussions, please submit a small proposal (a couple
+paragraph at the most) listing your group members, your idea that you would like
+to implement, and a tentative plan at implementing it. It would be great if you
+could submit Markdown or PDF files, but please avoid Word like the plague.
