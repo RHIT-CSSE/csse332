@@ -479,7 +479,7 @@ Exam 2 Walkthrough</td>
 </td>
 </tr>
 <tr>
-<tr><td markdown="span" colspan="5" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;"></td></tr><td rowspan="4" markdown="span" style="font-size:xx-large;"><a name="w11">11</a></td>
+<tr><td markdown="span" colspan="5" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;"></td></tr><td rowspan="5" markdown="span" style="font-size:xx-large;"><a name="w11">11</a></td>
 <td markdown="span">
 37 <br/> Mon, Feb 13 2023</td>
 <td markdown="span">
@@ -489,6 +489,8 @@ Exam 2 Walkthrough</td>
 <td markdown="span">
 </td>
 </tr>
+<tr>
+<td markdown="span" colspan="4"> [Stack Smashing Lab]({{ site.baseurl }}/labs/lab13) DUE Mon, Feb 13 2023 23:59 [Submission box]({{ site.gradescope_url }}) <font color="#aaa"> grader: @TBA </font> </td></tr>
 <tr>
 <td markdown="span">
 38 <br/> Tue, Feb 14 2023</td>
