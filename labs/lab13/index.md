@@ -39,17 +39,19 @@ At the end of this lab, you should be able to:
 
 # Getting the Source Code
 
-To obtain the updated source code, make sure to fetch the `lab13` branch of the
-xv6 source code repository. To do so, from your xv6 top level directory, issue
-the following commands:
+For this lab, you will be using the native Linux virtual machine (or baremetal
+machine if you have one) and not the xv6 operation system. Please note that this
+lab might behave slightly differently if you are running it on Windows or
+MacOs; therefore, we highly recommend that you stick to using a Linux machine,
+either natively or via WSL2.
+
+To obtain the starting code for this lab, navigate to the top level directory of
+your __csse332 class repository__ and `cd` into the `labs/lab13` directory as
+follows:
 ```shell
-$ git fetch
-$ git checkout lab13
+$ cd /path/to/csse332/git/repository/
 $ git pull
-```
-You should be on a new branch that is called `lab13`. You can verify that using
-```shell
-$ git branch
+$ cd labs/lab13
 ```
 
 # Installing Needed Software
