@@ -243,25 +243,25 @@
 37:
   reading:
   topics:
-    - <a href="{{ site.baseurl }}/notes/session37"> Special Topics in OS Security </a>
+    - <b> Project Meetings </b>
   materials:
 
 38:
   reading:
   topics:
-    - <a href="{{ site.baseurl }}/notes/session38"> Special Topics in OS </a>
+    - <b> Project Meetings </b>
   materials:
 
 39:
   reading:
   topics:
-    - <b> Project Meetings </b>
+    - <a href="{{ site.baseurl }}/notes/session39"> Special Topics in OS Security </a>
   materials:
 
 40:
   reading:
   topics:
-    - <a href="{{ site.baseurl }}/notes/session40"> Class Wrapup and Project Conclusion </a>
+    - <a href="{{ site.baseurl }}/notes/session40"> Special Topics in OS and Class Wrapup </a>
   materials:
 
 # 10:

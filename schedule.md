@@ -485,7 +485,7 @@ Exam 2 Walkthrough</td>
 <td markdown="span">
 </td>
 <td markdown="span" style="text-align:center">
-<a href="{{ site.baseurl }}/notes/session37"> Special Topics in OS Security </a></td>
+<b> Project Meetings </b></td>
 <td markdown="span">
 </td>
 </tr>
@@ -497,7 +497,7 @@ Exam 2 Walkthrough</td>
 <td markdown="span">
 </td>
 <td markdown="span" style="text-align:center">
-<a href="{{ site.baseurl }}/notes/session38"> Special Topics in OS </a></td>
+<b> Project Meetings </b></td>
 <td markdown="span">
 </td>
 </tr>
@@ -507,7 +507,7 @@ Exam 2 Walkthrough</td>
 <td markdown="span">
 </td>
 <td markdown="span" style="text-align:center">
-<b> Project Meetings </b></td>
+<a href="{{ site.baseurl }}/notes/session39"> Special Topics in OS Security </a></td>
 <td markdown="span">
 </td>
 </tr>
@@ -517,7 +517,7 @@ Exam 2 Walkthrough</td>
 <td markdown="span">
 </td>
 <td markdown="span" style="text-align:center">
-<a href="{{ site.baseurl }}/notes/session40"> Class Wrapup and Project Conclusion </a></td>
+<a href="{{ site.baseurl }}/notes/session40"> Special Topics in OS and Class Wrapup </a></td>
 <td markdown="span">
 </td>
 </tr>
