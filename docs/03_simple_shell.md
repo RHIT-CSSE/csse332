@@ -1,1 +1,0 @@
-../homeworks/03_simple_shell/README.md
