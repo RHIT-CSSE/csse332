@@ -497,7 +497,7 @@ Exam 2 Walkthrough</td>
 <td markdown="span">
 </td>
 <td markdown="span" style="text-align:center">
-<b> Project Meetings </b></td>
+<a href="{{ site.baseurl }}/notes/session38"> Project Meetings </a></td>
 <td markdown="span">
 </td>
 </tr>

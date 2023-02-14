@@ -249,7 +249,7 @@
 38:
   reading:
   topics:
-    - <b> Project Meetings </b>
+    - <a href="{{ site.baseurl }}/notes/session38"> Project Meetings </a>
   materials:
 
 39:
