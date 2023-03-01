@@ -118,6 +118,11 @@ layout: page
 title: Class Schedule
 ---
 
+The following table outlines the schedule of lectures and assignments for the
+course. It should give you a good idea on the load expected in this class on a
+week by week basis. However, we reserve the right to change the order of
+lectures and/or assignments with an advanced week's notice.
+
 **Jump to week**: **[0](#w0) [1](#w1) [2](#w2) [3](#w3) [4](#w4) [5](#w5) [6](#w6) [7](#w7) [8](#w8) [9](#w9) [10](#w10)**
 
 <table>
