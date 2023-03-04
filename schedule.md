@@ -39,7 +39,7 @@ lectures and/or assignments with an advanced week's notice.
 </td>
 </tr>
 <tr>
-<td markdown="span" colspan="4"> [WSL2 Install]({{ site.baseurl }}/labs/wsl) DUE Mon, Mar 06 2023 23:59 [Write a comment here](https://campuswire.com/c/G0EB73CA1/feed/1) <font color="#aaa"> grader: @TBA </font> </td></tr>
+<td markdown="span" colspan="4"> [WSL2 Install]({{ site.baseurl }}/labs/wsl) DUE Mon, Mar 06 2023 23:59 No submission needed <font color="#aaa"> grader: @TBA </font> </td></tr>
 <tr>
 <td markdown="span">
 2 <br/> Tue, Mar 07 2023</td>

@@ -15,6 +15,10 @@ of the Ubuntu distribution as part of WSL2, clone the class repository, connect
 VSCode to the Ubuntu distribution, and some tips and tricks to access and manage
 your file. 
 
+**Please make sure that you are running WSL2 and not WSL1.** If you still need
+to run WSL1 for another class, then you can easily specify which version of WSL
+you want for each virtual machine you run.
+
 # WSL2 installation
 
 If you do not have WSL2 and a Linux distribution already installed, Microsoft
@@ -24,9 +28,10 @@ distribution if you comfortable with it). These instructions can be found
 [here](https://learn.microsoft.com/en-us/windows/wsl/install).
 
 If you run into any issues during the installation process, please make a post
-on [CampusWire]({{ site.campuswire_url }}) detailing the errors you faced along
-with the version of wsl2 that you can trying to install. One of your instructors
-(or fellow classmates) will reply to help you out as soon as possible. 
+on the [Moodle forum]({{ site.moodle_url }}) detailing the errors you faced
+along with the version of wsl2 that you can trying to install. One of your
+instructors (or fellow classmates) will reply to help you out as soon as
+possible. 
 
 ## [Optional] Installing the Windows terminal
 
@@ -120,41 +125,4 @@ $ explorer.exe .
 ```
 A new file explorer window should show up that contains the content of your
 `csse332` repository. 
-
-## More tips and tricks
-
-If you have any wsl2, VSCode, or Linux tips and tricks that you would like to
-contribute, we would be more than happy to add them to this page. To submit your
-contributions, please make a public post on [CampusWire]({{ site.campuswire_url
-}}) and tag it with the `Tips and Tricks` tag. We will then review it and add it
-to this page.
-
-# Troubleshooting
-
-If at any point of this document you run into issues with your installation or
-have any questions, then please make a public post on [CampusWire]({{
-  site.campuswire_url }}) and tag it with the `WSL2 Troubleshooting` tag. One of
-the instruction staff should reply to you with details as soon as possible. 
-
-# Submission
-
-At the end of this lab, you should have a working copy of wsl2 with the Ubuntu
-Linux distribution installed on your Windows machine. Once you are confident
-about your setup, please submit your work for this lab by commenting on the
-''Introductions Main Thread'' thread on [CampusWire]({{ site.campuswire_url }})
-(you can find a direct link to the thread
-[here](https://campuswire.com/c/G0EB73CA1/feed/1)) and introducing yourself.
-
-Make sure your include the following information:
-- Your name (i.e., don't make your post anonymous, otherwise we won't know who
-  you are). 
-- Your class and major. 
-- Where you are from. 
-- Your favorite book, movie, video game, TV series, etc.
-- A book or movie you are currently reading/watching. 
-- Your favorite thing about your journey at Rose so far.
-- [Optional] A cute picture of your pet(s) if your have any. 
-
-We will use your post to first get to you know, and second as an indicator that
-you have completed your setup successfully and grade this lab accordingly.
 

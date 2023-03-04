@@ -110,13 +110,11 @@ Pearson Education, 2015.
 * Electronic course materials, including the schedule, may be accessed directly
   at the [course website]({{ site.baseurl }}).
 
-<!-- TODO: update link to the quarter's gradescope -->
 * All grades and assignment feedback will be posted on [Gradescope]({{
   site.gradescope_url }}).
 
-<!-- TODO: update link to the quarter's campuswire -->
 * Posting questions, discussions, and answers to questions asked are best done
-  on the course’s [CampusWire]({{ site.campuswire_url }}).
+  on the course’s [Moodle forum]({{ site.moodle_url }}).
 
 
 ## Deadlines and Late Policy

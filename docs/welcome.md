@@ -5,14 +5,22 @@ readtime: true
 date: Fri Nov 25 22:20:51 2022 
 ---
 
-# Winter 2022-2023 Instructor
+# Spring 2022-2023 Instructors
 
-- [Mohammad Noureddine](https://mnoureddine.com)
+- Michael Hewner (Buffalo)
+  - Office:
+  - Office Hours:
+  - Email: hewner `at` rose-hulman `dot` edu
+
+
+- Mohammad Noureddine
   - Please call me Mohammad.
   - Office: Moench F214.
+  - Office Hours: MTRF 2:30 to 4:00 pm, or by appointment.
   - Email: noureddi `at` rose-hulman `dot` edu
   - [Get on my calendar](https://calendly.com/mnoureddine/office-hours)
 
+<!--
 ## Welcome Statement
 
 I am very excited to have the opportunity to offer this class and can’t wait to
@@ -21,4 +29,5 @@ me as part of your support team. I strive to offer you a welcoming environment
 where you can get help on course content, homework, or anything else really.
 Studies conducted by me in my office show that coming to office hours
 increases your chances of success.
+-->
 

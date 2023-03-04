@@ -1,5 +1,5 @@
 name,dirname,date,grader,moodle
-WSL2 Install,wsl,2023-03-06 23:59:00,TBA,[Write a comment here](https://campuswire.com/c/G0EB73CA1/feed/1)
+WSL2 Install,wsl,2023-03-06 23:59:00,TBA,No submission needed
 C Review & xv6 Introduction,lab00/,2023-03-09 23:59:00,ALL,[Submission box]({{ site.gradescope_url }})
 Simple Shell,lab02/,2023-03-13 23:59:00,TBA,[Submission box]({{ site.gradescope_url }})
 Process Lab,lab03,2023-03-16 23:59:00,TBA,[Submission box]({{ site.gradescope_url }})

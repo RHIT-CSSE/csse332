@@ -16,7 +16,6 @@ author: Mohammad A. Noureddine
 navbar-links:
   Moodle: "https://moodle.rose-hulman.edu/course/view.php?id=96841"
   Gradescope: "https://www.gradescope.com/courses/517628"
-  CampusWire: "https://campuswire.com/c/G0EB73CA1/feed"
   Syllabus: "syllabus"
   Schedule: "schedule"
   # Resources:
@@ -43,7 +42,6 @@ gh_labs_url: "https://github.com/RHIT-CSSE/csse332/tree/main/labs"
 
 moodle_url: "https://moodle.rose-hulman.edu/course/view.php?id=96841"
 gradescope_url: "https://www.gradescope.com/courses/517628"
-campuswire_url: "https://campuswire.com/c/G0EB73CA1/feed"
 course_term: "Spring 2022-23"
 
 xv6_book_url: "https://pdos.csail.mit.edu/6.828/2022/xv6/book-riscv-rev3.pdf"

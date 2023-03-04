@@ -2,7 +2,7 @@
 layout: post
 title: Unofficial Syllabus
 readtime: true
-date: Sat Nov 26 06:22:56 2022 
+date: Sat Mar  4 16:25:21 2023 
 ---
 
 ## So what's this course about?
@@ -99,10 +99,9 @@ corner.
 
 ## Annoying your professor
 
-If you have made it this far reading this document, you get the privilege of
-overloading my email inbox with the flags of your favorite World Cup team. If
-you do not like soccer and are following the World Cup, then you can send me a
-funny picture of your pet. If you don't have any pets, then you can send me a
+Students in Sections 1, 2, and 3, if you have made it this far reading this
+document, you get the privilege of overloading my (Mohammad's) email inbox with
+a funny picture of your pet. If you don't have any pets, then you can send me a
 picture of your favorite Norse or Greek deity.
 
 <!-- 

@@ -147,10 +147,10 @@ This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 ```
 
-Once you have the above information, make a public post on [CampusWire]({{
-site.campuswire_url }}) and include all the information above plus any error
-messages that came up during compilation. One of the instructors or TAs will
-get back to you as soon as possible. 
+Once you have the above information, make a public post on the [Moodle forum]({{
+    site.moodle_url }}) and include all the information above plus any error
+messages that came up during compilation. One of the instructors or TAs will get
+back to you as soon as possible. 
 
 # Exercises
 

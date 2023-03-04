@@ -95,8 +95,8 @@ that branch, so it is safe to work on the files directly.
 
 If you have more git setup tips and tricks that you would like to share with us
 and the rest of the class, then we encourage you to do so. Please create a
-public note on [CampusWire]({{ site.campuswire_url }}) and tag it with the "Tips
-and Tricks" tag. We will review your suggestion and add it to this page. 
+public note on the [Moodle forum]({{ site.moodle_url }}) We will review your
+suggestion and add it to this page. 
 
 <!--
 ## What if I already have a public forked repo?
