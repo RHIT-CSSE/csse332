@@ -215,9 +215,15 @@ and `list` is the actual list in memory that contains the elements.
    `capacity` allocated in memory (It is okay if the allocated memory area
    contains garbage data, you do not need to initialize it). 
 
+   To allocate memory in C, you will find the function `malloc` to be very
+   useful.
+
 2. The second function you are to implement is the `al_free` function, which
    takes a pointer to an array list structure and frees that array list. Note
    that you must also free the inner list in case it exists. 
+
+   To free memory in C, you will find the function `free` to be very
+   useful.
 
 3. The third function to implement is the `al_insert_at` function. It takes as
    input a pointer to an array list structure, a position `pos` to insert at,

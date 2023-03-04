@@ -5,6 +5,42 @@ readtime: true
 date: Thu Nov  3 22:29:11 2022 
 ---
 
+# Points Grading Rubric
+
+| Problem                                   | Points   |
+| :-------                                  | -------- |
+| Warmup: Add with pointers                 | 5        |
+| Warmup: Ensure correct order              | 5        |
+| Warmup: Special equals                    | 10       |
+| Warmup: String with Q                     | 10       |
+| ArrayList: create, free, append, get, set | 10       |
+| ArrayList: resize                         | 10       |
+| Sleep: returns and checks errors          | 5        |
+| Sleep: makes system call                  | 15       |
+| Find: in current directory                | 20       |
+| Find: recursive                           | 10       |
+| Total                                     | 100      |
+
+<!--
+# Lab Specifications
+
+To determine which letter grade you shall receive on your submission, the
+graders will use the following specifications: 
+
+1. The submission compiles successfully and boots into xv6. 
+2. The submission correctly creates, destroys, and dereferences pointers to meet
+   the design specifications. 
+3. The submission correctly creates, destroys, and accesses C structures to
+   implement an dynamically re-sizable array list. 
+4. The submission makes use of system calls to obtain system-related
+   information.
+5. The submission makes use of system calls to perform privileged services on
+   behalf of the user. 
+6. The submission checks for common errors and displays proper error messages
+   when encountered. 
+7. The code is properly commented and readable. 
+
+
 # Grading Scheme
 
 In this class, we will generally try to follow the __EMRN__ grading rubric as
@@ -36,38 +72,4 @@ You can receive one of four letter grades:
    with your submission to justify grading it. You definitely should plan to
    meet with your instructor to devise a plan to recover and address your
    performance in the class. 
-
-
-# Points Grading Rubric
-
-| Problem                                   | Points   |
-| :-------                                  | -------- |
-| Warmup: Add with pointers                 | 5        |
-| Warmup: Ensure correct order              | 5        |
-| Warmup: Special equals                    | 10       |
-| Warmup: String with Q                     | 10       |
-| ArrayList: create, free, append, get, set | 10       |
-| ArrayList: resize                         | 10       |
-| Sleep: returns and checks errors          | 5        |
-| Sleep: makes system call                  | 15       |
-| Find: in current directory                | 20       |
-| Find: recursive                           | 10       |
-| Total                                     | 100      |
-
-# Lab Specifications
-
-To determine which letter grade you shall receive on your submission, the
-graders will use the following specifications: 
-
-1. The submission compiles successfully and boots into xv6. 
-2. The submission correctly creates, destroys, and dereferences pointers to meet
-   the design specifications. 
-3. The submission correctly creates, destroys, and accesses C structures to
-   implement an dynamically re-sizable array list. 
-4. The submission makes use of system calls to obtain system-related
-   information.
-5. The submission makes use of system calls to perform privileged services on
-   behalf of the user. 
-6. The submission checks for common errors and displays proper error messages
-   when encountered. 
-7. The code is properly commented and readable. 
+-->
