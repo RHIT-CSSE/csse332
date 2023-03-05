@@ -9,7 +9,7 @@ date: Fri Nov 25 22:20:51 2022
 
 - Michael Hewner (Buffalo)
   - Office:
-  - Office Hours:
+  - Office Hours: MTRF 1:30 pm - 2:20 pm.
   - Email: hewner `at` rose-hulman `dot` edu
 
 
