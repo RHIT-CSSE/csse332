@@ -2,7 +2,7 @@
 layout: post
 title: Introduction to Operating Systems
 readtime: true
-date: Mon Nov 28 14:54:29 2022
+date: Tue Mar  7 07:19:30 2023 
 ---
 
 # Learning Objectives
@@ -29,7 +29,6 @@ In this lecture, we will cover the following topics:
 <!-- vim-markdown-toc GFM -->
 
 * [Introductions and Syllabus Time](#introductions-and-syllabus-time)
-* [Story Time: The Norse Creation Myth](#story-time-the-norse-creation-myth)
 * [The Operating System](#the-operating-system)
   * [Definition(s)](#definitions)
   * [The Roles of an OS](#the-roles-of-an-os)
@@ -52,17 +51,6 @@ In this lecture, we will cover the following topics:
   - Exams: two exams and no final.
   - Grade distribution.
   - Project.
-
-# Story Time: The Norse Creation Myth
-
-- Here's an image that sums up the Norse creation myth:
-
-  <img src="https://vikingr.org/wp-content/uploads/2022/01/f1.jpg.webp" width="500" />
-
-- ❓How is this relevant?
-- We will focus on how Odin and his brothers created humans. 
-- Giving them limbs and organs (hardware and resources) is not enough, they need
-  a way to manage and use those resources in the most efficient way possible. 
 
 # The Operating System
 
