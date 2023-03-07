@@ -1,4 +1,4 @@
-all: glue illusionist referee
+all: glue illusionist referee malloc fptrs
 
 glue:
 	gcc -o glue glue.c
@@ -9,5 +9,11 @@ illusionist:
 referee:
 	gcc -o referee referee.c
 
+malloc:
+	gcc -o malloc malloc.c
+
+fptrs:
+	gcc -o fptrs fptrs.c
+
 clean:
-	rm glue illusionist referee
+	rm -rf glue illusionist referee malloc fptrs
