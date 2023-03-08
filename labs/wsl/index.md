@@ -60,7 +60,7 @@ $ sudo apt update
 ```
 and then
 ```shell
-$ sudo apt install -y build-essential git gdb
+$ sudo apt install -y build-essential git gdb python3 python-is-python3
 ```
 
 There will be other software packages that you will need, but we will get to

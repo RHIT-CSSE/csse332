@@ -67,7 +67,7 @@ lectures and/or assignments with an advanced week's notice.
 </td>
 </tr>
 <tr>
-<td markdown="span" colspan="4"> [C Review & xv6 Introduction]({{ site.baseurl }}/labs/lab00/) DUE Thu, Mar 09 2023 23:59 [Submission box]({{ site.gradescope_url }}) <font color="#aaa"> grader: @ALL </font> </td></tr>
+<td markdown="span" colspan="4"> [C Review & xv6 Introduction]({{ site.baseurl }}/labs/lab00/) DUE Thu, Mar 09 2023 23:59 [Submission box]({{ site.gradescope_url }}) <font color="#aaa"> grader: @urbonal xiongy </font> </td></tr>
 <tr>
 <td markdown="span">
 4 <br/> Fri, Mar 10 2023</td>

@@ -225,6 +225,7 @@ and `list` is the actual list in memory that contains the elements.
    To free memory in C, you will find the function `free` to be very
    useful.
 
+<!--
 3. The third function to implement is the `al_insert_at` function. It takes as
    input a pointer to an array list structure, a position `pos` to insert at,
    and a value `val` to insert, and then replaces the element at `pos` (if it
@@ -233,6 +234,7 @@ and `list` is the actual list in memory that contains the elements.
    **WARNING** This function does not increase the size of the array list,
    rather it only replaces an existing element. If an element at the input
    position does not exists, the function simply does nothing and returns. 
+-->
 
 4. The next function to implement is the `al_get_at` function. It takes as input
    a pointer to an array list structure and a position `pos`. It returns the
