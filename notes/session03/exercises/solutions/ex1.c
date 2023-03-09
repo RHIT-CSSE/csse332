@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <sys/types.h>
 #include <unistd.h>
+#include <sys/wait.h>
 
 // STEP 1:
 // After our in-class discussion, write code here that will create two

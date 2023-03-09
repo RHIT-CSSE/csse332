@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <sys/types.h>
 #include <unistd.h>
+#include <sys/wait.h>
 
 // STEP 1:
 // Look at the below piece of code and try to answer the question in the printf
