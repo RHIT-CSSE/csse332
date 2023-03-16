@@ -7,7 +7,7 @@ insert_final_newline = true
 [{Makefile, makefile}]
 indent_style = tab
 
-[{*.c, *.h}]
+[{*.c,*.h}]
 indent_style = space
 indent_size = 2
 
