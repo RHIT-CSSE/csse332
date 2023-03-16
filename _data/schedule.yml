@@ -53,9 +53,10 @@
 
 7:
   reading:
+    - <a hred="https://www.gnu.org/software/make/manual/make.html"> Make documentation page </a>
   topics:
-    - <a href="{{ site.baseurl }}/notes/session07"> Introduction to Paging </a>
-  materials: 
+    - <a href="{{ site.baseurl }}/notes/makefiles/"> Makefiles </a>
+  materials:
 
 8:
   reading:
@@ -68,10 +69,9 @@
 ###############################################################################
 9:
   reading:
-    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-paging.pdf"> Chapter 8 of OSTEP </a>
   topics:
-    - <a href="{{ site.baseurl }}/notes/session15"> Paging </a>
-  materials:
+    - <a href="{{ site.baseurl }}/notes/session07"> Introduction to Paging </a>
+  materials: 
 
 10:
   reading:
@@ -87,9 +87,9 @@
 
 12:
   reading:
-    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-smalltables.pdf"> Chapter 12 of OSTEP </a>
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-paging.pdf"> Chapter 8 of OSTEP </a>
   topics:
-    - <a href="{{ site.baseurl }}/notes/session16"> Multi-level Page Tables </a>
+    - <a href="{{ site.baseurl }}/notes/session15"> Paging </a>
   materials:
 
 ###############################################################################
@@ -97,34 +97,42 @@
 ###############################################################################
 13:
   reading:
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-smalltables.pdf"> Chapter 12 of OSTEP </a>
   topics:
-    - <a href="{{ site.baseurl }}/notes/session17"> Paging Activity </a>
+    - <a href="{{ site.baseurl }}/notes/session16"> Multi-level Page Tables </a>
   materials:
 
 14:
   reading:
   topics:
-    - '<a href="{{ site.baseurl }}/labs/lab05"> Lab: Virtual Memory II </a>'
+    - <a href="{{ site.baseurl }}/notes/session17"> Paging Activity </a>
   materials:
 
 15:
   reading:
-    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf"> Chapter 26 of OSTEP </a>
   topics:
-    - '<a href="{{ site.baseurl }}/notes/session18"> Threads: Lightweight Processes </a>'
+    - '<a href="{{ site.baseurl }}/labs/lab05"> Lab: Virtual Memory II </a>'
   materials:
 
 16:
   reading:
     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf"> Chapter 26 of OSTEP </a>
   topics:
-    - '<a href="{{ site.baseurl }}/notes/session18"> Threads: Thread Creation </a>'
+    - '<a href="{{ site.baseurl }}/notes/session18"> Threads: Lightweight Processes </a>'
   materials:
+
 
 ###############################################################################
 # WEEK 5
 ###############################################################################
 17:
+  reading:
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf"> Chapter 26 of OSTEP </a>
+  topics:
+    - '<a href="{{ site.baseurl }}/notes/session18"> Threads: Thread Creation </a>'
+  materials:
+
+18:
   reading:
     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-locks.pdf"> Chapter 28 of OSTEP </a>
     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 of OSTEP </a>
@@ -132,24 +140,18 @@
     - '<a href="{{ site.baseurl }}/notes/session19"> Concurrency: Mutex & Condition Variables </a>'
   materials:
 
-18:
+19:
   reading:
     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 of OSTEP </a>
   topics:
     - '<a href="{{ site.baseurl }}/notes/session20"> Concurrency: More Condition Variables </a>'
   materials:
 
-19:
+20:
   reading:
     - <a href="https://en.wikipedia.org/wiki/Producer%E2%80%93consumer_problem"> Wiki Page for Prod/Cons Problem </a>
   topics:
     - '<a href="{{ site.baseurl }}/notes/session21"> Concurrency: Producer-Consumer Problem </a>'
-  materials:
-
-20:
-  reading:
-  topics:
-    - '<a href="{{ site.baseurl }}/notes/session22"> Concurrency: Readers/Writers Problem </a>'
   materials:
 
 ###############################################################################
@@ -158,38 +160,38 @@
 21:
   reading:
   topics:
-    - '<a href="{{ site.baseurl }}/notes/session23"> Concurrency: Deadlocks </a>'
+    - '<a href="{{ site.baseurl }}/notes/session22"> Concurrency: Readers/Writers Problem </a>'
   materials:
 
 22:
+  reading:
+  topics:
+    - '<a href="{{ site.baseurl }}/notes/session23"> Concurrency: Deadlocks </a>'
+  materials:
+
+23:
   reading:
     - <a href="https://en.wikipedia.org/wiki/Sleeping_barber_problem"> The Sleeping Barber Problem </a>
   topics:
     - '<a href="{{ site.baseurl }}/notes/session24"> Concurrency: More Exercises </a>'
   materials:
 
-23:
+24:
   reading:
     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched.pdf"> Chapter 7 of OSTEP </a>
   topics:
     - '<a href="{{ site.baseurl }}/notes/session29"> CPU Scheduling I </a>'
   materials:
 
-24:
-  reading:
-    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched-mlfq.pdf"> Chapter 8 of OSTEP </a>
-  topics:
-    - '<a href="{{ site.baseurl }}/notes/session30"> CPU Scheduling II </a>'
-  materials:
 
 ###############################################################################
 # WEEK 7
 ###############################################################################
 25:
   reading:
-    - <a href="https://pdos.csail.mit.edu/6.828/2022/xv6/book-riscv-rev3.pdf"> Chapter 7 of the xv6 book </a>
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched-mlfq.pdf"> Chapter 8 of OSTEP </a>
   topics:
-    - <a href="{{ site.baseurl }}/notes/session31"> The xv6 scheduler </a>
+    - '<a href="{{ site.baseurl }}/notes/session30"> CPU Scheduling II </a>'
   materials:
 
 26:
@@ -206,8 +208,9 @@
 
 28:
   reading:
+    - <a href="https://pdos.csail.mit.edu/6.828/2022/xv6/book-riscv-rev3.pdf"> Chapter 7 of the xv6 book </a>
   topics:
-    - Exam 2 Walkthrough
+    - <a href="{{ site.baseurl }}/notes/session31"> The xv6 scheduler </a>
   materials:
 
 ###############################################################################

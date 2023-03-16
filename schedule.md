@@ -113,10 +113,13 @@ lectures and/or assignments with an advanced week's notice.
 <tr>
 <td markdown="span">
 7 <br/> Thu, Mar 16 2023</td>
-<td markdown="span">
+<td markdown="span" style="text-align:left;">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> <a hred="https://www.gnu.org/software/make/manual/make.html"> Make documentation page </a> </li>
+</ul>{:/}
 </td>
 <td markdown="span" style="text-align:center">
-<a href="{{ site.baseurl }}/notes/session07"> Introduction to Paging </a></td>
+<a href="{{ site.baseurl }}/notes/makefiles/"> Makefiles </a></td>
 <td markdown="span">
 </td>
 </tr>
@@ -136,13 +139,10 @@ lectures and/or assignments with an advanced week's notice.
 <tr><td markdown="span" colspan="5" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;"></td></tr><td rowspan="6" markdown="span" style="font-size:xx-large;"><a name="w3">3</a></td>
 <td markdown="span">
 9 <br/> Mon, Mar 20 2023</td>
-<td markdown="span" style="text-align:left;">
-{::nomarkdown}<ul style="margin:0;padding:.5rem">
-<li> <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-paging.pdf"> Chapter 8 of OSTEP </a> </li>
-</ul>{:/}
+<td markdown="span">
 </td>
 <td markdown="span" style="text-align:center">
-<a href="{{ site.baseurl }}/notes/session15"> Paging </a></td>
+<a href="{{ site.baseurl }}/notes/session07"> Introduction to Paging </a></td>
 <td markdown="span">
 </td>
 </tr>
@@ -159,7 +159,7 @@ lectures and/or assignments with an advanced week's notice.
 </td>
 </tr>
 <tr>
-<td markdown="span" colspan="4"> [Exam 1]({{ site.baseurl }}/labs/exam1) DUE Wed, Mar 22 2023 23:59 [Submission box]({{ site.gradescope_url }}) <font color="#aaa"> grader: @TBA </font> </td></tr>
+<td markdown="span" colspan="4"> [Exam 1 (8:00 pm in M137)]({{ site.baseurl }}/labs/exam1) DUE Wed, Mar 22 2023 23:59 [Submission box]({{ site.gradescope_url }}) <font color="#aaa"> grader: @TBA </font> </td></tr>
 <tr>
 <td markdown="span">
 11 <br/> Thu, Mar 23 2023</td>
@@ -175,11 +175,11 @@ No class, Exam 1 Day</td>
 12 <br/> Fri, Mar 24 2023</td>
 <td markdown="span" style="text-align:left;">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
-<li> <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-smalltables.pdf"> Chapter 12 of OSTEP </a> </li>
+<li> <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-paging.pdf"> Chapter 8 of OSTEP </a> </li>
 </ul>{:/}
 </td>
 <td markdown="span" style="text-align:center">
-<a href="{{ site.baseurl }}/notes/session16"> Multi-level Page Tables </a></td>
+<a href="{{ site.baseurl }}/notes/session15"> Paging </a></td>
 <td markdown="span">
 </td>
 </tr>
@@ -187,10 +187,13 @@ No class, Exam 1 Day</td>
 <tr><td markdown="span" colspan="5" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;"></td></tr><td rowspan="6" markdown="span" style="font-size:xx-large;"><a name="w4">4</a></td>
 <td markdown="span">
 13 <br/> Mon, Mar 27 2023</td>
-<td markdown="span">
+<td markdown="span" style="text-align:left;">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-smalltables.pdf"> Chapter 12 of OSTEP </a> </li>
+</ul>{:/}
 </td>
 <td markdown="span" style="text-align:center">
-<a href="{{ site.baseurl }}/notes/session17"> Paging Activity </a></td>
+<a href="{{ site.baseurl }}/notes/session16"> Multi-level Page Tables </a></td>
 <td markdown="span">
 </td>
 </tr>
@@ -202,20 +205,17 @@ No class, Exam 1 Day</td>
 <td markdown="span">
 </td>
 <td markdown="span" style="text-align:center">
-<a href="{{ site.baseurl }}/labs/lab05"> Lab: Virtual Memory II </a></td>
+<a href="{{ site.baseurl }}/notes/session17"> Paging Activity </a></td>
 <td markdown="span">
 </td>
 </tr>
 <tr>
 <td markdown="span">
 15 <br/> Thu, Mar 30 2023</td>
-<td markdown="span" style="text-align:left;">
-{::nomarkdown}<ul style="margin:0;padding:.5rem">
-<li> <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf"> Chapter 26 of OSTEP </a> </li>
-</ul>{:/}
+<td markdown="span">
 </td>
 <td markdown="span" style="text-align:center">
-<a href="{{ site.baseurl }}/notes/session18"> Threads: Lightweight Processes </a></td>
+<a href="{{ site.baseurl }}/labs/lab05"> Lab: Virtual Memory II </a></td>
 <td markdown="span">
 </td>
 </tr>
@@ -230,7 +230,7 @@ No class, Exam 1 Day</td>
 </ul>{:/}
 </td>
 <td markdown="span" style="text-align:center">
-<a href="{{ site.baseurl }}/notes/session18"> Threads: Thread Creation </a></td>
+<a href="{{ site.baseurl }}/notes/session18"> Threads: Lightweight Processes </a></td>
 <td markdown="span">
 </td>
 </tr>
@@ -238,6 +238,21 @@ No class, Exam 1 Day</td>
 <tr><td markdown="span" colspan="5" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;"></td></tr><td rowspan="6" markdown="span" style="font-size:xx-large;"><a name="w5">5</a></td>
 <td markdown="span">
 17 <br/> Mon, Apr 03 2023</td>
+<td markdown="span" style="text-align:left;">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf"> Chapter 26 of OSTEP </a> </li>
+</ul>{:/}
+</td>
+<td markdown="span" style="text-align:center">
+<a href="{{ site.baseurl }}/notes/session18"> Threads: Thread Creation </a></td>
+<td markdown="span">
+</td>
+</tr>
+<tr>
+<td markdown="span" colspan="4"> [[Challenge] Virtual Memory II]({{ site.baseurl }}/labs/lab05) DUE Mon, Apr 03 2023 23:59 [Submission box]({{ site.gradescope_url }}) <font color="#aaa"> grader: @TBA </font> </td></tr>
+<tr>
+<td markdown="span">
+18 <br/> Tue, Apr 04 2023</td>
 <td markdown="span" style="text-align:left;">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
 <li> <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-locks.pdf"> Chapter 28 of OSTEP </a> </li>
@@ -250,10 +265,8 @@ No class, Exam 1 Day</td>
 </td>
 </tr>
 <tr>
-<td markdown="span" colspan="4"> [[Challenge] Virtual Memory II]({{ site.baseurl }}/labs/lab05) DUE Mon, Apr 03 2023 23:59 [Submission box]({{ site.gradescope_url }}) <font color="#aaa"> grader: @TBA </font> </td></tr>
-<tr>
 <td markdown="span">
-18 <br/> Tue, Apr 04 2023</td>
+19 <br/> Thu, Apr 06 2023</td>
 <td markdown="span" style="text-align:left;">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
 <li> <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 of OSTEP </a> </li>
@@ -265,8 +278,10 @@ No class, Exam 1 Day</td>
 </td>
 </tr>
 <tr>
+<td markdown="span" colspan="4"> [Threads & Mutex Basics]({{ site.baseurl }}/labs/lab06) DUE Thu, Apr 06 2023 23:59 [Submission box]({{ site.gradescope_url }}) <font color="#aaa"> grader: @TBA </font> </td></tr>
+<tr>
 <td markdown="span">
-19 <br/> Thu, Apr 06 2023</td>
+20 <br/> Fri, Apr 07 2023</td>
 <td markdown="span" style="text-align:left;">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
 <li> <a href="https://en.wikipedia.org/wiki/Producer%E2%80%93consumer_problem"> Wiki Page for Prod/Cons Problem </a> </li>
@@ -278,10 +293,9 @@ No class, Exam 1 Day</td>
 </td>
 </tr>
 <tr>
-<td markdown="span" colspan="4"> [Threads & Mutex Basics]({{ site.baseurl }}/labs/lab06) DUE Thu, Apr 06 2023 23:59 [Submission box]({{ site.gradescope_url }}) <font color="#aaa"> grader: @TBA </font> </td></tr>
-<tr>
+<tr><td markdown="span" colspan="5" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;"></td></tr><td rowspan="6" markdown="span" style="font-size:xx-large;"><a name="w6">6</a></td>
 <td markdown="span">
-20 <br/> Fri, Apr 07 2023</td>
+21 <br/> Mon, Apr 17 2023</td>
 <td markdown="span">
 </td>
 <td markdown="span" style="text-align:center">
@@ -290,9 +304,10 @@ No class, Exam 1 Day</td>
 </td>
 </tr>
 <tr>
-<tr><td markdown="span" colspan="5" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;"></td></tr><td rowspan="6" markdown="span" style="font-size:xx-large;"><a name="w6">6</a></td>
+<td markdown="span" colspan="4"> [Condition Variables Basics]({{ site.baseurl }}/labs/lab07) DUE Mon, Apr 17 2023 23:59 [Submission box]({{ site.gradescope_url }}) <font color="#aaa"> grader: @TBA </font> </td></tr>
+<tr>
 <td markdown="span">
-21 <br/> Mon, Apr 17 2023</td>
+22 <br/> Tue, Apr 18 2023</td>
 <td markdown="span">
 </td>
 <td markdown="span" style="text-align:center">
@@ -301,10 +316,8 @@ No class, Exam 1 Day</td>
 </td>
 </tr>
 <tr>
-<td markdown="span" colspan="4"> [Condition Variables Basics]({{ site.baseurl }}/labs/lab07) DUE Mon, Apr 17 2023 23:59 [Submission box]({{ site.gradescope_url }}) <font color="#aaa"> grader: @TBA </font> </td></tr>
-<tr>
 <td markdown="span">
-22 <br/> Tue, Apr 18 2023</td>
+23 <br/> Thu, Apr 20 2023</td>
 <td markdown="span" style="text-align:left;">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
 <li> <a href="https://en.wikipedia.org/wiki/Sleeping_barber_problem"> The Sleeping Barber Problem </a> </li>
@@ -316,8 +329,10 @@ No class, Exam 1 Day</td>
 </td>
 </tr>
 <tr>
+<td markdown="span" colspan="4"> [[Challenge] Condition Variables II]({{ site.baseurl }}/labs/lab08) DUE Thu, Apr 20 2023 23:59 [Submission box]({{ site.gradescope_url }}) <font color="#aaa"> grader: @TBA </font> </td></tr>
+<tr>
 <td markdown="span">
-23 <br/> Thu, Apr 20 2023</td>
+24 <br/> Fri, Apr 21 2023</td>
 <td markdown="span" style="text-align:left;">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
 <li> <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched.pdf"> Chapter 7 of OSTEP </a> </li>
@@ -329,10 +344,9 @@ No class, Exam 1 Day</td>
 </td>
 </tr>
 <tr>
-<td markdown="span" colspan="4"> [[Challenge] Condition Variables II]({{ site.baseurl }}/labs/lab08) DUE Thu, Apr 20 2023 23:59 [Submission box]({{ site.gradescope_url }}) <font color="#aaa"> grader: @TBA </font> </td></tr>
-<tr>
+<tr><td markdown="span" colspan="5" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;"></td></tr><td rowspan="5" markdown="span" style="font-size:xx-large;"><a name="w7">7</a></td>
 <td markdown="span">
-24 <br/> Fri, Apr 21 2023</td>
+25 <br/> Mon, Apr 24 2023</td>
 <td markdown="span" style="text-align:left;">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
 <li> <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched-mlfq.pdf"> Chapter 8 of OSTEP </a> </li>
@@ -340,20 +354,6 @@ No class, Exam 1 Day</td>
 </td>
 <td markdown="span" style="text-align:center">
 <a href="{{ site.baseurl }}/notes/session30"> CPU Scheduling II </a></td>
-<td markdown="span">
-</td>
-</tr>
-<tr>
-<tr><td markdown="span" colspan="5" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;"></td></tr><td rowspan="5" markdown="span" style="font-size:xx-large;"><a name="w7">7</a></td>
-<td markdown="span">
-25 <br/> Mon, Apr 24 2023</td>
-<td markdown="span" style="text-align:left;">
-{::nomarkdown}<ul style="margin:0;padding:.5rem">
-<li> <a href="https://pdos.csail.mit.edu/6.828/2022/xv6/book-riscv-rev3.pdf"> Chapter 7 of the xv6 book </a> </li>
-</ul>{:/}
-</td>
-<td markdown="span" style="text-align:center">
-<a href="{{ site.baseurl }}/notes/session31"> The xv6 scheduler </a></td>
 <td markdown="span">
 </td>
 </tr>
@@ -382,10 +382,13 @@ Exam 2, No Class</td>
 <tr>
 <td markdown="span">
 28 <br/> Fri, Apr 28 2023</td>
-<td markdown="span">
+<td markdown="span" style="text-align:left;">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> <a href="https://pdos.csail.mit.edu/6.828/2022/xv6/book-riscv-rev3.pdf"> Chapter 7 of the xv6 book </a> </li>
+</ul>{:/}
 </td>
 <td markdown="span" style="text-align:center">
-Exam 2 Walkthrough</td>
+<a href="{{ site.baseurl }}/notes/session31"> The xv6 scheduler </a></td>
 <td markdown="span">
 </td>
 </tr>
