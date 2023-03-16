@@ -133,7 +133,7 @@ lectures and/or assignments with an advanced week's notice.
 </td>
 </tr>
 <tr>
-<tr><td markdown="span" colspan="5" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;"></td></tr><td rowspan="5" markdown="span" style="font-size:xx-large;"><a name="w3">3</a></td>
+<tr><td markdown="span" colspan="5" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;"></td></tr><td rowspan="6" markdown="span" style="font-size:xx-large;"><a name="w3">3</a></td>
 <td markdown="span">
 9 <br/> Mon, Mar 20 2023</td>
 <td markdown="span" style="text-align:left;">
@@ -158,6 +158,8 @@ lectures and/or assignments with an advanced week's notice.
 <td markdown="span">
 </td>
 </tr>
+<tr>
+<td markdown="span" colspan="4"> [Exam 1]({{ site.baseurl }}/labs/exam1) DUE Wed, Mar 22 2023 23:59 [Submission box]({{ site.gradescope_url }}) <font color="#aaa"> grader: @TBA </font> </td></tr>
 <tr>
 <td markdown="span">
 11 <br/> Thu, Mar 23 2023</td>
