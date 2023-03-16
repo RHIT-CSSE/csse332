@@ -42,6 +42,7 @@ void add_test(char *(*test_func)()) {
  */
 void setup(void) {
   printf("starting setup\n");
+  fflush(stdout);
   for(int i = 0; i < DATA_SIZE; i++) {
     for(int j = 0; j < DATA_SIZE; j++) {
       data[i][j] = INITIAL_VALUE;
