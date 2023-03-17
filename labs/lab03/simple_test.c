@@ -120,6 +120,7 @@ char *test3() {
 
 char *test4() {
   printf("starting test 4\n");
+  fflush(stdout);
 
   int *val = NULL;
   printf("data at val is %d", *val);
@@ -130,7 +131,9 @@ char *test4() {
 
 char *test5() {
   printf("starting test 5\n");
+  fflush(stdout);
 
+  
   while(1)
     ;
 
