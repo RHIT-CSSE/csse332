@@ -69,8 +69,9 @@
 ###############################################################################
 9:
   reading:
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-mechanism.pdf"> Chapter 15 of OSTEP </a>
   topics:
-    - <a href="{{ site.baseurl }}/notes/session07"> Introduction to Paging </a>
+    - <a href="{{ site.baseurl }}/notes/paging"> Introduction to Paging </a>
   materials: 
 
 10:
@@ -87,7 +88,7 @@
 
 12:
   reading:
-    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-paging.pdf"> Chapter 8 of OSTEP </a>
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-paging.pdf"> Chapter 18 of OSTEP </a>
   topics:
     - <a href="{{ site.baseurl }}/notes/session15"> Paging </a>
   materials:
@@ -97,7 +98,7 @@
 ###############################################################################
 13:
   reading:
-    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-smalltables.pdf"> Chapter 12 of OSTEP </a>
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-smalltables.pdf"> Chapter 20 of OSTEP </a>
   topics:
     - <a href="{{ site.baseurl }}/notes/session16"> Multi-level Page Tables </a>
   materials:

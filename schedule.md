@@ -139,10 +139,13 @@ lectures and/or assignments with an advanced week's notice.
 <tr><td markdown="span" colspan="5" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;"></td></tr><td rowspan="6" markdown="span" style="font-size:xx-large;"><a name="w3">3</a></td>
 <td markdown="span">
 9 <br/> Mon, Mar 20 2023</td>
-<td markdown="span">
+<td markdown="span" style="text-align:left;">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-mechanism.pdf"> Chapter 15 of OSTEP </a> </li>
+</ul>{:/}
 </td>
 <td markdown="span" style="text-align:center">
-<a href="{{ site.baseurl }}/notes/session07"> Introduction to Paging </a></td>
+<a href="{{ site.baseurl }}/notes/paging"> Introduction to Paging </a></td>
 <td markdown="span">
 </td>
 </tr>
@@ -175,7 +178,7 @@ No class, Exam 1 Day</td>
 12 <br/> Fri, Mar 24 2023</td>
 <td markdown="span" style="text-align:left;">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
-<li> <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-paging.pdf"> Chapter 8 of OSTEP </a> </li>
+<li> <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-paging.pdf"> Chapter 18 of OSTEP </a> </li>
 </ul>{:/}
 </td>
 <td markdown="span" style="text-align:center">
@@ -189,7 +192,7 @@ No class, Exam 1 Day</td>
 13 <br/> Mon, Mar 27 2023</td>
 <td markdown="span" style="text-align:left;">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
-<li> <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-smalltables.pdf"> Chapter 12 of OSTEP </a> </li>
+<li> <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-smalltables.pdf"> Chapter 20 of OSTEP </a> </li>
 </ul>{:/}
 </td>
 <td markdown="span" style="text-align:center">
