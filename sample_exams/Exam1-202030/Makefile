@@ -23,7 +23,7 @@ task.bin: task.o coollibrary.o
 task_bin_mem_report.txt: task.bin
 	valgrind ./task.bin 2> task_bin_mem_report.txt
 
-task.o: task.c
+task.o: task.c coollibrary.h
 	gcc -c -ggdb task.c
 
 clean:
