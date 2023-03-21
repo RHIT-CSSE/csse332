@@ -201,7 +201,7 @@ No class, Exam 1 Day</td>
 </td>
 </tr>
 <tr>
-<td markdown="span" colspan="4"> [[Challenge] Heap Manager II]({{ site.baseurl }}/labs/lab15/) DUE Mon, Mar 27 2023 23:59 [Submission box]({{ site.gradescope_url }}) <font color="#aaa"> grader: @TBA </font> </td></tr>
+<td markdown="span" colspan="4"> [[Challenge] Heap Manager II]({{ site.baseurl }}/labs/buddy/) DUE Mon, Mar 27 2023 23:59 [Submission box]({{ site.gradescope_url }}) <font color="#aaa"> grader: @TBA </font> </td></tr>
 <tr>
 <td markdown="span">
 14 <br/> Tue, Mar 28 2023</td>
