@@ -226,7 +226,7 @@ code_\label :			// assembler code follows
 	pop %rbx
 	cmp %rbx,%rax
 	sete %al
-	movzbq %al,%eax
+	movzbq %al,%rax
 	push %rax
 	NEXT
 
@@ -339,7 +339,7 @@ code_\label :			// assembler code follows
 	NEXT
 
 	defcode "INVERT",6,,INVERT // this is the FORTH bitwise "NOT" function (cf. NEGATE and NOT)
-	notq (%esp)
+	notq (%rsp)
 	NEXT
         
         
@@ -826,8 +826,7 @@ _NUMBER:
 	ret
 
 	// Loop reading digits.
-1:	imulq %rdx,%rax		// %eax *= BASE
-	movb (%rdi),%bl		// %bl = next character in string
+1:	movb (%rdi),%bl		// %bl = next character in string
 	inc %rdi
 
 	// Convert 0-9, A-Z to a number 0-35.
@@ -842,6 +841,8 @@ _NUMBER:
 3:	cmp %dl,%bl		// >= BASE?
 	jge 4f
 
+        // we pulled in a valid character
+        imulq %rdx,%rax		// %rax *= BASE
 	// OK, so add it to %eax and loop.
 	add %rbx,%rax
 	dec %rcx
