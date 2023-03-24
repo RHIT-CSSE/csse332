@@ -41,8 +41,9 @@ In this lecture, we will cover the following topics:
 
 # Activity
 
-In this lecture, we will do a small activity in xv6 to see paging in practice.
-Please checkout the [activity page](activity/) for more information.
+In this lecture, we will do two small activities in xv6 to see paging in
+practice.  Please checkout the [first](activity/) and [second](lazy_activity/)
+activity pages for more information.  
 
 # The Page Table
 
