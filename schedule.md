@@ -96,7 +96,7 @@ lectures and/or assignments with an advanced week's notice.
 </td>
 </tr>
 <tr>
-<td markdown="span" colspan="4"> [Simple Shell]({{ site.baseurl }}/labs/lab02/) DUE Mon, Mar 13 2023 23:59 [Submission box]({{ site.gradescope_url }}) <font color="#aaa"> grader: @TBA </font> </td></tr>
+<td markdown="span" colspan="4"> [Simple Shell]({{ site.baseurl }}/labs/lab02/) DUE Mon, Mar 13 2023 23:59 [Submission box]({{ site.gradescope_url }}) <font color="#aaa"> grader: @collinse pascenaj </font> </td></tr>
 <tr>
 <td markdown="span">
 6 <br/> Tue, Mar 14 2023</td>
@@ -124,7 +124,7 @@ lectures and/or assignments with an advanced week's notice.
 </td>
 </tr>
 <tr>
-<td markdown="span" colspan="4"> [Process Lab]({{ site.baseurl }}/labs/lab03) DUE Thu, Mar 16 2023 23:59 [Submission box]({{ site.gradescope_url }}) <font color="#aaa"> grader: @TBA </font> </td></tr>
+<td markdown="span" colspan="4"> [Process Lab]({{ site.baseurl }}/labs/lab03) DUE Thu, Mar 16 2023 23:59 [Submission box]({{ site.gradescope_url }}) <font color="#aaa"> grader: @urbonal trannm </font> </td></tr>
 <tr>
 <td markdown="span">
 8 <br/> Fri, Mar 17 2023</td>
@@ -150,7 +150,7 @@ lectures and/or assignments with an advanced week's notice.
 </td>
 </tr>
 <tr>
-<td markdown="span" colspan="4"> [Heap Manager]({{ site.baseurl }}/labs/lab01/) DUE Mon, Mar 20 2023 23:59 [Submission box]({{ site.gradescope_url }}) <font color="#aaa"> grader: @TBA </font> </td></tr>
+<td markdown="span" colspan="4"> [Heap Manager]({{ site.baseurl }}/labs/lab01/) DUE Mon, Mar 20 2023 23:59 [Submission box]({{ site.gradescope_url }}) <font color="#aaa"> grader: @collinse manchedw </font> </td></tr>
 <tr>
 <td markdown="span">
 10 <br/> Tue, Mar 21 2023</td>
@@ -162,7 +162,7 @@ lectures and/or assignments with an advanced week's notice.
 </td>
 </tr>
 <tr>
-<td markdown="span" colspan="4"> [Exam 1 (8:00 pm in M137)]({{ site.baseurl }}/labs/exam1) DUE Wed, Mar 22 2023 23:59 [Submission box]({{ site.gradescope_url }}) <font color="#aaa"> grader: @TBA </font> </td></tr>
+<td markdown="span" colspan="4"> [Exam 1 (8:00 pm in M137)]({{ site.baseurl }}/labs/exam1) DUE Wed, Mar 22 2023 23:59 [Submission box]({{ site.gradescope_url }}) <font color="#aaa"> grader: @pascenaj urbonal xiongy </font> </td></tr>
 <tr>
 <td markdown="span">
 11 <br/> Thu, Mar 23 2023</td>
