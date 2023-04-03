@@ -18,9 +18,6 @@ int array_size;
 int share;
 volatile unsigned long long sum;
 
-// statically initialized mutex, you don't to use pthread_mutex_init anymore
-pthread_mutex_t lock = PTHREAD_MUTEX_INITIALIZER;
-
 static void output_time_difference(char* name, struct timeval* start,
                                    struct timeval* end)
 {
