@@ -128,31 +128,30 @@
 ###############################################################################
 17:
   reading:
-    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf"> Chapter 26 of OSTEP </a>
-  topics:
-    - '<a href="{{ site.baseurl }}/notes/session18"> Threads: Thread Creation </a>'
-  materials:
-
-18:
-  reading:
     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-locks.pdf"> Chapter 28 of OSTEP </a>
     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 of OSTEP </a>
   topics:
     - '<a href="{{ site.baseurl }}/notes/session19"> Concurrency: Mutex & Condition Variables </a>'
   materials:
 
-19:
+18:
   reading:
     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 of OSTEP </a>
   topics:
     - '<a href="{{ site.baseurl }}/notes/session20"> Concurrency: More Condition Variables </a>'
   materials:
 
-20:
+19:
   reading:
     - <a href="https://en.wikipedia.org/wiki/Producer%E2%80%93consumer_problem"> Wiki Page for Prod/Cons Problem </a>
   topics:
     - '<a href="{{ site.baseurl }}/notes/session21"> Concurrency: Producer-Consumer Problem </a>'
+  materials:
+
+20:
+  reading:
+  topics:
+    - '<a href="{{ site.baseurl }}/notes/session23"> Concurrency: Deadlocks </a>'
   materials:
 
 ###############################################################################
@@ -162,12 +161,6 @@
   reading:
   topics:
     - '<a href="{{ site.baseurl }}/notes/session22"> Concurrency: Readers/Writers Problem </a>'
-  materials:
-
-22:
-  reading:
-  topics:
-    - '<a href="{{ site.baseurl }}/notes/session23"> Concurrency: Deadlocks </a>'
   materials:
 
 23:

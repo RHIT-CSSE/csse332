@@ -243,21 +243,6 @@ No class, Exam 1 Day</td>
 17 <br/> Mon, Apr 03 2023</td>
 <td markdown="span" style="text-align:left;">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
-<li> <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf"> Chapter 26 of OSTEP </a> </li>
-</ul>{:/}
-</td>
-<td markdown="span" style="text-align:center">
-<a href="{{ site.baseurl }}/notes/session18"> Threads: Thread Creation </a></td>
-<td markdown="span">
-</td>
-</tr>
-<tr>
-<td markdown="span" colspan="4"> [[Challenge] Virtual Memory II]({{ site.baseurl }}/labs/lab05) DUE Mon, Apr 03 2023 23:59 [Submission box]({{ site.gradescope_url }}) <font color="#aaa"> grader: @TBA </font> </td></tr>
-<tr>
-<td markdown="span">
-18 <br/> Tue, Apr 04 2023</td>
-<td markdown="span" style="text-align:left;">
-{::nomarkdown}<ul style="margin:0;padding:.5rem">
 <li> <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-locks.pdf"> Chapter 28 of OSTEP </a> </li>
 <li> <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 of OSTEP </a> </li>
 </ul>{:/}
@@ -268,8 +253,10 @@ No class, Exam 1 Day</td>
 </td>
 </tr>
 <tr>
+<td markdown="span" colspan="4"> [[Challenge] Virtual Memory II]({{ site.baseurl }}/labs/lab05) DUE Mon, Apr 03 2023 23:59 [Submission box]({{ site.gradescope_url }}) <font color="#aaa"> grader: @TBA </font> </td></tr>
+<tr>
 <td markdown="span">
-19 <br/> Thu, Apr 06 2023</td>
+18 <br/> Tue, Apr 04 2023</td>
 <td markdown="span" style="text-align:left;">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
 <li> <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 of OSTEP </a> </li>
@@ -281,10 +268,8 @@ No class, Exam 1 Day</td>
 </td>
 </tr>
 <tr>
-<td markdown="span" colspan="4"> [Threads & Mutex Basics]({{ site.baseurl }}/labs/lab06) DUE Thu, Apr 06 2023 23:59 [Submission box]({{ site.gradescope_url }}) <font color="#aaa"> grader: @TBA </font> </td></tr>
-<tr>
 <td markdown="span">
-20 <br/> Fri, Apr 07 2023</td>
+19 <br/> Thu, Apr 06 2023</td>
 <td markdown="span" style="text-align:left;">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
 <li> <a href="https://en.wikipedia.org/wiki/Producer%E2%80%93consumer_problem"> Wiki Page for Prod/Cons Problem </a> </li>
@@ -292,6 +277,18 @@ No class, Exam 1 Day</td>
 </td>
 <td markdown="span" style="text-align:center">
 <a href="{{ site.baseurl }}/notes/session21"> Concurrency: Producer-Consumer Problem </a></td>
+<td markdown="span">
+</td>
+</tr>
+<tr>
+<td markdown="span" colspan="4"> [Threads & Mutex Basics]({{ site.baseurl }}/labs/lab06) DUE Thu, Apr 06 2023 23:59 [Submission box]({{ site.gradescope_url }}) <font color="#aaa"> grader: @TBA </font> </td></tr>
+<tr>
+<td markdown="span">
+20 <br/> Fri, Apr 07 2023</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:center">
+<a href="{{ site.baseurl }}/notes/session23"> Concurrency: Deadlocks </a></td>
 <td markdown="span">
 </td>
 </tr>
@@ -311,12 +308,7 @@ No class, Exam 1 Day</td>
 <tr>
 <td markdown="span">
 22 <br/> Tue, Apr 18 2023</td>
-<td markdown="span">
-</td>
-<td markdown="span" style="text-align:center">
-<a href="{{ site.baseurl }}/notes/session23"> Concurrency: Deadlocks </a></td>
-<td markdown="span">
-</td>
+<td markdown="span" colspan="3">N/A</td>
 </tr>
 <tr>
 <td markdown="span">
