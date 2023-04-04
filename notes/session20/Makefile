@@ -1,14 +1,11 @@
 .PHONY: all clean
 
-all: condwait.bin
+all: condwait.bin barrier.bin
 
-condwait.bin: condwait.o
+%.bin: %.o
 	gcc -o $@ $^ -pthread
 
-solutions: condwait_solution.bin
-
-condwait_solution.bin: condwait_solution.o
-	gcc -o $@ $^ -pthread
+solutions: condwait_solution.bin barrier_solution.bin
 
 clean:
 	rm -f *.o *.bin
