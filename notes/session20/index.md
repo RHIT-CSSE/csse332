@@ -216,4 +216,4 @@ lock.
 
 # Activity
 
-- Try to solve `thread_ABC.c` to get more practice with condition variables.
+- Try to solve `barrier.c` to get more practice with condition variables.
