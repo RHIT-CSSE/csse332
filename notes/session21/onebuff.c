@@ -86,7 +86,7 @@ int main(int argc, char **argv)
 
   for(i = 0; i < NUM_CONSUMERS; i++) {
     consumer_ids[i] = i;
-    pthread_create(&consumer_threads[i], 0, producer, &consumer_ids[i]);
+    pthread_create(&consumer_threads[i], 0, consumer, &consumer_ids[i]);
   }
 
   // wait for them
