@@ -1,4 +1,4 @@
-all: prodcons.bin
+all: prodcons.bin onebuff.bin
 
 .PHONY: clean
 
