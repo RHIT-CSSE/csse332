@@ -151,7 +151,7 @@
 20:
   reading:
   topics:
-    - '<a href="{{ site.baseurl }}/notes/session23"> Concurrency: Deadlocks </a>'
+    - No class, enjoy the break!
   materials:
 
 ###############################################################################
@@ -161,6 +161,12 @@
   reading:
   topics:
     - '<a href="{{ site.baseurl }}/notes/session22"> Concurrency: Readers/Writers Problem </a>'
+  materials:
+
+22:
+  reading:
+  topics:
+    - '<a href="{{ site.baseurl }}/notes/session23"> Concurrency: Deadlocks </a>'
   materials:
 
 23:
@@ -197,7 +203,7 @@
 27:
   reading:
   topics:
-    - Exam 2, No Class
+    - Day After Exam 2, No Class
   materials:
 
 28:

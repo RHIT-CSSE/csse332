@@ -288,7 +288,7 @@ No class, Exam 1 Day</td>
 <td markdown="span">
 </td>
 <td markdown="span" style="text-align:center">
-<a href="{{ site.baseurl }}/notes/session23"> Concurrency: Deadlocks </a></td>
+No class, enjoy the break!</td>
 <td markdown="span">
 </td>
 </tr>
@@ -308,7 +308,12 @@ No class, Exam 1 Day</td>
 <tr>
 <td markdown="span">
 22 <br/> Tue, Apr 18 2023</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:center">
+<a href="{{ site.baseurl }}/notes/session23"> Concurrency: Deadlocks </a></td>
+<td markdown="span">
+</td>
 </tr>
 <tr>
 <td markdown="span">
@@ -370,7 +375,7 @@ No class, Exam 1 Day</td>
 <td markdown="span">
 </td>
 <td markdown="span" style="text-align:center">
-Exam 2, No Class</td>
+Day After Exam 2, No Class</td>
 <td markdown="span">
 </td>
 </tr>
