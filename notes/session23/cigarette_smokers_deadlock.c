@@ -61,11 +61,9 @@ void __smoke_fn(const char *msg)
 {
   done_smoking = 0;
   pthread_mutex_unlock(&lock);
-
   printf("%s is smoking...\n", msg);
   sleep(1);
   printf("%s is done smoking...\n", msg);
-
   pthread_mutex_lock(&lock);
   done_smoking = 1;
   pthread_cond_signal(&smoke);
@@ -76,7 +74,15 @@ void *tobacco_smoker(void *arg)
 {
   while(1) {
     pthread_mutex_lock(&lock);
-    // TODO: Add your code here...
+    while(!paper_on_table)
+      pthread_cond_wait(&paper, &lock);
+    paper_on_table = 0;
+    printf("Tobacco smoker has paper...\n");
+
+    while(!match_on_table)
+      pthread_cond_wait(&match, &lock);
+    match_on_table = 0;
+    printf("Tobacco smoker has matches...\n");
 
     __smoke_fn("Tobacco smoker");
     pthread_mutex_unlock(&lock);
@@ -88,8 +94,15 @@ void *paper_smoker(void *arg)
 {
   while(1) {
     pthread_mutex_lock(&lock);
-    // TODO: Add your code here...
-    pthread_mutex_lock(&lock);
+    while(!tobacco_on_table)
+      pthread_cond_wait(&tobacco, &lock);
+    tobacco_on_table = 0;
+    printf("Paper smoker has tobacco...\n");
+
+    while(!match_on_table)
+      pthread_cond_wait(&match, &lock);
+    match_on_table = 0;
+    printf("Paper smoker has matches...\n");
 
     __smoke_fn("Paper smoker");
     pthread_mutex_unlock(&lock);
@@ -101,7 +114,15 @@ void *match_smoker(void *arg)
 {
   while(1) {
     pthread_mutex_lock(&lock);
-    // TODO: Add your code here...
+    while(!tobacco_on_table)
+      pthread_cond_wait(&tobacco, &lock);
+    tobacco_on_table = 0;
+    printf("Match smoker has tobacco...\n");
+
+    while(!paper_on_table)
+      pthread_cond_wait(&paper, &lock);
+    paper_on_table = 0;
+    printf("Match smoker has paper...\n");
 
     __smoke_fn("Match smoker");
     pthread_mutex_unlock(&lock);

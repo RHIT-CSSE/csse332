@@ -10,7 +10,6 @@ date: Tue Jan 17 07:20:09 2023
 At the end of this lecture, you should be able to:
 
 - List the four conditions for a deadlock to occur.
-- Represent how a deadlock can happen using resource allocation graphs.
 - Solve a deadlock-riddled concurrency problem.
 
 ---
@@ -28,12 +27,18 @@ In this lecture, we will cover the following topics:
 
 <!-- vim-markdown-toc GFM -->
 
+* [Buffalo's Guide to CV Problems](#buffalos-guide-to-cv-problems)
 * [Definition of a Deadlock](#definition-of-a-deadlock)
 * [Conditions for a Deadlock](#conditions-for-a-deadlock)
-* [Resource Allocation Graphs](#resource-allocation-graphs)
 * [Cigarette Smokers Problem](#cigarette-smokers-problem)
 
 <!-- vim-markdown-toc -->
+
+# Buffalo's Guide to CV Problems
+
+- Make sure you read [Buffalo's Guide to CV Problems]({{ site.baseurl
+  }}/docs/cv_unofficial_guide).
+
 
 # Definition of a Deadlock
 
@@ -86,12 +91,6 @@ In this lecture, we will cover the following topics:
   4. Mutual Exclusion: No sharing of resources can happen between the threads.
 
 - Once all four conditions are satisfied, then we have a deadlock!
-
-# Resource Allocation Graphs
-
-- One way to represent the circular wait condition is using a Resource
-  Allocation Graph (RAG)
-- If the RAG has a cycle, then __there is a possibility__ of a deadlock.
 
 # Cigarette Smokers Problem
 

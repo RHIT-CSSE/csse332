@@ -143,13 +143,18 @@ void *match_pusher(void *ignored)
   }
 }
 
-// smoking function
-void smoke_fn(const char *msg)
+// This function assumes you have the lock. When it function returns, it will
+// return with the lock held as well.
+void __smoke_fn(const char *msg)
 {
   done_smoking = 0;
+  pthread_mutex_unlock(&lock);
+
   printf("%s is smoking...\n", msg);
   sleep(1);
   printf("%s is done smoking...\n", msg);
+
+  pthread_mutex_lock(&lock);
   done_smoking = 1;
   pthread_cond_signal(&smoke);
 }
@@ -164,7 +169,7 @@ void *tobacco_smoker(void *arg)
     printf("Tobacco smoker is awake...\n");
     tobacco_turn = 0;
 
-    smoke_fn("Tobacco smoker");
+    __smoke_fn("Tobacco smoker");
     pthread_mutex_unlock(&lock);
   }
 }
@@ -179,7 +184,7 @@ void *paper_smoker(void *arg)
     printf("Paper smoker is awake...\n");
     paper_turn = 0;
 
-    smoke_fn("Paper smoker");
+    __smoke_fn("Paper smoker");
     pthread_mutex_unlock(&lock);
   }
 }
@@ -194,7 +199,7 @@ void *match_smoker(void *arg)
     printf("Match smoker is awake...\n");
     match_turn = 0;
 
-    smoke_fn("Match smoker");
+    __smoke_fn("Match smoker");
     pthread_mutex_unlock(&lock);
   }
 }
