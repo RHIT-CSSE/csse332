@@ -63,20 +63,14 @@ void *customer_fn(void *arg)
   }
 
   // still holding the lock, go to waiting room if needed
+  customers_waiting++;
   while(customer_in_work_chair) {
-    // small trick here, need to increment the customers waiting only in this
-    // case.
-    if(!added) {
-      customers_waiting++;
-      added = 1;
-    }
     pthread_cond_wait(&waiting_chairs, &lock);
   }
 
   // The customer is ready for a haircut!
   // Still holding the lock here so good to go.
-  if(added)
-    customers_waiting--;
+  customers_waiting--;
   customer_in_work_chair = 1;
   pthread_cond_signal(&barber_cond);
 
