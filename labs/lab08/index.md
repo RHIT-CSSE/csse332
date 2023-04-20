@@ -27,12 +27,12 @@ MacOs; therefore, we highly recommend that you stick to using a Linux machine,
 either natively or via WSL2.
 
 To obtain the starting code for this lab, navigate to the top level directory of
-your __csse332 class repository__ and `cd` into the `labs/lab07` directory as
+your __csse332 class repository__ and `cd` into the `labs/lab08` directory as
 follows:
 ```shell
 $ cd /path/to/csse332/git/repository/
 $ git pull
-$ cd labs/lab07
+$ cd labs/lab08
 ```
 
 # Band (25 points)

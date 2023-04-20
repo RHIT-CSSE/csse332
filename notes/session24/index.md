@@ -46,4 +46,4 @@ In this lecture, we will cover the following topics:
      area. Two cases might arise as well:
      - If the waiting area is full, then the customer gets pissed and leaves.
      - If there is an empty chair in the waiting area, the customer will join
-       the waiting queue.
+       the waiting area.
