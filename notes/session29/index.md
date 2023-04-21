@@ -10,7 +10,6 @@ date: Sun Jan 29 2023
 At the end of this lecture, you should be able to:
 
 - Define a scheduling policy and the requirements it must achieve.
-- Evaluate a scheduling policy using turnaround and response times.
 - Identify different scheduling policies, their advantages and their
   shortcomings.
 
@@ -21,7 +20,6 @@ At the end of this lecture, you should be able to:
 In this lecture, we will cover the following topics:
 
 - CPU scheduling and scheduling policies.
-- Turnaround and response times.
 - First-In-First-Out, Shortest Job First, Shortest Time to Completion First, and
   Round Robin scheduling.
 
@@ -34,7 +32,6 @@ In this lecture, we will cover the following topics:
 * [Motivating Analogy](#motivating-analogy)
 * [Definitions](#definitions)
   * [Scheduling Policies](#scheduling-policies)
-  * [Evaluating a Scheduling Policy](#evaluating-a-scheduling-policy)
   * [Assumptions](#assumptions)
 * [FIFO Scheduling](#fifo-scheduling)
   * [The Convoy Effect in FIFO](#the-convoy-effect-in-fifo)
@@ -43,6 +40,12 @@ In this lecture, we will cover the following topics:
 * [Shortest Time to Completion First (STCF)](#shortest-time-to-completion-first-stcf)
   * [Fairness](#fairness)
 * [Round Robin (RR)](#round-robin-rr)
+* [Activity: Improving the xv6 scheduler](#activity-improving-the-xv6-scheduler)
+  * [Getting the Source Code](#getting-the-source-code)
+* [Understanding the xv6 Scheduler](#understanding-the-xv6-scheduler)
+  * [Advantages of the xv6 Scheduler](#advantages-of-the-xv6-scheduler)
+  * [Drawbacks of the xv6 Scheduler](#drawbacks-of-the-xv6-scheduler)
+  * [Improving efficiency](#improving-efficiency)
 
 <!-- vim-markdown-toc -->
 
@@ -85,17 +88,6 @@ In this lecture, we will cover the following topics:
       2. CPU intensive (`while(1)`).
   5. Are we allowed to kick tasks off of the CPU?
       1. Preemption
-
-## Evaluating a Scheduling Policy
-
-- We will use two metrics to evaluate a scheduling policy.
-  1. The **turnaround** time:
-    - How long does it take to complete the task?
-    - T<sub>turnaround</sub> = T<sub>completion</sub> - T<sub>arrival</sub>
-
-  2. The **response** time:
-    - When is the task first ran given when it arrived?
-    - T<sub>response</sub> = T<sub>first run</sub> - T<sub>arrival</sub>
 
 ## Assumptions
 
@@ -186,4 +178,83 @@ In this lecture, we will cover the following topics:
 
 - Run each job for a fixed time slice called a **quantum**.
 - This can help us achieve fairness.
+
+# Activity: Improving the xv6 scheduler
+
+In this activity, we will be exploring the xv6 scheduler by first trying to
+understand the way it is actually implemented. We will then think about the
+advantages and disadvantages of the current xv6 implementation and try to
+identify ways in which it can be improved. Finally, we will spend the remainder
+of the session trying to implement said optimization and testing out their
+effects.
+
+## Getting the Source Code
+
+In this session, we will be exploring the xv6 kernel again, so we must first get
+on the right branch of the code. To do so, navigate to the root of your xv6
+source repository (should be in a folder called `xv6-riscv-public`) and then
+issue the following commands:
+
+```shell
+$ git fetch
+$ git checkout klist
+$ git pull
+```
+
+Make sure that you are now on the `klist` branch of the repository. To check
+your current branch, you can use the command:
+
+```shell
+$ git branch
+```
+
+# Understanding the xv6 Scheduler
+
+To get a better idea of the scheduling approach in xv6, it might be a good idea
+to skim [Chapter 7 of the xv6
+book](https://pdos.csail.mit.edu/6.828/2022/xv6/book-riscv-rev3.pdf).
+
+In your groups, take a few moments to explore the xv6 kernel's source code and
+attempt to answer the following questions about the xv6 scheduler:
+
+- ❓ What scheduling policy is xv6 implementing?
+- ❓ How are processes represented in xv6?
+- ❓ What are the possible states that an xv6 process can be in?
+- ❓ Which function is used to switch from one process back to the
+  scheduler and vice versa?
+- ❓ How does the xv6 kernel handle scheduling on multiple CPUs?
+- ❓ How does the kernel implement its scheduling policy?
+  - 🎶 You might find it helpful here to draw a small chain that represents the
+    sequence of events that can happen when scheduling is involved.
+
+_Hint_:  Most of what you are going to need to answer the above questions can be
+found in the files `kernel/proc.h` and `kernel/proc.c`. Moreover, to answer the
+last question accurately, looking at `kernel/trap.c` might also be helpful.
+
+_Hint_: If you have done the userspace threads assignments, you will find some
+of the terminology we used there very relevant.
+
+## Advantages of the xv6 Scheduler
+
+After answering the above questions, within your group, think of at least two
+possible advantages of the current implementation of the xv6 scheduler. You will
+then need to argue for your choices when presenting them.
+
+## Drawbacks of the xv6 Scheduler
+
+After identifying two advantages, within your group, think of at least two
+possible disadvantages of the current implementation of the xv6 scheduler. You
+will need to argue for your choices when presenting them. You will also need to
+provide possible solutions for those disadvantages. You might find it helpful to
+think of edge cases that the current implementation of the scheduler does not
+consider.
+
+## Improving efficiency
+
+If time permits, start by improving the way the xv6 scheduler handles its
+scheduling by changing the data structure that is used to represent the
+processes that should be considered for scheduling.
+
+You might find the list api that we define for you [here](../session31/list/)
+useful in updating the implementation.
 
