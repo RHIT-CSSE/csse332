@@ -365,7 +365,7 @@ No class, enjoy the break!</td>
 <td markdown="span">
 </td>
 <td markdown="span" style="text-align:center">
-<a href="{{ site.baseurl }}/notes/session25"> Exam 2 Review </a></td>
+<a href="{{ site.baseurl }}/docs/cv_unofficial_guide/"> Exam 2 Review </a></td>
 <td markdown="span">
 </td>
 </tr>
