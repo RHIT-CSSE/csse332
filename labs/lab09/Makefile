@@ -1,6 +1,6 @@
 all: basic_threads_in_use_example.bin example1.bin tests.bin
 
-CFLAGS+=-ggdb -O3 -Wall
+CFLAGS+=-ggdb -Wall
 
 .PHONY: clean
 
