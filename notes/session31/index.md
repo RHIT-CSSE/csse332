@@ -30,15 +30,17 @@ In this lecture, we will cover the following topics:
 <!-- vim-markdown-toc GFM -->
 
 * [Improving the xv6 Scheduler](#improving-the-xv6-scheduler)
-  * [Some Helpers](#some-helpers)
+* [Make sure you have the right piece of code](#make-sure-you-have-the-right-piece-of-code)
+* [Activity 1: Putting processors to sleep](#activity-1-putting-processors-to-sleep)
+* [Activity 2: O(1) lookups](#activity-2-o1-lookups)
 * [Submission](#submission)
 
 <!-- vim-markdown-toc -->
 
 # Improving the xv6 Scheduler
 
-The rest of this session will be dedicated to the following tasks that you will
-do in your groups:
+This session will be dedicated to the following tasks that you will do in your
+groups:
 
 1. Experimenting with one of the main inefficiencies of the xv6 scheduler.
 
@@ -52,12 +54,48 @@ do in your groups:
 We will discuss both of the above problems together in class, and then you will
 be given time to address those issues.
 
-## Some Helpers
+# Make sure you have the right piece of code
 
-To help you out on your tasks, we have provided you with some pointers that you
-might find helpful. Checkout the [`wfi` RISC-V instruction](wfi/) to solve the
-first problem and the custom-built [list API](list/) to help you solve the
-second one.
+In this session, we will be exploring the xv6 kernel again, so we must first get
+on the right branch of the code. To do so, navigate to the root of your xv6
+source repository (should be in a folder called `xv6-riscv-public`) and then
+issue the following commands:
+
+```shell
+$ git fetch
+$ git checkout klist
+$ git pull
+```
+
+Make sure that you are now on the `klist` branch of the repository. To check
+your current branch, you can use the command:
+
+```shell
+$ git branch
+```
+
+# Activity 1: Putting processors to sleep
+
+The fist inefficiency we discussed with the xv6 scheduler happens when there are
+no processes to be scheduled (i.e., no processes ready to run). In that case,
+the scheduler, on each CPU, will be spinning out of control, wasting CPU cycles
+until a new process comes along. This is clearly inefficient. 
+
+The solution we would like to propose is to use the _wait-for-interrupt_ (`wfi`)
+instruction from the RISC-V RSA. [Here](wfi/) are the instructions for you to
+implement this step, your job to identify the case when you should be issuing
+the `wfi` instruction and then testing its impact.
+
+# Activity 2: O(1) lookups
+
+On top of the first problem with the xv6 scheduler, we have discussed that
+searching for a process to run has a worst-case runtime of `O(N)`, with `N`
+being the number of processes.
+
+To fix this, we would like to change xv6's data strcture from a static array
+into a first-in-first-out queue. To help you achieve that, we have provided you
+with some [helper](list/) code.  Your job is to switch the scheduler's main data
+structure to use a queue, using the linked list API we provided you with.
 
 # Submission
 
