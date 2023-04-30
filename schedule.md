@@ -396,13 +396,10 @@ Day After Exam 2, No Class</td>
 <tr><td markdown="span" colspan="5" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;"></td></tr><td rowspan="6" markdown="span" style="font-size:xx-large;"><a name="w8">8</a></td>
 <td markdown="span">
 29 <br/> Mon, May 01 2023</td>
-<td markdown="span" style="text-align:left;">
-{::nomarkdown}<ul style="margin:0;padding:.5rem">
-<li> <a href="https://www.eecs.umich.edu/courses/eecs588/static/stack_smashing.pdf"> Smashing The Stack for Fun and Profit </a> </li>
-</ul>{:/}
+<td markdown="span">
 </td>
 <td markdown="span" style="text-align:center">
-<a href="{{ site.baseurl }}/notes/session33"> Introduction to Memory Safety </a></td>
+<b> Project Kickoff and Hybrid Threads </b></td>
 <td markdown="span">
 </td>
 </tr>
@@ -413,24 +410,21 @@ Day After Exam 2, No Class</td>
 30 <br/> Tue, May 02 2023</td>
 <td markdown="span" style="text-align:left;">
 {::nomarkdown}<ul style="margin:0;padding:.5rem">
-<li> <a href="{{ site.baseurl }}/labs/lab11/"> Hybrid Threads </a> </li>
+<li> <a href="https://www.eecs.umich.edu/courses/eecs588/static/stack_smashing.pdf"> Smashing The Stack for Fun and Profit </a> </li>
 </ul>{:/}
 </td>
 <td markdown="span" style="text-align:center">
-<b>Lab Day</b></td>
+<a href="{{ site.baseurl }}/notes/memsafety/"> Introduction to Memory Safety </a></td>
 <td markdown="span">
 </td>
 </tr>
 <tr>
 <td markdown="span">
 31 <br/> Thu, May 04 2023</td>
-<td markdown="span" style="text-align:left;">
-{::nomarkdown}<ul style="margin:0;padding:.5rem">
-<li> <a href="https://hovav.net/ucsd/dist/geometry.pdf"> The Geometry of Innocent Flesh on the Bone </a> </li>
-</ul>{:/}
+<td markdown="span">
 </td>
 <td markdown="span" style="text-align:center">
-<a href="{{ site.baseurl }}/notes/session34"> Stack Smashing and Its Variants </a></td>
+<b> Project Meetings </b></td>
 <td markdown="span">
 </td>
 </tr>
@@ -442,7 +436,7 @@ Day After Exam 2, No Class</td>
 <td markdown="span">
 </td>
 <td markdown="span" style="text-align:center">
-<b> Project Meetings </b></td>
+<a href="{{ site.baseurl }}/notes/session34"> Stack Smashing and Its Variants </a></td>
 <td markdown="span">
 </td>
 </tr>
@@ -450,52 +444,70 @@ Day After Exam 2, No Class</td>
 <tr><td markdown="span" colspan="5" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;"></td></tr><td rowspan="6" markdown="span" style="font-size:xx-large;"><a name="w9">9</a></td>
 <td markdown="span">
 33 <br/> Mon, May 08 2023</td>
-<td markdown="span" colspan="3">N/A</td>
-</tr>
-<tr>
-<td markdown="span" colspan="4"> [[Challenge] Mini-Project I]({{ site.baseurl }}/labs/lab12) DUE Mon, May 08 2023 23:59 [Submission box]({{ site.gradescope_url }}) <font color="#aaa"> grader: @TBA </font> </td></tr>
-<tr>
-<td markdown="span">
-34 <br/> Tue, May 09 2023</td>
 <td markdown="span">
 </td>
 <td markdown="span" style="text-align:center">
-<b> Stack Smashing Lab and Project Meetings </b></td>
+<a href=""> Return-to-libc Attacks </a></td>
+<td markdown="span">
+</td>
+</tr>
+<tr>
+<td markdown="span" colspan="4"> [[Challenge] Project Proposal]({{ site.baseurl }}/labs/lab12) DUE Mon, May 08 2023 23:59 [Submission box]({{ site.gradescope_url }}) <font color="#aaa"> grader: @TBA </font> </td></tr>
+<tr>
+<td markdown="span">
+34 <br/> Tue, May 09 2023</td>
+<td markdown="span" style="text-align:left;">
+{::nomarkdown}<ul style="margin:0;padding:.5rem">
+<li> <a href="https://hovav.net/ucsd/dist/geometry.pdf"> The Geometry of Innocent Flesh on the Bone </a> </li>
+</ul>{:/}
+</td>
+<td markdown="span" style="text-align:center">
+<a href=""> Return-Oriented-Programming </a></td>
 <td markdown="span">
 </td>
 </tr>
 <tr>
 <td markdown="span">
 35 <br/> Thu, May 11 2023</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:center">
+<a href=""> File Systems I </a></td>
+<td markdown="span">
+</td>
 </tr>
 <tr>
 <td markdown="span" colspan="4"> [Stack Smashing Lab]({{ site.baseurl }}/labs/lab13) DUE Thu, May 11 2023 23:59 [Submission box]({{ site.gradescope_url }}) <font color="#aaa"> grader: @TBA </font> </td></tr>
 <tr>
 <td markdown="span">
 36 <br/> Fri, May 12 2023</td>
-<td markdown="span" colspan="3">N/A</td>
+<td markdown="span">
+</td>
+<td markdown="span" style="text-align:center">
+<b> Project Meetings and Work Time </b></td>
+<td markdown="span">
+</td>
 </tr>
 <tr>
-<tr><td markdown="span" colspan="5" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;"></td></tr><td rowspan="5" markdown="span" style="font-size:xx-large;"><a name="w10">10</a></td>
+<tr><td markdown="span" colspan="5" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;"></td></tr><td rowspan="6" markdown="span" style="font-size:xx-large;"><a name="w10">10</a></td>
 <td markdown="span">
 37 <br/> Mon, May 15 2023</td>
 <td markdown="span">
 </td>
 <td markdown="span" style="text-align:center">
-<b> Project Meetings </b></td>
+<a href=""> File Systems II </a></td>
 <td markdown="span">
 </td>
 </tr>
 <tr>
-<td markdown="span" colspan="4"> [[Challenge] Mini-Project II]({{ site.baseurl }}/labs/lab14) DUE Mon, May 15 2023 23:59 [Submission box]({{ site.gradescope_url }}) <font color="#aaa"> grader: @TBA </font> </td></tr>
+<td markdown="span" colspan="4"> [[Challenge] Project Due]({{ site.baseurl }}/labs/lab14) DUE Mon, May 15 2023 23:59 [Submission box]({{ site.gradescope_url }}) <font color="#aaa"> grader: @TBA </font> </td></tr>
 <tr>
 <td markdown="span">
 38 <br/> Tue, May 16 2023</td>
 <td markdown="span">
 </td>
 <td markdown="span" style="text-align:center">
-<a href="{{ site.baseurl }}/notes/session38"> Project Meetings </a></td>
+<a href=""> Lab: ext2 file system </a></td>
 <td markdown="span">
 </td>
 </tr>
@@ -505,17 +517,19 @@ Day After Exam 2, No Class</td>
 <td markdown="span">
 </td>
 <td markdown="span" style="text-align:center">
-<a href="{{ site.baseurl }}/notes/session39"> Special Topics in OS Security </a></td>
+<a href=""> Class Wrap-up and Work Time </a></td>
 <td markdown="span">
 </td>
 </tr>
+<tr>
+<td markdown="span" colspan="4"> [ext2 File System]({{ site.baseurl }}/labs/ext2fs) DUE Thu, May 18 2023 23:58 [Submission box]({{ site.gradescope_url }}) <font color="#aaa"> grader: @TBA </font> </td></tr>
 <tr>
 <td markdown="span">
 40 <br/> Fri, May 19 2023</td>
 <td markdown="span">
 </td>
 <td markdown="span" style="text-align:center">
-<a href="{{ site.baseurl }}/notes/session40"> Special Topics in OS and Class Wrapup </a></td>
+<b> Project Presentations </b></td>
 <td markdown="span">
 </td>
 </tr>

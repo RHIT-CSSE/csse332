@@ -218,45 +218,58 @@
 ###############################################################################
 29:
   reading:
-    - <a href="https://www.eecs.umich.edu/courses/eecs588/static/stack_smashing.pdf"> Smashing The Stack for Fun and Profit </a>
   topics:
-    - <a href="{{ site.baseurl }}/notes/session33"> Introduction to Memory Safety </a>
+    - <b> Project Kickoff and Hybrid Threads </b>
   materials:
 
 30:
   reading:
-    - <a href="{{ site.baseurl }}/labs/lab11/"> Hybrid Threads </a>
+    - <a href="https://www.eecs.umich.edu/courses/eecs588/static/stack_smashing.pdf"> Smashing The Stack for Fun and Profit </a>
   topics:
-    - <b>Lab Day</b>
+    - <a href="{{ site.baseurl }}/notes/memsafety/"> Introduction to Memory Safety </a>
   materials:
 
 31:
-  reading:
-    - <a href="https://hovav.net/ucsd/dist/geometry.pdf"> The Geometry of Innocent Flesh on the Bone </a>
-  topics:
-    - <a href="{{ site.baseurl }}/notes/session34"> Stack Smashing and Its Variants </a>
-  materials:
-
-32:
   reading:
   topics:
     - <b> Project Meetings </b>
   materials:
 
+32:
+  reading:
+  topics:
+    - <a href="{{ site.baseurl }}/notes/session34"> Stack Smashing and Its Variants </a>
+  materials:
+
+
 ###############################################################################
 # WEEK 9
 ###############################################################################
-# 33:
+33:
+  reading:
+  topics:
+    - <a href=""> Return-to-libc Attacks </a>
+  materials:
 
 34:
   reading:
+    - <a href="https://hovav.net/ucsd/dist/geometry.pdf"> The Geometry of Innocent Flesh on the Bone </a>
   topics:
-    - <b> Stack Smashing Lab and Project Meetings </b>
+    - <a href=""> Return-Oriented-Programming </a>
   materials:
 
-# 35:
+35:
+  reading:
+  topics:
+    - <a href=""> File Systems I </a>
+  materials:
 
-# 36:
+36:
+  reading:
+  topics:
+    - <b> Project Meetings and Work Time </b>
+  materials:
+
 
 ###############################################################################
 # WEEK 10 
@@ -264,24 +277,24 @@
 37:
   reading:
   topics:
-    - <b> Project Meetings </b>
+    - <a href=""> File Systems II </a>
   materials:
 
 38:
   reading:
   topics:
-    - <a href="{{ site.baseurl }}/notes/session38"> Project Meetings </a>
+    - '<a href=""> Lab: ext2 file system </a>'
   materials:
 
 39:
   reading:
   topics:
-    - <a href="{{ site.baseurl }}/notes/session39"> Special Topics in OS Security </a>
+    - <a href=""> Class Wrap-up and Work Time </a>
   materials:
 
 40:
   reading:
   topics:
-    - <a href="{{ site.baseurl }}/notes/session40"> Special Topics in OS and Class Wrapup </a>
+    - <b> Project Presentations </b>
   materials:
 
