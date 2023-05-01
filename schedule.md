@@ -399,7 +399,7 @@ Day After Exam 2, No Class</td>
 <td markdown="span">
 </td>
 <td markdown="span" style="text-align:center">
-<b> Project Kickoff and Hybrid Threads </b></td>
+<b> <a href="{{ site.baseurl }}/labs/lab12">Project Kickoff</a> and Hybrid Threads </b></td>
 <td markdown="span">
 </td>
 </tr>

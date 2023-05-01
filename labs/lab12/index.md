@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Challenge Mini-Project Step 1
+title: Challenge Project Step 1
 readtime: true
 date: Mon Feb  6 2023 
 ---
 
 # Introduction
 
-The goal of this mini-project is for you to choose your favorite feature of an
+The goal of this project is for you to choose your favorite feature of an
 Operating System and then add that feature (or some simplified version of it) to
 the xv6 kernel. The idea behind this exercise is for you to design, tune, and
 implement a simple OS features, based on your own research and understanding of
@@ -21,16 +21,16 @@ what to expect when deploying. This is a really important aspect of OS design as
 your code will be running at a high privilege level and it must thus be very
 clear what your code can and cannot do.
 
-Another important part of this exercise is designing and writing test case. Say
+Another important part of this exercise is designing and writing test cases. Say
 for example you decide to write a new xv6 process scheduler, then you will need
-to write a few test cases that actually showcase or stress the features of
-your scheduler. Running all processes to completion is great, but if your
-scheduler has support for some form of priorities, then you will need to write,
-and document, test cases that exercise those priorities.
+to write a few test cases that actually showcase or stress the features of your
+scheduler. Running all processes to completion is great, but if your scheduler
+has support for some form of priorities, then you will need to write, and
+document, test cases that exercise those priorities.
 
 # Learning Objectives
 
-At this end of this mini-project, you should be able to:
+At this end of this project, you should be able to:
 
 - Design a basic OS feature and implement it in xv6.
 - Document your assumptions about your OS feature.
@@ -38,14 +38,14 @@ At this end of this mini-project, you should be able to:
 - Write a report that highlights the advantages and limitations of your
   approach.
 
-# Mini-Project Requirements
+# Project Requirements
 
 There are several requirements that your project must meet at the end of the
 term.
 
 ## Teams
 
-You should complete this mini-project in teams of 2 or 3 students, you are free
+You should complete this project in teams of 2 or 3 students, you are free
 to pick your group-mates based on your preferences and connections. I strongly
 discourage lone-wolf projects; sharing ideas, pair programming, and task
 planning can be very helpful for you to have a smooth experience.
@@ -64,7 +64,7 @@ should be present at those meetings__.
 
 ## Completion Requirements
 
-At the end of the term, your mini-project will be assessed based on the
+At the end of the term, your project will be assessed based on the
 following requirements:
 
 1. The assumptions that you make throughout your design, and how well they are
@@ -81,13 +81,12 @@ following requirements:
 
 5. The performance of your implementation (runtime, memory footprint, etc.).
 
-As you can see, your actual implementation ranks low on the list of
-requirements. I am more interested in seeing how you would design your feature
+Particularly, I am very interested in seeing how you would design your feature
 and implement it, given the many limitations of the xv6 kernel. That is not to
 say that your project should not be implemented, but more to say that the
 process that lead you to make the choices you made (for example which data
-structures to use, concurrency issues, trade-offs you had to make, etc.) are more
-important.
+structures to use, concurrency issues, trade-offs you had to make, etc.) are
+very important.
 
 ### Documentation
 
@@ -100,8 +99,8 @@ options that have been considered, the design decisions that have been made, and
 the rationale for those decisions
 
 At the same time, a tutorial on how to run and use the OS features that you have
-implemented would go a long way in showcasing that your process was well thought
-of.
+implemented would be crucial for us to determine how usable your added
+feature(s) is.
 
 Finally, in your design document, you will get to assign yourself (or your group
 for that purpose) that grade that you think you deserve for the project, and
@@ -120,6 +119,7 @@ Note that for all these ideas (and your own), you will find that the [xv6
 book]({{ site.xv6_book_url }}) to be very useful and very informative. The
 source code is also pretty readable and very easy to understand.
 
+<!--
 ## 1. Memory Management: Buddy Allocator
 
 In its current form, the xv6 kernel allocates physical memory in a
@@ -144,8 +144,9 @@ with plenty of nice diagrams that can help you understand how it can be built.
 You can make any simplifying assumptions that will help you spin up a working
 implementation, but make sure to document all of your assumptions in your design
 document.
+-->
 
-## 2. Process Management: Kernel Threads
+## 1. Process Management: Kernel Threads
 
 In its current form, the xv6 kernel only supports single-threaded processes with
 separate address spaces. That is great for a start, but it has to incur a pricey
@@ -165,9 +166,11 @@ system call](https://www.man7.org/linux/man-pages/man2/clone.2.html) and then
 writing a few examples that uses `clone` and run them on your Linux machine.
 You'd then want to select a small subset of the options that are provided by
 `clone` and implement them in xv6. Then you can move on to implementing
-`join`.
+`join`. Your implementation must provide support for a user-level API that
+allows users to create and manipulate kernel threads (something similar to the
+`pthreads` library).
 
-## 3. Process Management: Userspace Threads
+## 2. Process Management: Userspace Threads
 
 The goal of this exercise is to build a user-space threading library for xv6.
 What makes this project unique is that it doesn't involve any coding in kernel
@@ -181,10 +184,10 @@ point, however, what we are looking to implement here are the `makecontext` and
 `swapcontext` functions that we used in that lab.
 
 At an initial stage, you do not have to worry about any concurrency issues.
-However, if you find the time, you can add some user-space locking mechanisms
-(spinlocks are ok, locks that sleep and wakeup are better).
+However, your implementation __must__ provide support for at least one means for
+concurrency along with its corresponding implementatin and usable API.
 
-## 4. Process Management: MLFQ Scheduling
+## 3. Process Management: MLFQ Scheduling
 
 As we have seen in class, the xv6 scheduler is a fairly straightforward round
 robin preemptive scheduler with a fixed quantum. That is great if what we care
@@ -203,7 +206,7 @@ robin, and we are back to square one. So in order to showcase your
 implementation, you will have to carefully design your tests cases to trigger
 the different aspect of the MLFQ algorithm. 
 
-## 5. Process Management: Signals
+## 4. Process Management: Signals
 
 In its current form, the xv6 kernel does not support for process signaling. In
 this task, we would like to change that. Pick some set of signals that you would
@@ -217,6 +220,37 @@ and possibly put restrictions on, what can be considered as a signal handler.
 For example, it might be a good idea to force all signal handlers to have a
 certain pattern or to call certain functions once they enter or when they exit.
 
+## 5. Process Management: Lottery Scheduler
+
+In class, we focused on deterministic scheduling policies. However, another
+class of CPU scheduling policies are _probabilistic_ policies, where the process
+that gets to run next is selected based on a probabilistic approach to provide
+certain guarantess. Here's a really good description of _lottery scheduling_
+from the
+[paper](https://www.usenix.org/legacy/publications/library/proceedings/osdi/full_papers/waldspurger.pdf)
+that introduced it to the OS community:
+
+> Lottery scheduling provides efficient, responsive control over the relative
+  execution rates of computations. Such control is beyond the capabilities of
+  conven- tional schedulers, and is desirable in systems that service requests
+  of varying importance, such as databases, media-based applications, and
+  networks. Lottery scheduling also supports modular resource management by
+  enabling concurrent modules to insulate their resource allocation policies
+  from one another. A currency abstraction is introduced to flexibly name,
+  share, and protect resource rights. We also show that lottery scheduling can
+  be generalized to manage many diverse resources, such as I/O bandwidth, mem-
+  ory, and access to locks.
+
+Your job in this task is to implement a lottery-based scheduling policy in xv6
+(or any probabilistic scheduling policy). Similar to the case of the MLFQ
+scheduling project, a challenging aspect of this project is to design test cases
+that highlight the features of your implementation and how it differs from
+other policies. You might find it helpeful to look at the original
+[paper](https://www.usenix.org/legacy/publications/library/proceedings/osdi/full_papers/waldspurger.pdf)
+or
+this [book chapter](https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched-lottery.pdf) for some evaluation metrics.
+
+<!--
 ## 6. Defensive Security: Users and Authentication
 
 Currently, xv6 has no notion of users and thus has no mean for authentication.
@@ -244,8 +278,9 @@ Of course, doing authentication with proper access control is not very useful.
 So eventually, we would like to support some form of access control over files
 in the kernel. Given our timeline, that is definitely out of scope, yet it would
 be great if you could draw a plan about how you would approach such a design.
+-->
 
-## 7. Defensive Security: Kernel Auditing
+## 6. Defensive Security: Kernel Auditing
 
 As we mentioned in class, auditing is an important part of the OS's roles in
 providing security guarantees. When something bad happens, we would like to be
@@ -270,11 +305,16 @@ executed by any process in our system. You might find it useful to checkout the
 
 You might want to start by selecting a fixed subset of events that you would
 like to audit in your system, and then add more events once you have the
-infrastructure in place.
+infrastructure in place. A challenging aspect of this project is to manage
+how logs are buffered and when they would be flushed to disk to be saved.
+Writing to disk on every monitored even would be very slow and would become a
+bottleneck. So it would be your job to determine how to avoid constantly dumping
+logs to disk. This also introduces concurrency issues that you must struggle
+with.
 
-## 8. Offensive Security: Return-Oriented-Programming (ROP)
 
-In this last idea, we would like to flip the roles and put on our black hats.
+## 7. Offensive Security: Return-Oriented-Programming (ROP)
+
 Return-Oriented-Programming (ROP) is a dangerous form of attack that chains
 several small pieces of benign code (called gadgets) to allow for arbitrary code
 execution. There are plenty of ROP examples that work on different popular
@@ -305,7 +345,7 @@ Some references you might find useful are the following:
 - [No RISC No Reward: Return-Oriented Programming on
   RISC-V](https://arxiv.org/pdf/2007.14995.pdf)
 
-## 9. Other Ideas?
+## 8. Other Ideas?
 
 If there is anything specific that you are interested or excited about that you
 would want to see come to alive, I would be more than happy to sit down and talk
@@ -314,7 +354,11 @@ possible to make it doable within the time available.
 
 # Submission
 
-After our in-class discussions, please submit a small proposal (a couple
-paragraph at the most) listing your group members, your idea that you would like
-to implement, and a tentative plan at implementing it. It would be great if you
-could submit Markdown or PDF files, but please avoid Word like the plague.
+After our in-class discussions, please submit a proposal __IN PDF FORMAT__
+listing your group members, your idea that you would like to implement, and a
+tentative plan at implementing it. Your proposal __must contain__ a plan for
+exactly how you plan to implement your idea, including needed data structures,
+places in the xv6 code-base where your code should be added, and so on. The more
+details you add the more we can help you identify what is feasible in the
+current timeline and what is not.
+

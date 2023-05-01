@@ -219,7 +219,7 @@
 29:
   reading:
   topics:
-    - <b> Project Kickoff and Hybrid Threads </b>
+    - <b> <a href="{{ site.baseurl }}/labs/lab12">Project Kickoff</a> and Hybrid Threads </b>
   materials:
 
 30:
