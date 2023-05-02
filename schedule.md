@@ -414,7 +414,7 @@ Day After Exam 2, No Class</td>
 </ul>{:/}
 </td>
 <td markdown="span" style="text-align:center">
-<a href="{{ site.baseurl }}/notes/memsafety/"> Introduction to Memory Safety </a></td>
+<a href="{{ site.baseurl }}/notes/session33/"> Introduction to Memory Safety </a></td>
 <td markdown="span">
 </td>
 </tr>

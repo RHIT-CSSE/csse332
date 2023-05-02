@@ -28,6 +28,15 @@ In this lecture, we will cover the following topics:
 
 # Notes
 
+<!-- vim-markdown-toc GFM -->
+
+* [Prerequisites](#prerequisites)
+  * [Required Software](#required-software)
+  * [Recommended Software](#recommended-software)
+* [A Note About WSL2](#a-note-about-wsl2)
+
+<!-- vim-markdown-toc -->
+
 # Prerequisites
 
 - To follow up on this lab, make sure you are running an x86 machine (ARM works
@@ -77,3 +86,19 @@ In this lecture, we will cover the following topics:
 
 - If `curl` is not installed, you can install it using `sudo apt intall -y
   curl`.
+
+# A Note About WSL2
+
+It seems that WSL1 on Windows is not able to run 32 bit applications. To be able
+to do this lab, you must be running on WSL2. To upgrade from WSL1 to WSL2,
+follow the instructions
+[here](https://dev.to/adityakanekar/upgrading-from-wsl1-to-wsl2-1fl9) and
+[here](https://learn.microsoft.com/en-us/windows/wsl/install#change-the-default-linux-distribution-installed).
+If running the `wsl` command from Powershell does not work, then you are running
+an older version of Windows, and you need to manually upgrade WSL by following
+the instructions
+[here](https://learn.microsoft.com/en-us/windows/wsl/install-manual).
+
+Note that you can still run Linux virtual machines on WSL1 if you require them,
+you can use the command `wsl --set-version <vm-name> 1` from Powershell, where
+`<vm-name>` is the name of the distribution that you would like to run on WSL1.
