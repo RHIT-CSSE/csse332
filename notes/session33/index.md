@@ -34,6 +34,8 @@ In this lecture, we will cover the following topics:
   * [Required Software](#required-software)
   * [Recommended Software](#recommended-software)
 * [A Note About WSL2](#a-note-about-wsl2)
+* [Definitions of Security](#definitions-of-security)
+  * [Courtney's Laws](#courtneys-laws)
 
 <!-- vim-markdown-toc -->
 
@@ -102,3 +104,65 @@ the instructions
 Note that you can still run Linux virtual machines on WSL1 if you require them,
 you can use the command `wsl --set-version <vm-name> 1` from Powershell, where
 `<vm-name>` is the name of the distribution that you would like to run on WSL1.
+
+# Definitions of Security
+
+- ❓ What do you think of when we say security? What is the first thing the
+  comes to mind? How would you formulate it with respect to what you care about?
+  - We can't even quantify security!
+  - What does it mean to be 90% secure?
+  - Or how secure are you on a scale of 1 to 5? It means pretty much nothing!
+
+- According to hardcore scientists, security is not even a science!
+  > I often say that when you can measure what you are speaking about, and
+    express it in numbers, you know something about it; but when you cannot
+    measure it, when you cannot express it in numbers, your knowledge is of a
+    meagre and unsatisfactory kind; it may be the beginning of knowledge, but
+    you have scarcely in your thoughts advanced to the state of Science,
+    whatever the matter may be.
+    - Lord Kelvin
+
+- There really is no one agreed-upon definition of security, mainly because it
+  is a very hard problem to solve, or to even define.
+
+- Here are a couple of potential definitions:
+  > Cybersecurity is everything that results in protecting information and
+    underlying technology from theft, manipulation, and disruption.
+    - Rob Joyce, NSA
+
+  > A computer is secure if you depend on it and its software to behave as
+    expected.
+    - Garfinkel and Spafford
+
+- Traditional textbook approach classify security properties into three
+  measures: 
+  1. __Confidentiality__: No unauthorized user can access data they don't have
+     access to.
+  2. __Integrity__: No unauthorized modification to data without permission.
+  3. __Availability__: The system should be usable (no long delays, etc.).
+
+- The above measures form the CIA triad, but really it cannot encompass
+  everything.
+
+  For example, "is overwritten data available?" not really, so the properties
+  are not orthogonal!
+
+## Courtney's Laws
+
+- Robert Courtney, in RFC 1034, defined some laws that are useful when thinking
+  about security:
+
+  1. First law: You cannot say anything interesting (i.e., significant) about
+     the security of a system except in the context of a particular application
+     and environment.
+
+  2. Second law: Never spend more money eliminating a security exposure than
+     tolerating it will cost you.
+
+     - First corollary: Perfect security has infinite cost.
+ 
+     - Second corollary: There is no such thing as zero risk.
+
+  3. Third law: There is no technical solutions to management problems, but
+     there are management solutions to technical problems.
+
