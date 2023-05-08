@@ -145,6 +145,32 @@ Once you are done with this lab, please reenable ASLR using the script:
 $ ./enable_aslr.sh
 ```
 
+## Some `gef` commands
+
+Here are a bunch of useful `gef` and `gdb` commands:
+
+- `next` or `n`: execute the current line and move to the next line. Note that
+  this jumps over function calls.
+
+- `step` or `s`: step into a function. Use `s` if you would want to move
+  execution into a function to debug further. I do not recommend using `step`
+  for `libc` functions for this lab.
+
+- `nexti` or `ni`: execute the current instruction and move to the next one.
+
+- `stepi` or `si`: step into the first instruction of a function call.
+
+- `context`: redisplay the current `gef` context.
+
+- `context stack`: dump the stack on the screen.
+
+- `gef config context.grow_stack_down True`: make the stack grow downward
+  instead of upward. I recommend using this setting as it is easier to
+  visualize.
+
+- For a list of useful `gef` commands, see [the
+documentation](https://hugsy.github.io/gef/commands/aliases/)
+
 # Part 1 🌶️
 
 __Note that we did this part together in class, so you can simply just copy the
