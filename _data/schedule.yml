@@ -248,7 +248,7 @@
 33:
   reading:
   topics:
-    - <a href=""> Return-to-libc Attacks </a>
+    - <a href="{{ site.baseurl }}/labs/lab13/"> Return-to-libc Attacks </a>
   materials:
 
 34:
