@@ -472,7 +472,7 @@ Day After Exam 2, No Class</td>
 <td markdown="span">
 </td>
 <td markdown="span" style="text-align:center">
-<a href=""> File Systems I </a></td>
+<a href=""> Stack smashing wrap up </a></td>
 <td markdown="span">
 </td>
 </tr>
@@ -484,7 +484,7 @@ Day After Exam 2, No Class</td>
 <td markdown="span">
 </td>
 <td markdown="span" style="text-align:center">
-<b> Project Meetings and Work Time </b></td>
+<a href="{{ site.baseurl }}/notes/session38/"> Project Meetings </a></td>
 <td markdown="span">
 </td>
 </tr>
@@ -495,7 +495,7 @@ Day After Exam 2, No Class</td>
 <td markdown="span">
 </td>
 <td markdown="span" style="text-align:center">
-<a href=""> File Systems II </a></td>
+<a href=""> File Systems </a></td>
 <td markdown="span">
 </td>
 </tr>
