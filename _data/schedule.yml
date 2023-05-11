@@ -261,13 +261,13 @@
 35:
   reading:
   topics:
-    - <a href=""> File Systems I </a>
+    - <a href=""> Stack smashing wrap up </a>
   materials:
 
 36:
   reading:
   topics:
-    - <b> Project Meetings and Work Time </b>
+    - <a href="{{ site.baseurl }}/notes/session38/"> Project Meetings </a>
   materials:
 
 
@@ -277,7 +277,7 @@
 37:
   reading:
   topics:
-    - <a href=""> File Systems II </a>
+    - <a href=""> File Systems </a>
   materials:
 
 38:
