@@ -1,38 +1,42 @@
 ---
 title: Ext2 file system
 layout: post
-date: Sun Sep 19 14:55:10 2021 
+date: Fri May 12 2023 
 readtime: true
-gh-repo: rhit-csse332/csse332
-gh-badge: [star,watch,follow]
 ---
 
 # EXT2 FileSystem Lab
 
-## Table of Contents
 
-   * [Understanding ext2](#understanding-ext2)
-      * [Directories](#directories)
-      * [Inodes](#inodes)
-      * [Summary](#summary)
-   * [Finishing our implementation](#finishing-our-implementation)
-      * [Getting familiar with the code we've given you](#getting-familiar-with-the-code-weve-given-you)
-      * [load ext2_metadata](#load-ext2_metadata)
-         * [Loading the superblock](#loading-the-superblock)
-         * [calc_metadata](#calc_metadata)
-      * [Implement fetch_inode](#implement-fetch_inode)
-      * [Finish the implementation of calculate_offsets](#finish-the-implementation-of-calculate_offsets)
-      * [Read through file_blockread](#read-through-file_blockread)
-      * [Implement file_read](#implement-file_read)
-      * [Implement scan_dir](#implement-scan_dir)
-      * [Implement path_to_inode_num](#implement-path_to_inode_num)
-   * [A Working Tool](#a-working-tool)
-   * [Valgrind](#valgrind)
-   * [Turning in](#turning-in)
-   * [Rubic](#rubic)
-   * [Acknowledgement](#acknowledgement)
-   * [Table of Contents](#table-of-contents)
-   
+<!-- vim-markdown-toc GFM -->
+
+* [Introduction](#introduction)
+* [Learning Objectives](#learning-objectives)
+* [Getting the Source Code](#getting-the-source-code)
+* [Understanding ext2](#understanding-ext2)
+  * [Directories](#directories)
+  * [Inodes](#inodes)
+  * [Summary](#summary)
+* [Finishing our implementation](#finishing-our-implementation)
+  * [Getting familiar with the code we've given you](#getting-familiar-with-the-code-weve-given-you)
+  * [load `ext2_metadata`](#load-ext2_metadata)
+    * [Loading the superblock](#loading-the-superblock)
+    * [`calc_metadata`](#calc_metadata)
+  * [Implement `fetch_inode`](#implement-fetch_inode)
+  * [Finish the implementation of `calculate_offsets`](#finish-the-implementation-of-calculate_offsets)
+  * [Read through `file_blockread`](#read-through-file_blockread)
+  * [Implement `file_read`](#implement-file_read)
+  * [Implement `scan_dir`](#implement-scan_dir)
+  * [Implement `path_to_inode_num`](#implement-path_to_inode_num)
+* [A Working Tool](#a-working-tool)
+* [Valgrind](#valgrind)
+* [Turning in](#turning-in)
+* [Rubic](#rubic)
+* [Acknowledgement](#acknowledgement)
+
+<!-- vim-markdown-toc -->
+
+# Introduction
 
 In this project, you'll finish the implementation of a program that
 understands the on-disk format of a Linux "ext2" filesystem and walks
@@ -40,17 +44,39 @@ through its directory hierarchy to read some files. We've provided
 most of the code for you, but we have omitted the implementation of
 some key functions.  Your job is to fill in the omitted code.
 
-To help you know whether or not your code is correct, we've provided
-you with a bunch of test code that examine the data structures and
-file content retrieved by your code, and compares them to the
-known-to-be-correct values. Once your code passes all of our tests,
-you're done! If your code fails some of our tests, you can look at the
-tests and the expected values they print out, to help you diagnose
-your errors.
+To help you know whether or not your code is correct, we've provided you with a
+bunch of test code that examines the data structures and file content retrieved
+by your code, and compares them to the known-to-be-correct values. Once your
+code passes all of our tests, you're done! If your code fails some of our tests,
+you can look at the tests and the expected values they print out, to help
+you diagnose your errors.
 
-Here are the highlights for quick access:
-* [Source code]({{ site.gh_repository_url }}/tree/main/homeworks/06_ext2)
-* [Submission instructions](https://rhit-csse332.github.io/csse332/docs/submission_instructions/)
+# Learning Objectives
+
+At the end of this lab, you should be able to:
+
+- Define the operations of a filesystem in the scope of ext2.
+
+- Implement several filesystem operations based on the abstractions provided by
+  ex2.
+
+# Getting the Source Code
+
+For this lab, you will be using the native Linux virtual machine (or baremetal
+machine if you have one) and not the xv6 operation system. Please note that this
+lab might behave slightly differently if you are running it on Windows or
+MacOs; therefore, we highly recommend that you stick to using a Linux machine,
+either natively or via WSL2.
+
+To obtain the starting code for this lab, navigate to the top level directory of
+your __csse332 class repository__ and `cd` into the `labs/ext2` directory as
+follows:
+```shell
+$ cd /path/to/csse332/git/repository/
+$ git pull
+$ cd labs/ext2
+```
+
 
 # Understanding ext2
 
@@ -75,7 +101,7 @@ chosen when the filesystem is formatted: you shouldn't assume any
 particular blocksize, though in practice you'll typically encounter
 1024 byte or 4096 byte block sizes. So, if you need to fetch block 5
 off of the disk, you'd fetch <i>blocksize</i> bytes starting from
-offset <i>5*blocksize</i> on disk. <p>
+offset <i>5*blocksize</i> on disk.
 
 At a different level, ext2 splits the disk into an initial boot block
 that the BIOS of the computer fetches and executes during the boot
@@ -461,5 +487,4 @@ Submit your ext2access.c on gradescope.
 This assignment was originally written by Steve Gribble for the
 University of Washington.  It has been modified in various particulars
 for the Rose Hulman context by Mike Hewner.
-
 

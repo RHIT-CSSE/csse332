@@ -522,7 +522,7 @@ Day After Exam 2, No Class</td>
 </td>
 </tr>
 <tr>
-<td markdown="span" colspan="4"> [ext2 File System]({{ site.baseurl }}/labs/ext2fs) DUE Thu, May 18 2023 23:58 [Submission box]({{ site.gradescope_url }}) <font color="#aaa"> grader: @TBA </font> </td></tr>
+<td markdown="span" colspan="4"> [[Challenge] ext2 File System]({{ site.baseurl }}/labs/ext2) DUE Thu, May 18 2023 23:58 [Submission box]({{ site.gradescope_url }}) <font color="#aaa"> grader: @TBA </font> </td></tr>
 <tr>
 <td markdown="span">
 40 <br/> Fri, May 19 2023</td>
