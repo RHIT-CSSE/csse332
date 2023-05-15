@@ -495,7 +495,7 @@ Day After Exam 2, No Class</td>
 <td markdown="span">
 </td>
 <td markdown="span" style="text-align:center">
-<a href=""> File Systems </a></td>
+<a href="{{ site.baseurl }}/notes/filesystems/"> File Systems </a></td>
 <td markdown="span">
 </td>
 </tr>

@@ -277,7 +277,7 @@
 37:
   reading:
   topics:
-    - <a href=""> File Systems </a>
+    - <a href="{{ site.baseurl }}/notes/filesystems/"> File Systems </a>
   materials:
 
 38:
