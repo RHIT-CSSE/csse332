@@ -1,8 +1,8 @@
 require 'date'
 require 'yaml'
 
-start_date = Date.new(2023, 11, 07)
-end_date = Date.new(2024, 02, 23)
+start_date = Date.new(2023, 11, 27)
+end_date = Date.new(2024, 02, 16)
 vacation_start = Date.new(2023, 12, 23) #inclusive
 vacation_end = Date.new(2024, 01, 7) # inclusive
 allowed_days_of_week = [1,2,4,5] # monday is 1

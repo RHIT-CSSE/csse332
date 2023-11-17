@@ -5,6 +5,7 @@ import pprint as pp
 import csv
 import logging
 import os
+import sys
 from datetime import datetime as dt
 
 
@@ -98,6 +99,7 @@ def count_weeks(schedule, starting_week):
 
         if (current_week >= len(week_counter)):
             logging.error("What ? {}".format(current_week))
+            sys.exit(1)
         week_counter[current_week] += 1
         session['week'] = current_week
         prev_week = week_number
