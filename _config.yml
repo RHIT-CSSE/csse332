@@ -12,10 +12,10 @@ title: CSSE 332
 author: Mohammad A. Noureddine
 
 # The subpath of your site.
-baseurl: '/class/csse/csse332'
+baseurl: '/class/csse/csse332/2324b'
 
 # The base hostname and protocol for your site
-url: 'https://rose-hulman.edu'
+url: 'https://www.rose-hulman.edu'
 
 # --- List of links in the navigation bar --- #
 
@@ -250,6 +250,10 @@ exclude:
   - vendor/
   - homeworks/
   - resources/
+  - autograder/
+  - activities/
+  - admin/
+  - sample_exams/
 
 plugins:
   - jekyll-paginate

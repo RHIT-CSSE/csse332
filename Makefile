@@ -4,9 +4,9 @@
 
 # configuration options, adjust as you see fit
 SHELL=bash
-TERM=2324b
+ACTERM=2324b
 USERNAME=noureddi
-REMOTE_DIR=addiator.rose-hulman.edu:/class/csse/csse332/${TERM}
+REMOTE_DIR=addiator.rose-hulman.edu:/class/csse/csse332/${ACTERM}
 
 all: serve
 
@@ -23,13 +23,18 @@ restart: kill background
 kill:
 	tmux kill-session -t server || true
 
+build:
+	bundle exec jekyll build
+
 www: clean
 	@echo -e '\033[1;mBuilding the webpage\033[0m'
 	bundle exec jekyll build -q
 	@echo -e '\033[1;32mCopying to remote server\033[0m'
+	cd ./_site/ && rsync -e ssh -Paz --delete . ${USERNAME}@${REMOTE_DIR} && cd -
+	@echo -e '\033[1;32mDone\033[0m'
 
 echo:
-	@echo -e 'TERM is ${TERM}'
+	@echo -e 'TERM is ${ACTERM}'
 	@echo -e 'USERNAME is ${USERNAME}'
 	@echo -e 'Remote target is ${REMOTE_DIR}'
 
