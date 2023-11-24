@@ -11,6 +11,12 @@ title: CSSE 332
 # Your name to show in the footer
 author: Mohammad A. Noureddine
 
+# The subpath of your site.
+baseurl: '/class/csse/csse332'
+
+# The base hostname and protocol for your site
+url: 'https://rose-hulman.edu'
+
 # --- List of links in the navigation bar --- #
 
 navbar-links:
@@ -42,7 +48,7 @@ gh_labs_url: "https://github.com/RHIT-CSSE/csse332/tree/main/labs"
 
 moodle_url: "https://moodle.rose-hulman.edu/course/view.php?id=96841"
 gradescope_url: "https://www.gradescope.com/courses/517628"
-course_term: "Spring 2022-23"
+course_term: "Winter 2023-24"
 
 xv6_book_url: "https://pdos.csail.mit.edu/6.828/2022/xv6/book-riscv-rev3.pdf"
 
@@ -54,8 +60,8 @@ xv6_book_url: "https://pdos.csail.mit.edu/6.828/2022/xv6/book-riscv-rev3.pdf"
 # Select the social network links that you want to show in the footer.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "noureddi@rose-hulman.edu"
-  calendly: "mnoureddine"
+  # email: "noureddi@rose-hulman.edu"
+  # calendly: "mnoureddine"
   # facebook: deanattali
   # github: daattali
   # twitter: daattali
@@ -162,6 +168,8 @@ footer-link-col: "#404040"
 
 # --- Comments --- #
 
+theme: beautiful-jekyll-theme
+
 # To use Disqus comments, sign up to https://disqus.com and fill in your Disqus shortname (NOT the userid)
 #disqus: ""
 
@@ -241,6 +249,7 @@ exclude:
   - screenshot.png
   - vendor/
   - homeworks/
+  - resources/
 
 plugins:
   - jekyll-paginate
