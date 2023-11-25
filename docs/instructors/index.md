@@ -1,24 +1,22 @@
 ---
-layout: post
-title: Welcome to CSSE 332
+layout: page
+title: 'Instructors'
 readtime: true
 date: Fri Nov 25 22:20:51 2022 
 ---
 
-# Spring 2022-2023 Instructors
+# Winter 2023-2022 Instructors
 
-- Michael Hewner (Buffalo)
-  - Office: Moench D219B
-  - Office Hours: MTRF 1:30 pm - 2:20 pm.
-  - Email: hewner `at` rose-hulman `dot` edu
+- Mark Hays
+  - Office: 
+  - Office Hours: TBA
+  - Email: hays `at` rose-hulman `dot` edu
 
 
 - Mohammad Noureddine
-  - Please call me Mohammad.
   - Office: Moench F214.
-  - Office Hours: MTRF 2:30 to 4:00 pm, or by appointment.
+  - Office Hours: TBA
   - Email: noureddi `at` rose-hulman `dot` edu
-  - [Get on my calendar](https://calendly.com/mnoureddine/office-hours)
 
 <!--
 ## Welcome Statement

@@ -1,11 +1,12 @@
 ---
-layout: post
+layout: minimal
 title: Unofficial Syllabus
 readtime: true
-date: Sat Mar  4 16:25:21 2023 
+date: Fri 24 Nov 2023
 ---
 
 ## So what's this course about?
+
 Have you ever wondered
 * What the meaning of life is?
 * Or can you ever really trust your senses?
@@ -30,10 +31,11 @@ questions:
 
 In short, in this class, you will be exposed to the foundations of how machines
 run and how they manage their resources efficiently (and sometimes, not so
-efficiently). 
+efficiently).
 
 ## Why should I care?
-I know by now that your brain is going 
+
+I know by now that your brain is going
 >why do I care about how resources are managed? I just wanted to write Java or
 Python, do machine learning, and earn the big bucks.
 
@@ -41,7 +43,7 @@ I totally understand and sympathize with you, that was my initial reaction as
 well. First, before I try to convince you why this class is important, I would
 urge you to take an hour of your time to watch [James Mickens' keynote
 talk](https://www.youtube.com/watch?v=ajGX7odA87k) at the Usenix Security 2018
-conference; it is hilarious but very informative and insightful. 
+conference; it is hilarious but very informative and insightful.
 
 Now, back to our question. Imagine the following scenario: You have graduated
 from Rose, are now a famous software developer, and are now on your way to buy
@@ -61,25 +63,26 @@ boom, they're powered on. That is all great until one day, you start hearing
 weird noises, your pipes are creaking, your power is going crazy, and now your
 fancy Jacuzzi is moving on its own. Well, what happened? By ignoring that
 foundation, you were able to build a wonderful house that worked for a while,
-but then started falling apart. 
+but then started falling apart.
 
 This is why I believe learning operating systems is important. The goal is not
 for you to become a kernel developer (though I'd be super happy if you would and
 we will be friends!), but the aim is for you to understand what's happening
 behind the scenes in your workstation. I strongly believe that answering the
 questions above is crucial for you to become a well-versed software developer
-that can write good and well-founded software. 
+that can write good and well-founded software.
 
 I personally absolutely LOVE this class and am very passionate about this
 subject. I hope that by end of this quarter, I can convey some of my
 appreciation for this subject to you. When I learned the concepts in this
 class, I gain an entire new appreciation for programming and the magic that
-happens behind the scenes in our machines. Quoting one Reddit user, 
+happens behind the scenes in our machines. Quoting one Reddit user,
 > A big brain moment for me was realizing how callbacks work and how I didn't
   need to write a main loop or anything like a regular program. Just set your
   hooks and let the OS call them.
 
 ## Why are there so many assignments and deadlines?
+
 > It is one thing to learn concepts about operating systems, it is another to
 apply them in practice. -- Your instructor
 
@@ -99,12 +102,11 @@ corner.
 
 ## Annoying your professor
 
-Students in Sections 1, 2, and 3, if you have made it this far reading this
+Students in Sections 1 and 2, if you have made it this far reading this
 document, you get the privilege of overloading my (Mohammad's) email inbox with
-a funny picture of your pet. If you don't have any pets, then you can send me a
-picture of your favorite Norse or Greek deity.
+a funny drawing of an elephant.
 
-<!-- 
+<!--
 ## A statement on mental health
 I know that as students, you are dealing with a lot of stress, often a lack of
 sleep, and sometimes social isolation (especially in the COVID times). It is
@@ -117,12 +119,12 @@ services](https://www.rose-hulman.edu/campus-life/student-services/wellness-and-
 or [the student counseling
 center](https://www.rose-hulman.edu/campus-life/student-services/wellness-and-health-services/counseling-services/index.html).
 Also, if you feel comfortable, you can reach out to me so I can help you
-devise a plan to tackle your coursework for CSSE 332. 
+devise a plan to tackle your coursework for CSSE 332.
 
 Students of Sections 03 and 04 (and others if you like), if you have read so far
 into the unofficial syllabus, send [Mohammad](mailto:noureddi@rose-hulman.edu) a
 picture of your favorite Norse or Greek god. If you don't have a favorite Norse
-or Greek god, then look them up and pick one, you definitely should. 
+or Greek god, then look them up and pick one, you definitely should.
 
 ## Mystery Point
 I bet you were wondering what is the mystery point about in the official syllabus. Well, here it is.

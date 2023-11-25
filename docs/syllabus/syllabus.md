@@ -52,9 +52,9 @@ operating system features that will solidify the concepts that we discuss in
 class.
 
 If you are wondering why you are required to take this class, please take a
-moment to read the [unofficial syllabus]({{ site.baseurl }}/docs/unofficial)
-where we try to convince you of the importance of knowing the concepts in this
-class.
+moment to read the [unofficial syllabus]({{ site.baseurl
+ }}/docs/syllabus/unofficial) where we try to convince you of the importance
+of knowing the concepts in this class.
 
 ## Prerequisite Topics
 
@@ -121,7 +121,7 @@ After completing this class, you should be able to:
 ### Electronic Course Materials
 
 * Electronic course materials, including the schedule, may be accessed directly
-  at the [course website]({{ site.baseurl }}).
+  at the [course website]({{site.baseurl}}/).
 
 * All grades and assignment feedback will be posted on [Gradescope]({{
   site.gradescope_url }}).
@@ -254,7 +254,7 @@ receive an F in the course.
 Self-plagiarism is copying and reusing all or some of your previous work for
 another course attempt. There are several issues with reusing your own work,
 including:
-  
+
     1. It probably wasn't of high quality (since you're here retaking the
        course).
     2. It gives you a time advantage over other students.
@@ -381,7 +381,7 @@ change the syllabus at any time, but you will notified of any changes.
 
 It is in your best interest to attend all class sessions, as we will often be
 doing coding activities that will feed directly into your homework or lab
-assignments. 
+assignments.
 
 Therefore, **up to two unexcused absences are allowed**. Any additional
 unexcused absence may result in you receiving a failing grade for the course.
