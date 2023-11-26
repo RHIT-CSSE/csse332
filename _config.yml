@@ -55,6 +55,7 @@ xv6_book_url: "https://pdos.csail.mit.edu/6.828/2022/xv6/book-riscv-rev3.pdf"
 
 # Site local variables
 syllabuspath: "/docs/syllabus/syllabus"
+resourcespath: "/docs/resources"
 
 
 

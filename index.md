@@ -35,9 +35,10 @@ steps:
      in this class, by following the instructions [here](./docs/setup).
 
   3. Re-familiarize yourself with terminal-based editors, as you will have to
-     use it for taking the exam (No IDEs allowed!). In the [resources page](),
-     we provide you with a useful `vim` configuration file and some tips and
-     tricks for using `vim` to write your code.
+     use it for taking the exam (No IDEs allowed!). In the [resources
+     page]({{site.baseurl}}{{site.resourcespath}}), we provide you with a useful
+     `vim` configuration file and some tips and tricks for using `vim` to write
+     your code.
 
 ---
 

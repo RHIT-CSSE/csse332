@@ -10,7 +10,7 @@ REMOTE_DIR=addiator.rose-hulman.edu:/class/csse/csse332/${ACTERM}
 
 all: serve
 
-.PHONY: clean all
+.PHONY: clean all rsync
 
 serve:
 	bundle exec jekyll serve -q -l -o
@@ -31,6 +31,11 @@ www: clean
 	bundle exec jekyll build -q
 	@echo -e '\033[1;32mCopying to remote server\033[0m'
 	cd ./_site/ && rsync -e ssh -Paz --delete . ${USERNAME}@${REMOTE_DIR} && cd -
+	@echo -e '\033[1;32mDone\033[0m'
+
+rsync:
+	@echo -e '\033[1;32mCopying _site directory to remote server\033[0m'
+	cd ./_site/ && rsync -e ssh -Paqz --delete . ${USERNAME}@${REMOTE_DIR} && cd -
 	@echo -e '\033[1;32mDone\033[0m'
 
 echo:

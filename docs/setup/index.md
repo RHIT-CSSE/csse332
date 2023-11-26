@@ -3,6 +3,7 @@ title: Repository Setup
 layout: post
 readtime: true
 date: Fri 24 Nov 2023
+last-updated: Sat 25 Nov 2023
 ---
 
 # Table of contents
@@ -237,6 +238,7 @@ sure that this is really the behavior you would like to see.
 
 ---
 
-Last edited on Wed 22 Nov 2023 by Mohammad Noureddine. If you find typos or
-errors, please open an issue on Github.
+This page was last edited by Mohammad Noureddine on {{ page.last-updated }}. If
+you notice any typos or inaccuracies, please open a GitHub issue on this
+[repository]({{site.gh_repository_url}}).
 
