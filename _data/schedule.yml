@@ -11,14 +11,13 @@
     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/intro.pdf"> Chapter 1 of OSTEP </a>
   topics:
     - '<a href="{{ site.baseurl }}/notes/introduction/">OS Introduction</a>'
-    # - <a href="{{ site.baseurl }}/notes/session01/">C Review</a>
   materials:
 
 2:
   reading:
   topics:
-    - '<a href="{{ site.baseurl }}/notes/boot">The boot process</a>'
-    # - '<a href="{{ site.baseurl }}/notes/session02">Introduction: Roles of the OS</a>'
+    # - '<a href="{{ site.baseurl }}/notes/boot">The boot process</a>'
+    - <a href="{{ site.baseurl }}/notes/session01/">C Review</a>
   materials:
 
 3:

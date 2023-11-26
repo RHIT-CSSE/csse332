@@ -1,9 +1,12 @@
 name,dirname,date,grader,moodle
 WSL2 Install,wsl,2023-11-27 23:59:00,,No submission needed
 C Review & xv6 Introduction,lab00/,2023-11-30 23:59:00,,[Submission box]({{ site.gradescope_url }})
-Simple Shell,lab02/,2023-12-04 23:59:00,,[Submission box]({{ site.gradescope_url }})
-Process Lab,lab03,2023-12-07 23:59:00,,[Submission box]({{ site.gradescope_url }})
-Heap Manager,lab01/,2023-12-11 23:59:00,,[Submission box]({{ site.gradescope_url }})
+# Simple Shell,lab02/,2023-12-04 23:59:00,,[Submission box]({{ site.gradescope_url }})
+Simple Shell,unreleased/,2023-12-04 23:59:00,,[Submission box]({{ site.gradescope_url }})
+# Process Lab,lab03,2023-12-07 23:59:00,,[Submission box]({{ site.gradescope_url }})
+Process Lab,unreleased/,2023-12-07 23:59:00,,[Submission box]({{ site.gradescope_url }})
+# Heap Manager,lab01/,2023-12-11 23:59:00,,[Submission box]({{ site.gradescope_url }})
+Heap Manager,unreleased/,2023-12-11 23:59:00,,[Submission box]({{ site.gradescope_url }})
 # [Challenge] Heap Manager II,buddy/,2023-03-27 23:59:00,TBA,[Submission box]({{ site.gradescope_url }})
 # Virtual Memory,lab04,2023-03-30 23:59:00,TBA,[Submission box]({{ site.gradescope_url }})
 # [Challenge] Virtual Memory II,lab05,2023-04-03 23:59:00,TBA,[Submission box]({{ site.gradescope_url }})
