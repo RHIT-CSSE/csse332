@@ -1,0 +1,52 @@
+" basic settings.
+
+" set line numbers
+set number
+
+" enable auto indentation and cindent
+" check out :help cindent for more information.
+set autoindent
+set cindent
+
+" expand tabs
+set expandtab
+
+" adjust tab width, feel free to change this as you see fit!
+set tabstop=2
+set shiftwidth=2
+
+" enable the cursor line to show
+set cursorline
+
+" enable syntax highlighting
+syntax on
+
+" enable loading the plugin files for specific file types:
+filetype plugin on
+
+" to my dismay, enable mouse!
+set mouse=a
+
+" search options:
+"   incsearch: incremental search
+"   ignorecase: ignore the case when searching
+"   smartcase: ignore ignorecase when use types upper case letters.
+"   hlsearch: highlight search patterns
+set incsearch
+set ignorecase
+set smartcase
+set hlsearch
+
+" some helpful stuff
+set wildmenu   " do some enhanced command-line completion.
+set showmatch  " briefly jump to the matching bracket for a short time.
+set splitbelow " default sp to split below.
+set splitright " default vs to split right.
+
+" useful mappings: <leader> is \ by default, you can remap it if you'd like!
+inoremap jk <ESC>   " writing jk while in insert mode will swap to normal mode.
+
+" Pressing <leader> t will remove all trailing whitespaces.
+nnoremap <silent> <leader>t :let _s=@/ <Bar> :%s/\s\+$//e <Bar> :let @/=_s <Bar> :nohl <Bar> :unlet _s <CR>
+
+

@@ -5,7 +5,9 @@ import pprint as pp
 import csv
 import logging
 import os
+import sys
 from datetime import datetime as dt
+from bs4 import BeautifulSoup
 
 
 # %%
@@ -98,6 +100,7 @@ def count_weeks(schedule, starting_week):
 
         if (current_week >= len(week_counter)):
             logging.error("What ? {}".format(current_week))
+            sys.exit(1)
         week_counter[current_week] += 1
         session['week'] = current_week
         prev_week = week_number
@@ -341,6 +344,7 @@ if __name__ == '__main__':
     date_convert_path = os.path.join(source_root, '_data', 'date_convert.yml')
     assignments_path = os.path.join(source_root, '_data', 'assignments.csv')
     schedule_path = os.path.join(source_root, '_data', 'schedule.yml')
+    tmp_path = os.path.join('/tmp', 'schedule.md')
     output_path = os.path.join(source_root, 'schedule.md')
 
     # schedule is a list of dictionnaries.
@@ -366,8 +370,8 @@ if __name__ == '__main__':
     logging.info("Starting week is {}".format(starting_week))
     num_of_sessions_per_week = count_weeks(schedule, starting_week)
 
-    logging.info("Starting to write schedule to {}...".format(output_path))
-    with open(output_path, 'w') as f:
+    logging.info("Starting to write schedule to {}...".format(tmp_path))
+    with open(tmp_path, 'w') as f:
         write_schedule_header(f)
         write_table_header(f)
 
@@ -383,6 +387,14 @@ if __name__ == '__main__':
         # << close off the table
         f.write("</table>\n")
 
+    logging.info("Beautifying schedule with BeautifulSoup...")
+    with open(tmp_path, 'r') as f:
+        soup = BeautifulSoup(f, 'html.parser')
+
+        with open(output_path, 'w') as of:
+            of.write(soup.prettify())
+
+    os.remove(tmp_path)
     logging.info("Done....")
 
 

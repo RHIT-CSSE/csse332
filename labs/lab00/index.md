@@ -3,6 +3,7 @@ layout: post
 title: Lab 00 -- C Review
 readtime: true
 date: Sat Oct 29 20:08:27 2022 
+last-updated: Sat 25 Nov 2023
 ---
 
 
@@ -12,8 +13,8 @@ date: Sat Oct 29 20:08:27 2022
   * [Learning Objectives](#learning-objectives)
   * [The xv6 Operating System](#the-xv6-operating-system)
 * [Startup: Building xv6](#startup-building-xv6)
-  * [Installing prerequisites](#installing-prerequisites)
   * [Getting the source code](#getting-the-source-code)
+    * [Switching to `clab`](#switching-to-clab)
   * [Booting xv6](#booting-xv6)
   * [Troubleshooting](#troubleshooting)
 * [Exercises](#exercises)
@@ -69,58 +70,118 @@ implement several tools and features that we discuss in class.
 
 # Startup: Building xv6
 
-Before we get started, let's install the needed software requirements. xv6 runs
-in a virtual environment that uses the `qemu` RISC-V emulator. Note that we have
-tested these instructions on Ubuntu 20.04 LTS as well as WSL2 on Windows. We
-currently do not plan on supporting MacOS machines though that is possible with
-some help from your friend Google.
-
-## Installing prerequisites
-
-1. First, start by updating your distribution:
-```shell
-$ sudo apt update && sudo apt upgrade
-```
-
-2. Second, install the needed dependencies:
-```shell
-$ sudo apt install -y build-essential gdb-multiarch qemu-system-misc \
-    gcc-riscv64-linux-gnu binutils-riscv64-linux-gnu
-```
+Let's first start by compiling and booting the xv6 operating system. All of the
+source code for this lab is part of the `csse332-labs` repository, though on a
+different branch. Please follow the instructions below carefully to make sure
+you are working on the right stuff.
 
 ## Getting the source code
 
-Obtain the xv6 modified source code by cloning the following repository. **Make
-sure you select the `lab00` branch.**
-```shell
-git clone -b lab00 https://github.com/rhit-csse332/xv6-riscv-public.git
-```
+If you have not done so yet, please make sure that you have set up your class
+labs repository by following the [appropriate
+instructions.]({{site.baseurl}}{{site.resourcespath}}/setup)
+
+Now that you are in the right repository, first make sure you are on the `main`
+branch:
+
+  ```shell
+  (csse332-labs) $ git branch
+  ```
+
+This will show all your local branches. Make sure that the one that is starred
+is called `main`.
+
+If you are not on the main branch, then do:
+
+  ```shell
+  (csse332-labs) $ git checkout main
+  Switched to branch 'main'
+  Your branch is up to date with 'origin/main'.
+  ```
+
+If your branch is not up to date with `origin/main`, then use a `git pull` to
+get the latest updates from your local `main` branch.
+
+### Switching to `clab`
+
+The starter code for this lab is found in the `upstream/clab` branch of the
+class repository. We need to fetch those changes from the upstream, create our
+local solution branch, and then we can start working.
+
+First, fetch the updates from upstream using:
+
+  ```shell
+  (csse332-labs) $ git fetch upstream
+  ```
+
+Then, make sure that you can see this lab's branch:
+
+  ```shell
+  (csse332-labs) $ git branch -a
+  * main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/main
+  remotes/upstream/clab
+  remotes/upstream/main
+  ```
+
+You might see other branches there, depending on when you do this, but make sure
+that `remotes/upstream/clab` shows up.
+
+Now, let's checkout that `clab` branch and create a local one to write our
+solution to:
+
+  ```shell
+  (csse332-labs) $ git checkout -b clab_solution upstream/clab
+  branch 'clab_solution' set up to track 'upstream/clab'.
+  Switched to a new branch 'clab_solution'
+  ```
+
+Finally, update your local branch's push location to your own repository:
+
+  ```shell
+  (csse332-labs) $ git push --set-upstream origin clab_solution
+  Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+  remote:
+  remote: Create a pull request for 'clab_solution' on GitHub by visiting:
+  remote:      https://github.com/user/csse332-labs-user/pull/new/clab_solution
+  remote:
+  To github.com:user/csse332-labs-noureddi.git
+   * [new branch]      clab_solution -> clab_solution
+  branch 'clab_solution' set up to track 'origin/clab_solution'.
+  ```
+
+Now, you are ready to get started on this lab. Happy hacking ❗
+
 
 ## Booting xv6
 
 Now we are ready to compile xv6 and launch `qemu` to boot into a virtual machine
 that is running the xv6 operating system. From the root directory of the cloned
 source code, compile and launch `qemu` using
-```shell
-make qemu
-```
+
+  ```shell
+  make qemu
+  ```
 
 On my machine, I had the following output, your output should match mine and you
 should drop into a shell in the `qemu` machine.
-```shell
-$ make qemu
->> Lots of compilation outputs, should be no warnings and no errors <<
-xv6 kernel is booting
 
-hart 2 starting
-hart 1 starting
-init: starting sh
-$
-```
+  ```shell
+  $ make qemu
+  >> Lots of compilation outputs, should be no warnings and no errors <<
+  xv6 kernel is booting
+
+  hart 2 starting
+  hart 1 starting
+  init: starting sh
+  $
+  ```
 
 If you get to this point, you are ready to roll. Try to play around in the xv6
-shell and then when you are ready to exit, press <ctrl - a> then x, i.e., press
-the control key plus `a` at the same time, then press `x`. Happy hacking!
+shell and then when you are ready to exit, press <ctrl - a> then x, i.e., hold 
+the control key, then press `a`, then release both keys and  press `x`.
+
 
 ## Troubleshooting
 
@@ -129,23 +190,23 @@ Before contacting your instructor, make sure you record the versions of all of
 the tools that are needed to compile xv6. You can get those version by running
 the following commands:
 1. Your kernel version:
-```shell
-$ uname -r
-```
+  ```shell
+  $ uname -r
+  ```
 2. You `qemu` system version:
-```shell
-$ qemu-system-riscv64 --version
-QEMU emulator version 4.2.1 (Debian 1:4.2-3ubuntu6.18)
-Copyright (c) 2003-2019 Fabrice Bellard and the QEMU Project developers
-```
+  ```shell
+  $ qemu-system-riscv64 --version
+  QEMU emulator version 4.2.1 (Debian 1:4.2-3ubuntu6.18)
+  Copyright (c) 2003-2019 Fabrice Bellard and the QEMU Project developers
+  ```
 3. Your RISC-V cross compiler version:
-```shell
-$ riscv64-linux-gnu-gcc --version
-riscv64-linux-gnu-gcc (Ubuntu 9.3.0-17ubuntu1~20.04) 9.3.0
-Copyright (C) 2019 Free Software Foundation, Inc.
-This is free software; see the source for copying conditions.  There is NO
-warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-```
+  ```shell
+  $ riscv64-linux-gnu-gcc --version
+  riscv64-linux-gnu-gcc (Ubuntu 9.3.0-17ubuntu1~20.04) 9.3.0
+  Copyright (C) 2019 Free Software Foundation, Inc.
+  This is free software; see the source for copying conditions.  There is NO
+  warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+  ```
 
 Once you have the above information, make a public post on the [Moodle forum]({{
     site.moodle_url }}) and include all the information above plus any error
@@ -168,28 +229,30 @@ failed implementation.
 
 To run the warmup code, you can use the following instructions:
 1. Compile the `xv6` source code using
-```shell
-$ make qemu
-```
+  ```shell
+  $ make qemu
+  ```
 2. In the `xv6` shell, issue the `warmup` command using
-```shell
-$ warmup
-```
+  ```shell
+  $ warmup
+  ```
 
 - Note that running `warmup` without any arguments will run **all** of the test
-cases. To run a specific test case, you can use `warmup <num>` when `<num>` is
-an integer that corresponds to the test case you want to run. Check out the
-`main` function in `warmup.c` for the mapping between numbers and test cases. 
+  cases. To run a specific test case, you can use `warmup <num>` when `<num>` is
+  an integer that corresponds to the test case you want to run. Check out the
+  `main` function in `warmup.c` for the mapping between numbers and test cases. 
+
 - Note that failed assertions in the test cases written will cause your program
-to fail. 
+  to fail. 
 
 ### Running the grading script
 
 To double check your work, you can run the grading script (assuming you have
 `python3` installed) from your Linux shell (not the xv6 shell):
-```shell
-$ ./grade-lab-0.py warmup
-```
+
+  ```shell
+  $ ./grade-lab-0.py warmup
+  ```
 
 ## ArrayList
 
@@ -198,13 +261,15 @@ in C in the xv6 operating system. Recall that an array list doubles in size
 every time it runs out of space. We have already defined a structure that
 contains the elements needed to implement an array list in the `arraylist`
 structure as follows:
-```c
-struct arraylist {
-  int size;
-  int capacity;
-  int *list;
-};
-```
+
+  ```c
+  struct arraylist {
+    int size;
+    int capacity;
+    int *list;
+  };
+  ```
+
 where `size` is the current size of the list (i.e., the total number of elements
 currently in the array list), `capacity` is the maximum size of the array list,
 and `list` is the actual list in memory that contains the elements. 
@@ -225,42 +290,34 @@ and `list` is the actual list in memory that contains the elements.
    To free memory in C, you will find the function `free` to be very
    useful.
 
-<!--
-3. The third function to implement is the `al_insert_at` function. It takes as
-   input a pointer to an array list structure, a position `pos` to insert at,
-   and a value `val` to insert, and then replaces the element at `pos` (if it
-   exists), with the value `val`. 
-
-   **WARNING** This function does not increase the size of the array list,
-   rather it only replaces an existing element. If an element at the input
-   position does not exists, the function simply does nothing and returns. 
--->
-
-4. The next function to implement is the `al_get_at` function. It takes as input
+3. The next function to implement is the `al_get_at` function. It takes as input
    a pointer to an array list structure and a position `pos`. It returns the
    element in the list at the position `pos`. If such an element does not
    exists, then the function returns the hex constant `0xffffffff`. 
 
-5. Next, implement the `al_resize` function. It accepts as input a pointer to an
+4. Next, implement the `al_resize` function. It accepts as input a pointer to an
    array list structure and resizes the inner array to double its size. Note
    that you do not have access to the `realloc` routine, you must implement that
    yourself. 
 
-6. Finally, implement the `al_append` function that accepts a pointer to an
+    > Make sure to have no memory leaks, you will lose points if you do!
+
+5. Finally, implement the `al_append` function that accepts a pointer to an
    array list structure and a value `val`. It then inserts `val` at the end of
    the list. If the list is full, it then calls `al_resize` to make room for
    `val` and then inserts it into the list. 
 
-7. For your convenience, we have implemented `al_print` to print an array list.
+6. For your convenience, we have implemented `al_print` to print an array list.
    Use that to print your list for debugging purposes. 
 
 ### Testing
 
 To test your code, after each step, launch the xv6 machine and then issue the
 `arraylist` command:
-```shell
-$ arraylist
-```
+
+  ```shell
+  $ arraylist
+  ```
 
 Note that the numbers between the parenthesis correspond to the line numbers in
 your code. So if an assertion fails, you can go to that specific line number and
@@ -268,36 +325,38 @@ check which test has failed.
 
 As you implement more functions, more tests will pass. At the end, you should
 see something that looks like the following:
-```shell
-$ arraylist
-main(174): OK.
-main(175): OK.
-main(176): OK.
-main(181): OK.
-main(182): OK.
-main(185): OK.
-main(186): OK.
-main(187): OK.
-main(192): OK.
-main(193): OK.
-main(197): OK.
-main(198): OK.
-main(201): OK.
-main(202): OK.
-main(203): OK.
-main(204): OK.
-main(205): OK.
-```
+
+  ```shell
+  $ arraylist
+  main(174): OK.
+  main(175): OK.
+  main(176): OK.
+  main(181): OK.
+  main(182): OK.
+  main(185): OK.
+  main(186): OK.
+  main(187): OK.
+  main(192): OK.
+  main(193): OK.
+  main(197): OK.
+  main(198): OK.
+  main(201): OK.
+  main(202): OK.
+  main(203): OK.
+  main(204): OK.
+  main(205): OK.
+  ```
 
 ### Running the grading script
 
 To double check your work, run the grading script from your Linux terminal (not
 your xv6 terminal), using:
-```shell
-$ ./grade-lab-0.py arraylist
-make: 'kernel/kernel' is up to date.
-== Test arraylist, all == arraylist, all: OK (1.5s)
-```
+
+  ```shell
+  $ ./grade-lab-0.py arraylist
+  make: 'kernel/kernel' is up to date.
+  == Test arraylist, all == arraylist, all: OK (1.5s)
+  ```
 
 ## Implementing `sleep`
 
@@ -318,6 +377,11 @@ Examining the code behind some of those utilities will prove to be of immense
 help in this lab.
 
 ### Implementation plan
+
+> Please note that throughout this lab, you do not have access to the regular C
+  routines defined in libc, such as those defined in `stdio.h`, `stdlib.h`, and
+  `string.h` for example. All the routines available to you are defined in
+  `user/user.h`.
 
 Here's a list of steps and requirements that will help you implement the `sleep`
 utility in xv6:
@@ -345,23 +409,27 @@ We have already added the sleep binary to the list of targets to compile by the
 `Makefile` so you do not need to change anything there. 
 
 Compile xv6 and launch into the `qemu` emulator using
-```shell
-$ make qemu
-```
+
+  ```shell
+  $ make qemu
+  ```
+
 then run your `sleep` program from the xv6 shell:
-```shell
-$ sleep 10
-### Nothing happens for 10 ticks ###
-$
-```
+
+  ```shell
+  $ sleep 10
+  ### Nothing happens for 10 ticks ###
+  $
+  ```
 
 ### Running the grading script
 
 To double check your work, you can run the python grading script (assuming you
 have `python3` installed):
-```shell
-$ ./grade-lab-0.py sleep
-```
+
+  ```shell
+  $ ./grade-lab-0.py sleep
+  ```
 
 ## Implementing `find`
 
@@ -373,20 +441,20 @@ For example, consider a directory `a/` that contains a file called `b` and then
 another directory called `c/` that contains another file called `b` as well.
 Then launching the `find` command from the `a` directory will return both `./b`
 and `./c/b` as results.
-```shell
-$ cd a/
-$ find . b
-./b
-./c/b
-```
+
+  ```shell
+  $ cd a/
+  $ find . b
+  ./b
+  ./c/b
+  ```
 
 ### Implementation plan
 
 Since we are exploring directories and sub-directories, expect your solution to
 be **recursive**. Also, recall that we are dealing with C strings, so `==` does
 not compare strings, rather it compares their pointers. To compare strings in C,
-use the routine `strcmp`. For more information, check out its man page `man
-strcmp`.
+use the routine `strcmp`.
 
 For inspiration to get started, take a look at `user/ls.c` to see how to read
 files and directories.
@@ -396,6 +464,7 @@ Here are a couple of hints and observations:
 - Running `fstat` on a file will fill out a `struct stat` structure, which
 	contains a lot of useful information about the file/directory. You can find
 	the definition of the `struct stat` below and in `kernel/stat.h`
+
 	```c
 	#define T_DIR     1   // Directory
 	#define T_FILE    2   // File
@@ -409,6 +478,7 @@ Here are a couple of hints and observations:
 		uint64 size; // Size of file in bytes
 	};
 	```
+
 - Use recursion to descend into sub-directories, but **do not** recurse into `.`
 	and `..`
 - A directory is nothing but a file that contains a bunch of directory entries,
@@ -418,49 +488,92 @@ Here are a couple of hints and observations:
 ### Building and testing
 
 Compile xv6 using `make qemu` from your terminal, and then, from the xv6 shell:
-```shell
-$ echo > b
-$ mkdir a
-$ echo > a/b
-$ find . b
-./b
-./a/b
-$
-```
+
+  ```shell
+  $ echo > b
+  $ mkdir a
+  $ echo > a/b
+  $ find . b
+  ./b
+  ./a/b
+  $
+  ```
 
 ### Running the grading script
 
 To double check your work, you can run the python grading script using:
-```shell
-$ ./grade-lab-0.py find
-```
+
+  ```shell
+  $ ./grade-lab-0.py find
+  ```
 
 ## Running the full grading script
 
 Once you are done implementing all the above programs, run the grading script
 using
-```shell
-$ make grade
-```
+
+  ```shell
+  $ make grade
+  ```
+
 from your Linux terminal (not your xv6 terminal window). 
 
 ## Submitting your code
 
-From the Linux terminal, issue the command:
-```shell
-make submit
-```
-Two files will be generated, `submit-lab0.patch` and `submit-lab0.tar`. **Please
-submit both of these files to Gradescope** at the appropriate lab link.
+From the Linux terminal, issue the command (make sure you are in the `xv6-riscv`
+directory in your repository):
+
+  ```shell
+  ./create_submission.sh <username>
+  ```
+and replace `<username>` with your RHIT username (without the `<` and `>`). For
+example, for me, that would be:
+
+  ```shell
+  ./create_submission.sh noureddi
+  ```
+
+Here's the output as it shows up on my end:
+
+  ```
+  Cleaning up xv6 directory...
+  Process started: writing temporaries to /tmp/a8998c31a141924d06220074fcdc6925.txt
+  Found the following modified files:
+  ./user/arraylist.c
+  ./user/find.c
+  ./user/sleep.c
+  ./user/warmup.c
+  Creating the submission zip file.
+    adding: user/arraylist.c (deflated 64%)
+    adding: user/find.c (deflated 30%)
+    adding: user/sleep.c (deflated 19%)
+    adding: user/warmup.c (deflated 63%)
+  Done...
+  ################################################################
+          submission_noureddi.zip has been created.
+     Please submit THIS FILE AND THIS FILE ONLY to Gradescope.
+  ################################################################ 
+  ```
+
+This will generate a single file called `submission-username.zip` (for me, it
+would be `submission-noureddi.zip`). That is all you need to upload to
+[Gradescope]({{site.gradescope_url}}).
 
 ### Submission Checklist
 
 - [ ]  My code compiles and generates the right executables.
 - [ ]  I ran `make grade` to double check the test cases for all of my code.
-- [ ]  I ran `make submit` to generate the `.patch` and `.tar` files.
-- [ ]  I submitted both `.patch` and `.tar` files to [Gradescope]({{
-    site.gradescope_url }}).
+- [ ]  I ran the submission script to generate my `zip` file.
+- [ ]  I submitted the `zip` file  to [Gradescope]({{site.gradescope_url}}).
 
 ### Grading
 
 Check out this assignment's [grading](checklist/) page for more information.
+
+---
+
+This page was last edited by Mohammad Noureddine on {{ page.last-updated }}. If
+you notice any typos or inaccuracies, please open a GitHub issue on this
+[repository]({{site.gh_repository_url}}).
+
+

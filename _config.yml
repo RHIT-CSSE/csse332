@@ -9,14 +9,20 @@
 title: CSSE 332
 
 # Your name to show in the footer
-author: Mohammad A. Noureddine
+author: RHIT CSSE Department
+
+# The subpath of your site.
+baseurl: '/class/csse/csse332/2324b'
+
+# The base hostname and protocol for your site
+url: 'https://www.rose-hulman.edu'
 
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  Moodle: "https://moodle.rose-hulman.edu/course/view.php?id=96841"
-  Gradescope: "https://www.gradescope.com/courses/517628"
-  Syllabus: "syllabus"
+  Moodle: "https://moodle.rose-hulman.edu/course/view.php?id=103623"
+  Gradescope: "https://www.gradescope.com/courses/673360"
+  Syllabus: "docs/syllabus/syllabus"
   Schedule: "schedule"
   # Resources:
   #   - Beautiful Jekyll: "https://beautifuljekyll.com"
@@ -39,12 +45,18 @@ gh_repository_url: "https://github.com/RHIT-CSSE/csse332"
 gh_activity_url: "https://github.com/RHIT-CSSE/csse332/tree/main/activities"
 gh_homeworks_url: "https://github.com/RHIT-CSSE/csse332/tree/main/homeworks"
 gh_labs_url: "https://github.com/RHIT-CSSE/csse332/tree/main/labs"
+gh_labs_repo: "https://github.com/rhit-csse332/csse332-labs.git"
 
-moodle_url: "https://moodle.rose-hulman.edu/course/view.php?id=96841"
-gradescope_url: "https://www.gradescope.com/courses/517628"
-course_term: "Spring 2022-23"
+moodle_url: "https://moodle.rose-hulman.edu/course/view.php?id=103623"
+gradescope_url: "https://www.gradescope.com/courses/673360"
+course_term: "Winter 2023-24"
 
 xv6_book_url: "https://pdos.csail.mit.edu/6.828/2022/xv6/book-riscv-rev3.pdf"
+
+# Site local variables
+syllabuspath: "/docs/syllabus/syllabus"
+resourcespath: "/docs/resources"
+
 
 
 
@@ -54,8 +66,8 @@ xv6_book_url: "https://pdos.csail.mit.edu/6.828/2022/xv6/book-riscv-rev3.pdf"
 # Select the social network links that you want to show in the footer.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "noureddi@rose-hulman.edu"
-  calendly: "mnoureddine"
+  # email: "noureddi@rose-hulman.edu"
+  # calendly: "mnoureddine"
   # facebook: deanattali
   # github: daattali
   # twitter: daattali
@@ -162,6 +174,8 @@ footer-link-col: "#404040"
 
 # --- Comments --- #
 
+theme: beautiful-jekyll-theme
+
 # To use Disqus comments, sign up to https://disqus.com and fill in your Disqus shortname (NOT the userid)
 #disqus: ""
 
@@ -241,6 +255,11 @@ exclude:
   - screenshot.png
   - vendor/
   - homeworks/
+  - resources/
+  - autograder/
+  - activities/
+  - admin/
+  - sample_exams/
 
 plugins:
   - jekyll-paginate
