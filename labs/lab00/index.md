@@ -520,7 +520,8 @@ from your Linux terminal (not your xv6 terminal window).
 
 ## Submitting your code
 
-From the Linux terminal, issue the command:
+From the Linux terminal, issue the command (make sure you are in the `xv6-riscv`
+directory in your repository):
 
   ```shell
   ./create_submission.sh <username>
@@ -530,6 +531,28 @@ example, for me, that would be:
 
   ```shell
   ./create_submission.sh noureddi
+  ```
+
+Here's the output as it shows up on my end:
+
+  ```
+  Cleaning up xv6 directory...
+  Process started: writing temporaries to /tmp/a8998c31a141924d06220074fcdc6925.txt
+  Found the following modified files:
+  ./user/arraylist.c
+  ./user/find.c
+  ./user/sleep.c
+  ./user/warmup.c
+  Creating the submission zip file.
+    adding: user/arraylist.c (deflated 64%)
+    adding: user/find.c (deflated 30%)
+    adding: user/sleep.c (deflated 19%)
+    adding: user/warmup.c (deflated 63%)
+  Done...
+  ################################################################
+          submission_noureddi.zip has been created.
+     Please submit THIS FILE AND THIS FILE ONLY to Gradescope.
+  ################################################################ 
   ```
 
 This will generate a single file called `submission-username.zip` (for me, it
