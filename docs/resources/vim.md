@@ -8,6 +8,21 @@ last-updated: Sat 25 Nov 2023
 
 # Table of contents
 
+<!-- vim-markdown-toc GFM -->
+
+* [Introduction](#introduction)
+* [Tutorial](#tutorial)
+* [The basics](#the-basics)
+  * [Operation modes](#operation-modes)
+  * [Loading our config file](#loading-our-config-file)
+  * [Some practice](#some-practice)
+    * [Editing the file](#editing-the-file)
+    * [Some text manipulation](#some-text-manipulation)
+* [A warning](#a-warning)
+* [Useful tips and tricks](#useful-tips-and-tricks)
+  * [Widely used ones](#widely-used-ones)
+
+<!-- vim-markdown-toc -->
 
 # Introduction
 
