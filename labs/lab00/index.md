@@ -156,6 +156,12 @@ Now, you are ready to get started on this lab. Happy hacking ❗
 
 ## Booting xv6
 
+In all of what follows, we assume that you are working off of the `xv6-riscv`
+directory in your `csse332-labs-user` repository, i.e., always do:
+  ```shell
+  $ cd xv6-riscv/
+  ```
+
 Now we are ready to compile xv6 and launch `qemu` to boot into a virtual machine
 that is running the xv6 operating system. From the root directory of the cloned
 source code, compile and launch `qemu` using
@@ -531,6 +537,13 @@ example, for me, that would be:
 
   ```shell
   ./create_submission.sh noureddi
+  ```
+
+If you get a message saying that you don't have permission to run
+`./create_submission.sh`, then issue the following command first 
+
+  ```shell
+  chmod +x ./create_submission.sh
   ```
 
 Here's the output as it shows up on my end:
