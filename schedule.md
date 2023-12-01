@@ -183,7 +183,7 @@ lectures and/or assignments with an advanced week's notice.
   </tr>
   <tr>
    <td colspan="4" markdown="span">
-    [Simple Shell]({{ site.baseurl }}/labs/unreleased/) DUE Mon, Dec 04 2023 23:59 [Submission box]({{ site.gradescope_url }})
+    [Simple Shell]({{ site.baseurl }}/labs/simpleshell/) DUE Mon, Dec 04 2023 23:59 [Submission box]({{ site.gradescope_url }})
    </td>
   </tr>
   <tr>
