@@ -4,7 +4,7 @@ simple_test.bin: simple_test.o
 
 primes.bin: primes.o
 
-CFLAGS += -ggdb
+CFLAGS += -ggdb -Werror
 
 .PHONY: clean
 
