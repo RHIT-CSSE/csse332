@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lab 03 -- Process Lab
+title: Lab 03 Process Lab
 readtime: true
 date: Thu Nov 10 08:48:11 2022 
 ---
@@ -22,31 +22,69 @@ At the end of the assignment, you should be able to:
 
 # Getting the Source Code
 
-Unlike the first few labs, __we will not do this lab in the xv6 operating
-system__, we will rather use your native Linux virtual machine (or baremetal
-machine if you are running one). As it stands, `xv6` lacks some of the features
-that make this assignment doable and manageable given our leaning objectives. In
-later assignments, we will dive deeper into the mechanics of `fork` and `wait`,
-which are a great fit for xv6. 
+We will do this lab in the `main` branch of your labs repository. To make sure
+you are on the right branch, check it out using:
 
-To obtain the starting code for this lab, navigate to the top level of your
-__csse332 class repository__ and `cd` into the `labs/lab03` directory as
-follows:
-```shell
-$ cd /path/to/csse332/git/repository/
-$ git pull
-$ cd labs/lab03/
+  ```sh
+  $ git branch
+  ```
+The branch you are currently on will be highlighted for you (with a \* next to
+its name).
+
+If you are working on the `main` or `master` branch, then follow these
+instructions:
+
+  ```sh
+  $ git fetch upstream
+  $ git pull upstream main
+  ```
+At this stage, you should have the latest copy of the code, and you are good to
+get started. The starter code is contained under the `process_lab/` directory.
+
+If you are currently on a different branch (say you are still on `clab_solution`
+from the last lab), then we need to switch to `main` or `master` (depending on
+your default's name).
+
+First, add, commit, and push your changes to the `clab_solution` to make sure
+you do not lose any progress you did on the last lab. To check the status of
+your current branch, you can use:
+  ```sh
+  $ git status
+  ```
+This will show you all the files you have modified and have not yet committed
+and pushed. Make sure you `add` those files, then `commit` your changes, and
+`push` them.
+
+If `git push` complains about not knowing where to push, you'd want to push the
+current branch you are on. So for example, if I am working on `clab_solution`,
+then I'd want to do `git push origin clab_solution`.
+
+Now, you are ready to swap back into `main` (or `master`).
+
+```sh
+$ git checkout main
 ```
+
+Then, grab the latest changes using:
+
+```sh
+$ git fetch upstream
+$ git pull upstream main
+```
+
+At this stage, you should have the latest copy of the code, and you are good to
+get started. The starter code is contained under the `process_lab/` directory.
+
 
 # Starter Code
 
 The starting code for this lab consists of 5 test dummy test functions,
 `test1()` through `test5()`, which are simply functions that accept no arguments
-and return a character pointer that is `NULL` whn the test is passed succesfully
-(thus the macro `#define TEST_PASSED NULL`).
+and return a character pointer that is `NULL` when the test is passed
+successfully (thus the macro `#define TEST_PASSED NULL`).
 
 The line `char *(*test_funcs[MAX_TESTS])();` declares an array `test_funcs` of
-function pointers, where each pointer points to a function that return a `char
+function pointers, where each pointer points to a function that returns a `char
 *` and accepts no arguments. `test_funcs` will be the list of test functions
 that we need to run in parallel.
 
@@ -140,7 +178,7 @@ Test Passed
 
 Note that:
 1. The tests complete in a random order so it is not clear what test failed or
-   successed when we return from wait. We will take care of that in step 6.
+   successes when we return from wait. We will take care of that in step 6.
 2. We would like to print the test result message but using `wait`, we only have
    access to the child process's exit code. So we will leave that until step 6
    as well.
@@ -237,29 +275,16 @@ information, take a look at the man page for pipes using `man 2 pipe` from your
 Linux terminal.
 
 In our case, we would like every process that fails a test case should use a
-pipe to communicate the error message back to the main parent. Here's a little
-pseudo-code that might help you get started:
-```c
-char *tresult = test_funcs[i];
-if(tresult == TEST_PASSED) {
-	close(pipeResult[1]);
-	exit(0);
-} else {
-	write(pipeResult[1], tresult, strlen(tresult));
-	close(pipeResult[1]);
-	exit(1);
-}
-```
-
-To do this successfully, we would need to create a pair of pipes between our
-main parent and every child process and then read from that corresponding pipe
-end when the child returns.  However, we have a slight complication. In our
-current requirements, we are using the `wait` function to collect the children
+pipe to communicate the error message back to the main parent.  To do this
+successfully, we would need to create a pair of pipes between our main parent
+and every child process and then read from that corresponding pipe end when the
+child returns.  However, we have a slight complication. In our current
+requirements, we are using the `wait` function to collect the children
 processes, and when `wait` returns, we do not know exactly which child was the
 one that returned, and thus we cannot know which pipe to read from.
 
 To solve this problem, we will use the function `waitpid` instead of `wait`,
-check out the man page for `wait` using `man 2 wait`. Specifically, `waitpid`
+check out the man page for `wait` using `man wait`. Specifically, `waitpid`
 accepts three arguments: the first is the pid of the child we would like to wait
 for, the second is the pointer to an integer where we would like to store the
 exit code of the child, and the third is a set of options that we won't be using

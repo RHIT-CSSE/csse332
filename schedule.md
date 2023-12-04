@@ -238,7 +238,7 @@ lectures and/or assignments with an advanced week's notice.
   </tr>
   <tr>
    <td colspan="4" markdown="span">
-    [Process Lab]({{ site.baseurl }}/labs/unreleased/) DUE Thu, Dec 07 2023 23:59 [Submission box]({{ site.gradescope_url }})
+    [Process Lab]({{ site.baseurl }}/labs/processlab/) DUE Thu, Dec 07 2023 23:59 [Submission box]({{ site.gradescope_url }})
    </td>
   </tr>
   <tr>
