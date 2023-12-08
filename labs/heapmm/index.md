@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Lab 01 -- Heap Manager
+title: Memory Lab 01 -- Heap Manager
 readtime: true
-date: Thu Nov 10 08:48:11 2022 
+date: Thu Dec  7  2023
 ---
 
 # Introduction
@@ -60,18 +60,82 @@ manager more enjoyable.
 
 # Getting the Source Code
 
-To obtain the updated source code, make sure to fetch the `lab01` branch of the
-xv6 source code repository. To do so, from your xv6 top level directory, issue
-the following commands:
-```shell
-$ git fetch
-$ git checkout lab01
-$ git pull
-```
-You should be on a new branch that is called `lab01`. You can verify that using
-```shell
-$ git branch
-```
+To obtain the source code for this lab, follow the instructions below.
+
+## 1. Commit and push your changes to your current branch
+
+First, make sure all your changes to your current branch are pushed to your
+repo. Recall that you can use `git branch` to check which branch you are
+currently on.
+
+Follow the standard `git add`, `git commit`, and `git push` workflow to push
+your changes to your own private repo.
+
+If at any point, you get permission issues, this most likely means that you are
+trying to push to the class repo, which you do not have access for. To push to
+your own `main` branch, you can use:
+
+  ```sh
+  $ git push origin main
+  ```
+
+## 2. Fetch the changes from our repo
+
+From your Linux terminal, fetch our changes using:
+
+  ```sh
+  $ git fetch upstream
+  ```
+
+Then, make sure you can see this lab's branch, namely `upstream/heapmm`.
+
+  ```sh
+  $ git branch -a
+  * clab_solution
+  main
+  remotes/origin/clab_solution
+  remotes/origin/main
+  remotes/upstream/clab
+  remotes/upstream/heapmm
+  remotes/upstream/main
+  ```
+
+You might see more branches locally (under `origin`) depending on what you have
+done, but you should be good if `remotes/upstream/heapmm` shows up.
+
+## 3. Get the code in a new branch
+
+Next, let's checkout the `heapmm` branch and create a new local branch for its
+solution.
+
+  ```sh
+  $ git checkout -b heapmm_solution upstream/heapmm
+  branch 'heapmm_solution' set up to track 'upstream/heapmm'.
+  Switched to a new branch 'heapmm_solution'
+  ```
+
+## 4. Push the changes to your repo
+
+Finally, push your changes to your own repo to make sure the code is there and
+you can start editing.
+
+  ```sh
+  $ git push --set-upstream origin heapmm_solution
+  Enumerating objects: 119, done.
+  Counting objects: 100% (119/119), done.
+  Delta compression using up to 56 threads
+  Compressing objects: 100% (64/64), done.
+  Writing objects: 100% (111/111), 42.50 KiB | 42.50 MiB/s, done.
+  Total 111 (delta 42), reused 111 (delta 42), pack-reused 0
+  remote: Resolving deltas: 100% (42/42), completed with 8 local objects.
+  remote:
+  remote: Create a pull request for 'heapmm_solution' on GitHub by visiting:
+  remote:      https://github.com/user/csse332-labs-noureddi/pull/new/heapmm_solution
+  remote:
+  To github.com:user/csse332-labs-noureddi.git
+   * [new branch]      heapmm_solution -> heapmm_solution
+  branch 'heapmm_solution' set up to track 'origin/heapmm_solution'.
+  ```
 
 # Structures and Definitions
 
@@ -119,16 +183,13 @@ unsigned size_to_allocate = ALIGN(s);
 
 Next, in order to keep track of our memory blocks, we must maintain a set of
 information about each block (like whether it is allocated or not, its size,
-etc.). We therefore define the union metadata as follows:
+etc.). We therefore define the struct metadata as follows:
 ```c
-union metadata {
-  struct {
-    unsigned size;          /* The size of the block. */
-    unsigned in_use:1;      /* Flag to indicate if the block is in use.*/
-    union metadata *next;   /* The next pointer in the linked list. */
-    union metadata *prev;   /* The prev pointer in the linked list. */
-  } s;
-  unsigned long alignment;
+struct __attribute__((aligned(8))) metadata {
+  unsigned size;         /* The size of the block. */
+  unsigned in_use:1;     /* Flag to indicate if the block is in use.*/
+  struct metadata *next; /* The next pointer in the linked list. */
+  struct metadata *prev; /* The prev pointer in the linked list. */
 };
 ```
 and then we define a new type based on this union to make it easier to code
@@ -137,18 +198,15 @@ using:
 typedef union metadata metadata_t;
 ```
 
-The relevant information in the metadata union are those contained in the struct
-s inside it. The `alignment` variable put in there is to ensure that the size of
-the metadata information is always going to be a multiple of `sizeof(unsigned
-long)` bytes. In other words, every time we make room for a `metadata_t`
-structure, we actually allocate enough bytes to  hold a multiple of `ALIGNMENT`
-bytes. Since every block contains its own metadata, this helps us make sure that
-each block is always aligned to `ALIGNMENT` bytes. 
+The members of `struct metadata` are explained in the comments above. The
+`__attribute__((aligned(8)))` modified makes sure that our structure's size
+(when queried with `sizeof`) is always a multiple of 8 bytes; we rely on nifty
+compiler tricks to make that happen!
 
 Note that each block's metadata contains two pointers, `prev` and `next`. This
 indicates that the blocks are maintained in a simple [doubly linked
-list](https://en.wikipedia.org/wiki/Doubly_linked_list). For simplicity, we
-assume that the blocks are sorted by increasing memory order. In other words,
+list](https://en.wikipedia.org/wiki/Doubly_linked_list). __For simplicity, we
+assume that the blocks are sorted by increasing memory order__. In other words,
 the `next` block always points to an address that is higher in memory, and the
 `prev` block always points to an address that is lower in memory. 
 
@@ -175,6 +233,29 @@ simply returns a pointer to the head of the list, i.e., it simply returns
 
 
 # Implementation and Testing
+
+The main trick we'll play on our users is that we will _embed a metadata
+structure into the top of every memory region_ we return to them. For example,
+if the user asks for 8 bytes, then what we actually allocate is `8 +
+sizeof(struct metadata)` bytes, we place the `struct metadata` at the top of
+that memory region, and then return to the user a pointer to the first byte
+_after_ the metadata structure. 
+
+Our user therefore will never be aware of the presence of the `struct metadata`
+at the top of their allocated memory region, we keep it hidden from them so we
+can recover it when we need it.
+
+A couple of questions you would need to ask yourself and answer throughout the
+lab:
+
+1. After we create a memory region for the user, how do we return to the user
+   the address of the first byte after the metadata?
+2. Given a pointer from the user, how do we recover the metadata for the memory
+   region?
+3. When deciding if we have enough memory, what is the size we need to check
+   for?
+
+Use these questions and their answers as guidelines for you throughout this lab.
 
 ## Initialization
 
@@ -239,7 +320,7 @@ that is return to the user and one that contains the free bytes remaining from
 the split operation. For example, ignoring the metadata bytes, if the memory
 area initially consists of a single block of size 4 bytes, and the user requests
 1 bytes, then the memory manager will split the 4 bytes block into two blocks:
-one of size 1 byte that is return to the user and another of size 3 bytes that
+one of size 1 byte that is returned to the user and another of size 3 bytes that
 is still marked as free and can be used to allocate memory for other users. 
 
 Now you should implement the process by which our memory manager will allocate a
@@ -352,7 +433,7 @@ Here is an example to make it clearer. Ignoring metadata, let's assume initially
 we have a single free block of size 4 bytes. Then a user makes 4 requests for 4
 blocks of size 1 byte each, and then frees those blocks. Using our basic
 `rhfree` implementation, the memory manager will now contain a list of four free
-block, each of size 1 byte. 
+blocks, each of size 1 byte. 
 
 If a user now comes in and asks for a block of 2 bytes of memory, the memory
 manger would not be able to service that request since it only has 4 blocks of
@@ -547,21 +628,56 @@ from your Linux terminal (not your xv6 terminal window).
 
 # Submitting your code
 
-From the Linux terminal, issue the command:
-```shell
-make submit
-```
-Two files will be generated, `submit-lab1.patch` and `submit-lab1.tar`. **Please
-submit both of these files to Gradescope** at the appropriate lab link.
+From the Linux terminal, issue the command (make sure you are in the `xv6-riscv`
+directory in your repository):
+
+  ```shell
+  ./create_submission.sh <username>
+  ```
+and replace `<username>` with your RHIT username (without the `<` and `>`). For
+example, for me, that would be:
+
+  ```shell
+  ./create_submission.sh noureddi
+  ```
+
+If you get a message saying that you don't have permission to run
+`./create_submission.sh`, then issue the following command first 
+
+  ```shell
+  chmod +x ./create_submission.sh
+  ```
+
+Here's the output as it shows up on my end:
+
+  ```
+  Cleaning up xv6 directory...
+  Process started: writing temporaries to /tmp/dab9bfedf8d508c2a1c3f1c95e6ba1fc.txt
+  Found the following modified files:
+  ./user/rhmalloc.c
+  Creating the submission zip file.
+    adding: user/rhmalloc.c (deflated 54%)
+  Done...
+  ################################################################
+          submission_noureddi.zip has been created.
+     Please submit THIS FILE AND THIS FILE ONLY to Gradescope.
+  ################################################################
+  ```
+
+This will generate a single file called `submission-username.zip` (for me, it
+would be `submission-noureddi.zip`). That is all you need to upload to
+[Gradescope]({{site.gradescope_url}}).
 
 ## Submission Checklist
 
 - [ ]  My code compiles and generates the right executables.
 - [ ]  I ran `make grade` to double check the test cases for all of my code.
-- [ ]  I ran `make submit` to generate the `.patch` and `.tar` files.
-- [ ]  I submitted both `.patch` and `.tar` files to [Gradescope]({{
-    site.gradescope_url }}).
+- [ ]  I ran the submission script to generate my `zip` file.
+- [ ]  I submitted the `zip` file  to [Gradescope]({{site.gradescope_url}}).
 
-## Grading
+---
 
-Check out this assignment's [grading](checklist/) page for more information.
+If you notice any typos or inaccuracies, please open a GitHub issue on this
+[repository]({{site.gh_repository_url}}).
+
+

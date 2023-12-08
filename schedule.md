@@ -293,7 +293,7 @@ lectures and/or assignments with an advanced week's notice.
   </tr>
   <tr>
    <td colspan="4" markdown="span">
-    [Heap Manager]({{ site.baseurl }}/labs/unreleased/) DUE Mon, Dec 11 2023 23:59 [Submission box]({{ site.gradescope_url }})
+    [Heap Manager]({{ site.baseurl }}/labs/heapmm/) DUE Mon, Dec 11 2023 23:59 [Submission box]({{ site.gradescope_url }})
    </td>
   </tr>
   <tr>
