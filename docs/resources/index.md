@@ -2,7 +2,7 @@
 title: Resources
 layout: post
 date: Friday 24 Nov 2023
-last-updated: Sat 25 Nov 2023
+last-updated: Thu Dec  7 2023 
 ---
 
 This page contains a collection of resources that you might find helpful in this
@@ -11,6 +11,9 @@ class.
 - [`vim` tutorial and tips and
   tricks.]({{site.baseurl}}{{site.resourcespath}}/vim/)
   - [`vim` cheat sheet](https://vim.rtorr.com/)
+
+- [`tmux` tutorial and tips and
+  tricks.](https://netsos.csse.rose-hulman.edu/courses/netsec/docs/guides/tmux/)
 
 ---
 
