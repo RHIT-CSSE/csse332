@@ -81,6 +81,7 @@
   topics:
     - <a href="{{ site.baseurl }}/notes/session15"> Paging </a>
   materials:
+    - <a href="{{site.baseurl}}/docs/activities/paging/"> Activity </a>
 
 11:
   reading:

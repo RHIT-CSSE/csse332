@@ -319,6 +319,15 @@ lectures and/or assignments with an advanced week's notice.
     </a>
    </td>
    <td markdown="span">
+    {::nomarkdown}
+    <ul style="margin:0;padding:.5rem">
+     <li>
+      <a href="{{site.baseurl}}/docs/activities/paging/">
+       Activity
+      </a>
+     </li>
+    </ul>
+    {:/}
    </td>
   </tr>
   <tr>
