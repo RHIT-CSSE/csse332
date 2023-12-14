@@ -98,6 +98,36 @@
 ###############################################################################
 # WEEK 4
 ###############################################################################
+13:
+  reading:
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-smalltables.pdf"> Chapter 20 of OSTEP </a>
+  topics:
+    - <a href="{{ site.baseurl }}/notes/session16"> Multi-level Page Tables </a>
+  materials:
+
+14:
+  reading:
+  topics:
+    - Lazy page allocation activity
+    # - <a href="{{ site.baseurl }}/notes/session17"> Paging Activity </a>
+  materials:
+
+15:
+  reading:
+  topics:
+    - '<b> Exam 1: Part 2 </b>'
+    # - '<a href="{{ site.baseurl }}/labs/lab05"> Lab: Virtual Memory II </a>'
+  materials:
+
+16:
+  reading:
+  topics:
+    - <b> No class, enjoy the break </b>
+  materials:
+
+###############################################################################
+# WEEK 4
+###############################################################################
 #13:
 #  reading:
 #    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-smalltables.pdf"> Chapter 20 of OSTEP </a>

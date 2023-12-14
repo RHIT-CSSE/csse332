@@ -367,7 +367,7 @@ lectures and/or assignments with an advanced week's notice.
     <td colspan="5" markdown="span" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;">
     </td>
    </tr>
-   <td markdown="span" rowspan="4" style="font-size:xx-large;">
+   <td markdown="span" rowspan="5" style="font-size:xx-large;">
     <a name="w4">
      4
     </a>
@@ -377,8 +377,23 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Mon, Dec 18 2023
    </td>
-   <td colspan="3" markdown="span">
-    N/A
+   <td markdown="span" style="text-align:left;">
+    {::nomarkdown}
+    <ul style="margin:0;padding:.5rem">
+     <li>
+      <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-smalltables.pdf">
+       Chapter 20 of OSTEP
+      </a>
+     </li>
+    </ul>
+    {:/}
+   </td>
+   <td markdown="span" style="text-align:center">
+    <a href="{{ site.baseurl }}/notes/session16">
+     Multi-level Page Tables
+    </a>
+   </td>
+   <td markdown="span">
    </td>
   </tr>
   <tr>
@@ -387,8 +402,12 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Tue, Dec 19 2023
    </td>
-   <td colspan="3" markdown="span">
-    N/A
+   <td markdown="span">
+   </td>
+   <td markdown="span" style="text-align:center">
+    Lazy page allocation activity
+   </td>
+   <td markdown="span">
    </td>
   </tr>
   <tr>
@@ -397,8 +416,14 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Thu, Dec 21 2023
    </td>
-   <td colspan="3" markdown="span">
-    N/A
+   <td markdown="span">
+   </td>
+   <td markdown="span" style="text-align:center">
+    <b>
+     Exam 1: Part 2
+    </b>
+   </td>
+   <td markdown="span">
    </td>
   </tr>
   <tr>
@@ -407,8 +432,22 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Fri, Dec 22 2023
    </td>
-   <td colspan="3" markdown="span">
-    N/A
+   <td markdown="span">
+   </td>
+   <td markdown="span" style="text-align:center">
+    <b>
+     No class, enjoy the break
+    </b>
+   </td>
+   <td markdown="span">
+   </td>
+  </tr>
+  <tr>
+   <td colspan="4" markdown="span">
+    [[Challenge] Heap Manager II]({{ site.baseurl }}/labs/unreleased/) DUE Fri, Dec 22 2023 23:59 [Submission box]({{ site.gradescope_url }})
+    <font color="#aaa">
+     grader: @TBA
+    </font>
    </td>
   </tr>
   <tr>
