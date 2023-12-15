@@ -444,7 +444,7 @@ lectures and/or assignments with an advanced week's notice.
   </tr>
   <tr>
    <td colspan="4" markdown="span">
-    [[Challenge] Heap Manager II]({{ site.baseurl }}/labs/unreleased/) DUE Fri, Dec 22 2023 23:59 [Submission box]({{ site.gradescope_url }})
+    [[Challenge] Heap Manager II]({{ site.baseurl }}/labs/buddy/) DUE Fri, Dec 22 2023 23:59 [Submission box]({{ site.gradescope_url }})
     <font color="#aaa">
      grader: @TBA
     </font>
