@@ -2,7 +2,7 @@
 layout: post
 title: (Challenge) Buddy Allocator Heap Manager
 readtime: true
-date: Mon Mar 20 2023
+date: Thu Dec 14 2023 
 ---
 
 # Introduction
@@ -35,26 +35,85 @@ chapter](./dynamicmem.pdf). Make sure you fully understand the notions behind
 the buddy system since you are in full control over who you are going to
 implement it.
 
-## Getting the Source Code
+# Getting the Source Code
 
-To obtain the starter code, make sure to fetch the `buddy` branch of the xv6
-source code repository. To do so, __from the top level directory of your xv6
-code base__, run the following:
+To obtain the source code for this lab, follow the instructions below.
 
-```shell
-$ git fetch
-$ git checkout buddy
-$ git pull
-```
+## 1. Commit and push your changes to your current branch
 
-You should now be on a different branch that is called `buddy`. You can verify
-that by checking your current branch using:
-```shell
-$ git branch
-```
+First, make sure all your changes to your current branch are pushed to your
+repo. Recall that you can use `git branch` to check which branch you are
+currently on.
 
-Note: for `git fetch` to work, you will need to make sure all of your changes
-are either stashed or committed and pushed to your private copy of the repo.
+Follow the standard `git add`, `git commit`, and `git push` workflow to push
+your changes to your own private repo.
+
+If at any point, you get permission issues, this most likely means that you are
+trying to push to the class repo, which you do not have access for. To push to
+your own `main` branch, you can use:
+
+  ```sh
+  $ git push origin main
+  ```
+
+## 2. Fetch the changes from our repo
+
+From your Linux terminal, fetch our changes using:
+
+  ```sh
+  $ git fetch upstream
+  ```
+
+Then, make sure you can see this lab's branch, namely `upstream/buddy`.
+
+  ```sh
+  $ git branch -a
+  * clab_solution
+  main
+  remotes/origin/clab_solution
+  remotes/origin/main
+  remotes/upstream/clab
+  remotes/upstream/heapmm
+  remotes/upstream/main
+  remotes/upstream/buddy
+  ```
+
+You might see more branches locally (under `origin`) depending on what you have
+done, but you should be good if `remotes/upstream/buddy` shows up.
+
+## 3. Get the code in a new branch
+
+Next, let's checkout the `buddy` branch and create a new local branch for its
+solution.
+
+  ```sh
+  $ git checkout -b buddy_solution upstream/buddy
+  branch 'buddy_solution' set up to track 'upstream/buddy'.
+  Switched to a new branch 'buddy_solution'
+  ```
+
+## 4. Push the changes to your repo
+
+Finally, push your changes to your own repo to make sure the code is there and
+you can start editing.
+
+  ```sh
+  $ git push --set-upstream origin buddy_solution
+  Enumerating objects: 119, done.
+  Counting objects: 100% (119/119), done.
+  Delta compression using up to 56 threads
+  Compressing objects: 100% (64/64), done.
+  Writing objects: 100% (111/111), 42.50 KiB | 42.50 MiB/s, done.
+  Total 111 (delta 42), reused 111 (delta 42), pack-reused 0
+  remote: Resolving deltas: 100% (42/42), completed with 8 local objects.
+  remote:
+  remote: Create a pull request for 'buddy_solution' on GitHub by visiting:
+  remote:      https://github.com/user/csse332-labs-noureddi/pull/new/buddy_solution
+  remote:
+  To github.com:user/csse332-labs-noureddi.git
+   * [new branch]      buddy_solution -> buddy_solution
+  branch 'buddy_solution' set up to track 'origin/buddy_solution'.
+  ```
 
 # Starter Code
 
@@ -301,23 +360,55 @@ from your Linux terminal (not your xv6 terminal window).
 
 # Submitting Your Code
 
-From the Linux terminal, issue the command:
-```shell
-[Linux shell] $ make submit
-```
-Two files will be generated, `submit-lab-buddy.patch` and
-`submit-lab-buddy.tar`. **Please submit both of these files to Gradescope** at
-the appropriate lab link.
+From the Linux terminal, issue the command (make sure you are in the `xv6-riscv`
+directory in your repository):
+
+  ```shell
+  ./create_submission.sh <username>
+  ```
+and replace `<username>` with your RHIT username (without the `<` and `>`). For
+example, for me, that would be:
+
+  ```shell
+  ./create_submission.sh noureddi
+  ```
+
+If you get a message saying that you don't have permission to run
+`./create_submission.sh`, then issue the following command first 
+
+  ```shell
+  chmod +x ./create_submission.sh
+  ```
+
+Here's the output as it shows up on my end:
+
+  ```
+  Cleaning up xv6 directory...
+  Process started: writing temporaries to /tmp/dab9bfedf8d508c2a1c3f1c95e6ba1fc.txt
+  Found the following modified files:
+  ./user/rhmalloc.c
+  Creating the submission zip file.
+    adding: user/rhmalloc.c (deflated 54%)
+  Done...
+  ################################################################
+          submission_noureddi.zip has been created.
+     Please submit THIS FILE AND THIS FILE ONLY to Gradescope.
+  ################################################################
+  ```
+
+This will generate a single file called `submission-username.zip` (for me, it
+would be `submission-noureddi.zip`). That is all you need to upload to
+[Gradescope]({{site.gradescope_url}}).
 
 ## Submission Checklist
 
 - [ ]  My code compiles and generates the right executables.
 - [ ]  I ran `make grade` to double check the test cases for all of my code.
-- [ ]  I ran `make submit` to generate the `.patch` and `.tar` files.
-- [ ]  I submitted both `.patch` and `.tar` files to [Gradescope]({{
-    site.gradescope_url }}).
+- [ ]  I ran the submission script to generate my `zip` file.
+- [ ]  I submitted the `zip` file  to [Gradescope]({{site.gradescope_url}}).
 
-## Grading
+---
 
-Check out this assignment's [grading](checklist/) page for more information.
+If you notice any typos or inaccuracies, please open a GitHub issue on this
+[repository]({{site.gh_repository_url}}).
 
