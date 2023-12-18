@@ -108,7 +108,7 @@
 14:
   reading:
   topics:
-    - Lazy page allocation activity
+    - <a href="{{site.baseurl}}/docs/activities/lazy_pages/"> Lazy page allocation activity </a>
     # - <a href="{{ site.baseurl }}/notes/session17"> Paging Activity </a>
   materials:
 

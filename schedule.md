@@ -405,7 +405,9 @@ lectures and/or assignments with an advanced week's notice.
    <td markdown="span">
    </td>
    <td markdown="span" style="text-align:center">
-    Lazy page allocation activity
+    <a href="{{site.baseurl}}/docs/activities/lazy_pages/">
+     Lazy page allocation activity
+    </a>
    </td>
    <td markdown="span">
    </td>
