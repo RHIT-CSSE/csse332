@@ -457,7 +457,7 @@ lectures and/or assignments with an advanced week's notice.
     <td colspan="5" markdown="span" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;">
     </td>
    </tr>
-   <td markdown="span" rowspan="4" style="font-size:xx-large;">
+   <td markdown="span" rowspan="5" style="font-size:xx-large;">
     <a name="w5">
      5
     </a>
@@ -540,6 +540,14 @@ lectures and/or assignments with an advanced week's notice.
    </td>
   </tr>
   <tr>
+   <td colspan="4" markdown="span">
+    [[Challenge] Virtual Memory II]({{ site.baseurl }}/labs/unreleased) DUE Thu, Jan 11 2024 23:59 [Submission box]({{ site.gradescope_url }})
+    <font color="#aaa">
+     grader: @TBA
+    </font>
+   </td>
+  </tr>
+  <tr>
    <td markdown="span">
     20
     <br/>
@@ -569,7 +577,7 @@ lectures and/or assignments with an advanced week's notice.
     <td colspan="5" markdown="span" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;">
     </td>
    </tr>
-   <td markdown="span" rowspan="4" style="font-size:xx-large;">
+   <td markdown="span" rowspan="6" style="font-size:xx-large;">
     <a name="w6">
      6
     </a>
@@ -596,6 +604,14 @@ lectures and/or assignments with an advanced week's notice.
     </a>
    </td>
    <td markdown="span">
+   </td>
+  </tr>
+  <tr>
+   <td colspan="4" markdown="span">
+    [Threads &amp; Mutex Basics]({{ site.baseurl }}/labs/unreleased) DUE Mon, Jan 15 2024 23:59 [Submission box]({{ site.gradescope_url }})
+    <font color="#aaa">
+     grader: @TBA
+    </font>
    </td>
   </tr>
   <tr>
@@ -631,6 +647,14 @@ lectures and/or assignments with an advanced week's notice.
    </td>
   </tr>
   <tr>
+   <td colspan="4" markdown="span">
+    [Condition Variables Basics]({{ site.baseurl }}/labs/unreleased) DUE Thu, Jan 18 2024 23:59 [Submission box]({{ site.gradescope_url }})
+    <font color="#aaa">
+     grader: @TBA
+    </font>
+   </td>
+  </tr>
+  <tr>
    <td markdown="span">
     24
     <br/>
@@ -660,7 +684,7 @@ lectures and/or assignments with an advanced week's notice.
     <td colspan="5" markdown="span" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;">
     </td>
    </tr>
-   <td markdown="span" rowspan="4" style="font-size:xx-large;">
+   <td markdown="span" rowspan="5" style="font-size:xx-large;">
     <a name="w7">
      7
     </a>
@@ -687,6 +711,14 @@ lectures and/or assignments with an advanced week's notice.
     </a>
    </td>
    <td markdown="span">
+   </td>
+  </tr>
+  <tr>
+   <td colspan="4" markdown="span">
+    [[Challenge] Condition Variables II]({{ site.baseurl }}/labs/unreleased) DUE Mon, Jan 22 2024 23:59 [Submission box]({{ site.gradescope_url }})
+    <font color="#aaa">
+     grader: @TBA
+    </font>
    </td>
   </tr>
   <tr>
@@ -761,23 +793,8 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Mon, Jan 29 2024
    </td>
-   <td markdown="span" style="text-align:left;">
-    {::nomarkdown}
-    <ul style="margin:0;padding:.5rem">
-     <li>
-      <a href="https://pdos.csail.mit.edu/6.828/2022/xv6/book-riscv-rev3.pdf">
-       Chapter 7 of the xv6 book
-      </a>
-     </li>
-    </ul>
-    {:/}
-   </td>
-   <td markdown="span" style="text-align:center">
-    <a href="{{ site.baseurl }}/notes/session31">
-     The xv6 scheduler
-    </a>
-   </td>
-   <td markdown="span">
+   <td colspan="3" markdown="span">
+    N/A
    </td>
   </tr>
   <tr>
@@ -786,23 +803,8 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Tue, Jan 30 2024
    </td>
-   <td markdown="span" style="text-align:left;">
-    {::nomarkdown}
-    <ul style="margin:0;padding:.5rem">
-     <li>
-      <a href="https://www.eecs.umich.edu/courses/eecs588/static/stack_smashing.pdf">
-       Smashing The Stack for Fun and Profit
-      </a>
-     </li>
-    </ul>
-    {:/}
-   </td>
-   <td markdown="span" style="text-align:center">
-    <a href="{{ site.baseurl }}/notes/session33/">
-     Introduction to Memory Safety
-    </a>
-   </td>
-   <td markdown="span">
+   <td colspan="3" markdown="span">
+    N/A
    </td>
   </tr>
   <tr>
@@ -811,14 +813,8 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Thu, Feb 01 2024
    </td>
-   <td markdown="span">
-   </td>
-   <td markdown="span" style="text-align:center">
-    <a href="{{ site.baseurl }}/notes/session34">
-     Stack Smashing and Its Variants
-    </a>
-   </td>
-   <td markdown="span">
+   <td colspan="3" markdown="span">
+    N/A
    </td>
   </tr>
   <tr>
@@ -827,14 +823,8 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Fri, Feb 02 2024
    </td>
-   <td markdown="span">
-   </td>
-   <td markdown="span" style="text-align:center">
-    <b>
-     Exam 2 Part 2
-    </b>
-   </td>
-   <td markdown="span">
+   <td colspan="3" markdown="span">
+    N/A
    </td>
   </tr>
   <tr>
@@ -852,14 +842,8 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Mon, Feb 05 2024
    </td>
-   <td markdown="span">
-   </td>
-   <td markdown="span" style="text-align:center">
-    <a href="{{ site.baseurl }}/labs/lab13/">
-     Return-to-libc Attacks
-    </a>
-   </td>
-   <td markdown="span">
+   <td colspan="3" markdown="span">
+    N/A
    </td>
   </tr>
   <tr>
@@ -868,23 +852,8 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Tue, Feb 06 2024
    </td>
-   <td markdown="span" style="text-align:left;">
-    {::nomarkdown}
-    <ul style="margin:0;padding:.5rem">
-     <li>
-      <a href="https://hovav.net/ucsd/dist/geometry.pdf">
-       The Geometry of Innocent Flesh on the Bone
-      </a>
-     </li>
-    </ul>
-    {:/}
-   </td>
-   <td markdown="span" style="text-align:center">
-    <a href="">
-     Return-Oriented-Programming
-    </a>
-   </td>
-   <td markdown="span">
+   <td colspan="3" markdown="span">
+    N/A
    </td>
   </tr>
   <tr>
@@ -893,14 +862,8 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Thu, Feb 08 2024
    </td>
-   <td markdown="span">
-   </td>
-   <td markdown="span" style="text-align:center">
-    <a href="">
-     Stack smashing wrap up
-    </a>
-   </td>
-   <td markdown="span">
+   <td colspan="3" markdown="span">
+    N/A
    </td>
   </tr>
   <tr>
@@ -909,14 +872,8 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Fri, Feb 09 2024
    </td>
-   <td markdown="span">
-   </td>
-   <td markdown="span" style="text-align:center">
-    <a href="{{ site.baseurl }}/notes/session38/">
-     Project Meetings
-    </a>
-   </td>
-   <td markdown="span">
+   <td colspan="3" markdown="span">
+    N/A
    </td>
   </tr>
   <tr>
@@ -934,14 +891,8 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Mon, Feb 12 2024
    </td>
-   <td markdown="span">
-   </td>
-   <td markdown="span" style="text-align:center">
-    <a href="{{ site.baseurl }}/notes/filesystems/">
-     File Systems
-    </a>
-   </td>
-   <td markdown="span">
+   <td colspan="3" markdown="span">
+    N/A
    </td>
   </tr>
   <tr>
@@ -950,14 +901,8 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Tue, Feb 13 2024
    </td>
-   <td markdown="span">
-   </td>
-   <td markdown="span" style="text-align:center">
-    <b>
-     Lab: ext2 file system
-    </b>
-   </td>
-   <td markdown="span">
+   <td colspan="3" markdown="span">
+    N/A
    </td>
   </tr>
   <tr>
@@ -966,14 +911,8 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Thu, Feb 15 2024
    </td>
-   <td markdown="span">
-   </td>
-   <td markdown="span" style="text-align:center">
-    <b>
-     Class Wrap-up and Work Time
-    </b>
-   </td>
-   <td markdown="span">
+   <td colspan="3" markdown="span">
+    N/A
    </td>
   </tr>
   <tr>
@@ -982,14 +921,8 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Fri, Feb 16 2024
    </td>
-   <td markdown="span">
-   </td>
-   <td markdown="span" style="text-align:center">
-    <b>
-     Project Presentations
-    </b>
-   </td>
-   <td markdown="span">
+   <td colspan="3" markdown="span">
+    N/A
    </td>
   </tr>
  </tbody>

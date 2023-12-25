@@ -222,92 +222,84 @@
 ################################################################################
 ## WEEK 8
 ################################################################################
-29:
-  reading:
-    - <a href="https://pdos.csail.mit.edu/6.828/2022/xv6/book-riscv-rev3.pdf"> Chapter 7 of the xv6 book </a>
-  topics:
-    - <a href="{{ site.baseurl }}/notes/session31"> The xv6 scheduler </a>
-  materials:
-
-#29:
-#  reading:
-#  topics:
-#    - <b> <a href="{{ site.baseurl }}/labs/lab12">Project Kickoff</a> and Hybrid Threads </b>
-#  materials:
-
-30:
-  reading:
-    - <a href="https://www.eecs.umich.edu/courses/eecs588/static/stack_smashing.pdf"> Smashing The Stack for Fun and Profit </a>
-  topics:
-    - <a href="{{ site.baseurl }}/notes/session33/"> Introduction to Memory Safety </a>
-  materials:
-
-
-31:
-  reading:
-  topics:
-    - <a href="{{ site.baseurl }}/notes/session34"> Stack Smashing and Its Variants </a>
-  materials:
-
-32:
-  reading:
-  topics:
-    - <b> Exam 2 Part 2 </b>
-  materials:
+# 29:
+#   reading:
+#     - <a href="https://pdos.csail.mit.edu/6.828/2022/xv6/book-riscv-rev3.pdf"> Chapter 7 of the xv6 book </a>
+#   topics:
+#     - <a href="{{ site.baseurl }}/notes/session31"> The xv6 scheduler </a>
+#   materials:
+#
+# 30:
+#   reading:
+#     - <a href="https://www.eecs.umich.edu/courses/eecs588/static/stack_smashing.pdf"> Smashing The Stack for Fun and Profit </a>
+#   topics:
+#     - <a href="{{ site.baseurl }}/notes/session33/"> Introduction to Memory Safety </a>
+#   materials:
+#
+#
+# 31:
+#   reading:
+#   topics:
+#     - <a href="{{ site.baseurl }}/notes/session34"> Stack Smashing and Its Variants </a>
+#   materials:
+#
+# 32:
+#   reading:
+#   topics:
+#     - <b> Exam 2 Part 2 </b>
+#   materials:
 
 ################################################################################
 ## WEEK 9
 ################################################################################
-33:
-  reading:
-  topics:
-    - <a href="{{ site.baseurl }}/labs/lab13/"> Return-to-libc Attacks </a>
-  materials:
-
-34:
-  reading:
-    - <a href="https://hovav.net/ucsd/dist/geometry.pdf"> The Geometry of Innocent Flesh on the Bone </a>
-  topics:
-    - <a href=""> Return-Oriented-Programming </a>
-  materials:
-
-35:
-  reading:
-  topics:
-    - <a href=""> Stack smashing wrap up </a>
-  materials:
-
-36:
-  reading:
-  topics:
-    - <a href="{{ site.baseurl }}/notes/session38/"> Project Meetings </a>
-  materials:
+# 33:
+#   reading: topics: - <a href="{{ site.baseurl }}/labs/lab13/"> Return-to-libc Attacks </a>
+#   materials:
+#
+# 34:
+#   reading:
+#     - <a href="https://hovav.net/ucsd/dist/geometry.pdf"> The Geometry of Innocent Flesh on the Bone </a>
+#   topics:
+#     - <a href=""> Return-Oriented-Programming </a>
+#   materials:
+#
+# 35:
+#   reading:
+#   topics:
+#     - <a href=""> Stack smashing wrap up </a>
+#   materials:
+#
+# 36:
+#   reading:
+#   topics:
+#     - <a href="{{ site.baseurl }}/notes/session38/"> Project Meetings </a>
+#   materials:
 
 
 ################################################################################
 ## WEEK 10 
 ################################################################################
-37:
-  reading:
-  topics:
-    - <a href="{{ site.baseurl }}/notes/filesystems/"> File Systems </a>
-  materials:
-
-38:
-  reading:
-  topics:
-    - "<b> Lab: ext2 file system </b>"
-  materials:
-
-39:
-  reading:
-  topics:
-    - "<b> Class Wrap-up and Work Time </b>"
-  materials:
-
-40:
-  reading:
-  topics:
-    - <b> Project Presentations </b>
-  materials:
+# 37:
+#   reading:
+#   topics:
+#     - <a href="{{ site.baseurl }}/notes/filesystems/"> File Systems </a>
+#   materials:
+#
+# 38:
+#   reading:
+#   topics:
+#     - "<b> Lab: ext2 file system </b>"
+#   materials:
+#
+# 39:
+#   reading:
+#   topics:
+#     - "<b> Class Wrap-up and Work Time </b>"
+#   materials:
+#
+# 40:
+#   reading:
+#   topics:
+#     - <b> Project Presentations </b>
+#   materials:
 
