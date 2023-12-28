@@ -541,7 +541,7 @@ lectures and/or assignments with an advanced week's notice.
   </tr>
   <tr>
    <td colspan="4" markdown="span">
-    [[Challenge] Virtual Memory II]({{ site.baseurl }}/labs/unreleased) DUE Thu, Jan 11 2024 23:59 [Submission box]({{ site.gradescope_url }})
+    [[Challenge] Copy-on-Write]({{ site.baseurl }}/labs/cow) DUE Thu, Jan 11 2024 23:59 [Submission box]({{ site.gradescope_url }})
     <font color="#aaa">
      grader: @TBA
     </font>

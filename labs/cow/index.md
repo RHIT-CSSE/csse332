@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Lab 05 -- Copy on Write Fork
+title: (Challenge) Copy-on-Write
 readtime: true
-date: Friday Jan 6 2023
+date: Thursday Dec 28 2023
 ---
 
 # Introduction 
@@ -13,17 +13,17 @@ if the process's address space is small, but if the parent is large, then this
 becomes very slow. Also, most often, a lot of the pages that are shared between
 the parent and the child are never written to. So keeping two copies of the same
 page that is only being read is very wasteful.  Furthermore, copies of the full
-address space might wasteful since calls to `fork()` are often followed by calls
-to `exec()` in the child, which completely replaces the address space of the
-child. In that case, the copy that we did on `fork()` was very wasteful.
+address space might be wasteful since calls to `fork()` are often followed by
+calls to `exec()` in the child, which completely replaces the address space of
+the child. In that case, the copy that we did on `fork()` was very wasteful.
 
 In this lab, we will implement an optimization to `fork()` referred to as
-__copy-on-write__ (COW). Note that this is a challenge assignment and will count
-towards your challenges part of the grade.
+__copy-on-write__ (COW).
 
 ## Learning Objectives
 
 At the end of this lab, you should be able to:
+
 - Implement cow forking in the xv6 operating system.
 - Implement reference counting as a way to track shared pages before freeing
   them.
@@ -36,16 +36,16 @@ copying of physical memory frame for the child until the copies are really
 needed, if ever.
 
 COW `fork()` creates just a page table for the child, which PTEs point to the
-parent's physical frames, which are now shared between the parent and the child.
+parent's physical frames that are now shared between the parent and the child.
 However, COW `fork()` marks all PTEs, in both the parent and the child, as
-read-only. In other words, neither the parent nor the child can write to their
-pages after a `fork()` system call.
+**read-only**. In other words, neither the parent nor the child can write to
+their pages after a `fork()` system call.
 
 When either the parent or the child attempt to write to a page, a page fault
 occurs and the kernel is called upon to handle the exception. The kernel will
 detect a COW protected page and will then allocate a frame of physical memory
 for the faulting process, copy the content of the original page to the new one,
-maps the new frame in the faulty process's page table, and unmaps the old page
+map the new frame in the faulty process's page table, and unmaps the old page
 appropriately. However, when mapped in the page table, the kernel marks the
 corresponding PTE as writable now, and thus the faulty process can continue
 execution normally after that.
@@ -57,21 +57,84 @@ step in this lab.
 
 # Getting the Source Code
 
-To obtain the updated source code, make sure to fetch the `lab05` branch of the
-xv6 source code repository. To do so, from your xv6 top level directory, issue
-the following commands:
+To obtain the source code for this lab, follow the instructions below.
 
-```shell
-$ git fetch
-$ git checkout lab05
-$ git pull
-```
+## 1. Commit and push your changes to your current branch
 
-You should be on a new branch that is called `lab05`. You can verify that using:
+First, make sure all your changes to your current branch are pushed to your
+repo. Recall that you can use `git branch` to check which branch you are
+currently on.
 
-```shell
-$ git branch
-```
+Follow the standard `git add`, `git commit`, and `git push` workflow to push
+your changes to your own private repo.
+
+If at any point, you get permission issues, this most likely means that you are
+trying to push to the class repo, which you do not have access for. To push to
+your own `main` branch, you can use:
+
+  ```sh
+  $ git push origin main
+  ```
+
+## 2. Fetch the changes from our repo
+
+From your Linux terminal, fetch our changes using:
+
+  ```sh
+  $ git fetch upstream
+  ```
+
+Then, make sure you can see this lab's branch, namely `upstream/cow`.
+
+  ```sh
+  $ git branch -a
+  * clab_solution
+  main
+  remotes/origin/clab_solution
+  remotes/origin/main
+  remotes/upstream/clab
+  remotes/upstream/heapmm
+  remotes/upstream/main
+  remotes/upstream/buddy
+  remotes/upstream/cow
+  ```
+
+You might see more branches locally (under `origin`) depending on what you have
+done, but you should be good if `remotes/upstream/cow` shows up.
+
+## 3. Get the code in a new branch
+
+Next, let's checkout the `cow` branch and create a new local branch for its
+solution.
+
+  ```sh
+  $ git checkout -b cow_solution upstream/cow
+  branch 'cow_solution' set up to track 'upstream/cow'.
+  Switched to a new branch 'cow_solution'
+  ```
+
+## 4. Push the changes to your repo
+
+Finally, push your changes to your own repo to make sure the code is there and
+you can start editing.
+
+  ```sh
+  $ git push --set-upstream origin cow_solution
+  Enumerating objects: 119, done.
+  Counting objects: 100% (119/119), done.
+  Delta compression using up to 56 threads
+  Compressing objects: 100% (64/64), done.
+  Writing objects: 100% (111/111), 42.50 KiB | 42.50 MiB/s, done.
+  Total 111 (delta 42), reused 111 (delta 42), pack-reused 0
+  remote: Resolving deltas: 100% (42/42), completed with 8 local objects.
+  remote:
+  remote: Create a pull request for 'cow_solution' on GitHub by visiting:
+  remote:      https://github.com/user/csse332-labs-noureddi/pull/new/cow_solution
+  remote:
+  To github.com:user/csse332-labs-noureddi.git
+   * [new branch]      cow_solution -> cow_solution
+  branch 'cow_solution' set up to track 'origin/cow_solution'.
+  ```
 
 # Step 0: Making Sure Tests Fail
 
@@ -102,7 +165,7 @@ user trap is encountered when accessing an unmapped page in the page table, and
 the code in `usertrap` in `kernel/trap.c` is triggered.
 
 Specifically, when a page fault happens, the hardware will trigger an exception.
-In RISC-V, the hardware will the cause of the exception in the `scause`
+In RISC-V, the hardware will record the cause of the exception in the `scause`
 register, save the faulty PC in `sepc`, and the value of the pointer that caused
 the page fault in the `stval` register. Then, the hardware will trap into the
 kernel to handle the page fault, which will then call on `usertrap` to decipher
@@ -150,6 +213,7 @@ You can see that for a page fault, the `scause` register contains the value 15
 (0xf in hex), and the `stval` register contains the address that caused the
 fault (`0xdeadbeef` in our case). We can therefore modify the source code for
 `usertrap()` to print a segmentation fault as follows:
+
 ```c
 else if((which_dev == devintr()) != 0) {
   // ok
@@ -178,6 +242,7 @@ We will return to this handler later on in Step 2.
 First, take a look at the implementation of the `fork()` system call. You can
 find the source code in `kernel/proc.c`. The most important snippet of code we
 care about is the following:
+
 ```c
 // Copy user memory from parent to child.
 if(uvmcopy(p->pagetable, np->pagetable, p->sz) < 0){
@@ -195,6 +260,7 @@ in the child's address space, and maps them in the child's page table.  You can
 find the source code for `uvmcopy` in `kernel/vm.c`.
 
 Specifically, we care about the following loop in `uvmcopy`:
+
 ```c
 for(i = 0; i < sz; i += PGSIZE){
   if((pte = walk(old, i, 0)) == 0)
@@ -233,6 +299,10 @@ if(mappages(new, i, PGSIZE, (uint64)mem, flags) != 0){
 }
 ```
 
+**It is absolutely crucial that you understand how this function works for you
+to be able to continue on with this lab, so please ask questions about it
+before you move on.**
+
 ## Implementation: Mapping the Parent's Pages Without Copy
 
 Your first task in this lab is to modify the `uvmcopy` function to create
@@ -251,36 +321,47 @@ non-writable? At that point, we do not want the kernel to copy and remap that
 page in the page table, we would like to keep that page non-writable. Therefore,
 to achieve a distinction between pages that are non-writable because of
 the copy-on-write mechanism, and those that are non-writable by default, we will
-make use of an additional bit each page table entry (PTE). This bit is called
+make use of an additional bit in each page table entry (PTE). This bit is called
 the RSW bit (where RSW stands for Reserved for SoftWare). Therefore, we will set
 that bit to 1 whenever a page is marked non-writable because of the cow
 mechanism. We have already defined that bit for you in the `kernel/riscv.h`
 definitions as follows:
+
 ```c
 #define PTE_RSW (1L << 5) // reserved for software
 ```
 
-Here is a reasonable plan of attack:
-1. Remove the code that creates a new page and copies the content of the old
-   page into it from `uvmcopy` in `kernel/vm.c`.
-2. For each mapped page in the parent's page table, unset the Write flag. To
-   unset a flag from a given PTE, you can use:
-   ```c
-   *pte &= ~PTE_W;
-   ```
-3. For each mapped page in the parent's page table, set the RSW bit. To do so,
-   you can use something like the following:
-   ```c
-   *pte |= PTE_RSW;
-   ```
-   > Note: You should only set this bit if the write bit for the page was not
-   already disabled. If it has been disabled by design, then you should NOT set
-   the RSW bit.
-4. Map the page as is, with the same flags, in the child's page table.
+### Task: Change `uvmcopy`
+
+Your task here is to change the behavior of `uvmcopy` to share the pages
+between the parent process and the child process. In other words, we do not
+want to create new pages (or frames) for the child that are copies of each
+other, we want the parent and the child to **share** the same pages, and thus
+the same mappings.
+
+However, for all those pages (in both parent and child), we would need to unset
+the Write flag (i.e., disable writing to hose pages from **both** processes).
+To unset a flag from a page table entry (say `pte`), we would perform a bitwise
+operation as follows:
+
+```c
+*pte &= ~PTE_W;
+```
+
+Additionally, for those pages that were not originally write-protected, we
+would like to set the `PTE_RSW` bit. We can do so using `*pte |= PTE_RSW;`.
+Note that per our discussion above, not all pages should receive this bit.
+
+At the end of this task, the parent's page table and the child's page table
+should be exact copies of each other, with no page marked as writable, and
+those pages that were not write-protected now having the _reserved for
+software_ bit.
+
+### Testing
 
 At this point, your xv6 kernel will break. Recall that `fork()` is an essential
-system call in everything the operating system does. And as of now, when we fork
-a process, all of the pages for both the parent and child are marked as
+system call in everything the operating system does. And as of now, when we
+fork a process, all of the pages for both the parent and child are marked as
 non-writable, which will cause our operating system to break. 
 
 When I tried to run my kernel using `make qemu`, I get something like the
@@ -296,12 +377,12 @@ usertrap(): unexpected scause 0x000000000000000c pid=1
 panic: init exiting
 ```
 
-Your output might look slightly differently, but basically the `init` process
+Your output might look slightly different, but basically the `init` process
 should fail since we cannot `fork()` properly. We will take care of that in the
 next step.
 
 Note that it is okay if your kernel doesn't fail out of the box, you might
-sometimes need to press <Enter> before the kernel breaks; that is perfectly
+sometimes need to press `<Enter>` before the kernel breaks; that is perfectly
 acceptable for this step.
 
 # Step 2: Handling Segmentation Faults
@@ -311,53 +392,48 @@ new pages and copy then when we encounter a page fault caused by a cow mapping.
 What we would like to do in this step is to modify the page fault handler that
 we created in Step 0.5 to handle cow mapping. 
 
-Here is a reasonable plan of attack:
-1. For the fault address, obtain the current mapping in the faulty process's
-   page table. In other words, for the faulty page, obtain the page table entry
-   that corresponds to it.
-   > Hint: To obtain the page address from a given virtual address, use the
-     `PGROUNDDOWN` macro as follows:
-     ```c
-     va = PGROUNDDOWN(r_stval());
-     ```
-   > Hint: You might find the `walk` function call useful in this step.
-   > Hint: For the `walk` function to become accessible from `trap.c`, at the
-     top of the `trap.c` file, right after the `extern char tramploine[] ...`,
-     add the following:
-     ```c
-     extern pte_t * walk(pagetable_t pagetable, uint64 va, int alloc);
-     ```
+## Task: Add your custom handler
 
-2. For the found PTE, check that it is a cow protected page. If it is not, then
-   simply mark the process as killed and continue.
-   > Hint: A page is cow protected if it is (1) valid, (2) user accessible, (3)
-     non-writable, and (4) has the RSW bit set.
+Your task now is to handle page faults that are due to the copy-on-write
+mechanism. Before you start writing code, make sure you answer the following
+question:
 
-3. If the PTE is cow protected, then we need to allocate a new page for it, copy
-   the old page into the new page, and update the mapping of the page into the
-   process's page table. Here's a reasonable breakdown of this step:
+> What is a page considered to be a cow page?
 
-   1. Allocate a new physical page in memory using `kalloc()`.
-   2. Copy the old physical page (the one already mapped in the page table) into
-      the new physical page using `memmove`.
-   3. Unmap the old page from the process's page table using `uvmunmap`.
-      > Hint: Here is an example of using `uvmunmap` to unmap a page:
-        ```c
-        uvmunmap(p->pagetable, va, 1, 0);
-        ```
-   4. Map the new page into the process's page table using `mappages`. For this
-      to work, you will need to copy the same PTE flags form the old pte, except
-      with the `PTE_W` bit set and the `PTE_RSW` bit cleared.
+You need to have a clear answer to the question above before being able to
+implement this task.
+
+Please note that if you detect a page fault on a non cow page, that you don't
+need to do anything else, simply kill the process as any other unhandled page.
+
+For those cow pages, now is the time to do the copying. You will need to copy
+the page, unmap it from the process's page table, and then map it again with
+the copy with appropriate permission flags.
+
+### Some hints
+
+- You will most likely need to walk the process's page table. You do not have
+  to rewrite this function, you can use the `walk` function call from
+  `kernel/vm.c`. To do so, add the following line at the top of your file,
+  right below the `extern char trampoline[] ....` line:
+
+  ```c
+  extern pte_t *walk(pagetable_t pagetable, uint64 va, int alloc);
+  ```
+
+- Look at the functions in `kernel/vm.c` to checkout ways to manipulate the
+  page table (create new mappings, remove existing one). Make sure you understand
+  what a function does exactly before you use it.
 
 ## Testing
 
-Implementing this step does completely solve all of our problems, but let's try
-to test a few things out so far. The main problem that we have not handled yet
-is what happens when a process dies, so by definition our tests will fail. We
-will take care of that in the next step.
+Implementing this step does not completely solve all of our problems, but let's
+try to test a few things out so far. The main problem that we have not handled
+yet is what happens when a process dies, so by definition our tests will fail.
+We will take care of that in the next step.
 
 However, we have provided you with a partial test that would tell you if your
-implementation is far is correct. Checkout the code in `user/simplefork.c`. This
+implementation so far is correct. Checkout the code in `user/simplefork.c`. This
 is very similar to the `simple` test in `cowtest.c`, however it does not call
 the `wait` system call since we haven't handled yet what happens when a process
 dies.
@@ -398,6 +474,7 @@ a reference count for each allocate frame in the system. The design of xv6 makes
 things easy for us since we already know before hand the maximum number of
 physical frames that can be allocated in our system. Check out the code in
 `kernel/memlayout.h`, specifically,
+
 ```c
 // the kernel expects there to be RAM
 // for use by the kernel and user pages
@@ -405,73 +482,65 @@ physical frames that can be allocated in our system. Check out the code in
 #define KERNBASE 0x80000000L
 #define PHYSTOP (KERNBASE + 128*1024*1024)
 ```
+
 The macro `PHYSTOP` indicates that largest physical address that we can reach.
 The macro `KERNBASE` is the address where the kernel's memory is allocated.
 Therefore the total number of frames that can be allocated for the users is
 `(PHYSTOP - KERNBASE) / PGSIZE`.
 
-Here is a reasonable plan of attack:
-1. In `kernel/kalloc.c`, add an array that can be use to keep track of the
-   reference count of each physical frame as follows:
+## Task: Implement reference counting
+
+Your next task is to add reference counting to your cow mechanism
+implementation. Since the number of frames in xv6 is fixed and will not change,
+we suggest that you use a simple array to keep track of the reference count for
+every frame in physical memory.
+
+Whenever a frame is allocated (using `kalloc`), its reference count should be
+increased. Similary, anytime you share a frame between two or more processes,
+the refence count for that frame should be increased.
+
+Contrarily, when a frame is free'd (using `kfree`), its reference count must be
+decremented. **It is only after the reference count for that frame reached 0**
+that it would be actually free'd and released back to the kernel.
+
+### Some hints
+
+1. You will need to modify code `kernel/kalloc.c`.
+
+2. You will need to modify your `uvmcopy` function to make use of reference
+   counting.
+
+   _Hint_: To expose a function from `kernel/kalloc.c` to your other files, add
+   that function in `kernel/kalloc.c` and then use extern to expose it.
+
+   For example, if I create a function called `void my_function(uint64 pa)` in
+   `kernel/kalloc.c`, then if I need it anywhere else in the kernel, you can
+   use:
+
+    ```c
+    extern void my_function(uint64);
+    ```
+
+3. To find the frame number for a given _physical_ address, you can use the
+   following:
+
    ```c
-   struct {
-     struct spinlock lock;
-     struct run *freelist;
-     // ADDED CODE HERE
-     int refcnt[(PHYSTOP - KERNBASE) / PGSIZE];
-   } kmem;
-   ```
+   #define FRINDEX(pa) ((uint64)pa - KERNBASE) / PGSIZE   
+   ``` 
 
-2. For ease of use, add a macro that can allow you to get the reference count
-   index from a physical frame address. Something like:
+4. Since xv6 runs on two processors by default, some synchronization must be
+   done. Since we have not talked about that yet, you can turn that off using
+   `make CPUS=1 qemu`.
+
+   Alternatively, it is a really simple solution, anytime you need to access
+   the reference count array, you must have a lock on your hands. For me, I did
+   the following:
+
    ```c
-   #define  FRINDEX(pa) ((uint64)pa - KERNBASE) / PGSIZE
+   acquire(&kmem.lock);
+   // do stuff with the reference count array.
+   release(&kmem.lock);
    ```
-
-3. Modify `kfree` in `kernel/kalloc.c` to do the following:
-   1. For the given physical address to free, first decrement that frame's
-      reference count. To avoid any parallelism errors, make sure to acquire the
-      memory lock before accessing the reference count array. Something that
-      looks like
-      ```c
-      acquire(&kmem.lock);
-      // TODO: decrement the frame's reference count here
-      release(&kmem.lock);
-      ```
-   2. If the frame's reference count becomes 0 or less, then actually free the
-      frame by adding it back to the freelist (essentially execute the code that
-      was already there in `kfree`). Make sure to reset the frame's reference
-      count to 0.
-   3. If the frame's reference count is still > 0, we are done, nothing else to
-      add.
-  
-4. Modify the `freerange` function to initialize the reference count for each
-   frame to 0 (you can also initialize it to 1 if you like, `kfree` will take
-   care of resetting it anyway).
-   > Note: You do not need to hold the lock over kmem at this point since the
-   initialization code runs on a single processor of the available ones.
-
-5. Modify the `kalloc` function to initialize the reference count for the
-   allocated frame to 1.
-
-6. In `uvmcopy`, anytime you share a page between the parent and the child
-   processes, increase the reference count of that page's corresponding frame.
-   To do so, I added a function to `kalloc.c` that increments the reference
-   count for a frame, something like:
-   ```c
-   void increfcnt(uint64 pa) {
-     // TODO: Add your code here.
-   }
-   ```
-   and then extern the function in `vm.c` as follows:
-   ```c
-   extern void increfcnt(uint64);
-   ```
-   and then you can use it in `uvmcopy` whenever applicable.
-
-7. In `usertrap`, every time a frame in unmapped, call `kfree` on that frame.
-   Note that `kfree` will not actually free the frame until its reference count
-   hits 0.
 
 ## Testing
 
@@ -491,6 +560,7 @@ Both simple tests should pass at this point. We can also make more extensive
 tests using `cowtest`, however not all tests will pass. Specifically, `simple`
 and `three` will pass, but `file` will fail, something that looks like the
 following:
+
 ```shell
 $ cowtest
 simple: ok
@@ -504,6 +574,7 @@ d
 $
 ```
 
+Note that your error might look a bit different, but it will fail regardless.
 We will fix the `filetest` in the next and final step.
 
 # Step 4: Modifying `copyout`
@@ -511,20 +582,20 @@ We will fix the `filetest` in the next and final step.
 The final case we would like to take care of is the case of `copyout` in
 `kernel/vm.c`. `copyout` is a function that copies bytes of data from the kernel
 address space to the user's address space. When a process calls `copyout` on a
-shared cow page, it must first create allocate a new page and copy it before it
-can write to it.  However, it will not go through the same page fault mechanism
+shared cow page, it must first allocate a new page and copy it before it can
+write to it.  However, it will not go through the same page fault mechanism
 that we implemented in the previous steps since `copyout` is usually called in
-kernel space, and thus has a different trap handler. To simplify things, we will
-directly modify `copyout`'s source code to handle cow pages.
+kernel space, and thus has a different trap handler. To simplify things, we
+will directly modify `copyout`'s source code to handle cow pages.
 
 To complete this lab, modify the source code for `copyout` to handle cow pages
 before writing to them. Your code will look very much similar to the code you
-used in step 3. In a nutshell, what the source code of `copyout` is copying date
-from the kernel space to the user space page by page. For each page to copy, the
-code will first find `pa0`, which the address of the physical frame to write to,
-and then calls `memmove` to copy the data from the kernel frames to the user's
-frame. Your code must reside after the line `va0 = PGROUNDDOWN(dstva);` and it
-should set the appropriate value for `pa0`.
+used in step 2. In a nutshell, the source code of `copyout` is copying data
+from the kernel space to the user space page by page. For each page to copy,
+the code will first find `pa0`, which is the address of the physical frame to
+write to, and then calls `memmove` to copy the data from the kernel frames to
+the user's frame. Your code must reside after the line `va0 =
+PGROUNDDOWN(dstva);` and it should set the appropriate value for `pa0`.
 
 > Hint: In the case where the virtual page to copy to is not a cow page, you
   simply need to set `pa0 = walkaddr(pagetable, va0);`.
@@ -555,20 +626,57 @@ $ make grade
 ```
 from your Linux terminal (not your xv6 terminal window). 
 
-# Submitting your code
+# Submitting Your Code
 
-From the Linux terminal, issue the command:
-```shell
-make submit
-```
-Two files will be generated, `submit-lab5.patch` and `submit-lab5.tar`. **Please
-submit both of these files to Gradescope** at the appropriate lab link.
+From the Linux terminal, issue the command (make sure you are in the `xv6-riscv`
+directory in your repository):
+
+  ```shell
+  ./create_submission.sh <username>
+  ```
+and replace `<username>` with your RHIT username (without the `<` and `>`). For
+example, for me, that would be:
+
+  ```shell
+  ./create_submission.sh noureddi
+  ```
+
+If you get a message saying that you don't have permission to run
+`./create_submission.sh`, then issue the following command first 
+
+  ```shell
+  chmod +x ./create_submission.sh
+  ```
+
+Here's the output as it shows up on my end:
+
+  ```
+  Cleaning up xv6 directory...
+  Process started: writing temporaries to /tmp/dab9bfedf8d508c2a1c3f1c95e6ba1fc.txt
+  Found the following modified files:
+  ./user/rhmalloc.c
+  Creating the submission zip file.
+    adding: user/rhmalloc.c (deflated 54%)
+  Done...
+  ################################################################
+          submission_noureddi.zip has been created.
+     Please submit THIS FILE AND THIS FILE ONLY to Gradescope.
+  ################################################################
+  ```
+
+This will generate a single file called `submission-username.zip` (for me, it
+would be `submission-noureddi.zip`). That is all you need to upload to
+[Gradescope]({{site.gradescope_url}}).
 
 ## Submission Checklist
 
 - [ ]  My code compiles and generates the right executables.
 - [ ]  I ran `make grade` to double check the test cases for all of my code.
-- [ ]  I ran `make submit` to generate the `.patch` and `.tar` files.
-- [ ]  I submitted both `.patch` and `.tar` files to [Gradescope]({{
-    site.gradescope_url }}).
+- [ ]  I ran the submission script to generate my `zip` file.
+- [ ]  I submitted the `zip` file  to [Gradescope]({{site.gradescope_url}}).
+
+---
+
+If you notice any typos or inaccuracies, please open a GitHub issue on this
+[repository]({{site.gh_repository_url}}).
 
