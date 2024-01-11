@@ -153,6 +153,7 @@
   topics:
     - '<a href="{{ site.baseurl }}/notes/session19"> Concurrency: Mutex & Condition Variables </a>'
   materials:
+    <a href="{{site.baseurl}}/docs/activities/generic/"> Activity </a>
 
 20:
   reading:
