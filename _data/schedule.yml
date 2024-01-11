@@ -128,7 +128,7 @@
 
 
 ################################################################################
-## WEEK 4
+## WEEK 5
 ################################################################################
 17:
   reading:
@@ -137,6 +137,7 @@
     # - '<a href="{{ site.baseurl }}/notes/session18"> Threads: Lightweight Processes </a>'
     - Interrupts and Traps
   materials:
+    - <a href="{{site.baseurl}}/docs/activities/systrace/"> Activity </a>
 
 18:
   reading:
