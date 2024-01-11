@@ -621,7 +621,7 @@ lectures and/or assignments with an advanced week's notice.
   </tr>
   <tr>
    <td colspan="4" markdown="span">
-    [Threads &amp; Mutex Basics]({{ site.baseurl }}/labs/unreleased) DUE Mon, Jan 15 2024 23:59 [Submission box]({{ site.gradescope_url }})
+    [Threads &amp; Mutex Basics]({{ site.baseurl }}/labs/threads_basics) DUE Mon, Jan 15 2024 23:59 [Submission box]({{ site.gradescope_url }})
     <font color="#aaa">
      grader: @TBA
     </font>
