@@ -159,7 +159,7 @@
   reading:
     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 of OSTEP </a>
   topics:
-    - '<a href="{{ site.baseurl }}/notes/session20"> Concurrency: More Condition Variables </a>'
+    - '<a href="{{ site.baseurl }}/notes/session20"> Mutex locks practice </a>'
   materials:
 
 ################################################################################
@@ -167,21 +167,24 @@
 ################################################################################
 21:
   reading:
-    - <a href="https://en.wikipedia.org/wiki/Producer%E2%80%93consumer_problem"> Wiki Page for Prod/Cons Problem </a>
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 of OSTEP </a>
   topics:
-    - '<a href="{{ site.baseurl }}/notes/session21"> Concurrency: Producer-Consumer Problem </a>'
+    - '<a href="{{ site.baseurl }}/notes/session21"> Concurrency: Condition Variables </a>'
   materials:
+    <a href="{{site.baseurl}}/docs/activities/generic/"> Activity </a>
 
 22:
   reading:
+    - <a href="https://en.wikipedia.org/wiki/Producer%E2%80%93consumer_problem"> Wiki Page for Prod/Cons Problem </a>
   topics:
-    - '<a href="{{ site.baseurl }}/notes/session22"> Concurrency: Readers/Writers Problem </a>'
+    - '<a href="{{ site.baseurl }}/notes/session22"> Concurrency: Producer-consumer Problem </a>'
   materials:
 
 23:
   reading:
   topics:
-    - '<a href="{{ site.baseurl }}/notes/session23"> Concurrency: Deadlocks </a>'
+    # - '<a href="{{ site.baseurl }}/notes/session23"> Concurrency: Deadlocks </a>'
+    - '<a href="{{ site.baseurl }}/notes/session22"> Concurrency: Readers/Writers Problem </a>'
   materials:
 
 24:

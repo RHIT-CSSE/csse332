@@ -10,7 +10,7 @@ Heap Manager,heapmm/,2023-12-11 23:59:00,,[Submission box]({{ site.gradescope_ur
 [Challenge] Copy-on-Write,cow,2024-01-11 23:59:00,TBA,[Submission box]({{ site.gradescope_url }})
 Threads & Mutex Basics,threads_basics,2024-01-15 23:59:00,TBA,[Submission box]({{ site.gradescope_url }})
 # Condition Variables Basics,lab07,2024-01-18 23:59:00,TBA,[Submission box]({{ site.gradescope_url }})
-Condition Variables Basics,unreleased,2024-01-18 23:59:00,TBA,[Submission box]({{ site.gradescope_url }})
+Condition Variables Basics,condvar,2024-01-18 23:59:00,TBA,[Submission box]({{ site.gradescope_url }})
 # [Challenge] Condition Variables II,lab08,2024-01-22 23:59:00,TBA,[Submission box]({{ site.gradescope_url }})
 [Challenge] Condition Variables II,unreleased,2024-01-22 23:59:00,TBA,[Submission box]({{ site.gradescope_url }})
 # Userspace Threads I,lab09,2023-04-24 23:59:00,TBA,[Submission box]({{ site.gradescope_url }})

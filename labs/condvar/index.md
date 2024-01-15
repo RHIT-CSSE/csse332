@@ -18,23 +18,60 @@ At the end of this assignment, you should be able to:
 - Solve basic concurrency problems using condition variables.
 
 # Getting the Source Code
+We will do this lab in the `main` branch of your labs repository. To make sure
+you are on the right branch, check it out using:
 
-For this lab, you will be using the native Linux virtual machine (or baremetal
-machine if you have one) and not the xv6 operation system. Please note that this
-lab might behave slightly differently if you are running it on Windows or
-MacOs; therefore, we highly recommend that you stick to using a Linux machine,
-either natively or via WSL2.
+  ```sh
+  $ git branch
+  ```
+The branch you are currently on will be highlighted for you (with a \* next to
+its name).
 
-To obtain the starting code for this lab, navigate to the top level directory of
-your __csse332 class repository__ and `cd` into the `labs/lab07` directory as
-follows:
-```shell
-$ cd /path/to/csse332/git/repository/
-$ git pull
-$ cd labs/lab07
+If you are working on the `main` or `master` branch, then follow these
+instructions:
+
+  ```sh
+  $ git fetch upstream
+  $ git pull upstream main
+  ```
+At this stage, you should have the latest copy of the code, and you are good to
+get started. The starter code is contained under the `threads_basics/` directory.
+
+If you are currently on a different branch (say you are still on
+`clab_solution` from a previous lab), then we need to switch to `main` or
+`master` (depending on your default's name).
+
+First, add, commit, and push your changes to the `clab_solution` to make sure
+you do not lose any progress you did on the last lab. To check the status of
+your current branch, you can use:
+  ```sh
+  $ git status
+  ```
+This will show you all the files you have modified and have not yet committed
+and pushed. Make sure you `add` those files, then `commit` your changes, and
+`push` them.
+
+If `git push` complains about not knowing where to push, you'd want to push the
+current branch you are on. So for example, if I am working on `clab_solution`,
+then I'd want to do `git push origin clab_solution`.
+
+Now, you are ready to swap back into `main` (or `master`).
+
+```sh
+$ git checkout main
 ```
 
-# In-order (20 points)
+Then, grab the latest changes using:
+
+```sh
+$ git fetch upstream
+$ git pull upstream main
+```
+
+At this stage, you should have the latest copy of the code, and you are good to
+get started. The starter code is contained under the `condvar_basics/` directory.
+
+# In-order (30 points)
 
 This problem refers to the file `inorder.c`. In this system, there are threads
 numbered 1 through 4 and there is a critical section that the threads are trying
@@ -48,30 +85,14 @@ order.__ For example, if thread 1 finishes and thread 2 is not yet waiting to
 enter the critical section, then no other thread should be allowed in until
 thread 2 comes in and finishes. 
 
-# Max (20 points)
+# Max (30 points)
 
 This problem refers to the file `max.c`. In this system, there is a special
 critical section in which 3 threads are allowed to be in at once. Once 3 threads
 are in the critical section, any further threads must wait until one of the
 threads leaves the critical section. 
 
-
-# Producer Consumer Again (20 points)
-
-This problem refers to the file `prodcons_condvar.c`.In this system, there 2
-types of processes - producers and consumers. Producers write integers to the
-shared buffer data. Consumers read integers from the share buffer data.
-Everybody has to be careful when modifying data and the integer that keeps track
-of how many elements are in data. 
-
-When the producers are being slow (i.e., the buffer is empty), the consumers
-should be blocked. Alternatively, when the consumers are being slow (i.e., the
-buffer is full), the producers should be blocked.
-
-The order in which the items are consumed does not matter, i.e., it does not
-need to be the same as the order they were produced. 
-
-# Rooms (20 points)
+# Rooms (30 points)
 
 In this setup, there are two rooms where customers can go in and receive
 service. Customers have to go through the two rooms in order, i.e., they go into
@@ -184,7 +205,7 @@ Here are the requirements for your output:
    waiting for it will leave unhappy.
 6. All customers must eventually leave, happily or unhappily.
 
-# Tunnel (20 points)
+# Tunnel (10 points)
 
 In this scenario, we have a tunnel with cars going in from two opposite
 directions, east-west and west-east. However, the tunnel is unfairly designed.
@@ -557,7 +578,7 @@ doesn't matter which one that ambulance takes.
 
 # Submission
 
-Submit all of your `.c` files to Gradescoope as usual. There are no special
+Submit all of your `.c` files to Gradescope as usual. There are no special
 submission requirements.
 
 # Guidance on how we grade:

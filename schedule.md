@@ -579,7 +579,7 @@ lectures and/or assignments with an advanced week's notice.
    </td>
    <td markdown="span" style="text-align:center">
     <a href="{{ site.baseurl }}/notes/session20">
-     Concurrency: More Condition Variables
+     Mutex locks practice
     </a>
    </td>
    <td markdown="span">
@@ -604,8 +604,8 @@ lectures and/or assignments with an advanced week's notice.
     {::nomarkdown}
     <ul style="margin:0;padding:.5rem">
      <li>
-      <a href="https://en.wikipedia.org/wiki/Producer%E2%80%93consumer_problem">
-       Wiki Page for Prod/Cons Problem
+      <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf">
+       Chapter 30 of OSTEP
       </a>
      </li>
     </ul>
@@ -613,10 +613,14 @@ lectures and/or assignments with an advanced week's notice.
    </td>
    <td markdown="span" style="text-align:center">
     <a href="{{ site.baseurl }}/notes/session21">
-     Concurrency: Producer-Consumer Problem
+     Concurrency: Condition Variables
     </a>
    </td>
    <td markdown="span">
+    <a href="{{site.baseurl}}/docs/activities/generic/">
+     Activity
+    </a>
+    <br/>
    </td>
   </tr>
   <tr>
@@ -633,11 +637,20 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Tue, Jan 16 2024
    </td>
-   <td markdown="span">
+   <td markdown="span" style="text-align:left;">
+    {::nomarkdown}
+    <ul style="margin:0;padding:.5rem">
+     <li>
+      <a href="https://en.wikipedia.org/wiki/Producer%E2%80%93consumer_problem">
+       Wiki Page for Prod/Cons Problem
+      </a>
+     </li>
+    </ul>
+    {:/}
    </td>
    <td markdown="span" style="text-align:center">
     <a href="{{ site.baseurl }}/notes/session22">
-     Concurrency: Readers/Writers Problem
+     Concurrency: Producer-consumer Problem
     </a>
    </td>
    <td markdown="span">
@@ -652,8 +665,8 @@ lectures and/or assignments with an advanced week's notice.
    <td markdown="span">
    </td>
    <td markdown="span" style="text-align:center">
-    <a href="{{ site.baseurl }}/notes/session23">
-     Concurrency: Deadlocks
+    <a href="{{ site.baseurl }}/notes/session22">
+     Concurrency: Readers/Writers Problem
     </a>
    </td>
    <td markdown="span">
@@ -661,7 +674,7 @@ lectures and/or assignments with an advanced week's notice.
   </tr>
   <tr>
    <td colspan="4" markdown="span">
-    [Condition Variables Basics]({{ site.baseurl }}/labs/unreleased) DUE Thu, Jan 18 2024 23:59 [Submission box]({{ site.gradescope_url }})
+    [Condition Variables Basics]({{ site.baseurl }}/labs/condvar) DUE Thu, Jan 18 2024 23:59 [Submission box]({{ site.gradescope_url }})
     <font color="#aaa">
      grader: @TBA
     </font>
