@@ -130,7 +130,9 @@ second room. Three cases might arise in this scenario:
 
 Use condition variables and mutex locks to implement the concurrency
 requirements listed above. You only need to modify the `customer` thread
-function and add global variables and concurrency means.
+function and add global variables and concurrency means. Note that when a spot
+opens in either rooms, it does not matter which customer gets to go into that
+room, i.e., waiting rooms are not necessarily _first in first out_.
 
 You can compile your code using `make rooms` and then run it using
 `./rooms`. Here is a sample output from my solution:
