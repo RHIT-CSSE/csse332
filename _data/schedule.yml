@@ -137,7 +137,7 @@
     # - '<a href="{{ site.baseurl }}/notes/session18"> Threads: Lightweight Processes </a>'
     - Interrupts and Traps
   materials:
-    - <a href="{{site.baseurl}}/docs/activities/systrace/"> Activity </a>
+    <a href="{{site.baseurl}}/docs/activities/systrace/"> Activity </a>
 
 18:
   reading:
@@ -149,7 +149,6 @@
 19:
   reading:
     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-locks.pdf"> Chapter 28 of OSTEP </a>
-    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 of OSTEP </a>
   topics:
     - '<a href="{{ site.baseurl }}/notes/session19"> Concurrency: Mutex & Condition Variables </a>'
   materials:
@@ -157,10 +156,10 @@
 
 20:
   reading:
-    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 of OSTEP </a>
   topics:
     - '<a href="{{ site.baseurl }}/notes/session20"> Mutex locks practice </a>'
   materials:
+    <a href="{{site.baseurl}}/docs/activities/generic/"> Activity </a>
 
 ################################################################################
 ## WEEK 6
@@ -169,30 +168,33 @@
   reading:
     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 of OSTEP </a>
   topics:
-    - '<a href="{{ site.baseurl }}/notes/session21"> Concurrency: Condition Variables </a>'
+    - '<a href="{{ site.baseurl }}/notes/session20"> Concurrency: Condition Variables </a>'
   materials:
     <a href="{{site.baseurl}}/docs/activities/generic/"> Activity </a>
 
 22:
   reading:
-    - <a href="https://en.wikipedia.org/wiki/Producer%E2%80%93consumer_problem"> Wiki Page for Prod/Cons Problem </a>
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 of OSTEP </a>
   topics:
-    - '<a href="{{ site.baseurl }}/notes/session22"> Concurrency: Producer-consumer Problem </a>'
+    - '<a href="{{ site.baseurl }}/notes/session20"> Concurrency: Condition Variables Practice </a>'
   materials:
+    <a href="{{site.baseurl}}/docs/activities/generic/"> Activity </a>
 
 23:
   reading:
+    - <a href="https://en.wikipedia.org/wiki/Producer%E2%80%93consumer_problem"> Wiki Page for Prod/Cons Problem </a>
   topics:
     # - '<a href="{{ site.baseurl }}/notes/session23"> Concurrency: Deadlocks </a>'
-    - '<a href="{{ site.baseurl }}/notes/session22"> Concurrency: Readers/Writers Problem </a>'
+    - '<a href="{{ site.baseurl }}/notes/session21"> Concurrency: Producer-consumer Problem </a>'
   materials:
+    <a href="{{site.baseurl}}/docs/activities/generic/"> Activity </a>
 
 24:
   reading:
-    - <a href="https://en.wikipedia.org/wiki/Sleeping_barber_problem"> The Sleeping Barber Problem </a>
   topics:
-    - '<a href="{{ site.baseurl }}/notes/session24"> Concurrency: More Exercises </a>'
+    - '<a href="{{ site.baseurl }}/notes/session22"> Concurrency: Readers/Writers Problem </a>'
   materials:
+    <a href="{{site.baseurl}}/docs/activities/generic/"> Activity </a>
 
 
 ################################################################################

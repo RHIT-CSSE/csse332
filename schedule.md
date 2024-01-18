@@ -612,7 +612,7 @@ lectures and/or assignments with an advanced week's notice.
     {:/}
    </td>
    <td markdown="span" style="text-align:center">
-    <a href="{{ site.baseurl }}/notes/session21">
+    <a href="{{ site.baseurl }}/notes/session20">
      Concurrency: Condition Variables
     </a>
    </td>
@@ -649,7 +649,7 @@ lectures and/or assignments with an advanced week's notice.
     {:/}
    </td>
    <td markdown="span" style="text-align:center">
-    <a href="{{ site.baseurl }}/notes/session22">
+    <a href="{{ site.baseurl }}/notes/session21">
      Concurrency: Producer-consumer Problem
     </a>
    </td>
@@ -686,16 +686,7 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Fri, Jan 19 2024
    </td>
-   <td markdown="span" style="text-align:left;">
-    {::nomarkdown}
-    <ul style="margin:0;padding:.5rem">
-     <li>
-      <a href="https://en.wikipedia.org/wiki/Sleeping_barber_problem">
-       The Sleeping Barber Problem
-      </a>
-     </li>
-    </ul>
-    {:/}
+   <td markdown="span">
    </td>
    <td markdown="span" style="text-align:center">
     <a href="{{ site.baseurl }}/notes/session24">
