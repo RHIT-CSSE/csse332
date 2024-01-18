@@ -482,15 +482,10 @@ lectures and/or assignments with an advanced week's notice.
     Interrupts and Traps
    </td>
    <td markdown="span">
-    {::nomarkdown}
-    <ul style="margin:0;padding:.5rem">
-     <li>
-      <a href="{{site.baseurl}}/docs/activities/systrace/">
-       Activity
-      </a>
-     </li>
-    </ul>
-    {:/}
+    <a href="{{site.baseurl}}/docs/activities/systrace/">
+     Activity
+    </a>
+    <br/>
    </td>
   </tr>
   <tr>
@@ -532,11 +527,6 @@ lectures and/or assignments with an advanced week's notice.
        Chapter 28 of OSTEP
       </a>
      </li>
-     <li>
-      <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf">
-       Chapter 30 of OSTEP
-      </a>
-     </li>
     </ul>
     {:/}
    </td>
@@ -566,16 +556,7 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Fri, Jan 12 2024
    </td>
-   <td markdown="span" style="text-align:left;">
-    {::nomarkdown}
-    <ul style="margin:0;padding:.5rem">
-     <li>
-      <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf">
-       Chapter 30 of OSTEP
-      </a>
-     </li>
-    </ul>
-    {:/}
+   <td markdown="span">
    </td>
    <td markdown="span" style="text-align:center">
     <a href="{{ site.baseurl }}/notes/session20">
@@ -583,6 +564,10 @@ lectures and/or assignments with an advanced week's notice.
     </a>
    </td>
    <td markdown="span">
+    <a href="{{site.baseurl}}/docs/activities/generic/">
+     Activity
+    </a>
+    <br/>
    </td>
   </tr>
   <tr>
@@ -641,6 +626,35 @@ lectures and/or assignments with an advanced week's notice.
     {::nomarkdown}
     <ul style="margin:0;padding:.5rem">
      <li>
+      <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf">
+       Chapter 30 of OSTEP
+      </a>
+     </li>
+    </ul>
+    {:/}
+   </td>
+   <td markdown="span" style="text-align:center">
+    <a href="{{ site.baseurl }}/notes/session20">
+     Concurrency: Condition Variables Practice
+    </a>
+   </td>
+   <td markdown="span">
+    <a href="{{site.baseurl}}/docs/activities/generic/">
+     Activity
+    </a>
+    <br/>
+   </td>
+  </tr>
+  <tr>
+   <td markdown="span">
+    23
+    <br/>
+    Thu, Jan 18 2024
+   </td>
+   <td markdown="span" style="text-align:left;">
+    {::nomarkdown}
+    <ul style="margin:0;padding:.5rem">
+     <li>
       <a href="https://en.wikipedia.org/wiki/Producer%E2%80%93consumer_problem">
        Wiki Page for Prod/Cons Problem
       </a>
@@ -654,22 +668,10 @@ lectures and/or assignments with an advanced week's notice.
     </a>
    </td>
    <td markdown="span">
-   </td>
-  </tr>
-  <tr>
-   <td markdown="span">
-    23
-    <br/>
-    Thu, Jan 18 2024
-   </td>
-   <td markdown="span">
-   </td>
-   <td markdown="span" style="text-align:center">
-    <a href="{{ site.baseurl }}/notes/session22">
-     Concurrency: Readers/Writers Problem
+    <a href="{{site.baseurl}}/docs/activities/generic/">
+     Activity
     </a>
-   </td>
-   <td markdown="span">
+    <br/>
    </td>
   </tr>
   <tr>
@@ -689,11 +691,15 @@ lectures and/or assignments with an advanced week's notice.
    <td markdown="span">
    </td>
    <td markdown="span" style="text-align:center">
-    <a href="{{ site.baseurl }}/notes/session24">
-     Concurrency: More Exercises
+    <a href="{{ site.baseurl }}/notes/session22">
+     Concurrency: Readers/Writers Problem
     </a>
    </td>
    <td markdown="span">
+    <a href="{{site.baseurl}}/docs/activities/generic/">
+     Activity
+    </a>
+    <br/>
    </td>
   </tr>
   <tr>
@@ -732,7 +738,7 @@ lectures and/or assignments with an advanced week's notice.
   </tr>
   <tr>
    <td colspan="4" markdown="span">
-    [[Challenge] Condition Variables II]({{ site.baseurl }}/labs/unreleased) DUE Mon, Jan 22 2024 23:59 [Submission box]({{ site.gradescope_url }})
+    [[Challenge] Condition Variables II]({{ site.baseurl }}/labs/condvar_challenge) DUE Mon, Jan 22 2024 23:59 [Submission box]({{ site.gradescope_url }})
     <font color="#aaa">
      grader: @TBA
     </font>

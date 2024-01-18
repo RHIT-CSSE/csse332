@@ -18,6 +18,7 @@ At the end of this assignment, you should be able to:
 - Solve basic concurrency problems using condition variables.
 
 # Getting the Source Code
+
 We will do this lab in the `main` branch of your labs repository. To make sure
 you are on the right branch, check it out using:
 
