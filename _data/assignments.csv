@@ -9,6 +9,7 @@ Heap Manager,heapmm/,2023-12-11 23:59:00,,[Submission box]({{ site.gradescope_ur
 Threads & Mutex Basics,threads_basics,2024-01-15 23:59:00,TBA,[Submission box]({{ site.gradescope_url }})
 Condition Variables Basics,condvar,2024-01-18 23:59:00,TBA,[Submission box]({{ site.gradescope_url }})
 [Challenge] Condition Variables II,condvar_challenge,2024-01-22 23:59:00,TBA,[Submission box]({{ site.gradescope_url }})
+Scheduler Activity,sched,2024-01-29 23:59:00,TBA,[Submission box]({{ site.gradescope_url }})
 # Userspace Threads I,lab09,2023-04-24 23:59:00,TBA,[Submission box]({{ site.gradescope_url }})
 # [Challenge] Userspace Threads II,lab10,2023-05-01 23:59:00,TBA,[Submission box]({{ site.gradescope_url }})
 # [Challenge] Hybrid Threads,lab11,2023-05-04 23:59:00,TBA,[Submission box]({{ site.gradescope_url }})
