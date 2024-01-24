@@ -1,0 +1,332 @@
+\documentclass[11pt,usletter]{article}
+
+% some packages
+\usepackage{xspace}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage[x11names]{xcolor}
+
+\usepackage[%
+  top=1in,%
+  bottom=1in,%
+  left=1in,%
+  right=1in]{geometry}
+
+% set title
+\title{%
+  {\huge CSSE332: \textsc{Operating Systems}}\\%
+  \vspace{2em}
+  Buffalo, Mark, and Mohammad's Guide to Condition Variables}
+\date{Last updated: \today}
+
+%------------------------------------------------------------------------------
+%   LSTLISTINGS SETTINGS
+%------------------------------------------------------------------------------
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+% define our own style for the netsec labs
+\lstdefinestyle{netseclab}{%
+  backgroundcolor=\color{backcolour},
+  basicstyle=\tt\footnotesize,
+  tabsize=2,
+  numbers=left,
+  stringstyle=\color{codepurple},
+  keywordstyle=\color{blue},
+  numberstyle=\footnotesize\color{codegray},
+  commentstyle=\color{codegreen},
+  numbersep=4pt,
+  breaklines=true,
+  keepspaces=true,
+  showstringspaces=false,
+  upquote=true,
+  frame=single,
+}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+Most of the simple solutions to concurrency problems using condition variables
+fall into a simple style.  This is not necessarily the only way condition
+variables can be applied correctly but doing it this way makes it easier to see
+if things are correct.  Also limiting your options to one style makes it less
+overwhelming to start until things start to feel natural and obvious.  So I
+recommend you follow this system.
+
+{\bf Note that this guidance is rules of thumb and hints}; it’s not a
+substitute for really thinking about your problem.  You won’t get leverage with
+the graders by saying {\em ``hey this incorrect thing I did is consistent with
+the guidance''} or {\em ``the guidance didn’t warn me not to incorrect thing I
+did''}.  The goal is to solve the problem without concurrency bugs – any style
+advice that introduces bugs should be ignored.
+
+Although we can provide hints, you still must figure out your concurrency
+state, decide when threads need to wait, decide when threads need to signal,
+etc. That creative problem solving is the essence of writing correct concurrent
+code, and learning that is the essential skill we hope you will internalize on
+Exam 2.  That kind of problem solving can never be condensed into a simple
+recipe, that's why some day you’ll hopefully get paid the \$\$.
+
+\section{Getting Started}
+
+Here are some general guidelines to get you started:
+
+\begin{itemize}
+  \item You'll need one mutex lock, any number of condition variable depending
+    on the number of reasons to wait.
+
+    \noindent Note that the mutex is to protect the state of the world (or the
+    concurrency state) and not the critical section. So any time you touch the
+    state of the world, make sure you hold the lock on you!
+
+  \item You'll also need some number of variables to represent the {\em
+    concurrency state} (aka, the state of the world). I use concurrency state
+    here to represent part of the (usually global) state that your code
+    accesses to enforce correctness.
+
+    \noindent For example, if there are only three threads allowed in the
+    critical section, we need some variable to represent how many threads are
+    currently in that critical section.
+
+  \item I often have some idea of what the condition variables/concurrency
+    state will be when I start, but end up tweaking them as I design the
+    solution and write the code.
+\end{itemize}
+
+\section{In Your Code}
+
+Here are some considerations to keep in mind when writing code (or pseudocode):
+
+\begin{itemize}
+  \item If you thread might wait {\bf or} read/update the concurrency state,
+    lock the mutex!
+
+  \item When holding the lock, you can safely read/write at a consistent time.
+    Usually, you'll want to hold the lock for the entire read/write experience.
+
+    \noindent For example, don't lock/unlock to read/write variable {\tt A},
+    then lock/unlock to read/write variable {\tt B}, as this will tend to
+    introduce bugs where {\tt A} and {\tt B} have an inconsistent state.
+    Similarly, don't read variable {\tt A}, lock, unlock, re-lock, and then
+    write variable {\tt A}.
+
+    Here is a more concrete example:
+
+    \begin{lstlisting}[style=netseclab,language=c]
+void *thread_fn(void *ignore) {
+  pthread_mutex_lock(&lock);
+  while(people_in_room > 5) {
+    pthread_cond_wait(&cv, &lock);
+  }
+  pthread_mutex_unlock(&lock);
+
+  // this is dangerous, this gap in time where you don't hold the lock
+  // might allow another thread to sneak by and change the value of
+  // people_in_room.
+  // Remember that the scheduler hates you! If a context switch is going
+  // to hurt you, then that's when the scheduler will do it!
+
+  pthread_mutex_lock(&lock);
+  people_in_room++;
+  pthread_mutex_unlock(&lock);
+
+  // enter room now!
+  ...
+}
+    \end{lstlisting}
+
+  \item If reading the concurrency state indicates you need to wait, then use
+    wait on an appropriate condition variable {\bf within a while loop} (and
+    this implicitly unlocks).
+
+  \item  After you wake from a wait, remember you are holding the lock again so
+    it is safe to read or write to the concurrency state.
+
+  \item  If it is safe to proceed (as opposed to waiting) unlock the mutex
+    after you know it’s safe and after you have updated the state appropriately
+    (see example above).
+
+  \item  Never hold the mutex for a long amount of time (more accurately, I
+    usually say never hold the mutex for an unbounded amount of time).
+    Especially never hold the mutex during one of the sleeps we use to simulate
+    long processing in these problems. 
+
+    \noindent Holding the mutex for a long time makes it unsafe to read/update
+    the concurrency state (because doing so might introduce a long pause or
+    deadlock).
+
+  \item  Never use the mutex to protect something – only use the mutex to
+    safeguard the concurrency state.  Use waiting to ensure that all threads do
+    not proceed when it is unsafe to do so. 
+
+  \item  {\bf Every wait needs a corresponding signal or signals} (at least one
+    signal or broadcast).  Consider carefully whether you wish to use signal or
+    broadcast. Insert the signal/broadcasts where they are needed. 
+
+    \noindent Try to avoid threads waking up and immediately re-sleeping but
+    sometimes this is unavoidable. 
+
+  \item  {\bf Never busy wait}.  A process that is unable to proceed because
+    it’s waiting for some other process to work should always be waiting for a
+    signal.
+
+  \item Always grab the lock before signaling. It might seem superfluous but it
+    will help you avoid very weird conditions that are dependent on the
+    implementation of the {\tt pthreads} library.
+
+  \item  Do not make any assumptions about the order in which thing wake up on
+    a {\tt pthread\_cond\_signal}. From the {\tt POSIX} specification, we know
+    that at least one thread will wake up, but which one is left for the
+    scheduler/implementation to determine.
+\end{itemize}
+
+\section{The Pattern}
+
+Altogether, the following approach tends to produce patterns that look like
+this (again, simply guidance here, not substitute for your own
+thinking/coding):
+
+\begin{lstlisting}[style=netseclab,language=c]
+/* Ordinary code */
+
+// Lock mutex
+pthread_mutex_lock(&lock);
+
+// read/write concurrency state, maybe signal?
+
+while(/* undesired condition */) {
+  // wait on some signal with mutex LOCKED
+  pthread_cond_wait(&cv, &lock);
+}
+// When at this point, I own the lock!
+
+// read/write concurrency state, maybe signal?
+
+// unlock mutex
+pthread_mutex_unlock(&lock);
+
+/* Code that has special rules, generally a critical section.
+ * It is not uncommon for us to use sleep here to simulate something taking
+ * place. */
+
+// lock mutex
+pthread_mutex_lock(&lock);
+
+// read/write concurrency state, maybe signal?
+
+// unlock mutex
+pthread_mutex_unlock(&lock);
+
+/* Ordinary code and other stuff, maybe return? */
+\end{lstlisting}
+
+\section{Some Pitfalls}
+
+Here is a small list of typical pitfalls that we have seen students attempt to
+do when they feel stuck on a problem. Generally, doing one of these is not a
+good idea.
+
+\begin{itemize}
+  \item When reading the man pagees, you might discover new functions that
+    might seem appealing, do not make a point to try out these new functions
+    during an exam. Try those out on your free time.
+
+    For example, some students, when running into a deadlock, discover that
+    {\tt pthread\_mutex\_trylock} attempts to grab a lock, but does not block
+    if it is not in an unclocked state. This is not the way to solve a
+    deadlock!
+
+  \item Swapping out {\tt pthread\_cond\_signal} for {\tt
+    pthread\_cond\_broadcast} (and vice versa) in the hope that is magically
+    solves a concurrency problem is not a good idea. You should be intentional
+    about your signals/broadcasts.
+
+  \item Do not try to dance with where your locks/unlocks should go. Changing
+    the locations of your lock/unlock statements is not going to cut it. Go
+    back to your paper and revisit your design.
+
+  \item Make sure that each {\tt pthread\_cond\_wait} has at least one
+    corresponding {\tt pthread\_cond\_signal} (or {\tt pthread\_cond\_broadcast}
+    if necessary).
+
+  \item Similarly, make sure that each {\tt pthread\_mutex\_lock} has exactly
+    one corresponding {\tt pthread\_mutex\_unlock}.
+
+    \noindent {\em Do not forget about the implicit lock/unlock statements in
+    {\tt pthread\_cond\_wait}.}
+
+  \item Be way of ``over-locking''. For example, doing something the following
+    is generally a bad idea:
+
+    \begin{lstlisting}[style=netseclab,language=c]
+void *thread_fn(void *arg) {
+  pthread_mutex_lock(&lock);
+  while(/* some undesired condition */) {
+    pthread_cond_wait(&cv, &lock);
+  }
+
+  // Code that has special rules, generally a critical section.
+
+    pthread_cond_signal(&cv);
+    pthread_mutex_unlock(&lock);
+}
+    \end{lstlisting}
+
+    Note that in the code above, the {\bf entire} code block is guarded by a
+    single lock, which renders the condition variables pretty much superfluous.
+    Exacly one thread can be that area at a time, so your code will run
+    completely serially, which defeats the purpose of using condition
+    variables.
+
+  \item If you need to count the number of waiting threads, be careful not to
+    double count a thread that goes back to sleep. For example,
+
+    \begin{lstlisting}[style=netseclab,language=c]
+pthread_mutex_lock(&lock);
+while(/* some undesired condition */) {
+  num_waiting_threads++;
+  pthread_cond_wait(&cv, &lock);
+}
+num_waiting_threads--;
+    pthread_mutex_unlock(&lock);
+    \end{lstlisting}
+
+    This can be dangerous if multiple threads are awakened by a broadcast, but
+    only a subset of them exit the loop. In that case, each thread that waits
+    again will double itself as another waiting thread, and the number of
+    waiting threads will never go back to 0.
+
+    \noindent You can either do this:
+
+    \begin{lstlisting}[style=netseclab,language=c]
+pthread_mutex_lock(&lock);
+num_waiting_threads++;
+while(/* some undesired condition */) {
+  pthread_cond_wait(&cv, &lock);
+}
+num_waiting_threads--;
+pthread_mutex_unlock(&lock);
+    \end{lstlisting}
+
+    or,
+
+    \begin{lstlisting}[style=netseclab,language=c]
+pthread_mutex_lock(&lock);
+while(/* some undesired condition */) {
+  num_waiting_threads++;
+  pthread_cond_wait(&cv, &lock);
+  num_waiting_threads--;
+}
+pthread_mutex_unlock(&lock);
+    \end{lstlisting}
+
+\end{itemize}
+  
+\end{document}
+
