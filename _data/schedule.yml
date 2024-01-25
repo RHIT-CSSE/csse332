@@ -224,7 +224,8 @@
 27:
   reading:
   topics:
-    - '<a href="{{ site.baseurl }}/docs/cv_unofficial_guide/"> Exam 2 Review </a>'
+    - '<a href="{{site.baseurl}}/assets/files/cv_guide.pdf"> Exam 2 Review </a>'
+    # - '<a href="{{ site.baseurl }}/docs/cv_unofficial_guide/"> Exam 2 Review </a>'
   materials:
 
 28:

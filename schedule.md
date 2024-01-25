@@ -778,7 +778,7 @@ lectures and/or assignments with an advanced week's notice.
    <td markdown="span">
    </td>
    <td markdown="span" style="text-align:center">
-    <a href="{{ site.baseurl }}/docs/cv_unofficial_guide/">
+    <a href="{{site.baseurl}}/assets/files/cv_guide.pdf">
      Exam 2 Review
     </a>
    </td>
