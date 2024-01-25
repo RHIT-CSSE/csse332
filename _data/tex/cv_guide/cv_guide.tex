@@ -109,6 +109,9 @@ Here are some considerations to keep in mind when writing code (or pseudocode):
 
   \item When holding the lock, you can safely read/write at a consistent time.
     Usually, you'll want to hold the lock for the entire read/write experience.
+    In other words, there should be only one mutex and that its critical
+    section should be as large as possible; it doesn’t matter how fast your
+    multithreaded code is, because it doesn’t count if it isn’t correct.
 
     \noindent For example, don't lock/unlock to read/write variable {\tt A},
     then lock/unlock to read/write variable {\tt B}, as this will tend to
