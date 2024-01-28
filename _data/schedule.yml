@@ -241,7 +241,7 @@
   reading:
     - <a href="https://www.eecs.umich.edu/courses/eecs588/static/stack_smashing.pdf"> Smashing The Stack for Fun and Profit </a>
   topics:
-    - <a href="{{ site.baseurl }}/notes/session33/"> Introduction to Memory Safety </a>
+    - <a href="{{ site.baseurl }}/docs/activities/mem_safety_intro"> Introduction to Memory Safety </a>
   materials:
 
 30:
@@ -316,6 +316,6 @@
 40:
   reading:
   topics:
-    - <b> Project Presentations? </b>
+    - <b> Project Presentations </b>
   materials:
 

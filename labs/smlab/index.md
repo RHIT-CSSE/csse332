@@ -15,8 +15,6 @@ provided programs contains a security vulnerability that you must exploit to
 hijack the control flow of the program and satisfy the requirements of each
 part.
 
-Note that you may do this lab in pairs if you like to.
-
 # A Statement on Ethics and Responsibility
 
 In this lab, you will be learning about and performing control flow hijacking
@@ -39,20 +37,59 @@ At the end of this lab, you should be able to:
 
 # Getting the Source Code
 
-For this lab, you will be using the native Linux virtual machine (or baremetal
-machine if you have one) and not the xv6 operation system. Please note that this
-lab might behave slightly differently if you are running it on Windows or
-MacOs; therefore, we highly recommend that you stick to using a Linux machine,
-either natively or via WSL2.
+We will do this lab in the `main` branch of your labs repository. To make sure
+you are on the right branch, check it out using:
 
-To obtain the starting code for this lab, navigate to the top level directory of
-your __csse332 class repository__ and `cd` into the `labs/lab13` directory as
-follows:
-```shell
-$ cd /path/to/csse332/git/repository/
-$ git pull
-$ cd labs/lab13
+  ```sh
+  $ git branch
+  ```
+The branch you are currently on will be highlighted for you (with a \* next to
+its name).
+
+If you are working on the `main` or `master` branch, then follow these
+instructions:
+
+  ```sh
+  $ git fetch upstream
+  $ git pull upstream main
+  ```
+At this stage, you should have the latest copy of the code, and you are good to
+get started. The starter code is contained under the `stack_smashing/` directory.
+
+If you are currently on a different branch (say you are still on
+`clab_solution` from a previous lab), then we need to switch to `main` or
+`master` (depending on your default's name).
+
+First, add, commit, and push your changes to the `clab_solution` to make sure
+you do not lose any progress you did on the last lab. To check the status of
+your current branch, you can use:
+  ```sh
+  $ git status
+  ```
+This will show you all the files you have modified and have not yet committed
+and pushed. Make sure you `add` those files, then `commit` your changes, and
+`push` them.
+
+If `git push` complains about not knowing where to push, you'd want to push the
+current branch you are on. So for example, if I am working on `clab_solution`,
+then I'd want to do `git push origin clab_solution`.
+
+Now, you are ready to swap back into `main` (or `master`).
+
+```sh
+$ git checkout main
 ```
+
+Then, grab the latest changes using:
+
+```sh
+$ git fetch upstream
+$ git pull upstream main
+```
+
+At this stage, you should have the latest copy of the code, and you are good to
+get started. The starter code is contained under the `stack_smashing/` directory.
+
 
 # Installing Needed Software
 
@@ -120,6 +157,7 @@ Please make sure that you use your usename as input to the script. That is what
 we will be using when grading the lab. If you use the wrong value, all your
 solution will break and you will receive no credit for any of the parts.
 
+<!--
 ### Working with a Partner
 
 If you are working in a team of 2, you can use the same script and pass it both
@@ -128,6 +166,7 @@ your usernames, separated by a space. For example, running the script for us is
 ```shell
 $ ./setcookie.py noureddi hewner
 ```
+-->
 
 ## Disabling Kernel Protection
 
@@ -295,11 +334,14 @@ instructions will cause the program to open a shell.
 Your job is to exploit the `part3` binary to open a root shell when executed.
 Here is an example output
 ```shell
-$ sudo ./part3 $(python2 part3.py)
+$ sudo ./part3 "$(python2 part3.py)"
 # whoami
 root
 #
 ```
+
+Note that the quote `""` around the `python2` command are necessary to avoid
+the case where what you are writing contains a space character.
 
 Here is a suggested approach:
 1. Examine `part3.c`, where is the buffer overflow?
@@ -335,7 +377,7 @@ Submit a python program called `part3.py` that prints the line that you must
 pass as an argument to your program to create the exploit. To test your code,
 use
 ```shell
-$ sudo ./part3 $(python2 part3.py)
+$ sudo ./part3 "$(python2 part3.py)"
 #
 ```
 If you are successful, you should see a command prompt starting with the
@@ -359,7 +401,7 @@ Create a python program, called `part4.py`, that prints the line you must pass
 as an argument to your `part4` to cause the creation of a root shell. To test
 your code, use the following:
 ```shell
-$ sudo ./part4 $(python2 part4.py)
+$ sudo ./part4 "$(python2 part4.py)"
 #
 ```
 
@@ -367,7 +409,7 @@ $ sudo ./part4 $(python2 part4.py)
 
 In this part, the developers are really on our tail, they have enabled data
 execution prevention (DEP) in the compiler so that no code from the stack can be
-executed. What are we to do? Do we just give up? Never!
+executed.
 
 This part resembles part 3, except that now the program will not execute any
 code from the stack, which renders our previous solution to part 3 obsolete.
@@ -385,7 +427,7 @@ Create a python program, called `part5.py`, that prints the line you must pass
 as an argument to your `part5` to cause the creation of a root shell. To test
 your code and avoid issues with special characters, use the following:
 ```shell
-$ sudo ./part5 $(python2 part5.py)
+$ sudo ./part5 "$(python2 part5.py)"
 #
 ```
 
@@ -481,7 +523,7 @@ Create a python program, called `part6.py`, that prints the line you must pass
 as an argument to your `part6` to cause the creation of a root shell. To test
 your code, use the following:
 ```shell
-$ sudo ./part6 $(python2 part6.py)
+$ sudo ./part6 "$(python2 part6.py)"
 #
 ```
 
@@ -499,7 +541,7 @@ Create a python program, called `part7.py`, that prints the line you must pass
 as an argument to your `part7` to cause the creation of a root shell. To test
 your code, use the following:
 ```shell
-$ sudo ./part7 $(python2 part7.py)
+$ sudo ./part7 "$(python2 part7.py)"
 #
 ```
 
@@ -525,7 +567,7 @@ Create a python program, called `part8.py`, that prints the line you must pass
 as an argument to your `part8` to cause the creation of a root shell. To test
 your code, use the following:
 ```shell
-$ sudo ./part8 $(python2 part8.py)
+$ sudo ./part8 "$(python2 part8.py)"
 #
 ```
 

@@ -828,7 +828,7 @@ lectures and/or assignments with an advanced week's notice.
     {:/}
    </td>
    <td markdown="span" style="text-align:center">
-    <a href="{{ site.baseurl }}/notes/session33/">
+    <a href="{{ site.baseurl }}/docs/activities/mem_safety_intro">
      Introduction to Memory Safety
     </a>
    </td>
@@ -927,7 +927,7 @@ lectures and/or assignments with an advanced week's notice.
   </tr>
   <tr>
    <td colspan="4" markdown="span">
-    [Stack Smashing Lab]({{ site.baseurl }}/labs/lab13) DUE Mon, Feb 05 2024 23:59 [Submission box]({{ site.gradescope_url }})
+    [Stack Smashing Lab]({{ site.baseurl }}/labs/smlab) DUE Mon, Feb 05 2024 23:59 [Submission box]({{ site.gradescope_url }})
     <font color="#aaa">
      grader: @TBA
     </font>
@@ -1072,7 +1072,7 @@ lectures and/or assignments with an advanced week's notice.
    </td>
    <td markdown="span" style="text-align:center">
     <b>
-     Project Presentations?
+     Project Presentations
     </b>
    </td>
    <td markdown="span">
