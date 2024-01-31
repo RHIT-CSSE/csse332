@@ -42,7 +42,7 @@ the Linux kernel. In that project, you will write a Linux kernel module and
 provide an interface to it using the virtual `procfs` filesystem. You have a
 bit more freedom in choosing the objective of your module as long as you
 satisfy a set of small requirements. If you are interested in this project,
-please reach out to Mohammad for input, a discussion, and some guidelines.
+please reach out to your instructor for input, a discussion, and some guidelines.
 
 Please note that this project is by nature significantly harder than anything
 you do in xv6. You will need to work on a virtual machine that you are able to
@@ -217,7 +217,9 @@ At the end of the project, please submit the following:
    in practice using the demo.
    
 4. A file called `grade.txt` in which you state what grade you think you
-   deserve on this project, arguing why you think so.
+   deserve on this project, arguing why you think so. Find the **Grade Descriptions**
+   section of [Rose-Hulman - Rules and Procedures - Grades](https://www.rose-hulman.edu/campus-life/student-services/registrar/rules-and-procedures/grades.html)
+   for guidance.
 
 <!--
 # Ideas out there
