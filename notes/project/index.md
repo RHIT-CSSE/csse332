@@ -217,8 +217,9 @@ At the end of the project, please submit the following:
    in practice using the demo.
    
 4. A file called `grade.txt` in which you state what grade you think you
-   deserve on this project, arguing why you think so. Find the **Grade Descriptions**
-   section of [Rose-Hulman - Rules and Procedures - Grades](https://www.rose-hulman.edu/campus-life/student-services/registrar/rules-and-procedures/grades.html)
+   deserve on this project, arguing why you think so. Find the **Grade
+   Descriptions** section of [Rose-Hulman - Rules and Procedures -
+   Grades](https://www.rose-hulman.edu/campus-life/student-services/registrar/rules-and-procedures/grades.html)
    for guidance.
 
 <!--
