@@ -967,7 +967,7 @@ lectures and/or assignments with an advanced week's notice.
   </tr>
   <tr>
    <td colspan="4" markdown="span">
-    [[Challenge] Project Checkpoint]({{ site.baseurl }}/labs/checkpoint) DUE Thu, Feb 08 2024 23:59 [Submission box]({{ site.gradescope_url }})
+    [Project Milestone 1]({{ site.baseurl }}/labs/project) DUE Thu, Feb 08 2024 23:59 [Submission box]({{ site.gradescope_url }})
     <font color="#aaa">
      grader: @TBA
     </font>
@@ -1056,7 +1056,7 @@ lectures and/or assignments with an advanced week's notice.
   </tr>
   <tr>
    <td colspan="4" markdown="span">
-    [[Challenge] Project Due]({{ site.baseurl }}/labs/lab14) DUE Thu, Feb 15 2024 23:59 [Submission box]({{ site.gradescope_url }})
+    [Project Milestone 2]({{ site.baseurl }}/labs/project) DUE Thu, Feb 15 2024 23:59 [Submission box]({{ site.gradescope_url }})
     <font color="#aaa">
      grader: @TBA
     </font>

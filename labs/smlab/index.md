@@ -431,6 +431,9 @@ $ sudo ./part5 "$(python2 part5.py)"
 #
 ```
 
+Note that you will loose some points if your exploit generates error messages.
+We strive to have clean exploits that are not easily detected.
+
 ## Hint
 
 Some binaries contains a lot of constant strings that you did not even create.
@@ -570,9 +573,6 @@ your code, use the following:
 $ sudo ./part8 "$(python2 part8.py)"
 #
 ```
-
-Note that you will loose some points if your exploit generates error messages.
-We strive to have clean exploits that are not easily detected.
 
 ## Some Hints
 
