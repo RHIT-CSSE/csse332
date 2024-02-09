@@ -288,7 +288,7 @@
 36:
   reading:
   topics:
-    - <b> Project Work Time and meetings </b>
+    - <a href="{{ site.baseurl }}/notes/project_hints/"> Project Work Time and Meetings </a>
   materials:
 
 
@@ -304,18 +304,18 @@
 38:
   reading:
   topics:
-    - <b> Project Work Time </b>
+    - <a href="{{ site.baseurl }}/notes/project_hints/"> Project Work Time and Meetings </a>
   materials:
 #
 39:
   reading:
   topics:
-    - "<b> Project Work Time </b>"
+    - <a href="{{ site.baseurl }}/notes/project_hints/"> Project Work Time and Meetings </a>
   materials:
 #
 40:
   reading:
   topics:
-    - <b> Project Presentations </b>
+    - <a href="{{ site.baseurl }}/notes/project_hints/"> Project Work Time and Meetings </a>
   materials:
 

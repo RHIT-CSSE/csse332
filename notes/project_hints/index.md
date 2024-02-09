@@ -180,6 +180,42 @@ will need those functions in your project, but in case you do, the code in
 `filestate` in `kernel/file.c` serves as a great example of how to use `copyout`
 to copy a structure from kernel space to user space.
 
+### Example
+
+You will have plenty of example of reading system call arguments and copying
+them into kernel space in the xv6 code. Specifically, look at the different
+system call implementation functions in `kernel/sysproc.c` and `kernel/pipe.c`.
+
+Here's a more concrete example, say we want to read an integer from userspace
+into the kernel space, then the user must provide us with a pointer to that
+integer (it doesn't matter which region of memory that pointer resides in). To
+read it into the kernel, we'd do something like the following:
+
+```sh
+int
+my_kernel_function(uint64 *user_addr) {
+  /* grab the process that caused the context switch to kernel space. */
+  struct proc *p = myproc(); 
+  int kernel_value, err;
+
+  err = copyin(p->pagetable, &kernel_value, user_addr, sizeof(int));
+  if(err == -1) {
+    // error, something went really wrong, return an error or panic.
+  }
+
+  // do stuff with kernel_value and now copy it back to the user.
+  err = copyout(p->pagetable, user_addr, &kernel_value, sizeof(int));
+  if(err == -1) {
+    // error, something went wrong, return an error or panic
+  }
+}
+```
+
+You can do very similar things to read in any type, including structures and so
+on. But be careful that `copyin` and `copyout` do shallow copies, so if you
+have pointers deep into a structure, you'll need to do multiple copy
+operations. Try to avoid that as much as possible.
+
 # Mixing RISC-V assembly with C
 
 In some cases, you might need to write some RISC-V assmebly code that you will

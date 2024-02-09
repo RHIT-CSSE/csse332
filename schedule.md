@@ -982,9 +982,9 @@ lectures and/or assignments with an advanced week's notice.
    <td markdown="span">
    </td>
    <td markdown="span" style="text-align:center">
-    <b>
-     Project Work Time and meetings
-    </b>
+    <a href="{{ site.baseurl }}/notes/project_hints/">
+     Project Work Time and Meetings
+    </a>
    </td>
    <td markdown="span">
    </td>
@@ -1031,9 +1031,9 @@ lectures and/or assignments with an advanced week's notice.
    <td markdown="span">
    </td>
    <td markdown="span" style="text-align:center">
-    <b>
-     Project Work Time
-    </b>
+    <a href="{{ site.baseurl }}/notes/project_hints/">
+     Project Work Time and Meetings
+    </a>
    </td>
    <td markdown="span">
    </td>
@@ -1047,9 +1047,9 @@ lectures and/or assignments with an advanced week's notice.
    <td markdown="span">
    </td>
    <td markdown="span" style="text-align:center">
-    <b>
-     Project Work Time
-    </b>
+    <a href="{{ site.baseurl }}/notes/project_hints/">
+     Project Work Time and Meetings
+    </a>
    </td>
    <td markdown="span">
    </td>
@@ -1071,9 +1071,9 @@ lectures and/or assignments with an advanced week's notice.
    <td markdown="span">
    </td>
    <td markdown="span" style="text-align:center">
-    <b>
-     Project Presentations
-    </b>
+    <a href="{{ site.baseurl }}/notes/project_hints/">
+     Project Work Time and Meetings
+    </a>
    </td>
    <td markdown="span">
    </td>
