@@ -413,6 +413,11 @@ lectures and/or assignments with an advanced week's notice.
    </td>
   </tr>
   <tr>
+   <td colspan="4" markdown="span">
+    [[Challenge] Heap Manager II]({{ site.url }}{{ site.baseurl }}/labs/buddy/) DUE Tue, Mar 26 2024 23:59 [Submission box]({{ site.gradescope_url }})
+   </td>
+  </tr>
+  <tr>
    <td markdown="span">
     15
     <br/>
@@ -424,11 +429,6 @@ lectures and/or assignments with an advanced week's notice.
     Exam 1: Part 2 Review
    </td>
    <td markdown="span">
-   </td>
-  </tr>
-  <tr>
-   <td colspan="4" markdown="span">
-    [[Challenge] Heap Manager II]({{ site.url }}{{ site.baseurl }}/labs/buddy/) DUE Thu, Mar 28 2024 23:59 [Submission box]({{ site.gradescope_url }})
    </td>
   </tr>
   <tr>
