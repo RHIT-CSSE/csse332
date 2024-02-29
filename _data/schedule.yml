@@ -86,7 +86,7 @@
 11:
   reading:
   topics:
-    - <a href="{{ site.url }}{{ site.baseurl}}/notes/session09"> Exam Review </a>
+    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session09"> Exam 1: Part 1 Review </a>'
   materials:
 
 12:
@@ -115,14 +115,15 @@
 15:
   reading:
   topics:
-    - '<b> Exam 1: Part 2 </b>'
+    - 'Exam 1: Part 2 Review'
     # - '<a href="{{ site.url }}{{ site.baseurl}}/labs/lab05"> Lab: Virtual Memory II </a>'
   materials:
 
 16:
   reading:
   topics:
-    - <b> No class, enjoy the break </b>
+    - '<b> Exam 1: Part 2 </b>'
+    # - '<a href="{{ site.url }}{{ site.baseurl}}/labs/lab05"> Lab: Virtual Memory II </a>'
   materials:
 
 

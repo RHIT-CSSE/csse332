@@ -20,11 +20,12 @@ url: 'https://rhit-csse.github.io'
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  Moodle: "https://moodle.rose-hulman.edu/course/view.php?id=103623"
-  Gradescope: "https://www.gradescope.com/courses/673360"
+  Moodle: "https://moodle.rose-hulman.edu/course/view.php?id=105550"
+  Gradescope: "https://www.gradescope.com/courses/742262"
   Syllabus: "docs/syllabus/syllabus"
   Schedule: "schedule"
-  # Resources:
+  Resources: "docs/resources"
+# Resources:
   #   - Beautiful Jekyll: "https://beautifuljekyll.com"
   #   - Learn markdown: "https://www.markdowntutorial.com/"
   # Author's home: "https://deanattali.com"
@@ -47,9 +48,9 @@ gh_homeworks_url: "https://github.com/RHIT-CSSE/csse332/tree/main/homeworks"
 gh_labs_url: "https://github.com/RHIT-CSSE/csse332/tree/main/labs"
 gh_labs_repo: "https://github.com/rhit-csse332/csse332-labs.git"
 
-moodle_url: "https://moodle.rose-hulman.edu/course/view.php?id=103623"
-gradescope_url: "https://www.gradescope.com/courses/673360"
-course_term: "Winter 2023-24"
+moodle_url: "https://moodle.rose-hulman.edu/course/view.php?id=105550"
+gradescope_url: "https://www.gradescope.com/courses/742262"
+course_term: "Spring 2023-24"
 
 xv6_book_url: "https://pdos.csail.mit.edu/6.828/2022/xv6/book-riscv-rev3.pdf"
 

@@ -340,7 +340,7 @@ lectures and/or assignments with an advanced week's notice.
    </td>
    <td markdown="span" style="text-align:center">
     <a href="{{ site.url }}{{ site.baseurl}}/notes/session09">
-     Exam Review
+     Exam 1: Part 1 Review
     </a>
    </td>
    <td markdown="span">
@@ -421,11 +421,14 @@ lectures and/or assignments with an advanced week's notice.
    <td markdown="span">
    </td>
    <td markdown="span" style="text-align:center">
-    <b>
-     Exam 1: Part 2
-    </b>
+    Exam 1: Part 2 Review
    </td>
    <td markdown="span">
+   </td>
+  </tr>
+  <tr>
+   <td colspan="4" markdown="span">
+    [[Challenge] Heap Manager II]({{ site.url }}{{ site.baseurl }}/labs/buddy/) DUE Thu, Mar 28 2024 23:59 [Submission box]({{ site.gradescope_url }})
    </td>
   </tr>
   <tr>
@@ -438,15 +441,10 @@ lectures and/or assignments with an advanced week's notice.
    </td>
    <td markdown="span" style="text-align:center">
     <b>
-     No class, enjoy the break
+     Exam 1: Part 2
     </b>
    </td>
    <td markdown="span">
-   </td>
-  </tr>
-  <tr>
-   <td colspan="4" markdown="span">
-    [[Challenge] Heap Manager II]({{ site.url }}{{ site.baseurl }}/labs/buddy/) DUE Fri, Mar 29 2024 23:59 [Submission box]({{ site.gradescope_url }})
    </td>
   </tr>
   <tr>
