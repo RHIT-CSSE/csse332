@@ -38,19 +38,21 @@ def parse_time_str(time_string):
     """
     ret_obj = None
 
-    schedule_fmt = '%Y-%m-%d %I:%M'
+    # Buffalo says: my perferred workflow is to use the CSV mode of
+    # gen_dates to produce dates in the same format as date_convert
+    schedule_fmt = '%Y-%m-%d %H:%M'
     assignment_fmt = '%Y-%m-%d %H:%M:%S'
     try:
         ret_obj = dt.strptime(time_string, schedule_fmt)
     except ValueError:
-        logging.debug("Failed to parse {} as {}, trying {}".format(
-            time_string, schedule_fmt, assignment_fmt
-        ))
-        try:
-            ret_obj = dt.strptime(time_string, assignment_fmt)
-        except ValueError:
-            logging.error(
-                "Failed to parse datetime string {}".format(time_string))
+#        logging.debug("Failed to parse {} as {}, trying {}".format(
+#            time_string, schedule_fmt, assignment_fmt
+#        ))
+#        try:
+#            ret_obj = dt.strptime(time_string, assignment_fmt)
+#        except ValueError:
+        logging.error(
+            "Failed to parse datetime string '{}'".format(time_string))
 
     return ret_obj
 
