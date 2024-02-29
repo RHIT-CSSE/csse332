@@ -174,7 +174,7 @@ footer-link-col: "#404040"
 
 # --- Comments --- #
 
-theme: minimal
+theme: jekyll-theme-minimal
 
 # To use Disqus comments, sign up to https://disqus.com and fill in your Disqus shortname (NOT the userid)
 #disqus: ""
