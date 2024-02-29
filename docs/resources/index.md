@@ -8,6 +8,7 @@ last-updated: Thursday 29 Feb 2024
 This page contains a collection of resources that you might find helpful in this
 class.
 
+- [WSl2 setup]({{ site.baseurl }}/labs/wsl)
 - [`vim` tutorial and tips and
   tricks.]({{site.baseurl}}{{site.resourcespath}}/vim/)
   - [`vim` cheat sheet](https://vim.rtorr.com/)
