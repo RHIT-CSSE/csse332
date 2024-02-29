@@ -64,7 +64,7 @@ lectures and/or assignments with an advanced week's notice.
     {:/}
    </td>
    <td markdown="span" style="text-align:center">
-    <a href="{{ site.baseurl }}/notes/introduction/">
+    <a href="{{ site.url }}{{ site.baseurl}}/notes/introduction/">
      OS Introduction
     </a>
    </td>
@@ -73,7 +73,7 @@ lectures and/or assignments with an advanced week's notice.
   </tr>
   <tr>
    <td colspan="4" markdown="span">
-    [WSL2 Install]({{ site.baseurl }}/labs/wsl) DUE Mon, Mar 04 2024 23:59 No submission needed
+    [WSL2 Install]({{ site.url }}{{ site.baseurl }}/labs/wsl) DUE Mon, Mar 04 2024 23:59 No submission needed
    </td>
   </tr>
   <tr>
@@ -85,7 +85,7 @@ lectures and/or assignments with an advanced week's notice.
    <td markdown="span">
    </td>
    <td markdown="span" style="text-align:center">
-    <a href="{{ site.baseurl }}/notes/session01/">
+    <a href="{{ site.url }}{{ site.baseurl}}/notes/session01/">
      C Review
     </a>
    </td>
@@ -110,7 +110,7 @@ lectures and/or assignments with an advanced week's notice.
     {:/}
    </td>
    <td markdown="span" style="text-align:center">
-    <a href="{{ site.baseurl }}/notes/session03">
+    <a href="{{ site.url }}{{ site.baseurl}}/notes/session03">
      The Process Abstraction
     </a>
    </td>
@@ -119,7 +119,7 @@ lectures and/or assignments with an advanced week's notice.
   </tr>
   <tr>
    <td colspan="4" markdown="span">
-    [C Review &amp; xv6 Introduction]({{ site.baseurl }}/labs/lab00/) DUE Thu, Mar 07 2024 23:59 [Submission box]({{ site.gradescope_url }})
+    [C Review &amp; xv6 Introduction]({{ site.url }}{{ site.baseurl }}/labs/lab00/) DUE Thu, Mar 07 2024 23:59 [Submission box]({{ site.gradescope_url }})
    </td>
   </tr>
   <tr>
@@ -140,7 +140,7 @@ lectures and/or assignments with an advanced week's notice.
     {:/}
    </td>
    <td markdown="span" style="text-align:center">
-    <a href="{{ site.baseurl }}/notes/session04">
+    <a href="{{ site.url }}{{ site.baseurl}}/notes/session04">
      Operations on Processes
     </a>
    </td>
@@ -174,7 +174,7 @@ lectures and/or assignments with an advanced week's notice.
     {:/}
    </td>
    <td markdown="span" style="text-align:center">
-    <a href="{{ site.baseurl }}/notes/session05">
+    <a href="{{ site.url }}{{ site.baseurl}}/notes/session05">
      IPC: Signals
     </a>
    </td>
@@ -183,7 +183,7 @@ lectures and/or assignments with an advanced week's notice.
   </tr>
   <tr>
    <td colspan="4" markdown="span">
-    [Simple Shell]({{ site.baseurl }}/labs/simpleshell/) DUE Mon, Mar 11 2024 23:59 [Submission box]({{ site.gradescope_url }})
+    [Simple Shell]({{ site.url }}{{ site.baseurl }}/labs/simpleshell/) DUE Mon, Mar 11 2024 23:59 [Submission box]({{ site.gradescope_url }})
    </td>
   </tr>
   <tr>
@@ -204,7 +204,7 @@ lectures and/or assignments with an advanced week's notice.
     {:/}
    </td>
    <td markdown="span" style="text-align:center">
-    <a href="{{ site.baseurl }}/notes/session06">
+    <a href="{{ site.url }}{{ site.baseurl}}/notes/session06">
      IPC: Pipes
     </a>
    </td>
@@ -229,7 +229,7 @@ lectures and/or assignments with an advanced week's notice.
     {:/}
    </td>
    <td markdown="span" style="text-align:center">
-    <a href="{{ site.baseurl }}/notes/makefiles/">
+    <a href="{{ site.url }}{{ site.baseurl}}/notes/makefiles/">
      Makefiles
     </a>
    </td>
@@ -238,7 +238,7 @@ lectures and/or assignments with an advanced week's notice.
   </tr>
   <tr>
    <td colspan="4" markdown="span">
-    [Process Lab]({{ site.baseurl }}/labs/processlab/) DUE Thu, Mar 14 2024 23:59 [Submission box]({{ site.gradescope_url }})
+    [Process Lab]({{ site.url }}{{ site.baseurl }}/labs/processlab/) DUE Thu, Mar 14 2024 23:59 [Submission box]({{ site.gradescope_url }})
    </td>
   </tr>
   <tr>
@@ -284,7 +284,7 @@ lectures and/or assignments with an advanced week's notice.
     {:/}
    </td>
    <td markdown="span" style="text-align:center">
-    <a href="{{ site.baseurl }}/notes/paging">
+    <a href="{{ site.url }}{{ site.baseurl}}/notes/paging">
      Introduction to Paging
     </a>
    </td>
@@ -293,7 +293,7 @@ lectures and/or assignments with an advanced week's notice.
   </tr>
   <tr>
    <td colspan="4" markdown="span">
-    [Heap Manager]({{ site.baseurl }}/labs/heapmm/) DUE Mon, Mar 18 2024 23:59 [Submission box]({{ site.gradescope_url }})
+    [Heap Manager]({{ site.url }}{{ site.baseurl }}/labs/heapmm/) DUE Mon, Mar 18 2024 23:59 [Submission box]({{ site.gradescope_url }})
    </td>
   </tr>
   <tr>
@@ -314,7 +314,7 @@ lectures and/or assignments with an advanced week's notice.
     {:/}
    </td>
    <td markdown="span" style="text-align:center">
-    <a href="{{ site.baseurl }}/notes/session15">
+    <a href="{{ site.url }}{{ site.baseurl}}/notes/session15">
      Paging
     </a>
    </td>
@@ -322,7 +322,7 @@ lectures and/or assignments with an advanced week's notice.
     {::nomarkdown}
     <ul style="margin:0;padding:.5rem">
      <li>
-      <a href="{{site.baseurl}}/docs/activities/paging/">
+      <a href="{{site.url}}{{site.baseurl}}/docs/activities/paging/">
        Activity
       </a>
      </li>
@@ -339,7 +339,7 @@ lectures and/or assignments with an advanced week's notice.
    <td markdown="span">
    </td>
    <td markdown="span" style="text-align:center">
-    <a href="{{ site.baseurl }}/notes/session09">
+    <a href="{{ site.url }}{{ site.baseurl}}/notes/session09">
      Exam Review
     </a>
    </td>
@@ -389,7 +389,7 @@ lectures and/or assignments with an advanced week's notice.
     {:/}
    </td>
    <td markdown="span" style="text-align:center">
-    <a href="{{ site.baseurl }}/notes/session16">
+    <a href="{{ site.url }}{{ site.baseurl}}/notes/session16">
      Multi-level Page Tables
     </a>
    </td>
@@ -405,7 +405,7 @@ lectures and/or assignments with an advanced week's notice.
    <td markdown="span">
    </td>
    <td markdown="span" style="text-align:center">
-    <a href="{{site.baseurl}}/docs/activities/lazy_pages/">
+    <a href="{{site.url}}{{site.baseurl}}/docs/activities/lazy_pages/">
      Lazy page allocation activity
     </a>
    </td>
@@ -446,7 +446,7 @@ lectures and/or assignments with an advanced week's notice.
   </tr>
   <tr>
    <td colspan="4" markdown="span">
-    [[Challenge] Heap Manager II]({{ site.baseurl }}/labs/buddy/) DUE Fri, Mar 29 2024 23:59 [Submission box]({{ site.gradescope_url }})
+    [[Challenge] Heap Manager II]({{ site.url }}{{ site.baseurl }}/labs/buddy/) DUE Fri, Mar 29 2024 23:59 [Submission box]({{ site.gradescope_url }})
    </td>
   </tr>
   <tr>
@@ -479,7 +479,7 @@ lectures and/or assignments with an advanced week's notice.
     Interrupts and Traps
    </td>
    <td markdown="span">
-    <a href="{{site.baseurl}}/docs/activities/systrace/">
+    <a href="{{site.url}}{{site.baseurl}}/docs/activities/systrace/">
      Activity
     </a>
     <br/>
@@ -503,7 +503,7 @@ lectures and/or assignments with an advanced week's notice.
     {:/}
    </td>
    <td markdown="span" style="text-align:center">
-    <a href="{{ site.baseurl }}/notes/session18">
+    <a href="{{ site.url }}{{ site.baseurl}}/notes/session18">
      Threads: Lightweight Processes
     </a>
    </td>
@@ -528,12 +528,12 @@ lectures and/or assignments with an advanced week's notice.
     {:/}
    </td>
    <td markdown="span" style="text-align:center">
-    <a href="{{ site.baseurl }}/notes/session19">
+    <a href="{{ site.url }}{{ site.baseurl}}/notes/session19">
      Concurrency: Mutex &amp; Condition Variables
     </a>
    </td>
    <td markdown="span">
-    <a href="{{site.baseurl}}/docs/activities/generic/">
+    <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/">
      Activity
     </a>
     <br/>
@@ -541,7 +541,7 @@ lectures and/or assignments with an advanced week's notice.
   </tr>
   <tr>
    <td colspan="4" markdown="span">
-    [[Challenge] Copy-on-Write]({{ site.baseurl }}/labs/cow) DUE Thu, Apr 04 2024 23:59 [Submission box]({{ site.gradescope_url }})
+    [[Challenge] Copy-on-Write]({{ site.url }}{{ site.baseurl }}/labs/cow) DUE Thu, Apr 04 2024 23:59 [Submission box]({{ site.gradescope_url }})
    </td>
   </tr>
   <tr>
@@ -553,12 +553,12 @@ lectures and/or assignments with an advanced week's notice.
    <td markdown="span">
    </td>
    <td markdown="span" style="text-align:center">
-    <a href="{{ site.baseurl }}/notes/session20">
+    <a href="{{ site.url }}{{ site.baseurl}}/notes/session20">
      Mutex locks practice
     </a>
    </td>
    <td markdown="span">
-    <a href="{{site.baseurl}}/docs/activities/generic/">
+    <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/">
      Activity
     </a>
     <br/>
@@ -591,12 +591,12 @@ lectures and/or assignments with an advanced week's notice.
     {:/}
    </td>
    <td markdown="span" style="text-align:center">
-    <a href="{{ site.baseurl }}/notes/session20">
+    <a href="{{ site.url }}{{ site.baseurl}}/notes/session20">
      Concurrency: Condition Variables
     </a>
    </td>
    <td markdown="span">
-    <a href="{{site.baseurl}}/docs/activities/generic/">
+    <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/">
      Activity
     </a>
     <br/>
@@ -604,7 +604,7 @@ lectures and/or assignments with an advanced week's notice.
   </tr>
   <tr>
    <td colspan="4" markdown="span">
-    [Threads &amp; Mutex Basics]({{ site.baseurl }}/labs/threads_basics) DUE Mon, Apr 15 2024 23:59 [Submission box]({{ site.gradescope_url }})
+    [Threads &amp; Mutex Basics]({{ site.url }}{{ site.baseurl }}/labs/threads_basics) DUE Mon, Apr 15 2024 23:59 [Submission box]({{ site.gradescope_url }})
    </td>
   </tr>
   <tr>
@@ -625,12 +625,12 @@ lectures and/or assignments with an advanced week's notice.
     {:/}
    </td>
    <td markdown="span" style="text-align:center">
-    <a href="{{ site.baseurl }}/notes/session20">
+    <a href="{{ site.url }}{{ site.baseurl}}/notes/session20">
      Concurrency: Condition Variables Practice
     </a>
    </td>
    <td markdown="span">
-    <a href="{{site.baseurl}}/docs/activities/generic/">
+    <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/">
      Activity
     </a>
     <br/>
@@ -654,12 +654,12 @@ lectures and/or assignments with an advanced week's notice.
     {:/}
    </td>
    <td markdown="span" style="text-align:center">
-    <a href="{{ site.baseurl }}/notes/session21">
+    <a href="{{ site.url }}{{ site.baseurl}}/notes/session21">
      Concurrency: Producer-consumer Problem
     </a>
    </td>
    <td markdown="span">
-    <a href="{{site.baseurl}}/docs/activities/generic/">
+    <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/">
      Activity
     </a>
     <br/>
@@ -667,7 +667,7 @@ lectures and/or assignments with an advanced week's notice.
   </tr>
   <tr>
    <td colspan="4" markdown="span">
-    [Condition Variables Basics]({{ site.baseurl }}/labs/condvar) DUE Thu, Apr 18 2024 23:59 [Submission box]({{ site.gradescope_url }})
+    [Condition Variables Basics]({{ site.url }}{{ site.baseurl }}/labs/condvar) DUE Thu, Apr 18 2024 23:59 [Submission box]({{ site.gradescope_url }})
    </td>
   </tr>
   <tr>
@@ -679,12 +679,12 @@ lectures and/or assignments with an advanced week's notice.
    <td markdown="span">
    </td>
    <td markdown="span" style="text-align:center">
-    <a href="{{ site.baseurl }}/notes/session22">
+    <a href="{{ site.url }}{{ site.baseurl}}/notes/session22">
      Concurrency: Readers/Writers Problem
     </a>
    </td>
    <td markdown="span">
-    <a href="{{site.baseurl}}/docs/activities/generic/">
+    <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/">
      Activity
     </a>
     <br/>
@@ -717,7 +717,7 @@ lectures and/or assignments with an advanced week's notice.
     {:/}
    </td>
    <td markdown="span" style="text-align:center">
-    <a href="{{ site.baseurl }}/notes/session29">
+    <a href="{{ site.url }}{{ site.baseurl}}/notes/session29">
      CPU Scheduling I
     </a>
    </td>
@@ -726,7 +726,7 @@ lectures and/or assignments with an advanced week's notice.
   </tr>
   <tr>
    <td colspan="4" markdown="span">
-    [[Challenge] Condition Variables II]({{ site.baseurl }}/labs/condvar_challenge) DUE Mon, Apr 22 2024 23:59 [Submission box]({{ site.gradescope_url }})
+    [[Challenge] Condition Variables II]({{ site.url }}{{ site.baseurl }}/labs/condvar_challenge) DUE Mon, Apr 22 2024 23:59 [Submission box]({{ site.gradescope_url }})
    </td>
   </tr>
   <tr>
@@ -747,7 +747,7 @@ lectures and/or assignments with an advanced week's notice.
     {:/}
    </td>
    <td markdown="span" style="text-align:center">
-    <a href="{{ site.baseurl }}/labs/sched/">
+    <a href="{{ site.url }}{{ site.baseurl}}/labs/sched/">
      The xv6 scheduler
     </a>
    </td>
@@ -763,7 +763,7 @@ lectures and/or assignments with an advanced week's notice.
    <td markdown="span">
    </td>
    <td markdown="span" style="text-align:center">
-    <a href="{{site.baseurl}}/assets/files/cv_guide.pdf">
+    <a href="{{site.url}}{{site.baseurl}}/assets/files/cv_guide.pdf">
      Exam 2 Review
     </a>
    </td>
@@ -813,7 +813,7 @@ lectures and/or assignments with an advanced week's notice.
     {:/}
    </td>
    <td markdown="span" style="text-align:center">
-    <a href="{{ site.baseurl }}/docs/activities/mem_safety_intro">
+    <a href="{{ site.url }}{{ site.baseurl}}/docs/activities/mem_safety_intro">
      Introduction to Memory Safety
     </a>
    </td>
@@ -822,7 +822,7 @@ lectures and/or assignments with an advanced week's notice.
   </tr>
   <tr>
    <td colspan="4" markdown="span">
-    [Scheduler Activity]({{ site.baseurl }}/labs/sched) DUE Mon, Apr 29 2024 23:59 [Submission box]({{ site.gradescope_url }})
+    [Scheduler Activity]({{ site.url }}{{ site.baseurl }}/labs/sched) DUE Mon, Apr 29 2024 23:59 [Submission box]({{ site.gradescope_url }})
    </td>
   </tr>
   <tr>
@@ -834,7 +834,7 @@ lectures and/or assignments with an advanced week's notice.
    <td markdown="span">
    </td>
    <td markdown="span" style="text-align:center">
-    <a href="{{ site.baseurl }}/notes/session34">
+    <a href="{{ site.url }}{{ site.baseurl}}/notes/session34">
      Stack Smashing and Its Variants
     </a>
    </td>
@@ -850,7 +850,7 @@ lectures and/or assignments with an advanced week's notice.
    <td markdown="span">
    </td>
    <td markdown="span" style="text-align:center">
-    <a href="{{ site.baseurl }}/labs/lab13/">
+    <a href="{{ site.url }}{{ site.baseurl}}/labs/lab13/">
      Return-to-libc Attacks
     </a>
    </td>
@@ -909,7 +909,7 @@ lectures and/or assignments with an advanced week's notice.
   </tr>
   <tr>
    <td colspan="4" markdown="span">
-    [Stack Smashing Lab]({{ site.baseurl }}/labs/smlab) DUE Mon, May 06 2024 23:59 [Submission box]({{ site.gradescope_url }})
+    [Stack Smashing Lab]({{ site.url }}{{ site.baseurl }}/labs/smlab) DUE Mon, May 06 2024 23:59 [Submission box]({{ site.gradescope_url }})
    </td>
   </tr>
   <tr>
@@ -921,7 +921,7 @@ lectures and/or assignments with an advanced week's notice.
    <td markdown="span">
    </td>
    <td markdown="span" style="text-align:center">
-    <a href="{{ site.baseurl }}/notes/filesystems/">
+    <a href="{{ site.url }}{{ site.baseurl}}/notes/filesystems/">
      File Systems
     </a>
    </td>
@@ -946,7 +946,7 @@ lectures and/or assignments with an advanced week's notice.
   </tr>
   <tr>
    <td colspan="4" markdown="span">
-    [Project Milestone 1]({{ site.baseurl }}/labs/project) DUE Thu, May 09 2024 23:59 [Submission box]({{ site.gradescope_url }})
+    [Project Milestone 1]({{ site.url }}{{ site.baseurl }}/labs/project) DUE Thu, May 09 2024 23:59 [Submission box]({{ site.gradescope_url }})
    </td>
   </tr>
   <tr>
@@ -958,7 +958,7 @@ lectures and/or assignments with an advanced week's notice.
    <td markdown="span">
    </td>
    <td markdown="span" style="text-align:center">
-    <a href="{{ site.baseurl }}/notes/project_hints/">
+    <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/">
      Project Work Time and Meetings
     </a>
    </td>
@@ -992,7 +992,7 @@ lectures and/or assignments with an advanced week's notice.
   </tr>
   <tr>
    <td colspan="4" markdown="span">
-    [[Challenge] ext2 File System]({{ site.baseurl }}/labs/ext2) DUE Mon, May 13 2024 23:59 [Submission box]({{ site.gradescope_url }})
+    [[Challenge] ext2 File System]({{ site.url }}{{ site.baseurl }}/labs/ext2) DUE Mon, May 13 2024 23:59 [Submission box]({{ site.gradescope_url }})
    </td>
   </tr>
   <tr>
@@ -1004,7 +1004,7 @@ lectures and/or assignments with an advanced week's notice.
    <td markdown="span">
    </td>
    <td markdown="span" style="text-align:center">
-    <a href="{{ site.baseurl }}/notes/project_hints/">
+    <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/">
      Project Work Time and Meetings
     </a>
    </td>
@@ -1020,7 +1020,7 @@ lectures and/or assignments with an advanced week's notice.
    <td markdown="span">
    </td>
    <td markdown="span" style="text-align:center">
-    <a href="{{ site.baseurl }}/notes/project_hints/">
+    <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/">
      Project Work Time and Meetings
     </a>
    </td>
@@ -1036,7 +1036,7 @@ lectures and/or assignments with an advanced week's notice.
    <td markdown="span">
    </td>
    <td markdown="span" style="text-align:center">
-    <a href="{{ site.baseurl }}/notes/project_hints/">
+    <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/">
      Project Work Time and Meetings
     </a>
    </td>
@@ -1045,7 +1045,7 @@ lectures and/or assignments with an advanced week's notice.
   </tr>
   <tr>
    <td colspan="4" markdown="span">
-    [Project Milestone 2]({{ site.baseurl }}/labs/project) DUE Fri, May 17 2024 23:59 [Submission box]({{ site.gradescope_url }})
+    [Project Milestone 2]({{ site.url }}{{ site.baseurl }}/labs/project) DUE Fri, May 17 2024 23:59 [Submission box]({{ site.gradescope_url }})
    </td>
   </tr>
  </tbody>

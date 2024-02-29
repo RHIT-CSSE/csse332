@@ -12,7 +12,7 @@ title: CSSE 332
 author: RHIT CSSE Department
 
 # The subpath of your site.
-baseurl: 'csse332'
+baseurl: '/csse332'
 
 # The base hostname and protocol for your site
 url: 'https://rhit-csse.github.io'

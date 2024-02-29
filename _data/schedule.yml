@@ -10,28 +10,28 @@
   reading:
     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/intro.pdf"> Chapter 1 of OSTEP </a>
   topics:
-    - '<a href="{{ site.baseurl }}/notes/introduction/">OS Introduction</a>'
+    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/introduction/">OS Introduction</a>'
   materials:
 
 2:
   reading:
   topics:
-    # - '<a href="{{ site.baseurl }}/notes/boot">The boot process</a>'
-    - <a href="{{ site.baseurl }}/notes/session01/">C Review</a>
+    # - '<a href="{{ site.url }}{{ site.baseurl}}/notes/boot">The boot process</a>'
+    - <a href="{{ site.url }}{{ site.baseurl}}/notes/session01/">C Review</a>
   materials:
 
 3:
   reading:
     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf"> Chapter 4 of OSTEP </a>
   topics:
-    - <a href="{{ site.baseurl }}/notes/session03"> The Process Abstraction </a>
+    - <a href="{{ site.url }}{{ site.baseurl}}/notes/session03"> The Process Abstraction </a>
   materials:
 
 4:
   reading:
     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-api.pdf"> Chapter 5 of OSTEP </a>
   topics:
-    - <a href="{{ site.baseurl }}/notes/session04"> Operations on Processes </a>
+    - <a href="{{ site.url }}{{ site.baseurl}}/notes/session04"> Operations on Processes </a>
   materials: 
 
 
@@ -42,21 +42,21 @@
   reading:
     - <a href="https://www.man7.org/linux/man-pages/man7/signal.7.html"> Signal man page </a>
   topics:
-    - '<a href="{{ site.baseurl }}/notes/session05"> IPC: Signals </a>'
+    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session05"> IPC: Signals </a>'
   materials: 
 
 6:
   reading:
     - <a href="https://www.man7.org/linux/man-pages/man2/pipe.2.html"> Pipe man page </a>
   topics:
-    - '<a href="{{ site.baseurl }}/notes/session06"> IPC: Pipes </a>'
+    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session06"> IPC: Pipes </a>'
   materials: 
 
 7:
   reading:
     - <a hred="https://www.gnu.org/software/make/manual/make.html"> Make documentation page </a>
   topics:
-    - <a href="{{ site.baseurl }}/notes/makefiles/"> Makefiles </a>
+    - <a href="{{ site.url }}{{ site.baseurl}}/notes/makefiles/"> Makefiles </a>
   materials:
 
 8:
@@ -72,21 +72,21 @@
   reading:
     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-mechanism.pdf"> Chapter 15 of OSTEP </a>
   topics:
-    - <a href="{{ site.baseurl }}/notes/paging"> Introduction to Paging </a>
+    - <a href="{{ site.url }}{{ site.baseurl}}/notes/paging"> Introduction to Paging </a>
   materials: 
 
 10:
   reading:
     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-paging.pdf"> Chapter 18 of OSTEP </a>
   topics:
-    - <a href="{{ site.baseurl }}/notes/session15"> Paging </a>
+    - <a href="{{ site.url }}{{ site.baseurl}}/notes/session15"> Paging </a>
   materials:
-    - <a href="{{site.baseurl}}/docs/activities/paging/"> Activity </a>
+    - <a href="{{site.url}}{{site.baseurl}}/docs/activities/paging/"> Activity </a>
 
 11:
   reading:
   topics:
-    - <a href="{{ site.baseurl }}/notes/session09"> Exam Review </a>
+    - <a href="{{ site.url }}{{ site.baseurl}}/notes/session09"> Exam Review </a>
   materials:
 
 12:
@@ -102,21 +102,21 @@
   reading:
     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-smalltables.pdf"> Chapter 20 of OSTEP </a>
   topics:
-    - <a href="{{ site.baseurl }}/notes/session16"> Multi-level Page Tables </a>
+    - <a href="{{ site.url }}{{ site.baseurl}}/notes/session16"> Multi-level Page Tables </a>
   materials:
 
 14:
   reading:
   topics:
-    - <a href="{{site.baseurl}}/docs/activities/lazy_pages/"> Lazy page allocation activity </a>
-    # - <a href="{{ site.baseurl }}/notes/session17"> Paging Activity </a>
+    - <a href="{{site.url}}{{site.baseurl}}/docs/activities/lazy_pages/"> Lazy page allocation activity </a>
+    # - <a href="{{ site.url }}{{ site.baseurl}}/notes/session17"> Paging Activity </a>
   materials:
 
 15:
   reading:
   topics:
     - '<b> Exam 1: Part 2 </b>'
-    # - '<a href="{{ site.baseurl }}/labs/lab05"> Lab: Virtual Memory II </a>'
+    # - '<a href="{{ site.url }}{{ site.baseurl}}/labs/lab05"> Lab: Virtual Memory II </a>'
   materials:
 
 16:
@@ -134,32 +134,32 @@
   reading:
     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/file-devices.pdf"> Section 36.4 of Chapter 16 </a>
   topics:
-    # - '<a href="{{ site.baseurl }}/notes/session18"> Threads: Lightweight Processes </a>'
+    # - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session18"> Threads: Lightweight Processes </a>'
     - Interrupts and Traps
   materials:
-    <a href="{{site.baseurl}}/docs/activities/systrace/"> Activity </a>
+    <a href="{{site.url}}{{site.baseurl}}/docs/activities/systrace/"> Activity </a>
 
 18:
   reading:
     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf"> Chapter 26 of OSTEP </a>
   topics:
-    - '<a href="{{ site.baseurl }}/notes/session18"> Threads: Lightweight Processes </a>'
+    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session18"> Threads: Lightweight Processes </a>'
   materials:
 
 19:
   reading:
     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-locks.pdf"> Chapter 28 of OSTEP </a>
   topics:
-    - '<a href="{{ site.baseurl }}/notes/session19"> Concurrency: Mutex & Condition Variables </a>'
+    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session19"> Concurrency: Mutex & Condition Variables </a>'
   materials:
-    <a href="{{site.baseurl}}/docs/activities/generic/"> Activity </a>
+    <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
 
 20:
   reading:
   topics:
-    - '<a href="{{ site.baseurl }}/notes/session20"> Mutex locks practice </a>'
+    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session20"> Mutex locks practice </a>'
   materials:
-    <a href="{{site.baseurl}}/docs/activities/generic/"> Activity </a>
+    <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
 
 ################################################################################
 ## WEEK 6
@@ -168,33 +168,33 @@
   reading:
     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 of OSTEP </a>
   topics:
-    - '<a href="{{ site.baseurl }}/notes/session20"> Concurrency: Condition Variables </a>'
+    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session20"> Concurrency: Condition Variables </a>'
   materials:
-    <a href="{{site.baseurl}}/docs/activities/generic/"> Activity </a>
+    <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
 
 22:
   reading:
     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 of OSTEP </a>
   topics:
-    - '<a href="{{ site.baseurl }}/notes/session20"> Concurrency: Condition Variables Practice </a>'
+    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session20"> Concurrency: Condition Variables Practice </a>'
   materials:
-    <a href="{{site.baseurl}}/docs/activities/generic/"> Activity </a>
+    <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
 
 23:
   reading:
     - <a href="https://en.wikipedia.org/wiki/Producer%E2%80%93consumer_problem"> Wiki Page for Prod/Cons Problem </a>
   topics:
-    # - '<a href="{{ site.baseurl }}/notes/session23"> Concurrency: Deadlocks </a>'
-    - '<a href="{{ site.baseurl }}/notes/session21"> Concurrency: Producer-consumer Problem </a>'
+    # - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session23"> Concurrency: Deadlocks </a>'
+    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session21"> Concurrency: Producer-consumer Problem </a>'
   materials:
-    <a href="{{site.baseurl}}/docs/activities/generic/"> Activity </a>
+    <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
 
 24:
   reading:
   topics:
-    - '<a href="{{ site.baseurl }}/notes/session22"> Concurrency: Readers/Writers Problem </a>'
+    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session22"> Concurrency: Readers/Writers Problem </a>'
   materials:
-    <a href="{{site.baseurl}}/docs/activities/generic/"> Activity </a>
+    <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
 
 
 ################################################################################
@@ -204,28 +204,28 @@
   reading:
     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched.pdf"> Chapter 7 of OSTEP </a>
   topics:
-    - '<a href="{{ site.baseurl }}/notes/session29"> CPU Scheduling I </a>'
+    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session29"> CPU Scheduling I </a>'
   materials:
 
 # 26:
 #   reading:
 #     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched-mlfq.pdf"> Chapter 8 of OSTEP </a>
 #   topics:
-#     - '<a href="{{ site.baseurl }}/notes/session30"> CPU Scheduling II </a>'
+#     - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session30"> CPU Scheduling II </a>'
 #   materials:
 
 26:
   reading:
     - <a href="https://pdos.csail.mit.edu/6.828/2022/xv6/book-riscv-rev3.pdf"> Chapter 7 of the xv6 book </a>
   topics:
-    - <a href="{{ site.baseurl }}/labs/sched/"> The xv6 scheduler </a>
+    - <a href="{{ site.url }}{{ site.baseurl}}/labs/sched/"> The xv6 scheduler </a>
   materials:
 
 27:
   reading:
   topics:
-    - '<a href="{{site.baseurl}}/assets/files/cv_guide.pdf"> Exam 2 Review </a>'
-    # - '<a href="{{ site.baseurl }}/docs/cv_unofficial_guide/"> Exam 2 Review </a>'
+    - '<a href="{{site.url}}{{site.baseurl}}/assets/files/cv_guide.pdf"> Exam 2 Review </a>'
+    # - '<a href="{{ site.url }}{{ site.baseurl}}/docs/cv_unofficial_guide/"> Exam 2 Review </a>'
   materials:
 
 28:
@@ -241,20 +241,20 @@
   reading:
     - <a href="https://www.eecs.umich.edu/courses/eecs588/static/stack_smashing.pdf"> Smashing The Stack for Fun and Profit </a>
   topics:
-    - <a href="{{ site.baseurl }}/docs/activities/mem_safety_intro"> Introduction to Memory Safety </a>
+    - <a href="{{ site.url }}{{ site.baseurl}}/docs/activities/mem_safety_intro"> Introduction to Memory Safety </a>
   materials:
 
 30:
   reading:
   topics:
-    - <a href="{{ site.baseurl }}/notes/session34"> Stack Smashing and Its Variants </a>
+    - <a href="{{ site.url }}{{ site.baseurl}}/notes/session34"> Stack Smashing and Its Variants </a>
   materials:
 
 
 31:
   reading:
   topics:
-    - <a href="{{ site.baseurl }}/labs/lab13/"> Return-to-libc Attacks </a>
+    - <a href="{{ site.url }}{{ site.baseurl}}/labs/lab13/"> Return-to-libc Attacks </a>
   materials:
 
 32:
@@ -276,7 +276,7 @@
 34:
   reading:
   topics:
-    - <a href="{{ site.baseurl }}/notes/filesystems/"> File Systems </a>
+    - <a href="{{ site.url }}{{ site.baseurl}}/notes/filesystems/"> File Systems </a>
   materials:
 
 35:
@@ -288,7 +288,7 @@
 36:
   reading:
   topics:
-    - <a href="{{ site.baseurl }}/notes/project_hints/"> Project Work Time and Meetings </a>
+    - <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/"> Project Work Time and Meetings </a>
   materials:
 
 
@@ -304,18 +304,18 @@
 38:
   reading:
   topics:
-    - <a href="{{ site.baseurl }}/notes/project_hints/"> Project Work Time and Meetings </a>
+    - <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/"> Project Work Time and Meetings </a>
   materials:
 #
 39:
   reading:
   topics:
-    - <a href="{{ site.baseurl }}/notes/project_hints/"> Project Work Time and Meetings </a>
+    - <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/"> Project Work Time and Meetings </a>
   materials:
 #
 40:
   reading:
   topics:
-    - <a href="{{ site.baseurl }}/notes/project_hints/"> Project Work Time and Meetings </a>
+    - <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/"> Project Work Time and Meetings </a>
   materials:
 
