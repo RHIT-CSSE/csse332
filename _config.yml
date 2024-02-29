@@ -12,10 +12,10 @@ title: CSSE 332
 author: RHIT CSSE Department
 
 # The subpath of your site.
-baseurl: '/class/csse/csse332/2324b'
+baseurl: 'csse332'
 
 # The base hostname and protocol for your site
-url: 'https://www.rose-hulman.edu'
+url: 'https://rhit-csse.github.io'
 
 # --- List of links in the navigation bar --- #
 
@@ -174,7 +174,7 @@ footer-link-col: "#404040"
 
 # --- Comments --- #
 
-theme: beautiful-jekyll-theme
+theme: minimal
 
 # To use Disqus comments, sign up to https://disqus.com and fill in your Disqus shortname (NOT the userid)
 #disqus: ""
