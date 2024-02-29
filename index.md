@@ -14,8 +14,7 @@ Welcome to CSSE 332, Operating Systems.
 
 1. Read the [syllabus]({{ site.baseurl }}/docs/syllabus/syllabus) and the [unofficial syllabus]({{ site.baseurl }}/docs/syllabus/unofficial).
 
-2. [Install `WSL2`](./labs/wsl).
-  - **If you are a CPE major**: you may need to instead [upgrade from WSL1 to WSL2](https://learn.microsoft.com/en-us/windows/wsl/install#upgrade-version-from-wsl-1-to-wsl-2).
+2. [Install `WSL2`](./labs/wsl) and certain Linux packages.
 
 3. [Create your private GitHub repository for all your CSSE332 work](./docs/setup).
 
