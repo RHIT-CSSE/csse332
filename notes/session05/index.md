@@ -133,7 +133,7 @@ struct sigaction new_action, old_action;
 
 new_action.sa_handler = signal_handler;
 sigmeptyset(&new_action.sa_mask);
-new_action.sa_flags = 0;
+new_action.sa_flags = SA_RESTART;
 
 sigaction(SIGINT, &new_action, NULL);
 ```
