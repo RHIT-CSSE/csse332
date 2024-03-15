@@ -266,6 +266,8 @@ Test Passed
 Test Timed Out
 ```
 
+HINT: the easiest way to do is using alarm to get the child out of its infinite loop and into a signal handler.  Then you can exit with a special exit code.  Don't remember about alaram?  man alarm.
+
 # Step 6: Use Pipes to Display Test Errors
 
 For this last stage, we would like to obtain the resulting messages from each
