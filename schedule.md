@@ -402,14 +402,25 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Tue, Mar 26 2024
    </td>
-   <td markdown="span">
+   <td markdown="span" style="text-align:left;">
+    {::nomarkdown}
+    <ul style="margin:0;padding:.5rem">
+     <li>
+      <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/file-devices.pdf">
+       Section 36.4 of Chapter 16
+      </a>
+     </li>
+    </ul>
+    {:/}
    </td>
    <td markdown="span" style="text-align:center">
-    <a href="{{site.url}}{{site.baseurl}}/docs/activities/lazy_pages/">
-     Lazy page allocation activity
-    </a>
+    Interrupts and Traps
    </td>
    <td markdown="span">
+    <a href="{{site.url}}{{site.baseurl}}/docs/activities/systrace/">
+     Activity
+    </a>
+    <br/>
    </td>
   </tr>
   <tr>
@@ -462,25 +473,14 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Mon, Apr 01 2024
    </td>
-   <td markdown="span" style="text-align:left;">
-    {::nomarkdown}
-    <ul style="margin:0;padding:.5rem">
-     <li>
-      <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/file-devices.pdf">
-       Section 36.4 of Chapter 16
-      </a>
-     </li>
-    </ul>
-    {:/}
+   <td markdown="span">
    </td>
    <td markdown="span" style="text-align:center">
-    Interrupts and Traps
+    <a href="{{site.url}}{{site.baseurl}}/docs/activities/lazy_pages/">
+     Lazy page allocation activity
+    </a>
    </td>
    <td markdown="span">
-    <a href="{{site.url}}{{site.baseurl}}/docs/activities/systrace/">
-     Activity
-    </a>
-    <br/>
    </td>
   </tr>
   <tr>
