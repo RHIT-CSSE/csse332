@@ -107,10 +107,12 @@
 
 14:
   reading:
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/file-devices.pdf"> Section 36.4 of Chapter 16 </a>
   topics:
-    - <a href="{{site.url}}{{site.baseurl}}/docs/activities/lazy_pages/"> Lazy page allocation activity </a>
-    # - <a href="{{ site.url }}{{ site.baseurl}}/notes/session17"> Paging Activity </a>
+    # - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session18"> Threads: Lightweight Processes </a>'
+    - Interrupts and Traps
   materials:
+    <a href="{{site.url}}{{site.baseurl}}/docs/activities/systrace/"> Activity </a>
 
 15:
   reading:
@@ -131,14 +133,13 @@
 ################################################################################
 ## WEEK 5
 ################################################################################
+
 17:
   reading:
-    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/file-devices.pdf"> Section 36.4 of Chapter 16 </a>
   topics:
-    # - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session18"> Threads: Lightweight Processes </a>'
-    - Interrupts and Traps
+    - <a href="{{site.url}}{{site.baseurl}}/docs/activities/lazy_pages/"> Lazy page allocation activity </a>
+    # - <a href="{{ site.url }}{{ site.baseurl}}/notes/session17"> Paging Activity </a>
   materials:
-    <a href="{{site.url}}{{site.baseurl}}/docs/activities/systrace/"> Activity </a>
 
 18:
   reading:
