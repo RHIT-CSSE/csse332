@@ -1,1 +1,0 @@
-../makeup_code/critical_tests.c
