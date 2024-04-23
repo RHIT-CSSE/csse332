@@ -9,21 +9,51 @@
 // Use condition variables to make  A, B, C print out in order.
 // HINT: You need more than one condition variables
 
+int a_done = 0;
+int b_done = 0;
+
+pthread_mutex_t lock = PTHREAD_MUTEX_INITIALIZER;
+pthread_cond_t cA = PTHREAD_COND_INITIALIZER;
+pthread_cond_t cB = PTHREAD_COND_INITIALIZER;
+
 
 void* thread_func_A(void* arg) {
   sleep(3);
   printf("A\n");
+  pthread_mutex_lock(&lock);
+  a_done = 1;
+  pthread_cond_signal(&cA);
+  pthread_mutex_unlock(&lock);
   return NULL;
 }
 
 void* thread_func_B(void* arg) {
   sleep(2);
   // the lock is held by B
+  pthread_mutex_lock(&lock);
+  while(!a_done) {
+      pthread_cond_wait(&cA, &lock);
+  }
+  pthread_mutex_unlock(&lock);
+
   printf("B\n");
+  pthread_mutex_lock(&lock);
+  b_done = 1;
+  pthread_cond_signal(&cB);
+  pthread_mutex_unlock(&lock);
+
+
   return NULL;
 }
 void* thread_func_C(void* arg) {
-  printf("C\n");
+  pthread_mutex_lock(&lock);
+  while(!b_done) {
+      pthread_cond_wait(&cB, &lock);
+  }
+  pthread_mutex_unlock(&lock);
+
+
+    printf("C\n");
   return NULL;
 }
 

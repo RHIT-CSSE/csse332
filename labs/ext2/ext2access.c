@@ -37,8 +37,8 @@ void load_ext2_metadata(int fd, struct os_fs_metadata_t* metadata) {
   // this os_superblock_t struct to correspond exactly to the
   // superblock's data layout on the disk)
   struct os_superblock_t superblock_data;
-
-  // YOUR LOADING CODE HERE
+  lseek(fd, 1024, SEEK_SET);
+  read(fd, &superblock_data, sizeof(struct os_superblock_t));
   
   // 2. All the data we need is in the superblock and groupblock
   // descriptor table (right after the superblock, but we need to read
@@ -199,17 +199,20 @@ os_bool_t fetch_inode(os_uint32_t inode_number, int fd,
   // Remember that the you stashed the number of inodes per
   // blockgroup in "metadata".  Also note that the first inode
   // has number 1, **not** number 0.  (Thanks a lot, ext2!)
-  os_uint32_t blockgroup_num = 0xDEADBEEF;  // you must fix this.
+    os_uint32_t blockgroup_num = (inode_number - 1)/metadata->inodes_per_group;
 
   // Step 2.  Figure out the offset of the inode within
   // the group (i.e., is this the 0th inode in the group?
   // the 10th?  the 100th?)
-  os_uint32_t offset_within_blockgroup = 0xDEADBEEF;  // you must fix this.
+    os_uint32_t offset_within_blockgroup = (inode_number - 1) % metadata->inodes_per_group;
 
   // Step 3.  Make sure this inode number is valid -- i.e., verify
   // that the blockgroup number that you calculated makes sense, given
   // how many blockgroups are on this filesystem.  If it is not valid,
   // return FALSE.
+    if(blockgroup_num >= metadata->num_blockgroups)
+        return FALSE;
+    
 
   // Step 4.  Calculate the block # that this inode lives in.
   // Remember that the layout of the blockgroup is stored within that
@@ -232,9 +235,14 @@ os_bool_t fetch_inode(os_uint32_t inode_number, int fd,
   // Step 5.  Calculate the byte offset of this inode within the
   // block that it lives on.
 
+  os_uint32_t offset_within_block = sizeof(struct os_inode_t) * (offset_within_blockgroup % num_inodes_per_block);
+  
   // Step 6. Use lseek() and read() to read the inode off of disk
   // and into "inode", given the inodes block number and
   // byte offset within that block that you calculated earlier.
+
+  lseek(fd, inode_block_num*metadata->block_size + offset_within_block, SEEK_SET);
+  read(fd, returned_inode, sizeof(struct os_inode_t));
   
   // All done!
   return TRUE;

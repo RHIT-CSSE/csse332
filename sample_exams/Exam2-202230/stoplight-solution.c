@@ -3,17 +3,10 @@
 #include<pthread.h>
 #include<unistd.h>
 
-#define GREEN_NS 0
-#define GREEN_EW 1
-#define YELLOW 2
-
-int stoplight = GREEN_NS;
-int num_cars = 0;
 pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
-pthread_cond_t  ns_cv = PTHREAD_COND_INITIALIZER;
-pthread_cond_t  ew_cv = PTHREAD_COND_INITIALIZER;
-pthread_cond_t  stop_cv = PTHREAD_COND_INITIALIZER;
-
+pthread_cond_t ns_waiting = PTHREAD_COND_INITIALIZER;
+pthread_cond_t ew_waiting = PTHREAD_COND_INITIALIZER;
+pthread_cond_t intersection_empty = PTHREAD_COND_INITIALIZER;
 
 /*
 
@@ -56,80 +49,71 @@ intersection.  Because no car will enter the intersection when the
 stoplight is yellow, there is no darger of the number of cars in the
 intersection increasing when the stoplight is yellow.
 
-The stoplight starts by being gree for northsouth cars and then transition the
-yellow and to green for eastwest and so on.. (Note the print statement at line
-135)
-
-
 Add concurrency primitives to the given code to implement the behavior
 described.  You may modify both car and stoplight threads.
 
 Example output:
 
-green in northsouth direction
-eastwest car nearing intersection
-northsouth car nearing intersection
-northsouth car entering intersection
-northsouth car nearing intersection
-northsouth car entering intersection
-yellow
-northsouth car leaving intersection
-northsouth car leaving intersection
-green in eastwest direction
-eastwest car entering intersection
-eastwest car nearing intersection
-eastwest car entering intersection
-northsouth car nearing intersection
-yellow
-eastwest car leaving intersection
-eastwest car leaving intersection
-green in northsouth direction
-northsouth car entering intersection
-northsouth car nearing intersection
-northsouth car entering intersection
-eastwest car nearing intersection
-yellow
-northsouth car leaving intersection
-northsouth car leaving intersection
-green in eastwest direction
-eastwest car entering intersection
-yellow
-eastwest car leaving intersection
-green in northsouth direction
+TBD
 
  */
 
+
+#define NS 0
+#define EW 1
+#define YELLOW 2
+
+int light = NS;
+int num_in_intersection = 0;
 
 void *north_south(void *arg)
 {
     printf("northsouth car nearing intersection\n");
 
     pthread_mutex_lock(&mutex);
-    while(stoplight != GREEN_NS) {
-        pthread_cond_wait(&ns_cv);
+    while(light != NS) {
+        pthread_cond_wait(&ns_waiting, &mutex);
     }
-    num_cars++;
-    printf("northsouth car entering intersection\n");
-    pthread_mutex_unlock(&ns_cv)
-    
-    sleep(1);
-
-    pthread_mutex_lock(&mutex);    
-    printf("northsouth car leaving intersection\n");
-    num_cars--;
-    if(num_cars == 0) {
-        pthread_cond_signal(&stop_cv);
-    }
+    num_in_intersection++;
     pthread_mutex_unlock(&mutex);
+    
+    printf("northsouth car entering intersection\n");
+    sleep(1);
+    printf("northsouth car leaving intersection\n");
+
+    pthread_mutex_lock(&mutex);
+    num_in_intersection--;
+    if(num_in_intersection == 0)
+        pthread_cond_signal(&intersection_empty);
+    pthread_mutex_unlock(&mutex);
+
 }
 
 
 void *east_west(void *arg)
 {
     printf("eastwest car nearing intersection\n");
+
+    pthread_mutex_lock(&mutex);
+    while(light != EW) {
+        pthread_cond_wait(&ew_waiting, &mutex);
+    }
+    num_in_intersection++;
+    pthread_mutex_unlock(&mutex);
+
+
     printf("eastwest car entering intersection\n");
     sleep(1);
     printf("eastwest car leaving intersection\n");
+
+    pthread_mutex_lock(&mutex);
+
+    num_in_intersection--;
+    if(num_in_intersection == 0)
+        pthread_cond_signal(&intersection_empty);
+
+    pthread_mutex_unlock(&mutex);
+
 }
 
 
@@ -139,46 +123,51 @@ void *stoplight(void *arg)
     while(1) {
 
         sleep(1);
+
         pthread_mutex_lock(&mutex);
+
+        light = YELLOW;
         printf("yellow\n");
-        stoplight = YELLOW;
-        while(num_cars > 0) {
-            pthread_cond_wait(stop_cv, mutex);
-        }
-        stoplight = GREEN_EW;
-        pthread_cond_broadcast(&cv_ew);
-        // we need to wait for the intersection to clear
+        while(num_in_intersection > 0)
+            pthread_cond_wait(&intersection_empty, &mutex);
+        
+        light = EW;
         printf("green in eastwest direction\n");
+        pthread_cond_broadcast(&ew_waiting);
         pthread_mutex_unlock(&mutex);
+
         
         sleep(1);
 
+
+
         pthread_mutex_lock(&mutex);
+
+        light = YELLOW;
         printf("yellow\n");
-        stoplight = YELLOW;
-        while(num_cars > 0) {
-            pthread_cond_wait(stop_cv, mutex);
-        }
-        stoplight = GREEN_NS;
-        pthread_cond_broadcast(&cv_ns);
-        // we need to wait for the intersection to clear
+        while(num_in_intersection > 0)
+            pthread_cond_wait(&intersection_empty, &mutex);
+        
+        light = NS;
         printf("green in northsouth direction\n");
+        pthread_cond_broadcast(&ns_waiting);
         pthread_mutex_unlock(&mutex);
+
     }
 
 }
 
 int main()
 {
-
+    
     pthread_t tid[100];
     int i = 0;
 
     // make sure we display the initial stoplight state before cars start
-    printf("green in northsouth direction\n");
+    printf("green in northsouth direction\n");        
     pthread_create(&tid[i++],NULL,stoplight,NULL);
 
-
+    
     pthread_create(&tid[i++],NULL,east_west,NULL);
     pthread_create(&tid[i++],NULL,north_south,NULL);
     pthread_create(&tid[i++],NULL,north_south,NULL);
@@ -188,8 +177,8 @@ int main()
     sleep(1);
     pthread_create(&tid[i++],NULL,east_west,NULL);
     pthread_create(&tid[i++],NULL,north_south,NULL);
-
-
+    
+    
 
     for(int j = 1; j < i; j++) {
         pthread_join(tid[j],NULL);
