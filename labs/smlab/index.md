@@ -98,13 +98,16 @@ provide you with. To do so, you should install some software first to cross
 compile 32 bit applications on a 64 bit machine. To do so, run
 
 ```shell
-$ sudo apt install -y gdb gdb-multiarch gcc-multilib python2
+sudo apt install -y gdb gdb-multiarch gcc-multilib python2
+sudo apt install -y gcc-riscv64-linux-gnu
 ```
+
+(The reason we run both steps is because xv6 needs gcc-riscv. If you run these instructions in this order, both this lab and xv6 will work.)
 
 Also, install `gef` on top of `gdb`, it will make your life a lot easier.
 
 ```shell
-$ bash -c "$(curl -fsSL https://gef.blah.cat/sh)"
+bash -c "$(curl -fsSL https://gef.blah.cat/sh)"
 ```
 
 ## A Note on Python
@@ -500,55 +503,15 @@ To see the string in memory, you can change the print format as follows:
 gef> x/s 0x8048000 + 0x6d871
 0x80b5871:	"/bin/sh"
 ```
+# Part 6
 
+Ignore Part 6. Skip to Part 8.
 
-# Part 6 (Choose this or part 7 or part 8) 🌶️🌶️🌶️🌶️
+# Part 7
 
-This part uses the same code as the part 3, but it is compiled with DEP enabled.
-Your job is to construct a return-oriented-programming (ROP) attack to open a
-root shell.
+Ignore Part 7. Skip to Part 8.
 
-__Hint__: You might find the tool `ROPgadget` useful. Here's a link to the
-information: [ROPgadget](https://github.com/JonathanSalwan/ROPgadget).
-
-__Hint__: You might find it useful to read through the paper "The Geometry of
-Innocent Flesh on the Bone" listed in the resources section. Focus on sections
-3.4 and 4 of the paper.
-
-__Hint__: To disassemble a program outside of `gdb`, you can use
-```shell
-objdump -d ./part6 > part6.txt
-```
-
-## Submission
-
-Create a python program, called `part6.py`, that prints the line you must pass
-as an argument to your `part6` to cause the creation of a root shell. To test
-your code, use the following:
-```shell
-$ sudo ./part6 "$(python2 part6.py)"
-#
-```
-
-# Part 7 (Choose this or part 6 or part 8) 🌶️🌶️🌶️🌶️
-
-This part implements a doubly-linked list on the heap. It accepts three
-arguments from the command line. Study the code and its machine instructions to
-figure out a way to exploit it and open a shell. You may need to modify the
-`shellcode` that we provided you with slightly (maybe add an instruction or
-two).
-
-## Submission
-
-Create a python program, called `part7.py`, that prints the line you must pass
-as an argument to your `part7` to cause the creation of a root shell. To test
-your code, use the following:
-```shell
-$ sudo ./part7 "$(python2 part7.py)"
-#
-```
-
-# Part 8 (chose this or part 6 or part 7) 🌶️🌶️🌶️
+# Part 8 🌶️🌶️🌶️
 
 At the start of this lab, we asked you to turn off ASLR to make your exploits
 feasible. If enabled, ASLR will make exploiting a buffer overflow really hard
