@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lab 13 Stack Smashing
+title: (Challenge) Lab 13 Stack Smashing
 readtime: true
 date: Wed Feb 8 2023
 ---

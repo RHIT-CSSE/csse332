@@ -13,7 +13,7 @@ Scheduler Activity,sched,2024-04-29 23:59,,[Submission box]({{ site.gradescope_u
 # Userspace Threads I,lab09,2024-04-29 23:59,,[Submission box]({{ site.gradescope_url }}),
 # [Challenge] Userspace Threads II,lab10,2024-04-29 23:59,,[Submission box]({{ site.gradescope_url }}),
 # [Challenge] Hybrid Threads,lab11,2024-04-29 23:59,,[Submission box]({{ site.gradescope_url }}),
-Stack Smashing Lab,smlab,2024-05-06 23:59,,[Submission box]({{ site.gradescope_url }}),Day 33
+[Challenge] Stack Smashing Lab,smlab,2024-05-06 23:59,,[Submission box]({{ site.gradescope_url }}),Day 33
 Project Milestone 1,project,2024-05-09 23:59,,[Submission box]({{ site.gradescope_url }}),Day 35
 [Challenge] ext2 File System,ext2,2024-05-13 23:59,,[Submission box]({{ site.gradescope_url }}),Day 37
 Project Milestone 2,project,2024-05-17 23:59,,[Submission box]({{ site.gradescope_url }}),Day 40

@@ -907,7 +907,7 @@ lectures and/or assignments with an advanced week's notice.
   </tr>
   <tr>
    <td colspan="4" markdown="span">
-    [Stack Smashing Lab]({{ site.url }}{{ site.baseurl }}/labs/smlab) DUE Mon, May 06 2024 23:59 [Submission box]({{ site.gradescope_url }})
+    [[Challenge] Stack Smashing Lab]({{ site.url }}{{ site.baseurl }}/labs/smlab) DUE Mon, May 06 2024 23:59 [Submission box]({{ site.gradescope_url }})
    </td>
   </tr>
   <tr>
