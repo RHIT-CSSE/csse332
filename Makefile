@@ -4,7 +4,7 @@
 
 # configuration options, adjust as you see fit
 SHELL=bash
-ACTERM=2324b
+ACTERM=2324d
 USERNAME=noureddi
 REMOTE_DIR=addiator.rose-hulman.edu:/class/csse/csse332/${ACTERM}
 

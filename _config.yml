@@ -12,10 +12,12 @@ title: CSSE 332
 author: RHIT CSSE Department
 
 # The subpath of your site.
-baseurl: '/csse332'
+# baseurl: '/csse332'
+baseurl: '/class/csse/csse332/2324d'
 
 # The base hostname and protocol for your site
-url: 'https://rhit-csse.github.io'
+# url: 'https://rhit-csse.github.io'
+url: 'https://www.rose-hulman.edu/'
 
 # --- List of links in the navigation bar --- #
 
@@ -50,7 +52,7 @@ gh_labs_repo: "https://github.com/rhit-csse332/csse332-labs.git"
 
 moodle_url: "https://moodle.rose-hulman.edu/course/view.php?id=105550"
 gradescope_url: "https://www.gradescope.com/courses/742262"
-course_term: "Spring 2023-24"
+course_term: "Summer 2023-24"
 
 xv6_book_url: "https://pdos.csail.mit.edu/6.828/2022/xv6/book-riscv-rev3.pdf"
 
@@ -175,7 +177,7 @@ footer-link-col: "#404040"
 
 # --- Comments --- #
 
-theme: jekyll-theme-minimal
+# theme: jekyll-theme-minimal
 
 # To use Disqus comments, sign up to https://disqus.com and fill in your Disqus shortname (NOT the userid)
 #disqus: ""
