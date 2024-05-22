@@ -127,7 +127,7 @@ After completing this class, you should be able to:
   site.gradescope_url }}).
 
 * Posting questions, discussions, and answers to questions asked are best done
-  on the course’s CampusWire forum.
+  on the course’s [Moodle forum]({{ site.moodle_url }}).
 
 
 ## Deadlines and Late Policy
@@ -135,22 +135,6 @@ After completing this class, you should be able to:
 The deadlines of all homeworks, labs, and project milestones are listed on
 the [schedule]({{ site.baseurl }}/schedule/) page.
 
-In general, you should plan ahead and submit assignments on time. This course
-has no 'late day' policy and late assignments are generally worth 0 points.
-This class is fast-paced, and if you start delaying work, things will snowball
-very quickly, so plan ahead and **start early**.
-
-**Summer 2024 Policy**: Since we are offering this class remotely over the
-summer, I have adjusted the late policy slightly to accommodate your
-internships during the day. You will have up to **48 hours** after the deadline
-to submit your labs at the following cost:
-
-- If you submit up to 24 hours late, then you lose 25% of the grade.
-- If you submit up to 48 hours late, then you lose 50% of the grade.
-- Submissions after 48 hours will not be accepted unless you have made prior
-  arrangements with your instructor.
-
-<!--
 In general, you should plan ahead and submit assignments on time. This course
 has no ’late day’ policy and late assignments are generally worth 0 points
 unless you have made arrangements. This class is fast-paced, if you started
@@ -170,7 +154,6 @@ situations on a case-by-case basis.  Here are some general guidelines:
   assignment (e.g. a bug you can’t fix or just difficulty understanding) get
   help from an instructor. Don’t assume that more time will fix the problem;
   plan to get help.**
--->
 
 ## Special Arrangements
 
@@ -211,94 +194,22 @@ individually.
 
 ## Exams
 
-<!--
 There will be 2 skill exams and a final exam. Please make note of the following:
--->
-
-There will be 3 skill exams throughout the quarter, but please make note of the
-following:
 
 - You **must** earn a passing (60%) average on the exams to pass the course.
 - You **must** earn at least a C (70%) average on the exams to earn a C or
   better in the course.
 
-## Engagement/Incentive Points
-
-Keeping your motivation up during the summer term is hard, especially if you
-have a side gig or an internship going on. Therefore, we are introducing
-_engagement/incentive_ points, which will constitute **at least** 10% of your
-grade. 
-
-### Earning engagement points
-
-Every week, we will be covering at least two new topics in class. To maximize
-your engagement and help with your motivation, I will ask you to make **at
-least two posts** on the class forum on CampusWire. These posts can be any (but
-not limited to) the following:
-
-1. A question that you had about the course material.
-2. An interesting article that you found discussing the idea further, which you
-   summarize in a couple of sentences.
-3. Error you find in the class videos and/or lecture notes.
-4. Interesting and funny memes of your instructor captured in an awkward
-   moment in the video lectures.
-5. Applications of things we use in class to other domains (e.g., databases,
-   other operating systems, etc.)
-6. An interesting code example of things we learned in class, including but not
-   limited to security vulnerabilities.
-7. Other interesting ideas that might come to you.
-
-Please note that every post you make will be judged by your instructor/TA
-whether it meets the minimum requirement for earning points. For example, "In
-this session we learned about processes" does **not** count as an engagement
-point. On the other hand, "I did some research and found out how Windows
-handles processes compared to Unix and here are some details" definitely counts
-as an engagement point.
-
-### Missing engagement points
-
-To help reduce the load on you a bit, you are allowed to miss **two engagement
-point** opportunities. Those can be within the same week, i.e., you do not
-submit any post during one of the weeks, or you can spread them out over two
-weeks where you only submit one post per week. Missing engagement posts beyond
-that will reduce your grade.
-
-### What does at least 10% of the grade mean?
-
-If you submit two posts every week, then you will earn 10% of your grade.
-However, **you can continue earning points** beyond the 10% and use those to
-account for a lab you botched. Every post you make on top of the required two
-will be given a weight by you instructor. At the end of the class, you can
-exchange the number of points (weights) you have collected for grade points
-that you can add to your overall grade. This is very similar to the _incentive_
-points policy that we have used in this class before.
-
-## Quizzes
-
-Most class sessions will contain in-class quizzes that you must submit to
-complete the session. However, I already provide you with the solution for
-those quizzes so you can check your work. They are therefore more for you to
-take notes and test yourself, rather than a way for me to assess your
-understanding. You would do yourself a great favor if you do the quizzes
-yourself and then check the answers; they often contain many helpful hints for
-the exams.
-
-At the end of every quiz, there are two clear/muddy questions. The first
-question asks you to summarize two important things that you learned in the
-session while the second questions asks you to write down two questions or
-things that you are still unclear about. I will use information from those
-questions to decide what to focus on in review sessions.
 
 ## Grading
 
-| Item                  | Weight |
-|:----------------------|:-------|
-| Assignments/Labs      | 40%    |
-| Exams                 | 20%    |
-| Challenge Assignments | 15%    |
-| Project               | 10%    |
-| Engagement Points     | 10%    |
-| Quizzes               | 5%     |
+| Item                   | Weight |
+| :--------------------  | :----- |
+| Assignments/Labs       | 40%    |
+| Challenge  Assignments | 15%    |
+| Project                | 10%    |
+| Exams                  | 35%    |
+
 
 I generally follow the registrar's interpretation of letter grades, which you
 can find
@@ -456,7 +367,8 @@ are in need of help, please reach out to the [office of health
 services](https://www.rose-hulman.edu/campus-life/student-services/wellness-and-health-services/health-services/index.html)
 or [the student counseling
 center](https://www.rose-hulman.edu/campus-life/student-services/wellness-and-health-services/counseling-services/index.html).
-
+Also, if you feel comfortable, you can reach out to me so I can help you devise
+a plan to tackle your coursework for CSSE 332.
 
 ## Miscellaneous
 
@@ -465,20 +377,6 @@ center](https://www.rose-hulman.edu/campus-life/student-services/wellness-and-he
 Please note that the syllabus is a living document. We reserve the right to
 change the syllabus at any time, but you will notified of any changes.
 
-### Campus Resources
-
-Rose-Hulman provides a number of resources to help you out:
-
-- For accessibility information, please see Rose's [Student Accessibility
-  Services](https://www.rose-hulman.edu/campus-life/student-services/student-accessibility-services.html)
-- Be aware of relevant [services and policies](https://www.rose-hulman.edu/campus-life/student-life/_assets/Student-Handbook.pdf)
-  regarding student life.
-- Make sure you know the [academic policies](https://www.rose-hulman.edu/campus-life/student-services/registrar/rules-and-procedures/index.html).
-- In case of an emergency, please see Rose's [emergency
-  contacts](https://www.rose-hulman.edu/about-us/community-and-public-services/emergency.html).
-
-
-<!--
 ### Attendance policy
 
 It is in your best interest to attend all class sessions, as we will often be
@@ -489,7 +387,6 @@ Therefore, **up to two unexcused absences are allowed**. Any additional
 unexcused absence may result in you receiving a failing grade for the course.
 You will be responsible for making up any missed work during those unexcused
 absences.
-
 
 ### Illness
 
@@ -512,11 +409,10 @@ anime or to make that big push on league of legends!
 
 However, if you typically use your laptop for note taking, please talk with your
 instructor so they can make an exception.
--->
 
 ## Acknowledgments
 
-This syllabus was last modified by Mohammad Noureddine on Wed 22 May 2024. It is
+This syllabus was last modified by Mohammad Noureddine on Fri 24 Nov 2023. It is
 built on the contribution of various instructors, including Mike Hewner, Lixing
 Song, and Mark Hays.
 
