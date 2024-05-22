@@ -3,7 +3,7 @@ title: Repository Setup
 layout: post
 readtime: true
 date: Fri 24 Nov 2023
-last-updated: Sat 25 Nov 2023
+last-updated: Wed 22 May 2024
 ---
 
 # Table of contents
@@ -27,9 +27,9 @@ last-updated: Sat 25 Nov 2023
 # CSSE 332 labs
 
 All of the labs for this class will be maintained under one repository that you
-can find on GitHub using this [link]({{ site.gh_labs_repo }}). We will updating
-this repository with new labs as we continue with the quarter, so it is
-essential that you can keep track of it.
+can find on GitHub using this [link]({{ site.gh_labs_repo }}). We will be
+updating this repository with new labs as we continue with the quarter, so it
+is essential that you can keep track of it.
 
 At the same time, you should also be able to maintain your own code in a
 __private__ repository so that you never lose your progress, and can easily work
@@ -78,9 +78,11 @@ empty one.
 
 We would like to set up your repository in a way that you can pull from two
 locations:
-    1. `origin`: that would be your own repository (in case you need to move
-       between devices).
-    2. `upstream`: that would be the class's repository containing new labs.
+
+  1. `origin`: that would be your own repository (in case you need to move
+     between devices).
+
+  2. `upstream`: that would be the class's repository containing new labs.
 
 However, when you finish a lab and commit your changes, we would like to `push`
 those changes to your private repository, i.e., only to `origin`.
@@ -137,7 +139,7 @@ will show up in there. Confirm that using `ls`.
 ## 5. Push initial commit to your private repository
 
 Now, we need to sync things up to your private repository, to do so, you should
-user:
+use:
 
   ```shell
   $ git push origin main

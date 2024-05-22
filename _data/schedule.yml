@@ -6,18 +6,25 @@
 ###############################################################################
 # WEEK 1
 ###############################################################################
+# 1:
+#   reading:
+#     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/intro.pdf"> Chapter 1 of OSTEP </a>
+#   topics:
+#     - '<a href="{{ site.url }}{{ site.baseurl}}/notes/introduction/">OS Introduction</a>'
+#   materials:
+
 1:
   reading:
-    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/intro.pdf"> Chapter 1 of OSTEP </a>
   topics:
-    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/introduction/">OS Introduction</a>'
+    # - '<a href="{{ site.url }}{{ site.baseurl}}/notes/boot">The boot process</a>'
+    - <a href="{{ site.url }}{{ site.baseurl}}/notes/session01/">C Review Part 1</a>
   materials:
 
 2:
   reading:
   topics:
     # - '<a href="{{ site.url }}{{ site.baseurl}}/notes/boot">The boot process</a>'
-    - <a href="{{ site.url }}{{ site.baseurl}}/notes/session01/">C Review</a>
+    - <a href="{{ site.url }}{{ site.baseurl}}/notes/session01/">C Review Part 2</a>
   materials:
 
 3:

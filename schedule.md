@@ -52,20 +52,11 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Thu, May 30 2024
    </td>
-   <td markdown="span" style="text-align:left;">
-    {::nomarkdown}
-    <ul style="margin:0;padding:.5rem">
-     <li>
-      <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/intro.pdf">
-       Chapter 1 of OSTEP
-      </a>
-     </li>
-    </ul>
-    {:/}
+   <td markdown="span">
    </td>
    <td markdown="span" style="text-align:center">
-    <a href="{{ site.url }}{{ site.baseurl}}/notes/introduction/">
-     OS Introduction
+    <a href="{{ site.url }}{{ site.baseurl}}/notes/session01/">
+     C Review Part 1
     </a>
    </td>
    <td markdown="span">
@@ -86,7 +77,7 @@ lectures and/or assignments with an advanced week's notice.
    </td>
    <td markdown="span" style="text-align:center">
     <a href="{{ site.url }}{{ site.baseurl}}/notes/session01/">
-     C Review
+     C Review Part 2
     </a>
    </td>
    <td markdown="span">
