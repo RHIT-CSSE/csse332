@@ -52,6 +52,7 @@ gh_labs_repo: "https://github.com/rhit-csse332/csse332-labs.git"
 
 moodle_url: "https://moodle.rose-hulman.edu/course/view.php?id=105550"
 gradescope_url: "https://www.gradescope.com/courses/742262"
+campuswire_url: "https://campuswire.com/c/G5C8AA17E/feed"
 course_term: "Summer 2023-24"
 
 xv6_book_url: "https://pdos.csail.mit.edu/6.828/2022/xv6/book-riscv-rev3.pdf"

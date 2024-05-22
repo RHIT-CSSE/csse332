@@ -127,7 +127,7 @@ After completing this class, you should be able to:
   site.gradescope_url }}).
 
 * Posting questions, discussions, and answers to questions asked are best done
-  on the course’s CampusWire forum.
+  on the course’s [CampusWire forum]({{site.campuswire_url}})
 
 
 ## Deadlines and Late Policy
