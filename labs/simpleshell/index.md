@@ -96,7 +96,7 @@ parsing libraries, feel free to check out the [libreadline
 library](https://tiswww.case.edu/php/chet/readline/rltop.html).
 
 For our purposes, here's a simple breakdown of how things happen in our parsing
-scheme. Our shell, let's call it Rose shell, or `rhsh`, prompts the user for a
+scheme. Our shell, let's call it Rose shell, or `SHELL`, prompts the user for a
 command that is no longer than 82 characters. We then parse this command into
 two strings stored in an array of character pointers, thus the following two
 lines:
@@ -165,27 +165,62 @@ you out, the `donothing` program will print out information about its arguments.
 Here is an example of running the shell on my terminal:
 ```shell
 $ ./simpleshell
-RHSH% ./donothing
+SHELL% ./donothing
 Command is './donothing' with no arguments
 Do nothing program started!
 EXECUTABLE './donothing'
 Pausing for 5 seconds...
 Do nothing program finished!
-RHSH% ./donothing foobar
+SHELL% ./donothing foobar
 Command is './donothing' with argument 'foobar'
 Do nothing program started!
 EXECUTABLE './donothing'
 ARGUMENT 1: foobar
 Pausing for 5 seconds...
 Do nothing program finished!
-RHSH% ^C
+SHELL% ^C
 ```
-Note that to exit `RHSH`, you should hit `^C` (or ctrl-c), which will kill the
+Note that to exit `SHELL`, you should hit `^C` (or ctrl-c), which will kill the
 main `simpleshell` process.
 
-# Step 2: Basic Background Commands
+# Step 2: Repeated Commands
 
-In step 1, you will notice that when `rhsh` executes a command, the main shell
+In this step, we would like to give our users the ability to launch the same
+command multiple times, and then wait for all of them to finish **in the order
+in which they are launched**.
+
+Modify your code such that if the user's command starts with a single digit `n`
+(you can assume we can only launch 1 to 9 programs), the shell would then
+create `n` processes to execute the command following that digit `n`. The shell
+**can wait for the commands to complete in any order, not necessarily the one
+in which they were launched**.
+
+Here is an example of running such a command on my terminal, with some verbose
+information that you can feel free to replicate:
+```
+SHELL% 2./donothing
+Command is '2./donothing' with no arguments
+Will generate 2 commands ./donothing
+Do nothing program started!
+EXECUTABLE './donothing'
+Pausing for 5 seconds...
+Do nothing program started!
+EXECUTABLE './donothing'
+Pausing for 5 seconds...
+Do nothing program 3671156 finished!
+Do nothing program 3671157 finished!
+Command ./donothing for child 3671156 done..
+Command ./donothing for child 3671157 done..
+All commands finished...
+SHELL%
+```
+
+_Hint_: You might find the functions `isdigit` and `strtol` very useful. You
+can use use `man isdigit` to lookup the documentation manual page.
+
+# Step 3: Basic Background Commands
+
+In step 1, you will notice that when `SHELL` executes a command, the main shell
 will wait for the command to finish up before accepting new commands (thus the
 term __foreground__). In this step, we would like to provide support for
 __background___ commands, i.e., commands that run without blocking the simple
@@ -195,23 +230,23 @@ Using a combination of `fork`, `exec`, and `wait`, modify your code such that if
 the user's command starts with the `BG` prefix, then the shell will run the
 command in the background. In other words, if the user types
 ```shell
-RHSH% BGemacs
+SHELL% BGemacs
 ```
 The shell will open an `emacs` window and return to the prompt (i.e., the
-`RHSH%` prompt) before `emacs` finishes running. You should be able to run as
+`SHELL%` prompt) before `emacs` finishes running. You should be able to run as
 many background commands as you like. 
 
 Here is an example output from my machine:
 ```shell
 $ ./simpleshell
-RHSH% BG./donothing
+SHELL% BG./donothing
 Command is 'BG./donothing' with no arguments
-RHSH% Do nothing program started! <=== NOTE: new shell prompt prints out fast but that's not bad
+SHELL% Do nothing program started! <=== NOTE: new shell prompt prints out fast but that's not bad
 EXECUTABLE './donothing'
 Pausing for 5 seconds...
 BG./donothing <=== NOTE: this is me running a 2nd donothing in the background
 Command is 'BG./donothing' with no arguments
-RHSH% Do nothing program started!
+SHELL% Do nothing program started!
 EXECUTABLE './donothing'
 Pausing for 5 seconds...
 Do nothing program finished!
@@ -222,9 +257,9 @@ Note that your printouts might show in a different order, that is okay. We will
 understand this phenomenon more when we talk about scheduling and concurrency.
 
 At this stage of our implementation, we will be generating zombie processes.
-Let's not worry about them now, we will take care of them in Step 4. 
+Let's not worry about them now, we will take care of them in Step 5. 
 
-# Step 3: Background Commands with Finish Notification
+# Step 4: Background Commands with Finish Notification
 
 When a background command finishes, we would like our shell to let us know that
 the command is done by printing `Background command finished`. Augment your code
@@ -236,14 +271,14 @@ _Hint_: You might need more than one `fork`.
 Here's an example output from running a background command in my shell:
 ```shell
 $ ./simpleshell
-RHSH% BG./donothing
+SHELL% BG./donothing
 Command is 'BG./donothing' with no arguments
-RHSH% Do nothing program started!
+SHELL% Do nothing program started!
 EXECUTABLE './donothing'
 Pausing for 5 seconds...
 BG./donothing
 Command is 'BG./donothing' with no arguments
-RHSH% Do nothing program started!
+SHELL% Do nothing program started!
 EXECUTABLE './donothing'
 Pausing for 5 seconds...
 Do nothing program finished!
@@ -252,7 +287,7 @@ Do nothing program finished!
 Background command finished
 ```
 
-# Step 4: Zombies
+# Step 5: Zombies
 
 Now let's do a small experiment. You will need two terminal windows for this
 step. You can either open two separate terminal windows or check out
@@ -285,9 +320,21 @@ parent and then execute the `wait` call on the finished child, preventing it
 from becoming a zombie. 
 
 To achieve this, in your code, before starting your shell, register a signal
-handler for `SIGCHLD` with the operating system using:
+handler for `SIGCHLD` with the operating system. You can do so by adding the
+following function to the preamble of your code (i.e., before `main`):
 ```c
-signal(SIGCHL, handle_sigchld);
+void setsighandler(int signum, void (*handler)(int)) {
+  struct sigaction act;
+
+  act.sa_handler = handler;
+  sigemptyset(&act.sa_mask);
+  act.sa_flags = SA_RESTART;
+  sigaction(signum, &act, NULL);
+}
+```
+and then calling it from your `main` function using:
+```c
+setsighandler(SIGCHLD, handle_sigchld);
 ```
 where the function `handle_sigchld` is the function that the parent will execute
 when the `SIGCHLD` signal is received from the child.
@@ -295,6 +342,8 @@ when the `SIGCHLD` signal is received from the child.
 void handle_sigchld(int ignored)
 {
   /* TODO: Insert your code here! */
+  // This code will execute whenever a child terminates and send its parent the
+  // SIGCHLD signal.
 }
 ```
 

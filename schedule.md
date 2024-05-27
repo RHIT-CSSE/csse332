@@ -88,7 +88,7 @@ lectures and/or assignments with an advanced week's notice.
     <td colspan="5" markdown="span" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;">
     </td>
    </tr>
-   <td markdown="span" rowspan="5" style="font-size:xx-large;">
+   <td markdown="span" rowspan="6" style="font-size:xx-large;">
     <a name="w1">
      1
     </a>
@@ -119,7 +119,7 @@ lectures and/or assignments with an advanced week's notice.
   </tr>
   <tr>
    <td colspan="4" markdown="span">
-    [C Review &amp; xv6 Introduction]({{ site.url }}{{ site.baseurl }}/labs/lab00/) DUE Mon, Jun 03 2024 23:59 [Submission box]({{ site.gradescope_url }})
+    [Lab01: C Review &amp; xv6 Introduction]({{ site.url }}{{ site.baseurl }}/labs/lab00/) DUE Mon, Jun 03 2024 23:59 [Submission box]({{ site.gradescope_url }})
    </td>
   </tr>
   <tr>
@@ -170,6 +170,11 @@ lectures and/or assignments with an advanced week's notice.
     </a>
    </td>
    <td markdown="span">
+   </td>
+  </tr>
+  <tr>
+   <td colspan="4" markdown="span">
+    [Lab02: Simple Shell]({{ site.url }}{{ site.baseurl }}/labs/simpleshell/) DUE Thu, Jun 06 2024 23:59 [Submission box]({{ site.gradescope_url }})
    </td>
   </tr>
   <tr>
