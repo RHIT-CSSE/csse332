@@ -22,8 +22,9 @@ url: 'https://www.rose-hulman.edu/'
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  Moodle: "https://moodle.rose-hulman.edu/course/view.php?id=105550"
-  Gradescope: "https://www.gradescope.com/courses/742262"
+  Moodle: "https://moodle.rose-hulman.edu/course/view.php?id=108238"
+  Gradescope: "https://www.gradescope.com/courses/776585"
+  Forum: "https://campuswire.com/c/G5C8AA17E/feed"
   Syllabus: "docs/syllabus/syllabus"
   Schedule: "schedule"
   Resources: "docs/resources"
@@ -50,8 +51,8 @@ gh_homeworks_url: "https://github.com/RHIT-CSSE/csse332/tree/main/homeworks"
 gh_labs_url: "https://github.com/RHIT-CSSE/csse332/tree/main/labs"
 gh_labs_repo: "https://github.com/rhit-csse332/csse332-labs.git"
 
-moodle_url: "https://moodle.rose-hulman.edu/course/view.php?id=105550"
-gradescope_url: "https://www.gradescope.com/courses/742262"
+moodle_url: "https://moodle.rose-hulman.edu/course/view.php?id=108238"
+gradescope_url: "https://moodle.rose-hulman.edu/course/view.php?id=108238"
 campuswire_url: "https://campuswire.com/c/G5C8AA17E/feed"
 course_term: "Summer 2023-24"
 

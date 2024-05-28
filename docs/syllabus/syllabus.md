@@ -225,8 +225,8 @@ There will be 3 skill exams throughout the quarter, but please make note of the
 following:
 
 - You **must** earn a passing (60%) average on the exams to pass the course.
-- You **must** earn at least a C (70%) average on the exams to earn a C or
-  better in the course.
+- ~~You **must** earn at least a C (70%) average on the exams to earn a C or
+  better in the course.~~
 
 ## Engagement/Incentive Points
 

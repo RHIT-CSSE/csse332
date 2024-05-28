@@ -22,7 +22,7 @@ Welcome to CSSE 332, Operating Systems.
 
 4. [Re-familiarize yourself with either `vim` or `emacs`.]({{site.baseurl}}{{site.resourcespath}})
 
-5. Take the `C standing` quiz on [Gradescope]({{site.gradescope_url}}) to check
+5. Take the `C standing` quiz on [Moodle]({{site.moodle_url}}) to check
    your level of understanding.
 
    Scoring below 80% means you need to brush up on your C knowledge.
