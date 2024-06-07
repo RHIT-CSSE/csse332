@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # %%
 import yaml
-import pprint as pp
 import csv
 import logging
 import os
@@ -26,6 +25,7 @@ def find_sources_root(tree_root='csse332'):
     logging.info("Root of source tree is {}".format(os.path.join(*curr_dir)))
     return os.path.join(*curr_dir)
 
+
 def parse_time_str(time_string):
     """
     Parse a time string and return a datetime object.
@@ -41,20 +41,20 @@ def parse_time_str(time_string):
     # Buffalo says: my perferred workflow is to use the CSV mode of
     # gen_dates to produce dates in the same format as date_convert
     schedule_fmt = '%Y-%m-%d %H:%M'
-    assignment_fmt = '%Y-%m-%d %H:%M:%S'
     try:
         ret_obj = dt.strptime(time_string, schedule_fmt)
     except ValueError:
-#        logging.debug("Failed to parse {} as {}, trying {}".format(
-#            time_string, schedule_fmt, assignment_fmt
-#        ))
-#        try:
-#            ret_obj = dt.strptime(time_string, assignment_fmt)
-#        except ValueError:
+        #        logging.debug("Failed to parse {} as {}, trying {}".format(
+        #            time_string, schedule_fmt, assignment_fmt
+        #        ))
+        #        try:
+        #            ret_obj = dt.strptime(time_string, assignment_fmt)
+        #        except ValueError:
         logging.error(
             "Failed to parse datetime string '{}'".format(time_string))
 
     return ret_obj
+
 
 def determine_starting_week(schedule):
     """
@@ -338,6 +338,7 @@ def write_table_body(f, schedule, num_of_sessions_per_week, classes):
                 f.write("<td markdown=\"span\" colspan=\"4\">N/A</td>\n")
         f.write("</tr>\n")
 
+
 # %%
 if __name__ == '__main__':
     logging.basicConfig(level=logging.INFO)
@@ -363,8 +364,7 @@ if __name__ == '__main__':
     with open(schedule_path, 'r') as f:
         classes = yaml.full_load(f)
 
-    logging.info("There are {} calendar entries between assignments and class sessions"
-                 .format(len(schedule)))
+    logging.info("There are {} calendar entries between assignments and class sessions".format(len(schedule)))
 
     schedule = sorted(schedule, key=lambda k: k['date'])
 
