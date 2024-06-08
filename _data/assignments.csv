@@ -2,7 +2,8 @@ name,dirname,date,grader,moodle,notes
 WSL2 Install,wsl,2024-05-30 23:59,,No submission needed,Day 1
 Lab01: C Review & xv6 Introduction,lab00/,2024-06-03 23:59,,[Submission box]({{ site.gradescope_url }}),Day 3
 Lab02: Simple Shell,simpleshell/,2024-06-06 23:59,,[Submission box]({{ site.gradescope_url }}),Day 5
-#Process Lab,processlab/,2024-03-14 23:59,,[Submission box]({{ site.gradescope_url }}),Day 7
+Lab03: Process Lab,processlab/,2024-06-10 23:59,,[Submission box]({{ site.gradescope_url }}),Day 7
+Lab04: Debugging Lab,debug/,2024-06-13 23:59,,[Submission box]({{ site.gradescope_url }}),Day 9
 #Heap Manager,heapmm/,2024-03-18 23:59,,[Submission box]({{ site.gradescope_url }}),Day 9
 #[Challenge] Heap Manager II,buddy/,2024-03-26 23:59,,[Submission box]({{ site.gradescope_url }}),Day 16
 #[Challenge] Copy-on-Write,cow,2024-04-04 23:59,,[Submission box]({{ site.gradescope_url }}),Day 19

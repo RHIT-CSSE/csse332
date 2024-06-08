@@ -61,58 +61,23 @@
 
 7:
   reading:
-    - <a hred="https://www.gnu.org/software/make/manual/make.html"> Make documentation page </a>
+    # - <a hred="https://www.gnu.org/software/make/manual/make.html"> Make documentation page </a>
+    - <a href="https://math.hws.edu/eck/cs431/f16/about-gdb.html"> gdb cheat sheet </a>
   topics:
-    - <a href="{{ site.url }}{{ site.baseurl}}/notes/makefiles/"> Makefiles </a>
+    # - <a href="{{ site.url }}{{ site.baseurl}}/notes/makefiles/"> Makefiles </a>
+    - C debugging
   materials:
 
 8:
   reading:
   topics:
-    - '<b>Hacking Day: Heap Manager</b>'
+    - Debugging in xv6
   materials: 
 
 ###############################################################################
 # WEEK 3
 ###############################################################################
 9:
-  reading:
-    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-mechanism.pdf"> Chapter 15 of OSTEP </a>
-  topics:
-    - <a href="{{ site.url }}{{ site.baseurl}}/notes/paging"> Introduction to Paging </a>
-  materials: 
-
-10:
-  reading:
-    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-paging.pdf"> Chapter 18 of OSTEP </a>
-  topics:
-    - <a href="{{ site.url }}{{ site.baseurl}}/notes/session15"> Paging </a>
-  materials:
-    - <a href="{{site.url}}{{site.baseurl}}/docs/activities/paging/"> Activity </a>
-
-11:
-  reading:
-  topics:
-    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session09"> Exam 1: Part 1 Review </a>'
-  materials:
-
-12:
-  reading:
-  topics:
-    - '<b> Exam 1: Part 1 </b>'
-  materials:
-
-###############################################################################
-# WEEK 4
-###############################################################################
-13:
-  reading:
-    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-smalltables.pdf"> Chapter 20 of OSTEP </a>
-  topics:
-    - <a href="{{ site.url }}{{ site.baseurl}}/notes/session16"> Multi-level Page Tables </a>
-  materials:
-
-14:
   reading:
     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/file-devices.pdf"> Section 36.4 of Chapter 16 </a>
   topics:
@@ -121,210 +86,256 @@
   materials:
     <a href="{{site.url}}{{site.baseurl}}/docs/activities/systrace/"> Activity </a>
 
-15:
+10:
   reading:
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-mechanism.pdf"> Chapter 15 of OSTEP </a>
   topics:
-    - 'Exam 1: Part 2 Review'
-    # - '<a href="{{ site.url }}{{ site.baseurl}}/labs/lab05"> Lab: Virtual Memory II </a>'
-  materials:
+    - <a href="{{ site.url }}{{ site.baseurl}}/notes/paging"> Introduction to Paging </a>
+  materials: 
 
-16:
+11:
   reading:
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-paging.pdf"> Chapter 18 of OSTEP </a>
   topics:
-    - '<b> Exam 1: Part 2 </b>'
-    # - '<a href="{{ site.url }}{{ site.baseurl}}/labs/lab05"> Lab: Virtual Memory II </a>'
+    - <a href="{{ site.url }}{{ site.baseurl}}/notes/session15"> Paging </a>
   materials:
+    - <a href="{{site.url}}{{site.baseurl}}/docs/activities/paging/"> Activity </a>
 
+# 11:
+#   # reading:
+  # topics:
+  #   - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session09"> Exam 1: Part 1 Review </a>'
+  # materials:
 
-
-################################################################################
-## WEEK 5
-################################################################################
-
-17:
-  reading:
-  topics:
-    - <a href="{{site.url}}{{site.baseurl}}/docs/activities/lazy_pages/"> Lazy page allocation activity </a>
-    # - <a href="{{ site.url }}{{ site.baseurl}}/notes/session17"> Paging Activity </a>
-  materials:
-
-18:
-  reading:
-    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf"> Chapter 26 of OSTEP </a>
-  topics:
-    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session18"> Threads: Lightweight Processes </a>'
-  materials:
-
-19:
-  reading:
-    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-locks.pdf"> Chapter 28 of OSTEP </a>
-  topics:
-    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session19"> Concurrency: Mutex & Condition Variables </a>'
-  materials:
-    <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
-
-20:
-  reading:
-  topics:
-    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session20"> Mutex locks practice </a>'
-  materials:
-    <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
-
-################################################################################
-## WEEK 6
-################################################################################
-21:
-  reading:
-    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 of OSTEP </a>
-  topics:
-    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session20"> Concurrency: Condition Variables </a>'
-  materials:
-    <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
-
-22:
-  reading:
-    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 of OSTEP </a>
-  topics:
-    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session20"> Concurrency: Condition Variables Practice </a>'
-  materials:
-    <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
-
-23:
-  reading:
-    - <a href="https://en.wikipedia.org/wiki/Producer%E2%80%93consumer_problem"> Wiki Page for Prod/Cons Problem </a>
-  topics:
-    # - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session23"> Concurrency: Deadlocks </a>'
-    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session21"> Concurrency: Producer-consumer Problem </a>'
-  materials:
-    <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
-
-24:
-  reading:
-  topics:
-    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session22"> Concurrency: Readers/Writers Problem </a>'
-  materials:
-    <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
-
-
-################################################################################
-## WEEK 7
-################################################################################
-25:
-  reading:
-    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched.pdf"> Chapter 7 of OSTEP </a>
-  topics:
-    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session29"> CPU Scheduling I </a>'
-  materials:
-
-# 26:
+# 12:
 #   reading:
-#     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched-mlfq.pdf"> Chapter 8 of OSTEP </a>
 #   topics:
-#     - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session30"> CPU Scheduling II </a>'
+#     - '<b> Exam 1: Part 1 </b>'
 #   materials:
 
-26:
-  reading:
-    - <a href="https://pdos.csail.mit.edu/6.828/2022/xv6/book-riscv-rev3.pdf"> Chapter 7 of the xv6 book </a>
-  topics:
-    - <a href="{{ site.url }}{{ site.baseurl}}/labs/sched/"> The xv6 scheduler </a>
-  materials:
-
-27:
-  reading:
-  topics:
-    - '<a href="{{site.url}}{{site.baseurl}}/assets/files/cv_guide.pdf"> Exam 2 Review </a>'
-    # - '<a href="{{ site.url }}{{ site.baseurl}}/docs/cv_unofficial_guide/"> Exam 2 Review </a>'
-  materials:
-
-28:
-  reading:
-  topics:
-    - <b> Exam 2 Part 1 </b>
-  materials:
-
-################################################################################
-## WEEK 8
-################################################################################
-29:
-  reading:
-    - <a href="https://www.eecs.umich.edu/courses/eecs588/static/stack_smashing.pdf"> Smashing The Stack for Fun and Profit </a>
-  topics:
-    - <a href="{{ site.url }}{{ site.baseurl}}/docs/activities/mem_safety_intro"> Introduction to Memory Safety </a>
-  materials:
-
-30:
-  reading:
-  topics:
-    - <a href="{{ site.url }}{{ site.baseurl}}/notes/session34"> Stack Smashing and Its Variants </a>
-  materials:
-
-
-31:
-  reading:
-  topics:
-    - <a href="{{ site.url }}{{ site.baseurl}}/labs/lab13/"> Return-to-libc Attacks </a>
-  materials:
-
-32:
-  reading:
-  topics:
-    - <b> Exam 2 Part 2 </b>
-  materials:
-
-################################################################################
-## WEEK 9
-################################################################################
-33:
-  reading: 
-    - <a href="https://hovav.net/ucsd/dist/geometry.pdf"> The Geometry of Innocent Flesh on the Bone </a>
-  topics: 
-    - <a href=""> Return-Oriented-Programming and Wrap-up </a>
-  materials:
-
-34:
-  reading:
-  topics:
-    - <a href="{{ site.url }}{{ site.baseurl}}/notes/filesystems/"> File Systems </a>
-  materials:
-
-35:
-  reading:
-  topics:
-    - <b> Project Work Time </b>
-  materials:
-
-36:
-  reading:
-  topics:
-    - <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/"> Project Work Time and Meetings </a>
-  materials:
-
-
-################################################################################
-## WEEK 10 
-################################################################################
-37:
-  reading:
-  topics:
-    - "<b> Lab: ext2 file system </b>"
-  materials:
-
-38:
-  reading:
-  topics:
-    - <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/"> Project Work Time and Meetings </a>
-  materials:
+###############################################################################
+# WEEK 4
+###############################################################################
+# 13:
+#   reading:
+#     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-smalltables.pdf"> Chapter 20 of OSTEP </a>
+#   topics:
+#     - <a href="{{ site.url }}{{ site.baseurl}}/notes/session16"> Multi-level Page Tables </a>
+#   materials:
 #
-39:
-  reading:
-  topics:
-    - <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/"> Project Work Time and Meetings </a>
-  materials:
+# 14:
+#   reading:
+#     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/file-devices.pdf"> Section 36.4 of Chapter 16 </a>
+#   topics:
+#     # - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session18"> Threads: Lightweight Processes </a>'
+#     - Interrupts and Traps
+#   materials:
+#     <a href="{{site.url}}{{site.baseurl}}/docs/activities/systrace/"> Activity </a>
 #
-40:
-  reading:
-  topics:
-    - <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/"> Project Work Time and Meetings </a>
-  materials:
-
+# 15:
+#   reading:
+#   topics:
+#     - 'Exam 1: Part 2 Review'
+#     # - '<a href="{{ site.url }}{{ site.baseurl}}/labs/lab05"> Lab: Virtual Memory II </a>'
+#   materials:
+#
+# 16:
+#   reading:
+#   topics:
+#     - '<b> Exam 1: Part 2 </b>'
+#     # - '<a href="{{ site.url }}{{ site.baseurl}}/labs/lab05"> Lab: Virtual Memory II </a>'
+#   materials:
+#
+#
+#
+# ################################################################################
+# ## WEEK 5
+# ################################################################################
+#
+# 17:
+#   reading:
+#   topics:
+#     - <a href="{{site.url}}{{site.baseurl}}/docs/activities/lazy_pages/"> Lazy page allocation activity </a>
+#     # - <a href="{{ site.url }}{{ site.baseurl}}/notes/session17"> Paging Activity </a>
+#   materials:
+#
+# 18:
+#   reading:
+#     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf"> Chapter 26 of OSTEP </a>
+#   topics:
+#     - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session18"> Threads: Lightweight Processes </a>'
+#   materials:
+#
+# 19:
+#   reading:
+#     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-locks.pdf"> Chapter 28 of OSTEP </a>
+#   topics:
+#     - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session19"> Concurrency: Mutex & Condition Variables </a>'
+#   materials:
+#     <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
+#
+# 20:
+#   reading:
+#   topics:
+#     - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session20"> Mutex locks practice </a>'
+#   materials:
+#     <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
+#
+# ################################################################################
+# ## WEEK 6
+# ################################################################################
+# 21:
+#   reading:
+#     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 of OSTEP </a>
+#   topics:
+#     - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session20"> Concurrency: Condition Variables </a>'
+#   materials:
+#     <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
+#
+# 22:
+#   reading:
+#     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 of OSTEP </a>
+#   topics:
+#     - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session20"> Concurrency: Condition Variables Practice </a>'
+#   materials:
+#     <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
+#
+# 23:
+#   reading:
+#     - <a href="https://en.wikipedia.org/wiki/Producer%E2%80%93consumer_problem"> Wiki Page for Prod/Cons Problem </a>
+#   topics:
+#     # - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session23"> Concurrency: Deadlocks </a>'
+#     - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session21"> Concurrency: Producer-consumer Problem </a>'
+#   materials:
+#     <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
+#
+# 24:
+#   reading:
+#   topics:
+#     - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session22"> Concurrency: Readers/Writers Problem </a>'
+#   materials:
+#     <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
+#
+#
+# ################################################################################
+# ## WEEK 7
+# ################################################################################
+# 25:
+#   reading:
+#     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched.pdf"> Chapter 7 of OSTEP </a>
+#   topics:
+#     - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session29"> CPU Scheduling I </a>'
+#   materials:
+#
+# # 26:
+# #   reading:
+# #     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched-mlfq.pdf"> Chapter 8 of OSTEP </a>
+# #   topics:
+# #     - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session30"> CPU Scheduling II </a>'
+# #   materials:
+#
+# 26:
+#   reading:
+#     - <a href="https://pdos.csail.mit.edu/6.828/2022/xv6/book-riscv-rev3.pdf"> Chapter 7 of the xv6 book </a>
+#   topics:
+#     - <a href="{{ site.url }}{{ site.baseurl}}/labs/sched/"> The xv6 scheduler </a>
+#   materials:
+#
+# 27:
+#   reading:
+#   topics:
+#     - '<a href="{{site.url}}{{site.baseurl}}/assets/files/cv_guide.pdf"> Exam 2 Review </a>'
+#     # - '<a href="{{ site.url }}{{ site.baseurl}}/docs/cv_unofficial_guide/"> Exam 2 Review </a>'
+#   materials:
+#
+# 28:
+#   reading:
+#   topics:
+#     - <b> Exam 2 Part 1 </b>
+#   materials:
+#
+# ################################################################################
+# ## WEEK 8
+# ################################################################################
+# 29:
+#   reading:
+#     - <a href="https://www.eecs.umich.edu/courses/eecs588/static/stack_smashing.pdf"> Smashing The Stack for Fun and Profit </a>
+#   topics:
+#     - <a href="{{ site.url }}{{ site.baseurl}}/docs/activities/mem_safety_intro"> Introduction to Memory Safety </a>
+#   materials:
+#
+# 30:
+#   reading:
+#   topics:
+#     - <a href="{{ site.url }}{{ site.baseurl}}/notes/session34"> Stack Smashing and Its Variants </a>
+#   materials:
+#
+#
+# 31:
+#   reading:
+#   topics:
+#     - <a href="{{ site.url }}{{ site.baseurl}}/labs/lab13/"> Return-to-libc Attacks </a>
+#   materials:
+#
+# 32:
+#   reading:
+#   topics:
+#     - <b> Exam 2 Part 2 </b>
+#   materials:
+#
+# ################################################################################
+# ## WEEK 9
+# ################################################################################
+# 33:
+#   reading: 
+#     - <a href="https://hovav.net/ucsd/dist/geometry.pdf"> The Geometry of Innocent Flesh on the Bone </a>
+#   topics: 
+#     - <a href=""> Return-Oriented-Programming and Wrap-up </a>
+#   materials:
+#
+# 34:
+#   reading:
+#   topics:
+#     - <a href="{{ site.url }}{{ site.baseurl}}/notes/filesystems/"> File Systems </a>
+#   materials:
+#
+# 35:
+#   reading:
+#   topics:
+#     - <b> Project Work Time </b>
+#   materials:
+#
+# 36:
+#   reading:
+#   topics:
+#     - <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/"> Project Work Time and Meetings </a>
+#   materials:
+#
+#
+# ################################################################################
+# ## WEEK 10 
+# ################################################################################
+# 37:
+#   reading:
+#   topics:
+#     - "<b> Lab: ext2 file system </b>"
+#   materials:
+#
+# 38:
+#   reading:
+#   topics:
+#     - <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/"> Project Work Time and Meetings </a>
+#   materials:
+# #
+# 39:
+#   reading:
+#   topics:
+#     - <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/"> Project Work Time and Meetings </a>
+#   materials:
+# #
+# 40:
+#   reading:
+#   topics:
+#     - <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/"> Project Work Time and Meetings </a>
+#   materials:
+#
