@@ -295,6 +295,40 @@ lectures and/or assignments with an advanced week's notice.
     {::nomarkdown}
     <ul style="margin:0;padding:.5rem">
      <li>
+      <a href="{{ site.baseurl }}/labs/heapmm/">
+       Lab 05: Heap Manager I
+      </a>
+     </li>
+    </ul>
+    {:/}
+   </td>
+   <td markdown="span" style="text-align:center">
+    <b>
+     Hacking Day: Lab 05
+    </b>
+   </td>
+   <td markdown="span">
+   </td>
+  </tr>
+  <tr>
+   <tr>
+    <td colspan="5" markdown="span" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;">
+    </td>
+   </tr>
+   <td markdown="span" rowspan="5" style="font-size:xx-large;">
+    <a name="w3">
+     3
+    </a>
+   </td>
+   <td markdown="span">
+    11
+    <br/>
+    Mon, Jun 17 2024
+   </td>
+   <td markdown="span" style="text-align:left;">
+    {::nomarkdown}
+    <ul style="margin:0;padding:.5rem">
+     <li>
       <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-mechanism.pdf">
        Chapter 15 of OSTEP
       </a>
@@ -311,19 +345,15 @@ lectures and/or assignments with an advanced week's notice.
    </td>
   </tr>
   <tr>
-   <tr>
-    <td colspan="5" markdown="span" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;">
-    </td>
-   </tr>
-   <td markdown="span" rowspan="4" style="font-size:xx-large;">
-    <a name="w3">
-     3
-    </a>
+   <td colspan="4" markdown="span">
+    [[Challenge] Lab05: Heap Manager I]({{ site.url }}{{ site.baseurl }}/labs/heapmm/) DUE Mon, Jun 17 2024 23:59 [Submission box]({{ site.gradescope_url }})
    </td>
+  </tr>
+  <tr>
    <td markdown="span">
-    11
+    12
     <br/>
-    Mon, Jun 17 2024
+    Tue, Jun 18 2024
    </td>
    <td markdown="span" style="text-align:left;">
     {::nomarkdown}
@@ -342,25 +372,10 @@ lectures and/or assignments with an advanced week's notice.
     </a>
    </td>
    <td markdown="span">
-    {::nomarkdown}
-    <ul style="margin:0;padding:.5rem">
-     <li>
-      <a href="{{site.url}}{{site.baseurl}}/docs/activities/paging/">
-       Activity
-      </a>
-     </li>
-    </ul>
-    {:/}
-   </td>
-  </tr>
-  <tr>
-   <td markdown="span">
-    12
+    <a href="{{site.url}}{{site.baseurl}}/docs/activities/paging/">
+     Activity
+    </a>
     <br/>
-    Tue, Jun 18 2024
-   </td>
-   <td colspan="3" markdown="span">
-    N/A
    </td>
   </tr>
   <tr>
@@ -369,8 +384,14 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Thu, Jun 20 2024
    </td>
-   <td colspan="3" markdown="span">
-    N/A
+   <td markdown="span">
+   </td>
+   <td markdown="span" style="text-align:center">
+    <a href="{{ site.url }}{{ site.baseurl}}/notes/session09">
+     Exam 1 Review
+    </a>
+   </td>
+   <td markdown="span">
    </td>
   </tr>
   <tr>
@@ -379,8 +400,14 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Fri, Jun 21 2024
    </td>
-   <td colspan="3" markdown="span">
-    N/A
+   <td markdown="span">
+   </td>
+   <td markdown="span" style="text-align:center">
+    <b>
+     No class: Prep for exam 1
+    </b>
+   </td>
+   <td markdown="span">
    </td>
   </tr>
   <tr>

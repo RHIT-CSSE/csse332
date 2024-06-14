@@ -88,24 +88,38 @@
 
 10:
   reading:
+    - '<a href="{{ site.baseurl }}/labs/heapmm/">Lab 05: Heap Manager I </a>'
+  topics:
+    - '<b> Hacking Day: Lab 05 </b>'
+  materials: 
+
+
+11:
+  reading:
     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-mechanism.pdf"> Chapter 15 of OSTEP </a>
   topics:
     - <a href="{{ site.url }}{{ site.baseurl}}/notes/paging"> Introduction to Paging </a>
   materials: 
 
-11:
+12:
   reading:
     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-paging.pdf"> Chapter 18 of OSTEP </a>
   topics:
     - <a href="{{ site.url }}{{ site.baseurl}}/notes/session15"> Paging </a>
   materials:
-    - <a href="{{site.url}}{{site.baseurl}}/docs/activities/paging/"> Activity </a>
+    <a href="{{site.url}}{{site.baseurl}}/docs/activities/paging/"> Activity </a>
 
-# 11:
-#   # reading:
-  # topics:
-  #   - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session09"> Exam 1: Part 1 Review </a>'
-  # materials:
+13:
+  reading:
+  topics:
+    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session09"> Exam 1 Review </a>'
+  materials:
+
+14:
+  reading:
+  topics:
+    - '<b> No class: Prep for exam 1 </b>'
+  materials:
 
 # 12:
 #   reading:
