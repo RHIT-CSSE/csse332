@@ -415,7 +415,7 @@ lectures and/or assignments with an advanced week's notice.
     <td colspan="5" markdown="span" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;">
     </td>
    </tr>
-   <td markdown="span" rowspan="4" style="font-size:xx-large;">
+   <td markdown="span" rowspan="5" style="font-size:xx-large;">
     <a name="w4">
      4
     </a>
@@ -425,8 +425,23 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Mon, Jun 24 2024
    </td>
-   <td colspan="3" markdown="span">
-    N/A
+   <td markdown="span" style="text-align:left;">
+    {::nomarkdown}
+    <ul style="margin:0;padding:.5rem">
+     <li>
+      <a href="{{site.baseurl}}/labs/buddy/">
+       Lab 06: Heap Manager II
+      </a>
+     </li>
+    </ul>
+    {:/}
+   </td>
+   <td markdown="span" style="text-align:center">
+    <b>
+     Lab 06: Heap Manager II
+    </b>
+   </td>
+   <td markdown="span">
    </td>
   </tr>
   <tr>
@@ -435,8 +450,23 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Tue, Jun 25 2024
    </td>
-   <td colspan="3" markdown="span">
-    N/A
+   <td markdown="span" style="text-align:left;">
+    {::nomarkdown}
+    <ul style="margin:0;padding:.5rem">
+     <li>
+      <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-smalltables.pdf">
+       Chapter 20 of OSTEP
+      </a>
+     </li>
+    </ul>
+    {:/}
+   </td>
+   <td markdown="span" style="text-align:center">
+    <a href="{{ site.url }}{{ site.baseurl}}/notes/session16">
+     Multi-level Page Tables
+    </a>
+   </td>
+   <td markdown="span">
    </td>
   </tr>
   <tr>
@@ -445,8 +475,19 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Thu, Jun 27 2024
    </td>
-   <td colspan="3" markdown="span">
-    N/A
+   <td markdown="span">
+   </td>
+   <td markdown="span" style="text-align:center">
+    <a href="{{site.url}}{{site.baseurl}}/docs/activities/lazy_pages/">
+     Lazy page allocation activity
+    </a>
+   </td>
+   <td markdown="span">
+   </td>
+  </tr>
+  <tr>
+   <td colspan="4" markdown="span">
+    [[Challenge] Lab06: Heap Manager II]({{ site.url }}{{ site.baseurl }}/labs/buddy/) DUE Thu, Jun 27 2024 23:59 [Submission box]({{ site.gradescope_url }})
    </td>
   </tr>
   <tr>
@@ -455,8 +496,23 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Fri, Jun 28 2024
    </td>
-   <td colspan="3" markdown="span">
-    N/A
+   <td markdown="span" style="text-align:left;">
+    {::nomarkdown}
+    <ul style="margin:0;padding:.5rem">
+     <li>
+      <a href="{{site.baseurl}}/labs/cow/">
+       Lab 07: Copy-on-Write
+      </a>
+     </li>
+    </ul>
+    {:/}
+   </td>
+   <td markdown="span" style="text-align:center">
+    <b>
+     Lab 07: Copy-On-Write
+    </b>
+   </td>
+   <td markdown="span">
    </td>
   </tr>
   <tr>
@@ -464,7 +520,7 @@ lectures and/or assignments with an advanced week's notice.
     <td colspan="5" markdown="span" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;">
     </td>
    </tr>
-   <td markdown="span" rowspan="2" style="font-size:xx-large;">
+   <td markdown="span" rowspan="3" style="font-size:xx-large;">
     <a name="w5">
      5
     </a>
@@ -474,8 +530,12 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Mon, Jul 01 2024
    </td>
-   <td colspan="3" markdown="span">
-    N/A
+   <td markdown="span">
+   </td>
+   <td markdown="span" style="text-align:center">
+    Bash Crash Course
+   </td>
+   <td markdown="span">
    </td>
   </tr>
   <tr>
@@ -484,8 +544,28 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Tue, Jul 02 2024
    </td>
-   <td colspan="3" markdown="span">
-    N/A
+   <td markdown="span" style="text-align:left;">
+    {::nomarkdown}
+    <ul style="margin:0;padding:.5rem">
+     <li>
+      <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf">
+       Chapter 26 of OSTEP
+      </a>
+     </li>
+    </ul>
+    {:/}
+   </td>
+   <td markdown="span" style="text-align:center">
+    <a href="{{ site.url }}{{ site.baseurl}}/notes/session18">
+     Threads: Lightweight Processes
+    </a>
+   </td>
+   <td markdown="span">
+   </td>
+  </tr>
+  <tr>
+   <td colspan="4" markdown="span">
+    [[Challenge] Lab07: Copy-on-Write]({{ site.url }}{{ site.baseurl }}/labs/cow) DUE Sun, Jul 07 2024 23:59 [Submission box]({{ site.gradescope_url }})
    </td>
   </tr>
   <tr>
@@ -493,7 +573,7 @@ lectures and/or assignments with an advanced week's notice.
     <td colspan="5" markdown="span" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;">
     </td>
    </tr>
-   <td markdown="span" rowspan="4" style="font-size:xx-large;">
+   <td markdown="span" rowspan="5" style="font-size:xx-large;">
     <a name="w6">
      6
     </a>
@@ -503,8 +583,27 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Mon, Jul 15 2024
    </td>
-   <td colspan="3" markdown="span">
-    N/A
+   <td markdown="span" style="text-align:left;">
+    {::nomarkdown}
+    <ul style="margin:0;padding:.5rem">
+     <li>
+      <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-locks.pdf">
+       Chapter 28 of OSTEP
+      </a>
+     </li>
+    </ul>
+    {:/}
+   </td>
+   <td markdown="span" style="text-align:center">
+    <a href="{{ site.url }}{{ site.baseurl}}/notes/session19">
+     Concurrency: Mutex &amp; Condition Variables
+    </a>
+   </td>
+   <td markdown="span">
+    <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/">
+     Activity
+    </a>
+    <br/>
    </td>
   </tr>
   <tr>
@@ -513,8 +612,18 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Tue, Jul 16 2024
    </td>
-   <td colspan="3" markdown="span">
-    N/A
+   <td markdown="span">
+   </td>
+   <td markdown="span" style="text-align:center">
+    <a href="{{ site.url }}{{ site.baseurl}}/notes/session20">
+     Mutex locks practice
+    </a>
+   </td>
+   <td markdown="span">
+    <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/">
+     Activity
+    </a>
+    <br/>
    </td>
   </tr>
   <tr>
@@ -523,8 +632,32 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Thu, Jul 18 2024
    </td>
-   <td colspan="3" markdown="span">
-    N/A
+   <td markdown="span" style="text-align:left;">
+    {::nomarkdown}
+    <ul style="margin:0;padding:.5rem">
+     <li>
+      <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf">
+       Chapter 30 of OSTEP
+      </a>
+     </li>
+    </ul>
+    {:/}
+   </td>
+   <td markdown="span" style="text-align:center">
+    <a href="{{ site.url }}{{ site.baseurl}}/notes/session20">
+     Concurrency: Condition Variables
+    </a>
+   </td>
+   <td markdown="span">
+    <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/">
+     Activity
+    </a>
+    <br/>
+   </td>
+  </tr>
+  <tr>
+   <td colspan="4" markdown="span">
+    [Lab 08: Threads &amp; Mutex Basics]({{ site.url }}{{ site.baseurl }}/labs/threads_basics) DUE Thu, Jul 18 2024 23:59 [Submission box]({{ site.gradescope_url }})
    </td>
   </tr>
   <tr>
@@ -533,8 +666,27 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Fri, Jul 19 2024
    </td>
-   <td colspan="3" markdown="span">
-    N/A
+   <td markdown="span" style="text-align:left;">
+    {::nomarkdown}
+    <ul style="margin:0;padding:.5rem">
+     <li>
+      <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf">
+       Chapter 30 of OSTEP
+      </a>
+     </li>
+    </ul>
+    {:/}
+   </td>
+   <td markdown="span" style="text-align:center">
+    <a href="{{ site.url }}{{ site.baseurl}}/notes/session20">
+     Concurrency: Condition Variables Practice
+    </a>
+   </td>
+   <td markdown="span">
+    <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/">
+     Activity
+    </a>
+    <br/>
    </td>
   </tr>
   <tr>
@@ -542,7 +694,7 @@ lectures and/or assignments with an advanced week's notice.
     <td colspan="5" markdown="span" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;">
     </td>
    </tr>
-   <td markdown="span" rowspan="4" style="font-size:xx-large;">
+   <td markdown="span" rowspan="6" style="font-size:xx-large;">
     <a name="w7">
      7
     </a>
@@ -552,8 +704,32 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Mon, Jul 22 2024
    </td>
-   <td colspan="3" markdown="span">
-    N/A
+   <td markdown="span" style="text-align:left;">
+    {::nomarkdown}
+    <ul style="margin:0;padding:.5rem">
+     <li>
+      <a href="https://en.wikipedia.org/wiki/Producer%E2%80%93consumer_problem">
+       Wiki Page for Prod/Cons Problem
+      </a>
+     </li>
+    </ul>
+    {:/}
+   </td>
+   <td markdown="span" style="text-align:center">
+    <a href="{{ site.url }}{{ site.baseurl}}/notes/session21">
+     Concurrency: Producer-consumer Problem
+    </a>
+   </td>
+   <td markdown="span">
+    <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/">
+     Activity
+    </a>
+    <br/>
+   </td>
+  </tr>
+  <tr>
+   <td colspan="4" markdown="span">
+    [Lab 09: Condition Variables Basics]({{ site.url }}{{ site.baseurl }}/labs/condvar) DUE Mon, Jul 22 2024 23:59 [Submission box]({{ site.gradescope_url }})
    </td>
   </tr>
   <tr>
@@ -562,8 +738,18 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Tue, Jul 23 2024
    </td>
-   <td colspan="3" markdown="span">
-    N/A
+   <td markdown="span">
+   </td>
+   <td markdown="span" style="text-align:center">
+    <a href="{{ site.url }}{{ site.baseurl}}/notes/session22">
+     Concurrency: Readers/Writers Problem
+    </a>
+   </td>
+   <td markdown="span">
+    <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/">
+     Activity
+    </a>
+    <br/>
    </td>
   </tr>
   <tr>
@@ -572,8 +758,17 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Thu, Jul 25 2024
    </td>
-   <td colspan="3" markdown="span">
-    N/A
+   <td markdown="span">
+   </td>
+   <td markdown="span" style="text-align:center">
+    Exam 2 Review
+   </td>
+   <td markdown="span">
+   </td>
+  </tr>
+  <tr>
+   <td colspan="4" markdown="span">
+    [[Challenge] Lab 10: Condition Variables II]({{ site.url }}{{ site.baseurl }}/labs/condvar_challenge) DUE Thu, Jul 25 2024 23:59 [Submission box]({{ site.gradescope_url }})
    </td>
   </tr>
   <tr>
@@ -582,8 +777,14 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Fri, Jul 26 2024
    </td>
-   <td colspan="3" markdown="span">
-    N/A
+   <td markdown="span">
+   </td>
+   <td markdown="span" style="text-align:center">
+    <b>
+     No class: Prep for exam 2
+    </b>
+   </td>
+   <td markdown="span">
    </td>
   </tr>
   <tr>
