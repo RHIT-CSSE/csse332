@@ -165,9 +165,10 @@
     
 20:
   reading:
-    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf"> Chapter 26 of OSTEP </a>
+    # - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf"> Chapter 26 of OSTEP </a>
   topics:
-    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session18"> Threads: Lightweight Processes </a>'
+    # - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session18"> Threads: Lightweight Processes </a>'
+    - <b> No class, enjoy the break </b>
   materials:
 
 ###############################################################################
@@ -175,9 +176,11 @@
 ###############################################################################
 21:
   reading:
-    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-locks.pdf"> Chapter 28 of OSTEP </a>
+    # - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-locks.pdf"> Chapter 28 of OSTEP </a>
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf"> Chapter 26 of OSTEP </a>
   topics:
-    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session19"> Concurrency: Mutex & Condition Variables </a>'
+    # - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session19"> Concurrency: Mutex & Condition Variables </a>'
+    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session18"> Threads: Lightweight Processes </a>'
   materials:
     <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
 
@@ -198,17 +201,23 @@
 
 24:
   reading:
-    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 of OSTEP </a>
   topics:
-    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session20"> Concurrency: Condition Variables Practice </a>'
+    - <b> No class, Mohammad was out sick</b>
   materials:
-    <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
 
 ###############################################################################
 # WEEK 6
 ###############################################################################
 
 25:
+  reading:
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 of OSTEP </a>
+  topics:
+    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session20"> Concurrency: Condition Variables Practice </a>'
+  materials:
+    <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
+
+26:
   reading:
     - <a href="https://en.wikipedia.org/wiki/Producer%E2%80%93consumer_problem"> Wiki Page for Prod/Cons Problem </a>
   topics:
@@ -217,24 +226,24 @@
   materials:
     <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
 
-26:
+27:
   reading:
   topics:
     - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session22"> Concurrency: Readers/Writers Problem </a>'
   materials:
     <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
 
-27:
+28:
   reading:
   topics:
     - Exam 2 Review
   materials:
 
-28:
-  reading:
-  topics:
-    - '<b> No class: Prep for exam 2 </b>'
-  materials:
+# 28:
+#   reading:
+#   topics:
+#     - '<b> No class: Prep for exam 2 </b>'
+#   materials:
 
 
 

@@ -544,21 +544,12 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Tue, Jul 02 2024
    </td>
-   <td markdown="span" style="text-align:left;">
-    {::nomarkdown}
-    <ul style="margin:0;padding:.5rem">
-     <li>
-      <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf">
-       Chapter 26 of OSTEP
-      </a>
-     </li>
-    </ul>
-    {:/}
+   <td markdown="span">
    </td>
    <td markdown="span" style="text-align:center">
-    <a href="{{ site.url }}{{ site.baseurl}}/notes/session18">
-     Threads: Lightweight Processes
-    </a>
+    <b>
+     No class, enjoy the break
+    </b>
    </td>
    <td markdown="span">
    </td>
@@ -587,16 +578,16 @@ lectures and/or assignments with an advanced week's notice.
     {::nomarkdown}
     <ul style="margin:0;padding:.5rem">
      <li>
-      <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-locks.pdf">
-       Chapter 28 of OSTEP
+      <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf">
+       Chapter 26 of OSTEP
       </a>
      </li>
     </ul>
     {:/}
    </td>
    <td markdown="span" style="text-align:center">
-    <a href="{{ site.url }}{{ site.baseurl}}/notes/session19">
-     Concurrency: Mutex &amp; Condition Variables
+    <a href="{{ site.url }}{{ site.baseurl}}/notes/session18">
+     Threads: Lightweight Processes
     </a>
    </td>
    <td markdown="span">
@@ -666,6 +657,31 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Fri, Jul 19 2024
    </td>
+   <td markdown="span">
+   </td>
+   <td markdown="span" style="text-align:center">
+    <b>
+     No class, Mohammad was out sick
+    </b>
+   </td>
+   <td markdown="span">
+   </td>
+  </tr>
+  <tr>
+   <tr>
+    <td colspan="5" markdown="span" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;">
+    </td>
+   </tr>
+   <td markdown="span" rowspan="6" style="font-size:xx-large;">
+    <a name="w7">
+     7
+    </a>
+   </td>
+   <td markdown="span">
+    25
+    <br/>
+    Mon, Jul 22 2024
+   </td>
    <td markdown="span" style="text-align:left;">
     {::nomarkdown}
     <ul style="margin:0;padding:.5rem">
@@ -690,19 +706,15 @@ lectures and/or assignments with an advanced week's notice.
    </td>
   </tr>
   <tr>
-   <tr>
-    <td colspan="5" markdown="span" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;">
-    </td>
-   </tr>
-   <td markdown="span" rowspan="6" style="font-size:xx-large;">
-    <a name="w7">
-     7
-    </a>
+   <td colspan="4" markdown="span">
+    [Lab 09: Condition Variables Basics]({{ site.url }}{{ site.baseurl }}/labs/condvar) DUE Mon, Jul 22 2024 23:59 [Submission box]({{ site.gradescope_url }})
    </td>
+  </tr>
+  <tr>
    <td markdown="span">
-    25
+    26
     <br/>
-    Mon, Jul 22 2024
+    Tue, Jul 23 2024
    </td>
    <td markdown="span" style="text-align:left;">
     {::nomarkdown}
@@ -728,15 +740,10 @@ lectures and/or assignments with an advanced week's notice.
    </td>
   </tr>
   <tr>
-   <td colspan="4" markdown="span">
-    [Lab 09: Condition Variables Basics]({{ site.url }}{{ site.baseurl }}/labs/condvar) DUE Mon, Jul 22 2024 23:59 [Submission box]({{ site.gradescope_url }})
-   </td>
-  </tr>
-  <tr>
    <td markdown="span">
-    26
+    27
     <br/>
-    Tue, Jul 23 2024
+    Thu, Jul 25 2024
    </td>
    <td markdown="span">
    </td>
@@ -753,20 +760,6 @@ lectures and/or assignments with an advanced week's notice.
    </td>
   </tr>
   <tr>
-   <td markdown="span">
-    27
-    <br/>
-    Thu, Jul 25 2024
-   </td>
-   <td markdown="span">
-   </td>
-   <td markdown="span" style="text-align:center">
-    Exam 2 Review
-   </td>
-   <td markdown="span">
-   </td>
-  </tr>
-  <tr>
    <td colspan="4" markdown="span">
     [[Challenge] Lab 10: Condition Variables II]({{ site.url }}{{ site.baseurl }}/labs/condvar_challenge) DUE Thu, Jul 25 2024 23:59 [Submission box]({{ site.gradescope_url }})
    </td>
@@ -780,9 +773,7 @@ lectures and/or assignments with an advanced week's notice.
    <td markdown="span">
    </td>
    <td markdown="span" style="text-align:center">
-    <b>
-     No class: Prep for exam 2
-    </b>
+    Exam 2 Review
    </td>
    <td markdown="span">
    </td>
