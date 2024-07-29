@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lab 13 Stack Smashing
+title: Lab 11 Memory Organization and Safety
 readtime: true
 date: Wed Feb 8 2023
 ---
@@ -98,13 +98,16 @@ provide you with. To do so, you should install some software first to cross
 compile 32 bit applications on a 64 bit machine. To do so, run
 
 ```shell
-$ sudo apt install -y gdb gdb-multiarch gcc-multilib python2
+sudo apt install -y gdb gdb-multiarch gcc-multilib python2
+sudo apt install -y gcc-riscv64-linux-gnu
 ```
+
+(The reason we run both steps is because xv6 needs gcc-riscv. If you run these instructions in this order, both this lab and xv6 will work.)
 
 Also, install `gef` on top of `gdb`, it will make your life a lot easier.
 
 ```shell
-$ bash -c "$(curl -fsSL https://gef.blah.cat/sh)"
+bash -c "$(curl -fsSL https://gef.blah.cat/sh)"
 ```
 
 ## A Note on Python
@@ -502,6 +505,7 @@ gef> x/s 0x8048000 + 0x6d871
 ```
 
 
+<!--
 # Part 6 (Choose this or part 7 or part 8) 🌶️🌶️🌶️🌶️
 
 This part uses the same code as the part 3, but it is compiled with DEP enabled.
@@ -547,8 +551,9 @@ your code, use the following:
 $ sudo ./part7 "$(python2 part7.py)"
 #
 ```
+-->
 
-# Part 8 (chose this or part 6 or part 7) 🌶️🌶️🌶️
+# Part 6 🌶️🌶️🌶️
 
 At the start of this lab, we asked you to turn off ASLR to make your exploits
 feasible. If enabled, ASLR will make exploiting a buffer overflow really hard
@@ -566,11 +571,11 @@ this program, despite the presence of our little randomization.
 
 ## Submission
 
-Create a python program, called `part8.py`, that prints the line you must pass
-as an argument to your `part8` to cause the creation of a root shell. To test
+Create a python program, called `part6.py`, that prints the line you must pass
+as an argument to your `part6` to cause the creation of a root shell. To test
 your code, use the following:
 ```shell
-$ sudo ./part8 "$(python2 part8.py)"
+$ sudo ./part6 "$(python2 part6.py)"
 #
 ```
 
@@ -589,11 +594,11 @@ of the binaries.
 
 # Rubric
 
-| Part                       | Points |
-| ----------------           | ------ |
-| Part 1                     | 10     |
-| Part 2                     | 10     |
-| Part 3                     | 15     |
-| Part 4                     | 20     |
-| Part 5                     | 20     |
-| Part 6 or Part 7 or Part 8 | 25     |
+| Part   | Points |
+|--------|--------|
+| Part 1 | 10     |
+| Part 2 | 10     |
+| Part 3 | 15     |
+| Part 4 | 20     |
+| Part 5 | 20     |
+| Part 6 | 25     |
