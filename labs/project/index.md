@@ -23,14 +23,17 @@ each will have the following:
    source code.
 2. Its separate stack (the stack will live in the same address space, they
    will just be at separate locations).
-3. Each thread is a separate schedulable entity. In other words, even if there
+3. Each thread is a separate schedulable entity. In other words, if there
    are two processors available, then both threads can be actively running at
    the same time.
 
 To support creating and manipulating threads, we would also like to provide an
 API for our users to create and join threads, in a way similar to what the
 `pthreads` library provides. For the base project, you do not need to worry
-about synchronization; adding locks and/or condition variables would count as
+about synchronization.
+
+<!--
+; adding locks and/or condition variables would count as
 an extra bonus feature. Your implementation will be finally judged on its
 design, efficiency, usability, and any extra/added features.
 
@@ -49,6 +52,7 @@ you do in xv6. You will need to work on a virtual machine that you are able to
 crash and reboot multiple times while developing your code. Expect that you
 will need to spend twice to three times as much time on this one compared to
 the xv6 multi-threading project.
+-->
 
 # Milestone 1: The project proposal
 

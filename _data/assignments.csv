@@ -11,7 +11,10 @@ Lab 08: Threads & Mutex Basics,threads_basics,2024-07-18 23:59,,[Submission box]
 Lab 09: Condition Variables Basics,condvar,2024-07-22 23:59,,[Submission box]({{ site.gradescope_url }}),Day 23
 [Challenge] Lab 10: Condition Variables II,condvar_challenge,2024-07-25 23:59,,[Submission box]({{ site.gradescope_url }}),Day 25
 Lab 11: Memory Organization and Safety,smlab,2024-08-01 23:59,,[Submission box]({{ site.gradescope_url }}),Day 33
-#Scheduler Activity,sched,2024-04-29 23:59,,[Submission box]({{ site.gradescope_url }}),Day 29
+Project Milestone 1,milestone1,2024-08-05 23:59,,[Submission box]({{site.gradescope_url}}),Day 33
+Lab 12: The xv6 Scheduler,sched,2024-08-09 23:59,,[Submission box]({{ site.gradescope_url }}),Day 36
+Project Milestone 2,milestone2,2024-08-12 23:59,,[Submission box]({{site.gradescope_url}}),Day 37
+Final Project,final,2024-08-16 17:00,,[Submission box]({{site.gradescope_url}}),Day 40
 ## Userspace Threads I,lab09,2024-04-29 23:59,,[Submission box]({{ site.gradescope_url }}),
 ## [Challenge] Userspace Threads II,lab10,2024-04-29 23:59,,[Submission box]({{ site.gradescope_url }}),
 ## [Challenge] Hybrid Threads,lab11,2024-04-29 23:59,,[Submission box]({{ site.gradescope_url }}),

@@ -846,7 +846,7 @@ lectures and/or assignments with an advanced week's notice.
     <td colspan="5" markdown="span" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;">
     </td>
    </tr>
-   <td markdown="span" rowspan="4" style="font-size:xx-large;">
+   <td markdown="span" rowspan="6" style="font-size:xx-large;">
     <a name="w9">
      9
     </a>
@@ -858,6 +858,11 @@ lectures and/or assignments with an advanced week's notice.
    </td>
    <td colspan="3" markdown="span">
     N/A
+   </td>
+  </tr>
+  <tr>
+   <td colspan="4" markdown="span">
+    [Project Milestone 1]({{ site.url }}{{ site.baseurl }}/labs/milestone1) DUE Mon, Aug 05 2024 23:59 [Submission box]({{site.gradescope_url}})
    </td>
   </tr>
   <tr>
@@ -891,11 +896,16 @@ lectures and/or assignments with an advanced week's notice.
    </td>
   </tr>
   <tr>
+   <td colspan="4" markdown="span">
+    [Lab 12: The xv6 Scheduler]({{ site.url }}{{ site.baseurl }}/labs/sched) DUE Fri, Aug 09 2024 23:59 [Submission box]({{ site.gradescope_url }})
+   </td>
+  </tr>
+  <tr>
    <tr>
     <td colspan="5" markdown="span" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;">
     </td>
    </tr>
-   <td markdown="span" rowspan="4" style="font-size:xx-large;">
+   <td markdown="span" rowspan="6" style="font-size:xx-large;">
     <a name="w10">
      10
     </a>
@@ -907,6 +917,11 @@ lectures and/or assignments with an advanced week's notice.
    </td>
    <td colspan="3" markdown="span">
     N/A
+   </td>
+  </tr>
+  <tr>
+   <td colspan="4" markdown="span">
+    [Project Milestone 2]({{ site.url }}{{ site.baseurl }}/labs/milestone2) DUE Mon, Aug 12 2024 23:59 [Submission box]({{site.gradescope_url}})
    </td>
   </tr>
   <tr>
@@ -937,6 +952,11 @@ lectures and/or assignments with an advanced week's notice.
    </td>
    <td colspan="3" markdown="span">
     N/A
+   </td>
+  </tr>
+  <tr>
+   <td colspan="4" markdown="span">
+    [Final Project]({{ site.url }}{{ site.baseurl }}/labs/final) DUE Fri, Aug 16 2024 17:00 [Submission box]({{site.gradescope_url}})
    </td>
   </tr>
  </tbody>
