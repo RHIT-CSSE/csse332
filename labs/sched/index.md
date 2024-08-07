@@ -165,11 +165,11 @@ utility to visualize your processor's utilization.
 
 ## Part 2: Better data structures
 
-To solve the implementation problems with the xv6 scheduler, it is desirable for
-us to implement an O(1) scheduling data structure. Feel free to implement your
-own from scratch if you feel up for it, but to help you out, we have provided
-you with our own custom implementation of a kernel linked list. Our
-implementation actually mirrors the one used in the Linux kernel.
+To solve the implementation problems with the xv6 scheduler, it is desirable
+for us to implement an more efficient scheduling data structure. Feel free to
+implement your own from scratch if you feel up for it, but to help you out, we
+have provided you with our own custom implementation of a kernel linked list.
+Our implementation actually mirrors the one used in the Linux kernel.
 
 ### The list API
 
@@ -241,18 +241,12 @@ void main(void)
   list_add(&head, &s3.list);
   // list now becomes head -> s3.list -> s1.list -> s2.list
 
-  // 7. iterate over the list
-  struct list_head *iterator = &head.next;
-  struct my_data_struct *container;
-  while(iterator != &head) {
-    // 7.1 Extract the data from the list head
-    // This is why the list_head must be the first element in the structure,
-    // because we need to cast the smaller structure into the containing
-    // structure.
-    container = (struct my_data_struct *)iterator;
+  // 7. read an item from the top of the list
+  struct list_head *top = &head.next;
+  if(top != &head) {
+    // always do error checking to make sure that the list is not empty
+    struct my_data_struct *container = (struct my_data_struct*)top;
     printf("%d\n", container->data);
-
-    iterator = iterator->next;
   }
 
   // 8. delete s1 from the list
@@ -264,6 +258,13 @@ void main(void)
   list_del_init(&s3.list);
   list_add(&head, &s2.list);
   list_add_tail(&head, &s3.list);
+
+  // 10. pop the top item from the list
+  top = &head.next;
+  if(top != &head) {
+    // always check if the list is empty to avoid serious segmentation faults
+    list_del_init(top);
+  }
 }
 ```
 
@@ -274,10 +275,10 @@ void main(void)
 
 - Add a `struct list_head runq` as a global variable in `proc.c`.
 
-- Anytime a process becomes ready to be executed, add it to the run queue. This
-  step will require you to understand the scheduling code for xv6. Make sure to
-  use Chapter 7 of the book as a reference. You might find it useful to add
-  print statements to the scheduler so that you can figure out the call
+- Anytime a process becomes **ready** to be executed, add it to the run queue.
+  This step will require you to understand the scheduling code for xv6. Make
+  sure to use Chapter 7 of the book as a reference. You might find it useful to
+  add print statements to the scheduler so that you can figure out the call
   hierarchy of the scheduler.
 
 At this point in time, you are adding the processes to the run queue, but you
