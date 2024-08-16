@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Project Milestone 2
+title: Final Project
 readtime: true
 date: Mon Aug 12 2024
 ---
