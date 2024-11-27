@@ -13,7 +13,7 @@ author: RHIT CSSE Department
 
 # The subpath of your site.
 # baseurl: '/csse332'
-baseurl: '/class/csse/csse332/2324d'
+baseurl: '/class/csse/csse332/2425b'
 
 # The base hostname and protocol for your site
 # url: 'https://rhit-csse.github.io'
@@ -22,9 +22,9 @@ url: 'https://www.rose-hulman.edu/'
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  Moodle: "https://moodle.rose-hulman.edu/course/view.php?id=108238"
-  Gradescope: "https://www.gradescope.com/courses/776585"
-  Forum: "https://campuswire.com/c/G5C8AA17E/feed"
+  Moodle: "https://moodle.rose-hulman.edu/course/view.php?id=111701"
+  Gradescope: "https://www.gradescope.com/courses/917437"
+  # Forum: "https://campuswire.com/c/G5C8AA17E/feed"
   Syllabus: "docs/syllabus/syllabus"
   Schedule: "schedule"
   Resources: "docs/resources"
@@ -51,10 +51,10 @@ gh_homeworks_url: "https://github.com/RHIT-CSSE/csse332/tree/main/homeworks"
 gh_labs_url: "https://github.com/RHIT-CSSE/csse332/tree/main/labs"
 gh_labs_repo: "https://github.com/rhit-csse332/csse332-labs.git"
 
-moodle_url: "https://moodle.rose-hulman.edu/course/view.php?id=108238"
-gradescope_url: "https://moodle.rose-hulman.edu/course/view.php?id=108238"
+moodle_url: "https://moodle.rose-hulman.edu/course/view.php?id=111701"
+gradescope_url: "https://www.gradescope.com/courses/917437"
 campuswire_url: "https://campuswire.com/c/G5C8AA17E/feed"
-course_term: "Summer 2023-24"
+course_term: "Winter 2024-25"
 
 xv6_book_url: "https://pdos.csail.mit.edu/6.828/2022/xv6/book-riscv-rev3.pdf"
 

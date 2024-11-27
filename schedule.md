@@ -42,15 +42,15 @@ lectures and/or assignments with an advanced week's notice.
     <td colspan="5" markdown="span" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;">
     </td>
    </tr>
-   <td markdown="span" rowspan="3" style="font-size:xx-large;">
-    <a name="w0">
-     0
+   <td markdown="span" rowspan="7" style="font-size:xx-large;">
+    <a name="w1">
+     1
     </a>
    </td>
    <td markdown="span">
     1
     <br/>
-    Thu, May 30 2024
+    Mon, Dec 02 2024
    </td>
    <td markdown="span">
    </td>
@@ -64,14 +64,14 @@ lectures and/or assignments with an advanced week's notice.
   </tr>
   <tr>
    <td colspan="4" markdown="span">
-    [WSL2 Install]({{ site.url }}{{ site.baseurl }}/labs/wsl) DUE Thu, May 30 2024 23:59 No submission needed
+    [WSL2 Install]({{ site.url }}{{ site.baseurl }}/labs/wsl) DUE Mon, Dec 02 2024 23:59 No submission needed
    </td>
   </tr>
   <tr>
    <td markdown="span">
     2
     <br/>
-    Fri, May 31 2024
+    Tue, Dec 03 2024
    </td>
    <td markdown="span">
    </td>
@@ -84,19 +84,15 @@ lectures and/or assignments with an advanced week's notice.
    </td>
   </tr>
   <tr>
-   <tr>
-    <td colspan="5" markdown="span" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;">
-    </td>
-   </tr>
-   <td markdown="span" rowspan="6" style="font-size:xx-large;">
-    <a name="w1">
-     1
-    </a>
+   <td colspan="4" markdown="span">
+    C Assessment Quiz DUE Wed, Dec 04 2024 23:59 [Moodle Quiz](https://moodle.rose-hulman.edu/mod/quiz/view.php?id=4683206)
    </td>
+  </tr>
+  <tr>
    <td markdown="span">
     3
     <br/>
-    Mon, Jun 03 2024
+    Thu, Dec 05 2024
    </td>
    <td markdown="span" style="text-align:left;">
     {::nomarkdown}
@@ -119,14 +115,14 @@ lectures and/or assignments with an advanced week's notice.
   </tr>
   <tr>
    <td colspan="4" markdown="span">
-    [Lab01: C Review &amp; xv6 Introduction]({{ site.url }}{{ site.baseurl }}/labs/lab00/) DUE Mon, Jun 03 2024 23:59 [Submission box]({{ site.gradescope_url }})
+    [Lab01: C Review &amp; xv6 Introduction]({{ site.url }}{{ site.baseurl }}/labs/lab00/) DUE Thu, Dec 05 2024 23:59 [Submission box]({{ site.gradescope_url }})
    </td>
   </tr>
   <tr>
    <td markdown="span">
     4
     <br/>
-    Tue, Jun 04 2024
+    Fri, Dec 06 2024
    </td>
    <td markdown="span" style="text-align:left;">
     {::nomarkdown}
@@ -148,10 +144,19 @@ lectures and/or assignments with an advanced week's notice.
    </td>
   </tr>
   <tr>
+   <tr>
+    <td colspan="5" markdown="span" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;">
+    </td>
+   </tr>
+   <td markdown="span" rowspan="4" style="font-size:xx-large;">
+    <a name="w2">
+     2
+    </a>
+   </td>
    <td markdown="span">
     5
     <br/>
-    Thu, Jun 06 2024
+    Mon, Dec 09 2024
    </td>
    <td markdown="span" style="text-align:left;">
     {::nomarkdown}
@@ -173,15 +178,10 @@ lectures and/or assignments with an advanced week's notice.
    </td>
   </tr>
   <tr>
-   <td colspan="4" markdown="span">
-    [Lab02: Simple Shell]({{ site.url }}{{ site.baseurl }}/labs/simpleshell/) DUE Thu, Jun 06 2024 23:59 [Submission box]({{ site.gradescope_url }})
-   </td>
-  </tr>
-  <tr>
    <td markdown="span">
     6
     <br/>
-    Fri, Jun 07 2024
+    Tue, Dec 10 2024
    </td>
    <td markdown="span" style="text-align:left;">
     {::nomarkdown}
@@ -203,19 +203,10 @@ lectures and/or assignments with an advanced week's notice.
    </td>
   </tr>
   <tr>
-   <tr>
-    <td colspan="5" markdown="span" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;">
-    </td>
-   </tr>
-   <td markdown="span" rowspan="6" style="font-size:xx-large;">
-    <a name="w2">
-     2
-    </a>
-   </td>
    <td markdown="span">
     7
     <br/>
-    Mon, Jun 10 2024
+    Thu, Dec 12 2024
    </td>
    <td markdown="span" style="text-align:left;">
     {::nomarkdown}
@@ -235,15 +226,10 @@ lectures and/or assignments with an advanced week's notice.
    </td>
   </tr>
   <tr>
-   <td colspan="4" markdown="span">
-    [Lab03: Process Lab]({{ site.url }}{{ site.baseurl }}/labs/processlab/) DUE Mon, Jun 10 2024 23:59 [Submission box]({{ site.gradescope_url }})
-   </td>
-  </tr>
-  <tr>
    <td markdown="span">
     8
     <br/>
-    Tue, Jun 11 2024
+    Fri, Dec 13 2024
    </td>
    <td markdown="span">
    </td>
@@ -254,10 +240,19 @@ lectures and/or assignments with an advanced week's notice.
    </td>
   </tr>
   <tr>
+   <tr>
+    <td colspan="5" markdown="span" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;">
+    </td>
+   </tr>
+   <td markdown="span" rowspan="4" style="font-size:xx-large;">
+    <a name="w3">
+     3
+    </a>
+   </td>
    <td markdown="span">
     9
     <br/>
-    Thu, Jun 13 2024
+    Mon, Dec 16 2024
    </td>
    <td markdown="span" style="text-align:left;">
     {::nomarkdown}
@@ -281,15 +276,10 @@ lectures and/or assignments with an advanced week's notice.
    </td>
   </tr>
   <tr>
-   <td colspan="4" markdown="span">
-    [Lab04: Debugging Lab]({{ site.url }}{{ site.baseurl }}/labs/debug/) DUE Thu, Jun 13 2024 23:59 [Submission box]({{ site.gradescope_url }})
-   </td>
-  </tr>
-  <tr>
    <td markdown="span">
     10
     <br/>
-    Fri, Jun 14 2024
+    Tue, Dec 17 2024
    </td>
    <td markdown="span" style="text-align:left;">
     {::nomarkdown}
@@ -311,19 +301,10 @@ lectures and/or assignments with an advanced week's notice.
    </td>
   </tr>
   <tr>
-   <tr>
-    <td colspan="5" markdown="span" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;">
-    </td>
-   </tr>
-   <td markdown="span" rowspan="5" style="font-size:xx-large;">
-    <a name="w3">
-     3
-    </a>
-   </td>
    <td markdown="span">
     11
     <br/>
-    Mon, Jun 17 2024
+    Thu, Dec 19 2024
    </td>
    <td markdown="span" style="text-align:left;">
     {::nomarkdown}
@@ -345,15 +326,10 @@ lectures and/or assignments with an advanced week's notice.
    </td>
   </tr>
   <tr>
-   <td colspan="4" markdown="span">
-    [[Challenge] Lab05: Heap Manager I]({{ site.url }}{{ site.baseurl }}/labs/heapmm/) DUE Mon, Jun 17 2024 23:59 [Submission box]({{ site.gradescope_url }})
-   </td>
-  </tr>
-  <tr>
    <td markdown="span">
     12
     <br/>
-    Tue, Jun 18 2024
+    Fri, Dec 20 2024
    </td>
    <td markdown="span" style="text-align:left;">
     {::nomarkdown}
@@ -379,10 +355,19 @@ lectures and/or assignments with an advanced week's notice.
    </td>
   </tr>
   <tr>
+   <tr>
+    <td colspan="5" markdown="span" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;">
+    </td>
+   </tr>
+   <td markdown="span" rowspan="4" style="font-size:xx-large;">
+    <a name="w4">
+     4
+    </a>
+   </td>
    <td markdown="span">
     13
     <br/>
-    Thu, Jun 20 2024
+    Mon, Jan 06 2025
    </td>
    <td markdown="span">
    </td>
@@ -398,7 +383,7 @@ lectures and/or assignments with an advanced week's notice.
    <td markdown="span">
     14
     <br/>
-    Fri, Jun 21 2024
+    Tue, Jan 07 2025
    </td>
    <td markdown="span">
    </td>
@@ -411,19 +396,10 @@ lectures and/or assignments with an advanced week's notice.
    </td>
   </tr>
   <tr>
-   <tr>
-    <td colspan="5" markdown="span" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;">
-    </td>
-   </tr>
-   <td markdown="span" rowspan="5" style="font-size:xx-large;">
-    <a name="w4">
-     4
-    </a>
-   </td>
    <td markdown="span">
     15
     <br/>
-    Mon, Jun 24 2024
+    Thu, Jan 09 2025
    </td>
    <td markdown="span" style="text-align:left;">
     {::nomarkdown}
@@ -448,7 +424,7 @@ lectures and/or assignments with an advanced week's notice.
    <td markdown="span">
     16
     <br/>
-    Tue, Jun 25 2024
+    Fri, Jan 10 2025
    </td>
    <td markdown="span" style="text-align:left;">
     {::nomarkdown}
@@ -470,10 +446,19 @@ lectures and/or assignments with an advanced week's notice.
    </td>
   </tr>
   <tr>
+   <tr>
+    <td colspan="5" markdown="span" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;">
+    </td>
+   </tr>
+   <td markdown="span" rowspan="4" style="font-size:xx-large;">
+    <a name="w5">
+     5
+    </a>
+   </td>
    <td markdown="span">
     17
     <br/>
-    Thu, Jun 27 2024
+    Mon, Jan 13 2025
    </td>
    <td markdown="span">
    </td>
@@ -486,15 +471,10 @@ lectures and/or assignments with an advanced week's notice.
    </td>
   </tr>
   <tr>
-   <td colspan="4" markdown="span">
-    [[Challenge] Lab06: Heap Manager II]({{ site.url }}{{ site.baseurl }}/labs/buddy/) DUE Thu, Jun 27 2024 23:59 [Submission box]({{ site.gradescope_url }})
-   </td>
-  </tr>
-  <tr>
    <td markdown="span">
     18
     <br/>
-    Fri, Jun 28 2024
+    Tue, Jan 14 2025
    </td>
    <td markdown="span" style="text-align:left;">
     {::nomarkdown}
@@ -516,19 +496,10 @@ lectures and/or assignments with an advanced week's notice.
    </td>
   </tr>
   <tr>
-   <tr>
-    <td colspan="5" markdown="span" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;">
-    </td>
-   </tr>
-   <td markdown="span" rowspan="3" style="font-size:xx-large;">
-    <a name="w5">
-     5
-    </a>
-   </td>
    <td markdown="span">
     19
     <br/>
-    Mon, Jul 01 2024
+    Thu, Jan 16 2025
    </td>
    <td markdown="span">
    </td>
@@ -542,7 +513,7 @@ lectures and/or assignments with an advanced week's notice.
    <td markdown="span">
     20
     <br/>
-    Tue, Jul 02 2024
+    Fri, Jan 17 2025
    </td>
    <td markdown="span">
    </td>
@@ -555,16 +526,11 @@ lectures and/or assignments with an advanced week's notice.
    </td>
   </tr>
   <tr>
-   <td colspan="4" markdown="span">
-    [[Challenge] Lab07: Copy-on-Write]({{ site.url }}{{ site.baseurl }}/labs/cow) DUE Sun, Jul 07 2024 23:59 [Submission box]({{ site.gradescope_url }})
-   </td>
-  </tr>
-  <tr>
    <tr>
     <td colspan="5" markdown="span" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;">
     </td>
    </tr>
-   <td markdown="span" rowspan="5" style="font-size:xx-large;">
+   <td markdown="span" rowspan="3" style="font-size:xx-large;">
     <a name="w6">
      6
     </a>
@@ -572,7 +538,7 @@ lectures and/or assignments with an advanced week's notice.
    <td markdown="span">
     21
     <br/>
-    Mon, Jul 15 2024
+    Tue, Jan 21 2025
    </td>
    <td markdown="span" style="text-align:left;">
     {::nomarkdown}
@@ -601,7 +567,7 @@ lectures and/or assignments with an advanced week's notice.
    <td markdown="span">
     22
     <br/>
-    Tue, Jul 16 2024
+    Thu, Jan 23 2025
    </td>
    <td markdown="span">
    </td>
@@ -621,7 +587,7 @@ lectures and/or assignments with an advanced week's notice.
    <td markdown="span">
     23
     <br/>
-    Thu, Jul 18 2024
+    Fri, Jan 24 2025
    </td>
    <td markdown="span" style="text-align:left;">
     {::nomarkdown}
@@ -647,15 +613,19 @@ lectures and/or assignments with an advanced week's notice.
    </td>
   </tr>
   <tr>
-   <td colspan="4" markdown="span">
-    [Lab 08: Threads &amp; Mutex Basics]({{ site.url }}{{ site.baseurl }}/labs/threads_basics) DUE Thu, Jul 18 2024 23:59 [Submission box]({{ site.gradescope_url }})
+   <tr>
+    <td colspan="5" markdown="span" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;">
+    </td>
+   </tr>
+   <td markdown="span" rowspan="4" style="font-size:xx-large;">
+    <a name="w7">
+     7
+    </a>
    </td>
-  </tr>
-  <tr>
    <td markdown="span">
     24
     <br/>
-    Fri, Jul 19 2024
+    Mon, Jan 27 2025
    </td>
    <td markdown="span">
    </td>
@@ -668,19 +638,10 @@ lectures and/or assignments with an advanced week's notice.
    </td>
   </tr>
   <tr>
-   <tr>
-    <td colspan="5" markdown="span" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;">
-    </td>
-   </tr>
-   <td markdown="span" rowspan="6" style="font-size:xx-large;">
-    <a name="w7">
-     7
-    </a>
-   </td>
    <td markdown="span">
     25
     <br/>
-    Mon, Jul 22 2024
+    Tue, Jan 28 2025
    </td>
    <td markdown="span" style="text-align:left;">
     {::nomarkdown}
@@ -706,15 +667,10 @@ lectures and/or assignments with an advanced week's notice.
    </td>
   </tr>
   <tr>
-   <td colspan="4" markdown="span">
-    [Lab 09: Condition Variables Basics]({{ site.url }}{{ site.baseurl }}/labs/condvar) DUE Mon, Jul 22 2024 23:59 [Submission box]({{ site.gradescope_url }})
-   </td>
-  </tr>
-  <tr>
    <td markdown="span">
     26
     <br/>
-    Tue, Jul 23 2024
+    Thu, Jan 30 2025
    </td>
    <td markdown="span" style="text-align:left;">
     {::nomarkdown}
@@ -743,7 +699,7 @@ lectures and/or assignments with an advanced week's notice.
    <td markdown="span">
     27
     <br/>
-    Thu, Jul 25 2024
+    Fri, Jan 31 2025
    </td>
    <td markdown="span">
    </td>
@@ -760,15 +716,19 @@ lectures and/or assignments with an advanced week's notice.
    </td>
   </tr>
   <tr>
-   <td colspan="4" markdown="span">
-    [[Challenge] Lab 10: Condition Variables II]({{ site.url }}{{ site.baseurl }}/labs/condvar_challenge) DUE Thu, Jul 25 2024 23:59 [Submission box]({{ site.gradescope_url }})
+   <tr>
+    <td colspan="5" markdown="span" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;">
+    </td>
+   </tr>
+   <td markdown="span" rowspan="4" style="font-size:xx-large;">
+    <a name="w8">
+     8
+    </a>
    </td>
-  </tr>
-  <tr>
    <td markdown="span">
     28
     <br/>
-    Fri, Jul 26 2024
+    Mon, Feb 03 2025
    </td>
    <td markdown="span">
    </td>
@@ -779,19 +739,10 @@ lectures and/or assignments with an advanced week's notice.
    </td>
   </tr>
   <tr>
-   <tr>
-    <td colspan="5" markdown="span" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;">
-    </td>
-   </tr>
-   <td markdown="span" rowspan="5" style="font-size:xx-large;">
-    <a name="w8">
-     8
-    </a>
-   </td>
    <td markdown="span">
     29
     <br/>
-    Mon, Jul 29 2024
+    Tue, Feb 04 2025
    </td>
    <td colspan="3" markdown="span">
     N/A
@@ -801,7 +752,7 @@ lectures and/or assignments with an advanced week's notice.
    <td markdown="span">
     30
     <br/>
-    Tue, Jul 30 2024
+    Thu, Feb 06 2025
    </td>
    <td colspan="3" markdown="span">
     N/A
@@ -811,22 +762,7 @@ lectures and/or assignments with an advanced week's notice.
    <td markdown="span">
     31
     <br/>
-    Thu, Aug 01 2024
-   </td>
-   <td colspan="3" markdown="span">
-    N/A
-   </td>
-  </tr>
-  <tr>
-   <td colspan="4" markdown="span">
-    [Lab 11: Memory Organization and Safety]({{ site.url }}{{ site.baseurl }}/labs/smlab) DUE Thu, Aug 01 2024 23:59 [Submission box]({{ site.gradescope_url }})
-   </td>
-  </tr>
-  <tr>
-   <td markdown="span">
-    32
-    <br/>
-    Fri, Aug 02 2024
+    Fri, Feb 07 2025
    </td>
    <td colspan="3" markdown="span">
     N/A
@@ -837,30 +773,35 @@ lectures and/or assignments with an advanced week's notice.
     <td colspan="5" markdown="span" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;">
     </td>
    </tr>
-   <td markdown="span" rowspan="6" style="font-size:xx-large;">
+   <td markdown="span" rowspan="4" style="font-size:xx-large;">
     <a name="w9">
      9
     </a>
    </td>
    <td markdown="span">
-    33
+    32
     <br/>
-    Mon, Aug 05 2024
+    Mon, Feb 10 2025
    </td>
    <td colspan="3" markdown="span">
     N/A
    </td>
   </tr>
   <tr>
-   <td colspan="4" markdown="span">
-    [Project Milestone 1]({{ site.url }}{{ site.baseurl }}/labs/milestone1) DUE Mon, Aug 05 2024 23:59 [Submission box]({{site.gradescope_url}})
+   <td markdown="span">
+    33
+    <br/>
+    Tue, Feb 11 2025
+   </td>
+   <td colspan="3" markdown="span">
+    N/A
    </td>
   </tr>
   <tr>
    <td markdown="span">
     34
     <br/>
-    Tue, Aug 06 2024
+    Thu, Feb 13 2025
    </td>
    <td colspan="3" markdown="span">
     N/A
@@ -870,25 +811,10 @@ lectures and/or assignments with an advanced week's notice.
    <td markdown="span">
     35
     <br/>
-    Thu, Aug 08 2024
+    Fri, Feb 14 2025
    </td>
    <td colspan="3" markdown="span">
     N/A
-   </td>
-  </tr>
-  <tr>
-   <td markdown="span">
-    36
-    <br/>
-    Fri, Aug 09 2024
-   </td>
-   <td colspan="3" markdown="span">
-    N/A
-   </td>
-  </tr>
-  <tr>
-   <td colspan="4" markdown="span">
-    [Lab 12: The xv6 Scheduler]({{ site.url }}{{ site.baseurl }}/labs/sched) DUE Fri, Aug 09 2024 23:59 [Submission box]({{ site.gradescope_url }})
    </td>
   </tr>
   <tr>
@@ -896,30 +822,35 @@ lectures and/or assignments with an advanced week's notice.
     <td colspan="5" markdown="span" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;">
     </td>
    </tr>
-   <td markdown="span" rowspan="6" style="font-size:xx-large;">
+   <td markdown="span" rowspan="4" style="font-size:xx-large;">
     <a name="w10">
      10
     </a>
    </td>
    <td markdown="span">
-    37
+    36
     <br/>
-    Mon, Aug 12 2024
+    Mon, Feb 17 2025
    </td>
    <td colspan="3" markdown="span">
     N/A
    </td>
   </tr>
   <tr>
-   <td colspan="4" markdown="span">
-    [Project Milestone 2]({{ site.url }}{{ site.baseurl }}/labs/milestone2) DUE Mon, Aug 12 2024 23:59 [Submission box]({{site.gradescope_url}})
+   <td markdown="span">
+    37
+    <br/>
+    Tue, Feb 18 2025
+   </td>
+   <td colspan="3" markdown="span">
+    N/A
    </td>
   </tr>
   <tr>
    <td markdown="span">
     38
     <br/>
-    Tue, Aug 13 2024
+    Thu, Feb 20 2025
    </td>
    <td colspan="3" markdown="span">
     N/A
@@ -929,25 +860,10 @@ lectures and/or assignments with an advanced week's notice.
    <td markdown="span">
     39
     <br/>
-    Thu, Aug 15 2024
+    Fri, Feb 21 2025
    </td>
    <td colspan="3" markdown="span">
     N/A
-   </td>
-  </tr>
-  <tr>
-   <td markdown="span">
-    40
-    <br/>
-    Fri, Aug 16 2024
-   </td>
-   <td colspan="3" markdown="span">
-    N/A
-   </td>
-  </tr>
-  <tr>
-   <td colspan="4" markdown="span">
-    [Final Project]({{ site.url }}{{ site.baseurl }}/labs/final) DUE Fri, Aug 16 2024 17:00 [Submission box]({{site.gradescope_url}})
    </td>
   </tr>
  </tbody>

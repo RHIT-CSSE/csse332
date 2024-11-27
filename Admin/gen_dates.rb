@@ -3,12 +3,12 @@ require 'date'
 require 'yaml'
 require 'set'
 
-start_date = Date.new(2024, 5, 30)
-end_date = Date.new(2024, 8, 16)
-vacation_start = Date.new(2024, 7, 8) #inclusive
-vacation_end = Date.new(2024, 7, 12) # inclusive
+start_date = Date.new(2024, 12, 02)
+end_date = Date.new(2025, 02, 23)
+vacation_start = Date.new(2024, 12, 21) #inclusive
+vacation_end = Date.new(2025, 01, 05) # inclusive
 allowed_days_of_week = [1,2,4,5] # monday is 1
-extra_off_days = Set[Date.new(2024, 7, 4), Date.new(2024, 7, 5)]
+extra_off_days = Set[Date.new(2025, 01, 20)]
 
 generate_yaml = true #we either generate yaml or csv
 

@@ -1,0 +1,34 @@
+2024-11-27 Mohammad Noureddine
+
+  Set up updates for Winter 2024 course offerings.
+
+  * _config.yml: 
+    - Updated destination www folder to reflect the latest term.
+    - Updated Moodle and Gradescope links.
+
+  * admin/gen_dates.rb:
+    - Updated dates for new quarter and fixed MLK day holidy.
+
+  * _data/date_convert.yml:
+    - Generated from gen_dates.rb with new dates.
+
+  * _data/assignments.csv:
+    - Commented out all assignments for now.
+    - Added C practice quiz for assessment.
+    - Restored lab 1 and WSL 2 install
+
+  * docs/syllabus/syllabus.md:
+    - Removed language about capping grade at C without challenge labs; that no
+      longer applies.
+    - Update late policy to note that day of requests may not be honored, at
+      the discretion of the instructor.
+    - Reverted back to two exams schedule and adjusted passing policy.
+    - Removed summer language about engagement points.
+    - Adjusted grading table based on the Spring of last year's offering.
+    - Added 5% for quizzes, those are just for attendance, graded lightly.
+    - Brought back laptop and attendance policies.
+    - Added language from CSSE Intregity Committee policies with links to
+      various documents.
+      * WARNING: Policy does not reference self-plagiarism but our syllabus
+                 does!
+    - Update table of contents.
