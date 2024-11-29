@@ -22,6 +22,12 @@ Welcome to CSSE 332, Operating Systems.
 
 4. [Re-familiarize yourself with either `vim` or `emacs`.]({{site.baseurl}}{{site.resourcespath}})
 
+5. If you need to brush up on some C concepts, then please watch the review
+   videos and material on [Moodle]({{site.moodle_url}}).
+
+6. If you are not comfortable using a terminal window to do most if not all of
+   your tasks, then please review the bash crash course on [Moodle]({{site.moodle_url}})
+
 5. Take the `C standing` quiz on [Moodle]({{site.moodle_url}}) to check
    your level of understanding.
 

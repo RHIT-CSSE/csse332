@@ -32,3 +32,14 @@
       * WARNING: Policy does not reference self-plagiarism but our syllabus
                  does!
     - Update table of contents.
+
+2024-11-28 Mohammad Noureddine
+
+  Added links to homepage for C review and bash crash course.
+
+  * index.md:
+    - Added two new set of links there to point to Moodle.
+    - These contain C review material that we don't have time to go over in
+      class.
+    - Also includes a quick bash crash course for those who are not comfortable
+      with a terminal window.
