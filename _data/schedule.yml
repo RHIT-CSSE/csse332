@@ -6,26 +6,20 @@
 ###############################################################################
 # WEEK 1
 ###############################################################################
-# 1:
-#   reading:
-#     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/intro.pdf"> Chapter 1 of OSTEP </a>
-#   topics:
-#     - '<a href="{{ site.url }}{{ site.baseurl}}/notes/introduction/">OS Introduction</a>'
-#   materials:
-
 1:
   reading:
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/intro.pdf"> Chapter 1 of OSTEP </a>
   topics:
-    # - '<a href="{{ site.url }}{{ site.baseurl}}/notes/boot">The boot process</a>'
-    - <a href="{{ site.url }}{{ site.baseurl}}/notes/session01/">C Review Part 1</a>
+    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/introduction/">OS Introduction</a>'
   materials:
 
 2:
   reading:
   topics:
-    # - '<a href="{{ site.url }}{{ site.baseurl}}/notes/boot">The boot process</a>'
-    - <a href="{{ site.url }}{{ site.baseurl}}/notes/session01/">C Review Part 2</a>
+    - <a href="{{ site.url }}{{ site.baseurl}}/notes/session01/">C Review</a>
   materials:
+    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz01.pdf">Quiz Sheet</a>
+    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz01_solution.pdf">Quiz Solution</a>
 
 3:
   reading:
@@ -70,15 +64,6 @@
 
 8:
   reading:
-  topics:
-    - Debugging in xv6
-  materials: 
-
-###############################################################################
-# WEEK 3
-###############################################################################
-9:
-  reading:
     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/file-devices.pdf"> Section 36.4 of Chapter 16 </a>
   topics:
     # - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session18"> Threads: Lightweight Processes </a>'
@@ -86,59 +71,78 @@
   materials:
     <a href="{{site.url}}{{site.baseurl}}/docs/activities/systrace/"> Activity </a>
 
+###############################################################################
+# WEEK 3
+###############################################################################
+9:
+  reading:
+    # - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/file-devices.pdf"> Section 36.4 of Chapter 16 </a>
+  topics:
+    # - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session18"> Threads: Lightweight Processes </a>'
+    - Implementing system calls
+  materials:
+    # <a href="{{site.url}}{{site.baseurl}}/docs/activities/systrace/"> Activity </a>
+
 10:
   reading:
-    - '<a href="{{ site.baseurl }}/labs/heapmm/">Lab 05: Heap Manager I </a>'
+    # - '<a href="{{ site.baseurl }}/labs/heapmm/">Lab 05: Heap Manager I </a>'
   topics:
-    - '<b> Hacking Day: Lab 05 </b>'
+    # - '<b> Hacking Day: Lab 05 </b>'
+    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session09"> Exam 1 Review </a>'
   materials: 
 
 
 11:
   reading:
-    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-mechanism.pdf"> Chapter 15 of OSTEP </a>
   topics:
-    - <a href="{{ site.url }}{{ site.baseurl}}/notes/paging"> Introduction to Paging </a>
+    - Exam 1 Part 1
   materials: 
 
 12:
   reading:
-    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-paging.pdf"> Chapter 18 of OSTEP </a>
+  topics:
+    - Exam 1 Part 2
+  materials:
+
+
+###############################################################################
+# WEEK 4
+###############################################################################
+13:
+  reading:
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-mechanism.pdf"> Chapter 15 of OSTEP </a>
+  topics:
+    - <a href="{{ site.url }}{{ site.baseurl}}/notes/paging"> Introduction to Paging </a>
+  materials:
+
+14:
+  reading:
+    # - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-paging.pdf"> Chapter 18 of OSTEP </a>
   topics:
     - <a href="{{ site.url }}{{ site.baseurl}}/notes/session15"> Paging </a>
   materials:
     <a href="{{site.url}}{{site.baseurl}}/docs/activities/paging/"> Activity </a>
 
-13:
-  reading:
-  topics:
-    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session09"> Exam 1 Review </a>'
-  materials:
-
-14:
-  reading:
-  topics:
-    - '<b> No class: Prep for exam 1 </b>'
-  materials:
-
-###############################################################################
-# WEEK 4
-###############################################################################
 
 15:
-  reading:
-    - '<a href="{{site.baseurl}}/labs/buddy/">Lab 06: Heap Manager II </a>'
-  topics:
-    - '<b> Lab 06: Heap Manager II </b>'
-  materials:
-
-16:
   reading:
     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-smalltables.pdf"> Chapter 20 of OSTEP </a>
   topics:
     - <a href="{{ site.url }}{{ site.baseurl}}/notes/session16"> Multi-level Page Tables </a>
   materials:
 
+16:
+  reading:
+    # - '<a href="{{site.baseurl}}/labs/buddy/">Lab 06: Heap Manager II </a>'
+    - '<a href="{{site.baseurl}}/labs/cow/">Lab 07: Copy-on-Write </a>'
+  topics:
+  materials:
+    # - '<b> Lab 06: Heap Manager II </b>'
+    - '<b> Lab 07: Copy-On-Write </b>'
+
+###############################################################################
+# WEEK 5
+###############################################################################
 17:
   reading:
   topics:
@@ -147,51 +151,29 @@
 
 18:
   reading:
-    - '<a href="{{site.baseurl}}/labs/cow/">Lab 07: Copy-on-Write </a>'
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf"> Chapter 26 of OSTEP </a>
   topics:
-    - '<b> Lab 07: Copy-On-Write </b>'
+    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session18"> Threads: Lightweight Processes </a>'
   materials:
-
-
-###############################################################################
-# WEEK 5
-###############################################################################
 
 19:
   reading:
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-locks.pdf"> Chapter 28 of OSTEP </a>
   topics:
-    - Bash Crash Course
+    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session19"> Concurrency: Mutex & Condition Variables </a>'
   materials:
     
 20:
-  reading:
-    # - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf"> Chapter 26 of OSTEP </a>
-  topics:
-    # - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session18"> Threads: Lightweight Processes </a>'
-    - <b> No class, enjoy the break </b>
-  materials:
-
-###############################################################################
-# WEEK 6
-###############################################################################
-21:
-  reading:
-    # - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-locks.pdf"> Chapter 28 of OSTEP </a>
-    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf"> Chapter 26 of OSTEP </a>
-  topics:
-    # - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session19"> Concurrency: Mutex & Condition Variables </a>'
-    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session18"> Threads: Lightweight Processes </a>'
-  materials:
-    <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
-
-22:
   reading:
   topics:
     - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session20"> Mutex locks practice </a>'
   materials:
     <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
 
-23:
+###############################################################################
+# WEEK 6
+###############################################################################
+21:
   reading:
     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 of OSTEP </a>
   topics:
@@ -199,17 +181,7 @@
   materials:
     <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
 
-24:
-  reading:
-  topics:
-    - <b> No class, Mohammad was out sick</b>
-  materials:
-
-###############################################################################
-# WEEK 6
-###############################################################################
-
-25:
+22:
   reading:
     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 of OSTEP </a>
   topics:
@@ -217,34 +189,64 @@
   materials:
     <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
 
-26:
+23:
   reading:
     - <a href="https://en.wikipedia.org/wiki/Producer%E2%80%93consumer_problem"> Wiki Page for Prod/Cons Problem </a>
   topics:
-    # - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session23"> Concurrency: Deadlocks </a>'
     - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session21"> Concurrency: Producer-consumer Problem </a>'
   materials:
     <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
 
-27:
+###############################################################################
+# WEEK 7
+###############################################################################
+24:
   reading:
-  topics:
     - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session22"> Concurrency: Readers/Writers Problem </a>'
+  topics:
   materials:
     <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
 
+25:
+  reading:
+  topics:
+    - Exam 2 Review and Practice
+  materials:
+
+26:
+  reading:
+  topics:
+    - <b> Exam 2 Part 1 </b>
+  materials:
+
+27:
+  reading:
+  topics:
+    - <b> Exam 2 Part 2 </b>
+  materials:
+
+# ################################################################################
+#  WEEK 8
+# ################################################################################
 28:
   reading:
   topics:
-    - Exam 2 Review
   materials:
 
-# 28:
-#   reading:
-#   topics:
-#     - '<b> No class: Prep for exam 2 </b>'
-#   materials:
+29:
+  reading:
+  topics:
+  materials:
 
+30:
+  reading:
+  topics:
+  materials:
+
+31:
+  reading:
+  topics:
+  materials:
 
 
 # ################################################################################
