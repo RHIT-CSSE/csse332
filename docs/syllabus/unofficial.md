@@ -103,7 +103,7 @@ corner.
 ## Getting an exam hint
 
 If you have read this unofficial syllabus and have reached this far,
-congratulations! Please send Mohammad an email with the title `"[CSSE332]
+congratulations! Please send **Mohammad** an email with the title `"[CSSE332]
 Unofficial Syllabus Hint` and a picture of an angry cat to get a hint for your
 first exam.
 
