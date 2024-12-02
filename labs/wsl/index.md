@@ -21,15 +21,21 @@ you want for each virtual machine you run.
 
 # 1. Initial WSL2 installation
 
-**CSSE majors**: you should already have WSL2 installed from taking CSSE132. If not, follow the instructions here: [install WSL2.](https://learn.microsoft.com/en-us/windows/wsl/install)
+**CSSE majors**: you should already have WSL2 installed from taking CSSE132. If
+not, follow the instructions here: [install
+WSL2.](https://learn.microsoft.com/en-us/windows/wsl/install)
 
-**CPE majors**: you probably have WSL1 installed, which is the wrong version. You need to [upgrade your WSL1 to WSL2](https://learn.microsoft.com/en-us/windows/wsl/install#upgrade-version-from-wsl-1-to-wsl-2). If you do not have WSL installed at all, follow the above link for the CSSE majors.
+**CPE majors**: you probably have WSL1 installed, which is the wrong version.
+You need to [upgrade your WSL1 to
+WSL2](https://learn.microsoft.com/en-us/windows/wsl/install#upgrade-version-from-wsl-1-to-wsl-2).
+If you do not have WSL installed at all, follow the above link for the CSSE
+majors.
 
 ## Issues with these instructions? `Catastrophic failure`?
 If you run into any issues during the installation process, please make a post
-on the [Moodle forum]({{ site.moodle_url }}) detailing the errors you faced
-along with the version of wsl2 that you can trying to install. One of your
-instructors (or fellow classmates) will reply to help you out as soon as
+on the [CampusWire forum]({{ site.campuswire_url }}) detailing the errors you
+faced along with the version of wsl2 that you can trying to install. One of
+your instructors (or fellow classmates) will reply to help you out as soon as
 possible.
 
 # 2. Installing needed Linux software

@@ -1,18 +1,24 @@
 #!/usr/bin/ruby
 require 'date'
 require 'yaml'
+require 'set'
 
-start_date = Date.new(2024, 3, 4)
-end_date = Date.new(2024, 5, 19)
-vacation_start = Date.new(2024, 4, 8) #inclusive
-vacation_end = Date.new(2024, 04, 13) # inclusive
+start_date = Date.new(2024, 12, 02)
+end_date = Date.new(2025, 02, 23)
+vacation_start = Date.new(2024, 12, 21) #inclusive
+vacation_end = Date.new(2025, 01, 05) # inclusive
 allowed_days_of_week = [1,2,4,5] # monday is 1
+extra_off_days = Set[Date.new(2025, 01, 20)]
 
-generate_yaml = false #we either generate yaml or csv
+generate_yaml = true #we either generate yaml or csv
 
 day_list = []
 current = start_date;
 while(current <= end_date)
+  if(extra_off_days.include?(current))
+    current = current.next_day()
+    next
+  end
   if(current < vacation_start or current > vacation_end)
     day_list << current
   end

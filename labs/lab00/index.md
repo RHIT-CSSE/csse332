@@ -79,7 +79,7 @@ you are working on the right stuff.
 
 If you have not done so yet, please make sure that you have set up your class
 labs repository by following the [appropriate
-instructions.]({{site.baseurl}}{{site.resourcespath}}/setup)
+instructions.]({{site.baseurl}}/labs/wsl)
 
 Now that you are in the right repository, first make sure you are on the `main`
 branch:

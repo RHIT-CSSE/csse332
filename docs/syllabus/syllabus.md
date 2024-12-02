@@ -2,42 +2,46 @@
 title: Syllabus
 layout: post
 readtime: true
-date: Fri 24 Nov 2023
+date: Wed May 22 2024
 ---
 
 ## Table of Contents
 
-<!-- vim-markdown-toc GFM -->
-
-* [Course Description](#course-description)
-* [Prerequisite Topics](#prerequisite-topics)
-* [Learning Objectives](#learning-objectives)
-* [Textbook](#textbook)
-  * [Recommended textbook](#recommended-textbook)
-  * [Other great references](#other-great-references)
-  * [Other References](#other-references)
-  * [Electronic Course Materials](#electronic-course-materials)
-* [Deadlines and Late Policy](#deadlines-and-late-policy)
-* [Special Arrangements](#special-arrangements)
-* [Homework Assignments/Labs](#homework-assignmentslabs)
-* [Exams](#exams)
-* [Grading](#grading)
-* [Handling Grading Issues](#handling-grading-issues)
-* [Collaboration, Cheating and Professional Behavior](#collaboration-cheating-and-professional-behavior)
-  * [Plagiarism and General Misconduct](#plagiarism-and-general-misconduct)
-  * [Self-plagiarism](#self-plagiarism)
-  * [Generative Artificial Intelligence](#generative-artificial-intelligence)
-  * [Collaboration](#collaboration)
-  * [Summary](#summary)
-* [A statement on mental health](#a-statement-on-mental-health)
-* [Miscellaneous](#miscellaneous)
-  * [Syllabus changes](#syllabus-changes)
-  * [Attendance policy](#attendance-policy)
-  * [Illness](#illness)
-  * [Laptop policy](#laptop-policy)
-* [Acknowledgments](#acknowledgments)
-
-<!-- vim-markdown-toc -->
+  - [Table of Contents](<#table-of-contents>)
+  - [Course Description](<#course-description>)
+  - [Prerequisite Topics](<#prerequisite-topics>)
+  - [Learning Objectives](<#learning-objectives>)
+  - [Textbook](<#textbook>)
+    - [Recommended textbook](<#recommended-textbook>)
+    - [Other great references](<#other-great-references>)
+    - [Other References](<#other-references>)
+    - [Electronic Course Materials](<#electronic-course-materials>)
+  - [Deadlines and Late Policy](<#deadlines-and-late-policy>)
+  - [Special Arrangements](<#special-arrangements>)
+  - [Homework Assignments/Labs](<#homework-assignments/labs>)
+  - [Exams](<#exams>)
+  - [Engagement/Incentive Points](<#engagement/incentive-points>)
+    - [Earning engagement points](<#earning-engagement-points>)
+    - [Missing engagement points](<#missing-engagement-points>)
+    - [What does at least 10% of the grade mean?](<#what-does-at-least-10%-of-the-grade-mean?>)
+  - [Quizzes](<#quizzes>)
+  - [Grading](<#grading>)
+  - [Handling Grading Issues](<#handling-grading-issues>)
+  - [Collaboration, Cheating and Professional Behavior](<#collaboration,-cheating-and-professional-behavior>)
+    - [Plagiarism and General Misconduct](<#plagiarism-and-general-misconduct>)
+    - [Self-plagiarism](<#self-plagiarism>)
+    - [Generative Artificial Intelligence](<#generative-artificial-intelligence>)
+    - [Collaboration](<#collaboration>)
+    - [Academic Integrity and CSSE Integrity Committee Procedures](<#academic-integrity-and-csse-integrity-committee-procedures>)
+    - [Summary](<#summary>)
+  - [A statement on mental health](<#a-statement-on-mental-health>)
+  - [Miscellaneous](<#miscellaneous>)
+    - [Syllabus changes](<#syllabus-changes>)
+    - [Campus Resources](<#campus-resources>)
+    - [Attendance policy](<#attendance-policy>)
+    - [Illness](<#illness>)
+    - [Laptop policy](<#laptop-policy>)
+  - [Acknowledgments](<#acknowledgments>)
 
 ## Course Description
 
@@ -62,13 +66,6 @@ At the start of this class, we assume that you are familiar with the C
 programming language and are well on your way to become an independent
 programmer. Officially, this means that you should have passed CSSE-132 and
 CSSE-220.
-
-<!--
-However, to make the best out of this class, we strongly recommend
-that you have taken, or are familiar with the topics presented in CSSE 232
-(Computer Architecture I). A lot of the topics we cover will make more sense if
-you have the background knowledge discussed in an architecture class.
--->
 
 ## Learning Objectives
 
@@ -127,7 +124,7 @@ After completing this class, you should be able to:
   site.gradescope_url }}).
 
 * Posting questions, discussions, and answers to questions asked are best done
-  on the course’s [Moodle forum]({{ site.moodle_url }}).
+  on the course’s [CampusWire forum]({{site.campuswire_url}})
 
 
 ## Deadlines and Late Policy
@@ -136,16 +133,17 @@ The deadlines of all homeworks, labs, and project milestones are listed on
 the [schedule]({{ site.baseurl }}/schedule/) page.
 
 In general, you should plan ahead and submit assignments on time. This course
-has no ’late day’ policy and late assignments are generally worth 0 points
-unless you have made arrangements. This class is fast-paced, if you started
-delaying work, things will snowball very quickly, so plan ahead and **start
-early**.
+has no 'late day' policy and late assignments are generally worth 0 points.
+This class is fast-paced, and if you start delaying work, things will snowball
+very quickly, so plan ahead and **start early**.
 
 However, we understand that situations out of control may arise. We handle all
 situations on a case-by-case basis.  Here are some general guidelines:
 
 * **You should make arrangements with your instructor ahead of time**, minimum
   24 hours before the assigned deadline.
+* Requests made the day of a lab deadline may not be honored, please plan
+  ahead and communicate with your instructor.
 * The usual extension is 24 hours upon request or for extreme circumstances 48
   hours
 * We keep track of extensions per student and if you seem to be overusing the
@@ -185,31 +183,97 @@ make passing OS quite hard.  All these assignments are done individually.
 There are also challenge assignments.  Challenge assignments generally involve
 trickier programming but explore more interesting topics.  Despite the fact that
 they are harder, the challenge assignments are actually weighted less than
-regular assignments.  You can pass the class without doing all challenge
-assignments, but your grade will be capped at a C, leaving you little room to
-make mistakes on labs and exams.  BUT it's our hope everyone will attempt at
-least some of the challenge assignments, and those looking for an A will need to
-complete all of them.  Challenge assignments can be done in groups of 2, or
-individually.
+regular assignments. BUT it's our hope everyone will attempt at least some of
+the challenge assignments, and those looking for an A will need to complete all
+of them.  Challenge assignments can be done in groups of 2, or individually.
 
 ## Exams
 
-There will be 2 skill exams and a final exam. Please make note of the following:
+There will be 2 skill exams, split over four parts (parts 1 and 2 of exam1,
+parts 1 and 2 of exam2). Please make note of the following:
 
-- You **must** earn a passing (60%) average on the exams to pass the course.
-- You **must** earn at least a C (70%) average on the exams to earn a C or
-  better in the course.
+  - You **must** earn a passing (60%) average on the exams to pass the course.
+  - You **must** earn at least a C (70%) average on the exams to earn a C or
+    better in the course.
 
+<!--Remove after summer quarter
+## Engagement/Incentive Points
+
+Keeping your motivation up during the summer term is hard, especially if you
+have a side gig or an internship going on. Therefore, we are introducing
+_engagement/incentive_ points, which will constitute **at least** 10% of your
+grade. 
+
+### Earning engagement points
+
+Every week, we will be covering at least two new topics in class. To maximize
+your engagement and help with your motivation, I will ask you to make **at
+least two posts** on the class forum on CampusWire. These posts can be any (but
+not limited to) the following:
+
+1. A question that you had about the course material.
+2. An interesting article that you found discussing the idea further, which you
+   summarize in a couple of sentences.
+3. Error you find in the class videos and/or lecture notes.
+4. Interesting and funny memes of your instructor captured in an awkward
+   moment in the video lectures.
+5. Applications of things we use in class to other domains (e.g., databases,
+   other operating systems, etc.)
+6. An interesting code example of things we learned in class, including but not
+   limited to security vulnerabilities.
+7. Other interesting ideas that might come to you.
+
+Please note that every post you make will be judged by your instructor/TA
+whether it meets the minimum requirement for earning points. For example, "In
+this session we learned about processes" does **not** count as an engagement
+point. On the other hand, "I did some research and found out how Windows
+handles processes compared to Unix and here are some details" definitely counts
+as an engagement point.
+
+### Missing engagement points
+
+To help reduce the load on you a bit, you are allowed to miss **two engagement
+point** opportunities. Those can be within the same week, i.e., you do not
+submit any post during one of the weeks, or you can spread them out over two
+weeks where you only submit one post per week. Missing engagement posts beyond
+that will reduce your grade.
+
+### What does at least 10% of the grade mean?
+
+If you submit two posts every week, then you will earn 10% of your grade.
+However, **you can continue earning points** beyond the 10% and use those to
+account for a lab you botched. Every post you make on top of the required two
+will be given a weight by you instructor. At the end of the class, you can
+exchange the number of points (weights) you have collected for grade points
+that you can add to your overall grade. This is very similar to the _incentive_
+points policy that we have used in this class before.
+-->
+
+## Quizzes
+
+Most class sessions will contain in-class quizzes that you must submit to
+complete the session. However, I already provide you with the solution for
+those quizzes so you can check your work. They are therefore more for you to
+take notes and test yourself, rather than a way for me to assess your
+understanding. You would do yourself a great favor if you do the quizzes
+yourself and then check the answers; they often contain many helpful hints for
+the exams.
+
+At the end of every quiz, there are two clear/muddy questions. The first
+question asks you to summarize two important things that you learned in the
+session while the second questions asks you to write down two questions or
+things that you are still unclear about. I will use information from those
+questions to decide what to focus on in review sessions.
 
 ## Grading
 
-| Item                   | Weight |
-| :--------------------  | :----- |
-| Assignments/Labs       | 40%    |
-| Challenge  Assignments | 15%    |
-| Project                | 10%    |
-| Exams                  | 35%    |
-
+| Item                  | Weight |
+|:----------------------|:-------|
+| Assignments/Labs      | 40%    |
+| Exams                 | 30%    |
+| Challenge Assignments | 15%    |
+| Project               | 10%    |
+| Quizzes               | 5%     |
 
 I generally follow the registrar's interpretation of letter grades, which you
 can find
@@ -218,10 +282,9 @@ under the grades description section.
 
 ## Handling Grading Issues
 
-Thankfully, Teaching Assistants will be helping us grade most of the homework in
-this class. On the schedule page, you should be able to see who will be grading
-a particular assignment. When you have a grading issue, please contact the
-grading TA first, particularly for issues like:
+Thankfully, Teaching Assistants will be helping us grade most of the homework
+in this class. When you have a grading issue, please contact the grading TA
+first, particularly for issues like:
 
 + The code you submitted works on your computer but not the TA's.
 + The TA didn't notice but you actually did do the thing requested, it was just
@@ -329,32 +392,34 @@ exchange of ideas, not code or written answers. **Collaboration** refers to
 helping one another _understand course material_, not providing shortcuts to
 completing course work.
 
+### Academic Integrity and CSSE Integrity Committee Procedures
+
+It is critical to maintain academic integrity. It is essential for all students
+to cite any and all sources of help received in completing coursework. This
+practice not only fosters a culture of honesty and transparency but also
+prevents misunderstandings that might otherwise escalate to formal proceedings.
+Students should also be aware of what is appropriate help on homework
+assignments. Please refer to this syllabus and the document [What Constitutes
+Misconduct](https://rosehulman.sharepoint.com/:w:/r/sites/CS/Shared%20Documents/Pilot%20Integrity%20Policy/IntegrityPilotPolicy%20-%20What%20Constitutes%20Misconduct.docx?d=w72d3dc4b233d4df68e10736359a06c80&csf=1&web=1&e=QWvFcM).
+To ensure fairness and responsibility, any instances of suspected misconduct
+will be handled through the CSSE Integrity Committee.   
+
+If a case of suspected misconduct arises, it will be submitted to the CSSE
+Integrity Committee for review (see [Policies and
+Procedures](https://rosehulman.sharepoint.com/:w:/r/sites/CS/Shared%20Documents/Pilot%20Integrity%20Policy/IntegrityPilotPolicy%20-%20Procedures.docx?d=wf4c70babf3ac434ba29d5518dca9f877&csf=1&web=1&e=1efwlT) and
+[possible
+penalties](https://rosehulman.sharepoint.com/:w:/r/sites/CS/Shared%20Documents/Pilot%20Integrity%20Policy/IntegrityPilotPolicy%20-%20Penalties%20%26%20Evidence.docx?d=w916e293ca31a4493bdbdd6b78ed2d3dd&csf=1&web=1&e=wCWF2K)).
+The process includes an initial review of the evidence by the committee, a time
+for students to explain or admit to potential misconduct, and potentially a
+hearing to examine the circumstances and evidence. Students are encouraged to
+continue their studies and engage with the course material and instructor
+normally throughout the investigation.  
+
 ### Summary
 
 The instructors take plagiarism seriously. **Students caught plagiarizing, or
 cheating in any way, will be reported to the dean of students and will receive
 an automatic F in the class**.
-
-
-<!--
-With code assignments - it is acceptable to discuss your solution with other
-students.  It is acceptable to get some occasional help with a particular
-section or with debugging.  It is not acceptable, nor in your best interest,  to
-pair-program the assignment together (except for challenge assignments where
-pairing is allowed).  It is not acceptable to co-write the assignment by
-discussing the solution line-by-line as you write it.  It is definitely not
-acceptable to get code from someone else.
-
-Students found to have cheated will be penalized up to -150% of the value of the
-assignment (yes, that’s a negative grade, beyond a simple 0). This is in
-addition to cheating being reported and added to your permanent file.
-
-Students are expected to behave professionally. A lack of professional behavior
-in a student’s interactions within a team, with an instructor, teaching
-assistants or during in-class activities can result in a penalty grade.
-Depending on the nature and the egregiousness of the behavior, the penalty grade
-might be a reduction in letter grade or an F in the class.
--->
 
 ## A statement on mental health
 
@@ -367,8 +432,7 @@ are in need of help, please reach out to the [office of health
 services](https://www.rose-hulman.edu/campus-life/student-services/wellness-and-health-services/health-services/index.html)
 or [the student counseling
 center](https://www.rose-hulman.edu/campus-life/student-services/wellness-and-health-services/counseling-services/index.html).
-Also, if you feel comfortable, you can reach out to me so I can help you devise
-a plan to tackle your coursework for CSSE 332.
+
 
 ## Miscellaneous
 
@@ -377,6 +441,19 @@ a plan to tackle your coursework for CSSE 332.
 Please note that the syllabus is a living document. We reserve the right to
 change the syllabus at any time, but you will notified of any changes.
 
+### Campus Resources
+
+Rose-Hulman provides a number of resources to help you out:
+
+- For accessibility information, please see Rose's [Student Accessibility
+  Services](https://www.rose-hulman.edu/campus-life/student-services/student-accessibility-services.html)
+- Be aware of relevant [services and policies](https://www.rose-hulman.edu/campus-life/student-life/_assets/Student-Handbook.pdf)
+  regarding student life.
+- Make sure you know the [academic policies](https://www.rose-hulman.edu/campus-life/student-services/registrar/rules-and-procedures/index.html).
+- In case of an emergency, please see Rose's [emergency
+  contacts](https://www.rose-hulman.edu/about-us/community-and-public-services/emergency.html).
+
+
 ### Attendance policy
 
 It is in your best interest to attend all class sessions, as we will often be
@@ -384,10 +461,13 @@ doing coding activities that will feed directly into your homework or lab
 assignments.
 
 Therefore, **up to two unexcused absences are allowed**. Any additional
-unexcused absence may result in you receiving a failing grade for the course.
-You will be responsible for making up any missed work during those unexcused
-absences.
+unexcused absence may result in a drop in a latter grade in the class.
+Any more than **four unexcused absences** may result in you receiving a failing
+grade for the course. You will be responsible for making up any missed work
+during those unexcused absences.
 
+
+<!--
 ### Illness
 
 We understand illnesses may arise and you will need to take some time to
@@ -396,6 +476,7 @@ your instructor as soon as possible about your situation; the details of your
 situation that you wish to share are totally up to you. To protect your
 classmates and yourself, please do not come to class ill, especially if it is
 COVID-related.
+-->
 
 ### Laptop policy
 
@@ -412,7 +493,7 @@ instructor so they can make an exception.
 
 ## Acknowledgments
 
-This syllabus was last modified by Mohammad Noureddine on Fri 24 Nov 2023. It is
+This syllabus was last modified by Mohammad Noureddine on Wed 27 Nov 2024. It is
 built on the contribution of various instructors, including Mike Hewner, Lixing
 Song, and Mark Hays.
 

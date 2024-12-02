@@ -100,37 +100,10 @@ your work and avoid falling behind and finding yourself in a pickle. For
 policies and guidelines, see our official course syllabus at the top right
 corner.
 
-## Annoying your professor
+## Getting an exam hint
 
-Students in Sections 1 and 2, if you have made it this far reading this
-document, you get the privilege of overloading my (Mohammad's) email inbox with
-a funny drawing of an elephant.
-
-<!--
-## A statement on mental health
-I know that as students, you are dealing with a lot of stress, often a lack of
-sleep, and sometimes social isolation (especially in the COVID times). It is
-easy to neglect your mental (and physical) health and lose yourself in the
-vortex of pressure. Spoken from experience, it is important for you to *make
-time* for yourself, both mentally and physically. Therefore, if at any point
-during the quarter, you feel that you are in need of help, please reach out to
-the [office of health
-services](https://www.rose-hulman.edu/campus-life/student-services/wellness-and-health-services/health-services/index.html)
-or [the student counseling
-center](https://www.rose-hulman.edu/campus-life/student-services/wellness-and-health-services/counseling-services/index.html).
-Also, if you feel comfortable, you can reach out to me so I can help you
-devise a plan to tackle your coursework for CSSE 332.
-
-Students of Sections 03 and 04 (and others if you like), if you have read so far
-into the unofficial syllabus, send [Mohammad](mailto:noureddi@rose-hulman.edu) a
-picture of your favorite Norse or Greek god. If you don't have a favorite Norse
-or Greek god, then look them up and pick one, you definitely should.
-
-## Mystery Point
-I bet you were wondering what is the mystery point about in the official syllabus. Well, here it is.
-If you have read this unofficial syllabus, send me an email with a picture of a dinosaur and you
-automatically earn one point on your grade!
--->
-
-
+If you have read this unofficial syllabus and have reached this far,
+congratulations! Please send **Mohammad** an email with the title `"[CSSE332]
+Unofficial Syllabus Hint` and a picture of an angry cat to get a hint for your
+first exam.
 

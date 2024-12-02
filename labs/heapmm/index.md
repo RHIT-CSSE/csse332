@@ -192,10 +192,10 @@ struct __attribute__((aligned(8))) metadata {
   struct metadata *prev; /* The prev pointer in the linked list. */
 };
 ```
-and then we define a new type based on this union to make it easier to code
+and then we define a new type based on this structure to make it easier to code
 using:
 ```c
-typedef union metadata metadata_t;
+typedef struct metadata metadata_t;
 ```
 
 The members of `struct metadata` are explained in the comments above. The

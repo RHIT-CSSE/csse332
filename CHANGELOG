@@ -1,0 +1,67 @@
+2024-11-27 Mohammad Noureddine
+
+  Set up updates for Winter 2024 course offerings.
+
+  * _config.yml: 
+    - Updated destination www folder to reflect the latest term.
+    - Updated Moodle and Gradescope links.
+
+  * admin/gen_dates.rb:
+    - Updated dates for new quarter and fixed MLK day holidy.
+
+  * _data/date_convert.yml:
+    - Generated from gen_dates.rb with new dates.
+
+  * _data/assignments.csv:
+    - Commented out all assignments for now.
+    - Added C practice quiz for assessment.
+    - Restored lab 1 and WSL 2 install
+
+  * docs/syllabus/syllabus.md:
+    - Removed language about capping grade at C without challenge labs; that no
+      longer applies.
+    - Update late policy to note that day of requests may not be honored, at
+      the discretion of the instructor.
+    - Reverted back to two exams schedule and adjusted passing policy.
+    - Removed summer language about engagement points.
+    - Adjusted grading table based on the Spring of last year's offering.
+    - Added 5% for quizzes, those are just for attendance, graded lightly.
+    - Brought back laptop and attendance policies.
+    - Added language from CSSE Intregity Committee policies with links to
+      various documents.
+      * WARNING: Policy does not reference self-plagiarism but our syllabus
+                 does!
+    - Update table of contents.
+
+2024-11-28 Mohammad Noureddine
+
+  Added links to homepage for C review and bash crash course.
+
+  * index.md:
+    - Added two new set of links there to point to Moodle.
+    - These contain C review material that we don't have time to go over in
+      class.
+    - Also includes a quick bash crash course for those who are not comfortable
+      with a terminal window.
+
+2024-11-29 Mohammad Noureddine
+
+  Made changes to the schedule up to week 7.
+
+  * _data/schedule.yml:
+    - Because of the break, it doesn't make sense to split exam 1, a part before
+      break and one two weeks later, so I put them back to back.
+    - Had to do the same for exam 2 since we also lose a day for MLK day being a
+      holiday now.
+    - Had to remove heap manager II because of the lost lab day, we now do heap
+      manager I and then directly COW.
+      - We might replace one or both of these with ELF if done in time.
+    - Exam 2 is now week 7 back to back, similar to exam 1, so we can start the
+      project on week 8 and have three weeks for it.
+    - We are left with three lab dates, which we can consider what to introduce
+      there. We have the scheduling activity (simple), ext2 (nice), and stack
+      smashing (might nix this), and userspace threads (xv6 and userspace
+      versions), and userspace threads 2 (only userspace version beacuse no
+      signals in xv6).
+    - Added worksheets and solutions links to the schedule.
+

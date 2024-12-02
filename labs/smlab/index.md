@@ -1,6 +1,6 @@
 ---
 layout: post
-title: (Challenge) Lab 13 Stack Smashing
+title: Lab 11 Memory Organization and Safety
 readtime: true
 date: Wed Feb 8 2023
 ---
@@ -503,15 +503,57 @@ To see the string in memory, you can change the print format as follows:
 gef> x/s 0x8048000 + 0x6d871
 0x80b5871:	"/bin/sh"
 ```
-# Part 6
 
-Ignore Part 6. Skip to Part 8.
 
-# Part 7
+<!--
+# Part 6 (Choose this or part 7 or part 8) 🌶️🌶️🌶️🌶️
 
-Ignore Part 7. Skip to Part 8.
+This part uses the same code as the part 3, but it is compiled with DEP enabled.
+Your job is to construct a return-oriented-programming (ROP) attack to open a
+root shell.
 
-# Part 8 🌶️🌶️🌶️
+__Hint__: You might find the tool `ROPgadget` useful. Here's a link to the
+information: [ROPgadget](https://github.com/JonathanSalwan/ROPgadget).
+
+__Hint__: You might find it useful to read through the paper "The Geometry of
+Innocent Flesh on the Bone" listed in the resources section. Focus on sections
+3.4 and 4 of the paper.
+
+__Hint__: To disassemble a program outside of `gdb`, you can use
+```shell
+objdump -d ./part6 > part6.txt
+```
+
+## Submission
+
+Create a python program, called `part6.py`, that prints the line you must pass
+as an argument to your `part6` to cause the creation of a root shell. To test
+your code, use the following:
+```shell
+$ sudo ./part6 "$(python2 part6.py)"
+#
+```
+
+# Part 7 (Choose this or part 6 or part 8) 🌶️🌶️🌶️🌶️
+
+This part implements a doubly-linked list on the heap. It accepts three
+arguments from the command line. Study the code and its machine instructions to
+figure out a way to exploit it and open a shell. You may need to modify the
+`shellcode` that we provided you with slightly (maybe add an instruction or
+two).
+
+## Submission
+
+Create a python program, called `part7.py`, that prints the line you must pass
+as an argument to your `part7` to cause the creation of a root shell. To test
+your code, use the following:
+```shell
+$ sudo ./part7 "$(python2 part7.py)"
+#
+```
+-->
+
+# Part 6 🌶️🌶️🌶️
 
 At the start of this lab, we asked you to turn off ASLR to make your exploits
 feasible. If enabled, ASLR will make exploiting a buffer overflow really hard
@@ -529,11 +571,11 @@ this program, despite the presence of our little randomization.
 
 ## Submission
 
-Create a python program, called `part8.py`, that prints the line you must pass
-as an argument to your `part8` to cause the creation of a root shell. To test
+Create a python program, called `part6.py`, that prints the line you must pass
+as an argument to your `part6` to cause the creation of a root shell. To test
 your code, use the following:
 ```shell
-$ sudo ./part8 "$(python2 part8.py)"
+$ sudo ./part6 "$(python2 part6.py)"
 #
 ```
 
@@ -552,11 +594,11 @@ of the binaries.
 
 # Rubric
 
-| Part                       | Points |
-| ----------------           | ------ |
-| Part 1                     | 10     |
-| Part 2                     | 10     |
-| Part 3                     | 15     |
-| Part 4                     | 20     |
-| Part 5                     | 20     |
-| Part 6 or Part 7 or Part 8 | 25     |
+| Part   | Points |
+|--------|--------|
+| Part 1 | 10     |
+| Part 2 | 10     |
+| Part 3 | 15     |
+| Part 4 | 20     |
+| Part 5 | 20     |
+| Part 6 | 25     |

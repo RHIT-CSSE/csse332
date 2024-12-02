@@ -79,7 +79,7 @@ instructions:
   $ git pull upstream main
   ```
 At this stage, you should have the latest copy of the code, and you are good to
-get started. The starter code is contained under the `threads_basics/` directory.
+get started. The starter code is contained under the `ext2/` directory.
 
 If you are currently on a different branch (say you are still on
 `clab_solution` from a previous lab), then we need to switch to `main` or
