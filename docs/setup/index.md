@@ -74,6 +74,13 @@ Note that the line `warning: You appear to have cloned an empty repository.`
 repository is not empty and you will need to delete it and recreate a new and
 empty one.
 
+### Authentication Issues?
+
+If you get an authentication problem when trying to clone your private
+repository, then please refer to [this
+guide]({{site.baseurl}}/docs/setup/ssh_keys) for instructions on how to add
+your SSH keys to you GitHub account.
+
 ## 3. Adjust the repository's remote
 
 We would like to set up your repository in a way that you can pull from two
