@@ -44,7 +44,7 @@ Finally, copy your **public** key (i.e., the one that ends with a `.pub`), you
 can display it on the screen using:
 
 ```shell
-$ cat ~/.id_ed25519.pub
+$ cat ~/.ssh/id_ed25519.pub
 ```
 
 (or replace with `id_rsa.pub` if that is your case). You can simply type `cat
