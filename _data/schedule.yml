@@ -27,6 +27,8 @@
   topics:
     - <a href="{{ site.url }}{{ site.baseurl}}/notes/session03"> The Process Abstraction </a>
   materials:
+    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz03.pdf">Quiz Sheet</a>
+    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz03_solution.pdf">Quiz Solution</a>
 
 4:
   reading:
