@@ -191,7 +191,11 @@ the control key, then press `a`, then release both keys and  press `x`.
 
 ## Troubleshooting
 
-If the compilation fails, make sure to record any error messages your received.
+If you get an error about missing packages, most likely is that you did not
+install the packages listed in the instructions here https://www.rose-hulman.edu/class/csse/csse332/2425b/labs/wsl/ (step 2).  
+Check that.
+
+If the compilation fails but the packages seem right, make sure to record any error messages your received.
 Before contacting your instructor, make sure you record the versions of all of
 the tools that are needed to compile xv6. You can get those version by running
 the following commands:
