@@ -36,6 +36,8 @@
   topics:
     - <a href="{{ site.url }}{{ site.baseurl}}/notes/session04"> Operations on Processes </a>
   materials: 
+    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz04.pdf">Quiz Sheet</a>
+    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz04_solution.pdf">Quiz Solution</a>
 
 
 ###############################################################################
