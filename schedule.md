@@ -226,6 +226,15 @@ lectures and/or assignments with an advanced week's notice.
     </a>
    </td>
    <td markdown="span">
+    {::nomarkdown}
+    <ul style="margin:0;padding:.5rem">
+     <li>
+      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz05.pdf">
+       Quiz Sheet
+      </a>
+     </li>
+    </ul>
+    {:/}
    </td>
   </tr>
   <tr>
@@ -256,6 +265,15 @@ lectures and/or assignments with an advanced week's notice.
     </a>
    </td>
    <td markdown="span">
+    {::nomarkdown}
+    <ul style="margin:0;padding:.5rem">
+     <li>
+      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz06.pdf">
+       Quiz Sheet
+      </a>
+     </li>
+    </ul>
+    {:/}
    </td>
   </tr>
   <tr>
@@ -279,6 +297,15 @@ lectures and/or assignments with an advanced week's notice.
     C debugging
    </td>
    <td markdown="span">
+    {::nomarkdown}
+    <ul style="margin:0;padding:.5rem">
+     <li>
+      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz07.pdf">
+       Quiz Sheet
+      </a>
+     </li>
+    </ul>
+    {:/}
    </td>
   </tr>
   <tr>
@@ -307,10 +334,20 @@ lectures and/or assignments with an advanced week's notice.
     Interrupts and Traps
    </td>
    <td markdown="span">
-    <a href="{{site.url}}{{site.baseurl}}/docs/activities/systrace/">
-     Activity
-    </a>
-    <br/>
+    {::nomarkdown}
+    <ul style="margin:0;padding:.5rem">
+     <li>
+      <a href="{{site.url}}{{site.baseurl}}/docs/activities/systrace/">
+       Activity
+      </a>
+     </li>
+     <li>
+      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz08.pdf">
+       Quiz Sheet
+      </a>
+     </li>
+    </ul>
+    {:/}
    </td>
   </tr>
   <tr>
