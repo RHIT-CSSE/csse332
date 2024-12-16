@@ -50,7 +50,7 @@
     - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session05"> IPC: Signals </a>'
   materials: 
     - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz05.pdf">Quiz Sheet</a>
-    # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz05_solution.pdf">Quiz Sheet</a>
+    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz05_solution.pdf">Quiz Solution</a>
 
 6:
   reading:
@@ -59,7 +59,7 @@
     - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session06"> IPC: Pipes </a>'
   materials: 
     - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz06.pdf">Quiz Sheet</a>
-    # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz06_solution.pdf">Quiz Sheet</a>
+    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz06_solution.pdf">Quiz Solution</a>
 
 7:
   reading:
@@ -70,7 +70,7 @@
     - C debugging
   materials:
     - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz07.pdf">Quiz Sheet</a>
-    # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz07_solution.pdf">Quiz Sheet</a>
+    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz07_solution.pdf">Quiz Solution</a>
 
 8:
   reading:
@@ -81,7 +81,7 @@
   materials:
     - <a href="{{site.url}}{{site.baseurl}}/docs/activities/systrace/"> Activity </a>
     - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz08.pdf">Quiz Sheet</a>
-    # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz08_solution.pdf">Quiz Sheet</a>
+    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz08_solution.pdf">Quiz Solution</a>
 
 
 ###############################################################################
@@ -92,7 +92,7 @@
     # - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/file-devices.pdf"> Section 36.4 of Chapter 16 </a>
   topics:
     # - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session18"> Threads: Lightweight Processes </a>'
-    - Implementing system calls
+    - <a href="{{site.url}}{{site.baseurl}}/docs/activities/syscall/"> Implementing system calls </a>
   materials:
     # <a href="{{site.url}}{{site.baseurl}}/docs/activities/systrace/"> Activity </a>
 

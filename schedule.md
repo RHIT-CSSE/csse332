@@ -233,6 +233,11 @@ lectures and/or assignments with an advanced week's notice.
        Quiz Sheet
       </a>
      </li>
+     <li>
+      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz05_solution.pdf">
+       Quiz Solution
+      </a>
+     </li>
     </ul>
     {:/}
    </td>
@@ -272,6 +277,11 @@ lectures and/or assignments with an advanced week's notice.
        Quiz Sheet
       </a>
      </li>
+     <li>
+      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz06_solution.pdf">
+       Quiz Solution
+      </a>
+     </li>
     </ul>
     {:/}
    </td>
@@ -302,6 +312,11 @@ lectures and/or assignments with an advanced week's notice.
      <li>
       <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz07.pdf">
        Quiz Sheet
+      </a>
+     </li>
+     <li>
+      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz07_solution.pdf">
+       Quiz Solution
       </a>
      </li>
     </ul>
@@ -346,6 +361,11 @@ lectures and/or assignments with an advanced week's notice.
        Quiz Sheet
       </a>
      </li>
+     <li>
+      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz08_solution.pdf">
+       Quiz Solution
+      </a>
+     </li>
     </ul>
     {:/}
    </td>
@@ -368,7 +388,9 @@ lectures and/or assignments with an advanced week's notice.
    <td markdown="span">
    </td>
    <td markdown="span" style="text-align:center">
-    Implementing system calls
+    <a href="{{site.url}}{{site.baseurl}}/docs/activities/syscall/">
+     Implementing system calls
+    </a>
    </td>
    <td markdown="span">
    </td>
