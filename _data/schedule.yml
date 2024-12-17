@@ -103,6 +103,7 @@
     # - '<b> Hacking Day: Lab 05 </b>'
     - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session09"> Exam 1 Review </a>'
   materials: 
+    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/exam1review.pdf">Review Quiz Sheet</a>
 
 
 11:
