@@ -136,7 +136,8 @@
   topics:
     - <a href="{{ site.url }}{{ site.baseurl}}/notes/session15"> Paging </a>
   materials:
-    <a href="{{site.url}}{{site.baseurl}}/docs/activities/paging/"> Activity </a>
+    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz14.pdf">Quiz Sheet</a>
+    - <a href="{{site.url}}{{site.baseurl}}/docs/activities/paging/"> Activity </a>
 
 
 15:
