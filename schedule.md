@@ -485,6 +485,15 @@ lectures and/or assignments with an advanced week's notice.
     </a>
    </td>
    <td markdown="span">
+    {::nomarkdown}
+    <ul style="margin:0;padding:.5rem">
+     <li>
+      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz13.pdf">
+       Quiz Sheet
+      </a>
+     </li>
+    </ul>
+    {:/}
    </td>
   </tr>
   <tr>
@@ -501,10 +510,20 @@ lectures and/or assignments with an advanced week's notice.
     </a>
    </td>
    <td markdown="span">
-    <a href="{{site.url}}{{site.baseurl}}/docs/activities/paging/">
-     Activity
-    </a>
-    <br/>
+    {::nomarkdown}
+    <ul style="margin:0;padding:.5rem">
+     <li>
+      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz14.pdf">
+       Quiz Sheet
+      </a>
+     </li>
+     <li>
+      <a href="{{site.url}}{{site.baseurl}}/docs/activities/paging/">
+       Activity
+      </a>
+     </li>
+    </ul>
+    {:/}
    </td>
   </tr>
   <tr>

@@ -128,6 +128,8 @@
   topics:
     - <a href="{{ site.url }}{{ site.baseurl}}/notes/paging"> Introduction to Paging </a>
   materials:
+    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz13.pdf">Quiz Sheet</a>
+    # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz08_solution.pdf">Quiz Solution</a>
 
 14:
   reading:
@@ -135,7 +137,8 @@
   topics:
     - <a href="{{ site.url }}{{ site.baseurl}}/notes/session15"> Paging </a>
   materials:
-    <a href="{{site.url}}{{site.baseurl}}/docs/activities/paging/"> Activity </a>
+    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz14.pdf">Quiz Sheet</a>
+    - <a href="{{site.url}}{{site.baseurl}}/docs/activities/paging/"> Activity </a>
 
 
 15:
