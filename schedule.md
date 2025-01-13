@@ -586,29 +586,14 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Fri, Jan 10 2025
    </td>
-   <td markdown="span" style="text-align:left;">
-    {::nomarkdown}
-    <ul style="margin:0;padding:.5rem">
-     <li>
-      <a href="{{site.baseurl}}/labs/cow/">
-       Lab 07: Copy-on-Write
-      </a>
-     </li>
-    </ul>
-    {:/}
-   </td>
    <td markdown="span">
    </td>
+   <td markdown="span" style="text-align:center">
+    <a href="{{site.baseurl}}/labs/cow/">
+     Lab 06: Copy-on-Write
+    </a>
+   </td>
    <td markdown="span">
-    {::nomarkdown}
-    <ul style="margin:0;padding:.5rem">
-     <li>
-      <b>
-       Lab 07: Copy-On-Write
-      </b>
-     </li>
-    </ul>
-    {:/}
    </td>
   </tr>
   <tr>
@@ -711,7 +696,7 @@ lectures and/or assignments with an advanced week's notice.
   </tr>
   <tr>
    <td colspan="4" markdown="span">
-    [Lab 08: Threads &amp; Mutex Basics]({{ site.url }}{{ site.baseurl }}/labs/threads_basics) DUE Thu, Jan 16 2025 23:59 [Submission box]({{ site.gradescope_url }})
+    [Lab 07: Threads &amp; Mutex Basics]({{ site.url }}{{ site.baseurl }}/labs/threads_basics) DUE Thu, Jan 16 2025 23:59 [Submission box]({{ site.gradescope_url }})
    </td>
   </tr>
   <tr>
@@ -803,7 +788,7 @@ lectures and/or assignments with an advanced week's notice.
   </tr>
   <tr>
    <td colspan="4" markdown="span">
-    [Lab 09: Condition Variables Basics]({{ site.url }}{{ site.baseurl }}/labs/condvar) DUE Thu, Jan 23 2025 23:59 [Submission box]({{ site.gradescope_url }})
+    [Lab 08: Condition Variables Basics]({{ site.url }}{{ site.baseurl }}/labs/condvar) DUE Thu, Jan 23 2025 23:59 [Submission box]({{ site.gradescope_url }})
    </td>
   </tr>
   <tr>
@@ -850,18 +835,12 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Mon, Jan 27 2025
    </td>
-   <td markdown="span" style="text-align:left;">
-    {::nomarkdown}
-    <ul style="margin:0;padding:.5rem">
-     <li>
-      <a href="{{ site.url }}{{ site.baseurl}}/notes/session22">
-       Concurrency: Readers/Writers Problem
-      </a>
-     </li>
-    </ul>
-    {:/}
-   </td>
    <td markdown="span">
+   </td>
+   <td markdown="span" style="text-align:center">
+    <a href="{{ site.url }}{{ site.baseurl}}/notes/session22">
+     Concurrency: Readers/Writers Problem
+    </a>
    </td>
    <td markdown="span">
     <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/">
@@ -872,7 +851,7 @@ lectures and/or assignments with an advanced week's notice.
   </tr>
   <tr>
    <td colspan="4" markdown="span">
-    [[Challenge] Lab 10: Condition Variables II]({{ site.url }}{{ site.baseurl }}/labs/condvar_challenge) DUE Mon, Jan 27 2025 23:59 [Submission box]({{ site.gradescope_url }})
+    [[Challenge] Lab 09: Condition Variables II]({{ site.url }}{{ site.baseurl }}/labs/condvar_challenge) DUE Mon, Jan 27 2025 23:59 [Submission box]({{ site.gradescope_url }})
    </td>
   </tr>
   <tr>
@@ -884,7 +863,7 @@ lectures and/or assignments with an advanced week's notice.
    <td markdown="span">
    </td>
    <td markdown="span" style="text-align:center">
-    Exam 2 Review and Practice
+    Project Launch Day
    </td>
    <td markdown="span">
    </td>
@@ -898,9 +877,7 @@ lectures and/or assignments with an advanced week's notice.
    <td markdown="span">
    </td>
    <td markdown="span" style="text-align:center">
-    <b>
-     Exam 2 Part 1
-    </b>
+    Exam 2 Review and Practice
    </td>
    <td markdown="span">
    </td>
@@ -915,7 +892,7 @@ lectures and/or assignments with an advanced week's notice.
    </td>
    <td markdown="span" style="text-align:center">
     <b>
-     Exam 2 Part 2
+     Exam 2 Part 1
     </b>
    </td>
    <td markdown="span">
@@ -977,7 +954,10 @@ lectures and/or assignments with an advanced week's notice.
    </td>
    <td markdown="span">
    </td>
-   <td markdown="span">
+   <td markdown="span" style="text-align:center">
+    <b>
+     Exam 2 Part 2
+    </b>
    </td>
    <td markdown="span">
    </td>

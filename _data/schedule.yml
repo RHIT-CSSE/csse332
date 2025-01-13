@@ -153,12 +153,11 @@
 
 16:
   reading:
-    # - '<a href="{{site.baseurl}}/labs/buddy/">Lab 06: Heap Manager II </a>'
-    - '<a href="{{site.baseurl}}/labs/cow/">Lab 07: Copy-on-Write </a>'
   topics:
+    - '<a href="{{site.baseurl}}/labs/cow/">Lab 06: Copy-on-Write </a>'
   materials:
     # - '<b> Lab 06: Heap Manager II </b>'
-    - '<b> Lab 07: Copy-On-Write </b>'
+    # - '<b> Lab 07: Copy-On-Write </b>'
 
 ###############################################################################
 # WEEK 5
@@ -226,27 +225,27 @@
 ###############################################################################
 24:
   reading:
-    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session22"> Concurrency: Readers/Writers Problem </a>'
   topics:
+    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session22"> Concurrency: Readers/Writers Problem </a>'
   materials:
     <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
 
 25:
   reading:
   topics:
-    - Exam 2 Review and Practice
+    - Project Launch Day
   materials:
 
 26:
   reading:
   topics:
-    - <b> Exam 2 Part 1 </b>
+    - Exam 2 Review and Practice
   materials:
 
 27:
   reading:
   topics:
-    - <b> Exam 2 Part 2 </b>
+    - <b> Exam 2 Part 1 </b>
   materials:
 
 # ################################################################################
@@ -270,6 +269,7 @@
 31:
   reading:
   topics:
+    - <b> Exam 2 Part 2 </b>
   materials:
 
 

@@ -8,9 +8,9 @@ Lab04: Debugging Lab,debug/,2024-12-16 23:59,,[Submission box]({{ site.gradescop
 [Challenge] Lab05: Heap Manager I,heapmm/,2025-01-09 23:59,,[Submission box]({{ site.gradescope_url }}),Day 15
 # [Challenge] Lab06: Heap Manager II,buddy/,2025-01-13 23:59,,[Submission box]({{ site.gradescope_url }}),Day 17
 [Challenge] Lab06: Copy-on-Write,cow,2025-01-13 23:59,,[Submission box]({{ site.gradescope_url }}),Day 17
-Lab 08: Threads & Mutex Basics,threads_basics,2025-01-16 23:59,,[Submission box]({{ site.gradescope_url }}),Day 21
-Lab 09: Condition Variables Basics,condvar,2025-01-23 23:59,,[Submission box]({{ site.gradescope_url }}),Day 23
-[Challenge] Lab 10: Condition Variables II,condvar_challenge,2025-01-27 23:59,,[Submission box]({{ site.gradescope_url }}),Day 25
+Lab 07: Threads & Mutex Basics,threads_basics,2025-01-16 23:59,,[Submission box]({{ site.gradescope_url }}),Day 21
+Lab 08: Condition Variables Basics,condvar,2025-01-23 23:59,,[Submission box]({{ site.gradescope_url }}),Day 23
+[Challenge] Lab 09: Condition Variables II,condvar_challenge,2025-01-27 23:59,,[Submission box]({{ site.gradescope_url }}),Day 25
 # Lab 11: Memory Organization and Safety,smlab,2024-08-01 23:59,,[Submission box]({{ site.gradescope_url }}),Day 33
 # Project Milestone 1,milestone1,2024-08-05 23:59,,[Submission box]({{site.gradescope_url}}),Day 33
 # Lab 12: The xv6 Scheduler,sched,2024-08-09 23:59,,[Submission box]({{ site.gradescope_url }}),Day 36
