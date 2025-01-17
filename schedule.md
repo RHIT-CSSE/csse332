@@ -733,7 +733,7 @@ lectures and/or assignments with an advanced week's notice.
    </td>
    <td markdown="span" style="text-align:center">
     <a href="{{ site.url }}{{ site.baseurl}}/notes/session20">
-     Mutex locks practice
+     Locks and Condition Variables
     </a>
    </td>
    <td markdown="span">
@@ -785,10 +785,20 @@ lectures and/or assignments with an advanced week's notice.
     </a>
    </td>
    <td markdown="span">
-    <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/">
-     Activity
-    </a>
-    <br/>
+    {::nomarkdown}
+    <ul style="margin:0;padding:.5rem">
+     <li>
+      <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/">
+       Activity
+      </a>
+     </li>
+     <li>
+      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz21.pdf">
+       Quiz Sheet
+      </a>
+     </li>
+    </ul>
+    {:/}
    </td>
   </tr>
   <tr>

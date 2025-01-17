@@ -191,7 +191,7 @@
 20:
   reading:
   topics:
-    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session20"> Mutex locks practice </a>'
+    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session20"> Locks and Condition Variables </a>'
   materials:
     - <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
     - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz20.pdf">Quiz Sheet</a>
@@ -206,7 +206,9 @@
   topics:
     - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session20"> Concurrency: Condition Variables </a>'
   materials:
-    <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
+    - <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
+    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz21.pdf">Quiz Sheet</a>
+    # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz21_solution.pdf">Quiz Solution </a>
 
 22:
   reading:
