@@ -193,7 +193,9 @@
   topics:
     - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session20"> Mutex locks practice </a>'
   materials:
-    <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
+    - <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
+    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz20.pdf">Quiz Sheet</a>
+    # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz20_solution.pdf">Quiz Solution </a>
 
 ###############################################################################
 # WEEK 6
