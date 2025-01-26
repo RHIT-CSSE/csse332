@@ -907,7 +907,7 @@ lectures and/or assignments with an advanced week's notice.
    <td markdown="span">
    </td>
    <td markdown="span" style="text-align:center">
-    Project Launch Day
+    Exam 2 Review and Practice
    </td>
    <td markdown="span">
    </td>
@@ -921,7 +921,7 @@ lectures and/or assignments with an advanced week's notice.
    <td markdown="span">
    </td>
    <td markdown="span" style="text-align:center">
-    Exam 2 Review and Practice
+    Project Launch Day
    </td>
    <td markdown="span">
    </td>
