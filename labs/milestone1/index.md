@@ -333,12 +333,14 @@ hard. Simply drag and drop the files you have modified onto the submission box.
 
 Here's a breakdown of how your project will be graded per milestone:
 
-| Milestone   | Grade |
-|-------------|-------|
-| Milestone 1 | 5     |
-| Milestone 2 | 10    |
-| Milestone 3 | 85    |
+| Milestone    | Grade |
+|--------------|-------|
+| Milestone 1  | 15    |
+| Milestone 2  | 20    |
+| Milestone 3  | 55    |
+| Presentation | 10    |
 
+<!--
 You can see that the first two milestones are only worth 15 points of your
 final project grade. This means three things:
 
@@ -354,4 +356,4 @@ final project grade. This means three things:
    you submit in your design. You can, and probably will, change those along
    the way. They are here to drive you to work and think about potential
    issues.
-
+-->
