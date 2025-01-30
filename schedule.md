@@ -924,6 +924,15 @@ lectures and/or assignments with an advanced week's notice.
     Project Launch Day
    </td>
    <td markdown="span">
+    {::nomarkdown}
+    <ul style="margin:0;padding:.5rem">
+     <li>
+      <a href="{{site.url}}{{site.baseurl}}/labs/milestone1/">
+       Milestone 1 Description
+      </a>
+     </li>
+    </ul>
+    {:/}
    </td>
   </tr>
   <tr>
@@ -947,7 +956,7 @@ lectures and/or assignments with an advanced week's notice.
     <td colspan="5" markdown="span" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;">
     </td>
    </tr>
-   <td markdown="span" rowspan="4" style="font-size:xx-large;">
+   <td markdown="span" rowspan="5" style="font-size:xx-large;">
     <a name="w8">
      8
     </a>
@@ -962,6 +971,11 @@ lectures and/or assignments with an advanced week's notice.
    <td markdown="span">
    </td>
    <td markdown="span">
+   </td>
+  </tr>
+  <tr>
+   <td colspan="4" markdown="span">
+    [Project Milestone 1]({{ site.url }}{{ site.baseurl }}/labs/milestone1) DUE Mon, Feb 03 2025 23:59 [Submission box]({{ site.gradescope_url }})
    </td>
   </tr>
   <tr>

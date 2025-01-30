@@ -247,6 +247,7 @@
   topics:
     - Project Launch Day
   materials:
+    - <a href="{{site.url}}{{site.baseurl}}/labs/milestone1/"> Milestone 1 Description </a>
 
 27:
   reading:
