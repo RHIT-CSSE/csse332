@@ -336,8 +336,8 @@ Here's a breakdown of how your project will be graded per milestone:
 | Milestone    | Grade |
 |--------------|-------|
 | Milestone 1  | 15    |
-| Milestone 2  | 20    |
-| Milestone 3  | 55    |
+| Milestone 2  | 35    |
+| Milestone 3  | 40    |
 | Presentation | 10    |
 
 <!--
