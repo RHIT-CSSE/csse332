@@ -966,9 +966,21 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Mon, Feb 03 2025
    </td>
-   <td markdown="span">
+   <td markdown="span" style="text-align:left;">
+    {::nomarkdown}
+    <ul style="margin:0;padding:.5rem">
+     <li>
+      <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched.pdf">
+       Chapter 7 of OSTEP
+      </a>
+     </li>
+    </ul>
+    {:/}
    </td>
-   <td markdown="span">
+   <td markdown="span" style="text-align:center">
+    <a href="{{ site.url }}{{ site.baseurl}}/notes/session29">
+     CPU Scheduling I
+    </a>
    </td>
    <td markdown="span">
    </td>
@@ -984,9 +996,21 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Tue, Feb 04 2025
    </td>
-   <td markdown="span">
+   <td markdown="span" style="text-align:left;">
+    {::nomarkdown}
+    <ul style="margin:0;padding:.5rem">
+     <li>
+      <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched-mlfq.pdf">
+       Chapter 8 of OSTEP
+      </a>
+     </li>
+    </ul>
+    {:/}
    </td>
-   <td markdown="span">
+   <td markdown="span" style="text-align:center">
+    <a href="{{ site.url }}{{ site.baseurl}}/notes/session30">
+     CPU Scheduling II
+    </a>
    </td>
    <td markdown="span">
    </td>
@@ -997,9 +1021,21 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Thu, Feb 06 2025
    </td>
-   <td markdown="span">
+   <td markdown="span" style="text-align:left;">
+    {::nomarkdown}
+    <ul style="margin:0;padding:.5rem">
+     <li>
+      <a href="https://pdos.csail.mit.edu/6.828/2022/xv6/book-riscv-rev3.pdf">
+       Chapter 7 of the xv6 book
+      </a>
+     </li>
+    </ul>
+    {:/}
    </td>
-   <td markdown="span">
+   <td markdown="span" style="text-align:center">
+    <a href="{{ site.url }}{{ site.baseurl}}/labs/sched/">
+     The xv6 scheduler
+    </a>
    </td>
    <td markdown="span">
    </td>
@@ -1025,7 +1061,7 @@ lectures and/or assignments with an advanced week's notice.
     <td colspan="5" markdown="span" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;">
     </td>
    </tr>
-   <td markdown="span" rowspan="4" style="font-size:xx-large;">
+   <td markdown="span" rowspan="6" style="font-size:xx-large;">
     <a name="w9">
      9
     </a>
@@ -1035,8 +1071,19 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Mon, Feb 10 2025
    </td>
-   <td colspan="3" markdown="span">
-    N/A
+   <td markdown="span">
+   </td>
+   <td markdown="span" style="text-align:center">
+    <a href="{{ site.url }}{{ site.baseurl}}/notes/filesystems/">
+     File Systems
+    </a>
+   </td>
+   <td markdown="span">
+   </td>
+  </tr>
+  <tr>
+   <td colspan="4" markdown="span">
+    [Lab 10: The xv6 Scheduler]({{ site.url }}{{ site.baseurl }}/labs/sched) DUE Mon, Feb 10 2025 23:59 [Submission box]({{ site.gradescope_url }})
    </td>
   </tr>
   <tr>
@@ -1045,8 +1092,14 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Tue, Feb 11 2025
    </td>
-   <td colspan="3" markdown="span">
-    N/A
+   <td markdown="span">
+   </td>
+   <td markdown="span" style="text-align:center">
+    <a href="{{ site.url }}{{ site.baseurl}}/notes/filesystems/">
+     File Systems II
+    </a>
+   </td>
+   <td markdown="span">
    </td>
   </tr>
   <tr>
@@ -1055,8 +1108,19 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Thu, Feb 13 2025
    </td>
-   <td colspan="3" markdown="span">
-    N/A
+   <td markdown="span">
+   </td>
+   <td markdown="span" style="text-align:center">
+    <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/">
+     Project Work Time and Meetings
+    </a>
+   </td>
+   <td markdown="span">
+   </td>
+  </tr>
+  <tr>
+   <td colspan="4" markdown="span">
+    [Project Milestone 2]({{ site.url }}{{ site.baseurl }}/labs/milestone2) DUE Thu, Feb 13 2025 23:59 [Submission box]({{site.gradescope_url}})
    </td>
   </tr>
   <tr>
@@ -1065,8 +1129,14 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Fri, Feb 14 2025
    </td>
-   <td colspan="3" markdown="span">
-    N/A
+   <td markdown="span">
+   </td>
+   <td markdown="span" style="text-align:center">
+    <b>
+     Lab: ext2 file system
+    </b>
+   </td>
+   <td markdown="span">
    </td>
   </tr>
   <tr>
@@ -1074,7 +1144,7 @@ lectures and/or assignments with an advanced week's notice.
     <td colspan="5" markdown="span" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;">
     </td>
    </tr>
-   <td markdown="span" rowspan="4" style="font-size:xx-large;">
+   <td markdown="span" rowspan="6" style="font-size:xx-large;">
     <a name="w10">
      10
     </a>
@@ -1084,8 +1154,26 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Mon, Feb 17 2025
    </td>
-   <td colspan="3" markdown="span">
-    N/A
+   <td markdown="span" style="text-align:left;">
+    {::nomarkdown}
+    <ul style="margin:0;padding:.5rem">
+     <li>
+      <a href="https://dl.acm.org/doi/10.1145/945445.945462">
+       Xen and the art of virtualization
+      </a>
+     </li>
+    </ul>
+    {:/}
+   </td>
+   <td markdown="span" style="text-align:center">
+    Special Topics in OS
+   </td>
+   <td markdown="span">
+   </td>
+  </tr>
+  <tr>
+   <td colspan="4" markdown="span">
+    [[Challenge] Lab 11: ext2 File System]({{ site.url }}{{ site.baseurl }}/labs/ext2) DUE Mon, Feb 17 2025 23:59 [Submission box]({{ site.gradescope_url }})
    </td>
   </tr>
   <tr>
@@ -1094,8 +1182,21 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Tue, Feb 18 2025
    </td>
-   <td colspan="3" markdown="span">
-    N/A
+   <td markdown="span" style="text-align:left;">
+    {::nomarkdown}
+    <ul style="margin:0;padding:.5rem">
+     <li>
+      <a href="https://dl.acm.org/doi/10.1145/1314299.1314302">
+       Labels and event processes in the Asbestos operating system
+      </a>
+     </li>
+    </ul>
+    {:/}
+   </td>
+   <td markdown="span" style="text-align:center">
+    Special Topics in OS
+   </td>
+   <td markdown="span">
    </td>
   </tr>
   <tr>
@@ -1104,8 +1205,14 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Thu, Feb 20 2025
    </td>
-   <td colspan="3" markdown="span">
-    N/A
+   <td markdown="span">
+   </td>
+   <td markdown="span" style="text-align:center">
+    <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/">
+     Project Work Time and Meetings
+    </a>
+   </td>
+   <td markdown="span">
    </td>
   </tr>
   <tr>
@@ -1114,8 +1221,19 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Fri, Feb 21 2025
    </td>
-   <td colspan="3" markdown="span">
-    N/A
+   <td markdown="span">
+   </td>
+   <td markdown="span" style="text-align:center">
+    <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/">
+     Project Presentations
+    </a>
+   </td>
+   <td markdown="span">
+   </td>
+  </tr>
+  <tr>
+   <td colspan="4" markdown="span">
+    [Project Milestone 3]({{ site.url }}{{ site.baseurl }}/labs/milestone3) DUE Fri, Feb 21 2025 23:59 [Submission box]({{site.gradescope_url}})
    </td>
   </tr>
  </tbody>
