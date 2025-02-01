@@ -248,6 +248,7 @@
     - Project Launch Day
   materials:
     - <a href="{{site.url}}{{site.baseurl}}/labs/milestone1/"> Milestone 1 Description </a>
+    - <a href="{{site.url}}{{site.baseurl}}/assets/files/quiz/m1.pdf"> Worksheet </a>
 
 27:
   reading:
@@ -264,6 +265,7 @@
   topics:
     - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session29"> CPU Scheduling I </a>'
   materials:
+    - <a href="{{site.url}}{{site.baseurl}}/assets/files/quiz/m1.pdf"> Milestone 1 Worksheet </a>
 
 29:
   reading:

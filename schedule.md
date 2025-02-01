@@ -931,6 +931,11 @@ lectures and/or assignments with an advanced week's notice.
        Milestone 1 Description
       </a>
      </li>
+     <li>
+      <a href="{{site.url}}{{site.baseurl}}/assets/files/quiz/m1.pdf">
+       Worksheet
+      </a>
+     </li>
     </ul>
     {:/}
    </td>
@@ -983,6 +988,15 @@ lectures and/or assignments with an advanced week's notice.
     </a>
    </td>
    <td markdown="span">
+    {::nomarkdown}
+    <ul style="margin:0;padding:.5rem">
+     <li>
+      <a href="{{site.url}}{{site.baseurl}}/assets/files/quiz/m1.pdf">
+       Milestone 1 Worksheet
+      </a>
+     </li>
+    </ul>
+    {:/}
    </td>
   </tr>
   <tr>

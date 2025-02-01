@@ -47,6 +47,9 @@ project. You will do the following:
 - Design an API that users of your library will use. _You don't have to
   implement the API, just what the functions would look like_.
 
+- Please fill out [this worksheet]({{site.baseurl}}/assets/files/quiz/m1.pdf)
+  while working through these questions.
+
 ## The theory
 
 To get started, you **must** read chapters 3 and 4 of the [xv6
