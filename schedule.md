@@ -991,8 +991,8 @@ lectures and/or assignments with an advanced week's notice.
     {::nomarkdown}
     <ul style="margin:0;padding:.5rem">
      <li>
-      <a href="{{site.url}}{{site.baseurl}}/assets/files/quiz/m1.pdf">
-       Milestone 1 Worksheet
+      <a href="{{site.url}}{{site.baseurl}}/assets/files/quiz/scheduling_i.pdf">
+       Quiz Sheet
       </a>
      </li>
     </ul>
