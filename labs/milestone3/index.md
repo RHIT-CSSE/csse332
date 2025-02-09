@@ -2,7 +2,7 @@
 layout: post
 title: Project Milestone 2
 readtime: true
-date: : Sat Feb  8 23:48:38 EST 2025
+date: Mon Aug 12 2024
 ---
 
 # Introduction
@@ -32,44 +32,23 @@ API for our users to create and join threads, in a way similar to what the
 `pthreads` library provides. For the base project, you do not need to worry
 about synchronization.
 
-# Milestone 2: Creating threads with no shared memory
+# Milestone 2: Creating threads that share memory
 
 In this second milestone, our goal is to implement the system call that allows
 for the creation of a thread. Recall that each process initially starts with
-one thread, so you wouldn't have to worry about the main thread. When user,
-through your provided API, make a call to your system call, it will create a
-new thread of execute. That new thread will need to meet the following
-requirements:
+one thread, so you wouldn't have to worry about the main thread. What we are
+after in this milestone is to create an additional thread that will share the
+same address space as the thread that created it.
 
-1. The thread must start execution from a user-provided function. That function
-   is to be passed to the system call at the time of the thread's creation.
+- Read and understand the source code for the `fork` system call in xv6.
 
-2. The thread's function must be able to accept _at least_ one argument. Though
-   in RISC-V, it is very easy to allow up to 8 arguments at once.
+- Implement a system call that creates a thread living within the same address
+  space as the process that creates it.
 
-3. You must define a way for your threads to exit correctly, either implicitely
-   by _forcing_ a thread to exit, or explicitely by asking your user to make a
-   certain follow up system call.
+- Design a test case to test the creation and running of the thread.
 
-4. At this point, we want our thread to have __isolated memory address
-   spaces__. In other words, we will not share the address space yet, we will
-   just make a copy of the address space for each newly created thread, just
-   like we would do for a _forked_ process.
-
-5. Since each thread is to execute a different function, it must then create a
-   new stack for that function call. You must make sure that when the thread
-   starts execution, it's stack pointer `sp` should point to a new location
-   that you decide upon (either you create or passed through the user, etc.).
-   For this milestone, this new stack will be in the thread's isolated address
-   space and thus you don't have to worry about sharing anything.
-
-5. You do not have to worry about ways to `join` a thread yet. However,
-   reading the source code for `exit` and `wait` in `xv6` should give a good
-   way to start approaching this subject.
-
-6. Lastly, you must design a user test case that illustrates the correct
-   execution of your system call.
-
+- Design a test case to test the sharing of the memory address space between
+  threads.
 
 ## Step 1: Read the code for `fork`
 
@@ -77,17 +56,17 @@ To get start, please take a moment to read the source code for the `fork`
 system call in `xv6`. It will prove very useful for you as it will help you
 understand how `xv6` creates processes, and the API calls needed to set things
 up. You will reuse a lot of the structure and API calls of `fork` in your
-project, so spending some time to understand it will be of immense help on this
-project. 
+project, so spending some time to understand it will be of immense help on
+this project. 
 
-> _NOTE_: To make things easier on you, you __must__ reuse the `struct proc`
-  process control block to represent both threads and processes. The
-  implications of that are that you wouldn't have to worry about scheduling, as
-  the scheduler wouldn't care much if it is scheduling a thread or a process, as
-  long as it is represented by a `struct proc`. Recall that one of our
-  requirements is that our threads are schedulable entities. Therefore, using the
-  `struct proc` to represent threads as well will win you this requirement for
-  free.
+> _Hint_: To make things easier on you, I do strongly recommend that you reuse
+  the `struct proc` process control block to represent both threads and
+  processes. The implications of that are that you wouldn't have to worry about
+  scheduling, as the scheduler wouldn't care much if it is scheduling a thread
+  or a process, as long as it is represented by a `struct proc`.
+  Recall that one of our requirements is that our threads are schedulable
+  entities. Therefore, using the `struct proc` to represent threads as well
+  will win you this requirement for free.
 
 > _Hint_: You will need to add some fields to the `struct proc` to determine if
   this is a thread of a process, and if it is a thread, who are its parent(s),
@@ -101,18 +80,19 @@ how to implement your thread creation system call.
 
 Here are a few things you will need to consider:
 
-1. Recall that for this milestone, we want our threads to have separate address
-   spaces, so please do not attempt to optimize early and share the address
-   space.
+1. Threads need to share the same address space. What does that mean when it
+   comes to their page tables? What can you say about the mappings in each
+   thread's page table?
 
-   Specifically, what this means is that we are still copying the address space
-   for the newly created thread and create a new, separate, page table for it.
-   Therefore, you should not mess with the code that copies page tables for
-   this milestone.
+   _Hint_: **Do not simply share the page table** between threads, that will
+   not work as each thread will need separate mappings for a special page to
+   perform context switching. _Think back to the copy-on-write lab_ and adopt a
+   similar strategy to what we did there.
 
-2. Each thread needs to have its own stack. What this means is that each
-   thread's stack should start **at a different virtual location**.
-   Here are a few hints to consider:
+2. Each thread needs to have its own stack. However, be careful that when we
+   say that stacks are separate, we do not mean that they are in different
+   address spaces. All we mean is that the threads' stack start **at different
+   locations in the same address space**. Here are a few hints to consider:
 
    - Which register from the thread's `trapframe` is used to determine where
      its stack starts?
@@ -147,6 +127,10 @@ Here are a few things you will need to consider:
    thread must have a way to reach other threads that are in the same process,
    and thus share the same address space.
 
+4. For this milestone, you do not need to worry about what happens if a thread
+   creates a new page and maps it in its page table. We will get to that in the
+   last milestone.
+
 ## Step 3: Test your thread creation code
 
 After you have designed and implemented your thread creation system call,
@@ -160,10 +144,21 @@ need to consider the following things:
    they make the system call.
 
 3. If you are supporting arguments, test that threads can support function
-   arguments.
+   arguments. If not, you can leave this one until milestone 3.
 
 4. Test that the threads execute concurrently, meaning we do not block a thread
    because of the existence of another one. If both can run, they will run.
+
+## Step 4: Test your shared address space
+
+Finally, you will need a way to test that your threads actually share the same
+address space. The easiest way to test that is by creating global variables,
+and then making sure if one thread changes the value of a global variable, then
+all other threads will see that change.
+
+Of course, the above test case has race conditions, **you do not have to worry
+about those in this project**. Feel free to use `sleep` statements in each
+thread to create some form of synchronization.
 
 ## Thread joining
 
@@ -211,16 +206,18 @@ Thread creation
 Describe the decisions you have made for thread create, including answers to
 the questions above.
 
-Stack separation
-================
+Memory sharing
+===============
 
-Describe how your threads gets assigned different stacks (even though they are
-still in separate address spaces for now).
+Describe how you have implemented the sharing of the address space in this
+milestone, including answers to any questions in the description above.
 
 Test cases
 ===========
 
 - Describe the test case you used for the creation of the threads.
+
+- Describe the test case you used for testing shared memory between threads.
 
 Addition comments
 ==================
@@ -229,6 +226,11 @@ Add any addition comments, questions, or design decisions that you are
 considering for the final submission.
 
 ```
+
+Finally, recall that the goal of these milestone is not completion, but
+progress. So don't panic if you have not completed everything yet, as long as
+you are making progress, your time closer to the end of the term will be much
+more enjoyable.
 
 _Please make sure to submit only once per group_.
 
