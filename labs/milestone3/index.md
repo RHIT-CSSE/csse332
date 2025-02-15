@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Project Milestone 2
+title: Project Milestone 3
 readtime: true
-date: Mon Aug 12 2024
+date: Sat Feb 15 06:04:42 EST 2025
 ---
 
 # Introduction
@@ -32,151 +32,186 @@ API for our users to create and join threads, in a way similar to what the
 `pthreads` library provides. For the base project, you do not need to worry
 about synchronization.
 
-# Milestone 2: Creating threads that share memory
+# Milestone 3: Creating threads that share memory
 
-In this second milestone, our goal is to implement the system call that allows
-for the creation of a thread. Recall that each process initially starts with
-one thread, so you wouldn't have to worry about the main thread. What we are
-after in this milestone is to create an additional thread that will share the
-same address space as the thread that created it.
+In this third milestone, our goal is adjust our thread creation and management
+so that threads created by the same process share the same address space. In
+other words, all of the newly created threads should have the same view of the
+page table (**do not share pointers to the same page table**). A virtual
+address in one thread should always map to the same physical address in
+physical memory. Additionally, if a thread modified the page table in a way
+(changes a mapping, creates/deletes a mapping), then all threads should become
+aware of this change.
 
-- Read and understand the source code for the `fork` system call in xv6.
+In this milestone, you should perform the following tasks:
 
-- Implement a system call that creates a thread living within the same address
-  space as the process that creates it.
+- Augment your thread creation code to share memory instead of isolating memory
+  between the threads.
 
-- Design a test case to test the creation and running of the thread.
+  Please note that while the threads will have their stacks starting at
+  different locations, they _can_ access each other's threads if they have
+  pointers within those. In other words, if a thread passes another thread a
+  pointer to variable in its own stack, that other thread should be able to
+  read and write it. It is the job of the user to make sure that such a
+  behavior would not cause any issues.
 
-- Design a test case to test the sharing of the memory address space between
+- Design a test case to verify the sharing of the memory address space between
   threads.
 
-## Step 1: Read the code for `fork`
+- Augment your thread joining (or waiting) to make sure that memory will only
+  be deleted once all threads have terminated.
 
-To get start, please take a moment to read the source code for the `fork`
-system call in `xv6`. It will prove very useful for you as it will help you
-understand how `xv6` creates processes, and the API calls needed to set things
-up. You will reuse a lot of the structure and API calls of `fork` in your
-project, so spending some time to understand it will be of immense help on
-this project. 
+- Design a test case to verify that threads gracefully terminate without
+  causing memory to either leak or be incorrectly accessed.
 
-> _Hint_: To make things easier on you, I do strongly recommend that you reuse
-  the `struct proc` process control block to represent both threads and
-  processes. The implications of that are that you wouldn't have to worry about
-  scheduling, as the scheduler wouldn't care much if it is scheduling a thread
-  or a process, as long as it is represented by a `struct proc`.
-  Recall that one of our requirements is that our threads are schedulable
-  entities. Therefore, using the `struct proc` to represent threads as well
-  will win you this requirement for free.
+## Step 1: Share the memory
 
-> _Hint_: You will need to add some fields to the `struct proc` to determine if
-  this is a thread of a process, and if it is a thread, who are its parent(s),
-  siblings, etc. Feel free to add any fields to the `struct proc` that you see
-  fit. You have complete freedom over that.
+At first, modify your thread creation function to have the newly created
+process share all of its user memory pages with its creator. **Please note that
+you should not simply assign the new thread the same pointer to its creator's
+page table**, that would cause `xv6` to break. Your threads should have
+separate page tables, but the mappings in those page tables should always be
+synced.
 
-## Step 2: Implement the thread creation system call
+## Step 2: Test your shared memory implementation
 
-Once you have a good grasp over the `fork` system call, you can start planning
-how to implement your thread creation system call.
+Once you have your shared memory implementation in place, write a test case to
+verify that the threads are indeed sharing their memory address space. Your
+code should show that if one thread modifies a variable, then all other threads
+should see the change reflected. **However**, as we are not dealing with
+concurrency in this project, feel free to use `sleep` statements and `while`
+loops to inject artificial concurrency solutions.
 
-Here are a few things you will need to consider:
+At this stage, if you have not yet adjust your `joining` code, it is likely
+that your threads will crash when they terminate. You can just use infinite
+loops (`while(1);`) to make sure that your threads will not exit and thus be
+able to verify that you implementation works so far.
 
-1. Threads need to share the same address space. What does that mean when it
-   comes to their page tables? What can you say about the mappings in each
-   thread's page table?
+## Step 3: Adjust thread joining and graceful exit
 
-   _Hint_: **Do not simply share the page table** between threads, that will
-   not work as each thread will need separate mappings for a special page to
-   perform context switching. _Think back to the copy-on-write lab_ and adopt a
-   similar strategy to what we did there.
+At this stage, your threads should function correctly while they are alive, but
+will cause issues when they terminate. Adjust your thread exit and thread
+joining code so that memory pages are only deleted from the address space once
+all of the threads have terminated. We have done something similar to that in
+the _copy on write_ lab, feel free to grade your solution from there or
+implement a fresh one.
 
-2. Each thread needs to have its own stack. However, be careful that when we
-   say that stacks are separate, we do not mean that they are in different
-   address spaces. All we mean is that the threads' stack start **at different
-   locations in the same address space**. Here are a few hints to consider:
+## Step 4: Test your thread create and join
 
-   - Which register from the thread's `trapframe` is used to determine where
-     its stack starts?
+Once thread creation and thread joining are in place, it is time to have a
+holistic test. Remove any infinite loops you injected into your previous test
+cases and make sure that your threads terminate gracefully and that your memory
+is cleaned up once all of your threads have terminated.
 
-   - _Design decision_: You will need to decide who creates the stack for the
-     thread, is it the user that creates it (meaning the user must allocate room
-     for each thread's stack)? Or is the kernel's job to create new stacks for
-     each process (i.e., the kernel will allocate memory frames for each thread
-     and map them in the page tables).
+## Step 5: Dynamic memory changes
 
-     The answer to this question is for you to consider. You should be able to
-     argue for your answer to justify your choice.
+Finally, you should test that dynamic changes to the memory address space are
+propagated to all threads sharing that address space. In other words, if thread
+$\mathtt{T_1}$ and thread $\mathtt{T_2}$ share an address space and
+$\mathtt{T_1}$ decides to create and map a new page using `sbrk` (or any other
+way), then the newly created page should also be mapped and accessible for
+$\mathtt{T_2}$. Here's an example way to test this feature (this is just a
+pseudocode, you will need to adjust a few things to make it work):
 
-3. Newly created threads need to start execution from any point in the code.
-   Specifically, the user must specify where each created thread should start
-   execution from (think back to how we used `pthread_create`).
+```c
+// global variable, start invalid
+int *p = 0xdeadbeef;
 
-   - You should definitely ask your user to provide you a function pointer to
-     the starting point for the thread being created, you don't have to figure
-     that out yourself.
+void *thread_t1(void *arg)
+{
+  // allocate a new page using sbrk
+  p = sbrk(4096);
 
-     Be careful though, recall that address `0x00` is a valid address in `xv6`,
-     so don't worry if you see that the function the user passed to you is
-     located at address `0x00`, that is normal in `xv6`.
+  // p is the start of this new page
+  p[0] = 3;
+  p[1] = 2;
+}
 
-   - Which register in the thread's trapframe will influence where the thread
-     will start executing after it is created? Once you figure that out, it
-     should be easy to implement this step.
+void *thread_t2(void *arg)
+{
+  // sleep a bit while t1 allocates p
+  sleep(10);
 
-4. When designing your solution, make sure to think of a way to track lineage
-   relationships between threads of the same process. In other words, each
-   thread must have a way to reach other threads that are in the same process,
-   and thus share the same address space.
+  // check that the address in p have changed
+  if(p == 0xdeadbeef) {
+    // FAIL
+  }
 
-4. For this milestone, you do not need to worry about what happens if a thread
-   creates a new page and maps it in its page table. We will get to that in the
-   last milestone.
+  if(p[0] == 3 && p[2] == 2) {
+    // SUCCESS
+  } else {
+    // FAIL
+  }
+}
 
-## Step 3: Test your thread creation code
+// create threads and join them....
+```
 
-After you have designed and implemented your thread creation system call,
-please write a test case to make sure that it is behaving as expected. You will
-need to consider the following things:
+**You will also need to adjust the above test code to make sure if more than
+one page has been allocated and mapped, then all those pages are updated within
+the other threads**.
 
-1. Test that threads are actually being created, i.e., the system call is
-   effective and successful.
+## Step 6 (Optional): `exit` vs `join`
 
-2. Test that threads start from any code location that the user specifies when
-   they make the system call.
+As you might recall from `pthreads`, there is a difference between a thread
+exiting and a thread returning and then being joined. `exit` is a process-wide
+system call that kills all threads living within the same address space while
+thread return and join are thread-local calls, i.e., when a thread returns, only
+that thread will terminate without impacting other threads.
 
-3. If you are supporting arguments, test that threads can support function
-   arguments. If not, you can leave this one until milestone 3.
+Adjust your implementation to have two separate ways for threads to terminate:
 
-4. Test that the threads execute concurrently, meaning we do not block a thread
-   because of the existence of another one. If both can run, they will run.
+1. Using `exit`, at this stage all of the calling thread's siblings will have
+   to also terminate. The process address space will have to be cleaned up. It
+   does not matter which thread called `exit`, all of them will have to be
+   terminated.
 
-## Step 4: Test your shared address space
+2. Using `return` or your own custom system call, then only the calling thread
+   will terminate and your regular operations (from previous steps) are
+   executed.
 
-Finally, you will need a way to test that your threads actually share the same
-address space. The easiest way to test that is by creating global variables,
-and then making sure if one thread changes the value of a global variable, then
-all other threads will see that change.
+# Project Presentation
 
-Of course, the above test case has race conditions, **you do not have to worry
-about those in this project**. Feel free to use `sleep` statements in each
-thread to create some form of synchronization.
+On the last day of classes, we will ask you to present your project during
+class time. You will have 5 minutes to present your work leaving 2 minutes for
+questions and answers. **All members of your group** should participate in the
+project presentation.
 
-## Thread joining
+Essentially, your presentation is your elevator pitch to get our class to adopt
+your threads framework as part of the teaching load. Your presentation should
+address the following:
 
-You do not have to worry about joining threads after they have been created in
-this milestone. **It is perfectly okay if your code crashes or xv6 crashes**
-after one or all of your threads die out. It is also okay if you leak memory at
-this stage, that is okay for now. We will look into thread joining in the last
-milestone.
+1. All of the design decisions that you had to make to get you threads in a
+   working condition. For example, how are your thread's stacks managed, who
+   allocates those, how are they shared, etc.
+
+2. A high level overview of your user-level API and how it can be used. If
+   there are any specific considerations that your users must be aware of,
+   please include those in the presentation.
+
+3. How lineage is tracked between your threads and whether there are any
+   limitations on the number of the threads to be created.
+
+4. How memory is shared and maintained between the threads, with any
+   limitations spelled out.
+
+5. What are the challenges your faced during your design and implementation and
+   how you overcame (or planned to overcome) them.
+
+6. In hindsight, what would you have liked to know earlier and what would you
+   have done differently?
 
 # Submission
 
-Submit all of your modified `.c` and `.h` files to Gradescope. Please don't
-compress the entire directory and submit it, that makes looking at it very
-hard. Simply drag and drop your modified files onto the submission box.
+For your submission, please first **clean** your submission directory using
+`make clean` before your submit. This will remove all intermediate files and
+binaries. Then create a zip file of your directory and upload it to Gradescope.
 
 In addition to your modified files, please submit a short description of the
 decision you have made for this milestone. They do not have to be your final
 decision, you can still adapt them as you make further progress.
+
+> Please note the change from milestone 2 in the template below.
 
 **Please do not submit MS Word file**, I will not open any MS product to read
 your design document. Please use pdf, markdown, or just plain text for your
@@ -187,9 +222,12 @@ own best interest to fill this out BEFORE you write a single line of code**,
 then implement your code based on your design. It is never a good idea to write
 a design description based on code that you have already implemented.
 
+**Please place your `design.txt` as well as your presentation under a `doc/`
+directory in your top level source code directory**.
+
 ```txt
 ---
-title: Project Milestone 2
+title: Project Milestone 3
 Author(s): Your name and teammates names here
 Date: Submission date
 ---
@@ -219,18 +257,19 @@ Test cases
 
 - Describe the test case you used for testing shared memory between threads.
 
-Addition comments
+Additional comments
 ==================
 
 Add any addition comments, questions, or design decisions that you are
 considering for the final submission.
 
-```
+Grade
+======
 
-Finally, recall that the goal of these milestone is not completion, but
-progress. So don't panic if you have not completed everything yet, as long as
-you are making progress, your time closer to the end of the term will be much
-more enjoyable.
+The grade you believe should be assigned to your group, with some argument as
+to why you chose that grade.
+
+```
 
 _Please make sure to submit only once per group_.
 
