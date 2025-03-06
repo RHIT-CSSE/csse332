@@ -1168,19 +1168,12 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Mon, Feb 17 2025
    </td>
-   <td markdown="span" style="text-align:left;">
-    {::nomarkdown}
-    <ul style="margin:0;padding:.5rem">
-     <li>
-      <a href="https://dl.acm.org/doi/10.1145/945445.945462">
-       Xen and the art of virtualization
-      </a>
-     </li>
-    </ul>
-    {:/}
+   <td markdown="span">
    </td>
    <td markdown="span" style="text-align:center">
-    Special Topics in OS
+    <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/">
+     Project Work Time and Meetings
+    </a>
    </td>
    <td markdown="span">
    </td>
@@ -1196,19 +1189,12 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Tue, Feb 18 2025
    </td>
-   <td markdown="span" style="text-align:left;">
-    {::nomarkdown}
-    <ul style="margin:0;padding:.5rem">
-     <li>
-      <a href="https://dl.acm.org/doi/10.1145/1314299.1314302">
-       Labels and event processes in the Asbestos operating system
-      </a>
-     </li>
-    </ul>
-    {:/}
+   <td markdown="span">
    </td>
    <td markdown="span" style="text-align:center">
-    Special Topics in OS
+    <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/">
+     Project Work Time and Meetings
+    </a>
    </td>
    <td markdown="span">
    </td>

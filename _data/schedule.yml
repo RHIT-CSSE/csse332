@@ -322,17 +322,18 @@
 # ################################################################################
 36:
   reading:
-    - <a href="https://dl.acm.org/doi/10.1145/945445.945462"> Xen and the art of virtualization </a>
+    # - <a href="https://dl.acm.org/doi/10.1145/945445.945462"> Xen and the art of virtualization </a>
   topics:
-    - Special Topics in OS
+    # - Special Topics in OS
+    - <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/"> Project Work Time and Meetings </a>
   materials:
 
 37:
   reading:
-    - <a href="https://dl.acm.org/doi/10.1145/1314299.1314302">  Labels and event processes in the Asbestos operating system </a>
+    # - <a href="https://dl.acm.org/doi/10.1145/1314299.1314302">  Labels and event processes in the Asbestos operating system </a>
   topics:
-    # - <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/"> Project Work Time and Meetings </a>
-    - Special Topics in OS
+    - <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/"> Project Work Time and Meetings </a>
+    # - Special Topics in OS
   materials:
 #
 38:
