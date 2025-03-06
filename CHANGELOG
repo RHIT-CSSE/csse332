@@ -65,3 +65,24 @@
       signals in xv6).
     - Added worksheets and solutions links to the schedule.
 
+2025-03-06 Mohammad Noureddine
+
+  Set up for the Winter term.
+
+  * _config.yml:
+    - Fixed all of the links and adjusted the term.
+
+  * _admin/gen_dates.rb:
+    - Adjust the dates to generate the new schedule scripts.
+
+  * _data/assignments.csv:
+    - Remove all assignments to be fixed once schedule is back in shape.
+
+  * docs/syllabus/syllabus.md:
+    - Adjusted dates.
+    - Made the change so that challenge labs are 10% and the project is now
+      15%.
+    - Removed the above 70% requirements for earning a C in the class.
+
+  * labs/lab00/index.md:
+    - Removed the `find` portion of the lab to make it optional practice.

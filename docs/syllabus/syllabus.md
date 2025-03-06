@@ -2,7 +2,7 @@
 title: Syllabus
 layout: post
 readtime: true
-date: Wed May 22 2024
+date: Thu Mar  6 13:07:53 EST 2025
 ---
 
 ## Table of Contents
@@ -193,10 +193,10 @@ There will be 2 skill exams, split over four parts (parts 1 and 2 of exam1,
 parts 1 and 2 of exam2). Please make note of the following:
 
   - You **must** earn a passing (60%) average on the exams to pass the course.
+<!--Remove after summer quarter
   - You **must** earn at least a C (70%) average on the exams to earn a C or
     better in the course.
 
-<!--Remove after summer quarter
 ## Engagement/Incentive Points
 
 Keeping your motivation up during the summer term is hard, especially if you
@@ -271,8 +271,8 @@ questions to decide what to focus on in review sessions.
 |:----------------------|:-------|
 | Assignments/Labs      | 40%    |
 | Exams                 | 30%    |
-| Challenge Assignments | 15%    |
-| Project               | 10%    |
+| Challenge Assignments | 10%    |
+| Project               | 15%    |
 | Quizzes               | 5%     |
 
 I generally follow the registrar's interpretation of letter grades, which you
@@ -493,7 +493,7 @@ instructor so they can make an exception.
 
 ## Acknowledgments
 
-This syllabus was last modified by Mohammad Noureddine on Wed 27 Nov 2024. It is
-built on the contribution of various instructors, including Mike Hewner, Lixing
-Song, and Mark Hays.
+This syllabus was last modified by Mohammad Noureddine on Thu 06 March 2025. It
+is built on the contribution of various instructors, including Mike Hewner,
+Lixing Song, and Mark Hays.
 

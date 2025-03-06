@@ -2,8 +2,8 @@
 layout: post
 title: Lab 00 -- C Review
 readtime: true
-date: Sat Oct 29 20:08:27 2022 
-last-updated: Sat 25 Nov 2023
+date: Thu Mar  6 13:00:10 EST 2025
+last-updated: Thu Mar  6 12:59:59 EST 2025
 ---
 
 
@@ -192,23 +192,27 @@ the control key, then press `a`, then release both keys and  press `x`.
 ## Troubleshooting
 
 If you get an error about missing packages, most likely is that you did not
-install the packages listed in the instructions here https://www.rose-hulman.edu/class/csse/csse332/2425b/labs/wsl/ (step 2).  
-Check that.
+install the packages listed in the instructions
+[here](https://www.rose-hulman.edu/class/csse/csse332/current/labs/wsl/) (step
+2).  
 
-If the compilation fails but the packages seem right, make sure to record any error messages your received.
-Before contacting your instructor, make sure you record the versions of all of
-the tools that are needed to compile xv6. You can get those version by running
-the following commands:
+If the compilation fails but the packages seem right, make sure to record any
+error messages your received. Before contacting your instructor, make sure you
+record the versions of all of the tools that are needed to compile xv6. You can
+get those version by running the following commands:
+
 1. Your kernel version:
   ```shell
   $ uname -r
   ```
+
 2. You `qemu` system version:
   ```shell
   $ qemu-system-riscv64 --version
   QEMU emulator version 4.2.1 (Debian 1:4.2-3ubuntu6.18)
   Copyright (c) 2003-2019 Fabrice Bellard and the QEMU Project developers
   ```
+
 3. Your RISC-V cross compiler version:
   ```shell
   $ riscv64-linux-gnu-gcc --version
@@ -225,9 +229,10 @@ back to you as soon as possible.
 
 # Exercises
 
-There are four sets of exercises in this lab, that range in difficulty from
-straightforward to medium. Since this is a review lab, there will be
-no really challenging tasks. Expect those to show in the following labs. 
+There are three sets of exercises in this lab and one optional practice
+exercise, that range in difficulty from straightforward to medium. Since this
+is a review lab, there will be no really challenging tasks. Expect those to
+show in the following labs. 
 
 ## Warmup
 
@@ -262,6 +267,13 @@ To double check your work, you can run the grading script (assuming you have
 
   ```shell
   $ ./grade-lab-0.py warmup
+  ```
+
+If you get a message saying that you don't have permission to run this script,
+then please do:
+
+  ```shell
+  $ chmod u+x grade-lab-0.py
   ```
 
 ## ArrayList
@@ -368,6 +380,13 @@ your xv6 terminal), using:
   == Test arraylist, all == arraylist, all: OK (1.5s)
   ```
 
+If you get a message saying that you don't have permission to run this script,
+then please do:
+
+  ```shell
+  $ chmod u+x grade-lab-0.py
+  ```
+
 ## Implementing `sleep`
 
 Before getting started, skim through Chapter 1 of the [xv6 book]({{
@@ -441,7 +460,19 @@ have `python3` installed):
   $ ./grade-lab-0.py sleep
   ```
 
+If you get a message saying that you don't have permission to run this script,
+then please do:
+
+  ```shell
+  $ chmod u+x grade-lab-0.py
+  ```
+
 ## Implementing `find`
+
+This problem is optional but highly recommended. However, it will not be part
+of your grade on this lab, so no worries if you cannot complete it. Do your
+best to get it done and check in with your instructor if you have any
+questions.
 
 The goal of this exercise is to implement the UNIX `find` program, which, given
 a file name, finds all the files in a certain directory (and its
@@ -517,6 +548,13 @@ To double check your work, you can run the python grading script using:
   $ ./grade-lab-0.py find
   ```
 
+If you get a message saying that you don't have permission to run this script,
+then please do:
+
+  ```shell
+  $ chmod u+x grade-lab-0.py
+  ```
+
 ## Running the full grading script
 
 Once you are done implementing all the above programs, run the grading script
@@ -547,7 +585,7 @@ If you get a message saying that you don't have permission to run
 `./create_submission.sh`, then issue the following command first 
 
   ```shell
-  chmod +x ./create_submission.sh
+  chmod u+x ./create_submission.sh
   ```
 
 Here's the output as it shows up on my end:
