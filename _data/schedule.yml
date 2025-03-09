@@ -19,7 +19,7 @@
     - <a href="{{ site.url }}{{ site.baseurl}}/notes/session01/">C Review</a>
   materials:
     - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz01.pdf">Quiz Sheet</a>
-    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz01_solution.pdf">Quiz Solution</a>
+    # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz01_solution.pdf">Quiz Solution</a>
 
 3:
   reading:
@@ -28,7 +28,7 @@
     - <a href="{{ site.url }}{{ site.baseurl}}/notes/session03"> The Process Abstraction </a>
   materials:
     - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz03.pdf">Quiz Sheet</a>
-    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz03_solution.pdf">Quiz Solution</a>
+    # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz03_solution.pdf">Quiz Solution</a>
 
 4:
   reading:
@@ -37,7 +37,7 @@
     - <a href="{{ site.url }}{{ site.baseurl}}/notes/session04"> Operations on Processes </a>
   materials: 
     - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz04.pdf">Quiz Sheet</a>
-    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz04_solution.pdf">Quiz Solution</a>
+    # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz04_solution.pdf">Quiz Solution</a>
 
 
 ###############################################################################
@@ -50,7 +50,7 @@
     - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session05"> IPC: Signals </a>'
   materials: 
     - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz05.pdf">Quiz Sheet</a>
-    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz05_solution.pdf">Quiz Solution</a>
+    # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz05_solution.pdf">Quiz Solution</a>
 
 6:
   reading:
@@ -59,7 +59,7 @@
     - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session06"> IPC: Pipes </a>'
   materials: 
     - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz06.pdf">Quiz Sheet</a>
-    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz06_solution.pdf">Quiz Solution</a>
+    # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz06_solution.pdf">Quiz Solution</a>
 
 7:
   reading:
@@ -70,7 +70,7 @@
     - C debugging
   materials:
     - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz07.pdf">Quiz Sheet</a>
-    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz07_solution.pdf">Quiz Solution</a>
+    # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz07_solution.pdf">Quiz Solution</a>
 
 8:
   reading:
@@ -81,7 +81,7 @@
   materials:
     - <a href="{{site.url}}{{site.baseurl}}/docs/activities/systrace/"> Activity </a>
     - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz08.pdf">Quiz Sheet</a>
-    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz08_solution.pdf">Quiz Solution</a>
+    # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz08_solution.pdf">Quiz Solution</a>
 
 
 ###############################################################################
@@ -129,7 +129,7 @@
     - <a href="{{ site.url }}{{ site.baseurl}}/notes/paging"> Introduction to Paging </a>
   materials:
     - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz13.pdf">Quiz Sheet</a>
-    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz13_solution.pdf">Quiz Solution</a>
+    # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz13_solution.pdf">Quiz Solution</a>
 
 14:
   reading:
@@ -138,7 +138,7 @@
     - <a href="{{ site.url }}{{ site.baseurl}}/notes/session15"> Paging </a>
   materials:
     - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz14.pdf">Quiz Sheet</a>
-    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz14_solution.pdf">Quiz Solution</a>
+    # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz14_solution.pdf">Quiz Solution</a>
     - <a href="{{site.url}}{{site.baseurl}}/docs/activities/paging/"> Activity </a>
 
 
@@ -149,7 +149,7 @@
     - <a href="{{ site.url }}{{ site.baseurl}}/notes/session16"> Multi-level Page Tables </a>
   materials:
     - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz15.pdf">Quiz Sheet</a>
-    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz15_solution.pdf">Quiz Solution</a>
+    # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz15_solution.pdf">Quiz Solution</a>
 
 16:
   reading:
@@ -168,7 +168,7 @@
     - <a href="{{site.url}}{{site.baseurl}}/docs/activities/lazy_pages/"> Lazy page allocation activity </a>
   materials:
     - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz17.pdf">Quiz Sheet</a>
-    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz17_solution.pdf">Quiz Solution</a>
+    # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz17_solution.pdf">Quiz Solution</a>
 
 18:
   reading:
@@ -177,7 +177,7 @@
     - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session18"> Threads: Lightweight Processes </a>'
   materials:
     - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz18.pdf">Quiz Sheet</a>
-    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz18_solution.pdf">Quiz Solution</a>
+    # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz18_solution.pdf">Quiz Solution</a>
 
 19:
   reading:
@@ -186,7 +186,7 @@
     - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session19"> Concurrency: Mutex & Condition Variables </a>'
   materials:
     - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz19.pdf">Quiz Sheet</a>
-    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz19_solution.pdf">Quiz Solution </a>
+    # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz19_solution.pdf">Quiz Solution </a>
     
 20:
   reading:

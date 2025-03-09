@@ -97,11 +97,6 @@ lectures and/or assignments with an advanced week's notice.
        Quiz Sheet
       </a>
      </li>
-     <li>
-      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz01_solution.pdf">
-       Quiz Solution
-      </a>
-     </li>
     </ul>
     {:/}
    </td>
@@ -141,11 +136,6 @@ lectures and/or assignments with an advanced week's notice.
        Quiz Sheet
       </a>
      </li>
-     <li>
-      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz03_solution.pdf">
-       Quiz Solution
-      </a>
-     </li>
     </ul>
     {:/}
    </td>
@@ -183,11 +173,6 @@ lectures and/or assignments with an advanced week's notice.
      <li>
       <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz04.pdf">
        Quiz Sheet
-      </a>
-     </li>
-     <li>
-      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz04_solution.pdf">
-       Quiz Solution
       </a>
      </li>
     </ul>
@@ -233,11 +218,6 @@ lectures and/or assignments with an advanced week's notice.
        Quiz Sheet
       </a>
      </li>
-     <li>
-      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz05_solution.pdf">
-       Quiz Solution
-      </a>
-     </li>
     </ul>
     {:/}
    </td>
@@ -272,11 +252,6 @@ lectures and/or assignments with an advanced week's notice.
        Quiz Sheet
       </a>
      </li>
-     <li>
-      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz06_solution.pdf">
-       Quiz Solution
-      </a>
-     </li>
     </ul>
     {:/}
    </td>
@@ -307,11 +282,6 @@ lectures and/or assignments with an advanced week's notice.
      <li>
       <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz07.pdf">
        Quiz Sheet
-      </a>
-     </li>
-     <li>
-      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz07_solution.pdf">
-       Quiz Solution
       </a>
      </li>
     </ul>
@@ -349,11 +319,6 @@ lectures and/or assignments with an advanced week's notice.
      <li>
       <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz08.pdf">
        Quiz Sheet
-      </a>
-     </li>
-     <li>
-      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz08_solution.pdf">
-       Quiz Solution
       </a>
      </li>
     </ul>
@@ -477,11 +442,6 @@ lectures and/or assignments with an advanced week's notice.
        Quiz Sheet
       </a>
      </li>
-     <li>
-      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz13_solution.pdf">
-       Quiz Solution
-      </a>
-     </li>
     </ul>
     {:/}
    </td>
@@ -505,11 +465,6 @@ lectures and/or assignments with an advanced week's notice.
      <li>
       <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz14.pdf">
        Quiz Sheet
-      </a>
-     </li>
-     <li>
-      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz14_solution.pdf">
-       Quiz Solution
       </a>
      </li>
      <li>
@@ -549,11 +504,6 @@ lectures and/or assignments with an advanced week's notice.
      <li>
       <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz15.pdf">
        Quiz Sheet
-      </a>
-     </li>
-     <li>
-      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz15_solution.pdf">
-       Quiz Solution
       </a>
      </li>
     </ul>
@@ -606,11 +556,6 @@ lectures and/or assignments with an advanced week's notice.
        Quiz Sheet
       </a>
      </li>
-     <li>
-      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz17_solution.pdf">
-       Quiz Solution
-      </a>
-     </li>
     </ul>
     {:/}
    </td>
@@ -645,11 +590,6 @@ lectures and/or assignments with an advanced week's notice.
        Quiz Sheet
       </a>
      </li>
-     <li>
-      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz18_solution.pdf">
-       Quiz Solution
-      </a>
-     </li>
     </ul>
     {:/}
    </td>
@@ -682,11 +622,6 @@ lectures and/or assignments with an advanced week's notice.
      <li>
       <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz19.pdf">
        Quiz Sheet
-      </a>
-     </li>
-     <li>
-      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz19_solution.pdf">
-       Quiz Solution
       </a>
      </li>
     </ul>
