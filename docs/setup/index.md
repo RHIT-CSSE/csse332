@@ -61,10 +61,13 @@ and will be treated as such, as mentioned in the class
 
 ## 2. Clone the repository
 
-In your terminal window, clone the labs repository using the following command:
+First, copy the `ssh` URL to clone the repository from the GitHub webpage
+corresponding to your newly created repository (make sure to toggle the `ssh`
+option). The URL should start with `git@<your username>`. Then, in your
+terminal window, clone the labs repository using the following command
 
   ```shell
-  $ git clone git@github.com:rhit-csse332/csse332-labs-user.git
+  $ git clone <your_ssh_clone_repository_url_here>
   ...
   warning: You appear to have cloned an empty repository.
   ```
