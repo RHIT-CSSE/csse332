@@ -184,7 +184,7 @@ lectures and/or assignments with an advanced week's notice.
     <td colspan="5" markdown="span" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;">
     </td>
    </tr>
-   <td markdown="span" rowspan="4" style="font-size:xx-large;">
+   <td markdown="span" rowspan="6" style="font-size:xx-large;">
     <a name="w2">
      2
     </a>
@@ -220,6 +220,11 @@ lectures and/or assignments with an advanced week's notice.
      </li>
     </ul>
     {:/}
+   </td>
+  </tr>
+  <tr>
+   <td colspan="4" markdown="span">
+    [Lab02: Simple Shell]({{ site.url }}{{ site.baseurl }}/labs/simpleshell/) DUE Mon, Mar 17 2025 23:59 [Submission box]({{ site.gradescope_url }})
    </td>
   </tr>
   <tr>
@@ -286,6 +291,11 @@ lectures and/or assignments with an advanced week's notice.
      </li>
     </ul>
     {:/}
+   </td>
+  </tr>
+  <tr>
+   <td colspan="4" markdown="span">
+    [Lab03: Process Lab]({{ site.url }}{{ site.baseurl }}/labs/processlab/) DUE Thu, Mar 20 2025 23:59 [Submission box]({{ site.gradescope_url }})
    </td>
   </tr>
   <tr>
