@@ -141,6 +141,11 @@ lectures and/or assignments with an advanced week's notice.
        Quiz Sheet
       </a>
      </li>
+     <li>
+      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz03_solution.pdf">
+       Quiz Solution
+      </a>
+     </li>
     </ul>
     {:/}
    </td>
@@ -178,6 +183,11 @@ lectures and/or assignments with an advanced week's notice.
      <li>
       <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz04.pdf">
        Quiz Sheet
+      </a>
+     </li>
+     <li>
+      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz04_solution.pdf">
+       Quiz Solution
       </a>
      </li>
     </ul>
@@ -309,31 +319,17 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Fri, Mar 21 2025
    </td>
-   <td markdown="span" style="text-align:left;">
-    {::nomarkdown}
-    <ul style="margin:0;padding:.5rem">
-     <li>
-      <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/file-devices.pdf">
-       Section 36.4 of Chapter 16
-      </a>
-     </li>
-    </ul>
-    {:/}
+   <td markdown="span">
    </td>
    <td markdown="span" style="text-align:center">
-    Interrupts and Traps
+    Server access and vim tutorial
    </td>
    <td markdown="span">
     {::nomarkdown}
     <ul style="margin:0;padding:.5rem">
      <li>
-      <a href="{{site.url}}{{site.baseurl}}/docs/activities/systrace/">
-       Activity
-      </a>
-     </li>
-     <li>
-      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz08.pdf">
-       Quiz Sheet
+      <a href="https://vim.rtorr.com/">
+       vim cheat sheet
       </a>
      </li>
     </ul>
@@ -355,14 +351,8 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Mon, Mar 24 2025
    </td>
-   <td markdown="span">
-   </td>
-   <td markdown="span" style="text-align:center">
-    <a href="{{site.url}}{{site.baseurl}}/docs/activities/syscall/">
-     Implementing system calls
-    </a>
-   </td>
-   <td markdown="span">
+   <td colspan="3" markdown="span">
+    N/A
    </td>
   </tr>
   <tr>
@@ -371,23 +361,8 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Tue, Mar 25 2025
    </td>
-   <td markdown="span">
-   </td>
-   <td markdown="span" style="text-align:center">
-    <a href="{{ site.url }}{{ site.baseurl}}/notes/session09">
-     Exam 1 Review
-    </a>
-   </td>
-   <td markdown="span">
-    {::nomarkdown}
-    <ul style="margin:0;padding:.5rem">
-     <li>
-      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/exam1review.pdf">
-       Review Quiz Sheet
-      </a>
-     </li>
-    </ul>
-    {:/}
+   <td colspan="3" markdown="span">
+    N/A
    </td>
   </tr>
   <tr>
@@ -396,12 +371,8 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Thu, Mar 27 2025
    </td>
-   <td markdown="span">
-   </td>
-   <td markdown="span" style="text-align:center">
-    Exam 1 Part 1
-   </td>
-   <td markdown="span">
+   <td colspan="3" markdown="span">
+    N/A
    </td>
   </tr>
   <tr>
@@ -410,12 +381,8 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Fri, Mar 28 2025
    </td>
-   <td markdown="span">
-   </td>
-   <td markdown="span" style="text-align:center">
-    Exam 1 Part 2
-   </td>
-   <td markdown="span">
+   <td colspan="3" markdown="span">
+    N/A
    </td>
   </tr>
   <tr>
@@ -433,32 +400,8 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Mon, Mar 31 2025
    </td>
-   <td markdown="span" style="text-align:left;">
-    {::nomarkdown}
-    <ul style="margin:0;padding:.5rem">
-     <li>
-      <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-mechanism.pdf">
-       Chapter 15 of OSTEP
-      </a>
-     </li>
-    </ul>
-    {:/}
-   </td>
-   <td markdown="span" style="text-align:center">
-    <a href="{{ site.url }}{{ site.baseurl}}/notes/paging">
-     Introduction to Paging
-    </a>
-   </td>
-   <td markdown="span">
-    {::nomarkdown}
-    <ul style="margin:0;padding:.5rem">
-     <li>
-      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz13.pdf">
-       Quiz Sheet
-      </a>
-     </li>
-    </ul>
-    {:/}
+   <td colspan="3" markdown="span">
+    N/A
    </td>
   </tr>
   <tr>
@@ -467,28 +410,8 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Tue, Apr 01 2025
    </td>
-   <td markdown="span">
-   </td>
-   <td markdown="span" style="text-align:center">
-    <a href="{{ site.url }}{{ site.baseurl}}/notes/session15">
-     Paging
-    </a>
-   </td>
-   <td markdown="span">
-    {::nomarkdown}
-    <ul style="margin:0;padding:.5rem">
-     <li>
-      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz14.pdf">
-       Quiz Sheet
-      </a>
-     </li>
-     <li>
-      <a href="{{site.url}}{{site.baseurl}}/docs/activities/paging/">
-       Activity
-      </a>
-     </li>
-    </ul>
-    {:/}
+   <td colspan="3" markdown="span">
+    N/A
    </td>
   </tr>
   <tr>
@@ -497,32 +420,8 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Thu, Apr 03 2025
    </td>
-   <td markdown="span" style="text-align:left;">
-    {::nomarkdown}
-    <ul style="margin:0;padding:.5rem">
-     <li>
-      <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-smalltables.pdf">
-       Chapter 20 of OSTEP
-      </a>
-     </li>
-    </ul>
-    {:/}
-   </td>
-   <td markdown="span" style="text-align:center">
-    <a href="{{ site.url }}{{ site.baseurl}}/notes/session16">
-     Multi-level Page Tables
-    </a>
-   </td>
-   <td markdown="span">
-    {::nomarkdown}
-    <ul style="margin:0;padding:.5rem">
-     <li>
-      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz15.pdf">
-       Quiz Sheet
-      </a>
-     </li>
-    </ul>
-    {:/}
+   <td colspan="3" markdown="span">
+    N/A
    </td>
   </tr>
   <tr>
@@ -531,14 +430,8 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Fri, Apr 04 2025
    </td>
-   <td markdown="span">
-   </td>
-   <td markdown="span" style="text-align:center">
-    <a href="{{site.baseurl}}/labs/cow/">
-     Lab 06: Copy-on-Write
-    </a>
-   </td>
-   <td markdown="span">
+   <td colspan="3" markdown="span">
+    N/A
    </td>
   </tr>
   <tr>
@@ -556,23 +449,8 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Mon, Apr 07 2025
    </td>
-   <td markdown="span">
-   </td>
-   <td markdown="span" style="text-align:center">
-    <a href="{{site.url}}{{site.baseurl}}/docs/activities/lazy_pages/">
-     Lazy page allocation activity
-    </a>
-   </td>
-   <td markdown="span">
-    {::nomarkdown}
-    <ul style="margin:0;padding:.5rem">
-     <li>
-      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz17.pdf">
-       Quiz Sheet
-      </a>
-     </li>
-    </ul>
-    {:/}
+   <td colspan="3" markdown="span">
+    N/A
    </td>
   </tr>
   <tr>
@@ -581,32 +459,8 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Tue, Apr 08 2025
    </td>
-   <td markdown="span" style="text-align:left;">
-    {::nomarkdown}
-    <ul style="margin:0;padding:.5rem">
-     <li>
-      <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf">
-       Chapter 26 of OSTEP
-      </a>
-     </li>
-    </ul>
-    {:/}
-   </td>
-   <td markdown="span" style="text-align:center">
-    <a href="{{ site.url }}{{ site.baseurl}}/notes/session18">
-     Threads: Lightweight Processes
-    </a>
-   </td>
-   <td markdown="span">
-    {::nomarkdown}
-    <ul style="margin:0;padding:.5rem">
-     <li>
-      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz18.pdf">
-       Quiz Sheet
-      </a>
-     </li>
-    </ul>
-    {:/}
+   <td colspan="3" markdown="span">
+    N/A
    </td>
   </tr>
   <tr>
@@ -615,32 +469,8 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Thu, Apr 10 2025
    </td>
-   <td markdown="span" style="text-align:left;">
-    {::nomarkdown}
-    <ul style="margin:0;padding:.5rem">
-     <li>
-      <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-locks.pdf">
-       Chapter 28 of OSTEP
-      </a>
-     </li>
-    </ul>
-    {:/}
-   </td>
-   <td markdown="span" style="text-align:center">
-    <a href="{{ site.url }}{{ site.baseurl}}/notes/session19">
-     Concurrency: Mutex &amp; Condition Variables
-    </a>
-   </td>
-   <td markdown="span">
-    {::nomarkdown}
-    <ul style="margin:0;padding:.5rem">
-     <li>
-      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz19.pdf">
-       Quiz Sheet
-      </a>
-     </li>
-    </ul>
-    {:/}
+   <td colspan="3" markdown="span">
+    N/A
    </td>
   </tr>
   <tr>
@@ -649,28 +479,8 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Fri, Apr 11 2025
    </td>
-   <td markdown="span">
-   </td>
-   <td markdown="span" style="text-align:center">
-    <a href="{{ site.url }}{{ site.baseurl}}/notes/session20">
-     Locks and Condition Variables
-    </a>
-   </td>
-   <td markdown="span">
-    {::nomarkdown}
-    <ul style="margin:0;padding:.5rem">
-     <li>
-      <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/">
-       Activity
-      </a>
-     </li>
-     <li>
-      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz20.pdf">
-       Quiz Sheet
-      </a>
-     </li>
-    </ul>
-    {:/}
+   <td colspan="3" markdown="span">
+    N/A
    </td>
   </tr>
   <tr>
@@ -688,37 +498,8 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Mon, Apr 21 2025
    </td>
-   <td markdown="span" style="text-align:left;">
-    {::nomarkdown}
-    <ul style="margin:0;padding:.5rem">
-     <li>
-      <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf">
-       Chapter 30 of OSTEP
-      </a>
-     </li>
-    </ul>
-    {:/}
-   </td>
-   <td markdown="span" style="text-align:center">
-    <a href="{{ site.url }}{{ site.baseurl}}/notes/session20">
-     Concurrency: Condition Variables
-    </a>
-   </td>
-   <td markdown="span">
-    {::nomarkdown}
-    <ul style="margin:0;padding:.5rem">
-     <li>
-      <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/">
-       Activity
-      </a>
-     </li>
-     <li>
-      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz21.pdf">
-       Quiz Sheet
-      </a>
-     </li>
-    </ul>
-    {:/}
+   <td colspan="3" markdown="span">
+    N/A
    </td>
   </tr>
   <tr>
@@ -727,27 +508,8 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Tue, Apr 22 2025
    </td>
-   <td markdown="span" style="text-align:left;">
-    {::nomarkdown}
-    <ul style="margin:0;padding:.5rem">
-     <li>
-      <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf">
-       Chapter 30 of OSTEP
-      </a>
-     </li>
-    </ul>
-    {:/}
-   </td>
-   <td markdown="span" style="text-align:center">
-    <a href="{{ site.url }}{{ site.baseurl}}/notes/session20">
-     Concurrency: Condition Variables Practice
-    </a>
-   </td>
-   <td markdown="span">
-    <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/">
-     Activity
-    </a>
-    <br/>
+   <td colspan="3" markdown="span">
+    N/A
    </td>
   </tr>
   <tr>
@@ -756,27 +518,8 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Thu, Apr 24 2025
    </td>
-   <td markdown="span" style="text-align:left;">
-    {::nomarkdown}
-    <ul style="margin:0;padding:.5rem">
-     <li>
-      <a href="https://en.wikipedia.org/wiki/Producer%E2%80%93consumer_problem">
-       Wiki Page for Prod/Cons Problem
-      </a>
-     </li>
-    </ul>
-    {:/}
-   </td>
-   <td markdown="span" style="text-align:center">
-    <a href="{{ site.url }}{{ site.baseurl}}/notes/session21">
-     Concurrency: Producer-consumer Problem
-    </a>
-   </td>
-   <td markdown="span">
-    <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/">
-     Activity
-    </a>
-    <br/>
+   <td colspan="3" markdown="span">
+    N/A
    </td>
   </tr>
   <tr>
@@ -785,18 +528,8 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Fri, Apr 25 2025
    </td>
-   <td markdown="span">
-   </td>
-   <td markdown="span" style="text-align:center">
-    <a href="{{ site.url }}{{ site.baseurl}}/notes/session22">
-     Concurrency: Readers/Writers Problem
-    </a>
-   </td>
-   <td markdown="span">
-    <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/">
-     Activity
-    </a>
-    <br/>
+   <td colspan="3" markdown="span">
+    N/A
    </td>
   </tr>
   <tr>
@@ -814,12 +547,8 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Mon, Apr 28 2025
    </td>
-   <td markdown="span">
-   </td>
-   <td markdown="span" style="text-align:center">
-    Exam 2 Review and Practice
-   </td>
-   <td markdown="span">
+   <td colspan="3" markdown="span">
+    N/A
    </td>
   </tr>
   <tr>
@@ -828,26 +557,8 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Tue, Apr 29 2025
    </td>
-   <td markdown="span">
-   </td>
-   <td markdown="span" style="text-align:center">
-    Project Launch Day
-   </td>
-   <td markdown="span">
-    {::nomarkdown}
-    <ul style="margin:0;padding:.5rem">
-     <li>
-      <a href="{{site.url}}{{site.baseurl}}/labs/milestone1/">
-       Milestone 1 Description
-      </a>
-     </li>
-     <li>
-      <a href="{{site.url}}{{site.baseurl}}/assets/files/quiz/m1.pdf">
-       Worksheet
-      </a>
-     </li>
-    </ul>
-    {:/}
+   <td colspan="3" markdown="span">
+    N/A
    </td>
   </tr>
   <tr>
@@ -856,14 +567,8 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Thu, May 01 2025
    </td>
-   <td markdown="span">
-   </td>
-   <td markdown="span" style="text-align:center">
-    <b>
-     Exam 2 Part 1
-    </b>
-   </td>
-   <td markdown="span">
+   <td colspan="3" markdown="span">
+    N/A
    </td>
   </tr>
   <tr>
@@ -872,32 +577,8 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Fri, May 02 2025
    </td>
-   <td markdown="span" style="text-align:left;">
-    {::nomarkdown}
-    <ul style="margin:0;padding:.5rem">
-     <li>
-      <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched.pdf">
-       Chapter 7 of OSTEP
-      </a>
-     </li>
-    </ul>
-    {:/}
-   </td>
-   <td markdown="span" style="text-align:center">
-    <a href="{{ site.url }}{{ site.baseurl}}/notes/session29">
-     CPU Scheduling I
-    </a>
-   </td>
-   <td markdown="span">
-    {::nomarkdown}
-    <ul style="margin:0;padding:.5rem">
-     <li>
-      <a href="{{site.url}}{{site.baseurl}}/assets/files/quiz/scheduling_i.pdf">
-       Quiz Sheet
-      </a>
-     </li>
-    </ul>
-    {:/}
+   <td colspan="3" markdown="span">
+    N/A
    </td>
   </tr>
   <tr>
@@ -915,23 +596,8 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Mon, May 05 2025
    </td>
-   <td markdown="span" style="text-align:left;">
-    {::nomarkdown}
-    <ul style="margin:0;padding:.5rem">
-     <li>
-      <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched-mlfq.pdf">
-       Chapter 8 of OSTEP
-      </a>
-     </li>
-    </ul>
-    {:/}
-   </td>
-   <td markdown="span" style="text-align:center">
-    <a href="{{ site.url }}{{ site.baseurl}}/notes/session30">
-     CPU Scheduling II
-    </a>
-   </td>
-   <td markdown="span">
+   <td colspan="3" markdown="span">
+    N/A
    </td>
   </tr>
   <tr>
@@ -940,23 +606,8 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Tue, May 06 2025
    </td>
-   <td markdown="span" style="text-align:left;">
-    {::nomarkdown}
-    <ul style="margin:0;padding:.5rem">
-     <li>
-      <a href="https://pdos.csail.mit.edu/6.828/2022/xv6/book-riscv-rev3.pdf">
-       Chapter 7 of the xv6 book
-      </a>
-     </li>
-    </ul>
-    {:/}
-   </td>
-   <td markdown="span" style="text-align:center">
-    <a href="{{ site.url }}{{ site.baseurl}}/labs/sched/">
-     The xv6 scheduler
-    </a>
-   </td>
-   <td markdown="span">
+   <td colspan="3" markdown="span">
+    N/A
    </td>
   </tr>
   <tr>
@@ -965,14 +616,8 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Thu, May 08 2025
    </td>
-   <td markdown="span">
-   </td>
-   <td markdown="span" style="text-align:center">
-    <b>
-     Exam 2 Part 2
-    </b>
-   </td>
-   <td markdown="span">
+   <td colspan="3" markdown="span">
+    N/A
    </td>
   </tr>
   <tr>
@@ -981,14 +626,8 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Fri, May 09 2025
    </td>
-   <td markdown="span">
-   </td>
-   <td markdown="span" style="text-align:center">
-    <a href="{{ site.url }}{{ site.baseurl}}/notes/filesystems/">
-     File Systems
-    </a>
-   </td>
-   <td markdown="span">
+   <td colspan="3" markdown="span">
+    N/A
    </td>
   </tr>
   <tr>
@@ -1006,14 +645,8 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Mon, May 12 2025
    </td>
-   <td markdown="span">
-   </td>
-   <td markdown="span" style="text-align:center">
-    <a href="{{ site.url }}{{ site.baseurl}}/notes/filesystems/">
-     File Systems II
-    </a>
-   </td>
-   <td markdown="span">
+   <td colspan="3" markdown="span">
+    N/A
    </td>
   </tr>
   <tr>
@@ -1022,14 +655,8 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Tue, May 13 2025
    </td>
-   <td markdown="span">
-   </td>
-   <td markdown="span" style="text-align:center">
-    <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/">
-     Project Work Time and Meetings
-    </a>
-   </td>
-   <td markdown="span">
+   <td colspan="3" markdown="span">
+    N/A
    </td>
   </tr>
   <tr>
@@ -1038,14 +665,8 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Thu, May 15 2025
    </td>
-   <td markdown="span">
-   </td>
-   <td markdown="span" style="text-align:center">
-    <b>
-     Lab: ext2 file system
-    </b>
-   </td>
-   <td markdown="span">
+   <td colspan="3" markdown="span">
+    N/A
    </td>
   </tr>
   <tr>
@@ -1054,14 +675,8 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Fri, May 16 2025
    </td>
-   <td markdown="span">
-   </td>
-   <td markdown="span" style="text-align:center">
-    <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/">
-     Project Work Time and Meetings
-    </a>
-   </td>
-   <td markdown="span">
+   <td colspan="3" markdown="span">
+    N/A
    </td>
   </tr>
   <tr>
@@ -1079,14 +694,8 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Mon, May 19 2025
    </td>
-   <td markdown="span">
-   </td>
-   <td markdown="span" style="text-align:center">
-    <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/">
-     Project Work Time and Meetings
-    </a>
-   </td>
-   <td markdown="span">
+   <td colspan="3" markdown="span">
+    N/A
    </td>
   </tr>
   <tr>
@@ -1095,14 +704,8 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Tue, May 20 2025
    </td>
-   <td markdown="span">
-   </td>
-   <td markdown="span" style="text-align:center">
-    <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/">
-     Project Work Time and Meetings
-    </a>
-   </td>
-   <td markdown="span">
+   <td colspan="3" markdown="span">
+    N/A
    </td>
   </tr>
   <tr>
@@ -1111,14 +714,8 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Thu, May 22 2025
    </td>
-   <td markdown="span">
-   </td>
-   <td markdown="span" style="text-align:center">
-    <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/">
-     Project Presentations
-    </a>
-   </td>
-   <td markdown="span">
+   <td colspan="3" markdown="span">
+    N/A
    </td>
   </tr>
   <tr>

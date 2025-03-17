@@ -37,7 +37,7 @@
     - <a href="{{ site.url }}{{ site.baseurl}}/notes/session04"> Operations on Processes </a>
   materials: 
     - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz04.pdf">Quiz Sheet</a>
-    # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz04_solution.pdf">Quiz Solution</a>
+    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz04_solution.pdf">Quiz Solution</a>
 
 
 ###############################################################################
@@ -74,277 +74,287 @@
 
 8:
   reading:
-    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/file-devices.pdf"> Section 36.4 of Chapter 16 </a>
   topics:
     # - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session18"> Threads: Lightweight Processes </a>'
-    - Interrupts and Traps
+    - Server access and vim tutorial
   materials:
-    - <a href="{{site.url}}{{site.baseurl}}/docs/activities/systrace/"> Activity </a>
-    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz08.pdf">Quiz Sheet</a>
+    - <a href="https://vim.rtorr.com/"> vim cheat sheet</a>
+    # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz08_solution.pdf">Quiz Solution</a>
+  #
+
+# 8:
+#   reading:
+#     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/file-devices.pdf"> Section 36.4 of Chapter 16 </a>
+#   topics:
+#     # - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session18"> Threads: Lightweight Processes </a>'
+#     - Interrupts and Traps
+#   materials:
+#     - <a href="{{site.url}}{{site.baseurl}}/docs/activities/systrace/"> Activity </a>
+#     - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz08.pdf">Quiz Sheet</a>
     # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz08_solution.pdf">Quiz Solution</a>
 
 
 ###############################################################################
 # WEEK 3
 ###############################################################################
-9:
-  reading:
-    # - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/file-devices.pdf"> Section 36.4 of Chapter 16 </a>
-  topics:
-    # - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session18"> Threads: Lightweight Processes </a>'
-    - <a href="{{site.url}}{{site.baseurl}}/docs/activities/syscall/"> Implementing system calls </a>
-  materials:
-    # <a href="{{site.url}}{{site.baseurl}}/docs/activities/systrace/"> Activity </a>
-
-10:
-  reading:
-    # - '<a href="{{ site.baseurl }}/labs/heapmm/">Lab 05: Heap Manager I </a>'
-  topics:
-    # - '<b> Hacking Day: Lab 05 </b>'
-    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session09"> Exam 1 Review </a>'
-  materials: 
-    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/exam1review.pdf">Review Quiz Sheet</a>
-
-
-11:
-  reading:
-  topics:
-    - Exam 1 Part 1
-  materials: 
-
-12:
-  reading:
-  topics:
-    - Exam 1 Part 2
-  materials:
-
-
-###############################################################################
-# WEEK 4
-###############################################################################
-13:
-  reading:
-    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-mechanism.pdf"> Chapter 15 of OSTEP </a>
-  topics:
-    - <a href="{{ site.url }}{{ site.baseurl}}/notes/paging"> Introduction to Paging </a>
-  materials:
-    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz13.pdf">Quiz Sheet</a>
-    # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz13_solution.pdf">Quiz Solution</a>
-
-14:
-  reading:
-    # - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-paging.pdf"> Chapter 18 of OSTEP </a>
-  topics:
-    - <a href="{{ site.url }}{{ site.baseurl}}/notes/session15"> Paging </a>
-  materials:
-    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz14.pdf">Quiz Sheet</a>
-    # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz14_solution.pdf">Quiz Solution</a>
-    - <a href="{{site.url}}{{site.baseurl}}/docs/activities/paging/"> Activity </a>
-
-
-15:
-  reading:
-    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-smalltables.pdf"> Chapter 20 of OSTEP </a>
-  topics:
-    - <a href="{{ site.url }}{{ site.baseurl}}/notes/session16"> Multi-level Page Tables </a>
-  materials:
-    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz15.pdf">Quiz Sheet</a>
-    # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz15_solution.pdf">Quiz Solution</a>
-
-16:
-  reading:
-  topics:
-    - '<a href="{{site.baseurl}}/labs/cow/">Lab 06: Copy-on-Write </a>'
-  materials:
-    # - '<b> Lab 06: Heap Manager II </b>'
-    # - '<b> Lab 07: Copy-On-Write </b>'
-
-###############################################################################
-# WEEK 5
-###############################################################################
-17:
-  reading:
-  topics:
-    - <a href="{{site.url}}{{site.baseurl}}/docs/activities/lazy_pages/"> Lazy page allocation activity </a>
-  materials:
-    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz17.pdf">Quiz Sheet</a>
-    # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz17_solution.pdf">Quiz Solution</a>
-
-18:
-  reading:
-    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf"> Chapter 26 of OSTEP </a>
-  topics:
-    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session18"> Threads: Lightweight Processes </a>'
-  materials:
-    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz18.pdf">Quiz Sheet</a>
-    # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz18_solution.pdf">Quiz Solution</a>
-
-19:
-  reading:
-    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-locks.pdf"> Chapter 28 of OSTEP </a>
-  topics:
-    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session19"> Concurrency: Mutex & Condition Variables </a>'
-  materials:
-    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz19.pdf">Quiz Sheet</a>
-    # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz19_solution.pdf">Quiz Solution </a>
-    
-20:
-  reading:
-  topics:
-    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session20"> Locks and Condition Variables </a>'
-  materials:
-    - <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
-    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz20.pdf">Quiz Sheet</a>
-    # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz20_solution.pdf">Quiz Solution </a>
-
-###############################################################################
-# WEEK 6
-###############################################################################
-21:
-  reading:
-    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 of OSTEP </a>
-  topics:
-    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session20"> Concurrency: Condition Variables </a>'
-  materials:
-    - <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
-    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz21.pdf">Quiz Sheet</a>
-    # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz21_solution.pdf">Quiz Solution </a>
-
-22:
-  reading:
-    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 of OSTEP </a>
-  topics:
-    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session20"> Concurrency: Condition Variables Practice </a>'
-  materials:
-    <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
-
-23:
-  reading:
-    - <a href="https://en.wikipedia.org/wiki/Producer%E2%80%93consumer_problem"> Wiki Page for Prod/Cons Problem </a>
-  topics:
-    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session21"> Concurrency: Producer-consumer Problem </a>'
-  materials:
-    <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
-
-###############################################################################
-# WEEK 7
-###############################################################################
-24:
-  reading:
-  topics:
-    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session22"> Concurrency: Readers/Writers Problem </a>'
-  materials:
-    <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
-
-25:
-  reading:
-  topics:
-    - Exam 2 Review and Practice
-  materials:
-
-26:
-  reading:
-  topics:
-    - Project Launch Day
-  materials:
-    - <a href="{{site.url}}{{site.baseurl}}/labs/milestone1/"> Milestone 1 Description </a>
-    - <a href="{{site.url}}{{site.baseurl}}/assets/files/quiz/m1.pdf"> Worksheet </a>
-
-27:
-  reading:
-  topics:
-    - <b> Exam 2 Part 1 </b>
-  materials:
-
-# ################################################################################
-#  WEEK 8
-# ################################################################################
-28:
-  reading:
-    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched.pdf"> Chapter 7 of OSTEP </a>
-  topics:
-    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session29"> CPU Scheduling I </a>'
-  materials:
-    # - <a href="{{site.url}}{{site.baseurl}}/assets/files/quiz/m1.pdf"> Milestone 1 Worksheet </a>
-    - <a href="{{site.url}}{{site.baseurl}}/assets/files/quiz/scheduling_i.pdf"> Quiz Sheet </a>
-
-29:
-  reading:
-    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched-mlfq.pdf"> Chapter 8 of OSTEP </a>
-  topics:
-    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session30"> CPU Scheduling II </a>'
-  materials:
-
-30:
-  reading:
-    - <a href="https://pdos.csail.mit.edu/6.828/2022/xv6/book-riscv-rev3.pdf"> Chapter 7 of the xv6 book </a>
-  topics:
-    - <a href="{{ site.url }}{{ site.baseurl}}/labs/sched/"> The xv6 scheduler </a>
-  materials:
-
-31:
-  reading:
-  topics:
-    - <b> Exam 2 Part 2 </b>
-  materials:
-
-
-# ################################################################################
-# ## WEEK 9
-# ################################################################################
-32:
-  reading: 
-  topics: 
-    - <a href="{{ site.url }}{{ site.baseurl}}/notes/filesystems/"> File Systems </a>
-  materials:
-
-33:
-  reading:
-  topics:
-    - <a href="{{ site.url }}{{ site.baseurl}}/notes/filesystems/"> File Systems II </a>
-  materials:
-
-34:
-  reading:
-  topics:
-    # - <b> Project Work Time </b>
-    - <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/"> Project Work Time and Meetings </a>
-  materials:
-
-35:
-  reading:
-  topics:
-    - "<b> Lab: ext2 file system </b>"
-  materials:
-
-# ################################################################################
-# ## WEEK 10 
-# ################################################################################
-36:
-  reading:
-    # - <a href="https://dl.acm.org/doi/10.1145/945445.945462"> Xen and the art of virtualization </a>
-  topics:
-    # - Special Topics in OS
-    - <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/"> Project Work Time and Meetings </a>
-  materials:
-
-37:
-  reading:
-    # - <a href="https://dl.acm.org/doi/10.1145/1314299.1314302">  Labels and event processes in the Asbestos operating system </a>
-  topics:
-    - <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/"> Project Work Time and Meetings </a>
-    # - Special Topics in OS
-  materials:
+#9:
+#  reading:
+#    # - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/file-devices.pdf"> Section 36.4 of Chapter 16 </a>
+#  topics:
+#    # - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session18"> Threads: Lightweight Processes </a>'
+#    - <a href="{{site.url}}{{site.baseurl}}/docs/activities/syscall/"> Implementing system calls </a>
+#  materials:
+#    # <a href="{{site.url}}{{site.baseurl}}/docs/activities/systrace/"> Activity </a>
 #
-38:
-  reading:
-  topics:
-    - <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/"> Project Work Time and Meetings </a>
-  materials:
+#10:
+#  reading:
+#    # - '<a href="{{ site.baseurl }}/labs/heapmm/">Lab 05: Heap Manager I </a>'
+#  topics:
+#    # - '<b> Hacking Day: Lab 05 </b>'
+#    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session09"> Exam 1 Review </a>'
+#  materials: 
+#    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/exam1review.pdf">Review Quiz Sheet</a>
 #
-39:
-  reading:
-  topics:
-    - <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/"> Project Presentations </a>
-  materials:
-
+#
+#11:
+#  reading:
+#  topics:
+#    - Exam 1 Part 1
+#  materials: 
+#
+#12:
+#  reading:
+#  topics:
+#    - Exam 1 Part 2
+#  materials:
+#
+#
+################################################################################
+## WEEK 4
+################################################################################
+#13:
+#  reading:
+#    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-mechanism.pdf"> Chapter 15 of OSTEP </a>
+#  topics:
+#    - <a href="{{ site.url }}{{ site.baseurl}}/notes/paging"> Introduction to Paging </a>
+#  materials:
+#    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz13.pdf">Quiz Sheet</a>
+#    # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz13_solution.pdf">Quiz Solution</a>
+#
+#14:
+#  reading:
+#    # - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-paging.pdf"> Chapter 18 of OSTEP </a>
+#  topics:
+#    - <a href="{{ site.url }}{{ site.baseurl}}/notes/session15"> Paging </a>
+#  materials:
+#    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz14.pdf">Quiz Sheet</a>
+#    # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz14_solution.pdf">Quiz Solution</a>
+#    - <a href="{{site.url}}{{site.baseurl}}/docs/activities/paging/"> Activity </a>
+#
+#
+#15:
+#  reading:
+#    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-smalltables.pdf"> Chapter 20 of OSTEP </a>
+#  topics:
+#    - <a href="{{ site.url }}{{ site.baseurl}}/notes/session16"> Multi-level Page Tables </a>
+#  materials:
+#    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz15.pdf">Quiz Sheet</a>
+#    # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz15_solution.pdf">Quiz Solution</a>
+#
+#16:
+#  reading:
+#  topics:
+#    - '<a href="{{site.baseurl}}/labs/cow/">Lab 06: Copy-on-Write </a>'
+#  materials:
+#    # - '<b> Lab 06: Heap Manager II </b>'
+#    # - '<b> Lab 07: Copy-On-Write </b>'
+#
+################################################################################
+## WEEK 5
+################################################################################
+#17:
+#  reading:
+#  topics:
+#    - <a href="{{site.url}}{{site.baseurl}}/docs/activities/lazy_pages/"> Lazy page allocation activity </a>
+#  materials:
+#    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz17.pdf">Quiz Sheet</a>
+#    # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz17_solution.pdf">Quiz Solution</a>
+#
+#18:
+#  reading:
+#    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf"> Chapter 26 of OSTEP </a>
+#  topics:
+#    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session18"> Threads: Lightweight Processes </a>'
+#  materials:
+#    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz18.pdf">Quiz Sheet</a>
+#    # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz18_solution.pdf">Quiz Solution</a>
+#
+#19:
+#  reading:
+#    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-locks.pdf"> Chapter 28 of OSTEP </a>
+#  topics:
+#    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session19"> Concurrency: Mutex & Condition Variables </a>'
+#  materials:
+#    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz19.pdf">Quiz Sheet</a>
+#    # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz19_solution.pdf">Quiz Solution </a>
+#    
+#20:
+#  reading:
+#  topics:
+#    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session20"> Locks and Condition Variables </a>'
+#  materials:
+#    - <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
+#    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz20.pdf">Quiz Sheet</a>
+#    # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz20_solution.pdf">Quiz Solution </a>
+#
+################################################################################
+## WEEK 6
+################################################################################
+#21:
+#  reading:
+#    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 of OSTEP </a>
+#  topics:
+#    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session20"> Concurrency: Condition Variables </a>'
+#  materials:
+#    - <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
+#    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz21.pdf">Quiz Sheet</a>
+#    # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz21_solution.pdf">Quiz Solution </a>
+#
+#22:
+#  reading:
+#    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 of OSTEP </a>
+#  topics:
+#    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session20"> Concurrency: Condition Variables Practice </a>'
+#  materials:
+#    <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
+#
+#23:
+#  reading:
+#    - <a href="https://en.wikipedia.org/wiki/Producer%E2%80%93consumer_problem"> Wiki Page for Prod/Cons Problem </a>
+#  topics:
+#    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session21"> Concurrency: Producer-consumer Problem </a>'
+#  materials:
+#    <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
+#
+################################################################################
+## WEEK 7
+################################################################################
+#24:
+#  reading:
+#  topics:
+#    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session22"> Concurrency: Readers/Writers Problem </a>'
+#  materials:
+#    <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
+#
+#25:
+#  reading:
+#  topics:
+#    - Exam 2 Review and Practice
+#  materials:
+#
+#26:
+#  reading:
+#  topics:
+#    - Project Launch Day
+#  materials:
+#    - <a href="{{site.url}}{{site.baseurl}}/labs/milestone1/"> Milestone 1 Description </a>
+#    - <a href="{{site.url}}{{site.baseurl}}/assets/files/quiz/m1.pdf"> Worksheet </a>
+#
+#27:
+#  reading:
+#  topics:
+#    - <b> Exam 2 Part 1 </b>
+#  materials:
+#
+## ################################################################################
+##  WEEK 8
+## ################################################################################
+#28:
+#  reading:
+#    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched.pdf"> Chapter 7 of OSTEP </a>
+#  topics:
+#    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session29"> CPU Scheduling I </a>'
+#  materials:
+#    # - <a href="{{site.url}}{{site.baseurl}}/assets/files/quiz/m1.pdf"> Milestone 1 Worksheet </a>
+#    - <a href="{{site.url}}{{site.baseurl}}/assets/files/quiz/scheduling_i.pdf"> Quiz Sheet </a>
+#
+#29:
+#  reading:
+#    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched-mlfq.pdf"> Chapter 8 of OSTEP </a>
+#  topics:
+#    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session30"> CPU Scheduling II </a>'
+#  materials:
+#
+#30:
+#  reading:
+#    - <a href="https://pdos.csail.mit.edu/6.828/2022/xv6/book-riscv-rev3.pdf"> Chapter 7 of the xv6 book </a>
+#  topics:
+#    - <a href="{{ site.url }}{{ site.baseurl}}/labs/sched/"> The xv6 scheduler </a>
+#  materials:
+#
+#31:
+#  reading:
+#  topics:
+#    - <b> Exam 2 Part 2 </b>
+#  materials:
+#
+#
+## ################################################################################
+## ## WEEK 9
+## ################################################################################
+#32:
+#  reading: 
+#  topics: 
+#    - <a href="{{ site.url }}{{ site.baseurl}}/notes/filesystems/"> File Systems </a>
+#  materials:
+#
+#33:
+#  reading:
+#  topics:
+#    - <a href="{{ site.url }}{{ site.baseurl}}/notes/filesystems/"> File Systems II </a>
+#  materials:
+#
+#34:
+#  reading:
+#  topics:
+#    # - <b> Project Work Time </b>
+#    - <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/"> Project Work Time and Meetings </a>
+#  materials:
+#
+#35:
+#  reading:
+#  topics:
+#    - "<b> Lab: ext2 file system </b>"
+#  materials:
+#
+## ################################################################################
+## ## WEEK 10 
+## ################################################################################
+#36:
+#  reading:
+#    # - <a href="https://dl.acm.org/doi/10.1145/945445.945462"> Xen and the art of virtualization </a>
+#  topics:
+#    # - Special Topics in OS
+#    - <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/"> Project Work Time and Meetings </a>
+#  materials:
+#
+#37:
+#  reading:
+#    # - <a href="https://dl.acm.org/doi/10.1145/1314299.1314302">  Labels and event processes in the Asbestos operating system </a>
+#  topics:
+#    - <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/"> Project Work Time and Meetings </a>
+#    # - Special Topics in OS
+#  materials:
+##
+#38:
+#  reading:
+#  topics:
+#    - <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/"> Project Work Time and Meetings </a>
+#  materials:
+##
+#39:
+#  reading:
+#  topics:
+#    - <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/"> Project Presentations </a>
+#  materials:
+#
