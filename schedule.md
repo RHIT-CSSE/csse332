@@ -233,6 +233,11 @@ lectures and/or assignments with an advanced week's notice.
        Quiz Sheet
       </a>
      </li>
+     <li>
+      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz05_solution.pdf">
+       Quiz Solution
+      </a>
+     </li>
     </ul>
     {:/}
    </td>
@@ -270,6 +275,11 @@ lectures and/or assignments with an advanced week's notice.
      <li>
       <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz06.pdf">
        Quiz Sheet
+      </a>
+     </li>
+     <li>
+      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz06_solution.pdf">
+       Quiz Solution
       </a>
      </li>
     </ul>
@@ -341,7 +351,7 @@ lectures and/or assignments with an advanced week's notice.
     <td colspan="5" markdown="span" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;">
     </td>
    </tr>
-   <td markdown="span" rowspan="4" style="font-size:xx-large;">
+   <td markdown="span" rowspan="5" style="font-size:xx-large;">
     <a name="w3">
      3
     </a>
@@ -351,8 +361,40 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Mon, Mar 24 2025
    </td>
-   <td colspan="3" markdown="span">
-    N/A
+   <td markdown="span" style="text-align:left;">
+    {::nomarkdown}
+    <ul style="margin:0;padding:.5rem">
+     <li>
+      <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/file-devices.pdf">
+       Section 36.4 of Chapter 16
+      </a>
+     </li>
+    </ul>
+    {:/}
+   </td>
+   <td markdown="span" style="text-align:center">
+    Interrupts and Traps
+   </td>
+   <td markdown="span">
+    {::nomarkdown}
+    <ul style="margin:0;padding:.5rem">
+     <li>
+      <a href="{{site.url}}{{site.baseurl}}/docs/activities/systrace/">
+       Activity
+      </a>
+     </li>
+     <li>
+      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz08.pdf">
+       Quiz Sheet
+      </a>
+     </li>
+    </ul>
+    {:/}
+   </td>
+  </tr>
+  <tr>
+   <td colspan="4" markdown="span">
+    [Lab04: Debugging Lab]({{ site.url }}{{ site.baseurl }}/labs/debug/) DUE Mon, Mar 24 2025 23:59 [Submission box]({{ site.gradescope_url }})
    </td>
   </tr>
   <tr>
@@ -361,8 +403,18 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Tue, Mar 25 2025
    </td>
-   <td colspan="3" markdown="span">
-    N/A
+   <td markdown="span">
+   </td>
+   <td markdown="span" style="text-align:center">
+    <a href="{{site.url}}{{site.baseurl}}/docs/activities/syscall/">
+     Implementing system calls
+    </a>
+   </td>
+   <td markdown="span">
+    <a href="{{site.url}}{{site.baseurl}}/docs/activities/systrace/">
+     Activity
+    </a>
+    <br/>
    </td>
   </tr>
   <tr>
@@ -371,8 +423,23 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Thu, Mar 27 2025
    </td>
-   <td colspan="3" markdown="span">
-    N/A
+   <td markdown="span">
+   </td>
+   <td markdown="span" style="text-align:center">
+    <a href="{{ site.url }}{{ site.baseurl}}/notes/session09">
+     Exam 1 Review
+    </a>
+   </td>
+   <td markdown="span">
+    {::nomarkdown}
+    <ul style="margin:0;padding:.5rem">
+     <li>
+      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/exam1review.pdf">
+       Review Quiz Sheet
+      </a>
+     </li>
+    </ul>
+    {:/}
    </td>
   </tr>
   <tr>
@@ -381,8 +448,12 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Fri, Mar 28 2025
    </td>
-   <td colspan="3" markdown="span">
-    N/A
+   <td markdown="span">
+   </td>
+   <td markdown="span" style="text-align:center">
+    Exam 1 Part 1
+   </td>
+   <td markdown="span">
    </td>
   </tr>
   <tr>
