@@ -436,9 +436,7 @@ lectures and/or assignments with an advanced week's notice.
    <td markdown="span">
    </td>
    <td markdown="span" style="text-align:center">
-    <a href="{{ site.url }}{{ site.baseurl}}/notes/session09">
-     Exam 1 Review
-    </a>
+    Exam 1 Review
    </td>
    <td markdown="span">
     {::nomarkdown}
@@ -471,7 +469,7 @@ lectures and/or assignments with an advanced week's notice.
     <td colspan="5" markdown="span" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;">
     </td>
    </tr>
-   <td markdown="span" rowspan="4" style="font-size:xx-large;">
+   <td markdown="span" rowspan="5" style="font-size:xx-large;">
     <a name="w4">
      4
     </a>
@@ -481,8 +479,32 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Mon, Mar 31 2025
    </td>
-   <td colspan="3" markdown="span">
-    N/A
+   <td markdown="span" style="text-align:left;">
+    {::nomarkdown}
+    <ul style="margin:0;padding:.5rem">
+     <li>
+      <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-mechanism.pdf">
+       Chapter 15 of OSTEP
+      </a>
+     </li>
+    </ul>
+    {:/}
+   </td>
+   <td markdown="span" style="text-align:center">
+    <a href="{{ site.url }}{{ site.baseurl}}/notes/paging">
+     Introduction to Paging
+    </a>
+   </td>
+   <td markdown="span">
+    {::nomarkdown}
+    <ul style="margin:0;padding:.5rem">
+     <li>
+      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz13.pdf">
+       Quiz Sheet
+      </a>
+     </li>
+    </ul>
+    {:/}
    </td>
   </tr>
   <tr>
@@ -491,8 +513,33 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Tue, Apr 01 2025
    </td>
-   <td colspan="3" markdown="span">
-    N/A
+   <td markdown="span">
+   </td>
+   <td markdown="span" style="text-align:center">
+    <a href="{{ site.url }}{{ site.baseurl}}/notes/session15">
+     Paging
+    </a>
+   </td>
+   <td markdown="span">
+    {::nomarkdown}
+    <ul style="margin:0;padding:.5rem">
+     <li>
+      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz14.pdf">
+       Quiz Sheet
+      </a>
+     </li>
+     <li>
+      <a href="{{site.url}}{{site.baseurl}}/docs/activities/paging/">
+       Activity
+      </a>
+     </li>
+    </ul>
+    {:/}
+   </td>
+  </tr>
+  <tr>
+   <td colspan="4" markdown="span">
+    [[Challenge] Lab05: Heap Manager I]({{ site.url }}{{ site.baseurl }}/labs/heapmm/) DUE Tue, Apr 01 2025 23:59 [Submission box]({{ site.gradescope_url }})
    </td>
   </tr>
   <tr>
@@ -501,8 +548,32 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Thu, Apr 03 2025
    </td>
-   <td colspan="3" markdown="span">
-    N/A
+   <td markdown="span" style="text-align:left;">
+    {::nomarkdown}
+    <ul style="margin:0;padding:.5rem">
+     <li>
+      <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-smalltables.pdf">
+       Chapter 20 of OSTEP
+      </a>
+     </li>
+    </ul>
+    {:/}
+   </td>
+   <td markdown="span" style="text-align:center">
+    <a href="{{ site.url }}{{ site.baseurl}}/notes/session16">
+     Multi-level Page Tables
+    </a>
+   </td>
+   <td markdown="span">
+    {::nomarkdown}
+    <ul style="margin:0;padding:.5rem">
+     <li>
+      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz15.pdf">
+       Quiz Sheet
+      </a>
+     </li>
+    </ul>
+    {:/}
    </td>
   </tr>
   <tr>
@@ -511,8 +582,12 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Fri, Apr 04 2025
    </td>
-   <td colspan="3" markdown="span">
-    N/A
+   <td markdown="span">
+   </td>
+   <td markdown="span" style="text-align:center">
+    Exam 1 Part 2
+   </td>
+   <td markdown="span">
    </td>
   </tr>
   <tr>

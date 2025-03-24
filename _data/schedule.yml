@@ -107,57 +107,56 @@
 
 11:
  reading:
-   # - '<a href="{{ site.baseurl }}/labs/heapmm/">Lab 05: Heap Manager I </a>'
  topics:
-   # - '<b> Hacking Day: Lab 05 </b>'
-   - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session09"> Exam 1 Review </a>'
+    - Exam 1 Review
  materials: 
    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/exam1review.pdf">Review Quiz Sheet</a>
 
 
 12:
- reading:
- topics:
-   - Exam 1 Part 1
- materials: 
+  reading:
+  topics:
+    - Exam 1 Part 1
+  materials: 
 
 ################################################################################
 ## WEEK 4
 ################################################################################
-#13:
-#  reading:
-#    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-mechanism.pdf"> Chapter 15 of OSTEP </a>
-#  topics:
-#    - <a href="{{ site.url }}{{ site.baseurl}}/notes/paging"> Introduction to Paging </a>
-#  materials:
-#    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz13.pdf">Quiz Sheet</a>
-#    # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz13_solution.pdf">Quiz Solution</a>
+13:
+  reading:
+      - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-mechanism.pdf"> Chapter 15 of OSTEP </a>
+  topics:
+      - <a href="{{ site.url }}{{ site.baseurl}}/notes/paging"> Introduction to Paging </a>
+  materials:
+      - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz13.pdf">Quiz Sheet</a>
+   # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz13_solution.pdf">Quiz Solution</a>
 #
-#14:
-#  reading:
-#    # - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-paging.pdf"> Chapter 18 of OSTEP </a>
-#  topics:
-#    - <a href="{{ site.url }}{{ site.baseurl}}/notes/session15"> Paging </a>
-#  materials:
-#    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz14.pdf">Quiz Sheet</a>
-#    # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz14_solution.pdf">Quiz Solution</a>
-#    - <a href="{{site.url}}{{site.baseurl}}/docs/activities/paging/"> Activity </a>
+14:
+  reading:
+    # - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-paging.pdf"> Chapter 18 of OSTEP </a>
+  topics:
+   - <a href="{{ site.url }}{{ site.baseurl}}/notes/session15"> Paging </a>
+  materials:
+   - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz14.pdf">Quiz Sheet</a>
+   # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz14_solution.pdf">Quiz Solution</a>
+   - <a href="{{site.url}}{{site.baseurl}}/docs/activities/paging/"> Activity </a>
 #
 #
-#15:
-#  reading:
-#    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-smalltables.pdf"> Chapter 20 of OSTEP </a>
-#  topics:
-#    - <a href="{{ site.url }}{{ site.baseurl}}/notes/session16"> Multi-level Page Tables </a>
-#  materials:
-#    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz15.pdf">Quiz Sheet</a>
-#    # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz15_solution.pdf">Quiz Solution</a>
-#
-#16:
-#  reading:
-#  topics:
+15:
+  reading:
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-smalltables.pdf"> Chapter 20 of OSTEP </a>
+  topics:
+    - <a href="{{ site.url }}{{ site.baseurl}}/notes/session16"> Multi-level Page Tables </a>
+  materials:
+    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz15.pdf">Quiz Sheet</a>
+    # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz15_solution.pdf">Quiz Solution</a>
+
+16:
+  reading:
+  topics:
 #    - '<a href="{{site.baseurl}}/labs/cow/">Lab 06: Copy-on-Write </a>'
-#  materials:
+    - Exam 1 Part 2
+  materials:
 #    # - '<b> Lab 06: Heap Manager II </b>'
 #    # - '<b> Lab 07: Copy-On-Write </b>'
 #
