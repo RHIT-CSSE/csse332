@@ -70,7 +70,7 @@
     - C debugging
   materials:
     - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz07.pdf">Quiz Sheet</a>
-    # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz07_solution.pdf">Quiz Solution</a>
+    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz07_solution.pdf">Quiz Solution</a>
 
 8:
   reading:
@@ -79,6 +79,7 @@
     - Server access and vim tutorial
   materials:
     - <a href="https://vim.rtorr.com/"> vim cheat sheet</a>
+    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/resources.pdf">Worksheet</a>
     # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz08_solution.pdf">Quiz Solution</a>
   #
 

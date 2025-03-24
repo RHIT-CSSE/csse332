@@ -314,6 +314,11 @@ lectures and/or assignments with an advanced week's notice.
        Quiz Sheet
       </a>
      </li>
+     <li>
+      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz07_solution.pdf">
+       Quiz Solution
+      </a>
+     </li>
     </ul>
     {:/}
    </td>
@@ -340,6 +345,11 @@ lectures and/or assignments with an advanced week's notice.
      <li>
       <a href="https://vim.rtorr.com/">
        vim cheat sheet
+      </a>
+     </li>
+     <li>
+      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/resources.pdf">
+       Worksheet
       </a>
      </li>
     </ul>
