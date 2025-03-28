@@ -499,7 +499,7 @@ lectures and/or assignments with an advanced week's notice.
     {::nomarkdown}
     <ul style="margin:0;padding:.5rem">
      <li>
-      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz13.pdf">
+      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/memvirt.pdf">
        Quiz Sheet
       </a>
      </li>
@@ -524,7 +524,7 @@ lectures and/or assignments with an advanced week's notice.
     {::nomarkdown}
     <ul style="margin:0;padding:.5rem">
      <li>
-      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz14.pdf">
+      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/paging.pdf">
        Quiz Sheet
       </a>
      </li>
@@ -568,7 +568,7 @@ lectures and/or assignments with an advanced week's notice.
     {::nomarkdown}
     <ul style="margin:0;padding:.5rem">
      <li>
-      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz15.pdf">
+      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/mlpgtbl.pdf">
        Quiz Sheet
       </a>
      </li>
