@@ -96,7 +96,7 @@
   materials:
     - <a href="{{site.url}}{{site.baseurl}}/docs/activities/systrace/"> Activity </a>
     - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz08.pdf">Quiz Sheet</a>
-    # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz08_solution.pdf">Quiz Solution</a>
+    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz08_solution.pdf">Quiz Solution</a>
 
 10:
  reading:
@@ -124,16 +124,16 @@
 ################################################################################
 13:
   reading:
-      - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-mechanism.pdf"> Chapter 15 of OSTEP </a>
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-mechanism.pdf"> Chapter 15 of OSTEP </a>
   topics:
-      - <a href="{{ site.url }}{{ site.baseurl}}/notes/paging"> Introduction to Paging </a>
+    - <a href="{{ site.url }}{{ site.baseurl}}/notes/paging"> Introduction to Paging </a>
   materials:
-      - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/memvirt.pdf">Quiz Sheet</a>
-   # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/memvirt_solution.pdf">Quiz Solution</a>
+    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/memvirt.pdf">Quiz Sheet</a>
+    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/memvirt_solution.pdf">Quiz Solution</a>
 #
 14:
   reading:
-    # - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-paging.pdf"> Chapter 18 of OSTEP </a>
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-paging.pdf"> Chapter 18 of OSTEP </a>
   topics:
    - <a href="{{ site.url }}{{ site.baseurl}}/notes/session15"> Paging </a>
   materials:
@@ -143,13 +143,12 @@
 #
 #
 15:
-  reading:
-    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-smalltables.pdf"> Chapter 20 of OSTEP </a>
-  topics:
-    - <a href="{{ site.url }}{{ site.baseurl}}/notes/session16"> Multi-level Page Tables </a>
-  materials:
-    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/mlpgtbl.pdf">Quiz Sheet</a>
-    # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/mlpgtbl_solution.pdf">Quiz Solution</a>
+ reading:
+ topics:
+   - <a href="{{site.url}}{{site.baseurl}}/docs/activities/lazy_pages/"> Lazy page allocation activity </a>
+ materials:
+   - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz17.pdf">Quiz Sheet</a>
+   # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz17_solution.pdf">Quiz Solution</a>
 
 16:
   reading:
@@ -163,80 +162,82 @@
 ################################################################################
 ## WEEK 5
 ################################################################################
-#17:
-#  reading:
-#  topics:
-#    - <a href="{{site.url}}{{site.baseurl}}/docs/activities/lazy_pages/"> Lazy page allocation activity </a>
-#  materials:
-#    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz17.pdf">Quiz Sheet</a>
-#    # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz17_solution.pdf">Quiz Solution</a>
-#
-#18:
-#  reading:
-#    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf"> Chapter 26 of OSTEP </a>
-#  topics:
-#    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session18"> Threads: Lightweight Processes </a>'
-#  materials:
-#    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz18.pdf">Quiz Sheet</a>
-#    # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz18_solution.pdf">Quiz Solution</a>
-#
-#19:
-#  reading:
-#    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-locks.pdf"> Chapter 28 of OSTEP </a>
-#  topics:
-#    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session19"> Concurrency: Mutex & Condition Variables </a>'
-#  materials:
-#    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz19.pdf">Quiz Sheet</a>
-#    # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz19_solution.pdf">Quiz Solution </a>
-#    
-#20:
-#  reading:
-#  topics:
-#    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session20"> Locks and Condition Variables </a>'
-#  materials:
-#    - <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
-#    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz20.pdf">Quiz Sheet</a>
-#    # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz20_solution.pdf">Quiz Solution </a>
-#
+17:
+  reading:
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-smalltables.pdf"> Chapter 20 of OSTEP </a>
+  topics:
+    - <a href="{{ site.url }}{{ site.baseurl}}/notes/session16"> Multi-level Page Tables </a>
+  materials:
+    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/mlpgtbl.pdf">Quiz Sheet</a>
+    # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/mlpgtbl_solution.pdf">Quiz Solution</a>
+
+18:
+  reading:
+    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf"> Chapter 26 of OSTEP </a>
+  topics:
+    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session18"> Threads: Lightweight Processes </a>'
+  materials:
+    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz18.pdf">Quiz Sheet</a>
+    # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz18_solution.pdf">Quiz Solution</a>
+
+19:
+ reading:
+   - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-locks.pdf"> Chapter 28 of OSTEP </a>
+ topics:
+   - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session19"> Concurrency: Mutex & Condition Variables </a>'
+ materials:
+   - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz19.pdf">Quiz Sheet</a>
+   # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz19_solution.pdf">Quiz Solution </a>
+    
+20:
+ reading:
+ topics:
+   - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session20"> Locks and Condition Variables </a>'
+ materials:
+   - <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
+   - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz20.pdf">Quiz Sheet</a>
+   # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz20_solution.pdf">Quiz Solution </a>
+ 
 ################################################################################
 ## WEEK 6
 ################################################################################
-#21:
-#  reading:
-#    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 of OSTEP </a>
-#  topics:
-#    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session20"> Concurrency: Condition Variables </a>'
-#  materials:
-#    - <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
-#    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz21.pdf">Quiz Sheet</a>
-#    # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz21_solution.pdf">Quiz Solution </a>
-#
-#22:
-#  reading:
-#    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 of OSTEP </a>
-#  topics:
-#    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session20"> Concurrency: Condition Variables Practice </a>'
-#  materials:
-#    <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
-#
-#23:
-#  reading:
-#    - <a href="https://en.wikipedia.org/wiki/Producer%E2%80%93consumer_problem"> Wiki Page for Prod/Cons Problem </a>
-#  topics:
-#    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session21"> Concurrency: Producer-consumer Problem </a>'
-#  materials:
-#    <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
-#
+21:
+ reading:
+   - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 of OSTEP </a>
+ topics:
+   - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session20"> Concurrency: Condition Variables </a>'
+ materials:
+   - <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
+   - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz21.pdf">Quiz Sheet</a>
+   # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz21_solution.pdf">Quiz Solution </a>
+
+22:
+ reading:
+   - <a href="https://en.wikipedia.org/wiki/Producer%E2%80%93consumer_problem"> Wiki Page for Prod/Cons Problem </a>
+ topics:
+   - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session21"> Concurrency: Producer-consumer Problem </a>'
+ materials:
+   <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
+
+23:
+ reading:
+ topics:
+   - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session22"> Concurrency: Readers/Writers Problem </a>'
+ materials:
+   <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
+
+24:
+ reading:
+   - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 of OSTEP </a>
+ topics:
+   - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session20"> Concurrency: Condition Variables Practice </a>'
+ materials:
+   <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
+
 ################################################################################
 ## WEEK 7
 ################################################################################
-#24:
-#  reading:
-#  topics:
-#    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session22"> Concurrency: Readers/Writers Problem </a>'
-#  materials:
-#    <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
-#
+
 #25:
 #  reading:
 #  topics:
