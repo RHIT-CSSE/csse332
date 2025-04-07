@@ -639,6 +639,11 @@ lectures and/or assignments with an advanced week's notice.
        Quiz Sheet
       </a>
      </li>
+     <li>
+      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/mlpgtbl_solution.pdf">
+       Quiz Solution
+      </a>
+     </li>
     </ul>
     {:/}
    </td>
@@ -674,7 +679,7 @@ lectures and/or assignments with an advanced week's notice.
     {::nomarkdown}
     <ul style="margin:0;padding:.5rem">
      <li>
-      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz18.pdf">
+      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/pthreads.pdf">
        Quiz Sheet
       </a>
      </li>
