@@ -548,6 +548,11 @@ lectures and/or assignments with an advanced week's notice.
       </a>
      </li>
      <li>
+      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/paging_solution.pdf">
+       Quiz Solution
+      </a>
+     </li>
+     <li>
       <a href="{{site.url}}{{site.baseurl}}/docs/activities/paging/">
        Activity
       </a>
@@ -580,6 +585,11 @@ lectures and/or assignments with an advanced week's notice.
      <li>
       <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz17.pdf">
        Quiz Sheet
+      </a>
+     </li>
+     <li>
+      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz17_solution.pdf">
+       Quiz Solution
       </a>
      </li>
     </ul>
@@ -683,6 +693,11 @@ lectures and/or assignments with an advanced week's notice.
        Quiz Sheet
       </a>
      </li>
+     <li>
+      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/pthreads_solution.pdf">
+       Quiz Solution
+      </a>
+     </li>
     </ul>
     {:/}
    </td>
@@ -713,7 +728,7 @@ lectures and/or assignments with an advanced week's notice.
     {::nomarkdown}
     <ul style="margin:0;padding:.5rem">
      <li>
-      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz19.pdf">
+      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/locks.pdf">
        Quiz Sheet
       </a>
      </li>

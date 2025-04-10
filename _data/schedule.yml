@@ -138,7 +138,7 @@
    - <a href="{{ site.url }}{{ site.baseurl}}/notes/session15"> Paging </a>
   materials:
    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/paging.pdf">Quiz Sheet</a>
-   # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/paging_solution.pdf">Quiz Solution</a>
+   - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/paging_solution.pdf">Quiz Solution</a>
    - <a href="{{site.url}}{{site.baseurl}}/docs/activities/paging/"> Activity </a>
 #
 #
@@ -148,7 +148,7 @@
    - <a href="{{site.url}}{{site.baseurl}}/docs/activities/lazy_pages/"> Lazy page allocation activity </a>
  materials:
    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz17.pdf">Quiz Sheet</a>
-   # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz17_solution.pdf">Quiz Solution</a>
+   - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz17_solution.pdf">Quiz Solution</a>
 
 16:
   reading:
@@ -178,7 +178,7 @@
     - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session18"> Threads: Lightweight Processes </a>'
   materials:
     - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/pthreads.pdf">Quiz Sheet</a>
-    # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/pthreads_solution.pdf">Quiz Solution</a>
+    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/pthreads_solution.pdf">Quiz Solution</a>
 
 19:
  reading:
@@ -186,8 +186,8 @@
  topics:
    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session19"> Concurrency: Mutex & Condition Variables </a>'
  materials:
-   - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz19.pdf">Quiz Sheet</a>
-   # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz19_solution.pdf">Quiz Solution </a>
+   - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/locks.pdf">Quiz Sheet</a>
+   # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/locks_solution.pdf">Quiz Solution </a>
     
 20:
  reading:
