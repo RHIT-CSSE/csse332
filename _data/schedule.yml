@@ -201,17 +201,17 @@
 ################################################################################
 ## WEEK 6
 ################################################################################
-21:
- reading:
-   - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 of OSTEP </a>
- topics:
-   - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session20"> Concurrency: Condition Variables </a>'
- materials:
-   - <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
-   - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz21.pdf">Quiz Sheet</a>
+# 21:
+#  reading:
+#    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 of OSTEP </a>
+#  topics:
+#    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session20"> Concurrency: Condition Variables </a>'
+#  materials:
+#    - <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
+#    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz21.pdf">Quiz Sheet</a>
    # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz21_solution.pdf">Quiz Solution </a>
 
-22:
+21:
  reading:
    - <a href="https://en.wikipedia.org/wiki/Producer%E2%80%93consumer_problem"> Wiki Page for Prod/Cons Problem </a>
  topics:
@@ -219,10 +219,18 @@
  materials:
    <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
 
-23:
+22:
  reading:
  topics:
    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session22"> Concurrency: Readers/Writers Problem </a>'
+ materials:
+   <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
+
+23:
+ reading:
+   - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 of OSTEP </a>
+ topics:
+   - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session20"> Concurrency: Condition Variables Practice </a>'
  materials:
    <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
 
@@ -237,116 +245,135 @@
 ################################################################################
 ## WEEK 7
 ################################################################################
+25:
+  reading:
+  topics:
+    - <b>Lab:</b> Userspace Threads
+  materials:
 
-#25:
-#  reading:
-#  topics:
-#    - Exam 2 Review and Practice
-#  materials:
-#
-#26:
-#  reading:
-#  topics:
-#    - Project Launch Day
-#  materials:
-#    - <a href="{{site.url}}{{site.baseurl}}/labs/milestone1/"> Milestone 1 Description </a>
-#    - <a href="{{site.url}}{{site.baseurl}}/assets/files/quiz/m1.pdf"> Worksheet </a>
-#
-#27:
-#  reading:
-#  topics:
-#    - <b> Exam 2 Part 1 </b>
-#  materials:
-#
+
+26:
+ reading:
+ topics:
+  - <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/"> Milestone 1 Demo Day </a>
+ materials:
+
+
+27:
+ reading:
+ topics:
+   - Exam 2 Review and Practice
+ materials:
+
+28:
+ reading:
+ topics:
+   - <b> Exam 2 Part 1 </b>
+ materials:
+
+ # reading:
+ # topics:
+ #   - Project Launch Day
+ # materials:
+ #   - <a href="{{site.url}}{{site.baseurl}}/labs/milestone1/"> Milestone 1 Description </a>
+ #   - <a href="{{site.url}}{{site.baseurl}}/assets/files/quiz/m1.pdf"> Worksheet </a>
+
 ## ################################################################################
 ##  WEEK 8
 ## ################################################################################
-#28:
-#  reading:
-#    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched.pdf"> Chapter 7 of OSTEP </a>
-#  topics:
-#    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session29"> CPU Scheduling I </a>'
-#  materials:
-#    # - <a href="{{site.url}}{{site.baseurl}}/assets/files/quiz/m1.pdf"> Milestone 1 Worksheet </a>
-#    - <a href="{{site.url}}{{site.baseurl}}/assets/files/quiz/scheduling_i.pdf"> Quiz Sheet </a>
-#
-#29:
-#  reading:
-#    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched-mlfq.pdf"> Chapter 8 of OSTEP </a>
-#  topics:
-#    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session30"> CPU Scheduling II </a>'
-#  materials:
-#
-#30:
-#  reading:
-#    - <a href="https://pdos.csail.mit.edu/6.828/2022/xv6/book-riscv-rev3.pdf"> Chapter 7 of the xv6 book </a>
-#  topics:
-#    - <a href="{{ site.url }}{{ site.baseurl}}/labs/sched/"> The xv6 scheduler </a>
-#  materials:
-#
-#31:
-#  reading:
-#  topics:
-#    - <b> Exam 2 Part 2 </b>
-#  materials:
+29:
+ reading:
+   - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched.pdf"> Chapter 7 of OSTEP </a>
+ topics:
+   - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session29"> CPU Scheduling I </a>'
+ materials:
+   # - <a href="{{site.url}}{{site.baseurl}}/assets/files/quiz/m1.pdf"> Milestone 1 Worksheet </a>
+   - <a href="{{site.url}}{{site.baseurl}}/assets/files/quiz/scheduling_i.pdf"> Quiz Sheet </a>
+
+# 30:
+ # reading:
+ #   - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched-mlfq.pdf"> Chapter 8 of OSTEP </a>
+ # topics:
+ #   - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session30"> CPU Scheduling II </a>'
+ # materials:
+
+30:
+ reading:
+   - <a href="https://pdos.csail.mit.edu/6.828/2022/xv6/book-riscv-rev3.pdf"> Chapter 7 of the xv6 book </a>
+ topics:
+   - <a href="{{ site.url }}{{ site.baseurl}}/labs/sched/"> The xv6 scheduler </a>
+ materials:
+
+31:
+ reading: 
+ topics: 
+   - <a href="{{ site.url }}{{ site.baseurl}}/notes/filesystems/"> File Systems </a>
+ materials:
+
+32:
+ reading:
+ topics:
+   - <b> Exam 2 Part 2 </b>
+ materials:
 #
 #
 ## ################################################################################
 ## ## WEEK 9
 ## ################################################################################
-#32:
-#  reading: 
-#  topics: 
-#    - <a href="{{ site.url }}{{ site.baseurl}}/notes/filesystems/"> File Systems </a>
-#  materials:
+33:
+ reading:
+ topics:
+   - <a href="{{ site.url }}{{ site.baseurl}}/notes/filesystems/"> File Systems II </a>
+ materials:
 #
-#33:
-#  reading:
-#  topics:
-#    - <a href="{{ site.url }}{{ site.baseurl}}/notes/filesystems/"> File Systems II </a>
-#  materials:
+34:
+ reading:
+ topics:
+   # - <b> Project Work Time </b>
+   - <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/"> Milestone 2 Demo Day </a>
+ materials:
 #
-#34:
-#  reading:
-#  topics:
-#    # - <b> Project Work Time </b>
-#    - <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/"> Project Work Time and Meetings </a>
-#  materials:
-#
-#35:
-#  reading:
-#  topics:
-#    - "<b> Lab: ext2 file system </b>"
-#  materials:
-#
+35:
+ reading:
+ topics:
+   - "<b> Lab: ext2 file system </b>"
+ materials:
+
+36:
+ reading:
+   - <a href="https://dl.acm.org/doi/10.1145/945445.945462"> Xen and the art of virtualization </a>
+ topics:
+   - Special Topics in OS
+   # - <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/"> Project Work Time and Meetings </a>
+ materials:
+
 ## ################################################################################
 ## ## WEEK 10 
 ## ################################################################################
-#36:
-#  reading:
-#    # - <a href="https://dl.acm.org/doi/10.1145/945445.945462"> Xen and the art of virtualization </a>
-#  topics:
-#    # - Special Topics in OS
-#    - <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/"> Project Work Time and Meetings </a>
-#  materials:
-#
-#37:
-#  reading:
-#    # - <a href="https://dl.acm.org/doi/10.1145/1314299.1314302">  Labels and event processes in the Asbestos operating system </a>
-#  topics:
-#    - <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/"> Project Work Time and Meetings </a>
-#    # - Special Topics in OS
-#  materials:
-##
-#38:
-#  reading:
-#  topics:
-#    - <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/"> Project Work Time and Meetings </a>
-#  materials:
-##
-#39:
-#  reading:
-#  topics:
-#    - <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/"> Project Presentations </a>
-#  materials:
+37:
+ reading:
+   - <a href="https://dl.acm.org/doi/10.1145/1314299.1314302">  Labels and event processes in the Asbestos operating system </a>
+ topics:
+   # - <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/"> Project Work Time and Meetings </a>
+   - Special Topics in OS
+ materials:
+
+38:
+ reading:
+ topics:
+   # - <b> Project Work Time </b>
+   - <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/"> Milestone 3 Demo Day </a>
+ materials:
+
+39:
+ reading:
+ topics:
+   - <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/"> Project Work Time (Demo Continued) </a>
+ materials:
+
+40:
+ reading:
+ topics:
+   - <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/"> Project Presentations </a>
+ materials:
 #
