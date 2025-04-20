@@ -8,7 +8,7 @@ readtime: true
 # Introduction
 
 Let's say that you would like to write a multi-threaded application, but your
-operating system doesn't support threads (i.e. it just runs whole processes,
+operating system doesn't support threads (i.e. It just runs whole processes,
 which can't have sub-parts that are scheduled separately).  Are you doomed to a
 single threaded program - no!  You can implement your own user-space (as opposed
 to kernel-space) threads.  The process you'll use is very similar to the way the
@@ -28,20 +28,59 @@ At then end of this lab, you should be able to:
 
 # Getting the Source Code
 
-For this lab, you will be using the native Linux virtual machine (or baremetal
-machine if you have one) and not the xv6 operation system. Please note that this
-lab might behave slightly differently if you are running it on Windows or
-MacOs; therefore, we highly recommend that you stick to using a Linux machine,
-either natively or via WSL2.
+We will do this lab in the `main` branch of your labs repository. To make sure
+you are on the right branch, check it out using:
 
-To obtain the starting code for this lab, navigate to the top level directory of
-your __csse332 class repository__ and `cd` into the `labs/lab09` directory as
-follows:
-```shell
-$ cd /path/to/csse332/git/repository/
-$ git pull
-$ cd labs/lab09
+  ```sh
+  $ git branch
+  ```
+The branch you are currently on will be highlighted for you (with a \* next to
+its name).
+
+If you are working on the `main` or `master` branch, then follow these
+instructions:
+
+  ```sh
+  $ git fetch upstream
+  $ git pull upstream main
+  ```
+
+At this stage, you should have the latest copy of the code, and you are good to
+get started. The starter code is contained under the `ust/` directory.
+
+If you are currently on a different branch (say you are still on
+`clab_solution` from a previous lab), then we need to switch to `main` or
+`master` (depending on your default's name).
+
+First, add, commit, and push your changes to the `clab_solution` to make sure
+you do not lose any progress you did on the last lab. To check the status of
+your current branch, you can use:
+  ```sh
+  $ git status
+  ```
+This will show you all the files you have modified and have not yet committed
+and pushed. Make sure you `add` those files, then `commit` your changes, and
+`push` them.
+
+If `git push` complains about not knowing where to push, you'd want to push the
+current branch you are on. So for example, if I am working on `clab_solution`,
+then I'd want to do `git push origin clab_solution`.
+
+Now, you are ready to swap back into `main` (or `master`).
+
+```sh
+$ git checkout main
 ```
+
+Then, grab the latest changes using:
+
+```sh
+$ git fetch upstream
+$ git pull upstream main
+```
+
+At this stage, you should have the latest copy of the code, and you are good to
+get started. The starter code is contained under the `ust/` directory.
 
 # The Idea
 
@@ -87,7 +126,7 @@ implement optimization that the OS can't know about.
 So what we need to start with is a way to save the current execution thread
 running on the CPU into memory, switch to a different execution thread, and then
 later restore that old process.  We could write all that in assembly, but
-luckily there are some handy unix functions that do that kind of thing.
+luckily there are some handy Unix functions that do that kind of thing.
 
 | Function      | Description                                                                                 |
 | :------------ | ------------------------------------------------------------------------------------------- |
@@ -202,10 +241,10 @@ A few things to pay attention to:
    array of booleans that indicate if a particular entry in the array contains a
    valid context or not.
 
-   > Don't forget to initalize the array of booleans itself.
+   > Don't forget to initialize the array of booleans itself.
 
 2. When a thread yields, it is important to know what the index of that
-   currenlty running thread is. We need that index value to find out which entry
+   currently running thread is. We need that index value to find out which entry
    in the array the yielding thread occupied so that we can replace the correct
    context when swapping between threads. An easy way to keep track of this is
    via using a global index variable.
@@ -238,7 +277,7 @@ threads array.
 
 Up until now, all the functions that we passing as threading functions take no
 parameters. This is very unusual; most of the time thread functions need
-paramters because we often want to start the same function in parallel multiple
+parameters because we often want to start the same function in parallel multiple
 times with different parameters (as we have done multiple times when using
 thread functions in `pthreads`).
 
@@ -254,8 +293,8 @@ parameters to threads. We must make sure that the memory location we are passing
 as a parameter to a thread function is still going to be allocated at the time
 the data is used.
 
-Here is an exampe to illustrate this. This is a subtle memory corruption bug if
-you pass your parameters to the threaeding function as follows:
+Here is an example to illustrate this. This is a subtle memory corruption bug if
+you pass your parameters to the threading function as follows:
 
 ```c
 void runs_as_thread()
@@ -288,7 +327,7 @@ something like this in this lab.
 ## Implementation
 
 Your job in this task is to implement `create_new_parameterized_thread`.  First
-start by taking a look at the manpage for `makecontext`. You will see that you
+start by taking a look at the man page for `makecontext`. You will see that you
 can pass an arbitrary number of parameters to the `makecontext` function (in
 that way, it is similar to C's `printf` function. That is represented by the
 `...` keyword in the function signature). You just have to make sure that the
@@ -323,9 +362,9 @@ and make sure you pass all the tests.
 
 If you've experimented with writing your own test thread functions, you may have
 noticed how super-bad news it is if you write a threaded function that doesn't
-call `finish_thread` when it returns.  Your program instantly and errorlessly
-terminates, and even judicious use of a debugger can't identify the problem
-(because this is considered a "natural" exit, not an error).
+call `finish_thread` when it returns.  Your program instantly and without
+errors terminates, and even judicious use of a debugger can't identify the
+problem (because this is considered a "natural" exit, not an error).
 
 If you haven't seen this, try running Test 5 without implementing any code so
 you see what that looks like.
@@ -355,7 +394,7 @@ reading my solution)
 
 This is particularly bad news because most of the time this code will probably
 work, because the stack remains in use for such a short time the OS will
-probably not repurpose its page.  But then 1 out of 1000 runs, you'll
+probably not re-purpose its page.  But then 1 out of 1000 runs, you'll
 spontaneously get a segmentation fault - good luck tracking that down.  Remember
 that an appropriate amount of paranoia is what is necessary.
 
@@ -374,7 +413,7 @@ To accurately test your implementation, we need to make that every byte of
 memory that you malloc must be freed. One impressive tool that can help us test
 that if `valgrind`. It is real easy to use.
 
-First, make sure ou have `valgrind` installed. If not, then you can install
+First, make sure you have `valgrind` installed. If not, then you can install
 using your favorite Linux package manager. Assuming you're on Ubuntu, that would
 look something like `sudo apt install -y valgrind` or maybe using `snap`.
 
