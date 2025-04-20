@@ -1039,7 +1039,7 @@ lectures and/or assignments with an advanced week's notice.
   </tr>
   <tr>
    <td colspan="4" markdown="span">
-    [Lab 10: The xv6 Scheduler]({{ site.url }}{{ site.baseurl }}/labs/sched) DUE Mon, May 05 2025 23:59 [Submission box]({{ site.gradescope_url }})
+    [Lab 10: Userspace Threads]({{ site.url }}{{ site.baseurl }}/labs/ust) DUE Mon, May 05 2025 23:59 [Submission box]({{ site.gradescope_url }})
    </td>
   </tr>
   <tr>
