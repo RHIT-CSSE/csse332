@@ -226,7 +226,9 @@
  topics:
    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session22"> Concurrency: Readers/Writers Problem </a>'
  materials:
-   <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
+  - <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
+  - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/rwcv.pdf">Quiz Sheet</a>
+  # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/rwcv_solution.pdf">Quiz Solution </a>
 
 23:
  reading:
