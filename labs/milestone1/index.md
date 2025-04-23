@@ -2,7 +2,7 @@
 layout: post
 title: Project Milestone 1
 readtime: true
-date: Fri Aug 02 2024
+date: Tue Apr 22 22:30:46 EDT 2025
 ---
 
 # Introduction
@@ -90,7 +90,7 @@ class).
 
 ## System calls
 
-To get started with your project, you would need to need the vanilla `xv6`
+To get started with your project, you would need to start with the vanilla `xv6`
 source code provided to you in the **`main` branch** of the class labs
 repository. **Please make sure you are on the `main` branch to avoid having any
 of the other labs' code** as those can interfere with your work.
@@ -206,7 +206,7 @@ Now that we have added a user program, let's add a new system call to `xv6`.
    extern uint64 sys_spoon(void);
    ```
 
-6. In `kernel/def.h`, add the function call signature under the `proc.c` section
+6. In `kernel/defs.h`, add the function call signature under the `proc.c` section
    of definitions (right around the `fork`, `exec`, etc., definitions):
    ```c
    uint64 spoon(void*);
@@ -338,9 +338,10 @@ Here's a breakdown of how your project will be graded per milestone:
 
 | Milestone    | Grade |
 |--------------|-------|
-| Milestone 1  | 15    |
-| Milestone 2  | 35    |
-| Milestone 3  | 40    |
+| Milestone 1  | 10    |
+| Milestone 2  | 20    |
+| Milestone 3  | 30    |
+| Milestone 4  | 30    |
 | Presentation | 10    |
 
 <!--
