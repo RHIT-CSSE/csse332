@@ -219,7 +219,7 @@
  materials:
    - <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/prodcons.pdf">Quiz Sheet</a>
-   # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/prodcons_solution.pdf">Quiz Solution </a>
+   - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/prodcons_solution.pdf">Quiz Solution </a>
 
 22:
  reading:
@@ -228,7 +228,7 @@
  materials:
   - <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
   - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/rwcv.pdf">Quiz Sheet</a>
-  # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/rwcv_solution.pdf">Quiz Solution </a>
+  - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/rwcv_solution.pdf">Quiz Solution </a>
 
 23:
  reading:
@@ -236,7 +236,8 @@
  topics:
    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session20"> Concurrency: Condition Variables Practice </a>'
  materials:
-   <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
+   - <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
+   - <a href="{{site.url}}{{site.baseurl}}/docs/guides/cv_unofficial_guide/"> CV Guide </a>
 
 24:
  reading:

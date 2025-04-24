@@ -825,6 +825,11 @@ lectures and/or assignments with an advanced week's notice.
        Quiz Sheet
       </a>
      </li>
+     <li>
+      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/prodcons_solution.pdf">
+       Quiz Solution
+      </a>
+     </li>
     </ul>
     {:/}
    </td>
@@ -860,6 +865,11 @@ lectures and/or assignments with an advanced week's notice.
        Quiz Sheet
       </a>
      </li>
+     <li>
+      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/rwcv_solution.pdf">
+       Quiz Solution
+      </a>
+     </li>
     </ul>
     {:/}
    </td>
@@ -887,10 +897,20 @@ lectures and/or assignments with an advanced week's notice.
     </a>
    </td>
    <td markdown="span">
-    <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/">
-     Activity
-    </a>
-    <br/>
+    {::nomarkdown}
+    <ul style="margin:0;padding:.5rem">
+     <li>
+      <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/">
+       Activity
+      </a>
+     </li>
+     <li>
+      <a href="{{site.url}}{{site.baseurl}}/docs/guides/cv_unofficial_guide/">
+       CV Guide
+      </a>
+     </li>
+    </ul>
+    {:/}
    </td>
   </tr>
   <tr>

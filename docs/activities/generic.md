@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lazy Paging Activity
+title: Generic Activity Access
 readtime: true
 date: Wed Jan 10 21:23:27 2024
 last-updated: Wed Jan 10 21:23:33 2024
