@@ -2,7 +2,7 @@
 layout: post
 title: Project Milestone 3
 readtime: true
-date: Sat Feb 15 06:04:42 EST 2025
+date: Mon May 12 13:12:02 EDT 2025
 ---
 
 # Introduction
@@ -32,18 +32,25 @@ API for our users to create and join threads, in a way similar to what the
 `pthreads` library provides. For the base project, you do not need to worry
 about synchronization.
 
-# Milestone 3: Creating threads that share memory
+# Milestone 3: Joining threads and Sharing Memory
 
-In this third milestone, our goal is adjust our thread creation and management
-so that threads created by the same process share the same address space. In
-other words, all of the newly created threads should have the same view of the
-page table (**do not share pointers to the same page table**). A virtual
-address in one thread should always map to the same physical address in
-physical memory. Additionally, if a thread modified the page table in a way
-(changes a mapping, creates/deletes a mapping), then all threads should become
-aware of this change.
+In this third milestone, we would like to update our half-threads
+implementation to support joining threads that have been created. Given our
+design constraints, joining a thread resembles waiting for a process to a large
+degree. The main difference would be the fact that we would like to join for a
+specific thread that belongs to the same process from which the join is called.
+
+After wrapping up the join operation, you would start working on sharing the
+address space (**do not share pointers to the same page table**) between all of
+your threads that belong to the same process. We would need to do that in a way
+that is very similar to the CoW lab (including implementing reference
+counting). However, you do not need to worry about updates to the page table in
+this milestone.
 
 In this milestone, you should perform the following tasks:
+
+- Implement thread joining based off of the implementation of `wait` in xv6.
+  Make sure to add the ability to wait for a specific thread.
 
 - Augment your thread creation code to share memory instead of isolating memory
   between the threads.
@@ -64,16 +71,33 @@ In this milestone, you should perform the following tasks:
 - Design a test case to verify that threads gracefully terminate without
   causing memory to either leak or be incorrectly accessed.
 
-## Step 1: Share the memory
+## Step 1: Implement join
+
+Start by closely reading the source code for the `wait` system call in `xv6`.
+Reading and understanding that implementation will be crucial for this task.
+Make sure you understand how does a process find its children in the current
+implementation of `wait` in `xv6`.
+
+Next, set up the stub for your thread joining system call and adjust it to
+accept at least one parameter that identified the thread that one wishes to
+join.
+
+Finally, follow closely the implementation of `wait` and adjust it where you
+see fit so that it blocks waiting for a specific thread instead of waiting for
+any child to finish.
+
+## Step 2: Share the memory
 
 At first, modify your thread creation function to have the newly created
 process share all of its user memory pages with its creator. **Please note that
 you should not simply assign the new thread the same pointer to its creator's
 page table**, that would cause `xv6` to break. Your threads should have
 separate page tables, but the mappings in those page tables should always be
-synced.
+synced. This is very similar to what we have done in the CoW lab, except that
+we do not want to turn off writing to these pages, nor do we want to make use
+of an RSW bit (unless you want to!).
 
-## Step 2: Test your shared memory implementation
+## Step 3: Test your shared memory implementation
 
 Once you have your shared memory implementation in place, write a test case to
 verify that the threads are indeed sharing their memory address space. Your
@@ -82,27 +106,28 @@ should see the change reflected. **However**, as we are not dealing with
 concurrency in this project, feel free to use `sleep` statements and `while`
 loops to inject artificial concurrency solutions.
 
-At this stage, if you have not yet adjust your `joining` code, it is likely
+At this stage, if you have not yet adjusted your `joining` code, it is likely
 that your threads will crash when they terminate. You can just use infinite
 loops (`while(1);`) to make sure that your threads will not exit and thus be
 able to verify that you implementation works so far.
 
-## Step 3: Adjust thread joining and graceful exit
+## Step 4: Adjust thread joining and graceful exit
 
 At this stage, your threads should function correctly while they are alive, but
 will cause issues when they terminate. Adjust your thread exit and thread
 joining code so that memory pages are only deleted from the address space once
 all of the threads have terminated. We have done something similar to that in
-the _copy on write_ lab, feel free to grade your solution from there or
+the _copy on write_ lab, feel free to grab your solution from there or
 implement a fresh one.
 
-## Step 4: Test your thread create and join
+## Step 5: Test your thread create and join
 
 Once thread creation and thread joining are in place, it is time to have a
 holistic test. Remove any infinite loops you injected into your previous test
 cases and make sure that your threads terminate gracefully and that your memory
 is cleaned up once all of your threads have terminated.
 
+<!--
 ## Step 5: Dynamic memory changes
 
 Finally, you should test that dynamic changes to the memory address space are
@@ -200,6 +225,7 @@ address the following:
 
 6. In hindsight, what would you have liked to know earlier and what would you
    have done differently?
+-->
 
 # Submission
 
@@ -211,7 +237,7 @@ In addition to your modified files, please submit a short description of the
 decision you have made for this milestone. They do not have to be your final
 decision, you can still adapt them as you make further progress.
 
-> Please note the change from milestone 2 in the template below.
+> Please note the changes from milestone 2 in the template below.
 
 **Please do not submit MS Word file**, I will not open any MS product to read
 your design document. Please use pdf, markdown, or just plain text for your
