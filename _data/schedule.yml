@@ -293,7 +293,7 @@
    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session29"> CPU Scheduling I </a>'
  materials:
    # - <a href="{{site.url}}{{site.baseurl}}/assets/files/quiz/m1.pdf"> Milestone 1 Worksheet </a>
-   - <a href="{{site.url}}{{site.baseurl}}/assets/files/quiz/scheduling_i.pdf"> Quiz Sheet </a>
+   - <a href="{{site.url}}{{site.baseurl}}/assets/files/quiz/sched.pdf"> Quiz Sheet </a>
 
 # 30:
  # reading:
