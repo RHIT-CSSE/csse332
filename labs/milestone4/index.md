@@ -93,7 +93,7 @@ void *thread_t2(void *arg)
     // FAIL
   }
 
-  if(p[0] == 3 && p[2] == 2) {
+  if(p[0] == 3 && p[1] == 2) {
     // SUCCESS
   } else {
     // FAIL
