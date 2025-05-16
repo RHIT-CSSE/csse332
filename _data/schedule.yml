@@ -379,6 +379,7 @@
 40:
  reading:
  topics:
-   - <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/"> Project Presentations </a>
+   - <a href="{{ site.url }}{{ site.baseurl}}/labs/milestone4/"> Project Presentations </a>
  materials:
+   - <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/"> Project Hints </a>
 #

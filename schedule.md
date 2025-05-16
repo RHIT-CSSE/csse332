@@ -1224,7 +1224,7 @@ lectures and/or assignments with an advanced week's notice.
     <td colspan="5" markdown="span" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;">
     </td>
    </tr>
-   <td markdown="span" rowspan="5" style="font-size:xx-large;">
+   <td markdown="span" rowspan="6" style="font-size:xx-large;">
     <a name="w10">
      10
     </a>
@@ -1297,11 +1297,25 @@ lectures and/or assignments with an advanced week's notice.
    <td markdown="span">
    </td>
    <td markdown="span" style="text-align:center">
-    <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/">
+    <a href="{{ site.url }}{{ site.baseurl}}/labs/milestone4/">
      Project Presentations
     </a>
    </td>
    <td markdown="span">
+    {::nomarkdown}
+    <ul style="margin:0;padding:.5rem">
+     <li>
+      <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/">
+       Project Hints
+      </a>
+     </li>
+    </ul>
+    {:/}
+   </td>
+  </tr>
+  <tr>
+   <td colspan="4" markdown="span">
+    [Project Milestone 4]({{ site.url }}{{ site.baseurl }}/labs/milestone4) DUE Fri, May 23 2025 23:59 [Submission box]({{site.gradescope_url}})
    </td>
   </tr>
  </tbody>
