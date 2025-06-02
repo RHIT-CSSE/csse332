@@ -1,23 +1,22 @@
 name,dirname,date,grader,moodle,notes
-# TODO: Fix this link
-C Assessment Quiz,,2025-03-11 23:59,,[Moodle Quiz](https://moodle.rose-hulman.edu/mod/quiz/view.php?id=4862990), Day 2.5
-WSL2 Install,wsl,2025-03-10 23:59,,No submission needed,Day 1
-Lab01: C Review & xv6 Introduction,lab00/,2025-03-13 23:59,,[Submission box]({{ site.gradescope_url }}),Day 3
-Lab02: Simple Shell,simpleshell/,2025-03-17 23:59,,[Submission box]({{ site.gradescope_url }}),Day 5
-Lab03: Process Lab,processlab/,2025-03-20 23:59,,[Submission box]({{ site.gradescope_url }}),Day 7
-Lab04: Debugging Lab,debug/,2025-03-24 23:59,,[Submission box]({{ site.gradescope_url }}),Day 9
-[Challenge] Lab05: Heap Manager I,heapmm/,2025-04-01 23:59,,[Submission box]({{ site.gradescope_url }}),Day 14
-## [Challenge] Lab06: Heap Manager II,buddy/,2025-01-13 23:59,,[Submission box]({{ site.gradescope_url }}),Day 17
-[Challenge] Lab06: Copy-on-Write,cow,2025-04-07 23:59,,[Submission box]({{ site.gradescope_url }}),Day 17
-Lab 07: Threads & Mutex Basics,threads_basics,2025-04-10 23:59,,[Submission box]({{ site.gradescope_url }}),Day 21
-Lab 08: Condition Variables Basics,condvar,2025-04-21 23:59,,[Submission box]({{ site.gradescope_url }}),Day 23
-[Challenge] Lab 09: Condition Variables II,condvar_challenge,2025-04-24 23:59,,[Submission box]({{ site.gradescope_url }}),Day 25
-Project Milestone 1,milestone1,2025-04-28 23:59,,[Submission box]({{ site.gradescope_url }}),
-Lab 10: Userspace Threads,ust,2025-05-05 23:59,,[Submission box]({{ site.gradescope_url }}),Day 36
-Project Milestone 2,milestone2,2025-05-12 23:59,,[Submission box]({{site.gradescope_url}}),Day 37
-[Challenge] Lab 11: ext2 File System,ext2,2025-05-15 23:59,,[Submission box]({{ site.gradescope_url }}),Day 37
-Project Milestone 3,milestone3,2025-05-19 23:59,,[Submission box]({{site.gradescope_url}}),Day 37
-Project Milestone 4,milestone4,2025-05-23 23:59,,[Submission box]({{site.gradescope_url}}),Day 40
+WSL2 Install,wsl,2025-06-05 23:59,,No submission needed,Day 1
+C Assessment Quiz,,2025-06-06 23:59,,[Moodle Quiz](https://moodle.rose-hulman.edu/mod/quiz/view.php?id=4947864), Day 2.5
+Lab01: C Review & xv6 Introduction,lab00/,2025-06-09 23:59,,[Submission box]({{ site.gradescope_url }}),Day 3
+#Lab02: Simple Shell,simpleshell/,2025-03-17 23:59,,[Submission box]({{ site.gradescope_url }}),Day 5
+#Lab03: Process Lab,processlab/,2025-03-20 23:59,,[Submission box]({{ site.gradescope_url }}),Day 7
+#Lab04: Debugging Lab,debug/,2025-03-24 23:59,,[Submission box]({{ site.gradescope_url }}),Day 9
+#[Challenge] Lab05: Heap Manager I,heapmm/,2025-04-01 23:59,,[Submission box]({{ site.gradescope_url }}),Day 14
+### [Challenge] Lab06: Heap Manager II,buddy/,2025-01-13 23:59,,[Submission box]({{ site.gradescope_url }}),Day 17
+#[Challenge] Lab06: Copy-on-Write,cow,2025-04-07 23:59,,[Submission box]({{ site.gradescope_url }}),Day 17
+#Lab 07: Threads & Mutex Basics,threads_basics,2025-04-10 23:59,,[Submission box]({{ site.gradescope_url }}),Day 21
+#Lab 08: Condition Variables Basics,condvar,2025-04-21 23:59,,[Submission box]({{ site.gradescope_url }}),Day 23
+#[Challenge] Lab 09: Condition Variables II,condvar_challenge,2025-04-24 23:59,,[Submission box]({{ site.gradescope_url }}),Day 25
+#Project Milestone 1,milestone1,2025-04-28 23:59,,[Submission box]({{ site.gradescope_url }}),
+#Lab 10: Userspace Threads,ust,2025-05-05 23:59,,[Submission box]({{ site.gradescope_url }}),Day 36
+#Project Milestone 2,milestone2,2025-05-12 23:59,,[Submission box]({{site.gradescope_url}}),Day 37
+#[Challenge] Lab 11: ext2 File System,ext2,2025-05-15 23:59,,[Submission box]({{ site.gradescope_url }}),Day 37
+#Project Milestone 3,milestone3,2025-05-19 23:59,,[Submission box]({{site.gradescope_url}}),Day 37
+#Project Milestone 4,milestone4,2025-05-23 23:59,,[Submission box]({{site.gradescope_url}}),Day 40
 ## Lab 11: Memory Organization and Safety,smlab,2024-08-01 23:59,,[Submission box]({{ site.gradescope_url }}),Day 33
 ## Project Milestone 1,milestone1,2024-08-05 23:59,,[Submission box]({{site.gradescope_url}}),Day 33
 ## Final Project,final,2024-08-16 17:00,,[Submission box]({{site.gradescope_url}}),Day 40

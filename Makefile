@@ -10,12 +10,15 @@ REMOTE_DIR=addiator.rose-hulman.edu:/class/csse/csse332/${ACTERM}
 
 all: serve
 
-.PHONY: clean all rsync
+.PHONY: clean all rsync schedule
 
-serve:
+schedule: _data/schedule.yml
+	./Admin/gen_schedule.py
+
+serve: schedule
 	bundle exec jekyll serve -q -l -o
 
-background:
+background: schedule
 	tmux new -d -s server "bundle exec jekyll serve -q -l -o"
 
 restart: kill background
@@ -26,7 +29,7 @@ kill:
 build:
 	bundle exec jekyll build
 
-www: clean
+www: clean schedule
 	@echo -e '\033[1;mBuilding the webpage\033[0m'
 	bundle exec jekyll build -q
 	@echo -e '\033[1;32mCopying to remote server\033[0m'

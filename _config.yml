@@ -13,7 +13,7 @@ author: RHIT CSSE Department
 
 # The subpath of your site.
 # baseurl: '/csse332'
-baseurl: '/class/csse/csse332/2425c'
+baseurl: '/class/csse/csse332/2425d'
 
 # The base hostname and protocol for your site
 # url: 'https://rhit-csse.github.io'
@@ -22,8 +22,8 @@ url: 'https://www.rose-hulman.edu/'
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  Moodle: "https://moodle.rose-hulman.edu/course/view.php?id=115109"
-  Gradescope: "https://www.gradescope.com/courses/998851"
+  Moodle: "https://moodle.rose-hulman.edu/course/view.php?id=116037"
+  Gradescope: "https://www.gradescope.com/courses/1048783"
   # Forum: "https://campuswire.com/c/G5C8AA17E/feed"
   Syllabus: "docs/syllabus/syllabus"
   Schedule: "schedule"
@@ -51,10 +51,10 @@ gh_repository_url: "https://github.com/RHIT-CSSE/csse332"
 # gh_labs_url: "https://github.com/RHIT-CSSE/csse332/tree/main/labs"
 gh_labs_repo: "https://github.com/rhit-csse332/csse332-labs.git"
 
-moodle_url: "https://moodle.rose-hulman.edu/course/view.php?id=115109"
-gradescope_url: "https://www.gradescope.com/courses/998851"
-# campuswire_url: "https://campuswire.com/c/G5C8AA17E/feed"
-course_term: "Spring 2024-25"
+moodle_url: "https://moodle.rose-hulman.edu/course/view.php?id=116037"
+gradescope_url: "https://www.gradescope.com/courses/1048783"
+campuswire_url: "https://campuswire.com/c/G66DE212E/feed"
+course_term: "Summer 2024-25"
 
 xv6_book_url: "https://pdos.csail.mit.edu/6.828/2022/xv6/book-riscv-rev3.pdf"
 
@@ -225,13 +225,13 @@ date_format: "%B %-d, %Y"
 timezone: "America/Indianapolis"
 markdown: kramdown
 kramdown:
-  math_engine: Mathjax
+  input: GFM
+  # math_engine: Mathjax
+  math_engine: mathjax
+  
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
 paginate: 5
-
-kramdown:
-  input: GFM
 
 # Default YAML values (more information on Jekyll's site)
 defaults:
