@@ -121,7 +121,7 @@ lectures and/or assignments with an advanced week's notice.
     <td colspan="5" markdown="span" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;">
     </td>
    </tr>
-   <td markdown="span" rowspan="5" style="font-size:xx-large;">
+   <td markdown="span" rowspan="6" style="font-size:xx-large;">
     <a name="w1">
      1
     </a>
@@ -143,20 +143,20 @@ lectures and/or assignments with an advanced week's notice.
     {:/}
    </td>
    <td markdown="span" style="text-align:center">
-    <a href="{{ site.url }}{{ site.baseurl}}/notes/session03">
+    <b>
      The Process Abstraction
-    </a>
+    </b>
    </td>
    <td markdown="span">
     {::nomarkdown}
     <ul style="margin:0;padding:.5rem">
      <li>
-      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz03.pdf">
+      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/03_processes.pdf">
        Quiz Sheet
       </a>
      </li>
      <li>
-      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz03_solution.pdf">
+      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/03_processes_solution.pdf">
        Quiz Solution
       </a>
      </li>
@@ -187,20 +187,20 @@ lectures and/or assignments with an advanced week's notice.
     {:/}
    </td>
    <td markdown="span" style="text-align:center">
-    <a href="{{ site.url }}{{ site.baseurl}}/notes/session04">
+    <b>
      Operations on Processes
-    </a>
+    </b>
    </td>
    <td markdown="span">
     {::nomarkdown}
     <ul style="margin:0;padding:.5rem">
      <li>
-      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz04.pdf">
+      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/04_proc_ops.pdf">
        Quiz Sheet
       </a>
      </li>
      <li>
-      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz04_solution.pdf">
+      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/04_proc_ops_solution.pdf">
        Quiz Solution
       </a>
      </li>
@@ -226,25 +226,30 @@ lectures and/or assignments with an advanced week's notice.
     {:/}
    </td>
    <td markdown="span" style="text-align:center">
-    <a href="{{ site.url }}{{ site.baseurl}}/notes/session05">
+    <b>
      IPC: Signals
-    </a>
+    </b>
    </td>
    <td markdown="span">
     {::nomarkdown}
     <ul style="margin:0;padding:.5rem">
      <li>
-      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz05.pdf">
+      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/05_signals.pdf">
        Quiz Sheet
       </a>
      </li>
      <li>
-      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz05_solution.pdf">
+      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/05_signals_solution.pdf">
        Quiz Solution
       </a>
      </li>
     </ul>
     {:/}
+   </td>
+  </tr>
+  <tr>
+   <td colspan="4" markdown="span">
+    [Lab02: Simple Shell]({{ site.url }}{{ site.baseurl }}/labs/simpleshell/) DUE Thu, Jun 12 2025 23:59 [Submission box]({{ site.gradescope_url }})
    </td>
   </tr>
   <tr>
@@ -265,20 +270,20 @@ lectures and/or assignments with an advanced week's notice.
     {:/}
    </td>
    <td markdown="span" style="text-align:center">
-    <a href="{{ site.url }}{{ site.baseurl}}/notes/session06">
+    <b>
      IPC: Pipes
-    </a>
+    </b>
    </td>
    <td markdown="span">
     {::nomarkdown}
     <ul style="margin:0;padding:.5rem">
      <li>
-      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz06.pdf">
+      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/06_pipes.pdf">
        Quiz Sheet
       </a>
      </li>
      <li>
-      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz06_solution.pdf">
+      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/06_pipes_solution.pdf">
        Quiz Solution
       </a>
      </li>
@@ -291,7 +296,7 @@ lectures and/or assignments with an advanced week's notice.
     <td colspan="5" markdown="span" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;">
     </td>
    </tr>
-   <td markdown="span" rowspan="3" style="font-size:xx-large;">
+   <td markdown="span" rowspan="4" style="font-size:xx-large;">
     <a name="w2">
      2
     </a>
@@ -330,6 +335,11 @@ lectures and/or assignments with an advanced week's notice.
      </li>
     </ul>
     {:/}
+   </td>
+  </tr>
+  <tr>
+   <td colspan="4" markdown="span">
+    [Lab03: Process Lab]({{ site.url }}{{ site.baseurl }}/labs/processlab/) DUE Mon, Jun 16 2025 23:59 [Submission box]({{ site.gradescope_url }})
    </td>
   </tr>
   <tr>

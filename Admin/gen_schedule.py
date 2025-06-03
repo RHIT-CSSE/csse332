@@ -90,7 +90,7 @@ def count_weeks(schedule, starting_week):
     :rtype: [int]
     """
     # at most, there are 11 weeks!
-    week_counter = [0]*12
+    week_counter = [0] * 12
 
     current_week = starting_week
     prev_week = parse_time_str(schedule[0]['date']).isocalendar()[1]

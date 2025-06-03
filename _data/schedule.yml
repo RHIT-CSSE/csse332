@@ -26,19 +26,19 @@
   reading:
     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf"> Chapter 4 of OSTEP </a>
   topics:
-    - <a href="{{ site.url }}{{ site.baseurl}}/notes/session03"> The Process Abstraction </a>
+    - <b> The Process Abstraction </b>
   materials:
-    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz03.pdf">Quiz Sheet</a>
-    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz03_solution.pdf">Quiz Solution</a>
+    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/03_processes.pdf">Quiz Sheet</a>
+    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/03_processes_solution.pdf">Quiz Solution</a>
 
 4:
   reading:
     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-api.pdf"> Chapter 5 of OSTEP </a>
   topics:
-    - <a href="{{ site.url }}{{ site.baseurl}}/notes/session04"> Operations on Processes </a>
+    - <b> Operations on Processes </b>
   materials: 
-    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz04.pdf">Quiz Sheet</a>
-    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz04_solution.pdf">Quiz Solution</a>
+    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/04_proc_ops.pdf">Quiz Sheet</a>
+    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/04_proc_ops_solution.pdf">Quiz Solution</a>
 
 
 ###############################################################################
@@ -48,19 +48,19 @@
   reading:
     - <a href="https://www.man7.org/linux/man-pages/man7/signal.7.html"> Signal man page </a>
   topics:
-    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session05"> IPC: Signals </a>'
+    - '<b> IPC: Signals </b>'
   materials: 
-    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz05.pdf">Quiz Sheet</a>
-    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz05_solution.pdf">Quiz Solution</a>
+    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/05_signals.pdf">Quiz Sheet</a>
+    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/05_signals_solution.pdf">Quiz Solution</a>
 
 6:
   reading:
     - <a href="https://www.man7.org/linux/man-pages/man2/pipe.2.html"> Pipe man page </a>
   topics:
-    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session06"> IPC: Pipes </a>'
+    - '<b> IPC: Pipes </b>'
   materials: 
-    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz06.pdf">Quiz Sheet</a>
-    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz06_solution.pdf">Quiz Solution</a>
+    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/06_pipes.pdf">Quiz Sheet</a>
+    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/06_pipes_solution.pdf">Quiz Solution</a>
 
 7:
   reading:
