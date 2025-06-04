@@ -208,13 +208,13 @@ questions to decide what to focus on in review sessions.
 
 ## Grading
 
-| Item                  | Weight |
-|:----------------------|:-------|
-| Assignments/Labs      | 40%    |
-| Exams                 | 30%    |
-| Challenge Assignments | 10%    |
-| Project               | 15%    |
-| Quizzes               | 5%     |
+| Item                        | Weight |
+|:----------------------------|:-------|
+| Assignments/Labs            | 40%    |
+| Exams                       | 30%    |
+| Challenge Assignments       | 10%    |
+| Project                     | 10%    |
+| Quizzes & Engagement Points | 10%    |
 
 I generally follow the registrar's interpretation of letter grades, which you
 can find
@@ -236,6 +236,47 @@ If you talk to the grading TA and you disagree with their analysis of your code
 or you feel the grading standards were unfair (or unfairly applied) please
 contact your instructor.  We want to help you but everything goes smoother if
 logistical issues come to the TAs first.
+
+## Engagement/Incentive Points
+
+Keeping your motivation up during the summer term is hard, especially if you
+have a side gig or an internship going on. Therefore, we are introducing
+_engagement/incentive_ points, which will constitute, along with your quizzes,
+10% of your grade. 
+
+### Earning engagement points
+
+Every week, we will be covering at least two new topics in class. To maximize
+your engagement and help with your motivation, I will ask you to make **at
+least two posts** on the class forum on CampusWire. These posts can be any (but
+not limited to) the following:
+
+1. A question that you had about the course material.
+2. An interesting article that you found discussing the idea further, which you
+   summarize in a couple of sentences.
+3. Error you find in the class videos and/or lecture notes.
+4. Interesting and funny memes of your instructor captured in an awkward
+   moment in the video lectures.
+5. Applications of things we use in class to other domains (e.g., databases,
+   other operating systems, etc.)
+6. An interesting code example of things we learned in class, including but not
+   limited to security vulnerabilities.
+7. Other interesting ideas that might come to you.
+
+Please note that every post you make will be judged by your instructor/TA
+whether it meets the minimum requirement for earning points. For example, "In
+this session we learned about processes" does **not** count as an engagement
+point. On the other hand, "I did some research and found out how Windows
+handles processes compared to Unix and here are some details" definitely counts
+as an engagement point.
+
+### Missing engagement points
+
+To help reduce the load on you a bit, you are allowed to miss **two engagement
+point** opportunities. Those can be within the same week, i.e., you do not
+submit any post during one of the weeks, or you can spread them out over two
+weeks where you only submit one post per week. Missing engagement posts beyond
+that will reduce your grade.
 
 ## Collaboration, Cheating and Professional Behavior
 
