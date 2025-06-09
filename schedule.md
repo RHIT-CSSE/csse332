@@ -318,18 +318,20 @@ lectures and/or assignments with an advanced week's notice.
     {:/}
    </td>
    <td markdown="span" style="text-align:center">
-    C debugging
+    <b>
+     C debugging
+    </b>
    </td>
    <td markdown="span">
     {::nomarkdown}
     <ul style="margin:0;padding:.5rem">
      <li>
-      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz07.pdf">
+      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/07_debugging.pdf">
        Quiz Sheet
       </a>
      </li>
      <li>
-      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz07_solution.pdf">
+      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/07_debugging_solution.pdf">
        Quiz Solution
       </a>
      </li>
@@ -351,23 +353,11 @@ lectures and/or assignments with an advanced week's notice.
    <td markdown="span">
    </td>
    <td markdown="span" style="text-align:center">
-    Server access and vim tutorial
+    <b>
+     Debugging in xv6
+    </b>
    </td>
    <td markdown="span">
-    {::nomarkdown}
-    <ul style="margin:0;padding:.5rem">
-     <li>
-      <a href="https://vim.rtorr.com/">
-       vim cheat sheet
-      </a>
-     </li>
-     <li>
-      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/resources.pdf">
-       Worksheet
-      </a>
-     </li>
-    </ul>
-    {:/}
    </td>
   </tr>
   <tr>
@@ -388,7 +378,9 @@ lectures and/or assignments with an advanced week's notice.
     {:/}
    </td>
    <td markdown="span" style="text-align:center">
-    Interrupts and Traps
+    <b>
+     Interrupts and Traps
+    </b>
    </td>
    <td markdown="span">
     {::nomarkdown}
@@ -399,12 +391,12 @@ lectures and/or assignments with an advanced week's notice.
       </a>
      </li>
      <li>
-      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz08.pdf">
+      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/09_interrupts.pdf">
        Quiz Sheet
       </a>
      </li>
      <li>
-      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz08_solution.pdf">
+      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/09_interrupts_solution.pdf">
        Quiz Solution
       </a>
      </li>
