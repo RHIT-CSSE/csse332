@@ -366,6 +366,45 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Fri, Jun 20 2025
    </td>
+   <td markdown="span">
+   </td>
+   <td markdown="span" style="text-align:center">
+    <b>
+     Heap Manager Lab Walkthrough
+    </b>
+   </td>
+   <td markdown="span">
+    {::nomarkdown}
+    <ul style="margin:0;padding:.5rem">
+     <li>
+      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/10_heapmm.pdf">
+       Quiz Sheet
+      </a>
+     </li>
+    </ul>
+    {:/}
+   </td>
+  </tr>
+  <tr>
+   <td colspan="4" markdown="span">
+    [Lab04: Debugging Lab]({{ site.url }}{{ site.baseurl }}/labs/debug/) DUE Fri, Jun 20 2025 23:59 [Submission box]({{ site.gradescope_url }})
+   </td>
+  </tr>
+  <tr>
+   <tr>
+    <td colspan="5" markdown="span" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;">
+    </td>
+   </tr>
+   <td markdown="span" rowspan="5" style="font-size:xx-large;">
+    <a name="w3">
+     3
+    </a>
+   </td>
+   <td markdown="span">
+    10
+    <br/>
+    Mon, Jun 23 2025
+   </td>
    <td markdown="span" style="text-align:left;">
     {::nomarkdown}
     <ul style="margin:0;padding:.5rem">
@@ -406,23 +445,14 @@ lectures and/or assignments with an advanced week's notice.
   </tr>
   <tr>
    <td colspan="4" markdown="span">
-    [Lab04: Debugging Lab]({{ site.url }}{{ site.baseurl }}/labs/debug/) DUE Fri, Jun 20 2025 23:59 [Submission box]({{ site.gradescope_url }})
+    [[Challenge] Lab05: Heap Manager I]({{ site.url }}{{ site.baseurl }}/labs/heapmm/) DUE Mon, Jun 23 2025 23:59 [Submission box]({{ site.gradescope_url }})
    </td>
   </tr>
   <tr>
-   <tr>
-    <td colspan="5" markdown="span" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;">
-    </td>
-   </tr>
-   <td markdown="span" rowspan="5" style="font-size:xx-large;">
-    <a name="w3">
-     3
-    </a>
-   </td>
    <td markdown="span">
-    10
+    11
     <br/>
-    Mon, Jun 23 2025
+    Tue, Jun 24 2025
    </td>
    <td markdown="span">
    </td>
@@ -439,15 +469,10 @@ lectures and/or assignments with an advanced week's notice.
    </td>
   </tr>
   <tr>
-   <td colspan="4" markdown="span">
-    [[Challenge] Lab05: Heap Manager I]({{ site.url }}{{ site.baseurl }}/labs/heapmm/) DUE Mon, Jun 23 2025 23:59 [Submission box]({{ site.gradescope_url }})
-   </td>
-  </tr>
-  <tr>
    <td markdown="span">
-    11
+    12
     <br/>
-    Tue, Jun 24 2025
+    Thu, Jun 26 2025
    </td>
    <td markdown="span">
    </td>
@@ -468,23 +493,34 @@ lectures and/or assignments with an advanced week's notice.
   </tr>
   <tr>
    <td markdown="span">
-    12
+    13
     <br/>
-    Thu, Jun 26 2025
+    Fri, Jun 27 2025
    </td>
    <td markdown="span">
    </td>
    <td markdown="span" style="text-align:center">
-    Exam 1 Part 1
+    <b>
+     No class, Exam 1
+    </b>
    </td>
    <td markdown="span">
    </td>
   </tr>
   <tr>
+   <tr>
+    <td colspan="5" markdown="span" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;">
+    </td>
+   </tr>
+   <td markdown="span" rowspan="3" style="font-size:xx-large;">
+    <a name="w4">
+     4
+    </a>
+   </td>
    <td markdown="span">
-    13
+    14
     <br/>
-    Fri, Jun 27 2025
+    Mon, Jun 30 2025
    </td>
    <td markdown="span" style="text-align:left;">
     {::nomarkdown}
@@ -520,19 +556,10 @@ lectures and/or assignments with an advanced week's notice.
    </td>
   </tr>
   <tr>
-   <tr>
-    <td colspan="5" markdown="span" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;">
-    </td>
-   </tr>
-   <td markdown="span" rowspan="3" style="font-size:xx-large;">
-    <a name="w4">
-     4
-    </a>
-   </td>
    <td markdown="span">
-    14
+    15
     <br/>
-    Mon, Jun 30 2025
+    Tue, Jul 01 2025
    </td>
    <td markdown="span" style="text-align:left;">
     {::nomarkdown}
@@ -574,9 +601,9 @@ lectures and/or assignments with an advanced week's notice.
   </tr>
   <tr>
    <td markdown="span">
-    15
+    16
     <br/>
-    Tue, Jul 01 2025
+    Thu, Jul 03 2025
    </td>
    <td markdown="span">
    </td>
@@ -603,20 +630,6 @@ lectures and/or assignments with an advanced week's notice.
    </td>
   </tr>
   <tr>
-   <td markdown="span">
-    16
-    <br/>
-    Thu, Jul 03 2025
-   </td>
-   <td markdown="span">
-   </td>
-   <td markdown="span" style="text-align:center">
-    Exam 1 Part 2
-   </td>
-   <td markdown="span">
-   </td>
-  </tr>
-  <tr>
    <tr>
     <td colspan="5" markdown="span" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;">
     </td>
@@ -630,6 +643,20 @@ lectures and/or assignments with an advanced week's notice.
     17
     <br/>
     Mon, Jul 07 2025
+   </td>
+   <td markdown="span">
+   </td>
+   <td markdown="span" style="text-align:center">
+    Exam 1 Part 2
+   </td>
+   <td markdown="span">
+   </td>
+  </tr>
+  <tr>
+   <td markdown="span">
+    18
+    <br/>
+    Tue, Jul 08 2025
    </td>
    <td markdown="span" style="text-align:left;">
     {::nomarkdown}
@@ -666,9 +693,9 @@ lectures and/or assignments with an advanced week's notice.
   </tr>
   <tr>
    <td markdown="span">
-    18
+    19
     <br/>
-    Tue, Jul 08 2025
+    Thu, Jul 10 2025
    </td>
    <td markdown="span" style="text-align:left;">
     {::nomarkdown}
@@ -705,9 +732,9 @@ lectures and/or assignments with an advanced week's notice.
   </tr>
   <tr>
    <td markdown="span">
-    19
+    20
     <br/>
-    Thu, Jul 10 2025
+    Fri, Jul 11 2025
    </td>
    <td markdown="span" style="text-align:left;">
     {::nomarkdown}
@@ -743,10 +770,19 @@ lectures and/or assignments with an advanced week's notice.
    </td>
   </tr>
   <tr>
+   <tr>
+    <td colspan="5" markdown="span" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;">
+    </td>
+   </tr>
+   <td markdown="span" rowspan="4" style="font-size:xx-large;">
+    <a name="w6">
+     6
+    </a>
+   </td>
    <td markdown="span">
-    20
+    21
     <br/>
-    Fri, Jul 11 2025
+    Mon, Jul 21 2025
    </td>
    <td markdown="span">
    </td>
@@ -778,19 +814,10 @@ lectures and/or assignments with an advanced week's notice.
    </td>
   </tr>
   <tr>
-   <tr>
-    <td colspan="5" markdown="span" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;">
-    </td>
-   </tr>
-   <td markdown="span" rowspan="4" style="font-size:xx-large;">
-    <a name="w6">
-     6
-    </a>
-   </td>
    <td markdown="span">
-    21
+    22
     <br/>
-    Mon, Jul 21 2025
+    Tue, Jul 22 2025
    </td>
    <td markdown="span" style="text-align:left;">
     {::nomarkdown}
@@ -832,9 +859,9 @@ lectures and/or assignments with an advanced week's notice.
   </tr>
   <tr>
    <td markdown="span">
-    22
+    23
     <br/>
-    Tue, Jul 22 2025
+    Thu, Jul 24 2025
    </td>
    <td markdown="span">
    </td>
@@ -867,9 +894,9 @@ lectures and/or assignments with an advanced week's notice.
   </tr>
   <tr>
    <td markdown="span">
-    23
+    24
     <br/>
-    Thu, Jul 24 2025
+    Fri, Jul 25 2025
    </td>
    <td markdown="span" style="text-align:left;">
     {::nomarkdown}
@@ -905,10 +932,19 @@ lectures and/or assignments with an advanced week's notice.
    </td>
   </tr>
   <tr>
+   <tr>
+    <td colspan="5" markdown="span" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;">
+    </td>
+   </tr>
+   <td markdown="span" rowspan="4" style="font-size:xx-large;">
+    <a name="w7">
+     7
+    </a>
+   </td>
    <td markdown="span">
-    24
+    25
     <br/>
-    Fri, Jul 25 2025
+    Mon, Jul 28 2025
    </td>
    <td markdown="span" style="text-align:left;">
     {::nomarkdown}
@@ -934,19 +970,10 @@ lectures and/or assignments with an advanced week's notice.
    </td>
   </tr>
   <tr>
-   <tr>
-    <td colspan="5" markdown="span" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;">
-    </td>
-   </tr>
-   <td markdown="span" rowspan="4" style="font-size:xx-large;">
-    <a name="w7">
-     7
-    </a>
-   </td>
    <td markdown="span">
-    25
+    26
     <br/>
-    Mon, Jul 28 2025
+    Tue, Jul 29 2025
    </td>
    <td markdown="span">
    </td>
@@ -961,9 +988,9 @@ lectures and/or assignments with an advanced week's notice.
   </tr>
   <tr>
    <td markdown="span">
-    26
+    27
     <br/>
-    Tue, Jul 29 2025
+    Thu, Jul 31 2025
    </td>
    <td markdown="span">
    </td>
@@ -977,20 +1004,6 @@ lectures and/or assignments with an advanced week's notice.
   </tr>
   <tr>
    <td markdown="span">
-    27
-    <br/>
-    Thu, Jul 31 2025
-   </td>
-   <td markdown="span">
-   </td>
-   <td markdown="span" style="text-align:center">
-    Exam 2 Review and Practice
-   </td>
-   <td markdown="span">
-   </td>
-  </tr>
-  <tr>
-   <td markdown="span">
     28
     <br/>
     Fri, Aug 01 2025
@@ -998,9 +1011,7 @@ lectures and/or assignments with an advanced week's notice.
    <td markdown="span">
    </td>
    <td markdown="span" style="text-align:center">
-    <b>
-     Exam 2 Part 1
-    </b>
+    Exam 2 Review and Practice
    </td>
    <td markdown="span">
    </td>
@@ -1019,6 +1030,22 @@ lectures and/or assignments with an advanced week's notice.
     29
     <br/>
     Mon, Aug 04 2025
+   </td>
+   <td markdown="span">
+   </td>
+   <td markdown="span" style="text-align:center">
+    <b>
+     Exam 2 Part 1
+    </b>
+   </td>
+   <td markdown="span">
+   </td>
+  </tr>
+  <tr>
+   <td markdown="span">
+    30
+    <br/>
+    Tue, Aug 05 2025
    </td>
    <td markdown="span" style="text-align:left;">
     {::nomarkdown}
@@ -1050,9 +1077,9 @@ lectures and/or assignments with an advanced week's notice.
   </tr>
   <tr>
    <td markdown="span">
-    30
+    31
     <br/>
-    Tue, Aug 05 2025
+    Thu, Aug 07 2025
    </td>
    <td markdown="span" style="text-align:left;">
     {::nomarkdown}
@@ -1075,22 +1102,6 @@ lectures and/or assignments with an advanced week's notice.
   </tr>
   <tr>
    <td markdown="span">
-    31
-    <br/>
-    Thu, Aug 07 2025
-   </td>
-   <td markdown="span">
-   </td>
-   <td markdown="span" style="text-align:center">
-    <a href="{{ site.url }}{{ site.baseurl}}/notes/filesystems/">
-     File Systems
-    </a>
-   </td>
-   <td markdown="span">
-   </td>
-  </tr>
-  <tr>
-   <td markdown="span">
     32
     <br/>
     Fri, Aug 08 2025
@@ -1098,9 +1109,9 @@ lectures and/or assignments with an advanced week's notice.
    <td markdown="span">
    </td>
    <td markdown="span" style="text-align:center">
-    <b>
-     Exam 2 Part 2
-    </b>
+    <a href="{{ site.url }}{{ site.baseurl}}/notes/filesystems/">
+     File Systems
+    </a>
    </td>
    <td markdown="span">
    </td>
@@ -1123,9 +1134,9 @@ lectures and/or assignments with an advanced week's notice.
    <td markdown="span">
    </td>
    <td markdown="span" style="text-align:center">
-    <a href="{{ site.url }}{{ site.baseurl}}/notes/filesystems/">
-     File Systems II
-    </a>
+    <b>
+     Exam 2 Part 2
+    </b>
    </td>
    <td markdown="span">
    </td>
@@ -1139,8 +1150,8 @@ lectures and/or assignments with an advanced week's notice.
    <td markdown="span">
    </td>
    <td markdown="span" style="text-align:center">
-    <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/">
-     Milestone 2 Demo Day
+    <a href="{{ site.url }}{{ site.baseurl}}/notes/filesystems/">
+     File Systems II
     </a>
    </td>
    <td markdown="span">
@@ -1155,9 +1166,9 @@ lectures and/or assignments with an advanced week's notice.
    <td markdown="span">
    </td>
    <td markdown="span" style="text-align:center">
-    <b>
-     Lab: ext2 file system
-    </b>
+    <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/">
+     Milestone 2 Demo Day
+    </a>
    </td>
    <td markdown="span">
    </td>
@@ -1168,19 +1179,12 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Fri, Aug 15 2025
    </td>
-   <td markdown="span" style="text-align:left;">
-    {::nomarkdown}
-    <ul style="margin:0;padding:.5rem">
-     <li>
-      <a href="https://dl.acm.org/doi/10.1145/945445.945462">
-       Xen and the art of virtualization
-      </a>
-     </li>
-    </ul>
-    {:/}
+   <td markdown="span">
    </td>
    <td markdown="span" style="text-align:center">
-    Special Topics in OS
+    <b>
+     Lab: ext2 file system
+    </b>
    </td>
    <td markdown="span">
    </td>
@@ -1204,8 +1208,8 @@ lectures and/or assignments with an advanced week's notice.
     {::nomarkdown}
     <ul style="margin:0;padding:.5rem">
      <li>
-      <a href="https://dl.acm.org/doi/10.1145/1314299.1314302">
-       Labels and event processes in the Asbestos operating system
+      <a href="https://dl.acm.org/doi/10.1145/945445.945462">
+       Xen and the art of virtualization
       </a>
      </li>
     </ul>
@@ -1223,12 +1227,19 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Tue, Aug 19 2025
    </td>
-   <td markdown="span">
+   <td markdown="span" style="text-align:left;">
+    {::nomarkdown}
+    <ul style="margin:0;padding:.5rem">
+     <li>
+      <a href="https://dl.acm.org/doi/10.1145/1314299.1314302">
+       Labels and event processes in the Asbestos operating system
+      </a>
+     </li>
+    </ul>
+    {:/}
    </td>
    <td markdown="span" style="text-align:center">
-    <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/">
-     Milestone 3 Demo Day
-    </a>
+    Special Topics in OS
    </td>
    <td markdown="span">
    </td>
@@ -1243,7 +1254,7 @@ lectures and/or assignments with an advanced week's notice.
    </td>
    <td markdown="span" style="text-align:center">
     <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/">
-     Project Work Time (Demo Continued)
+     Milestone 3 Demo Day
     </a>
    </td>
    <td markdown="span">
@@ -1258,20 +1269,11 @@ lectures and/or assignments with an advanced week's notice.
    <td markdown="span">
    </td>
    <td markdown="span" style="text-align:center">
-    <a href="{{ site.url }}{{ site.baseurl}}/labs/milestone4/">
-     Project Presentations
+    <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/">
+     Project Work Time (Demo Continued)
     </a>
    </td>
    <td markdown="span">
-    {::nomarkdown}
-    <ul style="margin:0;padding:.5rem">
-     <li>
-      <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/">
-       Project Hints
-      </a>
-     </li>
-    </ul>
-    {:/}
    </td>
   </tr>
  </tbody>

@@ -82,6 +82,16 @@
 
 9:
   reading:
+  topics:
+   - <b> Heap Manager Lab Walkthrough </b>
+  materials:
+    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/10_heapmm.pdf">Quiz Sheet</a>
+
+###############################################################################
+# WEEK 3
+###############################################################################
+10:
+  reading:
     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/file-devices.pdf"> Section 36.4 of Chapter 16 </a>
   topics:
     - <b> Interrupts and Traps </b>
@@ -90,17 +100,14 @@
     - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/09_interrupts.pdf">Quiz Sheet</a>
     - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/09_interrupts_solution.pdf">Quiz Solution</a>
 
-###############################################################################
-# WEEK 3
-###############################################################################
-10:
+11:
  reading:
  topics:
    - <a href="{{site.url}}{{site.baseurl}}/docs/activities/syscall/"> Implementing system calls </a>
  materials:
    <a href="{{site.url}}{{site.baseurl}}/docs/activities/systrace/"> Activity </a>
 
-11:
+12:
  reading:
  topics:
     - Exam 1 Review
@@ -108,16 +115,16 @@
    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/exam1review.pdf">Review Quiz Sheet</a>
 
 
-12:
+13:
   reading:
   topics:
-    - Exam 1 Part 1
+   - <b> No class, Exam 1 </b>
   materials: 
 
 ################################################################################
 ## WEEK 4
 ################################################################################
-13:
+14:
   reading:
     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-mechanism.pdf"> Chapter 15 of OSTEP </a>
   topics:
@@ -126,7 +133,7 @@
     - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/memvirt.pdf">Quiz Sheet</a>
     - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/memvirt_solution.pdf">Quiz Solution</a>
 #
-14:
+15:
   reading:
     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-paging.pdf"> Chapter 18 of OSTEP </a>
   topics:
@@ -137,7 +144,7 @@
    - <a href="{{site.url}}{{site.baseurl}}/docs/activities/paging/"> Activity </a>
 #
 #
-15:
+16:
  reading:
  topics:
    - <a href="{{site.url}}{{site.baseurl}}/docs/activities/lazy_pages/"> Lazy page allocation activity </a>
@@ -145,7 +152,7 @@
    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz17.pdf">Quiz Sheet</a>
    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz17_solution.pdf">Quiz Solution</a>
 
-16:
+17:
   reading:
   topics:
 #    - '<a href="{{site.baseurl}}/labs/cow/">Lab 06: Copy-on-Write </a>'
@@ -157,7 +164,7 @@
 ################################################################################
 ## WEEK 5
 ################################################################################
-17:
+18:
   reading:
     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-smalltables.pdf"> Chapter 20 of OSTEP </a>
   topics:
@@ -166,7 +173,7 @@
     - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/mlpgtbl.pdf">Quiz Sheet</a>
     - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/mlpgtbl_solution.pdf">Quiz Solution</a>
 
-18:
+19:
   reading:
     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf"> Chapter 26 of OSTEP </a>
   topics:
@@ -175,7 +182,7 @@
     - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/pthreads.pdf">Quiz Sheet</a>
     - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/pthreads_solution.pdf">Quiz Solution</a>
 
-19:
+20:
  reading:
    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-locks.pdf"> Chapter 28 of OSTEP </a>
  topics:
@@ -184,7 +191,7 @@
    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/locks.pdf">Quiz Sheet</a>
    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/locks_solution.pdf">Quiz Solution </a>
     
-20:
+21:
  reading:
  topics:
    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session20"> Locks and Condition Variables </a>'
@@ -206,7 +213,7 @@
 #    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz21.pdf">Quiz Sheet</a>
    # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz21_solution.pdf">Quiz Solution </a>
 
-21:
+22:
  reading:
    - <a href="https://en.wikipedia.org/wiki/Producer%E2%80%93consumer_problem"> Wiki Page for Prod/Cons Problem </a>
  topics:
@@ -216,7 +223,7 @@
    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/prodcons.pdf">Quiz Sheet</a>
    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/prodcons_solution.pdf">Quiz Solution </a>
 
-22:
+23:
  reading:
  topics:
    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session22"> Concurrency: Readers/Writers Problem </a>'
@@ -225,7 +232,7 @@
   - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/rwcv.pdf">Quiz Sheet</a>
   - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/rwcv_solution.pdf">Quiz Solution </a>
 
-23:
+24:
  reading:
    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 of OSTEP </a>
  topics:
@@ -234,7 +241,7 @@
    - <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
    - <a href="{{site.url}}{{site.baseurl}}/docs/guides/cv_unofficial_guide/"> CV Guide </a>
 
-24:
+25:
  reading:
    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 of OSTEP </a>
  topics:
@@ -245,27 +252,27 @@
 ################################################################################
 ## WEEK 7
 ################################################################################
-25:
+26:
   reading:
   topics:
     - <b>Lab:</b> Userspace Threads
   materials:
 
 
-26:
+27:
  reading:
  topics:
   - <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/"> Milestone 1 Demo Day </a>
  materials:
 
 
-27:
+28:
  reading:
  topics:
    - Exam 2 Review and Practice
  materials:
 
-28:
+29:
  reading:
  topics:
    - <b> Exam 2 Part 1 </b>
@@ -281,7 +288,7 @@
 ## ################################################################################
 ##  WEEK 8
 ## ################################################################################
-29:
+30:
  reading:
    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched.pdf"> Chapter 7 of OSTEP </a>
  topics:
@@ -297,20 +304,20 @@
  #   - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session30"> CPU Scheduling II </a>'
  # materials:
 
-30:
+31:
  reading:
    - <a href="https://pdos.csail.mit.edu/6.828/2022/xv6/book-riscv-rev3.pdf"> Chapter 7 of the xv6 book </a>
  topics:
    - <a href="{{ site.url }}{{ site.baseurl}}/labs/sched/"> The xv6 scheduler </a>
  materials:
 
-31:
+32:
  reading: 
  topics: 
    - <a href="{{ site.url }}{{ site.baseurl}}/notes/filesystems/"> File Systems </a>
  materials:
 
-32:
+33:
  reading:
  topics:
    - <b> Exam 2 Part 2 </b>
@@ -320,26 +327,26 @@
 ## ################################################################################
 ## ## WEEK 9
 ## ################################################################################
-33:
+34:
  reading:
  topics:
    - <a href="{{ site.url }}{{ site.baseurl}}/notes/filesystems/"> File Systems II </a>
  materials:
 #
-34:
+35:
  reading:
  topics:
    # - <b> Project Work Time </b>
    - <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/"> Milestone 2 Demo Day </a>
  materials:
 #
-35:
+36:
  reading:
  topics:
    - "<b> Lab: ext2 file system </b>"
  materials:
 
-36:
+37:
  reading:
    - <a href="https://dl.acm.org/doi/10.1145/945445.945462"> Xen and the art of virtualization </a>
  topics:
@@ -350,7 +357,7 @@
 ## ################################################################################
 ## ## WEEK 10 
 ## ################################################################################
-37:
+38:
  reading:
    - <a href="https://dl.acm.org/doi/10.1145/1314299.1314302">  Labels and event processes in the Asbestos operating system </a>
  topics:
@@ -358,23 +365,23 @@
    - Special Topics in OS
  materials:
 
-38:
+39:
  reading:
  topics:
    # - <b> Project Work Time </b>
    - <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/"> Milestone 3 Demo Day </a>
  materials:
 
-39:
+40:
  reading:
  topics:
    - <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/"> Project Work Time (Demo Continued) </a>
  materials:
 
-40:
- reading:
- topics:
-   - <a href="{{ site.url }}{{ site.baseurl}}/labs/milestone4/"> Project Presentations </a>
- materials:
-   - <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/"> Project Hints </a>
+# 40:
+#  reading:
+#  topics:
+#    - <a href="{{ site.url }}{{ site.baseurl}}/labs/milestone4/"> Project Presentations </a>
+#  materials:
+#    - <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/"> Project Hints </a>
 #
