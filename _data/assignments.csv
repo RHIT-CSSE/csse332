@@ -6,8 +6,8 @@ Lab02: Simple Shell,simpleshell/,2025-06-12 23:59,,[Submission box]({{ site.grad
 Lab03: Process Lab,processlab/,2025-06-16 23:59,,[Submission box]({{ site.gradescope_url }}),Day 7
 Lab04: Debugging Lab,debug/,2025-06-20 23:59,,[Submission box]({{ site.gradescope_url }}),Day 9
 [Challenge] Lab05: Heap Manager I,heapmm/,2025-06-23 23:59,,[Submission box]({{ site.gradescope_url }}),Day 14
-### [Challenge] Lab06: Heap Manager II,buddy/,2025-01-13 23:59,,[Submission box]({{ site.gradescope_url }}),Day 17
-#[Challenge] Lab06: Copy-on-Write,cow,2025-04-07 23:59,,[Submission box]({{ site.gradescope_url }}),Day 17
+[Challenge] Lab06: Heap Manager II,buddy/,2025-07-07 23:59,,[Submission box]({{ site.gradescope_url }}),Day 17
+[Challenge] Lab07: Copy-on-Write,cow,2025-07-10 23:59,,[Submission box]({{ site.gradescope_url }}),Day 17
 #Lab 07: Threads & Mutex Basics,threads_basics,2025-04-10 23:59,,[Submission box]({{ site.gradescope_url }}),Day 21
 #Lab 08: Condition Variables Basics,condvar,2025-04-21 23:59,,[Submission box]({{ site.gradescope_url }}),Day 23
 #[Challenge] Lab 09: Condition Variables II,condvar_challenge,2025-04-24 23:59,,[Submission box]({{ site.gradescope_url }}),Day 25

@@ -4,7 +4,7 @@
 #   materials: 
 
 ###############################################################################
-# WEEK 1
+# WEEK 0
 ###############################################################################
 1:
   reading:
@@ -22,6 +22,11 @@
     - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/02_creview.pdf">Quiz Sheet</a>
     - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/02_creview_solution.pdf">Quiz Solution</a>
 
+
+
+###############################################################################
+# WEEK 1
+###############################################################################
 3:
   reading:
     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf"> Chapter 4 of OSTEP </a>
@@ -40,10 +45,6 @@
     - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/04_proc_ops.pdf">Quiz Sheet</a>
     - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/04_proc_ops_solution.pdf">Quiz Solution</a>
 
-
-###############################################################################
-# WEEK 2
-###############################################################################
 5:
   reading:
     - <a href="https://www.man7.org/linux/man-pages/man7/signal.7.html"> Signal man page </a>
@@ -62,6 +63,9 @@
     - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/06_pipes.pdf">Quiz Sheet</a>
     - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/06_pipes_solution.pdf">Quiz Solution</a>
 
+###############################################################################
+# WEEK 2
+###############################################################################
 7:
   reading:
     # - <a hred="https://www.gnu.org/software/make/manual/make.html"> Make documentation page </a>
@@ -87,9 +91,10 @@
   materials:
     - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/10_heapmm.pdf">Quiz Sheet</a>
 
-###############################################################################
-# WEEK 3
-###############################################################################
+
+################################################################################
+## WEEK 3
+################################################################################
 10:
   reading:
     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/file-devices.pdf"> Section 36.4 of Chapter 16 </a>
@@ -120,50 +125,55 @@
   topics:
    - <b> No class, Exam 1 </b>
   materials: 
-
 ################################################################################
 ## WEEK 4
 ################################################################################
 14:
   reading:
+    # - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-mechanism.pdf"> Chapter 15 of OSTEP </a>
+  topics:
+    # - <a href="{{ site.url }}{{ site.baseurl}}/notes/paging"> Introduction to Paging </a>
+   - '<b> Heap Manager II Lab Walkthrough </b>'
+  materials:
+    # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/memvirt.pdf">Quiz Sheet</a>
+    # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/memvirt_solution.pdf">Quiz Solution</a>
+
+15:
+  reading:
     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-mechanism.pdf"> Chapter 15 of OSTEP </a>
   topics:
     - <a href="{{ site.url }}{{ site.baseurl}}/notes/paging"> Introduction to Paging </a>
   materials:
-    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/memvirt.pdf">Quiz Sheet</a>
-    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/memvirt_solution.pdf">Quiz Solution</a>
-#
-15:
+    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/11_memvirt.pdf">Quiz Sheet</a>
+    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/11_memvirt_solution.pdf">Quiz Solution</a>
+
+16:
   reading:
     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-paging.pdf"> Chapter 18 of OSTEP </a>
   topics:
    - <a href="{{ site.url }}{{ site.baseurl}}/notes/session15"> Paging </a>
   materials:
-   - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/paging.pdf">Quiz Sheet</a>
-   - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/paging_solution.pdf">Quiz Solution</a>
+   - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/12_paging.pdf">Quiz Sheet</a>
+   - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/12_paging_solution.pdf">Quiz Solution</a>
    - <a href="{{site.url}}{{site.baseurl}}/docs/activities/paging/"> Activity </a>
 #
-#
-16:
- reading:
- topics:
-   - <a href="{{site.url}}{{site.baseurl}}/docs/activities/lazy_pages/"> Lazy page allocation activity </a>
- materials:
-   - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz17.pdf">Quiz Sheet</a>
-   - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz17_solution.pdf">Quiz Solution</a>
 
-17:
-  reading:
-  topics:
-#    - '<a href="{{site.baseurl}}/labs/cow/">Lab 06: Copy-on-Write </a>'
-    - Exam 1 Part 2
-  materials:
-#    # - '<b> Lab 06: Heap Manager II </b>'
-#    # - '<b> Lab 07: Copy-On-Write </b>'
-#
+
 ################################################################################
 ## WEEK 5
 ################################################################################
+17:
+  reading:
+  topics:
+    - <a href="{{site.url}}{{site.baseurl}}/docs/activities/lazy_pages/"> Lazy page allocation activity </a>
+#    - '<a href="{{site.baseurl}}/labs/cow/">Lab 06: Copy-on-Write </a>'
+    # - Exam 1 Part 2
+  materials:
+   - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz17.pdf">Quiz Sheet</a>
+   - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz17_solution.pdf">Quiz Solution</a>
+#    # - '<b> Lab 06: Heap Manager II </b>'
+#    # - '<b> Lab 07: Copy-On-Write </b>'
+
 18:
   reading:
     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-smalltables.pdf"> Chapter 20 of OSTEP </a>
@@ -191,6 +201,10 @@
    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/locks.pdf">Quiz Sheet</a>
    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/locks_solution.pdf">Quiz Solution </a>
     
+ 
+################################################################################
+## WEEK 6
+################################################################################
 21:
  reading:
  topics:
@@ -199,10 +213,6 @@
    - <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/condvar.pdf">Quiz Sheet</a>
    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/condvar_solution.pdf">Quiz Solution </a>
- 
-################################################################################
-## WEEK 6
-################################################################################
 # 21:
 #  reading:
 #    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 of OSTEP </a>
@@ -241,6 +251,9 @@
    - <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
    - <a href="{{site.url}}{{site.baseurl}}/docs/guides/cv_unofficial_guide/"> CV Guide </a>
 
+################################################################################
+## WEEK 7
+################################################################################
 25:
  reading:
    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 of OSTEP </a>
@@ -249,9 +262,6 @@
  materials:
    <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
 
-################################################################################
-## WEEK 7
-################################################################################
 26:
   reading:
   topics:

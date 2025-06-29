@@ -522,6 +522,22 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Mon, Jun 30 2025
    </td>
+   <td markdown="span">
+   </td>
+   <td markdown="span" style="text-align:center">
+    <b>
+     Heap Manager II Lab Walkthrough
+    </b>
+   </td>
+   <td markdown="span">
+   </td>
+  </tr>
+  <tr>
+   <td markdown="span">
+    15
+    <br/>
+    Tue, Jul 01 2025
+   </td>
    <td markdown="span" style="text-align:left;">
     {::nomarkdown}
     <ul style="margin:0;padding:.5rem">
@@ -542,12 +558,12 @@ lectures and/or assignments with an advanced week's notice.
     {::nomarkdown}
     <ul style="margin:0;padding:.5rem">
      <li>
-      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/memvirt.pdf">
+      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/11_memvirt.pdf">
        Quiz Sheet
       </a>
      </li>
      <li>
-      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/memvirt_solution.pdf">
+      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/11_memvirt_solution.pdf">
        Quiz Solution
       </a>
      </li>
@@ -557,9 +573,9 @@ lectures and/or assignments with an advanced week's notice.
   </tr>
   <tr>
    <td markdown="span">
-    15
+    16
     <br/>
-    Tue, Jul 01 2025
+    Thu, Jul 03 2025
    </td>
    <td markdown="span" style="text-align:left;">
     {::nomarkdown}
@@ -581,12 +597,12 @@ lectures and/or assignments with an advanced week's notice.
     {::nomarkdown}
     <ul style="margin:0;padding:.5rem">
      <li>
-      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/paging.pdf">
+      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/12_paging.pdf">
        Quiz Sheet
       </a>
      </li>
      <li>
-      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/paging_solution.pdf">
+      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/12_paging_solution.pdf">
        Quiz Solution
       </a>
      </li>
@@ -600,10 +616,19 @@ lectures and/or assignments with an advanced week's notice.
    </td>
   </tr>
   <tr>
+   <tr>
+    <td colspan="5" markdown="span" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;">
+    </td>
+   </tr>
+   <td markdown="span" rowspan="6" style="font-size:xx-large;">
+    <a name="w5">
+     5
+    </a>
+   </td>
    <td markdown="span">
-    16
+    17
     <br/>
-    Thu, Jul 03 2025
+    Mon, Jul 07 2025
    </td>
    <td markdown="span">
    </td>
@@ -630,26 +655,8 @@ lectures and/or assignments with an advanced week's notice.
    </td>
   </tr>
   <tr>
-   <tr>
-    <td colspan="5" markdown="span" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;">
-    </td>
-   </tr>
-   <td markdown="span" rowspan="4" style="font-size:xx-large;">
-    <a name="w5">
-     5
-    </a>
-   </td>
-   <td markdown="span">
-    17
-    <br/>
-    Mon, Jul 07 2025
-   </td>
-   <td markdown="span">
-   </td>
-   <td markdown="span" style="text-align:center">
-    Exam 1 Part 2
-   </td>
-   <td markdown="span">
+   <td colspan="4" markdown="span">
+    [[Challenge] Lab06: Heap Manager II]({{ site.url }}{{ site.baseurl }}/labs/buddy/) DUE Mon, Jul 07 2025 23:59 [Submission box]({{ site.gradescope_url }})
    </td>
   </tr>
   <tr>
@@ -728,6 +735,11 @@ lectures and/or assignments with an advanced week's notice.
      </li>
     </ul>
     {:/}
+   </td>
+  </tr>
+  <tr>
+   <td colspan="4" markdown="span">
+    [[Challenge] Lab07: Copy-on-Write]({{ site.url }}{{ site.baseurl }}/labs/cow) DUE Thu, Jul 10 2025 23:59 [Submission box]({{ site.gradescope_url }})
    </td>
   </tr>
   <tr>
