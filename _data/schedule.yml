@@ -169,37 +169,43 @@
 #    - '<a href="{{site.baseurl}}/labs/cow/">Lab 06: Copy-on-Write </a>'
     # - Exam 1 Part 2
   materials:
-   - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz17.pdf">Quiz Sheet</a>
-   - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz17_solution.pdf">Quiz Solution</a>
+   - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/17_lazy.pdf">Quiz Sheet</a>
+   - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/17_lazy_solution.pdf">Quiz Solution</a>
 #    # - '<b> Lab 06: Heap Manager II </b>'
 #    # - '<b> Lab 07: Copy-On-Write </b>'
 
 18:
   reading:
+  topics:
+   - '<b> Copy-on-Write Lab Walkthrough </b>'
+  materials:
+
+19:
+  reading:
     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-smalltables.pdf"> Chapter 20 of OSTEP </a>
   topics:
     - <a href="{{ site.url }}{{ site.baseurl}}/notes/session16"> Multi-level Page Tables </a>
   materials:
-    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/mlpgtbl.pdf">Quiz Sheet</a>
-    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/mlpgtbl_solution.pdf">Quiz Solution</a>
+    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/16_mlpgtbl.pdf">Quiz Sheet</a>
+    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/16_mlpgtbl_solution.pdf">Quiz Solution</a>
 
-19:
+20:
   reading:
     - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf"> Chapter 26 of OSTEP </a>
   topics:
     - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session18"> Threads: Lightweight Processes </a>'
   materials:
-    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/pthreads.pdf">Quiz Sheet</a>
-    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/pthreads_solution.pdf">Quiz Solution</a>
+    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/21_mtintro.pdf">Quiz Sheet</a>
+    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/21_mtintro_solution.pdf">Quiz Solution</a>
 
-20:
- reading:
-   - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-locks.pdf"> Chapter 28 of OSTEP </a>
- topics:
-   - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session19"> Concurrency: Mutex & Condition Variables </a>'
- materials:
-   - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/locks.pdf">Quiz Sheet</a>
-   - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/locks_solution.pdf">Quiz Solution </a>
+# 20:
+#  reading:
+#    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-locks.pdf"> Chapter 28 of OSTEP </a>
+#  topics:
+#    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session19"> Concurrency: Mutex & Condition Variables </a>'
+#  materials:
+#    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/locks.pdf">Quiz Sheet</a>
+#    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/locks_solution.pdf">Quiz Solution </a>
     
  
 ################################################################################
