@@ -641,12 +641,12 @@ lectures and/or assignments with an advanced week's notice.
     {::nomarkdown}
     <ul style="margin:0;padding:.5rem">
      <li>
-      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz17.pdf">
+      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/17_lazy.pdf">
        Quiz Sheet
       </a>
      </li>
      <li>
-      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz17_solution.pdf">
+      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/17_lazy_solution.pdf">
        Quiz Solution
       </a>
      </li>
@@ -664,6 +664,22 @@ lectures and/or assignments with an advanced week's notice.
     18
     <br/>
     Tue, Jul 08 2025
+   </td>
+   <td markdown="span">
+   </td>
+   <td markdown="span" style="text-align:center">
+    <b>
+     Copy-on-Write Lab Walkthrough
+    </b>
+   </td>
+   <td markdown="span">
+   </td>
+  </tr>
+  <tr>
+   <td markdown="span">
+    19
+    <br/>
+    Thu, Jul 10 2025
    </td>
    <td markdown="span" style="text-align:left;">
     {::nomarkdown}
@@ -685,51 +701,12 @@ lectures and/or assignments with an advanced week's notice.
     {::nomarkdown}
     <ul style="margin:0;padding:.5rem">
      <li>
-      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/mlpgtbl.pdf">
+      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/16_mlpgtbl.pdf">
        Quiz Sheet
       </a>
      </li>
      <li>
-      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/mlpgtbl_solution.pdf">
-       Quiz Solution
-      </a>
-     </li>
-    </ul>
-    {:/}
-   </td>
-  </tr>
-  <tr>
-   <td markdown="span">
-    19
-    <br/>
-    Thu, Jul 10 2025
-   </td>
-   <td markdown="span" style="text-align:left;">
-    {::nomarkdown}
-    <ul style="margin:0;padding:.5rem">
-     <li>
-      <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf">
-       Chapter 26 of OSTEP
-      </a>
-     </li>
-    </ul>
-    {:/}
-   </td>
-   <td markdown="span" style="text-align:center">
-    <a href="{{ site.url }}{{ site.baseurl}}/notes/session18">
-     Threads: Lightweight Processes
-    </a>
-   </td>
-   <td markdown="span">
-    {::nomarkdown}
-    <ul style="margin:0;padding:.5rem">
-     <li>
-      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/pthreads.pdf">
-       Quiz Sheet
-      </a>
-     </li>
-     <li>
-      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/pthreads_solution.pdf">
+      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/16_mlpgtbl_solution.pdf">
        Quiz Solution
       </a>
      </li>
@@ -752,28 +729,28 @@ lectures and/or assignments with an advanced week's notice.
     {::nomarkdown}
     <ul style="margin:0;padding:.5rem">
      <li>
-      <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-locks.pdf">
-       Chapter 28 of OSTEP
+      <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf">
+       Chapter 26 of OSTEP
       </a>
      </li>
     </ul>
     {:/}
    </td>
    <td markdown="span" style="text-align:center">
-    <a href="{{ site.url }}{{ site.baseurl}}/notes/session19">
-     Concurrency: Mutex &amp; Condition Variables
+    <a href="{{ site.url }}{{ site.baseurl}}/notes/session18">
+     Threads: Lightweight Processes
     </a>
    </td>
    <td markdown="span">
     {::nomarkdown}
     <ul style="margin:0;padding:.5rem">
      <li>
-      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/locks.pdf">
+      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/21_mtintro.pdf">
        Quiz Sheet
       </a>
      </li>
      <li>
-      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/locks_solution.pdf">
+      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/21_mtintro_solution.pdf">
        Quiz Solution
       </a>
      </li>
