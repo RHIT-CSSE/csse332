@@ -776,9 +776,9 @@ lectures and/or assignments with an advanced week's notice.
    <td markdown="span">
    </td>
    <td markdown="span" style="text-align:center">
-    <a href="{{ site.url }}{{ site.baseurl}}/notes/session20">
-     Locks and Condition Variables
-    </a>
+    <b>
+     Mutex Locks
+    </b>
    </td>
    <td markdown="span">
     {::nomarkdown}
@@ -789,12 +789,12 @@ lectures and/or assignments with an advanced week's notice.
       </a>
      </li>
      <li>
-      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/condvar.pdf">
+      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/22_mutex_lk.pdf">
        Quiz Sheet
       </a>
      </li>
      <li>
-      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/condvar_solution.pdf">
+      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/22_mutex_lk_solution.pdf">
        Quiz Solution
       </a>
      </li>
@@ -812,17 +812,17 @@ lectures and/or assignments with an advanced week's notice.
     {::nomarkdown}
     <ul style="margin:0;padding:.5rem">
      <li>
-      <a href="https://en.wikipedia.org/wiki/Producer%E2%80%93consumer_problem">
-       Wiki Page for Prod/Cons Problem
+      <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf">
+       Chapter 30 of OSTEP
       </a>
      </li>
     </ul>
     {:/}
    </td>
    <td markdown="span" style="text-align:center">
-    <a href="{{ site.url }}{{ site.baseurl}}/notes/session21">
-     Concurrency: Producer-consumer Problem
-    </a>
+    <b>
+     Condition Variables
+    </b>
    </td>
    <td markdown="span">
     {::nomarkdown}
@@ -833,12 +833,12 @@ lectures and/or assignments with an advanced week's notice.
       </a>
      </li>
      <li>
-      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/prodcons.pdf">
+      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/23_condvar.pdf">
        Quiz Sheet
       </a>
      </li>
      <li>
-      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/prodcons_solution.pdf">
+      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/23_condvar_solution.pdf">
        Quiz Solution
       </a>
      </li>
@@ -852,12 +852,21 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Thu, Jul 24 2025
    </td>
-   <td markdown="span">
+   <td markdown="span" style="text-align:left;">
+    {::nomarkdown}
+    <ul style="margin:0;padding:.5rem">
+     <li>
+      <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf">
+       Chapter 30 of OSTEP
+      </a>
+     </li>
+    </ul>
+    {:/}
    </td>
    <td markdown="span" style="text-align:center">
-    <a href="{{ site.url }}{{ site.baseurl}}/notes/session22">
-     Concurrency: Readers/Writers Problem
-    </a>
+    <b>
+     Condition Variables Exercises
+    </b>
    </td>
    <td markdown="span">
     {::nomarkdown}
@@ -868,12 +877,12 @@ lectures and/or assignments with an advanced week's notice.
       </a>
      </li>
      <li>
-      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/rwcv.pdf">
+      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/23_condvar.pdf">
        Quiz Sheet
       </a>
      </li>
      <li>
-      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/rwcv_solution.pdf">
+      <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/23_condvar_solution.pdf">
        Quiz Solution
       </a>
      </li>
@@ -891,17 +900,17 @@ lectures and/or assignments with an advanced week's notice.
     {::nomarkdown}
     <ul style="margin:0;padding:.5rem">
      <li>
-      <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf">
-       Chapter 30 of OSTEP
+      <a href="https://en.wikipedia.org/wiki/Producer%E2%80%93consumer_problem">
+       Wiki Page for Prod/Cons Problem
       </a>
      </li>
     </ul>
     {:/}
    </td>
    <td markdown="span" style="text-align:center">
-    <a href="{{ site.url }}{{ site.baseurl}}/notes/session20">
-     Concurrency: Condition Variables Practice
-    </a>
+    <b>
+     Concurrency: Producer-consumer Problem
+    </b>
    </td>
    <td markdown="span">
     {::nomarkdown}
@@ -909,11 +918,6 @@ lectures and/or assignments with an advanced week's notice.
      <li>
       <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/">
        Activity
-      </a>
-     </li>
-     <li>
-      <a href="{{site.url}}{{site.baseurl}}/docs/guides/cv_unofficial_guide/">
-       CV Guide
       </a>
      </li>
     </ul>

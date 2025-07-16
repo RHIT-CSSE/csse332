@@ -214,48 +214,59 @@
 21:
  reading:
  topics:
-   - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session20"> Locks and Condition Variables </a>'
+   - '<b>Mutex Locks</b>'
  materials:
    - <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
-   - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/condvar.pdf">Quiz Sheet</a>
-   - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/condvar_solution.pdf">Quiz Solution </a>
-# 21:
-#  reading:
-#    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 of OSTEP </a>
-#  topics:
-#    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session20"> Concurrency: Condition Variables </a>'
-#  materials:
-#    - <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
-#    - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz21.pdf">Quiz Sheet</a>
-   # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/quiz21_solution.pdf">Quiz Solution </a>
+   - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/22_mutex_lk.pdf">Quiz Sheet</a>
+   - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/22_mutex_lk_solution.pdf">Quiz Solution </a>
 
 22:
  reading:
-   - <a href="https://en.wikipedia.org/wiki/Producer%E2%80%93consumer_problem"> Wiki Page for Prod/Cons Problem </a>
+   - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 of OSTEP </a>
  topics:
-   - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session21"> Concurrency: Producer-consumer Problem </a>'
+   - '<b>Condition Variables</b>'
  materials:
    - <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
-   - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/prodcons.pdf">Quiz Sheet</a>
-   - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/prodcons_solution.pdf">Quiz Solution </a>
+   - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/23_condvar.pdf">Quiz Sheet</a>
+   - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/23_condvar_solution.pdf">Quiz Solution </a>
 
 23:
  reading:
+   - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 of OSTEP </a>
  topics:
-   - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session22"> Concurrency: Readers/Writers Problem </a>'
+   - '<b> Condition Variables Exercises </b>'
  materials:
-  - <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
-  - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/rwcv.pdf">Quiz Sheet</a>
-  - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/rwcv_solution.pdf">Quiz Solution </a>
+   - <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
+   - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/23_condvar.pdf">Quiz Sheet</a>
+   - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/23_condvar_solution.pdf">Quiz Solution </a>
 
 24:
  reading:
-   - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 of OSTEP </a>
+   - <a href="https://en.wikipedia.org/wiki/Producer%E2%80%93consumer_problem"> Wiki Page for Prod/Cons Problem </a>
  topics:
-   - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session20"> Concurrency: Condition Variables Practice </a>'
+   - '<b> Concurrency: Producer-consumer Problem </b>'
  materials:
    - <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
-   - <a href="{{site.url}}{{site.baseurl}}/docs/guides/cv_unofficial_guide/"> CV Guide </a>
+   # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/prodcons.pdf">Quiz Sheet</a>
+   # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/prodcons_solution.pdf">Quiz Solution </a>
+
+# 23:
+#  reading:
+#  topics:
+#    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session22"> Concurrency: Readers/Writers Problem </a>'
+#  materials:
+#   - <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
+#   - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/rwcv.pdf">Quiz Sheet</a>
+#   - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/rwcv_solution.pdf">Quiz Solution </a>
+#
+# 24:
+#  reading:
+#    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 of OSTEP </a>
+#  topics:
+#    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session20"> Concurrency: Condition Variables Practice </a>'
+#  materials:
+#    - <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
+#    - <a href="{{site.url}}{{site.baseurl}}/docs/guides/cv_unofficial_guide/"> CV Guide </a>
 
 ################################################################################
 ## WEEK 7
