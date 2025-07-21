@@ -250,14 +250,6 @@
    # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/prodcons.pdf">Quiz Sheet</a>
    # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/prodcons_solution.pdf">Quiz Solution </a>
 
-# 23:
-#  reading:
-#  topics:
-#    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session22"> Concurrency: Readers/Writers Problem </a>'
-#  materials:
-#   - <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
-#   - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/rwcv.pdf">Quiz Sheet</a>
-#   - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/rwcv_solution.pdf">Quiz Solution </a>
 #
 # 24:
 #  reading:
@@ -273,36 +265,49 @@
 ################################################################################
 25:
  reading:
-   - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 of OSTEP </a>
  topics:
-   - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session20"> Concurrency: Condition Variables Practice </a>'
+  - '<b> Concurrency: Readers/Writers Problem </b>'
  materials:
-   <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
+  - <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
+  # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/rwcv.pdf">Quiz Sheet</a>
+  # - <a href="{{ site.url }}{{ site.baseurl}}/assets/files/quiz/rwcv_solution.pdf">Quiz Solution </a>
+
+# 25:
+#  reading:
+#    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"> Chapter 30 of OSTEP </a>
+#  topics:
+#    - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session20"> Concurrency: Condition Variables Practice </a>'
+#  materials:
+#    <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/"> Activity </a>
 
 26:
   reading:
   topics:
-    - <b>Lab:</b> Userspace Threads
+    - <b> Exam 2 Review and Practice </b>
   materials:
 
 
 27:
  reading:
  topics:
-  - <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/"> Milestone 1 Demo Day </a>
+  # - <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/"> Milestone 1 Demo Day </a>
+    - <b>Lab:</b> Userspace Threads
  materials:
 
 
 28:
  reading:
  topics:
-   - Exam 2 Review and Practice
+   - <b> Exam 2 </b>
  materials:
+
+################################################################################
+## WEEK 8
+################################################################################
 
 29:
  reading:
  topics:
-   - <b> Exam 2 Part 1 </b>
  materials:
 
  # reading:
@@ -311,10 +316,6 @@
  # materials:
  #   - <a href="{{site.url}}{{site.baseurl}}/labs/milestone1/"> Milestone 1 Description </a>
  #   - <a href="{{site.url}}{{site.baseurl}}/assets/files/quiz/m1.pdf"> Worksheet </a>
-
-## ################################################################################
-##  WEEK 8
-## ################################################################################
 30:
  reading:
    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched.pdf"> Chapter 7 of OSTEP </a>

@@ -949,27 +949,23 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Mon, Jul 28 2025
    </td>
-   <td markdown="span" style="text-align:left;">
+   <td markdown="span">
+   </td>
+   <td markdown="span" style="text-align:center">
+    <b>
+     Concurrency: Readers/Writers Problem
+    </b>
+   </td>
+   <td markdown="span">
     {::nomarkdown}
     <ul style="margin:0;padding:.5rem">
      <li>
-      <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf">
-       Chapter 30 of OSTEP
+      <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/">
+       Activity
       </a>
      </li>
     </ul>
     {:/}
-   </td>
-   <td markdown="span" style="text-align:center">
-    <a href="{{ site.url }}{{ site.baseurl}}/notes/session20">
-     Concurrency: Condition Variables Practice
-    </a>
-   </td>
-   <td markdown="span">
-    <a href="{{site.url}}{{site.baseurl}}/docs/activities/generic/">
-     Activity
-    </a>
-    <br/>
    </td>
   </tr>
   <tr>
@@ -987,9 +983,8 @@ lectures and/or assignments with an advanced week's notice.
    </td>
    <td markdown="span" style="text-align:center">
     <b>
-     Lab:
+     Exam 2 Review and Practice
     </b>
-    Userspace Threads
    </td>
    <td markdown="span">
    </td>
@@ -1003,9 +998,10 @@ lectures and/or assignments with an advanced week's notice.
    <td markdown="span">
    </td>
    <td markdown="span" style="text-align:center">
-    <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/">
-     Milestone 1 Demo Day
-    </a>
+    <b>
+     Lab:
+    </b>
+    Userspace Threads
    </td>
    <td markdown="span">
    </td>
@@ -1019,7 +1015,9 @@ lectures and/or assignments with an advanced week's notice.
    <td markdown="span">
    </td>
    <td markdown="span" style="text-align:center">
-    Exam 2 Review and Practice
+    <b>
+     Exam 2
+    </b>
    </td>
    <td markdown="span">
    </td>
@@ -1029,7 +1027,7 @@ lectures and/or assignments with an advanced week's notice.
     <td colspan="5" markdown="span" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;">
     </td>
    </tr>
-   <td markdown="span" rowspan="4" style="font-size:xx-large;">
+   <td markdown="span" rowspan="5" style="font-size:xx-large;">
     <a name="w8">
      8
     </a>
@@ -1041,12 +1039,14 @@ lectures and/or assignments with an advanced week's notice.
    </td>
    <td markdown="span">
    </td>
-   <td markdown="span" style="text-align:center">
-    <b>
-     Exam 2 Part 1
-    </b>
+   <td markdown="span">
    </td>
    <td markdown="span">
+   </td>
+  </tr>
+  <tr>
+   <td colspan="4" markdown="span">
+    [Lab 11: Userspace Threads]({{ site.url }}{{ site.baseurl }}/labs/ust) DUE Mon, Aug 04 2025 23:59 [Submission box]({{ site.gradescope_url }})
    </td>
   </tr>
   <tr>
