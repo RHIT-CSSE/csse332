@@ -308,6 +308,7 @@
 29:
  reading:
  topics:
+  - <b> Project Kickoff </b>
  materials:
 
  # reading:
@@ -320,10 +321,11 @@
  reading:
    - <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched.pdf"> Chapter 7 of OSTEP </a>
  topics:
-   - '<a href="{{ site.url }}{{ site.baseurl}}/notes/session29"> CPU Scheduling I </a>'
+   - '<b> CPU Scheduling I </b>'
  materials:
    # - <a href="{{site.url}}{{site.baseurl}}/assets/files/quiz/m1.pdf"> Milestone 1 Worksheet </a>
-   - <a href="{{site.url}}{{site.baseurl}}/assets/files/quiz/sched.pdf"> Quiz Sheet </a>
+   - <a href="{{site.url}}{{site.baseurl}}/assets/files/quiz/34_scheduling.pdf"> Quiz Sheet </a>
+   - <a href="{{site.url}}{{site.baseurl}}/assets/files/quiz/34_scheduling_solution.pdf"> Quiz Solution </a>
 
 # 30:
  # reading:
@@ -336,74 +338,73 @@
  reading:
    - <a href="https://pdos.csail.mit.edu/6.828/2022/xv6/book-riscv-rev3.pdf"> Chapter 7 of the xv6 book </a>
  topics:
-   - <a href="{{ site.url }}{{ site.baseurl}}/labs/sched/"> The xv6 scheduler </a>
+   - '<b> CPU Scheduling II: The xv6 Scheduler </b>'
  materials:
 
 32:
  reading: 
  topics: 
-   - <a href="{{ site.url }}{{ site.baseurl}}/notes/filesystems/"> File Systems </a>
+  - <b> Advanced Scheduling and Project Milestone 2</b>
  materials:
 
-33:
- reading:
- topics:
-   - <b> Exam 2 Part 2 </b>
- materials:
 #
 #
 ## ################################################################################
 ## ## WEEK 9
 ## ################################################################################
+33:
+ reading:
+ topics:
+  - <b> Introduction to Memory Organization and Safety </b>
+ materials:
+   - <a href="{{site.url}}{{site.baseurl}}/assets/files/quiz/29_memorg.pdf"> Quiz Sheet </a>
+   - <a href="{{site.url}}{{site.baseurl}}/assets/files/quiz/29_memorg_solution.pdf"> Quiz Solution </a>
+
 34:
  reading:
  topics:
-   - <a href="{{ site.url }}{{ site.baseurl}}/notes/filesystems/"> File Systems II </a>
+  - <b> Project Hints </b>
  materials:
-#
+
 35:
  reading:
  topics:
-   # - <b> Project Work Time </b>
-   - <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/"> Milestone 2 Demo Day </a>
+  - <b> Control Flow Hijacking </b>
  materials:
-#
+   - <a href="{{site.url}}{{site.baseurl}}/assets/files/quiz/30_cfhijack.pdf"> Quiz Sheet </a>
+   - <a href="{{site.url}}{{site.baseurl}}/assets/files/quiz/30_cfhijack_solution.pdf"> Quiz Solution </a>
+
 36:
  reading:
  topics:
-   - "<b> Lab: ext2 file system </b>"
- materials:
-
-37:
- reading:
-   - <a href="https://dl.acm.org/doi/10.1145/945445.945462"> Xen and the art of virtualization </a>
- topics:
-   - Special Topics in OS
-   # - <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/"> Project Work Time and Meetings </a>
+  - <b> Advanced Stack Smashing </b>
  materials:
 
 ## ################################################################################
 ## ## WEEK 10 
 ## ################################################################################
+37:
+ reading:
+ topics:
+  - <b> Project Work Time </b>
+ materials:
+
 38:
  reading:
-   - <a href="https://dl.acm.org/doi/10.1145/1314299.1314302">  Labels and event processes in the Asbestos operating system </a>
  topics:
-   # - <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/"> Project Work Time and Meetings </a>
-   - Special Topics in OS
+  - <b> Project Work Time </b>
  materials:
 
 39:
  reading:
  topics:
-   # - <b> Project Work Time </b>
-   - <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/"> Milestone 3 Demo Day </a>
+  - <b> Project Work Time </b>
  materials:
 
 40:
  reading:
  topics:
-   - <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/"> Project Work Time (Demo Continued) </a>
+  - <b> Project Work Time </b>
  materials:
 
 # 40:

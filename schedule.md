@@ -1027,7 +1027,7 @@ lectures and/or assignments with an advanced week's notice.
     <td colspan="5" markdown="span" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;">
     </td>
    </tr>
-   <td markdown="span" rowspan="5" style="font-size:xx-large;">
+   <td markdown="span" rowspan="6" style="font-size:xx-large;">
     <a name="w8">
      8
     </a>
@@ -1039,7 +1039,10 @@ lectures and/or assignments with an advanced week's notice.
    </td>
    <td markdown="span">
    </td>
-   <td markdown="span">
+   <td markdown="span" style="text-align:center">
+    <b>
+     Project Kickoff
+    </b>
    </td>
    <td markdown="span">
    </td>
@@ -1067,16 +1070,21 @@ lectures and/or assignments with an advanced week's notice.
     {:/}
    </td>
    <td markdown="span" style="text-align:center">
-    <a href="{{ site.url }}{{ site.baseurl}}/notes/session29">
+    <b>
      CPU Scheduling I
-    </a>
+    </b>
    </td>
    <td markdown="span">
     {::nomarkdown}
     <ul style="margin:0;padding:.5rem">
      <li>
-      <a href="{{site.url}}{{site.baseurl}}/assets/files/quiz/sched.pdf">
+      <a href="{{site.url}}{{site.baseurl}}/assets/files/quiz/34_scheduling.pdf">
        Quiz Sheet
+      </a>
+     </li>
+     <li>
+      <a href="{{site.url}}{{site.baseurl}}/assets/files/quiz/34_scheduling_solution.pdf">
+       Quiz Solution
       </a>
      </li>
     </ul>
@@ -1101,11 +1109,16 @@ lectures and/or assignments with an advanced week's notice.
     {:/}
    </td>
    <td markdown="span" style="text-align:center">
-    <a href="{{ site.url }}{{ site.baseurl}}/labs/sched/">
-     The xv6 scheduler
-    </a>
+    <b>
+     CPU Scheduling II: The xv6 Scheduler
+    </b>
    </td>
    <td markdown="span">
+   </td>
+  </tr>
+  <tr>
+   <td colspan="4" markdown="span">
+    [Project Milestone 1](https://www.rose-hulman.edu/class/csse/csse332/2324d/labs/milestone1/) DUE Thu, Aug 07 2025 23:59 [Submission box]({{ site.gradescope_url }})
    </td>
   </tr>
   <tr>
@@ -1117,9 +1130,9 @@ lectures and/or assignments with an advanced week's notice.
    <td markdown="span">
    </td>
    <td markdown="span" style="text-align:center">
-    <a href="{{ site.url }}{{ site.baseurl}}/notes/filesystems/">
-     File Systems
-    </a>
+    <b>
+     Advanced Scheduling and Project Milestone 2
+    </b>
    </td>
    <td markdown="span">
    </td>
@@ -1129,7 +1142,7 @@ lectures and/or assignments with an advanced week's notice.
     <td colspan="5" markdown="span" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;">
     </td>
    </tr>
-   <td markdown="span" rowspan="4" style="font-size:xx-large;">
+   <td markdown="span" rowspan="6" style="font-size:xx-large;">
     <a name="w9">
      9
     </a>
@@ -1143,10 +1156,29 @@ lectures and/or assignments with an advanced week's notice.
    </td>
    <td markdown="span" style="text-align:center">
     <b>
-     Exam 2 Part 2
+     Introduction to Memory Organization and Safety
     </b>
    </td>
    <td markdown="span">
+    {::nomarkdown}
+    <ul style="margin:0;padding:.5rem">
+     <li>
+      <a href="{{site.url}}{{site.baseurl}}/assets/files/quiz/29_memorg.pdf">
+       Quiz Sheet
+      </a>
+     </li>
+     <li>
+      <a href="{{site.url}}{{site.baseurl}}/assets/files/quiz/29_memorg_solution.pdf">
+       Quiz Solution
+      </a>
+     </li>
+    </ul>
+    {:/}
+   </td>
+  </tr>
+  <tr>
+   <td colspan="4" markdown="span">
+    [Lab 12: The xv6 Scheduler]({{ site.url }}{{ site.baseurl }}/labs/sched) DUE Mon, Aug 11 2025 23:59 [Submission box]({{ site.gradescope_url }})
    </td>
   </tr>
   <tr>
@@ -1158,9 +1190,9 @@ lectures and/or assignments with an advanced week's notice.
    <td markdown="span">
    </td>
    <td markdown="span" style="text-align:center">
-    <a href="{{ site.url }}{{ site.baseurl}}/notes/filesystems/">
-     File Systems II
-    </a>
+    <b>
+     Project Hints
+    </b>
    </td>
    <td markdown="span">
    </td>
@@ -1174,11 +1206,30 @@ lectures and/or assignments with an advanced week's notice.
    <td markdown="span">
    </td>
    <td markdown="span" style="text-align:center">
-    <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/">
-     Milestone 2 Demo Day
-    </a>
+    <b>
+     Control Flow Hijacking
+    </b>
    </td>
    <td markdown="span">
+    {::nomarkdown}
+    <ul style="margin:0;padding:.5rem">
+     <li>
+      <a href="{{site.url}}{{site.baseurl}}/assets/files/quiz/30_cfhijack.pdf">
+       Quiz Sheet
+      </a>
+     </li>
+     <li>
+      <a href="{{site.url}}{{site.baseurl}}/assets/files/quiz/30_cfhijack_solution.pdf">
+       Quiz Solution
+      </a>
+     </li>
+    </ul>
+    {:/}
+   </td>
+  </tr>
+  <tr>
+   <td colspan="4" markdown="span">
+    [Project Milestone 2](https://www.rose-hulman.edu/class/csse/csse332/2324d/labs/milestone2/) DUE Thu, Aug 14 2025 23:59 [Submission box]({{site.gradescope_url}})
    </td>
   </tr>
   <tr>
@@ -1191,7 +1242,7 @@ lectures and/or assignments with an advanced week's notice.
    </td>
    <td markdown="span" style="text-align:center">
     <b>
-     Lab: ext2 file system
+     Advanced Stack Smashing
     </b>
    </td>
    <td markdown="span">
@@ -1202,7 +1253,7 @@ lectures and/or assignments with an advanced week's notice.
     <td colspan="5" markdown="span" style="padding-top:2px;padding-bottom:2px;background-color:#167F92;color:#FFF;">
     </td>
    </tr>
-   <td markdown="span" rowspan="4" style="font-size:xx-large;">
+   <td markdown="span" rowspan="6" style="font-size:xx-large;">
     <a name="w10">
      10
     </a>
@@ -1212,21 +1263,19 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Mon, Aug 18 2025
    </td>
-   <td markdown="span" style="text-align:left;">
-    {::nomarkdown}
-    <ul style="margin:0;padding:.5rem">
-     <li>
-      <a href="https://dl.acm.org/doi/10.1145/945445.945462">
-       Xen and the art of virtualization
-      </a>
-     </li>
-    </ul>
-    {:/}
+   <td markdown="span">
    </td>
    <td markdown="span" style="text-align:center">
-    Special Topics in OS
+    <b>
+     Project Work Time
+    </b>
    </td>
    <td markdown="span">
+   </td>
+  </tr>
+  <tr>
+   <td colspan="4" markdown="span">
+    [[Challenge] Lab 12: Memory Organization and Safety]({{ site.url }}{{ site.baseurl }}/labs/smlab) DUE Mon, Aug 18 2025 23:59 [Submission box]({{ site.gradescope_url }})
    </td>
   </tr>
   <tr>
@@ -1235,19 +1284,12 @@ lectures and/or assignments with an advanced week's notice.
     <br/>
     Tue, Aug 19 2025
    </td>
-   <td markdown="span" style="text-align:left;">
-    {::nomarkdown}
-    <ul style="margin:0;padding:.5rem">
-     <li>
-      <a href="https://dl.acm.org/doi/10.1145/1314299.1314302">
-       Labels and event processes in the Asbestos operating system
-      </a>
-     </li>
-    </ul>
-    {:/}
+   <td markdown="span">
    </td>
    <td markdown="span" style="text-align:center">
-    Special Topics in OS
+    <b>
+     Project Work Time
+    </b>
    </td>
    <td markdown="span">
    </td>
@@ -1261,9 +1303,9 @@ lectures and/or assignments with an advanced week's notice.
    <td markdown="span">
    </td>
    <td markdown="span" style="text-align:center">
-    <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/">
-     Milestone 3 Demo Day
-    </a>
+    <b>
+     Project Work Time
+    </b>
    </td>
    <td markdown="span">
    </td>
@@ -1277,11 +1319,16 @@ lectures and/or assignments with an advanced week's notice.
    <td markdown="span">
    </td>
    <td markdown="span" style="text-align:center">
-    <a href="{{ site.url }}{{ site.baseurl}}/notes/project_hints/">
-     Project Work Time (Demo Continued)
-    </a>
+    <b>
+     Project Work Time
+    </b>
    </td>
    <td markdown="span">
+   </td>
+  </tr>
+  <tr>
+   <td colspan="4" markdown="span">
+    [Final Project](https://www.rose-hulman.edu/class/csse/csse332/2324d/labs/final/) DUE Fri, Aug 22 2025 23:59 [Submission box]({{site.gradescope_url}})
    </td>
   </tr>
  </tbody>

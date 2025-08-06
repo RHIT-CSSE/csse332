@@ -314,10 +314,16 @@ def write_table_body(f, schedule, num_of_sessions_per_week, classes):
                             assignment_box, assignment_grader
                         ))
                     else:
-                        f.write("<td markdown=\"span\" colspan=\"4\"> [{}]({{{{ site.url }}}}{{{{ site.baseurl }}}}/labs/{}) DUE {} {}</td>".format(
-                            assignment_name, assignment_dir,
-                            assignment_date.strftime("%a, %b %d %Y %H:%M"), assignment_box
-                        ))
+                        if "https" in assignment_dir:
+                            f.write("<td markdown=\"span\" colspan=\"4\"> [{}]({}) DUE {} {}</td>".format(
+                                assignment_name, assignment_dir,
+                                assignment_date.strftime("%a, %b %d %Y %H:%M"), assignment_box
+                            ))
+                        else:
+                            f.write("<td markdown=\"span\" colspan=\"4\"> [{}]({{{{ site.url }}}}{{{{ site.baseurl }}}}/labs/{}) DUE {} {}</td>".format(
+                                assignment_name, assignment_dir,
+                                assignment_date.strftime("%a, %b %d %Y %H:%M"), assignment_box
+                            ))
                 else:
                     if assignment_grader is not None and assignment_grader != '':
                         assignment_grader = "<font color=\"#aaa\"> grader: @{} </font>".format(assignment_grader)
